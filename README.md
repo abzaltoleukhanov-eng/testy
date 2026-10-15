@@ -7,13 +7,12 @@
 | `creative-research` | Ресерч для creative strategy: сотни реальных цитат клиентов → кластеры болей и желаний → инсайты → персоны → углы → 1–3 концепта ролика с защитой → скрипт. Всё пишет в Google таблицы. | «сделай ресерч по Comino Totepack», «что пишут люди про тоуты для путешествий», «найди углы для Lévant Tote» |
 | `media-buying-analyst` | Разбор скриншотов из Meta Ads Manager: считает hook rate, hold rate, CTR, CPA, ROAS, находит, где ломается воронка, даёт вердикт (выключить / ждать / итерация / масштабировать), считает путь к бонусу, объясняет, чтобы ты учился. | скриншот Ads Manager + «разбери», «выключать или нет?» |
 
-## Как поставить (доступно на всех устройствах)
-1. Скачай `dist/creative-research.zip` и `dist/media-buying-analyst.zip` из этого репозитория.
-2. На claude.ai: Settings → Capabilities → Skills → Upload skill, загрузи оба архива.
-3. Скиллы привязаны к аккаунту, поэтому работают в вебе, в десктопе, в мобильном приложении и в Claude Code.
-4. Для записи в таблицы в чате должны быть включены коннекторы Google Drive и Google Sheets.
+## Где работают
+- **Claude Code** (claude.ai/code в браузере, мобильное приложение, десктоп): ничего ставить не нужно. Скиллы лежат в `.claude/skills/` этого репозитория и подгружаются сами в любой сессии с репо `testy`.
+- **Обычный чат claude.ai**: скилл в аккаунт можно загрузить только вручную. Settings → Capabilities → Skills → Upload skill, архивы `dist/creative-research.zip` и `dist/media-buying-analyst.zip`. После этого они работают на всех устройствах.
+- Для записи в таблицы должны быть включены коннекторы Google Drive и Google Sheets.
 
-После правок в `skills/` пересобери архивы: `./build.sh` и загрузи заново.
+Исходники в `skills/`. После правок запусти `./build.sh`: он проверит скиллы, обновит `.claude/skills/` и архивы в `dist/`.
 
 ## Google таблицы
 В Google Drive создана папка **Nordace · Creative Research**:
@@ -30,8 +29,10 @@ skills/
   media-buying-analyst/
     SKILL.md
     references/                    метрики, ориентиры, диагностика, learning phase, правила решений, мои KPI
-dist/                              готовые .zip для загрузки
-build.sh                           сборка .zip
+.claude/skills/                    собранные скиллы для Claude Code (генерируется build.sh)
+dist/                              готовые .zip для загрузки в claude.ai
+build.sh                           проверка и сборка
+scripts/validate_skill.py          валидатор скиллов
 ```
 
 ## Что дозаполнить
