@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-16T19:43:48+00:00 by validate.py (contract 0.2). Statuses here are computed, not self-declared.
+Computed 2026-10-16T19:50:19+00:00 by validate.py (contract 0.2). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 
@@ -39,6 +39,15 @@ Computed 2026-10-16T19:43:48+00:00 by validate.py (contract 0.2). Statuses here 
 | C-0029 | PURCHASE_DRIVER | **NEEDS_REVIEW** | scope issue: Some intentions are implied rather than stated (E-0041, E-0050, E-0060, E-0094), and E-0019 is second-hand; the claim's caveat covers this. None are verified non-purchases. |
 | C-0030 | PERSONAL_EXPERIENCE | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The 'return to Hong Kong' detail holds for only one of the two buyers; the other was told to return to Commerce, CA. Neither source explicitly says a free return was refused, though E-0036 implies it. |
 | C-0031 | PERSONAL_EXPERIENCE | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: Only two commenters clearly cite these reasons for suspicion (E-0002 countdown reset, E-0040 retargeting); 'a few' stretches the evidence, since E-0050 does not cite retargeting and E-0093 expresses annoyance, not suspicion. |
+| C-0032 | PURCHASE_DRIVER | **NEEDS_REVIEW** | scope issue: Not every source says the bag was heavy (E-0229, E-0157). The contradicting sources (E-0331, E-0372) show backpacks also cause strain for some people, which limits generalisation but does not negate 'some people'. |
+| C-0033 | PATTERN | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The claim uses 'she' for the E-0157 commenter, but the source text does not state gender (only the subreddit suggests it). Otherwise the pattern stays within the sources. |
+| C-0034 | PATTERN | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: E-0347 says only 'the Longchamp', so the 'nylon tote' model comes from thread context (another comment names Le Pliage), not from that commenter's text. |
+| C-0035 | PATTERN | **APPROVED** | all checks passed |
+| C-0036 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
+| C-0037 | PATTERN | **NEEDS_REVIEW** | scope issue: The 'Any experience with Nordace backpacks?' thread is a question thread rather than a complaint thread, though the 'self-selected' framing still holds. E-0090 and E-0100 do not explicitly name a backpack or the brand in the comment text. |
+| C-0038 | PURCHASE_DRIVER | **APPROVED** | all checks passed |
+| C-0039 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
+| C-0040 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
 
 ## Coverage: COVERAGE_LIMITED
 - planned source not retrievable by any tested route: official
@@ -82,4 +91,8 @@ Computed 2026-10-16T19:43:48+00:00 by validate.py (contract 0.2). Statuses here 
 - evidence rows: 431
 - decision evidence: 107
 - queries: 29
-- claim statuses: {'NEEDS_REVIEW': 21, 'APPROVED': 6, 'HYPOTHESIS_LABELED': 4}
+- claim statuses: {'NEEDS_REVIEW': 25, 'APPROVED': 11, 'HYPOTHESIS_LABELED': 4}
+
+## Brief check
+
+- PASS

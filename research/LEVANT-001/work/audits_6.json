@@ -1,0 +1,398 @@
+[
+ {
+  "claim_id": "C-0032",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0157",
+    "located_span": "I switched to an Aer backpack to save my back since I carry a laptop",
+    "supports": true,
+    "note": "Back protection given as the reason for switching, linked to carrying a laptop."
+   },
+   {
+    "evidence_id": "E-0227",
+    "located_span": "I really messed up my right shoulder by using a shoulder bag to carry my laptop and other work stuffs daily… now I use a backpack",
+    "supports": true,
+    "note": "Shoulder injury from a laptop-loaded work shoulder bag, followed by a switch to a backpack."
+   },
+   {
+    "evidence_id": "E-0229",
+    "located_span": "I switched in my 20s after having severe shoulder pain that carrying a handbag was exacerbating.",
+    "supports": true,
+    "note": "Shoulder pain from a handbag as the reason for switching. The handbag is not described as heavy."
+   },
+   {
+    "evidence_id": "E-0275",
+    "located_span": "walking around in the heat with a tote bag is killing my shoulder and back",
+    "supports": true,
+    "note": "Shoulder and back strain from a heavily loaded tote, followed by buying a padded backpack."
+   },
+   {
+    "evidence_id": "E-0368",
+    "located_span": "I switched to a backpack to save my back/shoulder.",
+    "supports": true,
+    "note": "Stated reason for switching from a tote. The massage therapist's advice is also part of the reason."
+   },
+   {
+    "evidence_id": "E-0384",
+    "located_span": "cos I am no longer in pain!",
+    "supports": true,
+    "note": "Gave up a bag for a backpack and is no longer in pain. Shoulder pain from large totes comes from the parent post's context."
+   }
+  ],
+  "scope_issue": "Not every source says the bag was heavy (E-0229, E-0157). The contradicting sources (E-0331, E-0372) show backpacks also cause strain for some people, which limits generalisation but does not negate 'some people'.",
+  "open_contradiction": false,
+  "reasoning": "Six independent commenters give shoulder or back pain from a tote, handbag or shoulder bag as their reason for moving to a backpack, and two explicitly tie it to carrying a laptop. The claim's hedged wording ('some people', 'in some cases') fits the evidence. The contradicting items describe backpacks causing pain for other people. They do not dispute the stated reasons of these switchers.",
+  "auditor": "independent auditor packet 6"
+ },
+ {
+  "claim_id": "C-0033",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0157",
+    "located_span": "if I didn’t have to I’d go tote all the way",
+    "supports": true,
+    "note": "Would still choose a tote if not carrying a laptop. The commenter's gender is not stated in the text."
+   },
+   {
+    "evidence_id": "E-0255",
+    "located_span": "I understand that a backpack is less aesthetic",
+    "supports": true,
+    "note": "Switched for shoulder pain and concedes the backpack is less aesthetic."
+   },
+   {
+    "evidence_id": "E-0277",
+    "located_span": "makes me look like a middle schooler again",
+    "supports": true,
+    "note": "Juvenile look acknowledged after switching for comfort."
+   },
+   {
+    "evidence_id": "E-0290",
+    "located_span": "I just succumbed to a really ugly backpack that carries weight well.",
+    "supports": true,
+    "note": "Settled for an ugly backpack because it carries weight well."
+   },
+   {
+    "evidence_id": "E-0351",
+    "located_span": "I’ve had to make peace with using a low profile, polished looking backpack",
+    "supports": true,
+    "note": "Describes the backpack as something she had to accept, in a shoulder-pain thread."
+   }
+  ],
+  "scope_issue": "The claim uses 'she' for the E-0157 commenter, but the source text does not state gender (only the subreddit suggests it). Otherwise the pattern stays within the sources.",
+  "open_contradiction": false,
+  "reasoning": "Five commenters who use backpacks for comfort or weight call them less aesthetic, juvenile or ugly, or say they settled for one, and E-0157 says they would go back to a tote without the laptop. The substance is supported. The only overreach is the gendered pronoun, which the text does not state. The contradicting OP (E-0225) likes her backpack, which limits how general the pattern is but does not negate 'several'.",
+  "auditor": "independent auditor packet 6"
+ },
+ {
+  "claim_id": "C-0034",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0280",
+    "located_span": "In order to prevent looking like a school student, I chose to use a tactical backpack.",
+    "supports": true,
+    "note": "Avoids the school-bag look, in a work tote-to-backpack thread."
+   },
+   {
+    "evidence_id": "E-0345",
+    "located_span": "I really don't like how the longchamps look",
+    "supports": true,
+    "note": "Rejects Longchamp because it looks like a cheap nylon bag. The parent post names Le Pliage."
+   },
+   {
+    "evidence_id": "E-0347",
+    "located_span": "I tried the Longchamp but I just never liked the look, and it just lacked structure.",
+    "supports": true,
+    "note": "Rejects Longchamp for its look and lack of structure. The model and nylon material are not named in this comment or its parent."
+   },
+   {
+    "evidence_id": "E-0361",
+    "located_span": "I also don’t want to look like I’m on my way to home room.",
+    "supports": true,
+    "note": "Does not want a school bookbag look for work."
+   },
+   {
+    "evidence_id": "E-0369",
+    "located_span": "without looking like I’m off for a trek",
+    "supports": true,
+    "note": "Dislikes the hiking or trekking look of backpacks."
+   }
+  ],
+  "scope_issue": "E-0347 says only 'the Longchamp', so the 'nylon tote' model comes from thread context (another comment names Le Pliage), not from that commenter's text.",
+  "open_contradiction": false,
+  "reasoning": "Three commenters say they do not want to look like a schoolkid or a hiker, and two reject Longchamp for looking cheap or lacking structure. The appearance pattern is well supported. Only one of the two Longchamp rejections is tied to the nylon Le Pliage in its own context. The contradicting items show some people accept a bookbag or use Longchamp daily, which limits generality but does not negate 'some'.",
+  "auditor": "independent auditor packet 6"
+ },
+ {
+  "claim_id": "C-0035",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0149",
+    "located_span": "Beis does not hold up because it’s not real leather",
+    "supports": true,
+    "note": "Attributes the Beis wear to its non-leather material."
+   },
+   {
+    "evidence_id": "E-0409",
+    "located_span": "All my faux leather jackets start flaking and peeling after a few years.",
+    "supports": true,
+    "note": "Peeling experience, but it is about jackets, not bags."
+   },
+   {
+    "evidence_id": "E-0415",
+    "located_span": "No cracking, peeling or flaking.",
+    "supports": true,
+    "note": "Owner of a vegan Emmy 'coming up on 4.5 years old' reports no damage."
+   },
+   {
+    "evidence_id": "E-0419",
+    "located_span": "All vegan leather will eventually crack and peel.",
+    "supports": true,
+    "note": "General belief that vegan leather peels."
+   },
+   {
+    "evidence_id": "E-0420",
+    "located_span": "Since they're made out of PU I'm wondering if the material ever starts peeling",
+    "supports": true,
+    "note": "Concern rather than firm expectation, but it shows peeling worry about PU."
+   },
+   {
+    "evidence_id": "E-0425",
+    "located_span": "My matt and nat bag held up really nicely!",
+    "supports": true,
+    "note": "Owner report that a vegan-brand bag held up. The text does not say 'vegan'; the thread context supplies it."
+   },
+   {
+    "evidence_id": "E-0426",
+    "located_span": "I own a poppy and peonies crossbody and it’s held up really well",
+    "supports": true,
+    "note": "Owner report of a non-leather bag holding up, in a vegan-leather thread."
+   },
+   {
+    "evidence_id": "E-0430",
+    "located_span": "the Beis complaints about peeling is going to happen to any \"vegan\" leather bag",
+    "supports": true,
+    "note": "Expects any vegan leather bag to peel."
+   },
+   {
+    "evidence_id": "E-0431",
+    "located_span": "Anything which is just PU leather will start peeling with daily use.",
+    "supports": true,
+    "note": "Expects PU to peel with daily use."
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Several commenters state or expect that PU or vegan leather peels or wears out. Three owners report vegan or non-leather bags holding up, including one at about 4.5 years with no cracking or peeling. The claim's scope limits already say one source is about jackets and that nothing here concerns the Lévant material.",
+  "auditor": "independent auditor packet 6"
+ },
+ {
+  "claim_id": "C-0036",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0408",
+    "located_span": "I bought a vegan leather bomber only because I was able to Get it for super cheap on sale.",
+    "supports": true,
+    "note": "Bought the jacket only because it was cheap on sale."
+   },
+   {
+    "evidence_id": "E-0409",
+    "located_span": "I don’t have anything faux leather that’s more than 5 years old that still looks in great condition.",
+    "supports": true,
+    "note": "No faux-leather item has aged well past five years. Same comment as E-0408."
+   },
+   {
+    "evidence_id": "E-0421",
+    "located_span": "Freja Paloma (too pricey for vegan leather 😭)",
+    "supports": true,
+    "note": "Excluded from a vegan-leather work tote shortlist as too pricey for vegan leather."
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "The jacket commenter says both things the claim attributes to them, nearly verbatim. The tote shopper explicitly excluded the Freja Paloma as too pricey for vegan leather. The claim is framed as two individual experiences, and its scope notes that the tote exclusion was not about peeling. The 'contradicting' item (E-0417) is a purchase of a different vegan bag and does not dispute either statement.",
+  "auditor": "independent auditor packet 6"
+ },
+ {
+  "claim_id": "C-0037",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0012",
+    "located_span": "Within 2 years the zipper completely failed and would split everytime",
+    "supports": true,
+    "note": "Zipper failure within two years (Siena II)."
+   },
+   {
+    "evidence_id": "E-0031",
+    "located_span": "Just about two years to the day and the fabric is splitting and the zippers don’t work anymore.",
+    "supports": true,
+    "note": "Fabric and zipper failure at about two years."
+   },
+   {
+    "evidence_id": "E-0032",
+    "located_span": "zipper doesn't work in like less than 1-yr",
+    "supports": true,
+    "note": "Zipper failure in under a year."
+   },
+   {
+    "evidence_id": "E-0033",
+    "located_span": "It's in it's 7th year (Yes SEVEN) of use",
+    "supports": true,
+    "note": "Long-use owner in the same complaint thread."
+   },
+   {
+    "evidence_id": "E-0078",
+    "located_span": "I received my Nordace backpack less than a month ago and the zipper already broke and the bag tore.",
+    "supports": true,
+    "note": "Lower bound: under a month."
+   },
+   {
+    "evidence_id": "E-0085",
+    "located_span": "about 2-3 months into wearing and using on a daily basis, one of the leather straps broke",
+    "supports": true,
+    "note": "Strap failure at 2-3 months."
+   },
+   {
+    "evidence_id": "E-0090",
+    "located_span": "Exterior fabric seems weak and has threads pulling around the bag.",
+    "supports": true,
+    "note": "Fabric and zip deterioration and a charging port ripped off within months (Henge). The bag type is not stated as a backpack in the text."
+   },
+   {
+    "evidence_id": "E-0100",
+    "located_span": "I have had mine for about 5 years",
+    "supports": true,
+    "note": "Many-years owner in a Nordace Siena thread. The brand is implied by the thread, not named in the comment."
+   },
+   {
+    "evidence_id": "E-0101",
+    "located_span": "The main zipper is now broke which makes the backpack literally unusable.",
+    "supports": true,
+    "note": "Zipper failure on a Siena bought in 2021. Exact timing is not stated."
+   },
+   {
+    "evidence_id": "E-0103",
+    "located_span": "la fermeture à cassé jusque après les deux ans de garantie",
+    "supports": true,
+    "note": "Zipper broke just after the two-year warranty, the 'a little over two years' upper bound."
+   }
+  ],
+  "scope_issue": "The 'Any experience with Nordace backpacks?' thread is a question thread rather than a complaint thread, though the 'self-selected' framing still holds. E-0090 and E-0100 do not explicitly name a backpack or the brand in the comment text.",
+  "open_contradiction": false,
+  "reasoning": "Multiple owners report zipper, strap or fabric failures, with timings from under a month (E-0078) to just past two years (E-0103). Other owners in the same threads report 5 and 7 years of use. The claim is limited to Nordace backpacks and explicitly disclaims a failure rate, which fits the evidence.",
+  "auditor": "independent auditor packet 6"
+ },
+ {
+  "claim_id": "C-0038",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0019",
+    "located_span": "Just wanted you to know the tone of this comment convinced my partner not to buy your product.",
+    "supports": true,
+    "note": "Reported partner non-purchase, driven by the brand's reply."
+   },
+   {
+    "evidence_id": "E-0020",
+    "located_span": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass.",
+    "supports": true,
+    "note": "Intention to pass, driven by the brand's reply."
+   },
+   {
+    "evidence_id": "E-0026",
+    "located_span": "I can't in good conscience pick one up after reading this comment.",
+    "supports": true,
+    "note": "Repurchase intention dropped after the brand's reply. The commenter is an existing owner looking to replace their bag."
+   },
+   {
+    "evidence_id": "E-0041",
+    "located_span": "Thank goodness i found this was about to buy one",
+    "supports": true,
+    "note": "Implied hold-off after reading a negative review."
+   },
+   {
+    "evidence_id": "E-0050",
+    "located_span": "Confirmed my suspicions that it should be possible to get something better.",
+    "supports": true,
+    "note": "Implied decision not to buy after a negative review."
+   },
+   {
+    "evidence_id": "E-0060",
+    "located_span": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me.",
+    "supports": true,
+    "note": "Implied hold-off driven by the brand's reply."
+   },
+   {
+    "evidence_id": "E-0062",
+    "located_span": "I was going to buy a set but I'm not now!",
+    "supports": true,
+    "note": "Stated non-purchase intention, reacting to the brand's reply. Parent text is not provided, but the reply is referenced."
+   },
+   {
+    "evidence_id": "E-0071",
+    "located_span": "after reading so many negative reviews I have decided against buying this bag",
+    "supports": true,
+    "note": "Decided against buying after negative reviews."
+   },
+   {
+    "evidence_id": "E-0094",
+    "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.",
+    "supports": true,
+    "note": "Holding off on the Siena Tote because of reviews and seeking alternatives."
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Nine commenters state or imply they would not buy, or would hold off, after negative reviews or the brand's replies, one of them about a partner. The reply-driven ones sit in threads 18nj9sk and bqe83z, which matches 'two threads'. The claim correctly frames these as intentions. The contradicting loyal-buyer reports do not dispute these stated intentions.",
+  "auditor": "independent auditor packet 6"
+ },
+ {
+  "claim_id": "C-0039",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0036",
+    "located_span": "they responded that either give me 30% money back or I pay for the return cost.",
+    "supports": true,
+    "note": "Partial refund offered as the alternative to returning at own cost. The return address was in Commerce, CA."
+   },
+   {
+    "evidence_id": "E-0074",
+    "located_span": "the address you have to ship it back to is in Hong Kong",
+    "supports": true,
+    "note": "Hong Kong return address and a costly return. The same comment says 'They offered a 30% refund to me but only gave me 21%.'"
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Both buyers describe a 30% partial refund as the alternative to a return they would have paid for. Only the second names a Hong Kong return address, which matches 'for one of them'. E-0092 describes a free warranty replacement, a different situation, and does not contradict these accounts.",
+  "auditor": "independent auditor packet 6"
+ },
+ {
+  "claim_id": "C-0040",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0002",
+    "located_span": "the timer at the top of their page counting down the sale had reset",
+    "supports": true,
+    "note": "The reset timer, together with the missing invoice and lack of response, 'significantly undermined my trust in their company'. The suspicion arose after purchase."
+   },
+   {
+    "evidence_id": "E-0040",
+    "located_span": "I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere)",
+    "supports": true,
+    "note": "Aggressive, following ads as a reason for suspicion. Overwhelmingly positive reviews are also cited."
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "One commenter cites ads that follow them everywhere as a reason for suspicion. The other says the reset sale timer (alongside other service issues) undermined their trust. The claim is framed as individual accounts of suspicion rather than proven misconduct. E-0083 is an unrelated positive review and does not contradict it.",
+  "auditor": "independent auditor packet 6"
+ }
+]

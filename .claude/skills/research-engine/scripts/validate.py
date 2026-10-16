@@ -58,7 +58,8 @@ def gate_check(claim_type, evs, sources, queries, claim, contract):
     groups = {independence_key(e, s) for e, s in zip(evs, srcs)}
     threads = {s.get("thread_id") for s in srcs if s}
     platforms = {s.get("platform") for s in srcs if s}
-    situations = {e.get("usage_situation") for e in evs if e.get("usage_situation") not in (None, "", "UNKNOWN")}
+    # consolidated situation clusters, not free-text usage_situation (raw labels inflate the count)
+    situations = {e.get("situation_cluster_id") for e in evs if e.get("situation_cluster_id") not in (None, "", "UNKNOWN")}
     decision_groups = {independence_key(e, s) for e, s in zip(evs, srcs)
                        if e.get("evidence_kind") == "DECISION" and e.get("person_action") in rules["decision_actions"]}
     stats = {"evidence": len(evs), "groups": len(groups), "threads": len(threads), "platforms": len(platforms),
@@ -217,9 +218,10 @@ def coverage(t, contract, project):
     caps_path = Path(project["_dir"]) / "capabilities.json"
     if caps_path.exists():
         caps = json.loads(caps_path.read_text())
-        for s in caps.get("sources", []):
-            if s.get("planned") and not s.get("can_retrieve_text"):
-                cov["limited_reasons"].append(f"planned source not retrievable: {s['source']}")
+        planned = {s["source"] for s in caps.get("sources", []) if s.get("planned")}
+        reachable = {s["source"] for s in caps.get("sources", []) if s.get("can_retrieve_text") or s.get("can_retrieve_comments")}
+        for name in sorted(planned - reachable):
+            cov["limited_reasons"].append(f"planned source not retrievable by any tested route: {name}")
     unbalanced = [b for b, v in cov["branches"].items() if not v["balanced"]]
     if unbalanced:
         cov["limited_reasons"].append(f"branches without NEUTRAL/POSITIVE queries: {unbalanced}")
