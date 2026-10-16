@@ -7,7 +7,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 rm -rf dist build .claude/skills && mkdir -p dist build .claude/skills
-for skill in creative-research media-buying-analyst; do
+for skill in creative-research media-buying-analyst research-engine; do
   cp -r "skills/$skill" "build/$skill"
   cp skills/shared/*.md "build/$skill/references/"
   python3 scripts/validate_skill.py "build/$skill"

@@ -1,0 +1,444 @@
+{
+  "contract_version": "0.2",
+  "note": "Single source of truth. Instructions, validators and test fixtures read field lists, enums and gates from this file. Change it here, never in a copy.",
+  "enums": {
+    "access_status": [
+      "READ_FULL",
+      "READ_PARTIAL",
+      "INDEXED_ONLY",
+      "BLOCKED",
+      "NEEDS_RECHECK",
+      "LEGACY"
+    ],
+    "retrieval_method": [
+      "DIRECT",
+      "RSS",
+      "ARCHIVE",
+      "API",
+      "BROWSER",
+      "EXTRACTOR",
+      "SCREENSHOT",
+      "USER_UPLOAD",
+      "SEARCH_SNIPPET"
+    ],
+    "content_available": [
+      "TEXT",
+      "IMAGE",
+      "VIDEO",
+      "AUDIO",
+      "METADATA"
+    ],
+    "context_captured": [
+      "FULL_THREAD",
+      "PARENT_ONLY",
+      "COMMENT_ONLY",
+      "EXCERPT_ONLY",
+      "NONE"
+    ],
+    "source_origin": [
+      "PUBLIC",
+      "USER_PROVIDED",
+      "CONNECTED_PRIVATE"
+    ],
+    "recheck_status": [
+      "OK",
+      "QUOTE_MISMATCH",
+      "SOURCE_CHANGED",
+      "UNAVAILABLE_ON_RECHECK",
+      "CLAIM_CONTRADICTED",
+      "CONTEXT_CONFLICT"
+    ],
+    "evidence_kind": [
+      "OBSERVATION",
+      "DECISION"
+    ],
+    "person_action": [
+      "NONE",
+      "CONSIDERED",
+      "POSTPONED",
+      "BOUGHT",
+      "REJECTED",
+      "RETURNED",
+      "SWITCHED",
+      "USES",
+      "STOPPED_USING",
+      "WORKAROUND"
+    ],
+    "journey_stage": [
+      "TRIGGER",
+      "COMPARE",
+      "DECIDE",
+      "USE",
+      "EXIT"
+    ],
+    "scope": [
+      "OUR_SKU",
+      "OUR_BRAND",
+      "COMPETITOR",
+      "CATEGORY",
+      "NON_COMMERCIAL_ALT"
+    ],
+    "product_match": [
+      "EXACT_SKU",
+      "SAME_PRODUCT_FAMILY",
+      "SAME_BRAND_OTHER_PRODUCT",
+      "COMPETITOR",
+      "CATEGORY_GENERAL",
+      "UNKNOWN"
+    ],
+    "market_grounding": [
+      "EXPLICIT",
+      "INFERRED",
+      "UNKNOWN"
+    ],
+    "polarity": [
+      "PROBLEM",
+      "NEUTRAL",
+      "POSITIVE",
+      "SWITCH"
+    ],
+    "reason_basis": [
+      "EXPLICIT",
+      "INFERRED"
+    ],
+    "claim_type": [
+      "PERSONAL_EXPERIENCE",
+      "PATTERN",
+      "PURCHASE_DRIVER",
+      "PRODUCT_FACT",
+      "PRODUCT_PERFORMANCE",
+      "SITUATION_REACH",
+      "CREATIVE_PERFORMANCE",
+      "HYPOTHESIS"
+    ],
+    "audit_verdict": [
+      "SUPPORTS",
+      "PARTIAL",
+      "DOES_NOT_SUPPORT",
+      "CONTRADICTS"
+    ],
+    "diagnosticity": [
+      "HIGH",
+      "MEDIUM",
+      "LOW"
+    ],
+    "claim_status": [
+      "APPROVED",
+      "NEEDS_REVIEW",
+      "HYPOTHESIS_LABELED",
+      "CONTRADICTED",
+      "BLOCKED"
+    ]
+  },
+  "tables": {
+    "sources": {
+      "file": "archive/sources.jsonl",
+      "key": "source_id",
+      "required": [
+        "source_id",
+        "project_id",
+        "platform",
+        "url",
+        "platform_object_id",
+        "thread_id",
+        "author_key",
+        "retrieved_at",
+        "retrieval_method",
+        "access_status",
+        "content_available",
+        "context_captured",
+        "source_origin",
+        "text",
+        "source_version"
+      ],
+      "optional": [
+        "parent_object_id",
+        "source_date",
+        "title",
+        "lang",
+        "query_id",
+        "score",
+        "recheck_status",
+        "notes",
+        "subreddit",
+        "kind"
+      ],
+      "enum_fields": {
+        "retrieval_method": "retrieval_method",
+        "access_status": "access_status",
+        "content_available": "content_available",
+        "context_captured": "context_captured",
+        "source_origin": "source_origin",
+        "recheck_status": "recheck_status"
+      }
+    },
+    "threads": {
+      "file": "archive/threads.jsonl",
+      "key": "thread_id",
+      "required": [
+        "thread_id",
+        "platform",
+        "url",
+        "title",
+        "retrieved_at",
+        "rss_count",
+        "archive_count",
+        "merged_unique"
+      ],
+      "optional": [
+        "reported_comment_count",
+        "archive_reported_count",
+        "source_changed",
+        "subreddit",
+        "parents_missing",
+        "notes"
+      ]
+    },
+    "queries": {
+      "file": "queries.jsonl",
+      "key": "query_id",
+      "required": [
+        "query_id",
+        "project_id",
+        "branch_id",
+        "query_text",
+        "platform",
+        "executed_at",
+        "market",
+        "journey_stage",
+        "scope",
+        "usage_situation",
+        "polarity",
+        "results_found",
+        "results_retrieved"
+      ],
+      "optional": [
+        "parent_finding",
+        "results_verified",
+        "new_patterns_found",
+        "new_counterexamples_found",
+        "next_branch_reason",
+        "subreddit",
+        "status_code",
+        "notes",
+        "cached",
+        "archive_error"
+      ],
+      "enum_fields": {
+        "journey_stage": "journey_stage",
+        "scope": "scope",
+        "polarity": "polarity"
+      },
+      "enum_allow_any": [
+        "ANY"
+      ]
+    },
+    "evidence": {
+      "file": "evidence.jsonl",
+      "key": "evidence_id",
+      "required": [
+        "evidence_id",
+        "project_id",
+        "source_id",
+        "quote_span",
+        "observation",
+        "observed_behavior",
+        "person_action",
+        "journey_stage",
+        "scope",
+        "product_match",
+        "usage_situation",
+        "situation_cluster_id",
+        "behavior_pattern_id",
+        "market_grounding",
+        "polarity",
+        "evidence_kind",
+        "what_it_does_not_prove"
+      ],
+      "optional": [
+        "market",
+        "story_id",
+        "independence_group",
+        "decision",
+        "notes"
+      ],
+      "enum_fields": {
+        "person_action": "person_action",
+        "journey_stage": "journey_stage",
+        "scope": "scope",
+        "product_match": "product_match",
+        "market_grounding": "market_grounding",
+        "polarity": "polarity",
+        "evidence_kind": "evidence_kind"
+      },
+      "decision_required_when": {
+        "evidence_kind": "DECISION"
+      },
+      "decision_fields": [
+        "initial_situation",
+        "alternatives_considered",
+        "decision_trigger",
+        "action_taken",
+        "reported_outcome",
+        "reason_basis",
+        "unverified_assumptions"
+      ]
+    },
+    "claims": {
+      "file": "claims.jsonl",
+      "key": "claim_id",
+      "required": [
+        "claim_id",
+        "project_id",
+        "text",
+        "claim_type",
+        "critical",
+        "scope_limits",
+        "supporting_evidence_ids",
+        "contradicting_evidence_ids",
+        "counter_search_query_ids"
+      ],
+      "optional": [
+        "hypothesis_label",
+        "notes"
+      ],
+      "enum_fields": {
+        "claim_type": "claim_type"
+      }
+    },
+    "hypotheses": {
+      "file": "hypotheses.jsonl",
+      "key": "ach_id",
+      "required": [
+        "ach_id",
+        "project_id",
+        "pattern_claim_id",
+        "question",
+        "hypotheses",
+        "preferred_h_id",
+        "preference_reason",
+        "causal_status"
+      ],
+      "optional": [
+        "notes"
+      ],
+      "hypothesis_fields": [
+        "h_id",
+        "statement",
+        "supporting_ids",
+        "refuting_ids",
+        "diagnosticity",
+        "missing_evidence"
+      ]
+    },
+    "audits": {
+      "file": "audits.jsonl",
+      "key": "audit_id",
+      "required": [
+        "audit_id",
+        "claim_id",
+        "auditor",
+        "audited_at",
+        "verdict",
+        "evidence_checks",
+        "scope_issue",
+        "open_contradiction",
+        "reasoning"
+      ],
+      "optional": [
+        "notes"
+      ],
+      "enum_fields": {
+        "verdict": "audit_verdict"
+      },
+      "evidence_check_fields": [
+        "evidence_id",
+        "located_span",
+        "supports",
+        "note"
+      ]
+    }
+  },
+  "counting_rules": {
+    "usable_access_status": [
+      "READ_FULL",
+      "READ_PARTIAL"
+    ],
+    "unusable_retrieval_without_recheck": [
+      "SEARCH_SNIPPET",
+      "EXTRACTOR"
+    ],
+    "independence_key": "evidence.independence_group if set and not UNKNOWN, otherwise 'thread:' + source.thread_id. Comments in one thread are one group unless the analyst records why a story is independent.",
+    "decision_actions": [
+      "BOUGHT",
+      "REJECTED",
+      "RETURNED",
+      "SWITCHED",
+      "STOPPED_USING",
+      "POSTPONED"
+    ]
+  },
+  "gates": {
+    "PERSONAL_EXPERIENCE": {
+      "min_groups": 1,
+      "min_threads": 1,
+      "counter_search_required": false
+    },
+    "PATTERN": {
+      "min_groups": 3,
+      "min_threads": 2,
+      "min_platforms_or_situations": 2,
+      "counter_search_required": true
+    },
+    "PURCHASE_DRIVER": {
+      "min_groups": 2,
+      "min_threads": 2,
+      "min_decision_groups": 2,
+      "counter_search_required": true
+    },
+    "PRODUCT_FACT": {
+      "requires_exact_sku": true,
+      "allowed_origin": [
+        "official source READ_FULL",
+        "USER_UPLOAD",
+        "SCREENSHOT"
+      ]
+    },
+    "PRODUCT_PERFORMANCE": {
+      "min_groups": 1,
+      "allowed_product_match": [
+        "EXACT_SKU",
+        "SAME_PRODUCT_FAMILY"
+      ],
+      "counter_search_required": true
+    },
+    "SITUATION_REACH": {
+      "max_status": "HYPOTHESIS_LABELED",
+      "note": "Corpus frequency never establishes reach. Only labeled proxies."
+    },
+    "CREATIVE_PERFORMANCE": {
+      "max_status": "BLOCKED",
+      "note": "Needs own campaign data; not supported in research MVP."
+    },
+    "HYPOTHESIS": {
+      "max_status": "HYPOTHESIS_LABELED",
+      "requires": [
+        "hypothesis_label"
+      ]
+    }
+  },
+  "final_status_rule": "APPROVED = SCHEMA_VALID + STRUCTURAL_GATE + EVIDENCE_AUDITED (latest audit SUPPORTS, every cited span found verbatim in stored source text) + no open contradiction. Otherwise NEEDS_REVIEW with reasons. The model never writes a status; validate.py computes it.",
+  "saturation": {
+    "novelty_window": 20,
+    "branch_closed_requires_polarity": [
+      "NEUTRAL",
+      "POSITIVE"
+    ],
+    "coverage_dimensions": [
+      "journey_stage",
+      "scope",
+      "market"
+    ],
+    "note": "Saturation means enough for the current research question, not that the market is studied. Blocked sources or unsearched markets make the run COVERAGE_LIMITED."
+  }
+}
