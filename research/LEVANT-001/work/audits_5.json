@@ -1,0 +1,94 @@
+[
+ {
+  "claim_id": "C-0026",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0149", "located_span": "Beis does not hold up because it’s not real leather", "supports": true, "note": "Commenter attributes Beis wear to non-real leather; supports an expectation that faux leather wears out."},
+   {"evidence_id": "E-0409", "located_span": "All my faux leather jackets start flaking and peeling after a few years.", "supports": true, "note": "Peeling expectation from experience, but about jackets, not bags (acknowledged in scope_limits)."},
+   {"evidence_id": "E-0415", "located_span": "coming up on 4.5 years old. They use microfiber vegan leather. So easy to clean! It’s my rain bag because I don’t have to worry about it. No cracking, peeling or flaking.", "supports": true, "note": "Single long-term owner report of a microfiber vegan bag with no cracking or peeling; the text says about 4.5 years, the claim rounds to about four."},
+   {"evidence_id": "E-0419", "located_span": "All vegan leather will eventually crack and peel.", "supports": true, "note": "Direct statement of the belief."},
+   {"evidence_id": "E-0420", "located_span": "Since they're made out of PU I'm wondering if the material ever starts peeling, especially since a work bag would be something for daily use.", "supports": true, "note": "Worry or question rather than a firm expectation; it also cites reviews of Beis peeling. Weak support."},
+   {"evidence_id": "E-0430", "located_span": "the Beis complaints about peeling is going to happen to any", "supports": true, "note": "Expects any vegan leather bag to peel."},
+   {"evidence_id": "E-0431", "located_span": "Anything which is just PU leather will start peeling with daily use.", "supports": true, "note": "Direct statement that PU peels with daily use."}
+  ],
+  "scope_issue": "The text says about 4.5 years where the claim says about four. The claim leaves out two other positive owner reports in the contradicting set (Poppy and Peonies, Matt and Nat), so 'one owner' understates the counter-evidence. Nothing in the sources is about the Lévant material.",
+  "open_contradiction": false,
+  "auditor": "independent auditor packet 5",
+  "reasoning": "Several commenters across three threads say PU or vegan leather will peel or fail to hold up, and E-0415 is an owner report of a microfiber bag with no cracking after about 4.5 years. The claim describes beliefs, so the positive owner reports in the contradicting set do not falsify it, although they show the single counterexample is not the only one. One supporting source is about jackets and one is a question rather than an expectation, but the pattern of beliefs is still adequately supported."
+ },
+ {
+  "claim_id": "C-0027",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0408", "located_span": "I bought a vegan leather bomber only because I was able to Get it for super cheap on sale. I would never pay full price or over $70 for vegan leather. All my faux leather jackets start flaking and peeling after a few years.", "supports": true, "note": "Purchase motive (cheap on sale) is stated outright. The commenter's peeling experience is stated, but the text does not say the bomber purchase came after it; the sequence is inferred."},
+   {"evidence_id": "E-0421", "located_span": "Freja Paloma (too pricey for vegan leather", "supports": true, "note": "Shopper excluded the Freja Paloma as too pricey for vegan leather; peeling is not given as the reason, consistent with the claim."}
+  ],
+  "scope_issue": "The phrase 'after vegan leather had peeled for them' infers a sequence the text does not state outright; the text gives general past peeling of faux leather jackets alongside the cheap-only purchase.",
+  "open_contradiction": false,
+  "auditor": "independent auditor packet 5",
+  "reasoning": "Both individual decisions are stated in the sources: one person bought a vegan leather bomber only because it was cheap on sale, and their faux leather jackets have peeled; another excluded a tote as too pricey for vegan leather. The timing link between the peeling and the purchase is a mild inference, not a stated sequence. E-0417 (someone who bought a Harlow) does not contradict either individual account."
+ },
+ {
+  "claim_id": "C-0028",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0012", "located_span": "Within 2 years the zipper completely failed and would split everytime", "supports": true, "note": "Siena II zipper failure within 2 years."},
+   {"evidence_id": "E-0031", "located_span": "Just about two years to the day and the fabric is splitting and the zippers don’t work anymore.", "supports": true, "note": "Fabric and zipper failure at about two years."},
+   {"evidence_id": "E-0032", "located_span": "zipper doesn't work in like less than 1-yr.", "supports": true, "note": "Zipper failure in under a year; the product is not named, but the comment is in a Nordace backpack thread."},
+   {"evidence_id": "E-0078", "located_span": "I received my Nordace backpack less than a month ago and the zipper already broke and the bag tore.", "supports": true, "note": "Sets the lower bound: under a month."},
+   {"evidence_id": "E-0085", "located_span": "about 2-3 months into wearing and using on a daily basis, one of the leather straps broke", "supports": true, "note": "Strap failure at 2-3 months; the thread is about the Siena backpack."},
+   {"evidence_id": "E-0090", "located_span": "Charging port ripped off within a few months, very poor quality. Zips are all of poor quality, the main zip is starting to ripple and I'm worried that it will fail soon. Exterior fabric seems weak and has threads pulling around the bag.", "supports": true, "note": "Partial: charging port failure and fabric wear, but the zip has not failed yet. The Henge is not explicitly called a backpack in the text."},
+   {"evidence_id": "E-0101", "located_span": "The main zipper is now broke which makes the backpack literally unusable.", "supports": true, "note": "Zipper failure on a Siena bought in 2021; no exact timing given."},
+   {"evidence_id": "E-0103", "located_span": "la fermeture à cassé jusque après les deux ans de garantie", "supports": true, "note": "Zipper broke just after the two-year warranty, which supports the upper bound of a little over two years."}
+  ],
+  "scope_issue": "The sources are self-selected complaint threads; several owners in the same threads report 5-7 years of use without major failure, which the claim does not mention but does not deny. The sources are about backpacks, not the Lévant tote.",
+  "open_contradiction": false,
+  "auditor": "independent auditor packet 5",
+  "reasoning": "Failure reports come from three distinct threads and cover zippers, straps and fabric. The stated timings run from under a month (E-0078) to just after two years (E-0103), which matches the claim's range. The contradicting long-life reports show failures are not universal, but the claim only says these owners report failures, so they do not contradict it."
+ },
+ {
+  "claim_id": "C-0029",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0019", "located_span": "the tone of this comment convinced my partner not to buy your product.", "supports": true, "note": "Reply-driven and second-hand (partner); thread 18nj9sk."},
+   {"evidence_id": "E-0020", "located_span": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass.", "supports": true, "note": "Reply-driven stated intention; thread 18nj9sk."},
+   {"evidence_id": "E-0026", "located_span": "I can't in good conscience pick one up after reading this comment. I'll be exploring other options.", "supports": true, "note": "Reply-driven; an existing owner dropping a planned repurchase. Thread 18nj9sk."},
+   {"evidence_id": "E-0041", "located_span": "Thank goodness i found this was about to buy one just because of the aesthetics", "supports": true, "note": "Review-driven; the intention not to buy is implied, not stated."},
+   {"evidence_id": "E-0050", "located_span": "Confirmed my suspicions that it should be possible to get something better.", "supports": true, "note": "Review-driven; the decision not to buy is implied."},
+   {"evidence_id": "E-0060", "located_span": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me.", "supports": true, "note": "Reply-driven (the parent is the brand's reply); hesitation is implied rather than a firm no. Thread bqe83z."},
+   {"evidence_id": "E-0062", "located_span": "I was going to buy a set but I'm not now!", "supports": true, "note": "Reply-driven; thread bqe83z."},
+   {"evidence_id": "E-0071", "located_span": "after reading so many negative reviews I have decided against buying this bag", "supports": true, "note": "Review-driven stated decision."},
+   {"evidence_id": "E-0094", "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.", "supports": true, "note": "Review-driven; the commenter is looking for alternatives, i.e. holding off."}
+  ],
+  "scope_issue": "Some intentions are implied rather than stated (E-0041, E-0050, E-0060, E-0094), and E-0019 is second-hand; the claim's caveat covers this. None are verified non-purchases.",
+  "open_contradiction": false,
+  "auditor": "independent auditor packet 5",
+  "reasoning": "Nine comments tie a decision not to buy, or to hold off, to negative reviews or to the brand's Reddit replies. The reply-driven ones (E-0019, E-0020, E-0026, E-0060, E-0062) are indeed in two threads, 18nj9sk and bqe83z. The claim correctly frames these as stated intentions. The contradicting repeat-buyer reports describe other people and do not negate these accounts."
+ },
+ {
+  "claim_id": "C-0030",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {"evidence_id": "E-0036", "located_span": "they responded that either give me 30% money back or I pay for the return cost.", "supports": true, "note": "Partial refund offered as the alternative to a return at the buyer's cost. However, the same post says 'The return address is a port in Commerce, CA.', not Hong Kong; 'HONG KONG SELLER' describes the seller, not the return destination."},
+   {"evidence_id": "E-0074", "located_span": "the address you have to ship it back to is in Hong Kong. I wanted to return a backpack and a couple of other items and it would have cost me almost as much as the backpack itself. They offered a 30% refund to me but only gave me 21%.", "supports": true, "note": "Hong Kong return at high buyer cost, and a partial refund offered. Fully matches the claim."}
+  ],
+  "scope_issue": "The 'return to Hong Kong' detail holds for only one of the two buyers; the other was told to return to Commerce, CA. Neither source explicitly says a free return was refused, though E-0036 implies it.",
+  "open_contradiction": false,
+  "auditor": "independent auditor packet 5",
+  "reasoning": "Both buyers describe being offered a partial (30%) refund rather than a return at Nordace's expense. Only E-0074 says the return address was in Hong Kong; E-0036 gives a California address, so 'two buyers ... return to Hong Kong' overstates the evidence. E-0092 concerns a free warranty replacement, a different situation, and does not contradict these accounts."
+ },
+ {
+  "claim_id": "C-0031",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {"evidence_id": "E-0002", "located_span": "the timer at the top of their page counting down the sale had reset, and they had everything on sale.", "supports": true, "note": "The reset countdown is explicitly tied to lost trust ('led to a profound sense of betrayal and significantly undermined my trust'). The post also describes an urgency email after the item was left in the cart."},
+   {"evidence_id": "E-0040", "located_span": "I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere)", "supports": true, "note": "Heavy retargeting stated directly as the cause of suspicion."},
+   {"evidence_id": "E-0050", "located_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious.", "supports": false, "note": "Suspicion arose after seeing an ad, but the commenter does not cite heavy retargeting or ad volume as the reason."},
+   {"evidence_id": "E-0093", "located_span": "Also sick of seeing your ads", "supports": false, "note": "Annoyance at ad frequency, not suspicion of the brand."}
+  ],
+  "scope_issue": "Only two commenters clearly cite these reasons for suspicion (E-0002 countdown reset, E-0040 retargeting); 'a few' stretches the evidence, since E-0050 does not cite retargeting and E-0093 expresses annoyance, not suspicion.",
+  "open_contradiction": false,
+  "auditor": "independent auditor packet 5",
+  "reasoning": "E-0002 and E-0040 directly support the claim: a sale timer that reset undermined one buyer's trust, and aggressive ad tailing made another suspicious. E-0050 is suspicion after an ad without reference to retargeting, and E-0093 is irritation rather than suspicion, so the count behind 'a few' is thin. E-0083 is a satisfied buyer and does not contradict these individual accounts."
+ }
+]

@@ -1,0 +1,290 @@
+[
+ {
+  "claim_id": "C-0020",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0121",
+    "located_span": "Years ago before I carried a laptop everyday I used a leather bag for work and court. just too heavy with lap top.",
+    "supports": true,
+    "note": "Work bag said to be too heavy with a laptop; shoulders mentioned only as a requirement concern, no pain described."
+   },
+   {
+    "evidence_id": "E-0157",
+    "located_span": "I switched to an Aer backpack to save my back since I carry a laptop",
+    "supports": true,
+    "note": "Implies a tote with a laptop strains the back; no explicit pain described."
+   },
+   {
+    "evidence_id": "E-0191",
+    "located_span": "it hurts my shoulders to carry a laptop, notebook, and water bottle in there for a day, so I rarely use it",
+    "supports": true,
+    "note": "Tote with laptop causes shoulder pain."
+   },
+   {
+    "evidence_id": "E-0227",
+    "located_span": "I really messed up my right shoulder by using a shoulder bag to carry my laptop and other work stuffs daily",
+    "supports": true,
+    "note": "Shoulder bag with laptop led to shoulder injury."
+   },
+   {
+    "evidence_id": "E-0288",
+    "located_span": "I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders.",
+    "supports": true,
+    "note": "Tote (Longchamp Le Pliage) with laptop hurting shoulders."
+   },
+   {
+    "evidence_id": "E-0348",
+    "located_span": "sometimes get annoyed because my shoulder hurts almost immediately because of my tote bag.",
+    "supports": true,
+    "note": "Work tote with laptop, notebook, lunch, chargers causes shoulder pain."
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Six comments from six different threads describe a work tote or shoulder bag carrying a laptop as too heavy, and four (E-0191, E-0227, E-0288, E-0348) describe shoulder pain. The contradicting items show one person using a tote after a backpack injury and one blaming contents, which do not negate the stated pattern. The claim is limited to what commenters say and does not claim prevalence.",
+  "auditor": "independent auditor packet 4"
+ },
+ {
+  "claim_id": "C-0021",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0157",
+    "located_span": "I switched to an Aer backpack to save my back since I carry a laptop",
+    "supports": true,
+    "note": "Explicit reason (back) for switching, laptop involved."
+   },
+   {
+    "evidence_id": "E-0227",
+    "located_span": "I really messed up my right shoulder by using a shoulder bag to carry my laptop and other work stuffs daily… now I use a backpack and I’m super happy with it!",
+    "supports": true,
+    "note": "Shoulder injury from laptop-laden work shoulder bag, then backpack; causal link strongly implied."
+   },
+   {
+    "evidence_id": "E-0229",
+    "located_span": "I switched in my 20s after having severe shoulder pain that carrying a handbag was exacerbating.",
+    "supports": true,
+    "note": "Switch to backpack (per parent context) driven by shoulder pain; but a handbag, not stated to be a heavy work bag or tote, and pain was pre-existing."
+   },
+   {
+    "evidence_id": "E-0275",
+    "located_span": "I commute from NJ to NYC everyday and walking around in the heat with a tote bag is killing my shoulder and back.",
+    "supports": true,
+    "note": "Work tote causing shoulder/back strain, followed by buying a padded Jansport; no laptop mentioned."
+   },
+   {
+    "evidence_id": "E-0368",
+    "located_span": "I switched to a backpack to save my back/shoulder.",
+    "supports": true,
+    "note": "Explicit reason; tote mentioned; laptop not stated by this commenter."
+   },
+   {
+    "evidence_id": "E-0376",
+    "located_span": "I moved into a Tumi backpack and my shoulders and back have never been happier.",
+    "supports": true,
+    "note": "Reason implied by reply context (shoulder pain from tote, similar items incl. laptop); not stated as the explicit reason."
+   },
+   {
+    "evidence_id": "E-0384",
+    "located_span": "giving up my Seau Sangle and never felt better.",
+    "supports": true,
+    "note": "Replying to a question about switching after shoulder pain from large totes; backpack adopted, no longer in pain. Laptop not mentioned."
+   }
+  ],
+  "scope_issue": "E-0229 concerns a handbag, not a heavy work bag or tote; E-0376 states the outcome rather than the reason. Laptop is explicit only in E-0157 and E-0227 (E-0376 by reference to 'similar items').",
+  "open_contradiction": false,
+  "reasoning": "Multiple commenters state that shoulder or back strain from a tote, shoulder bag or handbag led them to switch to a backpack, and at least two involve a laptop. The claim is hedged ('some people', 'a reason'), which fits the evidence. The contradicting items (backpack hurting someone's neck, a tote used after a backpack injury) show the switch does not work for everyone but do not contradict that some people give this reason.",
+  "auditor": "independent auditor packet 4"
+ },
+ {
+  "claim_id": "C-0022",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0157",
+    "located_span": "but if I didn’t have to I’d go tote all the way.",
+    "supports": true,
+    "note": "Supports the 'would still choose a tote' clause; does not describe the backpack as less attractive."
+   },
+   {
+    "evidence_id": "E-0255",
+    "located_span": "I understand that a backpack is less aesthetic, but not everything has to be aesthetic",
+    "supports": true,
+    "note": "Less aesthetic, accepts trade; but switched from a heavy handbag, not stated to be a tote."
+   },
+   {
+    "evidence_id": "E-0277",
+    "located_span": "I’ll admit it’s a bit silly with my blouse and pants. and makes me look like a middle schooler again.",
+    "supports": true,
+    "note": "Clear tote-to-backpack switcher describing juvenile look and accepting it."
+   },
+   {
+    "evidence_id": "E-0290",
+    "located_span": "I just succumbed to a really ugly backpack that carries weight well.",
+    "supports": true,
+    "note": "Less attractive, trade accepted; text does not say she switched from a tote."
+   },
+   {
+    "evidence_id": "E-0351",
+    "located_span": "I’ve had to make peace with using a low profile, polished looking backpack",
+    "supports": false,
+    "note": "Reluctant acceptance, but she calls the backpack polished-looking rather than less attractive, and a prior tote is not stated."
+   },
+   {
+    "evidence_id": "E-0384",
+    "located_span": "I didn’t get a stylish backpack but it doesn’t matter cos I am no longer in pain!",
+    "supports": true,
+    "note": "Less stylish, trade accepted; the given-up bag is named but the comment itself does not say tote (parent refers to totes)."
+   }
+  ],
+  "scope_issue": "The claim says switchers came 'from a tote'; only E-0277 (and E-0157, which makes no looks comment) clearly switched from a tote. E-0255 switched from a handbag, E-0290 and E-0351 do not state their prior bag, and E-0351 calls her backpack polished. Contradicting E-0225 shows a long-time switcher who describes her backpack positively.",
+  "open_contradiction": false,
+  "reasoning": "The general trade-off pattern (backpack seen as less attractive or juvenile, accepted for comfort; one person who would prefer a tote) is supported by several comments. However, the specific framing that these are people who switched from a tote is only clearly shown for one or two sources, and one cited item does not describe the backpack as unattractive. E-0225 is a counter-example but not a contradiction of a 'several people' claim.",
+  "auditor": "independent auditor packet 4"
+ },
+ {
+  "claim_id": "C-0023",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0124",
+    "located_span": "I have a smallish MZ Wallace that I use when I don’t need to carry a lot",
+    "supports": true,
+    "note": "Smaller bag on light days plus 'I usually use a separate smallish handbag.' Main bag is a Tumi, not stated to be a backpack."
+   },
+   {
+    "evidence_id": "E-0152",
+    "located_span": "Most days, it’s a fjallraven kanken backpack. If I don’t need to carry as much, a small purse and/or lunch bag.",
+    "supports": true,
+    "note": "Exactly backpack on heavy days, small bag on light days."
+   },
+   {
+    "evidence_id": "E-0161",
+    "located_span": "If I’m just going to a coffee shop or something I may just put my laptop in a tote bag since I have less to carry.",
+    "supports": true,
+    "note": "Backpack normally, tote when carrying less."
+   },
+   {
+    "evidence_id": "E-0189",
+    "located_span": "Big enough to hold most of my personal stuff, and I carry it to work along with a laptop bag",
+    "supports": true,
+    "note": "Two bags carried together."
+   },
+   {
+    "evidence_id": "E-0301",
+    "located_span": "When I'm carrying a heavier load I carry a monos metro",
+    "supports": true,
+    "note": "Load-based switching between bags; bag types not stated in the text, so only loosely matches the backpack/small-bag description."
+   },
+   {
+    "evidence_id": "E-0322",
+    "located_span": "I separately carry my Uniqlo dumpling bag for things I need easy access to (phone, keys, sunglasses, lipbalm etc)",
+    "supports": true,
+    "note": "Backpack plus a second small bag, for access."
+   },
+   {
+    "evidence_id": "E-0358",
+    "located_span": "the fact that the weight is distributed between two bags and not one bag digging into your shoulder at the same spot makes a huge difference for me",
+    "supports": true,
+    "note": "Two bags carried together for load."
+   },
+   {
+    "evidence_id": "E-0391",
+    "located_span": "recently I started to notice a lot of people carry more than one bag for work if that’s an option or would help (e.g. laptop + essentials in one / gym clothes + makeup bag in another)",
+    "supports": true,
+    "note": "Observation of others carrying two bags; secondhand."
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Several commenters across multiple threads describe either rotating between a backpack and a smaller bag by load or carrying two bags at once, for weight, access or convenience. The claim makes no frequency statement and acknowledges differing motives. The listed contradicting item (E-0174, backpack plus purse to avoid transferring items) actually fits the convenience motive rather than contradicting it.",
+  "auditor": "independent auditor packet 4"
+ },
+ {
+  "claim_id": "C-0024",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0105",
+    "located_span": "Cuyana forma. The fact that it can transform and expand when I need it is a huge plus. However, it's entirely too heavy. (3.6 lbs empty)",
+    "supports": true,
+    "note": "Checks empty weight and rejects the bag for it."
+   },
+   {
+    "evidence_id": "E-0147",
+    "located_span": "I find the bag itself before filled is already so heavy and then to add all my stuff makes it worse",
+    "supports": true,
+    "note": "Leather tote heavy when empty; moved to lighter options."
+   },
+   {
+    "evidence_id": "E-0293",
+    "located_span": "unfortunately underestimated how heavy leather can be",
+    "supports": true,
+    "note": "Regret over a leather backpack's own weight; empty weight not explicitly stated."
+   },
+   {
+    "evidence_id": "E-0357",
+    "located_span": "First things first, is your bag heavy on its own when it’s empty? If that’s the case, you gotta get a new bag.",
+    "supports": true,
+    "note": "Advises checking empty weight; also says the Cuyana tote is heavy and she is looking for a lighter one."
+   },
+   {
+    "evidence_id": "E-0373",
+    "located_span": "Tumi backpacks are so structured that: (1) it’s too heavy even when empty",
+    "supports": true,
+    "note": "Structured backpack regretted for empty weight; it sits in her closet."
+   },
+   {
+    "evidence_id": "E-0394",
+    "located_span": "The Beis is already 2.75 pounds before you put anything in it.",
+    "supports": true,
+    "note": "Checks empty weight; mild ('not terrible but not great')."
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Several comments explicitly check or cite empty weight and reject or regret bags heavy before filling, including leather totes, a leather backpack and a structured Tumi backpack. The scope note already concedes that others blame the contents, which is what the contradicting items (E-0378, E-0399) say; that is a competing view, not a contradiction of 'some' and 'several'.",
+  "auditor": "independent auditor packet 4"
+ },
+ {
+  "claim_id": "C-0025",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0280",
+    "located_span": "In order to prevent looking like a school student, I chose to use a tactical backpack.",
+    "supports": true,
+    "note": "Avoids school-bag look (still chose a backpack)."
+   },
+   {
+    "evidence_id": "E-0345",
+    "located_span": "I really don't like how the longchamps look 😣 It reminds me of a cheap nylon bag I got as a kid.",
+    "supports": true,
+    "note": "Rejects Longchamp look as cheap."
+   },
+   {
+    "evidence_id": "E-0347",
+    "located_span": "I tried the Longchamp but I just never liked the look, and it just lacked structure.",
+    "supports": true,
+    "note": "Rejects Longchamp for look and lack of structure."
+   },
+   {
+    "evidence_id": "E-0361",
+    "located_span": "I also don’t want to look like I’m on my way to home room.",
+    "supports": true,
+    "note": "Does not want a school-bag look."
+   },
+   {
+    "evidence_id": "E-0369",
+    "located_span": "I, too, hate the look of backpacks but this has been a lifesaver when I have to carry loads without looking like I’m off for a trek",
+    "supports": true,
+    "note": "Avoids hiking-gear look."
+   }
+  ],
+  "scope_issue": "'Longchamp-style nylon totes' generalizes slightly; the sources only name Longchamp itself (two commenters).",
+  "open_contradiction": false,
+  "reasoning": "Three commenters in work/laptop-bag threads express not wanting a school-bag or trekking look, and two reject the Longchamp for looking cheap or lacking structure. The contradicting items (a Fjallraven bookbag accepted as trendy, Longchamp used daily for its lightness) show opposing preferences but do not contradict that some people hold these views.",
+  "auditor": "independent auditor packet 4"
+ }
+]
