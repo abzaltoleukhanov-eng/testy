@@ -1,0 +1,144 @@
+[
+ {
+  "case_id": "G31",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "G31:G31-A:0",
+    "located_span": "Aster Mira Tote Grande features: hidden back pocket, laptop compartment, luggage strap.",
+    "supports": true,
+    "note": "Official product page lists a hidden back pocket for the Aster Mira Tote Grande; claim uses a shortened name for the same model.",
+    "product_match": "EXACT_SKU",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "speaker_attribution": "brand/seller",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The source is an official product page (platform OfficialPDP) whose feature list explicitly includes a hidden back pocket for the Aster Mira Tote Grande. The claim only says the manufacturer lists the feature, which matches the text exactly. The product name in the claim omits 'Tote' but plainly refers to the same model."
+ },
+ {
+  "case_id": "G32",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "G32:G32-A:0",
+    "located_span": "I used to carry a large tote, but I now prefer a smaller crossbody even if it means leaving items behind.",
+    "supports": true,
+    "note": "One commenter prefers a smaller crossbody over a large tote, accepting that it means carrying less. The text says nothing about an organized tote or about pockets.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "SWITCHED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "everyday carry"
+   }
+  ],
+  "scope_issue": "The claim says 'a subset of commenters' (plural, a pattern) but the evidence is one comment from one author. 'Even when an organized tote has more pockets' is not stated: the source says 'large tote' and 'leaving items behind', not organization or pocket count.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The source shows one person who switched from a large tote to a smaller crossbody and accepts carrying fewer items. That backs the general idea of preferring a small bag, but not a subset of commenters, and not the trade-off against an organized tote with more pockets. One comment is being presented as a group pattern."
+ },
+ {
+  "case_id": "G33",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G33:G33-A:0",
+    "located_span": "I was disappointed with the handles.",
+    "supports": false,
+    "note": "A complaint about handles exists, but the text gives no age, country, verified-purchase status or product name. The screenshot does not show an age (screenshot_visible_age false). The tie to the tote comes only from metadata.",
+    "product_match": "UNKNOWN",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "'Verified', '48-year-old' and 'UK' do not appear anywhere in the source. The platform is Reddit, not a verified-purchase review. The excerpt does not name the tote, and the context is excerpt-only, from a partial user-provided screenshot.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The only support is a bare complaint about handles. The claim's identifying details (verified shopper, age 48, UK) are invented, and the excerpt does not say which product the handles belong to. A partial excerpt cannot support a claim whose main content is those personal details."
+ },
+ {
+  "case_id": "G34",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G34:G34-A:0",
+    "located_span": "Does anyone know whether a 16-inch laptop fits?",
+    "supports": false,
+    "note": "This is a question from a prospective buyer about whether a laptop fits, prompted by an unclear spec page. It is not an owner reporting that the pocket is too tight.",
+    "product_match": "EXACT_SKU",
+    "person_action": "CONSIDERED",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "laptop carry"
+  }
+  ],
+  "scope_issue": "The claim says owners report a tight pocket. The source is one non-owner asking a question, with no report of fit or tightness.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The author (buyer_candidate) asks whether a 16-inch laptop fits and says the spec page is unclear. Nobody reports owning the bag or finding the pocket too tight. Turning a pre-purchase question into a reported owner complaint misstates the evidence."
+ },
+ {
+  "case_id": "G35",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G35:G35-A:0",
+    "located_span": "I love the stitching.",
+    "supports": true,
+    "note": "One owner (owner_1) expresses a positive opinion of the stitching. It is a single, original review.",
+    "product_match": "EXACT_SKU",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   },
+   {
+    "evidence_id": "G35:G35-B:1",
+    "located_span": "I love the stitching.",
+    "supports": false,
+    "note": "This is the same author (owner_1) and the same text, reposted from G35-A (reposted_from G35-A). It is not an independent review.",
+    "product_match": "EXACT_SKU",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "The claim says five independent reviews. The evidence is one review by one author plus a repost of it, so there is only one independent voice. 'Confirm the stitching is excellent' also overstates a personal 'I love'.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "Both evidence items come from the same author_key, and G35-B is marked as a repost of G35-A, so they add up to one independent opinion, not five. A pattern claim built on one person's duplicated comment is not supported. The single positive comment cannot stand in for five independent confirmations."
+ },
+ {
+  "case_id": "G36",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G36:G36-A:0",
+    "located_span": "Special price $149 during July 2024 US promotion.",
+    "supports": false,
+    "note": "This was a temporary US promotional price from July 2024, and the metadata marks the offer as expired. It says nothing about the current price or the UK.",
+    "product_match": "EXACT_SKU",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "The claim says 'now' and 'in the UK'. The source is a July 2024 US promotional price in USD that has since expired (offer_expired true, market_grounding US). It is wrong on time, market and price type.",
+  "open_contradiction": false,
+  "speaker_attribution": "brand/seller",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The source gives $149 only as a special US promotional price during July 2024, and that offer has expired. It gives no current price and no UK price. Because it marks $149 as a past promotion, it argues against $149 being the regular price today rather than for it."
+ }
+]

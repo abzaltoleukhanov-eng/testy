@@ -1,0 +1,164 @@
+[
+ {
+  "case_id": "G07",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "G07:G07-A:0",
+    "located_span": "It fit under the seat on my flight from London to Edinburgh.",
+    "supports": true,
+    "note": "One first-hand report of the tote fitting under the seat on a single domestic UK flight. No airline is named, and nothing is said about any other airline or seat size.",
+    "product_match": "EXACT_SKU",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "air travel, under-seat stowage, London-Edinburgh flight"
+   }
+  ],
+  "scope_issue": "The claim says 'every airline', but the source covers one flight on one unnamed airline on one UK route. The product match (Aster Mira Tote Grande) comes from source metadata, not from the comment text.",
+  "open_contradiction": false,
+  "reasoning": "The source shows the tote fit under a seat once, for one user on one flight. The claim turns that into a rule for every airline, which a single observation cannot support. So only the narrow part of the claim (it has fit under a seat at least once) holds.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, plus source metadata for product model and market",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "G08",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G08:G08-A:0",
+    "located_span": "Too big for me.",
+    "supports": true,
+    "note": "One user's personal complaint that the tote is too big. It is the opening comment of the thread.",
+    "product_match": "EXACT_SKU",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   },
+   {
+    "evidence_id": "G08:G08-B:1",
+    "located_span": "Agreed, too big.",
+    "supports": true,
+    "note": "A reply to G08-A in the same thread that agrees with it. It is not an independent finding.",
+    "product_match": "EXACT_SKU",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   },
+   {
+    "evidence_id": "G08:G08-C:2",
+    "located_span": "Same.",
+    "supports": false,
+    "note": "A one-word reply to G08-A. It reads as agreement only through the parent comment and says nothing about size by itself.",
+    "product_match": "EXACT_SKU",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "All three items come from one Reddit thread, and two are replies agreeing with the first comment. That is not independent consumer research, and it does not prove the complaint is widespread. The product match comes only from metadata.",
+  "open_contradiction": false,
+  "reasoning": "One thread contains a single size complaint plus two agreeing replies, one of which is just 'Same.' One thread is being presented as a pattern, and 'independent research proves widespread' overstates it badly. At most, this shows one size complaint that a couple of people echoed.",
+  "speaker_attribution": "author first-hand (alpha), plus two repliers agreeing (beta, gamma)",
+  "context_used": "whole thread (parent comment needed to read the replies)",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "G09",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G09:G09-A:0",
+    "located_span": "I returned my Aster Grande when the zipper broke.",
+    "supports": true,
+    "note": "First-hand report by travel_alex on Reddit that they returned the bag after the zipper broke.",
+    "product_match": "EXACT_SKU",
+    "person_action": "RETURNED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "zipper failure"
+   },
+   {
+    "evidence_id": "G09:G09-B:1",
+    "located_span": "I returned my Aster Grande when the zipper broke.",
+    "supports": false,
+    "note": "Word-for-word the same text, with the same author_key (travel_alex), posted on TravelForum. This looks like a cross-post by the same person, not a second customer.",
+    "product_match": "EXACT_SKU",
+    "person_action": "RETURNED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "zipper failure"
+   }
+  ],
+  "scope_issue": "The claim says 'two independent customers', but both sources have the same author handle and identical wording, which points to one customer counted twice. 'Aster Grande' in the text is matched to Aster Mira Tote Grande through metadata.",
+  "open_contradiction": false,
+  "reasoning": "The sources support that one person returned an Aster Grande after the zipper broke. The second item looks like the same person posting the same sentence on another platform. Counting it as a second independent customer is not supported, and the metadata points the other way.",
+  "speaker_attribution": "author first-hand (one author, travel_alex, on two platforms)",
+  "context_used": "comment only plus source metadata (author_key, platform, thread_id)",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "G10",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G10:G10-A:0",
+    "located_span": "Brand sent me this tote for free; using it around the house feels comfortable.",
+    "supports": false,
+    "note": "One creator who got the tote free from the brand (marked SPONSORED_PRODUCT) says it feels comfortable when used around the house. It is not independent, not verified, not from several users, and it says 'comfortable', not 'exceptional'.",
+    "product_match": "EXACT_SKU",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "around the house"
+   }
+  ],
+  "scope_issue": "The claim says 'independent users' (plural), 'verified' and 'exceptional'. The source is one sponsored creator, an unverified impression, limited to home use, and the word used is only 'comfortable'.",
+  "open_contradiction": false,
+  "reasoning": "The only source is a sponsored post from someone who got the product free, so it is not independent. It is one person's casual impression from home use, and it does not describe 'exceptional' comfort or any verification. Every key word in the claim goes beyond the source.",
+  "speaker_attribution": "author first-hand (sponsored creator, brand-gifted product)",
+  "context_used": "comment only plus source metadata (commercial_disclosure)",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "G11",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G11:G11-A:0",
+    "located_span": "Water-resistant outer fabric.",
+    "supports": false,
+    "note": "The brand's product page says the outer fabric is water-resistant. That is weaker than waterproof and covers only the outer fabric, not the whole tote (seams, zips, opening).",
+    "product_match": "EXACT_SKU",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "'Completely waterproof' goes beyond 'water-resistant outer fabric', both in degree (resistant vs proof) and in coverage (outer fabric vs the whole tote). The source is also the brand's own page, not an independent test.",
+  "open_contradiction": false,
+  "reasoning": "The brand claims only water resistance for the outer fabric. That does not establish that the tote is waterproof, let alone completely waterproof. The claim inflates a narrower marketing statement.",
+  "speaker_attribution": "brand/seller",
+  "context_used": "source text plus source metadata (platform BrandPDP)",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "G12",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G12:G12-A:0",
+    "located_span": "Includes a zippered toiletry pouch.",
+    "supports": false,
+    "note": "The brand's product page only says a zippered toiletry pouch is included. It says nothing about leaks or leak-proofing. The source product is the Aster Traveler Set, and the claim does not say which product it means.",
+    "product_match": "UNKNOWN",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "The claim says the pouch 'prevents all leaks', but the source only says a pouch is included. The source product (Aster Traveler Set) may not be the product the claim means.",
+  "open_contradiction": false,
+  "reasoning": "The source confirms only that a zippered toiletry pouch is included. It makes no claim about leak protection, and certainly not about preventing all leaks. The performance claim has no support in the text.",
+  "speaker_attribution": "brand/seller",
+  "context_used": "source text plus source metadata (platform BrandPDP, product_model)",
+  "original_or_translation": "ORIGINAL"
+ }
+]

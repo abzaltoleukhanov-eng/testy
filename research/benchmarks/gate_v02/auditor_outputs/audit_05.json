@@ -1,0 +1,133 @@
+[
+  {
+    "case_id": "G25",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "G25:G25-A:0",
+        "located_span": "After carrying my large tote to work for a month, I switched to a backpack because my shoulder kept hurting.",
+        "supports": true,
+        "note": "First-hand account: carried a large tote to work, shoulder kept hurting, switched to a backpack. The stated reason (shoulder pain) and the commuting context (carrying to work) both appear in the text.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "SWITCHED",
+        "evidence_kind": "DECISION",
+        "usage_situation": "commuting to work"
+      }
+    ],
+    "scope_issue": "Minor: 'shoulder strain affected commuting' paraphrases 'my shoulder kept hurting' while carrying the tote to work; the text does not say the commute itself was impaired. Single user, category-level tote, not a specific product.",
+    "open_contradiction": false,
+    "reasoning": "The author reports first-hand that after a month of carrying a large tote to work they switched to a backpack because of shoulder pain. The claim is scoped to one user and matches the stated switch and its reason. The wording 'affected commuting' is a light paraphrase of pain from carrying the tote to work, which is acceptable.",
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only (full thread captured, single text provided)",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "G26",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [],
+    "scope_issue": "No sources or evidence are provided. Nothing about reverse-packing routines, curiosity, or cold Meta audiences is grounded in any text.",
+    "open_contradiction": false,
+    "reasoning": "The claim is correctly labelled as a hypothesis, but no source text is supplied, so nothing supports it. It may be kept as an untested hypothesis to validate with ad tests, but it cannot be counted as evidenced.",
+    "speaker_attribution": "unknown",
+    "context_used": "none (no sources provided)",
+    "original_or_translation": "UNKNOWN"
+  },
+  {
+    "case_id": "G27",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "G27:G27-A:0",
+        "located_span": "旅行後もバッグの中身を出さない。",
+        "supports": false,
+        "note": "The cited English span 'I never unpack this bag' does not appear in the source. The source is written in Japanese (lang: ja) and roughly means 'Even after a trip, I don't take the contents out of the bag.' The English quote is a translation and paraphrase, not literal words.",
+        "product_match": "UNKNOWN",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "after travel / keeping bag packed"
+      }
+    ],
+    "scope_issue": "The claim says the reviewer 'literally wrote in English', but the source is in Japanese, so the quote is a translation. The text also says nothing about the reviewer's nationality (only that the post is in Japanese on a Japanese blog), and the text itself names no product (the product only appears in the metadata).",
+    "open_contradiction": false,
+    "reasoning": "The source text is in Japanese, which contradicts the claim that the reviewer wrote these words in English. The meaning is close to the cited quote ('does not unpack the bag even after travel'), but 'never' and 'this bag' are translator additions. Calling the reviewer 'Japanese' is an inference from the language and platform, not something the text states.",
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only plus source metadata (lang, platform)",
+    "original_or_translation": "TRANSLATION"
+  },
+  {
+    "case_id": "G28",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "G28:G28-A:0",
+        "located_span": "Very comfortable when I carried my laptop.",
+        "supports": true,
+        "note": "One owner finds it comfortable with a laptop inside. 'Fully loaded' is not stated; a laptop is only one item.",
+        "product_match": "UNKNOWN",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "carrying a laptop"
+      },
+      {
+        "evidence_id": "G28:G28-B:1",
+        "located_span": "It hurt my shoulder badly when my laptop was inside.",
+        "supports": false,
+        "note": "A different owner reports bad shoulder pain with a laptop inside. This directly contradicts 'every owner finds it comfortable'.",
+        "product_match": "UNKNOWN",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "carrying a laptop"
+      }
+    ],
+    "scope_issue": "'Every owner' is a universal pattern drawn from two posts, one of which contradicts it. 'Fully loaded' goes beyond 'with a laptop'. Neither text names the product (only metadata does).",
+    "open_contradiction": true,
+    "reasoning": "One source reports comfort with a laptop inside and the other reports bad shoulder pain in the same situation. That directly contradicts a universal 'every owner' claim. Two posts also cannot establish a pattern, and neither describes a fully loaded bag.",
+    "speaker_attribution": "author first-hand (two different authors)",
+    "context_used": "comment only for each of two separate threads, plus source metadata",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "G29",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G29:G29-A:0",
+        "located_span": "My cousin says her tote has held up for a year.",
+        "supports": false,
+        "note": "Second-hand report: the author relays what a cousin says. The tote is unspecified (product_model UNKNOWN), and nobody tested anything; the cousin simply says it lasted a year.",
+        "product_match": "UNKNOWN",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "everyday use over a year"
+      }
+    ],
+    "scope_issue": "The claim says an owner 'personally tested' the 'exact SKU'. The text is hearsay from the author's cousin about an unidentified tote, with no testing described.",
+    "open_contradiction": false,
+    "reasoning": "The speaker is not the owner but someone reporting a relative's statement, so this is not first-hand. Neither the text nor the metadata identifies the product, so an exact-SKU claim is unfounded. 'Held up for a year' hints at durability, but it is not a personal test.",
+    "speaker_attribution": "a person the author reports (cousin)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "G30",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G30:G30-A:0",
+        "located_span": "A hidden rear pocket provides extra peace of mind.",
+        "supports": false,
+        "note": "This is brand product-page marketing copy describing a feature and a feeling ('peace of mind'). It gives no demonstration, test or evidence of preventing theft, let alone from all pickpockets.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "'Demonstrably prevents theft from all pickpockets' is an absolute performance claim. The source is the seller's own copy and only says a hidden pocket gives 'extra peace of mind'. The text does not name the product; only the metadata does.",
+    "open_contradiction": false,
+    "reasoning": "The only source is the brand's product page, which mentions a hidden rear pocket and peace of mind. It describes no demonstration and makes no theft-prevention claim, and certainly nothing universal. A seller's statement cannot serve as independent evidence of performance.",
+    "speaker_attribution": "brand/seller",
+    "context_used": "comment only plus source metadata (platform BrandPDP)",
+    "original_or_translation": "ORIGINAL"
+  }
+]

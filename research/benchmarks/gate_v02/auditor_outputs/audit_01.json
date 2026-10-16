@@ -1,0 +1,134 @@
+[
+ {
+  "case_id": "G01",
+  "verdict": "CONTRADICTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "G01:G01-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The cited span 'The handles snapped after two days' does not appear in the source. The source says: 'I returned the tote because the color was different from the picture.' It gives a different return reason (color mismatch).",
+    "product_match": "EXACT_SKU",
+    "person_action": "RETURNED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "The claim gives a return reason (handles snapped) that the source never states. The cited span is not in the source text.",
+  "open_contradiction": true,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The source confirms a return but says the reason was that the color differed from the picture. Nothing mentions handles or breakage, and the cited span is fabricated relative to the source. The stated causality directly conflicts with the claim's causality."
+ },
+ {
+  "case_id": "G02",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G02:G02-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The source text 'I use this bag on work trips and love how it looks.' exists verbatim, but it states no age, no gender, no preference over alternatives and no professional meetings. It is one user, not a pattern.",
+    "product_match": "EXACT_SKU",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "work trips"
+   }
+  ],
+  "scope_issue": "Age (40-50), gender (women), a comparative preference, 'professional meetings' (the source says work trips) and a PATTERN generalised from a single comment are all absent from the source.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "One unidentified user says they use the bag on work trips and like its look. The claim's demographic, its preference framing, its meeting context and its pattern status are all unsupported. A single comment cannot establish a segment-level pattern."
+ },
+ {
+  "case_id": "G03",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G03:G03-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The span 'The padded shoulder straps make this backpack comfortable.' exists but refers to a backpack (metadata: Aster Comino Backpack), not the Aster Mira Grande.",
+    "product_match": "SAME_BRAND_OTHER_PRODUCT",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "carrying / comfort"
+   }
+  ],
+  "scope_issue": "Evidence about a different product from the same brand (Aster Comino Backpack) is presented as a product fact about the Aster Mira Grande.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The source describes padded shoulder straps on a backpack, and the metadata identifies it as the Aster Comino Backpack. Nothing in the source mentions the Aster Mira Grande or its straps, so the product fact is unsupported."
+ },
+ {
+  "case_id": "G04",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G04:G04-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The span 'My Aster Mira Medio felt heavy when loaded.' exists but concerns the Medio size, not the Grande, and gives a subjective impression with no weight figure.",
+    "product_match": "SAME_PRODUCT_FAMILY",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "carrying a loaded bag"
+   }
+  ],
+  "scope_issue": "The source is about the Aster Mira Medio, not the Grande. The specific weight of 1.2 kg appears nowhere, and 'felt heavy when loaded' is not a reported bag weight.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The owner is of a different size variant (Medio) and reports only a subjective feeling of heaviness when loaded. The source states no numeric weight, so neither the product nor the 1.2 kg figure is supported."
+ },
+ {
+  "case_id": "G05",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G05:G05-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The span 'I bought the Aster Grande last week.' exists and confirms a purchase. The following sentence 'I also started a new office job.' is set beside the purchase without any causal link and says nothing about the tote looking professional.",
+    "product_match": "EXACT_SKU",
+    "person_action": "BOUGHT",
+    "evidence_kind": "DECISION",
+    "usage_situation": "new office job (context, not stated as use)"
+   }
+  ],
+  "scope_issue": "The purchase motive ('specifically because it looked professional') is not stated. The source lists a purchase and a new office job side by side with no causal connection and no mention of appearance.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only (both sentences); source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The source supports only that the author bought the bag. The claim's core element, the purchase driver, is inferred from the author mentioning an office job in the next sentence, and the source neither states nor implies that the bag looking professional was the reason."
+ },
+ {
+  "case_id": "G06",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G06:G06-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The span 'I might get this tote because it has so many pockets.' exists, but it expresses consideration ('might get'), not a completed purchase.",
+    "product_match": "EXACT_SKU",
+    "person_action": "CONSIDERED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "pre-purchase consideration"
+   }
+  ],
+  "scope_issue": "The claim turns an intention to consider buying ('might get') into a completed purchase. Pockets are a stated reason for considering the tote, not for buying it.",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The commenter says only that they might get the tote because of its pockets, so no purchase is reported. The pockets motive is real but tied to consideration, and claiming a purchase goes beyond the text."
+ }
+]

@@ -1,0 +1,123 @@
+[
+  {
+    "case_id": "G37",
+    "verdict": "CONTRADICTS",
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only (whole thread captured per source metadata; product from source metadata)",
+    "original_or_translation": "ORIGINAL",
+    "evidence_checks": [
+      {
+        "evidence_id": "G37:G37-A:0",
+        "located_span": "",
+        "supports": false,
+        "note": "The source does say the tote was returned, but it names the zipper breaking as 'the main issue'. The logo appears only as a minor dislike ('not my favorite'), not as the reason for the return. This is one author in one thread, not a pattern across customers.",
+        "product_match": "UNKNOWN",
+        "person_action": "RETURNED",
+        "evidence_kind": "DECISION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim says many customers ('Customers', 'totes') when the source is a single post. It also makes the logo the cause of the return, while the source says the main reason was the zipper breaking. A minor complaint is presented as the return driver.",
+    "open_contradiction": true,
+    "reasoning": "The only source is one person who returned a tote. They say the main issue was the zipper breaking and treat the logo as a secondary dislike. That directly counters the claim that the return was because of the logo, and one post cannot stand for 'customers' in general."
+  },
+  {
+    "case_id": "G38",
+    "verdict": "DOES_NOT_SUPPORT",
+    "speaker_attribution": "unknown (marketing blog author, general advice)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "evidence_checks": [
+      {
+        "evidence_id": "G38:G38-A:0",
+        "located_span": "",
+        "supports": false,
+        "note": "The source is general marketing-blog advice that curiosity is a 'frequently recommended' opening strategy. It gives no retention figure, no test of this specific hook and no evidence that curiosity causes retention.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "ad/video opening strategy (general advice)"
+      }
+    ],
+    "scope_issue": "The claim adds a 30% retention figure, the word 'proven', a causal link ('because it uses curiosity') and a specific hook. None of these appear in the source, which is only a general recommendation.",
+    "open_contradiction": false,
+    "reasoning": "The source only says curiosity is a commonly recommended opening tactic. It has no performance data, no measurement of this hook and no causal evidence, so the claim's specific number and causal statement are unsupported."
+  },
+  {
+    "case_id": "G39",
+    "verdict": "DOES_NOT_SUPPORT",
+    "speaker_attribution": "unknown",
+    "context_used": "none (no source provided)",
+    "original_or_translation": "UNKNOWN",
+    "evidence_checks": [
+      {
+        "evidence_id": "G39:missing-source:0",
+        "located_span": "",
+        "supports": false,
+        "note": "The cited source 'missing-source' is not among the packet's sources, which are empty. The cited span 'There is proof.' cannot be found in any provided text.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim says it is independently verified, but there is no source text at all. It also does not say what product fact is meant.",
+    "open_contradiction": false,
+    "reasoning": "No source text was provided, and the cited span refers to a source that does not exist in the packet. Nothing can be checked, so the claim of independent verification is unsupported."
+  },
+  {
+    "case_id": "G40",
+    "verdict": "DOES_NOT_SUPPORT",
+    "speaker_attribution": "unknown",
+    "context_used": "none (no sources provided)",
+    "original_or_translation": "UNKNOWN",
+    "evidence_checks": [],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "reasoning": "This is a hedged gap statement labelled as a hypothesis, and no sources or evidence items were provided. The empty evidence set agrees with its point that nothing product-specific is supported yet, and nothing contradicts it. Still, no source text affirmatively supports the wording, including the recommendation that more owner reviews and switch stories are needed, so it stays a research-planning note rather than a supported finding."
+  },
+  {
+    "case_id": "S01",
+    "verdict": "CONTRADICTS",
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only (whole thread captured per source metadata; product from source metadata)",
+    "original_or_translation": "ORIGINAL",
+    "evidence_checks": [
+      {
+        "evidence_id": "S01:S01-A:0",
+        "located_span": "",
+        "supports": false,
+        "note": "'Fantastic' and 'Exactly what I wanted. 🙃' are sarcastic, because the same post says 'The zip broke on day two.' This is a complaint that the zipper failed, not praise for its durability. The product name comes only from source metadata (Aster Levant Tote); the text itself does not name the product.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim reads sarcasm as literal praise. It also calls the commenter an owner and ties the post to 'this tote', when the product is identified only by metadata.",
+    "open_contradiction": true,
+    "reasoning": "The full text reports that the zip broke on day two, with sarcastic positive words around it ('Fantastic', 'Exactly what I wanted', upside-down emoji). This reports a zipper failure, the opposite of praising zipper durability, so the source contradicts the claim."
+  },
+  {
+    "case_id": "S02",
+    "verdict": "SUPPORTS",
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "evidence_checks": [
+      {
+        "evidence_id": "S02:S02-A:0",
+        "located_span": "Fantastic. The zip broke on day two. Exactly what I wanted. 🙃",
+        "supports": true,
+        "note": "One commenter (author u1) reports that the zip broke on day two. The surrounding 'Fantastic.' and 'Exactly what I wanted. 🙃' show a sarcastic tone. The claim names no product, so the product label is not assessed against a named product.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "reasoning": "The claim is limited to one commenter, a zip that broke on the second day and a sarcastic tone, and the full comment supports all three. It makes no claim about product, motive or pattern beyond the text."
+  }
+]

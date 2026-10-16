@@ -1,0 +1,144 @@
+[
+  {
+    "case_id": "G13",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G13:G13-A:0",
+        "located_span": "I prefer one large tote for my laptop.",
+        "supports": false,
+        "note": "One person prefers a large tote for carrying a laptop. Travel is not mentioned and there is no comparison with a smaller bag.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "carrying a laptop"
+      },
+      {
+        "evidence_id": "G13:G13-B:1",
+        "located_span": "I love a large bag for commuting.",
+        "supports": false,
+        "note": "This is about commuting, not travel. It says 'large bag', not a tote, and gives no comparison with a smaller bag.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "commuting"
+      }
+    ],
+    "scope_issue": "The claim says 'travelers', but neither source mentions travel (one is about a laptop, the other about commuting). Two comments from two authors cannot show something 'consistently'. Neither text compares 'instead of a smaller bag', and source B does not say tote.",
+    "open_contradiction": false,
+    "reasoning": "The two comments state personal preferences for large bags, in laptop and commuting settings. Neither is about travelers, neither compares against a smaller bag, and two statements are not a consistent pattern. The core subject and the pattern wording go beyond what the sources say.",
+    "speaker_attribution": "author first-hand (two different Reddit authors)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "G14",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G14:G14-A:0",
+        "located_span": "42 mentions among 200 comments that our crawler collected by searching tote shoulder pain.",
+        "supports": false,
+        "note": "42 out of 200 is 21%, but only of comments that a crawler collected with a problem-seeking query. It is not a share of people, of women or of the US population.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "tote shoulder pain (search query)"
+      }
+    ],
+    "scope_issue": "The 21% is a share of comments in a sample collected by a biased query (query_polarity PROBLEM), not a share of a population. The sources say nothing about gender or country (market_grounding UNKNOWN). 'This issue' is never defined in the claim.",
+    "open_contradiction": false,
+    "reasoning": "The figure comes from 42 matching comments out of 200 that were collected by searching for 'tote shoulder pain', so the sample was chosen for the problem. That cannot be projected onto US women or any population, and the source does not mention gender or country at all.",
+    "speaker_attribution": "unknown (researcher or crawler count, not a customer statement)",
+    "context_used": "comment only plus source metadata (dataset_size, matched_comments, query_polarity)",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "G15",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G15:G15-A:0",
+        "located_span": "",
+        "supports": false,
+        "note": "The cited quote does not appear in the source. The source is only an extractor's paraphrase ('reviewer said the tote felt uncomfortable when full'), so the reviewer's exact words are unknown.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "carrying the tote when full"
+      }
+    ],
+    "scope_issue": "The claim says these are the reviewer's exact words, but the only text available is a partial extractor summary (READ_PARTIAL, EXCERPT_ONLY). It mentions neither the handles nor the shoulder.",
+    "open_contradiction": false,
+    "reasoning": "The quoted phrase is nowhere in the source text. What is available is a third-party paraphrase about general discomfort when the tote is full, which cannot confirm verbatim wording or the specific detail about the handles and shoulder.",
+    "speaker_attribution": "unknown (extractor summary reporting the reviewer's words)",
+    "context_used": "comment only (extractor summary excerpt) plus source metadata",
+    "original_or_translation": "UNKNOWN"
+  },
+  {
+    "case_id": "G16",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G16:G16-A:0",
+        "located_span": "I love it!",
+        "supports": false,
+        "note": "The comment is a bare 'I love it!' replying to a parent asking whether others 'hate how impractical this bag is'. It could be sarcasm or a disagreement. It names no product and says nothing about work.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The comment does not mention work or wearing the bag, and does not name the Aster Grande, which is linked only through metadata. The parent comment's negative framing makes the sentiment unclear. A single comment is also labelled PATTERN.",
+    "open_contradiction": true,
+    "reasoning": "'I love it!' answers a complaint about the bag being impractical, so it may be sarcastic rather than genuine praise. Even taken literally, it says nothing about wearing the bag to work and does not name the product. The parent context leaves the sentiment unresolved.",
+    "speaker_attribution": "author first-hand (unclear meaning)",
+    "context_used": "comment plus parent comment",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "G17",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G17:G17-A:0",
+        "located_span": "Same experience.",
+        "supports": false,
+        "note": "The comment only agrees with something. The parent text is not provided, and the parent ID differs between the live page and the archive (p-live vs p-old, context_conflict true), so it is not known what is being agreed with or whether it was about tote weight.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Nothing in the available text mentions tote weight. Which parent comment this replies to is disputed, and a single 'same experience' reply is labelled PATTERN.",
+    "open_contradiction": true,
+    "reasoning": "'Same experience.' only has meaning through its parent comment, and the parent cannot be pinned down: the live and archived parent IDs differ and no parent text is given. The claim that it confirms a complaint about tote weight cannot be checked.",
+    "speaker_attribution": "author first-hand (agreement with an unidentified parent)",
+    "context_used": "comment only plus source metadata (parent IDs, context_conflict)",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "G18",
+    "verdict": "PARTIAL",
+    "evidence_checks": [
+      {
+        "evidence_id": "G18:G18-A:0",
+        "located_span": "The zipper broke after two weeks.",
+        "supports": true,
+        "note": "When retrieved, one author reported a zipper breaking after two weeks. The source has since changed: the current live text is '[deleted]' and the access status is NEEDS_RECHECK. Only metadata ties it to a product; the text itself does not name one.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "use over the first two weeks"
+      }
+    ],
+    "scope_issue": "One deleted comment cannot show a PATTERN of zippers failing. The text does not say the author is a 'current' customer, and the comment has since been deleted, so it can no longer be checked. The general 'zipper fails' goes beyond a single incident.",
+    "open_contradiction": true,
+    "reasoning": "The archived text does report one zipper breaking. But it is a single comment, it does not establish that the author is a current customer, and the live source now reads '[deleted]', which needs rechecking. The claim generalises one unverified incident into a customer statement that 'the zipper fails'.",
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only plus source metadata (recheck_result, current_live_text)",
+    "original_or_translation": "ORIGINAL"
+  }
+]

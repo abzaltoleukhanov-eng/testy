@@ -1,0 +1,134 @@
+[
+  {
+    "case_id": "S15",
+    "verdict": "PARTIAL",
+    "evidence_checks": [
+      {
+        "evidence_id": "S15:S15-A:0",
+        "located_span": "The buckle is broken and I am going to return this next week if customer service allows it.",
+        "supports": false,
+        "note": "The author reports a broken buckle and an intention to return, conditional on customer service allowing it. No completed return is stated. The broken buckle as the reason is strongly implied by the sentence structure.",
+        "product_match": "EXACT_SKU",
+        "person_action": "CONSIDERED",
+        "evidence_kind": "DECISION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim says the owner returned the tote, which is a completed action. The source states only a planned, conditional return ('going to return this next week if customer service allows it').",
+    "open_contradiction": false,
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The source supports a broken buckle and an intent to return that is reasonably linked to it. It does not support that a return actually happened, since the return is in the future and depends on customer service. The cited span alone also leaves out the buckle and the condition."
+  },
+  {
+    "case_id": "S16",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S16:S16-A:0",
+        "located_span": "The strap had snapped after two days.",
+        "supports": false,
+        "note": "The author retracted this statement in a later edit: 'EDIT: I was wrong. The detachable key clip had come loose. The carrying strap is intact.'",
+        "product_match": "EXACT_SKU",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim ignores the author's later edit, which retracts the strap failure. 'Confirmed' is the opposite of what the final text says.",
+    "open_contradiction": true,
+    "speaker_attribution": "author first-hand",
+    "context_used": "later edit",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The cited span is the author's original statement, but the same author corrected it in an edit: the key clip came loose and 'The carrying strap is intact.' The claim that the owner confirmed the strap snapped is directly contradicted by the source."
+  },
+  {
+    "case_id": "S17",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S17:S17-A:0",
+        "located_span": "EDIT: I was wrong. The detachable key clip had come loose.",
+        "supports": true,
+        "note": "Together with 'The strap had snapped after two days.' and 'The carrying strap is intact.', this matches the claim's first belief and later correction.",
+        "product_match": "EXACT_SKU",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "author first-hand",
+    "context_used": "later edit",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The source has the original statement that the strap snapped and an edit by the author correcting it: the detachable key clip came loose and the carrying strap is intact. The claim restates this accurately."
+  },
+  {
+    "case_id": "S18",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S18:S18-A:0",
+        "located_span": "Brand reply: Our totes are built to last a lifetime.",
+        "supports": false,
+        "note": "The cited words are a brand reply, not an owner's statement. The owner update in the same thread says 'Mine ripped at the seam within two weeks.'",
+        "product_match": "SAME_PRODUCT_FAMILY",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim credits brand marketing to a 'verified owner'. Nothing shows that anyone is verified, and the owner in the thread reports the opposite.",
+    "open_contradiction": true,
+    "speaker_attribution": "brand/seller",
+    "context_used": "whole thread",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The 'lifetime' statement comes from the brand and covers its totes in general. It is not a first-hand owner confirmation. The only owner statement in the source ('Mine ripped at the seam within two weeks') directly contradicts the claim."
+  },
+  {
+    "case_id": "S19",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S19:S19-A:0",
+        "located_span": "Automatic English translation: Terrible.",
+        "supports": false,
+        "note": "The original French, 'Pas mal du tout', means 'Not bad at all', which is a positive judgment. The automatic translation is wrong.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim relies on a machine translation that inverts the meaning of the original French text.",
+    "open_contradiction": true,
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only",
+    "original_or_translation": "TRANSLATION",
+    "reasoning": "The reviewer's original words are 'Pas mal du tout' ('not bad at all'), which is mildly positive. 'Terrible' appears only in an automatic translation that gets it wrong, so the reviewer did not call the tote terrible."
+  },
+  {
+    "case_id": "S20",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "S20:S20-A:0",
+        "located_span": "Reviewer was enthusiastic and probably said the handles were comfortable.",
+        "supports": false,
+        "note": "This is extractor output that paraphrases a review with hedging ('probably'). It is not the owner's verbatim text, and access was only partial.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim says the owner 'literally wrote' an exact quote. The source is a hedged paraphrase by an extractor with partial access, and no verbatim owner text exists.",
+    "open_contradiction": false,
+    "speaker_attribution": "unknown",
+    "context_used": "source metadata",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The source is extractor output (retrieval_method EXTRACTOR, access READ_PARTIAL) that says the reviewer 'probably' said the handles were comfortable. That cannot support a claim that the owner literally wrote those words."
+  }
+]

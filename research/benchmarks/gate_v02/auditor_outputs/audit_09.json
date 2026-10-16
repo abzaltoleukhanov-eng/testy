@@ -1,0 +1,134 @@
+[
+  {
+    "case_id": "S09",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S09:S09-A:0",
+        "located_span": "I received this bag free and earn commission from links.",
+        "supports": true,
+        "note": "Cited span establishes free receipt and affiliate commission. The pocket praise is in the next sentence of the same comment: \"I love the pockets.\" Product identity as the tote relies on source metadata (product_model: Aster Levant Tote); the text says only \"this bag\".",
+        "product_match": "EXACT_SKU",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "sponsored/affiliate review"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "author first-hand (affiliated reviewer who received the product free)",
+    "context_used": "comment only, plus source metadata for product model",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The comment states the bag was received free and that the author earns commission from links, and it says \"I love the pockets.\" The claim accurately states the free receipt, affiliate status and liking of pockets. The cited span covers only the disclosure; the pockets part is in the uncited remainder of the same comment."
+  },
+  {
+    "case_id": "S10",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S10:S10-A:0",
+        "located_span": "Disclosure: partner.",
+        "supports": false,
+        "note": "The author discloses a partner relationship and promotes a discount code (\"Use my link ASTER20\"). This contradicts 'independent' word of mouth. The text also gives no ordinary customer purchase motivation.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "paid partner promotion"
+      }
+    ],
+    "scope_issue": "Claims independence, ordinary-customer status and purchase motivation. The source is a disclosed partner promotion with no stated purchase or motive.",
+    "open_contradiction": true,
+    "speaker_attribution": "brand partner / affiliate (author first-hand promotional voice)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The cited span itself discloses a partnership, and the post includes an affiliate code. That directly contradicts 'independent word-of-mouth'. Nothing in the text describes an ordinary customer's reason for buying; 'Every woman should buy this' is promotional advocacy, not a reported motive."
+  },
+  {
+    "case_id": "S11",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S11:S11-A:0",
+        "located_span": "La cremallera se abrió en el tren.",
+        "supports": false,
+        "note": "'en el tren' means 'on the train', not on an airplane. The zip opening is reported, but the location is wrong.",
+        "product_match": "EXACT_SKU",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "train travel"
+      }
+    ],
+    "scope_issue": "The claim states an airplane; the source says a train.",
+    "open_contradiction": true,
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The original Spanish says the zip opened on the train. The claim moves the incident onto an airplane, which the source contradicts. The zip failure itself is supported, but the stated situation is not."
+  },
+  {
+    "case_id": "S12",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S12:S12-A:0",
+        "located_span": "The strap is comfortable.",
+        "supports": false,
+        "note": "The English sentence is labelled \"Translation supplied by owner of report\". The reviewer's original words were French: \"La bandoulière est confortable.\"",
+        "product_match": "EXACT_SKU",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Presents a third-party translation as the reviewer's literal English wording.",
+    "open_contradiction": true,
+    "speaker_attribution": "author first-hand (French original); English sentence written by the report owner as translator",
+    "context_used": "comment only, including its original/translation labels",
+    "original_or_translation": "TRANSLATION",
+    "reasoning": "The source says the original was French and that the English sentence was supplied as a translation by the report owner. So the reviewer did not literally write the English sentence. The meaning is supported, but the 'literally wrote' wording is contradicted."
+  },
+  {
+    "case_id": "S13",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S13:S13-A:0",
+        "located_span": "La bandoulière est confortable.",
+        "supports": true,
+        "note": "The French original says the shoulder strap is comfortable. The claim correctly flags that the English is a supplied translation.",
+        "product_match": "EXACT_SKU",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only, including its original/translation labels",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The French original states the strap is comfortable, and the claim correctly labels the English as a supplied translation rather than an original quote. The wording, scope and language attribution all match the source."
+  },
+  {
+    "case_id": "S14",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S14:S14-A:0",
+        "located_span": "I thought it would be waterproof.",
+        "supports": false,
+        "note": "This states an expectation, not a confirmation. It is followed immediately by \"It is not. The lining got damp in heavy rain.\"",
+        "product_match": "EXACT_SKU",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "heavy rain"
+      }
+    ],
+    "scope_issue": "Turns a disappointed expectation into a confirmation; the source explicitly says the tote is not waterproof.",
+    "open_contradiction": true,
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The cited span is a prior expectation, and the next sentences state 'It is not' and that the lining got damp in heavy rain. The owner's experience directly contradicts the claim that the tote is fully waterproof."
+  }
+]

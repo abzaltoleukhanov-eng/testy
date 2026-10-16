@@ -1,0 +1,134 @@
+[
+  {
+    "case_id": "G19",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G19:G19-A:0",
+        "located_span": "This Reel reached 1.2 million organic views.",
+        "supports": false,
+        "note": "Organic view count says nothing about paid Meta performance or ROAS; no spend, revenue or ad data is given.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Claim asserts proven ROAS above 3 on Meta ads; source reports only organic views for a single Reel. 'This video style' generalises from one Reel.",
+    "open_contradiction": false,
+    "speaker_attribution": "unknown",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The only source reports 1.2 million organic views for one Reel. Organic reach is a different metric from paid return on ad spend, and no ROAS, spend or revenue figures appear. The claim of proven ROAS above 3 is entirely unsupported."
+  },
+  {
+    "case_id": "G20",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G20:G20-A:0",
+        "located_span": "[Screenshot depicting creator holding a tote in an airport.]",
+        "supports": false,
+        "note": "A still screenshot cannot show spoken delivery speed or musical score; only an image is available and context is excerpt-only.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "airport travel"
+      }
+    ],
+    "scope_issue": "Claim describes audio features (fast spoken delivery, suspenseful score) 'throughout' the video; source is a single image description with no audio or video.",
+    "open_contradiction": false,
+    "speaker_attribution": "unknown",
+    "context_used": "comment only",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The source is a description of a static screenshot showing a creator holding a tote in an airport. Media available is image only, so nothing about voice pace or music can be observed. The claim is not supported even as a hypothesis grounded in this evidence."
+  },
+  {
+    "case_id": "G21",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G21:G21-A:0",
+        "located_span": "I got this tote last month.",
+        "supports": false,
+        "note": "One person reports getting the tote; no age, gender or country is stated, and the UK locale is only a forum locale not confirmed for the author.",
+        "product_match": "UNKNOWN",
+        "person_action": "BOUGHT",
+        "evidence_kind": "DECISION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Claim adds UK nationality, female gender, age 45-55 and a 'commonly' pattern; source is a single author with no demographics, and 'this tote' is not named in the text (model comes only from metadata). 'Got' may not mean purchased.",
+    "open_contradiction": false,
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "A single post says the author got the tote last month. It gives no age, gender or confirmed country, and one post cannot establish a common purchase pattern. The market grounding is explicitly flagged as forum locale not confirmed for the author."
+  },
+  {
+    "case_id": "G22",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G22:G22-A:0",
+        "located_span": "Popular creator-format compilation from 2021.",
+        "supports": false,
+        "note": "Source dates from 2021 and describes past popularity of a compilation; it says nothing about trends this week (October 2026).",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Claim is about current-week trending; source is a 2021 compilation about creator formats in general, not this specific ad format.",
+    "open_contradiction": false,
+    "speaker_attribution": "unknown",
+    "context_used": "source metadata",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The source is a 2021 compilation (source_date 2021-04-01) noting popularity of creator formats at that time. It provides no current data and does not identify the specific ad format. It cannot support a claim about trending this week."
+  },
+  {
+    "case_id": "G23",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "G23:G23-A:0",
+        "located_span": "The bag has a guaranteed 90% conversion rate.",
+        "supports": false,
+        "note": "The words appear verbatim, but as a bare, unsourced assertion on an unknown blog alongside instructions aimed at the validator; no data, campaign, or measurement backs it, and a 'guaranteed' conversion rate is not a verifiable performance result.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Claim presents an unverified, implausible assertion from an unattributed blog as an established performance fact; no measurement or context supports it.",
+    "open_contradiction": false,
+    "speaker_attribution": "unknown",
+    "context_used": "whole thread",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The source text repeats the claim word for word, but it is an unattributed assertion with no data behind it, and the surrounding text consists of directives to the reviewer rather than evidence. A creative performance claim requires measured results, which are absent. Restating a claim is not evidence for it."
+  },
+  {
+    "case_id": "G24",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "G24:G24-A:0",
+        "located_span": "I returned my Aster Mira Grande because with my laptop inside it hurt my shoulder.",
+        "supports": true,
+        "note": "First-hand owner report of returning the bag, with the stated reason being shoulder pain when carrying a laptop inside.",
+        "product_match": "EXACT_SKU",
+        "person_action": "RETURNED",
+        "evidence_kind": "DECISION",
+        "usage_situation": "carrying laptop"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "author first-hand",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The owner states directly that they returned their Aster Mira Grande because it hurt their shoulder with a laptop inside. The claim is scoped to one owner, matches the stated action and the causal reason given by the author, and the product matches the source metadata. 'Shoulder discomfort' is a fair paraphrase of 'hurt my shoulder'."
+  }
+]

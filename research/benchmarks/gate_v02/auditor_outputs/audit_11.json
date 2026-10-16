@@ -1,0 +1,134 @@
+[
+ {
+  "case_id": "S21",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "S21:S21-A:0",
+    "located_span": "Sponsored dramatization — scripted character says: I use this tote every day and nothing hurts anymore. Actors portrayed fictional customers.",
+    "supports": false,
+    "note": "The cited line is spoken by a scripted character in a sponsored dramatization; the text states actors portrayed fictional customers. It is not an independent owner's report, there is no mention of shoulder pain specifically, and only one statement exists.",
+    "product_match": "UNKNOWN",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "sponsored scripted ad"
+   }
+  ],
+  "scope_issue": "The claim says 'independent tote owners' (plural), but the source is a sponsored, scripted piece with fictional customers played by actors. It says nothing about shoulder pain specifically or about pain disappearing after purchase. Treating it as a pattern goes beyond one scripted line.",
+  "open_contradiction": true,
+  "reasoning": "The source says outright that this is a sponsored dramatization with actors playing fictional customers, which contradicts the claim that these are independent owners. No real owner experience is reported. The line is generic ('nothing hurts anymore') and does not name shoulder pain or a before-and-after purchase, and there is only one scripted line, not several owners.",
+  "speaker_attribution": "brand/seller (scripted actor in sponsored content)",
+  "context_used": "comment only (full raw_text including the sponsorship disclaimer)",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "S22",
+  "verdict": "CONTRADICTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "S22:S22-A:0",
+    "located_span": "I adore the look of the tote.",
+    "supports": false,
+    "note": "This praises only the look. The next sentence says the bag became painful with a laptop inside and was returned, which contradicts 'comfortable with laptops' and 'recommends'.",
+    "product_match": "SAME_PRODUCT_FAMILY",
+    "person_action": "RETURNED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "carrying laptop"
+   }
+  ],
+  "scope_issue": "The claim turns liking the look into loving the tote overall and invents a recommendation. It also states laptop comfort, the opposite of what the source says.",
+  "open_contradiction": true,
+  "reasoning": "The author liked only the tote's appearance. They say it 'became painful after ten minutes' with a laptop inside and that they returned it. That directly contradicts the claim that the bag is comfortable with laptops and that the author recommends it. Citing only the first sentence hides the complaint and the return.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only (full comment text)",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "S23",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "S23:S23-A:0",
+    "located_span": "first frame shows a woman holding tote at train station.",
+    "supports": false,
+    "note": "This describes only a visual first frame. The source states 'No audio or video was supplied', so speaking pace and soundtrack cannot be judged.",
+    "product_match": "UNKNOWN",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "train station / commute (visual frame)"
+   }
+  ],
+  "scope_issue": "The claim describes audio features (rapid speech, suspenseful piano music), but the source explicitly says no audio or video was supplied. Only a screenshot annotation exists.",
+  "open_contradiction": false,
+  "reasoning": "The only evidence is a screenshot annotation of the first frame, and the source states that no audio or video was supplied. Nothing in the text addresses how fast the creator speaks or what the soundtrack is. The claim cannot be checked and is unsupported.",
+  "speaker_attribution": "unknown (annotator of creator screenshot)",
+  "context_used": "comment only (annotation text and its note about missing media)",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "S24",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "S24:S24-A:0",
+    "located_span": "I bought the 2023 edition of Aster Levant Tote. Its handle stitching remained intact after a year.",
+    "supports": false,
+    "note": "This is a first-hand durability report about the 2023 edition only. It says nothing about the 2026 version's handle construction or whether that version is as durable.",
+    "product_match": "SAME_PRODUCT_FAMILY",
+    "person_action": "BOUGHT",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "long-term use (one year)"
+   }
+  ],
+  "scope_issue": "The claim extends evidence about the 2023 edition to the current 2026 model and asserts the handle construction is the same and the bag equally durable. The source does not mention the 2026 model or any comparison.",
+  "open_contradiction": false,
+  "reasoning": "The source is one owner's report that the handle stitching of the 2023 edition held up for a year. It does not mention the 2026 model, whether the construction is the same, or any comparison of durability. Applying the claim to the current model goes beyond the evidence.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "S25",
+  "verdict": "CONTRADICTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "S25:S25-A:0",
+    "located_span": "My sister said she bought one last year. I considered it but went with a backpack instead.",
+    "supports": false,
+    "note": "The purchase last year was the commenter's sister's, reported second-hand. The commenter only considered the tote and chose a backpack instead.",
+    "product_match": "UNKNOWN",
+    "person_action": "REJECTED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "The claim credits the commenter with a purchase that the text attributes to the commenter's sister. The commenter says they did not buy the tote and chose a backpack. 'One' is not explicitly tied to the specific product beyond the metadata.",
+  "open_contradiction": true,
+  "reasoning": "The cited span reports what the commenter's sister said she bought. The commenter's own action is the opposite: they considered the tote but went with a backpack. The claim gets the speaker wrong and is contradicted by the commenter's own decision.",
+  "speaker_attribution": "a person the author reports (sister) for the purchase; author first-hand for the rejection",
+  "context_used": "comment only (full comment text)",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "S26",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "S26:S26-A:0",
+    "located_span": "weighs a ton",
+    "supports": false,
+    "note": "'Weighs a ton' is a sarcastic, hyperbolic complaint about heaviness (shown by 'Brilliant —' and the eye-roll emoji). It is not a measurement, and no independent measurement is mentioned.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "SWITCHED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "The claim reads an idiom literally as a measured weight of one metric ton and adds an independent measurement that does not exist. The comment also refers to 'another tote' in general rather than clearly naming the specific product.",
+  "open_contradiction": false,
+  "reasoning": "The comment is sarcastic hyperbole expressing that the tote feels heavy, followed by the author going back to a backpack. Nothing in the text mentions a measurement or a literal metric-ton weight. At most the source supports a complaint that the bag feels heavy.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL"
+ }
+]

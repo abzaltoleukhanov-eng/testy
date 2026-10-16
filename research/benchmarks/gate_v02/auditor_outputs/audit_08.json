@@ -1,0 +1,134 @@
+[
+  {
+    "case_id": "S03",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S03:S03-A:0",
+        "located_span": "My mother says this tote hurts her shoulder.",
+        "supports": false,
+        "note": "The shoulder pain belongs to the commenter's mother, reported second-hand. The commenter's own experience is the opposite: 'Mine feels comfortable, even with a laptop.'",
+        "product_match": "SAME_PRODUCT_FAMILY",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "carrying tote on shoulder, with laptop"
+      }
+    ],
+    "scope_issue": "Takes a pain report about a third party (the mother) and assigns it to the commenter as first-hand experience. The commenter explicitly says their own tote feels comfortable. 'This tote' and 'Mine' are not tied to an exact SKU; only the source metadata names the Aster Levant Tote.",
+    "open_contradiction": true,
+    "reasoning": "The cited span is the mother's experience, relayed by the commenter. In the next sentence the commenter says their own tote feels comfortable even with a laptop, which directly contradicts the claim that the commenter personally had shoulder pain.",
+    "speaker_attribution": "a person the author reports (mother) for the pain; author first-hand for comfort",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "S04",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S04:S04-A:0",
+        "located_span": "My mother says this tote hurts her shoulder. Mine feels comfortable, even with a laptop.",
+        "supports": true,
+        "note": "The first sentence is the mother's complaint, reported by the commenter. The second sentence is the commenter's own comfortable experience. The cited span covers only the first half; the second half is in the same comment.",
+        "product_match": "SAME_PRODUCT_FAMILY",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "carrying tote on shoulder, with laptop"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "reasoning": "The claim gets both parts right: the mother's complaint is reported second-hand, and the commenter's own comfort is first-hand. 'Hurts her shoulder' fairly supports 'shoulder discomfort'. The claim makes no product-model, demographic or causal statement beyond the text.",
+    "speaker_attribution": "a person the author reports (mother) plus author first-hand",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "S05",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S05:S05-A:0",
+        "located_span": "This.",
+        "supports": false,
+        "note": "'This.' agrees with the parent comment, and the parent says: 'I stopped taking the large tote to the office. I only use my backpack now.' So the reply backs giving up the large tote for office commuting, not using it.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "office commuting"
+      }
+    ],
+    "scope_issue": "Reverses what the reply agrees with. The parent stopped using the large tote and switched to a backpack. 'This.' gives no personal experience of the replier's own, and nothing ties the parent's 'large tote' to the Aster Levant Tote.",
+    "open_contradiction": true,
+    "reasoning": "The reply means something only through its parent comment. The parent describes stopping use of a large tote for the office and switching to a backpack. A one-word 'This.' at most agrees with that, which is the opposite of endorsing a large tote for office commuting.",
+    "speaker_attribution": "unknown (replier's agreement with a different author's first-hand statement)",
+    "context_used": "parent comment",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "S06",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "S06:S06-A:0",
+        "located_span": "This.",
+        "supports": false,
+        "note": "Only the comment itself was captured (COMMENT_ONLY). It does not mention a zipper, a failure or the tote, and no parent text is provided.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim invents both the subject (zipper failure) and a confirmation. Without the parent there is no way to know what 'This.' refers to.",
+    "open_contradiction": false,
+    "reasoning": "A bare 'This.' with no captured parent context cannot show that a zipper failed, or that the replier experienced or confirmed anything about the product. The zipper failure and the personal confirmation are not in the source.",
+    "speaker_attribution": "unknown",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "S07",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "S07:S07-A:0",
+        "located_span": "Same here — every single time.",
+        "supports": false,
+        "note": "Only the comment itself was captured. It does not mention shoulder pain, a tote or the product, and the parent it answers is not provided.",
+        "product_match": "UNKNOWN",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "The claim supplies the subject (shoulder pain from the tote), which appears nowhere in the source. 'Same here' cannot be read without the missing parent comment.",
+    "open_contradiction": false,
+    "reasoning": "'Same here — every single time' signals agreement with something unseen. With only the comment captured, nothing ties it to shoulder pain or to the tote. So the source cannot back a first-hand claim of shoulder pain.",
+    "speaker_attribution": "author first-hand (but subject unknown)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "S08",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "S08:S08-A:0",
+        "located_span": "I received this bag free and earn commission from links.",
+        "supports": false,
+        "note": "The author says they got the bag free and earn affiliate commission, which directly contradicts 'independent uncompensated'. The only product opinion in the comment is 'I love the pockets.'",
+        "product_match": "SAME_PRODUCT_FAMILY",
+        "person_action": "USES",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "organization / pockets"
+      }
+    ],
+    "scope_issue": "'Independent uncompensated' is contradicted by the disclosure of a free product and affiliate commission. 'Best tote for organization' turns 'I love the pockets' into a comparative superlative that the text never makes. 'Confirms the brand' generalises from one bag to the whole brand.",
+    "open_contradiction": true,
+    "reasoning": "The cited span is a compensation disclosure: a free bag plus commission on links. That shows the speaker is not independent or uncompensated. The positive part, 'I love the pockets', is a single sponsored remark about pockets, not a claim that the brand is the best for organization.",
+    "speaker_attribution": "author first-hand (compensated affiliate / gifted reviewer)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  }
+]

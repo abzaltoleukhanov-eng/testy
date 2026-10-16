@@ -1,0 +1,610 @@
+{
+ "G01": {
+  "literal_anchor": "MISMATCH",
+  "anchors": [
+   {
+    "source_id": "G01-A",
+    "match": false
+   }
+  ]
+ },
+ "G02": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G02-A",
+    "match": true
+   }
+  ]
+ },
+ "G03": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G03-A",
+    "match": true
+   }
+  ]
+ },
+ "G04": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G04-A",
+    "match": true
+   }
+  ]
+ },
+ "G05": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G05-A",
+    "match": true
+   }
+  ]
+ },
+ "G06": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G06-A",
+    "match": true
+   }
+  ]
+ },
+ "G07": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G07-A",
+    "match": true
+   }
+  ]
+ },
+ "G08": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G08-A",
+    "match": true
+   },
+   {
+    "source_id": "G08-B",
+    "match": true
+   },
+   {
+    "source_id": "G08-C",
+    "match": true
+   }
+  ]
+ },
+ "G09": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G09-A",
+    "match": true
+   },
+   {
+    "source_id": "G09-B",
+    "match": true
+   }
+  ]
+ },
+ "G10": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G10-A",
+    "match": true
+   }
+  ]
+ },
+ "G11": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G11-A",
+    "match": true
+   }
+  ]
+ },
+ "G12": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G12-A",
+    "match": true
+   }
+  ]
+ },
+ "G13": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G13-A",
+    "match": true
+   },
+   {
+    "source_id": "G13-B",
+    "match": true
+   }
+  ]
+ },
+ "G14": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G14-A",
+    "match": true
+   }
+  ]
+ },
+ "G15": {
+  "literal_anchor": "MISMATCH",
+  "anchors": [
+   {
+    "source_id": "G15-A",
+    "match": false
+   }
+  ]
+ },
+ "G16": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G16-A",
+    "match": true
+   }
+  ]
+ },
+ "G17": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G17-A",
+    "match": true
+   }
+  ]
+ },
+ "G18": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G18-A",
+    "match": true
+   }
+  ]
+ },
+ "G19": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G19-A",
+    "match": true
+   }
+  ]
+ },
+ "G20": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G20-A",
+    "match": true
+   }
+  ]
+ },
+ "G21": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G21-A",
+    "match": true
+   }
+  ]
+ },
+ "G22": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G22-A",
+    "match": true
+   }
+  ]
+ },
+ "G23": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G23-A",
+    "match": true
+   }
+  ]
+ },
+ "G24": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G24-A",
+    "match": true
+   }
+  ]
+ },
+ "G25": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G25-A",
+    "match": true
+   }
+  ]
+ },
+ "G26": {
+  "literal_anchor": "NOT_APPLICABLE",
+  "anchors": []
+ },
+ "G27": {
+  "literal_anchor": "MISMATCH",
+  "anchors": [
+   {
+    "source_id": "G27-A",
+    "match": false
+   }
+  ]
+ },
+ "G28": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G28-A",
+    "match": true
+   },
+   {
+    "source_id": "G28-B",
+    "match": true
+   }
+  ]
+ },
+ "G29": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G29-A",
+    "match": true
+   }
+  ]
+ },
+ "G30": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G30-A",
+    "match": true
+   }
+  ]
+ },
+ "G31": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G31-A",
+    "match": true
+   }
+  ]
+ },
+ "G32": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G32-A",
+    "match": true
+   }
+  ]
+ },
+ "G33": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G33-A",
+    "match": true
+   }
+  ]
+ },
+ "G34": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G34-A",
+    "match": true
+   }
+  ]
+ },
+ "G35": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G35-A",
+    "match": true
+   },
+   {
+    "source_id": "G35-B",
+    "match": true
+   }
+  ]
+ },
+ "G36": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G36-A",
+    "match": true
+   }
+  ]
+ },
+ "G37": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G37-A",
+    "match": true
+   }
+  ]
+ },
+ "G38": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "G38-A",
+    "match": true
+   }
+  ]
+ },
+ "G39": {
+  "literal_anchor": "MISMATCH",
+  "anchors": [
+   {
+    "source_id": "missing-source",
+    "match": false
+   }
+  ]
+ },
+ "G40": {
+  "literal_anchor": "NOT_APPLICABLE",
+  "anchors": []
+ },
+ "S01": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S01-A",
+    "match": true
+   }
+  ]
+ },
+ "S02": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S02-A",
+    "match": true
+   }
+  ]
+ },
+ "S03": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S03-A",
+    "match": true
+   }
+  ]
+ },
+ "S04": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S04-A",
+    "match": true
+   }
+  ]
+ },
+ "S05": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S05-A",
+    "match": true
+   }
+  ]
+ },
+ "S06": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S06-A",
+    "match": true
+   }
+  ]
+ },
+ "S07": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S07-A",
+    "match": true
+   }
+  ]
+ },
+ "S08": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S08-A",
+    "match": true
+   }
+  ]
+ },
+ "S09": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S09-A",
+    "match": true
+   }
+  ]
+ },
+ "S10": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S10-A",
+    "match": true
+   }
+  ]
+ },
+ "S11": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S11-A",
+    "match": true
+   }
+  ]
+ },
+ "S12": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S12-A",
+    "match": true
+   }
+  ]
+ },
+ "S13": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S13-A",
+    "match": true
+   }
+  ]
+ },
+ "S14": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S14-A",
+    "match": true
+   }
+  ]
+ },
+ "S15": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S15-A",
+    "match": true
+   }
+  ]
+ },
+ "S16": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S16-A",
+    "match": true
+   }
+  ]
+ },
+ "S17": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S17-A",
+    "match": true
+   }
+  ]
+ },
+ "S18": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S18-A",
+    "match": true
+   }
+  ]
+ },
+ "S19": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S19-A",
+    "match": true
+   }
+  ]
+ },
+ "S20": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S20-A",
+    "match": true
+   }
+  ]
+ },
+ "S21": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S21-A",
+    "match": true
+   }
+  ]
+ },
+ "S22": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S22-A",
+    "match": true
+   }
+  ]
+ },
+ "S23": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S23-A",
+    "match": true
+   }
+  ]
+ },
+ "S24": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S24-A",
+    "match": true
+   }
+  ]
+ },
+ "S25": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S25-A",
+    "match": true
+   }
+  ]
+ },
+ "S26": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "S26-A",
+    "match": true
+   }
+  ]
+ }
+}

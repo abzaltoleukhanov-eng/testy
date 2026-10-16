@@ -1,0 +1,1048 @@
+{
+ "G01": {
+  "literal_anchor": "MISMATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "quote anchor not verbatim in stored source text (ledger rejects the evidence); independent groups 0 < 1; distinct threads 0 < 1; auditor CONTRADICTS: The claim gives a return reason (handles snapped) that the source never states. The cited span is not in the source text.",
+  "decided_by": [
+   "llm:auditor",
+   "python:literal",
+   "python:structural_gate"
+  ]
+ },
+ "G02": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 3; distinct threads 1 < 2; platforms 1 and situations 1 both < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: Age (40-50), gender (women), a comparative preference, 'professional meetings' (the source says work trips) and a PATTERN generalised from a single comment are all absent from the source.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G03": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload; auditor DOES_NOT_SUPPORT: Evidence about a different product from the same brand (Aster Comino Backpack) is presented as a product fact about the Aster Mira Grande.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G04": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The source is about the Aster Mira Medio, not the Grande. The specific weight of 1.2 kg appears nowhere, and 'felt heavy when loaded' is not a reported bag weight.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G05": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only (both sentences); source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 2; distinct threads 1 < 2; independent DECISION evidence 1 < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The purchase motive ('specifically because it looked professional') is not stated. The source lists a purchase and a new office job side by side with no causal connection and no mention of appearance.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G06": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only; source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 2; distinct threads 1 < 2; independent DECISION evidence 0 < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The claim turns an intention to consider buying ('might get') into a completed purchase. Pockets are a stated reason for considering the tote, not for buying it.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G07": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "REVIEW",
+  "final": "NEEDS_REVIEW",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "It fit under the seat on my flight from London to Edinburgh.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, plus source metadata for product model and market",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor PARTIAL: The claim says 'every airline', but the source covers one flight on one unnamed airline on one UK route. The product match (Aster Mira Tote Grande) comes from source metadata, not from the comment text.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G08": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "Too big for me.",
+  "speaker_attribution": "author first-hand (alpha), plus two repliers agreeing (beta, gamma)",
+  "context_used": "whole thread (parent comment needed to read the replies)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 3; distinct threads 1 < 2; platforms 1 and situations 0 both < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: All three items come from one Reddit thread, and two are replies agreeing with the first comment. That is not independent consumer research, and it does not prove the complaint is widespread. The product match comes only from metadata.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G09": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "I returned my Aster Grande when the zipper broke.",
+  "speaker_attribution": "author first-hand (one author, travel_alex, on two platforms)",
+  "context_used": "comment only plus source metadata (author_key, platform, thread_id)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 2 < 3; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The claim says 'two independent customers', but both sources have the same author handle and identical wording, which points to one customer counted twice. 'Aster Grande' in the text is matched to Aster Mira Tote Grande through metadata.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G10": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (sponsored creator, brand-gifted product)",
+  "context_used": "comment only plus source metadata (commercial_disclosure)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The claim says 'independent users' (plural), 'verified' and 'exceptional'. The source is one sponsored creator, an unverified impression, limited to home use, and the word used is only 'comfortable'.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G11": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "brand/seller",
+  "context_used": "source text plus source metadata (platform BrandPDP)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: 'Completely waterproof' goes beyond 'water-resistant outer fabric', both in degree (resistant vs proof) and in coverage (outer fabric vs the whole tote). The source is also the brand's own page, not an independent test.; after audit: PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "G12": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "brand/seller",
+  "context_used": "source text plus source metadata (platform BrandPDP, product_model)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no evidence with product_match in ['EXACT_SKU', 'SAME_PRODUCT_FAMILY']; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The claim says the pouch 'prevents all leaks', but the source only says a pouch is included. The source product (Aster Traveler Set) may not be the product the claim means.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G13": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (two different Reddit authors)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 2 < 3; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The claim says 'travelers', but neither source mentions travel (one is about a laptop, the other about commuting). Two comments from two authors cannot show something 'consistently'. Neither text compares 'instead of a smaller bag', and source B does not say tote.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G14": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "HYPOTHESIS_LABELED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (researcher or crawler count, not a customer statement)",
+  "context_used": "comment only plus source metadata (dataset_size, matched_comments, query_polarity)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: The 21% is a share of comments in a sample collected by a biased query (query_polarity PROBLEM), not a share of a population. The sources say nothing about gender or country (market_grounding UNKNOWN). 'This issue' is never defined in the claim.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "G15": {
+  "literal_anchor": "MISMATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (extractor summary reporting the reviewer's words)",
+  "context_used": "comment only (extractor summary excerpt) plus source metadata",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "quote anchor not verbatim in stored source text (ledger rejects the evidence); independent groups 0 < 1; distinct threads 0 < 1; auditor DOES_NOT_SUPPORT: The claim says these are the reviewer's exact words, but the only text available is a partial extractor summary (READ_PARTIAL, EXCERPT_ONLY). It mentions neither the handles nor the shoulder.",
+  "decided_by": [
+   "llm:auditor",
+   "python:literal",
+   "python:structural_gate"
+  ]
+ },
+ "G16": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (unclear meaning)",
+  "context_used": "comment plus parent comment",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 3; distinct threads 1 < 2; platforms 1 and situations 0 both < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The comment does not mention work or wearing the bag, and does not name the Aster Grande, which is linked only through metadata. The parent comment's negative framing makes the sentiment unclear. A single comment is also labelled PATTERN.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G17": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (agreement with an unidentified parent)",
+  "context_used": "comment only plus source metadata (parent IDs, context_conflict)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 3; distinct threads 1 < 2; platforms 1 and situations 0 both < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: Nothing in the available text mentions tote weight. Which parent comment this replies to is disputed, and a single 'same experience' reply is labelled PATTERN.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G18": {
+  "literal_anchor": "MATCH",
+  "structural": "REVIEW",
+  "substantive": "REVIEW",
+  "final": "NEEDS_REVIEW",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "The zipper broke after two weeks.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only plus source metadata (recheck_result, current_live_text)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "G18-A: access_status NEEDS_RECHECK; independent groups 0 < 3; distinct threads 0 < 2; platforms 0 and situations 0 both < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor PARTIAL: One deleted comment cannot show a PATTERN of zippers failing. The text does not say the author is a 'current' customer, and the comment has since been deleted, so it can no longer be checked. The general 'zipper fails' goes beyond a single incident.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G19": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "Needs own campaign data; not supported in research MVP.; auditor DOES_NOT_SUPPORT: Claim asserts proven ROAS above 3 on Meta ads; source reports only organic views for a single Reel. 'This video style' generalises from one Reel.",
+  "decided_by": [
+   "llm:auditor",
+   "python:type_rule"
+  ]
+ },
+ "G20": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "HYPOTHESIS_LABELED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "comment only",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "auditor DOES_NOT_SUPPORT: Claim describes audio features (fast spoken delivery, suspenseful score) 'throughout' the video; source is a single image description with no audio or video.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "G21": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 3; distinct threads 1 < 2; platforms 1 and situations 0 both < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: Claim adds UK nationality, female gender, age 45-55 and a 'commonly' pattern; source is a single author with no demographics, and 'this tote' is not named in the text (model comes only from metadata). 'Got' may not mean purchased.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G22": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "HYPOTHESIS_LABELED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "source metadata",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: Claim is about current-week trending; source is a 2021 compilation about creator formats in general, not this specific ad format.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "G23": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "whole thread",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "Needs own campaign data; not supported in research MVP.; auditor DOES_NOT_SUPPORT: Claim presents an unverified, implausible assertion from an unattributed blog as an established performance fact; no measurement or context supports it.",
+  "decided_by": [
+   "llm:auditor",
+   "python:type_rule"
+  ]
+ },
+ "G24": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "APPROVED",
+  "grounded_span": "I returned my Aster Mira Grande because with my laptop inside it hurt my shoulder.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "G25": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "REVIEW",
+  "final": "NEEDS_REVIEW",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "After carrying my large tote to work for a month, I switched to a backpack because my shoulder kept hurting.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only (full thread captured, single text provided)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor SUPPORTS: Minor: 'shoulder strain affected commuting' paraphrases 'my shoulder kept hurting' while carrying the tote to work; the text does not say the commute itself was impaired. Single user, category-level tote, not a specific product.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "G26": {
+  "literal_anchor": "NOT_APPLICABLE",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "HYPOTHESIS_LABELED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "none (no sources provided)",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "auditor DOES_NOT_SUPPORT: No sources or evidence are provided. Nothing about reverse-packing routines, curiosity, or cold Meta audiences is grounded in any text.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "G27": {
+  "literal_anchor": "MISMATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only plus source metadata (lang, platform)",
+  "original_or_translation": "TRANSLATION",
+  "rationale": "quote anchor not verbatim in stored source text (ledger rejects the evidence); independent groups 0 < 1; distinct threads 0 < 1; auditor CONTRADICTS: The claim says the reviewer 'literally wrote in English', but the source is in Japanese, so the quote is a translation. The text also says nothing about the reviewer's nationality (only that the post is in Japanese on a Japanese blog), and the text itself names no product (the product only appears in the metadata).",
+  "decided_by": [
+   "llm:auditor",
+   "python:literal",
+   "python:structural_gate"
+  ]
+ },
+ "G28": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "Very comfortable when I carried my laptop.",
+  "speaker_attribution": "author first-hand (two different authors)",
+  "context_used": "comment only for each of two separate threads, plus source metadata",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 2 < 3; platforms 1 and situations 1 both < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor CONTRADICTS: 'Every owner' is a universal pattern drawn from two posts, one of which contradicts it. 'Fully loaded' goes beyond 'with a laptop'. Neither text names the product (only metadata does).",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G29": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "a person the author reports (cousin)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no evidence with product_match in ['EXACT_SKU', 'SAME_PRODUCT_FAMILY']; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The claim says an owner 'personally tested' the 'exact SKU'. The text is hearsay from the author's cousin about an unidentified tote, with no testing described.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G30": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "brand/seller",
+  "context_used": "comment only plus source metadata (platform BrandPDP)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no evidence with product_match in ['EXACT_SKU', 'SAME_PRODUCT_FAMILY']; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: 'Demonstrably prevents theft from all pickpockets' is an absolute performance claim. The source is the seller's own copy and only says a hidden pocket gives 'extra peace of mind'. The text does not name the product; only the metadata does.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G31": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "APPROVED",
+  "grounded_span": "Aster Mira Tote Grande features: hidden back pocket, laptop compartment, luggage strap.",
+  "speaker_attribution": "brand/seller",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "G32": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "REVIEW",
+  "final": "NEEDS_REVIEW",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "I used to carry a large tote, but I now prefer a smaller crossbody even if it means leaving items behind.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor PARTIAL: The claim says 'a subset of commenters' (plural, a pattern) but the evidence is one comment from one author. 'Even when an organized tote has more pockets' is not stated: the source says 'large tote' and 'leaving items behind', not organization or pocket count.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "G33": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: 'Verified', '48-year-old' and 'UK' do not appear anywhere in the source. The platform is Reddit, not a verified-purchase review. The excerpt does not name the tote, and the context is excerpt-only, from a partial user-provided screenshot.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "G34": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The claim says owners report a tight pocket. The source is one non-owner asking a question, with no report of fit or tightness.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G35": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "I love the stitching.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 2 < 3; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: The claim says five independent reviews. The evidence is one review by one author plus a repost of it, so there is only one independent voice. 'Confirm the stitching is excellent' also overstates a personal 'I love'.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G36": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "brand/seller",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload; auditor DOES_NOT_SUPPORT: The claim says 'now' and 'in the UK'. The source is a July 2024 US promotional price in USD that has since expired (offer_expired true, market_grounding US). It is wrong on time, market and price type.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G37": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only (whole thread captured per source metadata; product from source metadata)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 2; distinct threads 1 < 2; independent DECISION evidence 1 < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor CONTRADICTS: The claim says many customers ('Customers', 'totes') when the source is a single post. It also makes the logo the cause of the return, while the source says the main reason was the zipper breaking. A minor complaint is presented as the return driver.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "G38": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (marketing blog author, general advice)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "Needs own campaign data; not supported in research MVP.; auditor DOES_NOT_SUPPORT: The claim adds a 30% retention figure, the word 'proven', a causal link ('because it uses curiosity') and a specific hook. None of these appear in the source, which is only a general recommendation.",
+  "decided_by": [
+   "llm:auditor",
+   "python:type_rule"
+  ]
+ },
+ "G39": {
+  "literal_anchor": "MISMATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "none (no source provided)",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "quote anchor not verbatim in stored source text (ledger rejects the evidence); PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload; auditor DOES_NOT_SUPPORT: The claim says it is independently verified, but there is no source text at all. It also does not say what product fact is meant.",
+  "decided_by": [
+   "llm:auditor",
+   "python:literal",
+   "python:structural_gate"
+  ]
+ },
+ "G40": {
+  "literal_anchor": "NOT_APPLICABLE",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "HYPOTHESIS_LABELED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "none (no sources provided)",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "auditor DOES_NOT_SUPPORT: This is a hedged gap statement labelled as a hypothesis, and no sources or evidence items were provided. The empty evidence set agrees with its point that nothing product-specific is supported yet, and nothing contradicts it. Still, no source text affirmatively supports the wording, including the recommendation that more owner reviews and switch stories are needed, so it ",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "S01": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only (whole thread captured per source metadata; product from source metadata)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: The claim reads sarcasm as literal praise. It also calls the commenter an owner and ties the post to 'this tote', when the product is identified only by metadata.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S02": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "APPROVED",
+  "grounded_span": "Fantastic. The zip broke on day two. Exactly what I wanted. 🙃",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "S03": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "a person the author reports (mother) for the pain; author first-hand for comfort",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: Takes a pain report about a third party (the mother) and assigns it to the commenter as first-hand experience. The commenter explicitly says their own tote feels comfortable. 'This tote' and 'Mine' are not tied to an exact SKU; only the source metadata names the Aster Levant Tote.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S04": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "APPROVED",
+  "grounded_span": "My mother says this tote hurts her shoulder. Mine feels comfortable, even with a laptop.",
+  "speaker_attribution": "a person the author reports (mother) plus author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "S05": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (replier's agreement with a different author's first-hand statement)",
+  "context_used": "parent comment",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: Reverses what the reply agrees with. The parent stopped using the large tote and switched to a backpack. 'This.' gives no personal experience of the replier's own, and nothing ties the parent's 'large tote' to the Aster Levant Tote.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S06": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: The claim invents both the subject (zipper failure) and a confirmation. Without the parent there is no way to know what 'This.' refers to.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S07": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (but subject unknown)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: The claim supplies the subject (shoulder pain from the tote), which appears nowhere in the source. 'Same here' cannot be read without the missing parent comment.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S08": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (compensated affiliate / gifted reviewer)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: 'Independent uncompensated' is contradicted by the disclosure of a free product and affiliate commission. 'Best tote for organization' turns 'I love the pockets' into a comparative superlative that the text never makes. 'Confirms the brand' generalises from one bag to the whole brand.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S09": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "APPROVED",
+  "grounded_span": "I received this bag free and earn commission from links.",
+  "speaker_attribution": "author first-hand (affiliated reviewer who received the product free)",
+  "context_used": "comment only, plus source metadata for product model",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "S10": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "brand partner / affiliate (author first-hand promotional voice)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: Claims independence, ordinary-customer status and purchase motivation. The source is a disclosed partner promotion with no stated purchase or motive.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S11": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: The claim states an airplane; the source says a train.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S12": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (French original); English sentence written by the report owner as translator",
+  "context_used": "comment only, including its original/translation labels",
+  "original_or_translation": "TRANSLATION",
+  "rationale": "auditor CONTRADICTS: Presents a third-party translation as the reviewer's literal English wording.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S13": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "APPROVED",
+  "grounded_span": "La bandoulière est confortable.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, including its original/translation labels",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "S14": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: Turns a disappointed expectation into a confirmation; the source explicitly says the tote is not waterproof.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S15": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "REVIEW",
+  "final": "NEEDS_REVIEW",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor PARTIAL: The claim says the owner returned the tote, which is a completed action. The source states only a planned, conditional return ('going to return this next week if customer service allows it').; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S16": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "later edit",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: The claim ignores the author's later edit, which retracts the strap failure. 'Confirmed' is the opposite of what the final text says.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S17": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "engine_status": "APPROVED",
+  "grounded_span": "EDIT: I was wrong. The detachable key clip had come loose.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "later edit",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "S18": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "brand/seller",
+  "context_used": "whole thread",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: The claim credits brand marketing to a 'verified owner'. Nothing shows that anyone is verified, and the owner in the thread reports the opposite.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S19": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "TRANSLATION",
+  "rationale": "auditor CONTRADICTS: The claim relies on a machine translation that inverts the meaning of the original French text.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S20": {
+  "literal_anchor": "MATCH",
+  "structural": "REVIEW",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "unknown",
+  "context_used": "source metadata",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "S20-A: retrieved via EXTRACTOR without verbatim recheck; independent groups 0 < 1; distinct threads 0 < 1; auditor DOES_NOT_SUPPORT: The claim says the owner 'literally wrote' an exact quote. The source is a hedged paraphrase by an extractor with partial access, and no verbatim owner text exists.",
+  "decided_by": [
+   "llm:auditor",
+   "python:structural_gate"
+  ]
+ },
+ "S21": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "brand/seller (scripted actor in sponsored content)",
+  "context_used": "comment only (full raw_text including the sponsorship disclaimer)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: The claim says 'independent tote owners' (plural), but the source is a sponsored, scripted piece with fictional customers played by actors. It says nothing about shoulder pain specifically or about pain disappearing after purchase. Treating it as a pattern goes beyond one scripted line.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S22": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only (full comment text)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: The claim turns liking the look into loving the tote overall and invents a recommendation. It also states laptop comfort, the opposite of what the source says.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S23": {
+  "literal_anchor": "MATCH",
+  "structural": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (annotator of creator screenshot)",
+  "context_used": "comment only (annotation text and its note about missing media)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "Needs own campaign data; not supported in research MVP.; auditor DOES_NOT_SUPPORT: The claim describes audio features (rapid speech, suspenseful piano music), but the source explicitly says no audio or video was supplied. Only a screenshot annotation exists.",
+  "decided_by": [
+   "llm:auditor",
+   "python:type_rule"
+  ]
+ },
+ "S24": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: The claim extends evidence about the 2023 edition to the current 2026 model and asserts the handle construction is the same and the bag equally durable. The source does not mention the 2026 model or any comparison.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S25": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "CONTRADICTED",
+  "grounded_span": "",
+  "speaker_attribution": "a person the author reports (sister) for the purchase; author first-hand for the rejection",
+  "context_used": "comment only (full comment text)",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: The claim credits the commenter with a purchase that the text attributes to the commenter's sister. The commenter says they did not buy the tote and chose a backpack. 'One' is not explicitly tied to the specific product beyond the metadata.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "S26": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: The claim reads an idiom literally as a measured weight of one metric ton and adds an independent measurement that does not exist. The comment also refers to 'another tote' in general rather than clearly naming the specific product.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ }
+}
