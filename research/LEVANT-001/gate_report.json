@@ -1,6 +1,6 @@
 {
   "project_id": "LEVANT-001",
-  "computed_at": "2026-10-16T19:40:02+00:00",
+  "computed_at": "2026-10-16T19:43:48+00:00",
   "contract_version": "0.2",
   "schema_errors": [],
   "claims": [
@@ -614,6 +614,447 @@
       "reasons": [],
       "unusable_evidence": [],
       "status": "HYPOTHESIS_LABELED"
+    },
+    {
+      "claim_id": "C-0020",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 6,
+          "threads": 6,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 4
+        }
+      },
+      "audit_id": "A-0016",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 6,
+          "threads": 6,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 4
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
+    },
+    {
+      "claim_id": "C-0021",
+      "claim_type": "PURCHASE_DRIVER",
+      "critical": true,
+      "text": "Shoulder or back strain from a heavy work bag or tote, in several cases one carrying a laptop, is a reason some people give for switching to a backpack.",
+      "reasons": [
+        "scope issue: E-0229 concerns a handbag, not a heavy work bag or tote; E-0376 states the outcome rather than the reason. Laptop is explicit only in E-0157 and E-0227 (E-0376 by reference to 'similar items')."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 7,
+          "groups": 7,
+          "threads": 5,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 7
+        }
+      },
+      "audit_id": "A-0017",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 7,
+          "groups": 7,
+          "threads": 5,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 7
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0022",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "Several people who switched from a tote to a backpack for comfort describe the backpack as less attractive or juvenile-looking; one says she would still choose a tote if she could, while others accept the trade.",
+      "reasons": [
+        "audit verdict PARTIAL",
+        "scope issue: The claim says switchers came 'from a tote'; only E-0277 (and E-0157, which makes no looks comment) clearly switched from a tote. E-0255 switched from a handbag, E-0290 and E-0351 do not state their prior bag, and E-0351 calls her backpack polished. Contradicting E-0225 shows a long-time switcher who describes her backpack positively."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 6,
+          "threads": 6,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 5
+        }
+      },
+      "audit_id": "A-0018",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 5,
+          "groups": 5,
+          "threads": 5,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 4
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0023",
+      "claim_type": "PATTERN",
+      "critical": false,
+      "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 8,
+          "groups": 6,
+          "threads": 6,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 0
+        }
+      },
+      "audit_id": "A-0019",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 8,
+          "groups": 6,
+          "threads": 6,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
+    },
+    {
+      "claim_id": "C-0024",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "Some shoppers check how heavy a bag is when empty, and several reject or regret bags that are heavy before anything is put in them, including leather and structured bags.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 6,
+          "threads": 5,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 4
+        }
+      },
+      "audit_id": "A-0020",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 6,
+          "threads": 5,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 4
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
+    },
+    {
+      "claim_id": "C-0025",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "In work-bag and laptop-bag threads, some people say they do not want a bag that looks like a school bag or hiking gear, and some reject Longchamp-style nylon totes for looking cheap or lacking structure.",
+      "reasons": [
+        "scope issue: 'Longchamp-style nylon totes' generalizes slightly; the sources only name Longchamp itself (two commenters)."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 5,
+          "groups": 4,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 1
+        }
+      },
+      "audit_id": "A-0021",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 5,
+          "groups": 4,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 1
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0026",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while one owner reports a microfiber vegan bag with no cracking or peeling after about four years.",
+      "reasons": [
+        "scope issue: The text says about 4.5 years where the claim says about four. The claim leaves out two other positive owner reports in the contradicting set (Poppy and Peonies, Matt and Nat), so 'one owner' understates the counter-evidence. Nothing in the sources is about the Lévant material."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 7,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 0
+        }
+      },
+      "audit_id": "A-0022",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 7,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0027",
+      "claim_type": "PERSONAL_EXPERIENCE",
+      "critical": false,
+      "text": "One commenter bought a vegan-leather jacket only because it was cheap on sale, after vegan leather had peeled for them; another shopper ruled out a vegan-leather work tote as too pricey for vegan leather.",
+      "reasons": [
+        "scope issue: The phrase 'after vegan leather had peeled for them' infers a sequence the text does not state outright; the text gives general past peeling of faux leather jackets alongside the cheap-only purchase."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 2,
+          "threads": 2,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 2
+        }
+      },
+      "audit_id": "A-0023",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 2,
+          "threads": 2,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 2
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0028",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "Nordace backpack owners in several threads report zipper, strap or fabric failures; the timings they give range from under a month to a little over two years.",
+      "reasons": [
+        "scope issue: The sources are self-selected complaint threads; several owners in the same threads report 5-7 years of use without major failure, which the claim does not mention but does not deny. The sources are about backpacks, not the Lévant tote."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 8,
+          "groups": 6,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 2
+        }
+      },
+      "audit_id": "A-0024",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 8,
+          "groups": 6,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 2
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0029",
+      "claim_type": "PURCHASE_DRIVER",
+      "critical": true,
+      "text": "Negative Nordace reviews and the brand's public replies on Reddit led several would-be buyers to say they will not buy or will hold off; these are stated intentions, and the reply-driven ones cluster in two threads.",
+      "reasons": [
+        "scope issue: Some intentions are implied rather than stated (E-0041, E-0050, E-0060, E-0094), and E-0019 is second-hand; the claim's caveat covers this. None are verified non-purchases."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 9,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 5
+        }
+      },
+      "audit_id": "A-0025",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 9,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 5
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0030",
+      "claim_type": "PERSONAL_EXPERIENCE",
+      "critical": false,
+      "text": "Two buyers describe Nordace offering a partial refund instead of a free return, with a return to Hong Kong at the buyer's cost as the alternative.",
+      "reasons": [
+        "audit verdict PARTIAL",
+        "scope issue: The 'return to Hong Kong' detail holds for only one of the two buyers; the other was told to return to Commerce, CA. Neither source explicitly says a free return was refused, though E-0036 implies it."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 2,
+          "threads": 2,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audit_id": "A-0026",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 2,
+          "threads": 2,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0031",
+      "claim_type": "PERSONAL_EXPERIENCE",
+      "critical": false,
+      "text": "A few commenters cite heavy ad retargeting or a sale countdown that reset as reasons they became suspicious of Nordace.",
+      "reasons": [
+        "audit verdict PARTIAL",
+        "scope issue: Only two commenters clearly cite these reasons for suspicion (E-0002 countdown reset, E-0040 retargeting); 'a few' stretches the evidence, since E-0050 does not cite retargeting and E-0093 expresses annoyance, not suspicion."
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 4,
+          "groups": 3,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 1
+        }
+      },
+      "audit_id": "A-0027",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 2,
+          "threads": 2,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
     }
   ],
   "coverage": {
@@ -837,8 +1278,8 @@
     "decision evidence": 107,
     "queries": 29,
     "claim statuses": {
-      "NEEDS_REVIEW": 12,
-      "APPROVED": 3,
+      "NEEDS_REVIEW": 21,
+      "APPROVED": 6,
       "HYPOTHESIS_LABELED": 4
     }
   }

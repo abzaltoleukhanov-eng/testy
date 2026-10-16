@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-16T19:40:02+00:00 by validate.py (contract 0.2). Statuses here are computed, not self-declared.
+Computed 2026-10-16T19:43:48+00:00 by validate.py (contract 0.2). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 
@@ -27,6 +27,18 @@ Computed 2026-10-16T19:40:02+00:00 by validate.py (contract 0.2). Statuses here 
 | C-0017 | HYPOTHESIS | **HYPOTHESIS_LABELED** | all checks passed |
 | C-0018 | HYPOTHESIS | **HYPOTHESIS_LABELED** | all checks passed |
 | C-0019 | HYPOTHESIS | **HYPOTHESIS_LABELED** | all checks passed |
+| C-0020 | PATTERN | **APPROVED** | all checks passed |
+| C-0021 | PURCHASE_DRIVER | **NEEDS_REVIEW** | scope issue: E-0229 concerns a handbag, not a heavy work bag or tote; E-0376 states the outcome rather than the reason. Laptop is explicit only in E-0157 and E-0227 (E-0376 by reference to 'similar items'). |
+| C-0022 | PATTERN | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The claim says switchers came 'from a tote'; only E-0277 (and E-0157, which makes no looks comment) clearly switched from a tote. E-0255 switched from a handbag, E-0290 and E-0351 do not state their prior bag, and E-0351 calls her backpack polished. Contradicting  |
+| C-0023 | PATTERN | **APPROVED** | all checks passed |
+| C-0024 | PATTERN | **APPROVED** | all checks passed |
+| C-0025 | PATTERN | **NEEDS_REVIEW** | scope issue: 'Longchamp-style nylon totes' generalizes slightly; the sources only name Longchamp itself (two commenters). |
+| C-0026 | PATTERN | **NEEDS_REVIEW** | scope issue: The text says about 4.5 years where the claim says about four. The claim leaves out two other positive owner reports in the contradicting set (Poppy and Peonies, Matt and Nat), so 'one owner' understates the counter-evidence. Nothing in the sources is about the Lévant material. |
+| C-0027 | PERSONAL_EXPERIENCE | **NEEDS_REVIEW** | scope issue: The phrase 'after vegan leather had peeled for them' infers a sequence the text does not state outright; the text gives general past peeling of faux leather jackets alongside the cheap-only purchase. |
+| C-0028 | PATTERN | **NEEDS_REVIEW** | scope issue: The sources are self-selected complaint threads; several owners in the same threads report 5-7 years of use without major failure, which the claim does not mention but does not deny. The sources are about backpacks, not the Lévant tote. |
+| C-0029 | PURCHASE_DRIVER | **NEEDS_REVIEW** | scope issue: Some intentions are implied rather than stated (E-0041, E-0050, E-0060, E-0094), and E-0019 is second-hand; the claim's caveat covers this. None are verified non-purchases. |
+| C-0030 | PERSONAL_EXPERIENCE | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The 'return to Hong Kong' detail holds for only one of the two buyers; the other was told to return to Commerce, CA. Neither source explicitly says a free return was refused, though E-0036 implies it. |
+| C-0031 | PERSONAL_EXPERIENCE | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: Only two commenters clearly cite these reasons for suspicion (E-0002 countdown reset, E-0040 retargeting); 'a few' stretches the evidence, since E-0050 does not cite retargeting and E-0093 expresses annoyance, not suspicion. |
 
 ## Coverage: COVERAGE_LIMITED
 - planned source not retrievable by any tested route: official
@@ -70,4 +82,4 @@ Computed 2026-10-16T19:40:02+00:00 by validate.py (contract 0.2). Statuses here 
 - evidence rows: 431
 - decision evidence: 107
 - queries: 29
-- claim statuses: {'NEEDS_REVIEW': 12, 'APPROVED': 3, 'HYPOTHESIS_LABELED': 4}
+- claim statuses: {'NEEDS_REVIEW': 21, 'APPROVED': 6, 'HYPOTHESIS_LABELED': 4}
