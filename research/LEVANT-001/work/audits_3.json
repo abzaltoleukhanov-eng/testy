@@ -1,0 +1,102 @@
+[
+ {
+  "claim_id": "C-0009",
+  "auditor": "independent auditor packet 3",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0012", "located_span": "Within 2 years the zipper completely failed and would split everytime", "supports": true, "note": "Siena II backpack, zipper failure within two years (upper end of the stated timing range)."},
+   {"evidence_id": "E-0031", "located_span": "Just about two years to the day and the fabric is splitting and the zippers don’t work anymore.", "supports": true, "note": "Backpack fabric and zipper failure at about two years of daily use; same thread as E-0012."},
+   {"evidence_id": "E-0032", "located_span": "zipper doesn't work in like less than 1-yr", "supports": true, "note": "Zipper failure under one year; product type implied by the backpack thread, not named."},
+   {"evidence_id": "E-0035", "located_span": "", "supports": false, "note": "Complaint about perceived bad quality on arrival and the return process; no zipper, strap or fabric failure is described."},
+   {"evidence_id": "E-0078", "located_span": "I received my Nordace backpack less than a month ago and the zipper already broke and the bag tore.", "supports": true, "note": "Zipper and fabric failure in under a month (lower end of the stated timing range)."},
+   {"evidence_id": "E-0085", "located_span": "about 2-3 months into wearing and using on a daily basis, one of the leather straps broke", "supports": true, "note": "Strap failure at 2-3 months on the Siena smart backpack (per parent link)."},
+   {"evidence_id": "E-0090", "located_span": "Zips are all of poor quality, the main zip is starting to ripple and I'm worried that it will fail soon.", "supports": true, "note": "Only partly fits: the zip had not failed yet and the fabric had threads pulling. The clear failure was the charging port, which is outside zipper/strap/fabric. Nordace Henge."},
+   {"evidence_id": "E-0101", "located_span": "The main zipper is now broke which makes the backpack literally unusable.", "supports": true, "note": "Siena main zipper failure, bought in 2021; the time to failure is not stated, so it does not confirm the timing range."},
+   {"evidence_id": "E-0103", "located_span": "la fermeture à cassé jusque après les deux ans de garantie", "supports": true, "note": "Sienna zipper broke just after the two-year warranty, roughly at the upper end of the range."}
+  ],
+  "scope_issue": "The timing range is approximate. Some failures (E-0101) have no stated time to failure, and E-0103 is just past two years. Some product types are implied by the thread rather than named. The reports come from self-selected complaint threads and give no failure rate.",
+  "open_contradiction": false,
+  "reasoning": "In three threads (18nj9sk, bqe83z, 1lfsxia), several distinct owners report zipper, strap or fabric failures on Nordace backpacks, with timings from under a month (E-0078) to about two years (E-0012, E-0031, E-0103). E-0035 does not describe a failure, and E-0090 is only a partial fit. The contradicting reports of long use do not refute that these failure reports exist, and the scope limits already acknowledge them, so the pattern as worded holds."
+ },
+ {
+  "claim_id": "C-0010",
+  "auditor": "independent auditor packet 3",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0028", "located_span": "I bought it because I previously bought your Siena tote, which I love and rated at a 5.", "supports": true, "note": "A repeat purchase (purse) driven by satisfaction with the Siena tote, although the second item disappointed. Not a backpack."},
+   {"evidence_id": "E-0033", "located_span": "I bought a Nordace backpack back in 2019 and it has been The Best Backback I've ever owned.", "supports": true, "note": "About seven years of use of one backpack."},
+   {"evidence_id": "E-0034", "located_span": "so I have ordered the exact same backpack to replace the one I have.", "supports": true, "note": "A repeat purchase by the same commenter as E-0033 (same source), so it is not an independent owner."},
+   {"evidence_id": "E-0052", "located_span": "I've had mine for several years.", "supports": true, "note": "Several years of daily use; considering buying a new one."},
+   {"evidence_id": "E-0068", "located_span": "I bought my nordace backpack in 2021, and it's still going strong today although there is noticeable wear.", "supports": true, "note": "Years of near-daily use; plans to buy again."},
+   {"evidence_id": "E-0069", "located_span": "I'm ordering my 3rd nordace bag since 2019.", "supports": true, "note": "Repeat purchases; second bag lasted 4 years with only zip tags broken."},
+   {"evidence_id": "E-0076", "located_span": "I have bought 6 backpacks from Nordace.", "supports": true, "note": "Repeat purchases (two were gifts)."},
+   {"evidence_id": "E-0100", "located_span": "I have had mine for about 5 years and taken it on several international trips, and use it for work.", "supports": true, "note": "About five years of use; the brand is implied by the Siena thread context."},
+   {"evidence_id": "E-0173", "located_span": "4 women at work have bought one because of mine.", "supports": true, "note": "Colleagues bought after seeing her Nordace backpack."}
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Owners in four threads directly report years of use, repeat purchases and colleagues buying after seeing their bag. E-0033 and E-0034 come from the same comment, so they count as one owner. The reports of failures do not contradict that these positive individual reports exist, and the claim does not assert a durability rate."
+ },
+ {
+  "claim_id": "C-0011",
+  "auditor": "independent auditor packet 3",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0019", "located_span": "Just wanted you to know the tone of this comment convinced my partner not to buy your product.", "supports": true, "note": "A reply-driven rejection, but reported second-hand about a partner."},
+   {"evidence_id": "E-0020", "located_span": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass.", "supports": true, "note": "A would-be buyer passes because of the brand's reply."},
+   {"evidence_id": "E-0026", "located_span": "I can't in good conscience pick one up after reading this comment.", "supports": true, "note": "An existing owner who planned a replacement purchase backs off because of the brand's reply."},
+   {"evidence_id": "E-0041", "located_span": "Thank goodness i found this was about to buy one just because of the aesthetics", "supports": true, "note": "Implies the negative thread stopped the purchase, but no decision is explicitly stated."},
+   {"evidence_id": "E-0050", "located_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious.", "supports": true, "note": "The negative review 'confirmed' suspicions that something better exists; a decision not to buy is implied rather than explicit."},
+   {"evidence_id": "E-0060", "located_span": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me.", "supports": true, "note": "The brand's reply is a red flag and worries about future complaints; reads as holding off."},
+   {"evidence_id": "E-0062", "located_span": "I was going to buy a set but I'm not now!", "supports": true, "note": "An explicit decision not to buy, driven by the brand's reply."},
+   {"evidence_id": "E-0071", "located_span": "after reading so many negative reviews I have decided against buying this bag", "supports": true, "note": "An explicit decision not to buy because of negative reviews."},
+   {"evidence_id": "E-0094", "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.", "supports": true, "note": "Holds off on the Siena Tote and seeks alternatives because of brand reviews."}
+  ],
+  "scope_issue": "Some decisions are implied rather than stated (E-0041, E-0050), and E-0019 is second-hand. The reply-driven rejections cluster in two threads, as the scope notes. These are stated intentions, not verified non-purchases.",
+  "open_contradiction": false,
+  "reasoning": "Several commenters explicitly say that negative reviews (E-0071, E-0094) or the brand's Reddit replies (E-0020, E-0026, E-0060, E-0062, E-0019) led them, or someone close to them, not to buy or to hold off. The causal link is stated in the text for most items. The repeat-buyer evidence shows other people still buy, which does not refute these stated decisions."
+ },
+ {
+  "claim_id": "C-0013",
+  "auditor": "independent auditor packet 3",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {"evidence_id": "E-0003", "located_span": "", "supports": false, "note": "This was an order cancellation, not a return of a received bag. After a failed delivery the buyer was offered a reship or a refund and got a full refund, so it shows neither a partial refund nor return shipping at the buyer's cost."},
+   {"evidence_id": "E-0036", "located_span": "they responded that either give me 30% money back or I pay for the return cost.", "supports": true, "note": "Directly supports the partial refund or self-paid return."},
+   {"evidence_id": "E-0049", "located_span": "if you return it, you pay shipping and a 15% restocking fee", "supports": true, "note": "Describes the return policy (buyer pays shipping plus a restocking fee), but this buyer did not attempt a return."},
+   {"evidence_id": "E-0074", "located_span": "They offered a 30% refund to me but only gave me 21%.", "supports": true, "note": "A partial refund was offered; returning to Hong Kong would have been costly."}
+  ],
+  "scope_issue": "None of the supporting evidence backs the clause 'others report quick replacements'. Among the contradicting items, E-0092 reports a free zip replacement with no speed stated, and E-0084 reports a wrong packing-cube bundle corrected immediately, which is not a bag replacement. E-0049 describes policy rather than an attempted return.",
+  "open_contradiction": false,
+  "reasoning": "Two buyers (E-0036, E-0074) describe being offered a 30% partial refund or paying return shipping themselves, and E-0049 cites a buyer-pays-shipping policy, so the first half is supported. The second half, about quick replacements, has no supporting evidence. The contradicting items only weakly suggest it: one free replacement with no timing given, and one quick fix of a wrong accessory. E-0003 involves a full refund on a cancelled order and does not support the claim."
+ },
+ {
+  "claim_id": "C-0014",
+  "auditor": "independent auditor packet 3",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0002", "located_span": "the timer at the top of their page counting down the sale had reset", "supports": true, "note": "The resetting countdown is cited as false urgency that undermined trust."},
+   {"evidence_id": "E-0040", "located_span": "I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere)", "supports": true, "note": "Heavy retargeting is cited directly as a reason for suspicion."},
+   {"evidence_id": "E-0050", "located_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious.", "supports": true, "note": "Weak support: the commenter came via an ad and felt suspicious, but does not say the advertising itself caused the suspicion."},
+   {"evidence_id": "E-0093", "located_span": "", "supports": false, "note": "Expresses annoyance at the ads ('sick of seeing your ads'), not suspicion of the brand."}
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "E-0040 explicitly ties suspicion to an aggressive, retargeting-like ad campaign, and E-0002 explicitly treats a resetting sale timer as false urgency that broke trust. E-0050 is a weaker fit, and E-0093 shows ad fatigue rather than suspicion. The claim is limited to a few commenters and to suspicion rather than proven misconduct, which matches the sources. The contradicting satisfied buyer does not refute it."
+ },
+ {
+  "claim_id": "C-0015",
+  "auditor": "independent auditor packet 3",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0079", "located_span": "The quality is far better and the return policy/warranty is much better.", "supports": true, "note": "Warranty and return policy are used to favour North Face over Nordace, and price value is discussed."},
+   {"evidence_id": "E-0091", "located_span": "A company that can't offer an extensive warranty period clearly does not have faith in the products", "supports": true, "note": "Explicitly uses warranty length as a trust signal, and compares price against brands with lifetime warranties."},
+   {"evidence_id": "E-0101", "located_span": "No support from the company as they only offer a 1 year warranty (big red flag in hindsight).", "supports": true, "note": "A short warranty is framed as a trust red flag."},
+   {"evidence_id": "E-0170", "located_span": "It was disappointing because the style was perfect, but the quality and customer service didn’t match the price tag.", "supports": true, "note": "Customer service is judged against price (BEIS, not Nordace)."},
+   {"evidence_id": "E-0211", "located_span": "Lifetime warranty against damage, not just defects.", "supports": true, "note": "Weaker: a warranty is offered as the reason to recommend a brand, but trust and price are not stated explicitly."}
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Several commenters across brands explicitly use warranty or after-sales support to judge trust (E-0091, E-0101) and whether the price is justified (E-0091, E-0170, E-0079). E-0211 fits more loosely, as a warranty-based recommendation. The claim is framed as stated reasoning across individual comments, which matches the sources."
+ }
+]
