@@ -1,0 +1,30 @@
+# branch	polarity	stage	scope	situation	market	subreddit	query	why
+B01	NEUTRAL	ANY	OUR_BRAND	ANY	ANY	-	nordace	brand mentions baseline
+B01	NEUTRAL	ANY	OUR_BRAND	ANY	ANY	-	nordace siena	product family mentions
+B01	NEUTRAL	COMPARE	OUR_BRAND	ANY	ANY	-	nordace legit	trust in an ad-driven DTC brand
+B02	NEUTRAL	COMPARE	CATEGORY	work	ANY	handbags	work tote laptop	core category: work laptop tote choice
+B02	NEUTRAL	COMPARE	CATEGORY	work	ANY	femalefashionadvice	work bag laptop	core category, fashion-led audience
+B02	NEUTRAL	TRIGGER	CATEGORY	work	ANY	AskWomenOver30	work bag	older audience, own words
+B03	PROBLEM	USE	CATEGORY	work	ANY	-	tote too heavy laptop shoulder	weight with laptop in real use
+B03	PROBLEM	USE	CATEGORY	commute	ANY	handbags	tote shoulder pain	weight and pain in handbag community
+B04	SWITCH	DECIDE	NON_COMMERCIAL_ALT	work	ANY	-	switched from tote to backpack for work	switch stories toward backpack
+B04	SWITCH	DECIDE	CATEGORY	work	ANY	-	went back to a tote from a backpack	reverse switch: why people return to totes
+B05	SWITCH	EXIT	CATEGORY	ANY	ANY	handbags	returned tote	returns and why
+B05	PROBLEM	EXIT	CATEGORY	ANY	ANY	-	regret buying tote bag	regret stories
+B06	POSITIVE	USE	CATEGORY	work	ANY	handbags	love my work tote	what satisfied owners value
+B06	POSITIVE	USE	CATEGORY	ANY	ANY	BuyItForLife	tote bag laptop	durability-minded positives
+B07	PROBLEM	USE	CATEGORY	ANY	ANY	-	vegan leather bag peeling	material doubt: vegan leather durability
+B07	NEUTRAL	COMPARE	CATEGORY	ANY	ANY	handbags	vegan leather tote worth it	material trade-off in choice
+B08	NEUTRAL	USE	CATEGORY	travel	ANY	HerOneBag	tote personal item laptop	travel use: tote as personal item
+B08	NEUTRAL	USE	CATEGORY	travel	ANY	onebag	tote luggage sleeve	luggage strap feature relevance
+B09	NEUTRAL	COMPARE	CATEGORY	work	ANY	femalefashionadvice	backpack unprofessional work	identity: backpack vs professional look
+B09	POSITIVE	USE	CATEGORY	work	ANY	-	structured tote looks professional	identity: looking put together
+B10	NEUTRAL	COMPARE	COMPETITOR	work	ANY	-	dagne dover tote	competitor discussions
+B10	NEUTRAL	COMPARE	COMPETITOR	work	ANY	-	lo and sons catalina	competitor discussions
+B10	NEUTRAL	COMPARE	COMPETITOR	work	ANY	-	cuyana tote laptop	competitor discussions
+B11	NEUTRAL	USE	NON_COMMERCIAL_ALT	work	ANY	-	laptop sleeve inside tote	workaround: making a normal tote work
+B11	NEUTRAL	USE	NON_COMMERCIAL_ALT	ANY	ANY	handbags	bag organizer insert	workaround: organiser inserts
+B12	NEUTRAL	DECIDE	CATEGORY	ANY	ANY	-	instagram ad bag worth it	ad-driven purchase scepticism
+B13	NEUTRAL	COMPARE	CATEGORY	work	UK	CasualUK	work bag	UK own words
+B13	NEUTRAL	COMPARE	CATEGORY	commute	UK	AskUK	work bag commute	UK commute context
+B14	NEUTRAL	TRIGGER	CATEGORY	theft	ANY	-	anti theft tote travel	anti-theft pocket relevance
