@@ -105,6 +105,7 @@ def main():
     p = sub.add_parser("add")
     p.add_argument("table", choices=list(PREFIX))
     p.add_argument("payload", help="JSON object/list, or @file.json")
+    p.add_argument("--dry-run", action="store_true", help="check records, write nothing (for parallel authors)")
     args = ap.parse_args()
 
     contract = load_contract()
@@ -118,6 +119,9 @@ def main():
     written, failed = 0, 0
     for rec in records:
         rows = read_jsonl(path)
+        if args.dry_run:
+            rec = dict(rec)
+            rec.setdefault(key, "DRY-" + str(written + failed + 1))
         rec.setdefault(key, next_id(rows, key, PREFIX[args.table]))
         if args.table != "audits":
             rec.setdefault("project_id", project_id)
@@ -134,10 +138,11 @@ def main():
             for e in errs:
                 print(f"   - {e}")
             continue
-        append_jsonl(path, [rec])
+        if not args.dry_run:
+            append_jsonl(path, [rec])
         written += 1
         print(f"OK   {rec[key]}")
-    print(f"{written} written, {failed} rejected")
+    print(f"{written} {'would be written (dry run)' if args.dry_run else 'written'}, {failed} rejected")
     sys.exit(1 if failed else 0)
 
 
