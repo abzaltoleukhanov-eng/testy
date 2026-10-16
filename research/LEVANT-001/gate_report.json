@@ -1,6 +1,6 @@
 {
   "project_id": "LEVANT-001",
-  "computed_at": "2026-10-16T19:36:51+00:00",
+  "computed_at": "2026-10-16T19:40:02+00:00",
   "contract_version": "0.2",
   "schema_errors": [],
   "claims": [
@@ -10,7 +10,7 @@
       "critical": true,
       "text": "In several independent discussions, people who carry a laptop in a shoulder tote or shoulder bag for work say it becomes too heavy or painful on the shoulder or back.",
       "reasons": [
-        "no independent audit yet"
+        "scope issue: Some cited items (E-0276, E-0377, and the E-0147 comment itself) do not mention a laptop. E-0121 does not specify a shoulder carry or pain. The claim is otherwise within its stated scope."
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -25,6 +25,19 @@
           "decision_groups": 5
         }
       },
+      "audit_id": "A-0001",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 7,
+          "groups": 7,
+          "threads": 7,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 5
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -34,7 +47,7 @@
       "critical": true,
       "text": "Pain or heaviness from carrying a laptop in a shoulder bag is a reason some people give for switching to a backpack.",
       "reasons": [
-        "no independent audit yet"
+        "scope issue: Several cited items (E-0229, E-0230, E-0275, E-0384) are not about a laptop, and E-0230 states no pain at all. The laptop-specific support rests on E-0157, E-0227, E-0368 and E-0376."
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -49,6 +62,19 @@
           "decision_groups": 8
         }
       },
+      "audit_id": "A-0002",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 4,
+          "groups": 4,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 4
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -58,7 +84,9 @@
       "critical": true,
       "text": "People who moved from a tote to a backpack for comfort often describe the backpack as less attractive or less professional, and some say they would still prefer a tote if they could.",
       "reasons": [
-        "no independent audit yet"
+        "audit verdict PARTIAL",
+        "scope issue: 'Often' implies a frequency the sources cannot show. Only E-0157 explicitly says she would prefer a tote, and E-0351 only implies it. Several switchers (E-0255, E-0384) accept the backpack without wanting a tote back, and E-0181 is not a comfort switcher.",
+        "open contradiction flagged by auditor"
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -73,6 +101,19 @@
           "decision_groups": 5
         }
       },
+      "audit_id": "A-0003",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 6,
+          "threads": 6,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 5
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -82,7 +123,8 @@
       "critical": false,
       "text": "Instead of one bag for everything, many people split by load: a backpack or laptop bag on heavy days and a lighter bag on light days, or two bags carried together.",
       "reasons": [
-        "no independent audit yet"
+        "audit verdict PARTIAL",
+        "scope issue: The sources do not support 'many people'; the stated scope itself says this is not a measure of how common it is. Several two-bag cases (E-0189, E-0322, E-0174) are motivated by access or convenience rather than load, so 'split by load' over-attributes the motive. E-0209, E-0248 and E-0370 do not show the behaviour."
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -97,6 +139,19 @@
           "decision_groups": 0
         }
       },
+      "audit_id": "A-0004",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 8,
+          "groups": 6,
+          "threads": 6,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 0
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -106,7 +161,7 @@
       "critical": true,
       "text": "Some shoppers check how heavy a bag is when empty and reject or regret structured or leather bags that are heavy before anything is put in them.",
       "reasons": [
-        "no independent audit yet"
+        "scope issue: Examples include backpacks (Tumi, the leather backpack), not only totes. E-0081 is about a Nordace backpack whose material is not stated as leather or structured and which was not rejected mainly for weight."
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -121,6 +176,19 @@
           "decision_groups": 4
         }
       },
+      "audit_id": "A-0005",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 6,
+          "threads": 5,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 4
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -130,7 +198,9 @@
       "critical": true,
       "text": "Laptop carriers say they want a bag that does not look sporty or like a school bag, and some reject light nylon totes because they look cheap or lack structure.",
       "reasons": [
-        "no independent audit yet"
+        "audit verdict PARTIAL",
+        "scope issue: 'Laptop carriers' is too broad: E-0097 is not clearly a laptop carrier, and E-0280 does not mention a laptop. The 'not sporty' part rests on one explicit source (E-0097) plus the 'trek' remark, while E-0280 chose a tactical bag on purpose. The 'light' in 'light nylon totes' is not stated by the people who reject them. The claim leaves out the contradicting evidence that some people choose Longchamp nylon because it is light (E-0209) or accept a bookbag look (E-0194).",
+        "open contradiction flagged by auditor"
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -145,6 +215,19 @@
           "decision_groups": 1
         }
       },
+      "audit_id": "A-0006",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 1
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -154,10 +237,24 @@
       "critical": true,
       "text": "Many commenters expect PU or vegan leather to peel or crack with daily use, while some owners report vegan bags that held up for years.",
       "reasons": [
-        "no independent audit yet"
+        "audit verdict PARTIAL",
+        "scope issue: 'Many commenters' rests on about six comments, three of them from one thread. One of these is about jackets, and E-0149 does not mention peeling. For 'some owners report vegan bags that held up for years', only one owner (E-0415/E-0416, apparently the same person) reports years of use. The other positive reports are about one year (E-0423) or give no duration (E-0425, E-0426)."
       ],
       "unusable_evidence": [],
       "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 4,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 0
+        }
+      },
+      "audit_id": "A-0007",
+      "audited_gate": {
         "pass": true,
         "reasons": [],
         "stats": {
@@ -178,7 +275,11 @@
       "critical": true,
       "text": "Expected peeling leads some shoppers to rule out pricier vegan-leather options or to buy vegan leather only at a low sale price.",
       "reasons": [
-        "no independent audit yet"
+        "audit verdict PARTIAL",
+        "scope issue: Only one source (E-0408, a jacket) clearly shows the price-conditional behaviour driven by peeling. The bag case (E-0421) does not tie the 'too pricey' exclusion to expected peeling, and the peeling exclusion (Beis) is based on reported peeling rather than on price. E-0410 describes a different behaviour. 'Some shoppers' and the bag framing go beyond one apparel example.",
+        "after audit: independent groups 1 < 2",
+        "after audit: distinct threads 1 < 2",
+        "after audit: independent DECISION evidence 1 < 2"
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -193,6 +294,23 @@
           "decision_groups": 3
         }
       },
+      "audit_id": "A-0008",
+      "audited_gate": {
+        "pass": false,
+        "reasons": [
+          "independent groups 1 < 2",
+          "distinct threads 1 < 2",
+          "independent DECISION evidence 1 < 2"
+        ],
+        "stats": {
+          "evidence": 1,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 1
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -202,7 +320,7 @@
       "critical": true,
       "text": "Nordace backpack owners in several threads report zipper, strap or fabric failures, with timings from under a month to about two years.",
       "reasons": [
-        "no independent audit yet"
+        "scope issue: The timing range is approximate. Some failures (E-0101) have no stated time to failure, and E-0103 is just past two years. Some product types are implied by the thread rather than named. The reports come from self-selected complaint threads and give no failure rate."
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -217,6 +335,19 @@
           "decision_groups": 3
         }
       },
+      "audit_id": "A-0010",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 8,
+          "groups": 6,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 2
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -225,9 +356,7 @@
       "claim_type": "PATTERN",
       "critical": false,
       "text": "Other Nordace owners in several threads report years of use, repeat purchases, or colleagues buying after seeing their bag.",
-      "reasons": [
-        "no independent audit yet"
-      ],
+      "reasons": [],
       "unusable_evidence": [],
       "structural_gate": {
         "pass": true,
@@ -241,8 +370,21 @@
           "decision_groups": 3
         }
       },
-      "evidence_audited": false,
-      "status": "NEEDS_REVIEW"
+      "audit_id": "A-0011",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 9,
+          "groups": 8,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 3
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
     },
     {
       "claim_id": "C-0011",
@@ -250,10 +392,23 @@
       "critical": true,
       "text": "Negative Nordace reviews and the brand's public replies on Reddit led several would-be buyers to decide not to buy or to hold off.",
       "reasons": [
-        "no independent audit yet"
+        "scope issue: Some decisions are implied rather than stated (E-0041, E-0050), and E-0019 is second-hand. The reply-driven rejections cluster in two threads, as the scope notes. These are stated intentions, not verified non-purchases."
       ],
       "unusable_evidence": [],
       "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 9,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 5
+        }
+      },
+      "audit_id": "A-0012",
+      "audited_gate": {
         "pass": true,
         "reasons": [],
         "stats": {
@@ -273,9 +428,7 @@
       "claim_type": "PERSONAL_EXPERIENCE",
       "critical": true,
       "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
-      "reasons": [
-        "no independent audit yet"
-      ],
+      "reasons": [],
       "unusable_evidence": [],
       "structural_gate": {
         "pass": true,
@@ -289,8 +442,21 @@
           "decision_groups": 1
         }
       },
-      "evidence_audited": false,
-      "status": "NEEDS_REVIEW"
+      "audit_id": "A-0009",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 1,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 1
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
     },
     {
       "claim_id": "C-0013",
@@ -299,7 +465,9 @@
       "text": "Buyers who tried to return a Nordace bag describe being offered a partial refund or return shipping at their own cost, while others report quick replacements.",
       "reasons": [
         "platforms 1 and situations 1 both < 2",
-        "no independent audit yet"
+        "audit verdict PARTIAL",
+        "scope issue: None of the supporting evidence backs the clause 'others report quick replacements'. Among the contradicting items, E-0092 reports a free zip replacement with no speed stated, and E-0084 reports a wrong packing-cube bundle corrected immediately, which is not a bag replacement. E-0049 describes policy rather than an attempted return.",
+        "after audit: platforms 1 and situations 1 both < 2"
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -316,6 +484,21 @@
           "decision_groups": 1
         }
       },
+      "audit_id": "A-0013",
+      "audited_gate": {
+        "pass": false,
+        "reasons": [
+          "platforms 1 and situations 1 both < 2"
+        ],
+        "stats": {
+          "evidence": 3,
+          "groups": 3,
+          "threads": 2,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -326,7 +509,7 @@
       "text": "Signals of an ad-driven brand, such as heavy retargeting and a sale countdown that resets, are cited as reasons for suspicion of Nordace.",
       "reasons": [
         "platforms 1 and situations 1 both < 2",
-        "no independent audit yet"
+        "after audit: platforms 1 and situations 1 both < 2"
       ],
       "unusable_evidence": [],
       "structural_gate": {
@@ -343,6 +526,21 @@
           "decision_groups": 1
         }
       },
+      "audit_id": "A-0014",
+      "audited_gate": {
+        "pass": false,
+        "reasons": [
+          "platforms 1 and situations 1 both < 2"
+        ],
+        "stats": {
+          "evidence": 3,
+          "groups": 3,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 1
+        }
+      },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
     },
@@ -351,9 +549,7 @@
       "claim_type": "PATTERN",
       "critical": false,
       "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
-      "reasons": [
-        "no independent audit yet"
-      ],
+      "reasons": [],
       "unusable_evidence": [],
       "structural_gate": {
         "pass": true,
@@ -367,8 +563,21 @@
           "decision_groups": 0
         }
       },
-      "evidence_audited": false,
-      "status": "NEEDS_REVIEW"
+      "audit_id": "A-0015",
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 5,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
     },
     {
       "claim_id": "C-0016",
@@ -628,7 +837,8 @@
     "decision evidence": 107,
     "queries": 29,
     "claim statuses": {
-      "NEEDS_REVIEW": 15,
+      "NEEDS_REVIEW": 12,
+      "APPROVED": 3,
       "HYPOTHESIS_LABELED": 4
     }
   }
