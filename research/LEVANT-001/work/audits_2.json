@@ -1,0 +1,156 @@
+[
+ {
+  "claim_id": "C-0006",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0097",
+    "located_span": "not tactical or sporty",
+    "supports": true,
+    "note": "Supports the 'not sporty' preference, but this poster wants a travel carry-on/day bag; a laptop/iPad sleeve is 'ideal but not essential', so she is not clearly a laptop carrier."
+   },
+   {
+    "evidence_id": "E-0181",
+    "located_span": "I don’t like my current backpack as it’s pretty bulky and not very professional looking.",
+    "supports": false,
+    "note": "A related appearance concern (backpack not professional), but it says nothing about looking sporty or like a school bag, and nothing about nylon totes."
+   },
+   {
+    "evidence_id": "E-0280",
+    "located_span": "In order to prevent looking like a school student, I chose to use a tactical backpack.",
+    "supports": true,
+    "note": "Supports avoiding a school-bag look. However, the poster deliberately chose a tactical/military backpack, which cuts against the 'not sporty' half of the claim. The source does not mention a laptop."
+   },
+   {
+    "evidence_id": "E-0345",
+    "located_span": "It reminds me of a cheap nylon bag I got as a kid.",
+    "supports": true,
+    "note": "Rejects the Longchamp look as cheap nylon, in a laptop-tote thread. The source does not mention 'light' as part of the rejection."
+   },
+   {
+    "evidence_id": "E-0347",
+    "located_span": "I tried the Longchamp but I just never liked the look, and it just lacked structure.",
+    "supports": true,
+    "note": "Rejects the Longchamp (nylon) for its look and lack of structure; this is in a laptop-tote thread."
+   },
+   {
+    "evidence_id": "E-0361",
+    "located_span": "I also don’t want to look like I’m on my way to home room.",
+    "supports": true,
+    "note": "A laptop commuter who does not want to look like she has a school bag."
+   },
+   {
+    "evidence_id": "E-0369",
+    "located_span": "I, too, hate the look of backpacks but this has been a lifesaver when I have to carry loads without looking like I’m off for a trek",
+    "supports": true,
+    "note": "Dislikes the outdoorsy, trekking look of backpacks. The parent post is about carrying a laptop to work."
+   }
+  ],
+  "scope_issue": "'Laptop carriers' is too broad: E-0097 is not clearly a laptop carrier, and E-0280 does not mention a laptop. The 'not sporty' part rests on one explicit source (E-0097) plus the 'trek' remark, while E-0280 chose a tactical bag on purpose. The 'light' in 'light nylon totes' is not stated by the people who reject them. The claim leaves out the contradicting evidence that some people choose Longchamp nylon because it is light (E-0209) or accept a bookbag look (E-0194).",
+  "open_contradiction": true,
+  "reasoning": "Several commenters in laptop/work-bag threads say they do not want to look like they are carrying a school bag (E-0280, E-0361), and two reject the Longchamp nylon tote as looking cheap or lacking structure (E-0345, E-0347). 'Not sporty' appears explicitly in only one, non-laptop source, and E-0181 is about professionalism rather than a sporty or school look. E-0209 picks the Longchamp because it is light for laptop carrying and E-0194 accepts a Fjallraven bookbag, so the pattern is real but mixed, and the wording overgeneralises.",
+  "auditor": "independent auditor packet 2"
+ },
+ {
+  "claim_id": "C-0007",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0149",
+    "located_span": "In my experience, Beis does not hold up because it’s not real leather.",
+    "supports": true,
+    "note": "Links poor durability to non-leather material. It does not specifically say peeling or cracking."
+   },
+   {
+    "evidence_id": "E-0409",
+    "located_span": "All my faux leather jackets start flaking and peeling after a few years.",
+    "supports": true,
+    "note": "This is about jackets, not bags, and about peeling after years rather than daily use. It supports the general belief only."
+   },
+   {
+    "evidence_id": "E-0419",
+    "located_span": "All vegan leather will eventually crack and peel.",
+    "supports": true,
+    "note": "A direct statement of the expectation; it is in a bag thread."
+   },
+   {
+    "evidence_id": "E-0420",
+    "located_span": "Since they're made out of PU I'm wondering if the material ever starts peeling, especially since a work bag would be something for daily use.",
+    "supports": true,
+    "note": "A worry rather than a firm expectation. The same post excludes the Beis because of peeling reviews."
+   },
+   {
+    "evidence_id": "E-0430",
+    "located_span": "the Beis complaints about peeling is going to happen to any \"vegan\" leather bag",
+    "supports": true,
+    "note": "A direct statement of the expectation about vegan leather bags."
+   },
+   {
+    "evidence_id": "E-0431",
+    "located_span": "Anything which is just PU leather will start peeling with daily use.",
+    "supports": true,
+    "note": "Matches the claim wording closely: PU, peeling, daily use."
+   },
+   {
+    "evidence_id": "E-0415",
+    "located_span": "I have a vegan Emmy, coming up on 4.5 years old.",
+    "supports": true,
+    "note": "Listed as contradicting evidence, but it supports the second half of the claim. Owner reports 'No cracking, peeling or flaking' after 4.5 years (microfiber vegan leather)."
+   },
+   {
+    "evidence_id": "E-0416",
+    "located_span": "I did use the vegan Emmy midi for 2.5-3 years straight as a diaper bag.",
+    "supports": true,
+    "note": "Listed as contradicting evidence. It appears to be the same owner and the same bag model as E-0415, so it is not an independent second owner."
+   }
+  ],
+  "scope_issue": "'Many commenters' rests on about six comments, three of them from one thread. One of these is about jackets, and E-0149 does not mention peeling. For 'some owners report vegan bags that held up for years', only one owner (E-0415/E-0416, apparently the same person) reports years of use. The other positive reports are about one year (E-0423) or give no duration (E-0425, E-0426).",
+  "open_contradiction": false,
+  "reasoning": "Commenters across four threads do state that PU or vegan leather will peel or crack, some of them explicitly with daily use (E-0431, E-0420). The claim already includes the opposing owner reports, so no contradiction is left unaddressed. However, 'many' is generous for this sample, and the 'held up for years' half is backed by essentially one owner, so the plural 'some owners ... for years' overstates it.",
+  "auditor": "independent auditor packet 2"
+ },
+ {
+  "claim_id": "C-0008",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0421",
+    "located_span": "I've excluded the July Juliette Soft Tote (not enough organization), Freja Paloma (too pricey for vegan leather 😭), and Beis Work Tote (seen reviews citing questionable quality with peeling and strap seams ripping) already.",
+    "supports": false,
+    "note": "The Freja is ruled out as 'too pricey for vegan leather', but the post does not say expected peeling is the reason. The Beis is ruled out because reviews reported peeling, but it is not described as the pricier option. The two parts of the claim are joined here only by inference."
+   },
+   {
+    "evidence_id": "E-0408",
+    "located_span": "I bought a vegan leather bomber only because I was able to Get it for super cheap on sale. I would never pay full price or over $70 for vegan leather.",
+    "supports": true,
+    "note": "Clear sale-price-only behaviour tied to experienced flaking and peeling. It is about a jacket, not a bag."
+   },
+   {
+    "evidence_id": "E-0410",
+    "located_span": "I would NOT repurchase vegan leather.",
+    "supports": false,
+    "note": "Peeling that was actually experienced (on a coat) leads to refusing to rebuy vegan leather at all. It is not about ruling out pricier options or buying only on sale."
+   }
+  ],
+  "scope_issue": "Only one source (E-0408, a jacket) clearly shows the price-conditional behaviour driven by peeling. The bag case (E-0421) does not tie the 'too pricey' exclusion to expected peeling, and the peeling exclusion (Beis) is based on reported peeling rather than on price. E-0410 describes a different behaviour. 'Some shoppers' and the bag framing go beyond one apparel example.",
+  "open_contradiction": false,
+  "reasoning": "As a purchase driver, the causal chain 'expected peeling → rule out pricier option / buy only on sale' is explicit only in E-0408, which is about a jacket. In E-0421 the shopper weighs price against vegan material and separately excludes a bag over peeling reviews, but never states that peeling is why the pricier option was ruled out. The counterexample (E-0417, bought a vegan Harlow after a durability report) fits the hedged 'some', so it is not an unresolved contradiction. The evidence is directionally consistent but thinner than the claim implies.",
+  "auditor": "independent auditor packet 2"
+ },
+ {
+  "claim_id": "C-0012",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0094",
+    "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.",
+    "supports": true,
+    "note": "States the plan to buy, gives the brand's reviews as the reason with 'however', and asks for similar alternatives. The thread title names the Nordace Siena Tote."
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "One poster says they planned to buy the Nordace (Siena) tote but that the brand's reviews were not great, and asks for alternatives. That supports a single-person account of turning away from the purchase because of the reviews. 'Decided against it' is a small inference from 'was planning ... however' plus the request for alternatives, but it is the natural reading. The claim is correctly limited to one person and to 'the Nordace tote'.",
+  "auditor": "independent auditor packet 2"
+ }
+]
