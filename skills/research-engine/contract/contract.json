@@ -260,7 +260,8 @@
         "story_id",
         "independence_group",
         "decision",
-        "notes"
+        "notes",
+        "situation_label_raw"
       ],
       "enum_fields": {
         "person_action": "person_action",
@@ -376,7 +377,8 @@
       "SWITCHED",
       "STOPPED_USING",
       "POSTPONED"
-    ]
+    ],
+    "situation_key": "evidence.situation_cluster_id (consolidated clusters); the author's raw label is kept in situation_label_raw. usage_situation is free text and is not counted."
   },
   "gates": {
     "PERSONAL_EXPERIENCE": {

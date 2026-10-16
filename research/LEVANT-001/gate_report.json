@@ -1,0 +1,635 @@
+{
+  "project_id": "LEVANT-001",
+  "computed_at": "2026-10-16T19:36:51+00:00",
+  "contract_version": "0.2",
+  "schema_errors": [],
+  "claims": [
+    {
+      "claim_id": "C-0001",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "In several independent discussions, people who carry a laptop in a shoulder tote or shoulder bag for work say it becomes too heavy or painful on the shoulder or back.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 9,
+          "groups": 9,
+          "threads": 9,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 5
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0002",
+      "claim_type": "PURCHASE_DRIVER",
+      "critical": true,
+      "text": "Pain or heaviness from carrying a laptop in a shoulder bag is a reason some people give for switching to a backpack.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 8,
+          "groups": 8,
+          "threads": 5,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 8
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0003",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "People who moved from a tote to a backpack for comfort often describe the backpack as less attractive or less professional, and some say they would still prefer a tote if they could.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 7,
+          "groups": 7,
+          "threads": 7,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 5
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0004",
+      "claim_type": "PATTERN",
+      "critical": false,
+      "text": "Instead of one bag for everything, many people split by load: a backpack or laptop bag on heavy days and a lighter bag on light days, or two bags carried together.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 11,
+          "groups": 9,
+          "threads": 8,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0005",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "Some shoppers check how heavy a bag is when empty and reject or regret structured or leather bags that are heavy before anything is put in them.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 7,
+          "groups": 7,
+          "threads": 6,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 4
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0006",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "Laptop carriers say they want a bag that does not look sporty or like a school bag, and some reject light nylon totes because they look cheap or lack structure.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 7,
+          "groups": 6,
+          "threads": 5,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 1
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0007",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "Many commenters expect PU or vegan leather to peel or crack with daily use, while some owners report vegan bags that held up for years.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 6,
+          "groups": 4,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0008",
+      "claim_type": "PURCHASE_DRIVER",
+      "critical": true,
+      "text": "Expected peeling leads some shoppers to rule out pricier vegan-leather options or to buy vegan leather only at a low sale price.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 3,
+          "groups": 3,
+          "threads": 2,
+          "platforms": 1,
+          "situations": 2,
+          "decision_groups": 3
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0009",
+      "claim_type": "PATTERN",
+      "critical": true,
+      "text": "Nordace backpack owners in several threads report zipper, strap or fabric failures, with timings from under a month to about two years.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 9,
+          "groups": 7,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 4,
+          "decision_groups": 3
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0010",
+      "claim_type": "PATTERN",
+      "critical": false,
+      "text": "Other Nordace owners in several threads report years of use, repeat purchases, or colleagues buying after seeing their bag.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 9,
+          "groups": 8,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 3
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0011",
+      "claim_type": "PURCHASE_DRIVER",
+      "critical": true,
+      "text": "Negative Nordace reviews and the brand's public replies on Reddit led several would-be buyers to decide not to buy or to hold off.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 9,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 5
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0012",
+      "claim_type": "PERSONAL_EXPERIENCE",
+      "critical": true,
+      "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 1,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 1
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0013",
+      "claim_type": "PATTERN",
+      "critical": false,
+      "text": "Buyers who tried to return a Nordace bag describe being offered a partial refund or return shipping at their own cost, while others report quick replacements.",
+      "reasons": [
+        "platforms 1 and situations 1 both < 2",
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": false,
+        "reasons": [
+          "platforms 1 and situations 1 both < 2"
+        ],
+        "stats": {
+          "evidence": 4,
+          "groups": 4,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 1
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0014",
+      "claim_type": "PATTERN",
+      "critical": false,
+      "text": "Signals of an ad-driven brand, such as heavy retargeting and a sale countdown that resets, are cited as reasons for suspicion of Nordace.",
+      "reasons": [
+        "platforms 1 and situations 1 both < 2",
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": false,
+        "reasons": [
+          "platforms 1 and situations 1 both < 2"
+        ],
+        "stats": {
+          "evidence": 4,
+          "groups": 3,
+          "threads": 3,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 1
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0015",
+      "claim_type": "PATTERN",
+      "critical": false,
+      "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
+      "reasons": [
+        "no independent audit yet"
+      ],
+      "unusable_evidence": [],
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 5,
+          "groups": 5,
+          "threads": 4,
+          "platforms": 1,
+          "situations": 3,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0016",
+      "claim_type": "HYPOTHESIS",
+      "critical": false,
+      "text": "A structured tote that looks like leather but is visibly lighter than leather could address the trade-off between looking professional and carrying a laptop without pain.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "status": "HYPOTHESIS_LABELED"
+    },
+    {
+      "claim_id": "C-0017",
+      "claim_type": "HYPOTHESIS",
+      "critical": false,
+      "text": "Transit and walking commuters may be the hardest audience for a laptop tote, while car commuters and light-load or meeting days may be a better fit.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "status": "HYPOTHESIS_LABELED"
+    },
+    {
+      "claim_id": "C-0018",
+      "claim_type": "HYPOTHESIS",
+      "critical": false,
+      "text": "Shoppers who see a Nordace ad and check Reddit will mostly find backpack durability complaints, so tote-specific proof (owner longevity, warranty terms, honest weight) may be needed for cold traffic to convert.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "status": "HYPOTHESIS_LABELED"
+    },
+    {
+      "claim_id": "C-0019",
+      "claim_type": "HYPOTHESIS",
+      "critical": false,
+      "text": "Concrete owner reports of vegan-leather bags lasting years without peeling may weaken the price-ceiling objection to a vegan tote around $188.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "status": "HYPOTHESIS_LABELED"
+    }
+  ],
+  "coverage": {
+    "matrix": {
+      "ANY|OUR_BRAND|ANY": 2,
+      "COMPARE|OUR_BRAND|ANY": 1,
+      "COMPARE|CATEGORY|ANY": 4,
+      "TRIGGER|CATEGORY|ANY": 2,
+      "USE|CATEGORY|ANY": 8,
+      "DECIDE|NON_COMMERCIAL_ALT|ANY": 1,
+      "DECIDE|CATEGORY|ANY": 2,
+      "EXIT|CATEGORY|ANY": 2,
+      "COMPARE|COMPETITOR|ANY": 3,
+      "USE|NON_COMMERCIAL_ALT|ANY": 2,
+      "COMPARE|CATEGORY|UK": 2
+    },
+    "branches": {
+      "B01": {
+        "queries": 3,
+        "polarities": [
+          "NEUTRAL"
+        ],
+        "results_found": 196,
+        "threads_retrieved": 7,
+        "balanced": true
+      },
+      "B02": {
+        "queries": 3,
+        "polarities": [
+          "NEUTRAL"
+        ],
+        "results_found": 300,
+        "threads_retrieved": 9,
+        "balanced": true
+      },
+      "B03": {
+        "queries": 2,
+        "polarities": [
+          "PROBLEM"
+        ],
+        "results_found": 197,
+        "threads_retrieved": 4,
+        "balanced": false
+      },
+      "B04": {
+        "queries": 2,
+        "polarities": [
+          "SWITCH"
+        ],
+        "results_found": 194,
+        "threads_retrieved": 2,
+        "balanced": false
+      },
+      "B05": {
+        "queries": 2,
+        "polarities": [
+          "PROBLEM",
+          "SWITCH"
+        ],
+        "results_found": 197,
+        "threads_retrieved": 2,
+        "balanced": false
+      },
+      "B06": {
+        "queries": 2,
+        "polarities": [
+          "POSITIVE"
+        ],
+        "results_found": 200,
+        "threads_retrieved": 1,
+        "balanced": true
+      },
+      "B07": {
+        "queries": 2,
+        "polarities": [
+          "NEUTRAL",
+          "PROBLEM"
+        ],
+        "results_found": 197,
+        "threads_retrieved": 3,
+        "balanced": true
+      },
+      "B08": {
+        "queries": 2,
+        "polarities": [
+          "NEUTRAL"
+        ],
+        "results_found": 200,
+        "threads_retrieved": 3,
+        "balanced": true
+      },
+      "B09": {
+        "queries": 2,
+        "polarities": [
+          "NEUTRAL",
+          "POSITIVE"
+        ],
+        "results_found": 197,
+        "threads_retrieved": 2,
+        "balanced": true
+      },
+      "B10": {
+        "queries": 3,
+        "polarities": [
+          "NEUTRAL"
+        ],
+        "results_found": 243,
+        "threads_retrieved": 3,
+        "balanced": true
+      },
+      "B11": {
+        "queries": 2,
+        "polarities": [
+          "NEUTRAL"
+        ],
+        "results_found": 197,
+        "threads_retrieved": 2,
+        "balanced": true
+      },
+      "B12": {
+        "queries": 1,
+        "polarities": [
+          "NEUTRAL"
+        ],
+        "results_found": 97,
+        "threads_retrieved": 0,
+        "balanced": true
+      },
+      "B13": {
+        "queries": 2,
+        "polarities": [
+          "NEUTRAL"
+        ],
+        "results_found": 200,
+        "threads_retrieved": 1,
+        "balanced": true
+      },
+      "B14": {
+        "queries": 1,
+        "polarities": [
+          "NEUTRAL"
+        ],
+        "results_found": 97,
+        "threads_retrieved": 0,
+        "balanced": true
+      }
+    },
+    "novelty": {
+      "B01": {
+        "evidence": 103,
+        "situation_clusters": 6,
+        "behavior_patterns": 85,
+        "new_in_last_20": 15,
+        "saturated_signal": false
+      },
+      "B02": {
+        "evidence": 201,
+        "situation_clusters": 8,
+        "behavior_patterns": 172,
+        "new_in_last_20": 18,
+        "saturated_signal": false
+      },
+      "B06": {
+        "evidence": 9,
+        "situation_clusters": 2,
+        "behavior_patterns": 9,
+        "new_in_last_20": 9,
+        "saturated_signal": false
+      },
+      "B04": {
+        "evidence": 29,
+        "situation_clusters": 5,
+        "behavior_patterns": 25,
+        "new_in_last_20": 16,
+        "saturated_signal": false
+      },
+      "B03": {
+        "evidence": 61,
+        "situation_clusters": 3,
+        "behavior_patterns": 52,
+        "new_in_last_20": 15,
+        "saturated_signal": false
+      },
+      "B05": {
+        "evidence": 3,
+        "situation_clusters": 2,
+        "behavior_patterns": 3,
+        "new_in_last_20": 3,
+        "saturated_signal": false
+      },
+      "B07": {
+        "evidence": 25,
+        "situation_clusters": 3,
+        "behavior_patterns": 16,
+        "new_in_last_20": 12,
+        "saturated_signal": false
+      },
+      "ALL": {
+        "evidence": 431,
+        "situation_clusters": 10,
+        "behavior_patterns": 355,
+        "new_in_last_20": 12,
+        "saturated_signal": false
+      }
+    },
+    "limited_reasons": [
+      "planned source not retrievable by any tested route: official",
+      "branches without NEUTRAL/POSITIVE queries: ['B03', 'B04', 'B05']"
+    ],
+    "status": "COVERAGE_LIMITED"
+  },
+  "corpus": {
+    "sources": 2184,
+    "threads": 39,
+    "authors (within platform)": 1516,
+    "retrieval methods": {
+      "RSS": 2184
+    },
+    "edited since archive (SOURCE_CHANGED)": 150,
+    "evidence rows": 431,
+    "decision evidence": 107,
+    "queries": 29,
+    "claim statuses": {
+      "NEEDS_REVIEW": 15,
+      "HYPOTHESIS_LABELED": 4
+    }
+  }
+}

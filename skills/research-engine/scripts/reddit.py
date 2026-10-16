@@ -226,6 +226,10 @@ def cmd_thread(args):
     if post:
         r = base(post, tid, "post")
         r.update({"source_id": f"RD-{tid}", "title": post["title"], "context_captured": "COMMENT_ONLY"})
+        if not r["text"]:
+            # title-only post (link or crosspost): keep the title as the text, mark it partial
+            r.update({"text": post["title"], "access_status": "READ_PARTIAL", "source_version": text_hash(post["title"]),
+                      "notes": "Post body empty in RSS (title only); text is the title."})
         if args.query_id:
             r["query_id"] = args.query_id
         rows.append(r)

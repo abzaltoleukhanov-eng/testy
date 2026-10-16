@@ -99,7 +99,7 @@ def main():
         "c2": ev("RD-c2", "it looks professional", polarity="NEUTRAL", behavior_pattern_id="BP2"),
         "d1": ev("RD-d1", "it looks more put together", polarity="POSITIVE", behavior_pattern_id="BP2"),
         "e1": ev("RD-e1", "A big tote looks polished in meetings", polarity="POSITIVE", behavior_pattern_id="BP2",
-                 usage_situation="meetings"),
+                 usage_situation="meetings", situation_cluster_id="S3"),
         "f1": ev("SN-f1", "totes are heavy"),
     }.items():
         add(pdir, "evidence", rec)

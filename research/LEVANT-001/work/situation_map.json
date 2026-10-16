@@ -1,0 +1,12 @@
+{
+ "SC01_office_commute_laptop": ["office_commute_laptop","daily_work_commute_laptop","work_commute_laptop","office_commute_general","office_work_carry","work_commute_daily_bag","work_commute_heavy_load","laptop_all_day_work_study","hybrid_commute_laptop","office_days_hybrid","lunch_and_basics_commute","work_tote_general","work_bag_replacement","legal_work_laptop_files","laptop_fit","laptop_protection_in_bag","laptop_commute_health_constraint","single_shoulder_bag_pain","tote_shoulder_strain","employer_issued_bag","field_work_dirty_environment"],
+ "SC02_transit_or_walking_commute": ["transit_commute_laptop","transit_commute_work","transit_commute_heavy_daily_load","walking_commute_laptop","public_transit_commute_laptop","crowded_transit_theft_risk","car_free_all_day_carry"],
+ "SC03_car_commute": ["car_commute_short_walk"],
+ "SC04_air_and_work_travel": ["air_travel_laptop_carry","airport_personal_item_rules","business_travel_laptop","work_travel_laptop","travel_carry","short_trip_carry_on","long_term_travel_daily_use","travel_work_commute","work_and_travel_dual_use","capacity_outgrown"],
+ "SC05_appearance_and_social_judgement": ["adult_bag_identity_judgement","backpack_with_dress_or_skirt","office_attire_backpack_mismatch","professional_appearance_occasion","formal_occasion","night_out_social","leather_look_judgement","office_peer_influence","work_bag_style_vs_comfort","work_to_evening_transition"],
+ "SC06_light_days_and_bag_rotation": ["cafe_light_laptop","everyday_purse_replacement","quick_access_on_the_go","multi_use_tote","load_dependent_bag_choice","load_dependent_bag_rotation","multi_bag_carry","carry_less_minimal","convertible_tote_backpack"],
+ "SC07_parent_or_caregiver": ["parent_daily_tote","parenting_outings_hands_free","caregiver_appointments_laptop"],
+ "SC08_shopping_and_brand_research": ["online_bag_purchase","dtc_site_cart_hesitation","premium_price_hesitation","price_vs_perceived_quality","gift_work_tote","quality_cue_inspection","looks_attract_reviews_deter","ad_driven_brand_distrust","ad_vs_reality_gap","dropship_suspicion","dtc_polish_vs_service_gap","review_suppression_suspicion","brand_reply_tone_backlash","tote_owner_repeat_purchase"],
+ "SC09_after_sales": ["post_failure_service","return_friction","order_cancellation_ignored","slow_delivery_overseas_shipping","warranty_as_trust_signal"],
+ "SC10_material_and_weight": ["vegan_leather_garment_purchase","vegan_leather_perception","rainy_commute_leather_durability","leather_bag_weight","weight_vs_design","weather_protection"]
+}
