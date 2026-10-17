@@ -5,3 +5,4 @@
 {"id": "SQ005", "at": "2026-10-17T21:26:50+00:00", "platform": "youtube", "route": "YTDLP", "q": "nordace siena tote", "branch": "B01", "polarity": "NEUTRAL", "stage": "COMPARE", "why": "", "found": 12, "status": "OK"}
 {"id": "SQ006", "at": "2026-10-17T21:26:51+00:00", "platform": "youtube", "route": "YTDLP", "q": "nordace siena riviera tote review", "branch": "B01", "polarity": "NEUTRAL", "stage": "COMPARE", "why": "", "found": 3, "status": "OK"}
 {"id": "SQ007", "at": "2026-10-17T21:26:53+00:00", "platform": "youtube", "route": "YTDLP", "q": "nordace tote bag honest review", "branch": "B01", "polarity": "NEUTRAL", "stage": "COMPARE", "why": "", "found": 12, "status": "OK"}
+{"id": "SQ008", "at": "2026-10-17T21:30:08+00:00", "platform": "reddit", "route": "ARCHIVE", "q": "personal item", "branch": "BA1", "polarity": "NEUTRAL", "stage": "USE", "why": "", "found": 25, "status": "OK", "subreddit": "HerOneBag", "kind": "posts"}
