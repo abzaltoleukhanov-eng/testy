@@ -1,0 +1,104 @@
+[
+  {
+    "claim_id": "C-0043",
+    "verdict": "PARTIAL",
+    "evidence_checks": [
+      {
+        "evidence_id": "E-0041",
+        "located_span": "was looking for reviews to see if quality is any good",
+        "supports": true,
+        "note": "One commenter in a 'Don't buy backpacks from Nordace' thread was looking for reviews before buying and found complaints. The motive given is aesthetics. An ad is not mentioned, apart from 'fake sounding video reviews'."
+      },
+      {
+        "evidence_id": "E-0050",
+        "located_span": "I was considering buying one after seeing an ad",
+        "supports": true,
+        "note": "This is the clearest case of the ad-to-Reddit path. The commenter saw an ad, read a negative backpack write-up and had their doubts confirmed. It is a single comment."
+      },
+      {
+        "evidence_id": "E-0071",
+        "located_span": "after reading so many negative reviews I have decided against buying this bag",
+        "supports": true,
+        "note": "Negative reviews led this person to decide against buying. The parent complaint is about customer service and refunds, not backpack quality specifically, and no ad is mentioned."
+      },
+      {
+        "evidence_id": "E-0094",
+        "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand",
+        "supports": true,
+        "note": "Poor brand reviews put this person off a Nordace tote (the Siena Tote, not the Lévant). This is brand-level reputation, not backpack complaints specifically."
+      }
+    ],
+    "scope_issue": "The premise 'since the Lévant has no reviews yet' is stated as fact, but none of the cited sources show it. The user message saying there are no reviews is not cited for this claim and does not name the product. 'Mostly meet complaints' is a share of Reddit content that is not measured; it is framed with 'may', but it rests on four comments from three threads. Only E-0050 mentions seeing an ad. E-0094 is about the Siena Tote and E-0071 about service, not backpacks.",
+    "open_contradiction": false,
+    "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+    "reasoning": "The conditional 'may... if so... might be needed' is framed as forward-looking. The sources fit the idea that some shoppers check Reddit reviews before buying, meet Nordace complaints and back off. However, the claim states as fact that the Lévant has no reviews yet, and none of the cited sources show that. The evidence is also a few individual comments, not a pattern.",
+    "auditor": "independent auditor packet 8"
+  },
+  {
+    "claim_id": "C-0044",
+    "verdict": "PARTIAL",
+    "evidence_checks": [
+      {
+        "evidence_id": "E-0415",
+        "located_span": "I have a vegan Emmy, coming up on 4.5 years old. They use microfiber vegan leather.",
+        "supports": true,
+        "note": "This is a concrete owner report of a vegan-leather bag lasting about 4.5 years with 'No cracking, peeling or flaking'. The bag is a Mina Baie, another brand. The parent post raises a price hesitation about vegan leather."
+      },
+      {
+        "evidence_id": "E-0417",
+        "located_span": "Thank you! I ended up getting a Harlow.",
+        "supports": true,
+        "note": "The person who raised the price and durability concern bought after reading the owner report. The reply does not say the report caused the purchase. It is one thread about one brand."
+      },
+      {
+        "evidence_id": "E-0432",
+        "located_span": "Siena Lévant Tote Bag | £159.00",
+        "supports": true,
+        "note": "This supports only the £159 price. The screenshot transcription does not mention vegan leather or any material, and shows no price objection to the Lévant."
+      }
+    ],
+    "scope_issue": "The evidence is a single thread about another brand (Mina Baie). Nothing in the sources says the Lévant is vegan leather, or that shoppers object to its £159 price. Whether reviews caused the purchase in E-0417 is implied, not stated.",
+    "open_contradiction": false,
+    "hypothesis_check": "FORWARD_LOOKING_OK",
+    "reasoning": "The claim is worded as an untested idea ('might weaken'). It does not state any measured result. One thread shows a vegan-leather price and durability hesitation followed by an owner's long-term no-peeling report and a purchase, which makes the idea plausible. The support is thin and comes from another brand, and the Lévant's material is not shown in these sources.",
+    "auditor": "independent auditor packet 8"
+  },
+  {
+    "claim_id": "C-0045",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "E-0432",
+        "located_span": "NEW | Home / Bags / Totes | Siena Lévant Tote Bag | £159.00",
+        "supports": true,
+        "note": "The screenshot transcription shows the NEW badge, the product name Siena Lévant Tote Bag and the price £159.00 on the nordace.com product URL."
+      },
+      {
+        "evidence_id": "E-0433",
+        "located_span": "NEW | Home / Bags / Totes | Siena Lévant Tote Bag | £159.00",
+        "supports": true,
+        "note": "This is the same screenshot transcription as E-0432, so it is a duplicate, not independent confirmation."
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "reasoning": "The claim is limited to what the user's screenshot shows: the product name, the £159.00 price and the NEW badge. The transcription states all three. E-0432 and E-0433 are the same source text, so there is effectively one source, which is adequate for this narrowly scoped product fact.",
+    "auditor": "independent auditor packet 8"
+  },
+  {
+    "claim_id": "C-0046",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "E-0434",
+        "located_span": "Нету отзывов новый продукт.",
+        "supports": true,
+        "note": "The user's Russian message translates as 'There are no reviews, new product.' It does not name the product."
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "reasoning": "The claim only reports what the user stated, that there are no reviews and the product is new, and the message says exactly that. The claim correctly does not name the product or treat the statement as verified.",
+    "auditor": "independent auditor packet 8"
+  }
+]

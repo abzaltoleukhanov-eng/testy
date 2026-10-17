@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-17T02:29:31+00:00 by validate.py (contract 0.3). Statuses here are computed, not self-declared.
+Computed 2026-10-17T02:32:51+00:00 by validate.py (contract 0.3). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 
@@ -50,6 +50,11 @@ Computed 2026-10-17T02:29:31+00:00 by validate.py (contract 0.3). Statuses here 
 | C-0040 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
 | C-0041 | PRODUCT_FACT | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The source text never says 'UK'. The URL is nordace.com/en/, and the UK locale is inferred from the £ currency. The evidence is a transcription of the user's screenshot, not a direct capture of the page. |
 | C-0042 | PRODUCT_FACT | **NEEDS_REVIEW** | scope issue: The message does not name the Siena Lévant Tote Bag. 'Because' reads a causal link into two juxtaposed phrases, which is a natural reading. 'Yet' is implied, not stated. |
+| C-0043 | HYPOTHESIS | **BLOCKED** | presents an unobserved fact as a hypothesis: The premise 'since the Lévant has no reviews yet' is stated as fact, but none of the cited sources show it. The user message saying there are no reviews is not cited for this claim and does not name the product. 'Mostly meet complaints' is a share of Redd |
+| C-0044 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0045 | PRODUCT_FACT | **APPROVED** | all checks passed |
+| C-0046 | PRODUCT_FACT | **APPROVED** | all checks passed |
+| C-0047 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
 
 ## Coverage: COVERAGE_LIMITED
 - planned source not retrievable by any tested route: official
@@ -94,4 +99,8 @@ Computed 2026-10-17T02:29:31+00:00 by validate.py (contract 0.3). Statuses here 
 - evidence rows: 434
 - decision evidence: 107
 - queries: 29
-- claim statuses: {'NEEDS_REVIEW': 27, 'APPROVED': 11, 'HYPOTHESIS_UNTESTED': 3, 'BLOCKED': 1}
+- claim statuses: {'NEEDS_REVIEW': 27, 'APPROVED': 13, 'HYPOTHESIS_UNTESTED': 5, 'BLOCKED': 2}
+
+## Brief check
+
+- PASS

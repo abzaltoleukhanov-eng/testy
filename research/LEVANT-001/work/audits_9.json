@@ -1,0 +1,43 @@
+[
+ {
+  "claim_id": "C-0047",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0041",
+    "located_span": "was looking for reviews to see if quality is any good",
+    "supports": true,
+    "note": "A would-be buyer searched for reviews and found a Reddit complaint thread about Nordace backpacks, which put them off. This is one comment and it does not mention an ad."
+   },
+   {
+    "evidence_id": "E-0050",
+    "located_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious.",
+    "supports": true,
+    "note": "The commenter saw an ad, went looking, and found a critical backpack write-up that confirmed their doubts. This fits the ad, then Reddit search, then complaints path for a backpack."
+   },
+   {
+    "evidence_id": "E-0071",
+    "located_span": "after reading so many negative reviews I have decided against buying this bag",
+    "supports": true,
+    "note": "Negative reviews stopped a purchase. The parent comment complains about customer service. No ad is mentioned and the product is not a tote."
+   },
+   {
+    "evidence_id": "E-0094",
+    "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.",
+    "supports": true,
+    "note": "A tote shopper was put off by brand-level reviews rather than tote-specific ones. This fits the idea that what people find is brand reputation, not proof about the tote itself. It is one post from the Philippines."
+   },
+   {
+    "evidence_id": "E-0434",
+    "located_span": "Нету отзывов новый продукт.",
+    "supports": true,
+    "note": "This is the user's chat statement ('No reviews, new product'), not an observed fact. The claim correctly labels it as a user report. The message does not name the Lévant, so the link to that product comes from conversation context, not from this text."
+   }
+  ],
+  "scope_issue": "The user message does not name the Lévant; the claim attaches it to that product. 'Mostly' is not shown: the sources are four Reddit comments and one user message, with no count of what shoppers actually find in search. Only E-0050 mentions seeing an ad. What would make cold traffic convert is untested.",
+  "open_contradiction": false,
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "reasoning": "The claim is hedged as a prediction ('may', 'if so', 'might be needed'). It attributes the no-reviews premise to the user and does not state any conversion result as observed. The sources ground the idea: several shoppers who looked for Nordace reviews found complaints, mostly about backpacks or the brand, and were deterred, one of them after seeing an ad. It is PARTIAL rather than SUPPORTS because the user message does not name the Lévant, and the evidence is a few individual comments, not a measured pattern."
+  ,"auditor": "independent auditor packet 9"
+ }
+]

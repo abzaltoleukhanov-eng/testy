@@ -1,0 +1,6 @@
+[
+{"text": "Shoppers who see a Nordace ad and search Reddit may mostly meet complaints about Nordace backpacks, since the user reports that the Lévant has no reviews yet; if so, tote-specific proof such as warranty terms, owner reports over time and an honest weight might be needed before cold traffic converts.",
+ "claim_type": "HYPOTHESIS", "critical": false, "hypothesis_label": "analyst hypothesis: conversion risk, untested",
+ "scope_limits": "Revision of C-0043: the no-reviews premise is the user's statement (E-0434); what shoppers would find is a prediction.",
+ "supporting_evidence_ids": ["E-0041", "E-0050", "E-0071", "E-0094", "E-0434"], "contradicting_evidence_ids": [], "counter_search_query_ids": []}
+]

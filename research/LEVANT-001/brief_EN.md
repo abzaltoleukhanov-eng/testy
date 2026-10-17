@@ -11,7 +11,7 @@
 **Volume:**
 - 29 queries, 39 threads, 2,184 posts and comments, 1,516 unique authors;
 - 431 evidence rows, 107 of them decision stories;
-- 40 claims: **11 approved after independent audit**, 4 kept as labelled hypotheses, the rest rejected or awaiting rework.
+- 47 claims: **13 approved after independent audit** (11 about people and the brand, 2 about the product), 4 hypotheses passed the framing check, the rest rejected or awaiting rework.
 
 Every finding below points to a claim `[C-…]`. A script, not the model, computed each claim's status. Quotes are given in the original.
 
@@ -23,6 +23,7 @@ Every finding below points to a claim `[C-…]`. A script, not the model, comput
 3. People expect vegan leather to peel. Some owners report bags that have held up for years [C-0035].
 4. The main commercial risk is what Reddit says about Nordace. After reading the reviews and the brand's replies, some would-be buyers say they will not buy or will hold off [C-0038]. One person turned away from the Nordace tote itself for this reason [C-0012].
 5. The brand also has loyal owners: years of use, repeat purchases, and colleagues who bought after seeing their bag [C-0010].
+6. The Lévant itself has no reviews yet: according to the user, the product is new [C-0046].
 
 ## What we learned about decisions
 
@@ -92,16 +93,21 @@ Why people turn away from Nordace after Reddit (hypotheses):
 - Leaving the laptop at the office.
 - A tote bought second-hand or on sale.
 
-For a $188 tote to win, it has to solve exactly what people put up with a backpack for: the weight on the shoulder. The tote already looks better.
+For a £159 tote to win, it has to solve exactly what people put up with a backpack for: the weight on the shoulder. The tote already looks better.
 
 ## The product: what is known and what is not
+- **Confirmed by the user's screenshot:**
+  - on the nordace.com page, the Siena Lévant Tote Bag is listed at **£159.00** with a **NEW** badge [C-0045];
+  - the screenshot shows two colours: black and cream, both with brown trim;
+  - one photo shows the tote on a suitcase handle.
+- **According to the user:** there are no reviews, the product is new [C-0046].
 - **From search results (`INDEXED_ONLY`, not verified):**
-  - $188, 15 L, 1 kg;
-  - 14-inch laptop;
+  - 15 L, 1 kg, 14-inch laptop;
   - removable lining, anti-theft back pocket, luggage strap, detachable shoulder strap;
-  - vegan leather (microfiber).
-- **The page showed "Waitlist".** If the product is out of stock, an ad test makes no sense.
-- **There is a Belted variant:** $198, 16 L, 15-inch laptop. We need to know which one we are advertising.
+  - vegan leather (microfiber);
+  - $188 in the US;
+  - the page earlier showed "Waitlist".
+- **Needed:** a screenshot of the specs section (weight, volume, laptop size, warranty) and confirmation that the bag is in stock for the test period.
 - **Weight comparison.** If the 1 kg figure holds, the Lévant is lighter than two bags that people themselves call heavy: Beis at 2.75 lb ≈ 1.25 kg and Cuyana Forma at 3.6 lb ≈ 1.6 kg [C-0024]. This comparison is a **hypothesis** until the weight is checked on a scale or in a screenshot.
 
 ## Creative opportunities (all hypotheses, to be tested)
@@ -113,21 +119,22 @@ For a $188 tote to win, it has to solve exactly what people put up with a backpa
 2. **"The bag for days when how you look matters"**: hypothesis [C-0017]. Basis: [C-0023].
    - Audience: meeting days and office days, not the daily walk with a full load.
    - Risk: it narrows the audience.
-3. **"Get ahead of the Reddit check"**: hypothesis [C-0018]. Basis: [C-0038], [C-0012], [C-0010], [C-0015].
+3. **"Get ahead of the Reddit check"**: hypothesis [C-0047]. Basis: [C-0038], [C-0012], [C-0010], [C-0015], [C-0046].
    - What to do: show the real warranty, owner reviews that state how long the bag has lasted, the honest weight.
    - Risk: the warranty terms need to be confirmed.
    - This is not a video idea but a precondition: without it, cold traffic may drop off after a search.
-4. **"Vegan leather that hasn't peeled"**: hypothesis [C-0019]. Basis: [C-0035], [C-0036].
+4. **"Vegan leather that hasn't peeled"**: hypothesis [C-0044]. Basis: [C-0035], [C-0036].
    - What to show: specific lengths of use from owners.
    - Risk: there is no evidence about the Lévant's material.
 
 ## Gaps and next step
-- **There is not a single review from a Lévant owner.** We need an export of reviews from the Nordace site, or screenshots.
-- **The official page is blocked.** We need a screenshot of the specs, price and stock status, plus an answer on which variant we are advertising.
+- **There are no reviews from Lévant owners: the product is new [C-0046].** Everything known about real-world use comes from other bags and from Nordace backpacks.
+- **The specs are not confirmed.** The screenshot confirmed the name, the UK price and the NEW badge. Weight, volume, warranty and stock status still come from search results.
 - **Did not pass audit after three rounds:**
   - the claim about Nordace backpack breakages (C-0037);
   - the claim "pain → switching to a backpack as a purchase reason" (C-0032);
   - the claim "a backpack is felt as a loss of looks" (C-0033).
+  - Hypothesis C-0018 was blocked: it presented as fact that shoppers "will mostly find" complaints about backpacks. It is replaced by C-0047.
 
   They are not used as findings and cannot be relied on.
 - **12 downloaded threads have not been analysed**, including ones on competitors Dagne Dover and Cuyana, the luggage strap and organizers.

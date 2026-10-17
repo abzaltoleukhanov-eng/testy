@@ -1,6 +1,6 @@
 {
   "project_id": "LEVANT-001",
-  "computed_at": "2026-10-17T02:29:31+00:00",
+  "computed_at": "2026-10-17T02:32:51+00:00",
   "contract_version": "0.3",
   "schema_errors": [],
   "claims": [
@@ -1461,6 +1461,108 @@
       },
       "evidence_audited": false,
       "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0043",
+      "claim_type": "HYPOTHESIS",
+      "critical": false,
+      "text": "Shoppers who see a Nordace ad and search Reddit may mostly meet complaints about Nordace backpacks, since the Lévant has no reviews yet; if so, tote-specific proof such as warranty terms, owner reports over time and an honest weight might be needed before cold traffic converts.",
+      "reasons": [
+        "presents an unobserved fact as a hypothesis: The premise 'since the Lévant has no reviews yet' is stated as fact, but none of the cited sources show it. The user message saying there are no reviews is not cited for this claim and does not name the product. 'Mostly meet complaints' is a share of Redd"
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0043",
+      "status": "BLOCKED"
+    },
+    {
+      "claim_id": "C-0044",
+      "claim_type": "HYPOTHESIS",
+      "critical": false,
+      "text": "Concrete owner reports of vegan-leather bags lasting years without peeling might weaken the price objection to a vegan-leather tote at around £159.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0044",
+      "status": "HYPOTHESIS_UNTESTED"
+    },
+    {
+      "claim_id": "C-0045",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "On the nordace.com product page captured in the user's screenshot, the Siena Lévant Tote Bag is listed at £159.00 with a NEW badge.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0045",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
+    },
+    {
+      "claim_id": "C-0046",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "The user states that there are no reviews and that the product is new.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0046",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 1,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 1,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
+    },
+    {
+      "claim_id": "C-0047",
+      "claim_type": "HYPOTHESIS",
+      "critical": false,
+      "text": "Shoppers who see a Nordace ad and search Reddit may mostly meet complaints about Nordace backpacks, since the user reports that the Lévant has no reviews yet; if so, tote-specific proof such as warranty terms, owner reports over time and an honest weight might be needed before cold traffic converts.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0047",
+      "status": "HYPOTHESIS_UNTESTED"
     }
   ],
   "coverage": {
@@ -1694,9 +1796,10 @@
     "queries": 29,
     "claim statuses": {
       "NEEDS_REVIEW": 27,
-      "APPROVED": 11,
-      "HYPOTHESIS_UNTESTED": 3,
-      "BLOCKED": 1
+      "APPROVED": 13,
+      "HYPOTHESIS_UNTESTED": 5,
+      "BLOCKED": 2
     }
-  }
+  },
+  "brief_issues": []
 }
