@@ -89,6 +89,24 @@ def gate_check(claim_type, evs, sources, queries, claim, contract):
     return not reasons, reasons, stats
 
 
+def hypothesis_status(a):
+    """A label never bypasses the audit. HYPOTHESIS and SITUATION_REACH claims pass only as HYPOTHESIS_UNTESTED,
+    and only when the auditor confirms the text is framed as a forward-looking, untested idea rather than an
+    assertion about something already observed (results, video content, audience share, a current trend)."""
+    if not a:
+        return "NEEDS_REVIEW", ["hypothesis framing not audited yet"]
+    hc = a.get("hypothesis_check")
+    if a.get("verdict") == "CONTRADICTS":
+        return "CONTRADICTED", [f"audit {a['audit_id']}: evidence contradicts it: {a.get('reasoning', '')[:200]}"]
+    if hc == "ASSERTS_UNOBSERVED_FACT":
+        return "BLOCKED", [f"presents an unobserved fact as a hypothesis: {a.get('scope_issue') or a.get('reasoning', '')}"[:300]]
+    if hc == "FORWARD_LOOKING_OK":
+        return "HYPOTHESIS_UNTESTED", []
+    if a.get("verdict") == "DOES_NOT_SUPPORT":
+        return "BLOCKED", ["auditor DOES_NOT_SUPPORT and no hypothesis framing check"]
+    return "NEEDS_REVIEW", ["auditor did not judge hypothesis framing (hypothesis_check missing)"]
+
+
 def evaluate_claims(t, contract):
     sources = {r["source_id"]: r for r in t["sources"]}
     evidence = {r["evidence_id"]: r for r in t["evidence"]}
@@ -118,17 +136,29 @@ def evaluate_claims(t, contract):
             res.update(status="BLOCKED", reasons=[gate.get("note", "not supported")])
             out.append(res)
             continue
+        latest = sorted(audits.get(c["claim_id"], []), key=lambda a: a.get("audited_at", ""))[-1:] or [None]
+        a = latest[0]
+        if a:
+            res["audit_id"] = a["audit_id"]
+
         if ctype == "HYPOTHESIS":
-            res.update(status="HYPOTHESIS_LABELED" if c.get("hypothesis_label") else "NEEDS_REVIEW",
-                       reasons=[] if c.get("hypothesis_label") else ["missing hypothesis_label"])
+            if not c.get("hypothesis_label"):
+                res.update(status="NEEDS_REVIEW", reasons=["missing hypothesis_label"])
+            else:
+                st, why = hypothesis_status(a)
+                res.update(status=st, reasons=why)
             out.append(res)
             continue
 
         s_ok, s_reasons, s_stats = gate_check(ctype, usable, sources, queries, c, contract)
         res["structural_gate"] = {"pass": s_ok, "reasons": s_reasons, "stats": s_stats}
 
-        latest = sorted(audits.get(c["claim_id"], []), key=lambda a: a.get("audited_at", ""))[-1:] or [None]
-        a = latest[0]
+        if ctype == "SITUATION_REACH":
+            # reach is never a fact from corpus frequency; at best an audited, forward-looking proxy hypothesis
+            st, why = hypothesis_status(a) if s_ok else ("NEEDS_REVIEW", s_reasons)
+            res.update(status=st, reasons=why)
+            out.append(res)
+            continue
         audited_ok, a_reasons, confirmed = False, [], []
         if not a:
             a_reasons.append("no independent audit yet")
@@ -166,11 +196,7 @@ def evaluate_claims(t, contract):
         res["evidence_audited"] = audited_ok
 
         reasons = s_reasons + a_reasons
-        if ctype == "SITUATION_REACH":
-            status = "HYPOTHESIS_LABELED" if s_ok else "NEEDS_REVIEW"
-            reasons = reasons or ["reach is never a fact from corpus frequency; labeled proxy only"]
-        else:
-            status = "APPROVED" if (s_ok and audited_ok) else "NEEDS_REVIEW"
+        status = "APPROVED" if (s_ok and audited_ok) else "NEEDS_REVIEW"
         res.update(status=status, reasons=reasons)
         out.append(res)
     return out
@@ -244,9 +270,9 @@ def check_briefs(ru_path, en_path, claim_status):
                 st = claim_status.get(cid)
                 if st is None:
                     issues.append(f"{name}: {cid} referenced but not in claims")
-                elif st == "HYPOTHESIS_LABELED" and label not in line.lower():
+                elif st == "HYPOTHESIS_UNTESTED" and label not in line.lower():
                     issues.append(f"{name}: {cid} is a hypothesis but its line has no '{label}' label")
-                elif st not in ("APPROVED", "HYPOTHESIS_LABELED"):
+                elif st not in ("APPROVED", "HYPOTHESIS_UNTESTED"):
                     issues.append(f"{name}: {cid} has status {st} and cannot appear as a finding")
     ids_ru, ids_en = set(ref.findall(ru)), set(ref.findall(en))
     if ids_ru != ids_en:

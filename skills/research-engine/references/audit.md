@@ -27,12 +27,23 @@ Return JSON only: a list, one object per claim:
 Rules: located_span must be copied character for character from the source text; if nothing supports the
 claim, set supports false and located_span to "". Check every evidence_id you are given.
 
+Claims of type HYPOTHESIS or SITUATION_REACH are not judged on whether the sources prove them. Judge their
+framing and add "hypothesis_check":
+- "FORWARD_LOOKING_OK": the text is an untested idea, prediction or proxy, worded as such, and does not state
+  as already observed any result, video content (speech, music, pacing), audience size or share, or current trend.
+- "ASSERTS_UNOBSERVED_FACT": the text states something as already true or observed that the sources do not
+  show (for example a percentage of a population, a ROAS result, what a video contains, "trending this week").
+  Name the assertion in scope_issue.
+Use verdict CONTRADICTS only if the sources contradict the idea itself.
+
 PACKET:
 <packet.json>
 ```
 
 ## Запись результата
 Добавь к каждому объекту `"auditor": "<agent id или описание>"` и запиши: `python3 scripts/ledger.py --project-dir D add audits @audits.json`. Скрипт сам проверит, что каждый `located_span` дословно есть в тексте источника. Выдуманный аудитором фрагмент не засчитывается.
+
+Гипотезы (`HYPOTHESIS`) и охват (`SITUATION_REACH`) тоже проходят аудит: метка не обходит проверку. Без `hypothesis_check: FORWARD_LOOKING_OK` они не попадут в бриф; `ASSERTS_UNOBSERVED_FACT` даёт `BLOCKED`.
 
 ## Что делать с результатами
 - `SUPPORTS` и `validate.py` даёт `APPROVED` → можно использовать в брифе.

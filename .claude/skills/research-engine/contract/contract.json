@@ -1,5 +1,5 @@
 {
-  "contract_version": "0.2",
+  "contract_version": "0.3",
   "note": "Single source of truth. Instructions, validators and test fixtures read field lists, enums and gates from this file. Change it here, never in a copy.",
   "enums": {
     "access_status": [
@@ -124,10 +124,14 @@
     ],
     "claim_status": [
       "APPROVED",
+      "HYPOTHESIS_UNTESTED",
       "NEEDS_REVIEW",
-      "HYPOTHESIS_LABELED",
       "CONTRADICTED",
       "BLOCKED"
+    ],
+    "hypothesis_check": [
+      "FORWARD_LOOKING_OK",
+      "ASSERTS_UNOBSERVED_FACT"
     ]
   },
   "tables": {
@@ -347,10 +351,12 @@
         "reasoning"
       ],
       "optional": [
-        "notes"
+        "notes",
+        "hypothesis_check"
       ],
       "enum_fields": {
-        "verdict": "audit_verdict"
+        "verdict": "audit_verdict",
+        "hypothesis_check": "hypothesis_check"
       },
       "evidence_check_fields": [
         "evidence_id",
@@ -415,21 +421,24 @@
       "counter_search_required": true
     },
     "SITUATION_REACH": {
-      "max_status": "HYPOTHESIS_LABELED",
-      "note": "Corpus frequency never establishes reach. Only labeled proxies."
+      "max_status": "HYPOTHESIS_UNTESTED",
+      "requires_audit": true,
+      "note": "Corpus frequency never establishes reach. Passes only as an audited forward-looking proxy hypothesis."
     },
     "CREATIVE_PERFORMANCE": {
       "max_status": "BLOCKED",
       "note": "Needs own campaign data; not supported in research MVP."
     },
     "HYPOTHESIS": {
-      "max_status": "HYPOTHESIS_LABELED",
+      "max_status": "HYPOTHESIS_UNTESTED",
       "requires": [
         "hypothesis_label"
-      ]
+      ],
+      "requires_audit": true,
+      "note": "A label never bypasses the audit: an auditor must confirm the text is forward-looking and does not assert unobserved facts (existing results, video content, audience size or share, current trends)."
     }
   },
-  "final_status_rule": "APPROVED = SCHEMA_VALID + STRUCTURAL_GATE + EVIDENCE_AUDITED (latest audit SUPPORTS, every cited span found verbatim in stored source text) + no open contradiction. Otherwise NEEDS_REVIEW with reasons. The model never writes a status; validate.py computes it.",
+  "final_status_rule": "APPROVED = SCHEMA_VALID + STRUCTURAL_GATE + EVIDENCE_AUDITED (latest audit SUPPORTS, every cited span found verbatim in stored source text) + no open contradiction. HYPOTHESIS and SITUATION_REACH reach at most HYPOTHESIS_UNTESTED, and only with an audit whose hypothesis_check is FORWARD_LOOKING_OK; ASSERTS_UNOBSERVED_FACT or DOES_NOT_SUPPORT without that check gives BLOCKED. Otherwise NEEDS_REVIEW with reasons. The model never writes a status; validate.py computes it.",
   "saturation": {
     "novelty_window": 20,
     "branch_closed_requires_polarity": [
@@ -442,5 +451,12 @@
       "market"
     ],
     "note": "Saturation means enough for the current research question, not that the market is studied. Blocked sources or unsearched markets make the run COVERAGE_LIMITED."
-  }
+  },
+  "changelog": [
+    {
+      "version": "0.3",
+      "date": "2026-10-17",
+      "change": "Hypothesis label no longer bypasses substantive audit (found by ChatGPT blind benchmark v02: G14, G20, G22). Status HYPOTHESIS_LABELED renamed HYPOTHESIS_UNTESTED."
+    }
+  ]
 }

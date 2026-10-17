@@ -123,21 +123,30 @@ def main():
         ("T10 40-50 professional", claim("Women 40-50 buy big totes to look professional", "PATTERN", ["c2", "d1", "e1"])),
         ("T12 hypothesis", claim("Maybe structure signals competence", "HYPOTHESIS", ["d1"], hypothesis_label="analyst hypothesis")),
         ("T13 no counter-search", claim("Heavy laptop totes cause pain (no counter)", "PATTERN", ["a1", "b1", "c1"], counter=())),
+        ("T14 hypothesis asserting a fact", claim("Our UGC video already doubled ROAS last week", "HYPOTHESIS", ["d1"], hypothesis_label="analyst hypothesis")),
+        ("T15 hypothesis not audited", claim("Structure may signal competence to colleagues", "HYPOTHESIS", ["d1"], hypothesis_label="analyst hypothesis")),
+        ("T16 reach as a share", claim("21% of US women have shoulder pain from totes", "SITUATION_REACH", ["a1", "b1", "c1"])),
     ]
     C = {}
     for name, rec in claims:
         add(pdir, "claims", rec)
         C[name] = f"C-{len(C) + 1:04d}"
 
-    def audit(cid, checks, verdict="SUPPORTS", scope_issue="", open_c=False):
+    def audit(cid, checks, verdict="SUPPORTS", scope_issue="", open_c=False, hc=None):
+        extra = {"hypothesis_check": hc} if hc else {}
         return {"claim_id": cid, "auditor": "fixture-auditor", "verdict": verdict, "scope_issue": scope_issue,
-                "open_contradiction": open_c, "reasoning": "fixture",
+                "open_contradiction": open_c, "reasoning": "fixture", **extra,
                 "evidence_checks": [{"evidence_id": E[k], "located_span": s, "supports": True, "note": ""} for k, s in checks]}
 
     good = [("a1", "my shoulder aches by lunch"), ("b1", "with my laptop it was too heavy"), ("c1", "the tote with my laptop gets heavy")]
     add(pdir, "audits", audit(C["T3 fake auditor span"], [("a1", "my shoulder aches by lunch"), ("b1", "too heavy, I hated it"),
                                                          ("c1", "the tote with my laptop gets heavy")]))
     add(pdir, "audits", audit(C["T9 clean pattern"], good))
+    add(pdir, "audits", audit(C["T12 hypothesis"], [], verdict="PARTIAL", hc="FORWARD_LOOKING_OK"))
+    add(pdir, "audits", audit(C["T14 hypothesis asserting a fact"], [], verdict="DOES_NOT_SUPPORT", hc="ASSERTS_UNOBSERVED_FACT",
+                              scope_issue="states an observed ROAS result"))
+    add(pdir, "audits", audit(C["T16 reach as a share"], good, verdict="DOES_NOT_SUPPORT", hc="ASSERTS_UNOBSERVED_FACT",
+                              scope_issue="corpus share presented as a population percentage"))
     add(pdir, "audits", audit(C["T13 no counter-search"], good))
     add(pdir, "audits", audit(C["T10 40-50 professional"], [("c2", "it looks professional"), ("d1", "looks more put together"),
                                                            ("e1", "looks polished in meetings")],
@@ -150,7 +159,9 @@ def main():
         "T1 one thread": "NEEDS_REVIEW", "T2 no audit": "NEEDS_REVIEW", "T3 fake auditor span": "NEEDS_REVIEW",
         "T4 complaints as purchase driver": "NEEDS_REVIEW", "T5 product fact from category": "NEEDS_REVIEW",
         "T6 snippet only": "NEEDS_REVIEW", "T9 clean pattern": "APPROVED", "T10 40-50 professional": "NEEDS_REVIEW",
-        "T12 hypothesis": "HYPOTHESIS_LABELED", "T13 no counter-search": "NEEDS_REVIEW",
+        "T12 hypothesis": "HYPOTHESIS_UNTESTED", "T13 no counter-search": "NEEDS_REVIEW",
+        "T14 hypothesis asserting a fact": "BLOCKED", "T15 hypothesis not audited": "NEEDS_REVIEW",
+        "T16 reach as a share": "BLOCKED",
     }
     failures = 0
     for name, want in expect.items():

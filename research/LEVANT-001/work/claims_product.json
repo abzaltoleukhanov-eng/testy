@@ -1,0 +1,10 @@
+[
+{"text": "On the UK Nordace site the Siena Lévant Tote Bag is listed at £159.00 and carries a NEW badge.",
+ "claim_type": "PRODUCT_FACT", "critical": true,
+ "scope_limits": "User screenshot of the UK page on 2026-10-17; US price, specs, weight and stock not visible.",
+ "supporting_evidence_ids": ["E-0432", "E-0433"], "contradicting_evidence_ids": [], "counter_search_query_ids": []},
+{"text": "According to the user, the Siena Lévant Tote Bag has no customer reviews yet because it is a new product.",
+ "claim_type": "PRODUCT_FACT", "critical": true,
+ "scope_limits": "User statement in chat on 2026-10-17; other markets or sites not checked.",
+ "supporting_evidence_ids": ["E-0434"], "contradicting_evidence_ids": [], "counter_search_query_ids": []}
+]

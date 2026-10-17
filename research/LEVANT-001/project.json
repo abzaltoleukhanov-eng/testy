@@ -2,24 +2,36 @@
   "project_id": "LEVANT-001",
   "product": "Nordace Siena Lévant Tote Bag",
   "product_url": "https://nordace.com/en/product/siena-levant-tote-bag/",
-  "product_facts_status": "INDEXED_ONLY: from web search result text, official page blocked from this environment (Cloudflare). Needs user screenshot to become a PRODUCT_FACT.",
+  "product_facts_status": "Name, UK price, NEW badge, colours and no-reviews status verified via user screenshot and statement. Weight, volume, laptop size, features, US price and stock status remain INDEXED_ONLY.",
   "product_facts_indexed": {
     "price": "$188 USD",
     "volume": "15 L",
     "weight": "1 kg",
     "laptop": "14-inch sleeve",
-    "features": ["detachable lining", "back anti-theft pocket", "luggage strap", "detachable adjustable shoulder strap", "fits overhead bins and under-seat spaces (brand claim)"],
+    "features": [
+      "detachable lining",
+      "back anti-theft pocket",
+      "luggage strap",
+      "detachable adjustable shoulder strap",
+      "fits overhead bins and under-seat spaces (brand claim)"
+    ],
     "material": "micro-fiber vegan leather",
-    "colors": ["Black-Brown", "Beige-Brown"],
+    "colors": [
+      "Black-Brown",
+      "Beige-Brown"
+    ],
     "availability": "page showed 'Waitlist - get notified when it's back' (possibly out of stock)",
     "sibling": "Siena Lévant Belted Tote Bag, $198, 16 L, 15-inch laptop sleeve"
   },
   "open_questions_for_user": [
-    "Which variant is 'Lévant Tote': Siena Lévant Tote Bag or Belted Tote Bag?",
-    "Is it in stock for the test period?",
-    "Screenshot of the product page (features, price) to verify product facts"
+    "Is it in stock for the test period (page earlier showed Waitlist)?",
+    "Screenshot of the specs section (weight, volume, laptop size, warranty)",
+    "US price"
   ],
-  "markets": ["US", "UK"],
+  "markets": [
+    "US",
+    "UK"
+  ],
   "platform": "Meta (Facebook/Instagram), cold traffic",
   "objective": "Purchases; winner = creative scaling to $50-100k spend at ROAS >= 1.0",
   "mode": "Standard (pilot of research-engine v3 core, Reddit only)",
@@ -30,5 +42,13 @@
     "Where do aesthetics (looking put-together, leather look) compete with weight, comfort and function?",
     "What makes people distrust or doubt vegan leather, price around $190, or unknown DTC brands?"
   ],
-  "created_at": "2026-10-16"
+  "created_at": "2026-10-16",
+  "product_facts_verified": {
+    "source": "user screenshot of UK product page, 2026-10-17 (archive/user/pdp_screenshot_2026-10-17.png) and user statement",
+    "name": "Siena Lévant Tote Bag (regular tote, not the Belted variant)",
+    "uk_price": "£159.00",
+    "badge": "NEW",
+    "colours": "two swatches: black/tan, cream/tan",
+    "reviews": "none yet, product is new (user statement)"
+  }
 }

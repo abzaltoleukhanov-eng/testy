@@ -10,7 +10,7 @@ Pipeline per case, same as a real project:
      plus the evidence labels an author would normally write (product match, action, evidence kind, situation).
   3. Python gate (validate.gate_check, unchanged) on usable, anchored, auditor-confirmed evidence.
   4. Engine status -> benchmark verdict, mapping fixed before scoring:
-       APPROVED / HYPOTHESIS_LABELED -> APPROVE_SCOPED
+       APPROVED -> APPROVE_SCOPED; HYPOTHESIS_UNTESTED -> APPROVE_HYPOTHESIS_UNTESTED (contract 0.3)
        literal mismatch, CONTRADICTED, BLOCKED type, auditor DOES_NOT_SUPPORT -> BLOCK
        anything else (NEEDS_REVIEW) -> NEEDS_REVIEW
 Adapter weakness, stated openly: there is no separate author here, so the auditor's labels stand in for the
@@ -24,7 +24,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 from re_lib import load_contract, span_in  # noqa: E402
-from validate import gate_check, usable_source  # noqa: E402
+from validate import gate_check, hypothesis_status, usable_source  # noqa: E402
 
 OFFICIAL_PLATFORMS = {"brandpdp", "officialpdp", "official"}
 
@@ -122,27 +122,44 @@ def cmd_finalize(args):
                 confirmed.append(ev)
         claim = {"counter_search_query_ids": [], "contradicting_evidence_ids": []}
 
-        if ctype in ("CREATIVE_PERFORMANCE",):
-            structural, s_reasons = "FAIL", [contract["gates"][ctype]["note"]]
+        hyp_type = ctype in ("HYPOTHESIS", "SITUATION_REACH")
+
+        # structural = schema-level validity only (agreed with the benchmark owner): literal anchors present and
+        # verbatim, sources usable. Evidence sufficiency (counts, independence, counter-search) is reported apart.
+        if not literal_ok:
+            structural = "FAIL"
+        elif unusable and not evs and not hyp_type:
+            structural, reasons = "REVIEW", reasons + unusable
+            decided_by.append("python:source_usability")
+        else:
+            structural = "PASS"
+        if ctype == "CREATIVE_PERFORMANCE":
+            sufficiency, s_reasons = "FAIL", [contract["gates"][ctype]["note"]]
             decided_by.append("python:type_rule")
         elif ctype == "HYPOTHESIS":
-            structural, s_reasons = "PASS", []
+            sufficiency, s_reasons = "NOT_APPLICABLE", []
         else:
             g_ok, s_reasons, _ = gate_check(ctype, evs, sources, {}, claim, contract)
-            if not literal_ok:
-                structural = "FAIL"
-            elif unusable and not evs:
-                structural, s_reasons = "REVIEW", unusable + s_reasons
-            else:
-                structural = "PASS" if g_ok else "FAIL"
-            if structural != "PASS":
-                decided_by.append("python:structural_gate")
+            sufficiency = "PASS" if g_ok else "FAIL"
+            if not g_ok:
+                decided_by.append("python:evidence_sufficiency")
         reasons += s_reasons
 
-        # 2. substantive (auditor)
+        # 2. substantive (auditor); for hypothesis types the auditor judges framing, not proof
         if not a:
             substantive = "REVIEW"
             reasons.append("no auditor output")
+        elif hyp_type:
+            hc = a.get("hypothesis_check")
+            if a.get("verdict") == "CONTRADICTS" or hc == "ASSERTS_UNOBSERVED_FACT":
+                substantive = "FAIL"
+            elif hc == "FORWARD_LOOKING_OK":
+                substantive = "PASS"
+            else:
+                substantive = "FAIL" if a.get("verdict") == "DOES_NOT_SUPPORT" else "REVIEW"
+            if substantive != "PASS":
+                decided_by.append("llm:auditor")
+                reasons.append(f"auditor {a.get('verdict')}/{hc}: {a.get('scope_issue') or a.get('reasoning', '')}"[:400])
         else:
             v = a.get("verdict")
             if v in ("DOES_NOT_SUPPORT", "CONTRADICTS"):
@@ -154,36 +171,44 @@ def cmd_finalize(args):
             if substantive != "PASS":
                 decided_by.append("llm:auditor")
                 reasons.append(f"auditor {v}: {a.get('scope_issue') or a.get('reasoning', '')}"[:400])
+        if a:
             fake = [eid for eid, ch in checks.items() if ch.get("supports") and ch.get("located_span")
                     and not any(span_in(ch["located_span"], s["text"]) for s in sources.values())]
             if fake:
                 reasons.append(f"auditor span not verbatim for {fake}")
                 decided_by.append("python:auditor_span_check")
 
-        # audited gate (engine recomputes on auditor-confirmed evidence)
+        # 3. audited gate (engine recomputes on auditor-confirmed evidence)
         audited_gate_ok = True
-        if ctype not in ("HYPOTHESIS", "CREATIVE_PERFORMANCE") and a:
+        if not hyp_type and ctype != "CREATIVE_PERFORMANCE" and a:
             audited_gate_ok, ag_reasons, _ = gate_check(ctype, confirmed, sources, {}, claim, contract)
-            if not audited_gate_ok and structural == "PASS":
+            if not audited_gate_ok and sufficiency == "PASS":
                 reasons += [f"after audit: {r}" for r in ag_reasons]
                 decided_by.append("python:audited_gate")
 
-        # 4. engine status -> benchmark final
-        if ctype == "HYPOTHESIS":
-            engine_status = "HYPOTHESIS_LABELED" if literal_ok else "NEEDS_REVIEW"
+        # 4. engine status (validate.py rules, contract 0.3) -> benchmark final
+        if not literal_ok:
+            engine_status = "NEEDS_REVIEW"
         elif ctype == "CREATIVE_PERFORMANCE":
             engine_status = "BLOCKED"
+        elif ctype == "HYPOTHESIS":
+            engine_status = hypothesis_status(a)[0]
         elif ctype == "SITUATION_REACH":
-            engine_status = "HYPOTHESIS_LABELED" if structural == "PASS" else "NEEDS_REVIEW"
+            engine_status = hypothesis_status(a)[0] if sufficiency == "PASS" else "NEEDS_REVIEW"
+            if sufficiency != "PASS" and a and (a.get("hypothesis_check") == "ASSERTS_UNOBSERVED_FACT"
+                                                or a.get("verdict") == "DOES_NOT_SUPPORT"):
+                engine_status = "BLOCKED"
         elif a and a.get("verdict") == "CONTRADICTS":
             engine_status = "CONTRADICTED"
-        elif structural == "PASS" and substantive == "PASS" and audited_gate_ok:
+        elif structural == "PASS" and sufficiency == "PASS" and substantive == "PASS" and audited_gate_ok:
             engine_status = "APPROVED"
         else:
             engine_status = "NEEDS_REVIEW"
 
-        if engine_status in ("APPROVED", "HYPOTHESIS_LABELED"):
+        if engine_status == "APPROVED":
             final = "APPROVE_SCOPED"
+        elif engine_status == "HYPOTHESIS_UNTESTED":
+            final = "APPROVE_HYPOTHESIS_UNTESTED"
         elif (not literal_ok or engine_status in ("CONTRADICTED", "BLOCKED")
               or (a and a.get("verdict") == "DOES_NOT_SUPPORT")):
             final = "BLOCK"
@@ -191,7 +216,8 @@ def cmd_finalize(args):
             final = "NEEDS_REVIEW"
 
         preds[tid] = {
-            "literal_anchor": L["literal_anchor"], "structural": structural, "substantive": substantive, "final": final,
+            "literal_anchor": L["literal_anchor"], "structural": structural, "evidence_sufficiency": sufficiency,
+            "substantive": substantive, "final": final, "hypothesis_check": (a or {}).get("hypothesis_check", ""),
             "engine_status": engine_status,
             "grounded_span": next((ch.get("located_span") for ch in checks.values() if ch.get("supports")), ""),
             "speaker_attribution": (a or {}).get("speaker_attribution", ""),
