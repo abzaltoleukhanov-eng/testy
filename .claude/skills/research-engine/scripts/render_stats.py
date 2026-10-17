@@ -51,16 +51,28 @@ def used_hypotheses(brief_text, claim_status):
     return sum(1 for i in ids if claim_status.get(i) == "HYPOTHESIS_UNTESTED")
 
 
+def ru_plural(k, one, few, many):
+    if k % 10 == 1 and k % 100 != 11:
+        return one
+    if 2 <= k % 10 <= 4 and not 12 <= k % 100 <= 14:
+        return few
+    return many
+
+
 def render(snap, lang, n_used):
     s = snap["status"]
     if lang == "RU":
+        n = lambda k, *forms: f"{k} {ru_plural(k, *forms)}"
         lines = [BEGIN,
                  f"**Объём** (сгенерировано из журнала, контракт {snap['contract_version']}):",
-                 f"- {snap['queries']} поисковых запросов, {snap['reddit_threads']} тредов Reddit, "
-                 f"{snap['reddit_objects']} постов и комментариев, {snap['reddit_authors']} уникальных авторов Reddit; "
-                 f"{snap['user_sources']} источников от пользователя;",
-                 f"- {snap['evidence']} доказательств, из них {snap['decision_evidence']} историй решений;",
-                 f"- {snap['claims']} утверждений: **{s['FACT_APPROVED']} FACT_APPROVED** ({snap['fact_other']} о людях и бренде, "
+                 f"- {n(snap['queries'], 'поисковый запрос', 'поисковых запроса', 'поисковых запросов')}, "
+                 f"{n(snap['reddit_threads'], 'тред', 'треда', 'тредов')} Reddit, "
+                 f"{snap['reddit_objects']} постов и комментариев, "
+                 f"{n(snap['reddit_authors'], 'уникальный автор', 'уникальных автора', 'уникальных авторов')} Reddit; "
+                 f"{n(snap['user_sources'], 'источник', 'источника', 'источников')} от пользователя;",
+                 f"- {n(snap['evidence'], 'доказательство', 'доказательства', 'доказательств')}, "
+                 f"из них {n(snap['decision_evidence'], 'история решения', 'истории решений', 'историй решений')};",
+                 f"- {n(snap['claims'], 'утверждение', 'утверждения', 'утверждений')}: **{s['FACT_APPROVED']} FACT_APPROVED** ({snap['fact_other']} о людях и бренде, "
                  f"{snap['fact_product']} о продукте), {s['HYPOTHESIS_UNTESTED']} HYPOTHESIS_UNTESTED (в брифе использовано {n_used}), "
                  f"{s['RESEARCH_QUESTION']} RESEARCH_QUESTION, {s['NEEDS_REVIEW']} NEEDS_REVIEW, {s['BLOCKED']} BLOCKED.",
                  END]
