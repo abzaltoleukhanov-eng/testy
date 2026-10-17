@@ -1,0 +1,114 @@
+[
+  {
+    "case_id": "V16",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "V16:V16-A:0",
+        "located_span": "",
+        "supports": false,
+        "note": "Relevant text: 'The pouch section says it has a removable mirror.'. The removable mirror belongs to the separate Riviera cosmetic pouch advertised on the tote page, not to the main Aster Lévant Tote itself.",
+        "product_match": "SAME_BRAND_OTHER_PRODUCT",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Attributes a feature of the separate Riviera cosmetic pouch (removable mirror) to the main tote; 'integrated' is not stated anywhere.",
+    "open_contradiction": false,
+    "reasoning": "The source says the main tote page also advertises a separate Riviera pouch, and the pouch section says the pouch has a removable mirror. Nothing says the tote itself has an integrated mirror. The cited span is about another product, so the claim is not supported.",
+    "speaker_attribution": "unknown (forum author describing the brand/seller product page)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "V17",
+    "verdict": "PARTIAL",
+    "evidence_checks": [],
+    "scope_issue": "The source proposes a different fictional scene (a woman worrying about luggage weight) and speaks of an unknown effect on sales; it does not mention an airport argument or curiosity.",
+    "open_contradiction": false,
+    "reasoning": "The claim is worded as an untested creative hypothesis and asserts no observed result, so its framing is acceptable. The source only loosely relates (a fictional opening scene to test, effect unknown) and does not address an airport argument or curiosity. Nothing contradicts the idea.",
+    "hypothesis_check": "FORWARD_LOOKING_OK",
+    "uncovered_premises": [],
+    "link_check": "PLAUSIBLE_UNTESTED",
+    "speaker_attribution": "unknown (forum author proposing an idea)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "V18",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "V18:V18-A:0",
+        "located_span": "",
+        "supports": false,
+        "note": "Relevant text: 'Our only reference is an agency article published in 2022 about ranking-style videos.'. A 2022 agency article about ranking-style videos says nothing about which Meta ad format sold best last week.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Labelled a hypothesis, but it states a current observed result: that expert ranking videos 'were the top-selling Meta ad format last week'. The only source is a 2022 article; no recent sales or Meta performance data is shown.",
+    "open_contradiction": false,
+    "reasoning": "The wording claims a specific past performance ranking for last week, which is an observable fact rather than an idea to test. The only reference is four years old and does not report sales or format rankings. Starting from one old article and arriving at a recent top-seller ranking ignores obvious alternatives.",
+    "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+    "uncovered_premises": [
+      "Meta ad sales performance data broken down by format for last week exists and was observed",
+      "Expert ranking videos outsold all other Meta ad formats last week",
+      "A 2022 article about ranking-style videos is relevant to current Meta ad performance"
+    ],
+    "link_check": "UNSUPPORTED_LEAP",
+    "speaker_attribution": "unknown (forum author citing an agency article)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "V19",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "V19:V19-A:0",
+        "located_span": "the page lacks published reviews as of October 16",
+        "supports": true,
+        "note": "This is only a seller's report that there are no reviews; it does not establish that fact. The claim correctly makes it a condition to verify later.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "product page without reviews"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "reasoning": "The claim depends on future verification that there are no on-site reviews and says plainly that quality and audience response are untested. It asserts no observed result. The seller's email makes the condition worth checking but does not prove it, and the claim treats it that way.",
+    "hypothesis_check": "FORWARD_LOOKING_OK",
+    "uncovered_premises": [],
+    "link_check": "PLAUSIBLE_UNTESTED",
+    "speaker_attribution": "brand/seller (seller email reported by the forum author)",
+    "context_used": "comment only",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "V20",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "V20:V20-A:0",
+        "located_span": "",
+        "supports": false,
+        "note": "Relevant text: 'The owner liked its colour' is only an early positive remark, and 'EDIT: I returned it because the handle detached.' directly contradicts years of happy use.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "RETURNED",
+        "evidence_kind": "DECISION",
+        "usage_situation": "handle failure"
+      }
+    ],
+    "scope_issue": "The claim ignores the later edit, where the owner says they returned the bag because the handle detached. 'Happily for years' is not stated anywhere.",
+    "open_contradiction": true,
+    "reasoning": "The cited span 'liked its colour' only shows an early positive impression. The owner's later edit says the bag was returned after the handle detached. That directly contradicts the claim that they kept using it happily for years.",
+    "speaker_attribution": "author first-hand (the owner's own edit; the colour remark is reported)",
+    "context_used": "later edit",
+    "original_or_translation": "ORIGINAL"
+  }
+]

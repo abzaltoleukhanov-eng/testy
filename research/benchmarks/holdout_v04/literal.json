@@ -1,0 +1,177 @@
+{
+ "V01": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V01-A",
+    "match": true
+   }
+  ]
+ },
+ "V02": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V02-A",
+    "match": true
+   }
+  ]
+ },
+ "V03": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V03-A",
+    "match": true
+   }
+  ]
+ },
+ "V04": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V04-A",
+    "match": true
+   }
+  ]
+ },
+ "V05": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V05-A",
+    "match": true
+   }
+  ]
+ },
+ "V06": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V06-A",
+    "match": true
+   }
+  ]
+ },
+ "V07": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V07-A",
+    "match": true
+   }
+  ]
+ },
+ "V08": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V08-A",
+    "match": true
+   }
+  ]
+ },
+ "V09": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V09-A",
+    "match": true
+   }
+  ]
+ },
+ "V10": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V10-A",
+    "match": true
+   }
+  ]
+ },
+ "V11": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V11-A",
+    "match": true
+   }
+  ]
+ },
+ "V12": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V12-A",
+    "match": true
+   }
+  ]
+ },
+ "V13": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V13-A",
+    "match": true
+   }
+  ]
+ },
+ "V14": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V14-A",
+    "match": true
+   }
+  ]
+ },
+ "V15": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V15-A",
+    "match": true
+   }
+  ]
+ },
+ "V16": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V16-A",
+    "match": true
+   }
+  ]
+ },
+ "V17": {
+  "literal_anchor": "NOT_APPLICABLE",
+  "anchors": []
+ },
+ "V18": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V18-A",
+    "match": true
+   }
+  ]
+ },
+ "V19": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V19-A",
+    "match": true
+   }
+  ]
+ },
+ "V20": {
+  "literal_anchor": "MATCH",
+  "anchors": [
+   {
+    "source_id": "V20-A",
+    "match": true
+   }
+  ]
+ }
+}

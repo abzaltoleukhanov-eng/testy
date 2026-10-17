@@ -1,0 +1,147 @@
+[
+ {
+  "case_id": "V11",
+  "claim": "The customer has already returned the tote for a refund.",
+  "claim_type": "PERSONAL_EXPERIENCE",
+  "evidence_items": [
+   {
+    "evidence_id": "V11:V11-A:0",
+    "source_id": "V11-A",
+    "cited_span": "considering returning it next week"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V11-A",
+    "url": "https://example.invalid/gate04/V11-A",
+    "raw_text": "I am considering returning it next week if customer support accepts the return.",
+    "platform": "Forum",
+    "author_key": "user_V11-A",
+    "thread_id": "thread_V11-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V12",
+  "claim": "The style-focused headline alone caused higher conversion.",
+  "claim_type": "HYPOTHESIS",
+  "evidence_items": [
+   {
+    "evidence_id": "V12:V12-A:0",
+    "source_id": "V12-A",
+    "cited_span": "purchases rose"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V12-A",
+    "url": "https://example.invalid/gate04/V12-A",
+    "raw_text": "We changed the headline from comfort to style, and purchases rose; simultaneously we changed the landing page, audience and discount.",
+    "platform": "Forum",
+    "author_key": "user_V12-A",
+    "thread_id": "thread_V12-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V13",
+  "claim": "The original French-language buyer described the tote as lightweight.",
+  "claim_type": "PERSONAL_EXPERIENCE",
+  "evidence_items": [
+   {
+    "evidence_id": "V13:V13-A:0",
+    "source_id": "V13-A",
+    "cited_span": "Je ne le trouve pas léger."
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V13-A",
+    "url": "https://example.invalid/gate04/V13-A",
+    "raw_text": "Original French: \"Je ne le trouve pas léger.\" Automated translation: \"I find it lightweight.\"",
+    "platform": "Forum",
+    "author_key": "user_V13-A",
+    "thread_id": "thread_V13-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V14",
+  "claim": "The reviewer sincerely praises exceptional strap durability.",
+  "claim_type": "PERSONAL_EXPERIENCE",
+  "evidence_items": [
+   {
+    "evidence_id": "V14:V14-A:0",
+    "source_id": "V14-A",
+    "cited_span": "The strap ripped on day one."
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V14-A",
+    "url": "https://example.invalid/gate04/V14-A",
+    "raw_text": "Fantastic. The strap ripped on day one. Brilliant purchase. 🙃",
+    "platform": "Forum",
+    "author_key": "user_V14-A",
+    "thread_id": "thread_V14-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V15",
+  "claim": "The commenter wore a tote to work twice, then stopped because of shoulder pain.",
+  "claim_type": "PERSONAL_EXPERIENCE",
+  "evidence_items": [
+   {
+    "evidence_id": "V15:V15-A:0",
+    "source_id": "V15-A",
+    "cited_span": "stopped because my shoulder hurt."
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V15-A",
+    "url": "https://example.invalid/gate04/V15-A",
+    "raw_text": "I wore it to work twice, then stopped because my shoulder hurt.",
+    "platform": "Forum",
+    "author_key": "user_V15-A",
+    "thread_id": "thread_V15-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ }
+]

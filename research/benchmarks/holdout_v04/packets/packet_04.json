@@ -1,0 +1,141 @@
+[
+ {
+  "case_id": "V16",
+  "claim": "The main Aster Lévant Tote has an integrated removable mirror.",
+  "claim_type": "PRODUCT_FACT",
+  "evidence_items": [
+   {
+    "evidence_id": "V16:V16-A:0",
+    "source_id": "V16-A",
+    "cited_span": "removable mirror"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V16-A",
+    "url": "https://example.invalid/gate04/V16-A",
+    "raw_text": "Main Aster Lévant Tote page also advertises the separate Riviera cosmetic pouch. The pouch section says it has a removable mirror.",
+    "platform": "Forum",
+    "author_key": "user_V16-A",
+    "thread_id": "thread_V16-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "UNKNOWN"
+   }
+  ]
+ },
+ {
+  "case_id": "V17",
+  "claim": "We could test whether a fictional airport argument increases curiosity; this is an untested creative hypothesis.",
+  "claim_type": "HYPOTHESIS",
+  "evidence_items": [],
+  "sources": [
+   {
+    "source_id": "V17-A",
+    "url": "https://example.invalid/gate04/V17-A",
+    "raw_text": "We could test a fictional opening scene where a woman worries about luggage weight. The effect on sales is unknown.",
+    "platform": "Forum",
+    "author_key": "user_V17-A",
+    "thread_id": "thread_V17-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V18",
+  "claim": "We hypothesize that expert ranking videos were the top-selling Meta ad format last week.",
+  "claim_type": "HYPOTHESIS",
+  "evidence_items": [
+   {
+    "evidence_id": "V18:V18-A:0",
+    "source_id": "V18-A",
+    "cited_span": "published in 2022"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V18-A",
+    "url": "https://example.invalid/gate04/V18-A",
+    "raw_text": "Our only reference is an agency article published in 2022 about ranking-style videos.",
+    "platform": "Forum",
+    "author_key": "user_V18-A",
+    "thread_id": "thread_V18-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V19",
+  "claim": "If future verification finds no on-site reviews, we can test whether showing product build quality increases buyer confidence; quality and response are untested.",
+  "claim_type": "HYPOTHESIS",
+  "evidence_items": [
+   {
+    "evidence_id": "V19:V19-A:0",
+    "source_id": "V19-A",
+    "cited_span": "page lacks published reviews"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V19-A",
+    "url": "https://example.invalid/gate04/V19-A",
+    "raw_text": "A seller email states that the page lacks published reviews as of October 16.",
+    "platform": "Forum",
+    "author_key": "user_V19-A",
+    "thread_id": "thread_V19-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V20",
+  "claim": "The owner kept using the bag happily for years.",
+  "claim_type": "PERSONAL_EXPERIENCE",
+  "evidence_items": [
+   {
+    "evidence_id": "V20:V20-A:0",
+    "source_id": "V20-A",
+    "cited_span": "liked its colour"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V20-A",
+    "url": "https://example.invalid/gate04/V20-A",
+    "raw_text": "The owner liked its colour but later wrote: EDIT: I returned it because the handle detached.",
+    "platform": "Forum",
+    "author_key": "user_V20-A",
+    "thread_id": "thread_V20-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ }
+]

@@ -1,0 +1,67 @@
+[
+ {
+  "test_id": "BASELINE",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": [],
+  "ach_status:ACH-0003": "VALID",
+  "claim_status:C-0051": "FACT_APPROVED",
+  "claim_status:C-0062": "HYPOTHESIS_UNTESTED"
+ },
+ {
+  "test_id": "X01",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": [],
+  "claim_status:C-0051": "FACT_APPROVED",
+  "claim_status:C-0062": "HYPOTHESIS_UNTESTED"
+ },
+ {
+  "test_id": "X02",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": []
+ },
+ {
+  "test_id": "X03",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": []
+ },
+ {
+  "test_id": "X04",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": [],
+  "ach_status:ACH-0003": "VALID"
+ },
+ {
+  "test_id": "X05",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": [],
+  "claim_status:C-0062": "HYPOTHESIS_UNTESTED"
+ },
+ {
+  "test_id": "X06",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": [
+   "RU heading '## The product: what is known and what is not' mapped to '## Продукт: что известно и что нет' (the RU brief has Russian headings)"
+  ]
+ }
+]

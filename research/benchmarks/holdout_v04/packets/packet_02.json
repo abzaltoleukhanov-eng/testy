@@ -1,0 +1,147 @@
+[
+ {
+  "case_id": "V06",
+  "claim": "We hypothesize that 30% of working women in London suffer tote-related shoulder pain.",
+  "claim_type": "HYPOTHESIS",
+  "evidence_items": [
+   {
+    "evidence_id": "V06:V06-A:0",
+    "source_id": "V06-A",
+    "cited_span": "24 mentioned shoulders"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V06-A",
+    "url": "https://example.invalid/gate04/V06-A",
+    "raw_text": "Of 80 comments selected using queries about heavy work bags, 24 mentioned shoulders. No population sample was used.",
+    "platform": "Forum",
+    "author_key": "user_V06-A",
+    "thread_id": "thread_V06-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V07",
+  "claim": "If independent measurements confirm the 1 kg empty weight, we could test whether users perceive this tote as lighter than their current bags; loaded comfort is untested.",
+  "claim_type": "HYPOTHESIS",
+  "evidence_items": [
+   {
+    "evidence_id": "V07:V07-A:0",
+    "source_id": "V07-A",
+    "cited_span": "empty weight of 1 kg"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V07-A",
+    "url": "https://example.invalid/gate04/V07-A",
+    "raw_text": "A product screenshot displays an empty weight of 1 kg. The actual weight was not measured.",
+    "platform": "Forum",
+    "author_key": "user_V07-A",
+    "thread_id": "thread_V07-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V08",
+  "claim": "We hypothesize that the absence of customer reviews anywhere proves the product is badly manufactured.",
+  "claim_type": "HYPOTHESIS",
+  "evidence_items": [
+   {
+    "evidence_id": "V08:V08-A:0",
+    "source_id": "V08-A",
+    "cited_span": "not published reviews on this page"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V08-A",
+    "url": "https://example.invalid/gate04/V08-A",
+    "raw_text": "Customer service says the shop has not published reviews on this page. It says nothing about external reviews or physical quality.",
+    "platform": "Forum",
+    "author_key": "user_V08-A",
+    "thread_id": "thread_V08-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V09",
+  "claim": "One commenter reports returning an overly heavy bag and buying a smaller backpack.",
+  "claim_type": "PERSONAL_EXPERIENCE",
+  "evidence_items": [
+   {
+    "evidence_id": "V09:V09-A:0",
+    "source_id": "V09-A",
+    "cited_span": "I returned it and bought a smaller backpack."
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V09-A",
+    "url": "https://example.invalid/gate04/V09-A",
+    "raw_text": "I wanted a laptop bag, but the old one was too heavy. I returned it and bought a smaller backpack.",
+    "platform": "Forum",
+    "author_key": "user_V09-A",
+    "thread_id": "thread_V09-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V10",
+  "claim": "The writer personally reports shoulder pain from this tote.",
+  "claim_type": "PERSONAL_EXPERIENCE",
+  "evidence_items": [
+   {
+    "evidence_id": "V10:V10-A:0",
+    "source_id": "V10-A",
+    "cited_span": "hurts her shoulder"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V10-A",
+    "url": "https://example.invalid/gate04/V10-A",
+    "raw_text": "My sister says this bag hurts her shoulder. I carry the same laptop every day and mine is fine.",
+    "platform": "Forum",
+    "author_key": "user_V10-A",
+    "thread_id": "thread_V10-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ }
+]

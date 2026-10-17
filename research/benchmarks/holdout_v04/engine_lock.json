@@ -1,0 +1,18 @@
+{
+ "locked_at": "2026-10-17",
+ "git_commit": "c9ec5502c2cf57f79e08410efe4f2f67b08798c7",
+ "contract_version": "0.4",
+ "sha256": {
+  "skills/research-engine/references/audit.md": "e9706f35491d71deaa3f7d078537e463041daf99c9b3c9245e7f4ba1fdc81c3c",
+  "skills/research-engine/contract/contract.json": "6092580e889d2b38ee7bfbac0763370458d03fd09d853af1afc0e08e02c5bea1",
+  "skills/research-engine/scripts/validate.py": "3c2d5132db0d22ab1ffa1465397e53435796264eb833c9684b125b3da48a30ff",
+  "skills/research-engine/scripts/re_lib.py": "647c1dd90f81e38e8aa9ea229cb3e4679df04dc9f9f361e8d9186bfdf8afd630",
+  "skills/research-engine/scripts/render_stats.py": "9407fc2881019c3e6b10f90880cf476863097a3e67aa6ff70d18e5399ea5c848",
+  "skills/research-engine/tests/run_blind.py": "e9c50e671f78fa522cd6ea85f8d8212afd0dca184356c62a3e5b5e3364690c06"
+ },
+ "inputs_sha256": {
+  "inputs_claims.jsonl": "e1b2006a5effef0baaea8260ef1788379d586c453afbabdf6c043b0f194fd675",
+  "integration_cases.jsonl": "4349e0e43de316b5208ffc69edd9046d6cc53bd7abe70f3df14f4e34328c01b2",
+  "README.md": "fc6ca4eba6bda8a28a4c3a66179b55dee94a8653a9c800db6551f4ebf8c2f96f"
+ }
+}

@@ -1,0 +1,413 @@
+{
+ "V01": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "brand/seller (first-person 'we' about 'our own website'; identity as seller not independently verified, posted on a forum)",
+  "context_used": "comment only",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload; auditor DOES_NOT_SUPPORT: Claim generalises from 'not published any reviews on our own website' (one seller statement about its own site, dated as of October 16) to 'no customer reviews exist anywhere online'. Absence on one site does not establish absence everywhere; also 'not published' does not mean none were received.",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency"
+  ]
+ },
+ "V02": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "FACT_APPROVED",
+  "grounded_span": "As of October 16, we have not published any reviews on this product page.",
+  "speaker_attribution": "brand/seller (first-person 'we'; identity inferred, not verified)",
+  "context_used": "comment only",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "V03": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (forum author describing a landing page)",
+  "context_used": "comment only",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload; auditor DOES_NOT_SUPPORT: Claim asserts confirmed stock, next-day delivery and UK-wide coverage; the source explicitly says stock quantities and shipping regions are not shown, and does not name the product.",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency"
+  ]
+ },
+ "V04": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (forum author reporting a product listing)",
+  "context_used": "comment only",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload; auditor DOES_NOT_SUPPORT: Claim transfers a feature of the Belted Tote variant to the standard Aster Lévant Tote, and upgrades 'lists' (a stated spec) to 'verified'.",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency"
+  ]
+ },
+ "V05": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "The creator ad contains a voiceover",
+   "The voiceover runs at 130 words per minute",
+   "The ad uses suspense music",
+   "The relevant segment or ad lasts 20 seconds",
+   "The screen capture is of the specific creator ad the claim refers to"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (forum author describing available material)",
+  "context_used": "comment only",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "auditor DOES_NOT_SUPPORT/ASSERTS_UNOBSERVED_FACT: Labelled HYPOTHESIS but states as observed fact what the video contains: a voiceover at 130 words per minute, suspense music, and a 20-second length. The source says only a screen capture exists and the clip and audio were not provided.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "V06": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "30% of working women in London experience shoulder pain",
+   "The shoulder mentions refer to pain caused by totes",
+   "The commenters are working women in London",
+   "Query-selected comments are representative of a population"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (researcher's summary of a comment set)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT/ASSERTS_UNOBSERVED_FACT: Asserts a population share (30%) for a specific demographic (working women) and location (London) and a specific cause (tote-related shoulder pain); the source has no gender, country or population sample, mentions 'shoulders' only and states no population sample was used.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "V07": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "PASS",
+  "final": "APPROVE_HYPOTHESIS_UNTESTED",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "engine_status": "HYPOTHESIS_UNTESTED",
+  "grounded_span": "A product screenshot displays an empty weight of 1 kg. The actual weight was not measured.",
+  "speaker_attribution": "brand/seller (product screenshot reported by author)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "V08": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "There are no customer reviews of the product anywhere",
+   "Absence of reviews indicates poor manufacturing quality"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "brand/seller (customer service, as reported by the author)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT/ASSERTS_UNOBSERVED_FACT: States as fact an 'absence of customer reviews anywhere' when the source covers only unpublished reviews on one page, and claims this 'proves' bad manufacturing, which the source explicitly does not address.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "V09": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "FACT_APPROVED",
+  "grounded_span": "I wanted a laptop bag, but the old one was too heavy. I returned it and bought a smaller backpack.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "V10": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "a person the author reports (sister); author first-hand for 'mine is fine'",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: Attributes to the writer a first-hand pain experience that belongs to a third person (the sister); the writer reports no pain. The source also does not identify the bag as a tote.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "V11": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: Claim states a completed return and refund; source describes only a conditional, future intention to return. The item is also not named as a tote in the text.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "V12": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "The headline change was the only variable that changed",
+   "The landing page, audience and discount changes had no effect on purchases",
+   "Purchases rising equals higher conversion rate (not just more volume)"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT/ASSERTS_UNOBSERVED_FACT: States as established fact that the headline 'alone caused' higher conversion; the source reports simultaneous confounding changes (landing page, audience, discount), and no isolated test result exists.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "V13": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: Claim relies on the faulty automated translation; the original French states the opposite. The text also does not establish the speaker is a buyer or that the item is a tote.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "V14": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: Claim reads sarcasm as sincere praise; the source reports the strap failing on day one, the opposite of exceptional durability.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "V15": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "FACT_APPROVED",
+  "grounded_span": "I wore it to work twice, then stopped because my shoulder hurt.",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "V16": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (forum author describing the brand/seller product page)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload; auditor DOES_NOT_SUPPORT: Attributes a feature of the separate Riviera cosmetic pouch (removable mirror) to the main tote; 'integrated' is not stated anywhere.",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency"
+  ]
+ },
+ "V17": {
+  "literal_anchor": "NOT_APPLICABLE",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "PASS",
+  "final": "APPROVE_HYPOTHESIS_UNTESTED",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "engine_status": "HYPOTHESIS_UNTESTED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (forum author proposing an idea)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "V18": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "Meta ad sales performance data broken down by format for last week exists and was observed",
+   "Expert ranking videos outsold all other Meta ad formats last week",
+   "A 2022 article about ranking-style videos is relevant to current Meta ad performance"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "unknown (forum author citing an agency article)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT/ASSERTS_UNOBSERVED_FACT: Labelled a hypothesis, but it states a current observed result: that expert ranking videos 'were the top-selling Meta ad format last week'. The only source is a 2022 article; no recent sales or Meta performance data is shown.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "V19": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "PASS",
+  "final": "APPROVE_HYPOTHESIS_UNTESTED",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "engine_status": "HYPOTHESIS_UNTESTED",
+  "grounded_span": "the page lacks published reviews as of October 16",
+  "speaker_attribution": "brand/seller (seller email reported by the forum author)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "V20": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "author first-hand (the owner's own edit; the colour remark is reported)",
+  "context_used": "later edit",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor CONTRADICTS: The claim ignores the later edit, where the owner says they returned the bag because the handle detached. 'Happily for years' is not stated anywhere.; after audit: independent groups 0 < 1; after audit: distinct threads 0 < 1",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ }
+}

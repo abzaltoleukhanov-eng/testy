@@ -1,0 +1,129 @@
+[
+ {
+  "case_id": "V06",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "V06:V06-A:0",
+    "located_span": "Of 80 comments selected using queries about heavy work bags, 24 mentioned shoulders. No population sample was used.",
+    "supports": false,
+    "note": "A count from a query-selected comment set, explicitly not a population sample. Says nothing about women, London, employment status, totes specifically or pain prevalence.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "heavy work bags"
+   }
+  ],
+  "scope_issue": "Asserts a population share (30%) for a specific demographic (working women) and location (London) and a specific cause (tote-related shoulder pain); the source has no gender, country or population sample, mentions 'shoulders' only and states no population sample was used.",
+  "open_contradiction": false,
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "30% of working women in London experience shoulder pain",
+   "The shoulder mentions refer to pain caused by totes",
+   "The commenters are working women in London",
+   "Query-selected comments are representative of a population"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "speaker_attribution": "author first-hand (researcher's summary of a comment set)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "Although labelled a hypothesis, the claim states a specific population percentage for a demographic and city not present in the source. The source is a non-random, query-selected set of 80 comments with an explicit note that no population sample was used, so 24/80 cannot be generalised. Gender, location, tote type and pain are all absent."
+ },
+ {
+  "case_id": "V07",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "V07:V07-A:0",
+    "located_span": "A product screenshot displays an empty weight of 1 kg. The actual weight was not measured.",
+    "supports": true,
+    "note": "Supports that a 1 kg empty weight is displayed (a seller/listing claim, not a measurement); the claim correctly makes independent measurement a condition and marks loaded comfort as untested.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "product listing specification"
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "speaker_attribution": "brand/seller (product screenshot reported by author)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The claim is framed as a conditional test idea: it depends on independent measurement confirming the listed 1 kg, which matches the source's note that actual weight was not measured. It asserts no observed perception or comfort result and explicitly flags loaded comfort as untested. The step to testing perceived lightness is reasonable."
+ },
+ {
+  "case_id": "V08",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "V08:V08-A:0",
+    "located_span": "Customer service says the shop has not published reviews on this page. It says nothing about external reviews or physical quality.",
+    "supports": false,
+    "note": "Only reports that reviews are not published on one page, per customer service; explicitly silent on external reviews and on physical quality.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "shop product page"
+   }
+  ],
+  "scope_issue": "States as fact an 'absence of customer reviews anywhere' when the source covers only unpublished reviews on one page, and claims this 'proves' bad manufacturing, which the source explicitly does not address.",
+  "open_contradiction": false,
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "There are no customer reviews of the product anywhere",
+   "Absence of reviews indicates poor manufacturing quality"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "speaker_attribution": "brand/seller (customer service, as reported by the author)",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The source limits itself to reviews not being published on one shop page and explicitly says nothing about external reviews or quality. The claim generalises to 'anywhere' and uses 'proves', asserting a causal conclusion. Unpublished reviews have many alternative explanations (shop policy, new listing, moderation) that the claim ignores."
+ },
+ {
+  "case_id": "V09",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "V09:V09-A:0",
+    "located_span": "I wanted a laptop bag, but the old one was too heavy. I returned it and bought a smaller backpack.",
+    "supports": true,
+    "note": "First-hand report that a bag was too heavy, was returned, and a smaller backpack was bought instead. 'it' most naturally refers to 'the old one' that was too heavy, though the wording is slightly ambiguous.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "RETURNED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "laptop carry"
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The claim is limited to one commenter and matches the text: a bag was too heavy, it was returned, and a smaller backpack was bought. The referent of 'it' is mildly ambiguous but the nearest antecedent is the too-heavy bag. No product, demographic or pattern is overstated."
+ },
+ {
+  "case_id": "V10",
+  "verdict": "CONTRADICTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "V10:V10-A:0",
+    "located_span": "My sister says this bag hurts her shoulder. I carry the same laptop every day and mine is fine.",
+    "supports": false,
+    "note": "The shoulder pain is the sister's, reported second-hand; the writer states their own experience is fine.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "daily laptop carry"
+   }
+  ],
+  "scope_issue": "Attributes to the writer a first-hand pain experience that belongs to a third person (the sister); the writer reports no pain. The source also does not identify the bag as a tote.",
+  "open_contradiction": true,
+  "speaker_attribution": "a person the author reports (sister); author first-hand for 'mine is fine'",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The cited span 'hurts her shoulder' describes the writer's sister, not the writer. The writer explicitly says 'mine is fine', which directly contradicts the claim that the writer personally reports shoulder pain. The bag type is also not stated as a tote."
+ }
+]

@@ -1,0 +1,147 @@
+[
+ {
+  "case_id": "V01",
+  "claim": "No customer reviews of the Aster Lévant Tote exist anywhere online.",
+  "claim_type": "PRODUCT_FACT",
+  "evidence_items": [
+   {
+    "evidence_id": "V01:V01-A:0",
+    "source_id": "V01-A",
+    "cited_span": "not published any reviews"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V01-A",
+    "url": "https://example.invalid/gate04/V01-A",
+    "raw_text": "We have not published any reviews on our own website for the Aster Lévant Tote as of October 16.",
+    "platform": "Forum",
+    "author_key": "user_V01-A",
+    "thread_id": "thread_V01-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V02",
+  "claim": "On October 16 the seller said it had not published any reviews on its product page.",
+  "claim_type": "PERSONAL_EXPERIENCE",
+  "evidence_items": [
+   {
+    "evidence_id": "V02:V02-A:0",
+    "source_id": "V02-A",
+    "cited_span": "we have not published any reviews"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V02-A",
+    "url": "https://example.invalid/gate04/V02-A",
+    "raw_text": "As of October 16, we have not published any reviews on this product page.",
+    "platform": "Forum",
+    "author_key": "user_V02-A",
+    "thread_id": "thread_V02-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V03",
+  "claim": "Aster Lévant Tote is confirmed in stock for next-day delivery throughout the UK.",
+  "claim_type": "PRODUCT_FACT",
+  "evidence_items": [
+   {
+    "evidence_id": "V03:V03-A:0",
+    "source_id": "V03-A",
+    "cited_span": "calls it NEW"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V03-A",
+    "url": "https://example.invalid/gate04/V03-A",
+    "raw_text": "The landing page calls it NEW. Stock quantities and shipping regions are not shown.",
+    "platform": "Forum",
+    "author_key": "user_V03-A",
+    "thread_id": "thread_V03-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ },
+ {
+  "case_id": "V04",
+  "claim": "The standard Aster Lévant Tote has a verified 15-inch laptop compartment.",
+  "claim_type": "PRODUCT_FACT",
+  "evidence_items": [
+   {
+    "evidence_id": "V04:V04-A:0",
+    "source_id": "V04-A",
+    "cited_span": "15-inch laptop compartment"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V04-A",
+    "url": "https://example.invalid/gate04/V04-A",
+    "raw_text": "The Aster Lévant Belted Tote lists a 15-inch laptop compartment.",
+    "platform": "Forum",
+    "author_key": "user_V04-A",
+    "thread_id": "thread_V04-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "SAME_PRODUCT_FAMILY"
+   }
+  ]
+ },
+ {
+  "case_id": "V05",
+  "claim": "The creator ad uses a 130-word-per-minute voiceover and suspense music for 20 seconds.",
+  "claim_type": "HYPOTHESIS",
+  "evidence_items": [
+   {
+    "evidence_id": "V05:V05-A:0",
+    "source_id": "V05-A",
+    "cited_span": "screen capture of a creator Reel"
+   }
+  ],
+  "sources": [
+   {
+    "source_id": "V05-A",
+    "url": "https://example.invalid/gate04/V05-A",
+    "raw_text": "Only a single screen capture of a creator Reel is available. The clip itself and its audio were not provided.",
+    "platform": "Forum",
+    "author_key": "user_V05-A",
+    "thread_id": "thread_V05-A",
+    "access_status": "READ_FULL",
+    "retrieval_method": "DIRECT",
+    "context_captured": "COMMENT_ONLY",
+    "source_origin": "PUBLIC",
+    "retrieved_at": "2026-10-17",
+    "source_version": "synthetic-fixture-1",
+    "product_match": "CATEGORY_GENERAL"
+   }
+  ]
+ }
+]

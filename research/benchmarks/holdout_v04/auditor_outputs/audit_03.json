@@ -1,0 +1,119 @@
+[
+ {
+  "case_id": "V11",
+  "verdict": "CONTRADICTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "V11:V11-A:0",
+    "located_span": "I am considering returning it next week if customer support accepts the return.",
+    "supports": false,
+    "note": "The author is only considering a future return, conditional on support accepting it; no return or refund has happened.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "CONSIDERED",
+    "evidence_kind": "DECISION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "Claim states a completed return and refund; source describes only a conditional, future intention to return. The item is also not named as a tote in the text.",
+  "open_contradiction": true,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The source says the author is 'considering returning it next week' and only 'if customer support accepts the return'. That means the return has not yet happened, which contradicts the claim that the customer has already returned it for a refund."
+ },
+ {
+  "case_id": "V12",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "V12:V12-A:0",
+    "located_span": "We changed the headline from comfort to style, and purchases rose; simultaneously we changed the landing page, audience and discount.",
+    "supports": false,
+    "note": "Purchases rose, but the landing page, audience and discount changed at the same time, so the headline cannot be isolated as the sole cause.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "NONE",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "ad/landing page test"
+   }
+  ],
+  "scope_issue": "States as established fact that the headline 'alone caused' higher conversion; the source reports simultaneous confounding changes (landing page, audience, discount), and no isolated test result exists.",
+  "open_contradiction": false,
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+    "The headline change was the only variable that changed",
+    "The landing page, audience and discount changes had no effect on purchases",
+    "Purchases rising equals higher conversion rate (not just more volume)"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The claim is labeled a hypothesis but is worded as an observed causal result ('alone caused'). The source explicitly lists three other simultaneous changes, so attributing the rise solely to the headline ignores obvious alternative explanations. The source does not disprove a headline effect, so this is not a full contradiction, but it does not support the claim."
+ },
+ {
+  "case_id": "V13",
+  "verdict": "CONTRADICTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "V13:V13-A:0",
+    "located_span": "Je ne le trouve pas léger.",
+    "supports": false,
+    "note": "The original French means 'I do not find it light'. The automated translation 'I find it lightweight' drops the negation and is wrong.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "USES",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "UNKNOWN"
+   }
+  ],
+  "scope_issue": "Claim relies on the faulty automated translation; the original French states the opposite. The text also does not establish the speaker is a buyer or that the item is a tote.",
+  "open_contradiction": true,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The claim is about what the original French-language speaker said. The original 'Je ne le trouve pas léger' is a negation, meaning they do not find it light. The opposite reading comes only from the incorrect machine translation, so the original contradicts the claim."
+ },
+ {
+  "case_id": "V14",
+  "verdict": "CONTRADICTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "V14:V14-A:0",
+    "located_span": "Fantastic. The strap ripped on day one. Brilliant purchase. 🙃",
+    "supports": false,
+    "note": "Sarcastic: 'Fantastic' and 'Brilliant purchase' with an upside-down emoji frame a complaint that the strap ripped on day one.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "BOUGHT",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "first day of use"
+   }
+  ],
+  "scope_issue": "Claim reads sarcasm as sincere praise; the source reports the strap failing on day one, the opposite of exceptional durability.",
+  "open_contradiction": true,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The reviewer reports that the strap ripped on day one, which is a durability failure. The positive words are plainly sarcastic, as the emoji and the contrast with the failure show. The source contradicts the claim of sincere praise for durability."
+ },
+ {
+  "case_id": "V15",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "V15:V15-A:0",
+    "located_span": "I wore it to work twice, then stopped because my shoulder hurt.",
+    "supports": true,
+    "note": "Full sentence states wearing it to work twice and stopping because of shoulder pain. The item is 'it'; the tote identification rests on source metadata (category-general tote context), not the comment text.",
+    "product_match": "CATEGORY_GENERAL",
+    "person_action": "STOPPED_USING",
+    "evidence_kind": "DECISION",
+    "usage_situation": "commuting to work"
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "speaker_attribution": "author first-hand",
+  "context_used": "comment only, source metadata",
+  "original_or_translation": "ORIGINAL",
+  "reasoning": "The commenter says first-hand that they wore it to work twice and then stopped because their shoulder hurt, which matches the claim's sequence and stated cause. The claim makes no product-model, demographic or pattern claims beyond a generic tote, which matches the category-level source."
+ }
+]
