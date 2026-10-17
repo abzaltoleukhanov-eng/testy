@@ -1,0 +1,368 @@
+{
+ "H01": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "Anonymous forum user (author-H01)",
+  "context_used": "COMMENT_ONLY; full comment read; source_date 2026-10-16",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: Claim generalises from a single product page check by one user to 'no reviews anywhere online'; the source covers only the product page, on one date.; after audit: PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "H02": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "FACT_APPROVED",
+  "grounded_span": "I checked the Aster Lévant Tote product page today and did not see any customer reviews.",
+  "speaker_attribution": "Anonymous forum user (author-H02)",
+  "context_used": "COMMENT_ONLY; full comment read; date taken from source_date 2026-10-17",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "H03": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "FACT_APPROVED",
+  "grounded_span": "Product listing capture: £159.00. Badge: NEW.",
+  "speaker_attribution": "User-provided screenshot (author-H03)",
+  "context_used": "EXCERPT_ONLY; READ_PARTIAL screenshot capture",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "H04": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "User-provided screenshot (author-H04)",
+  "context_used": "EXCERPT_ONLY; READ_PARTIAL screenshot capture",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT: Stock status, next-day delivery and UK availability are all absent. The source explicitly says the availability area was not captured, and market_grounding is UNKNOWN.; after audit: PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload",
+  "decided_by": [
+   "llm:auditor",
+   "python:audited_gate"
+  ]
+ },
+ "H05": {
+  "literal_anchor": "MATCH",
+  "structural": "REVIEW",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "Search engine snippet (author-H05); origin page not opened",
+  "context_used": "EXCERPT_ONLY; INDEXED_ONLY search snippet",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "H05-A: access_status INDEXED_ONLY; PRODUCT_FACT needs exact-SKU evidence from the official page READ_FULL or a user screenshot/upload; auditor DOES_NOT_SUPPORT: 'Verified', 'exactly', 'empty weight' and 'current' version all go beyond an unopened search snippet (INDEXED_ONLY).",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency",
+   "python:source_usability"
+  ]
+ },
+ "H06": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "PASS",
+  "final": "APPROVE_HYPOTHESIS_UNTESTED",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "engine_status": "HYPOTHESIS_UNTESTED",
+  "grounded_span": "Aster Lévant Tote, 1 kg weight, 15 litres",
+  "speaker_attribution": "Search engine snippet (author unknown; manufacturer page not opened)",
+  "context_used": "EXCERPT_ONLY snippet; access_status INDEXED_ONLY",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "H07": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "A video version of this creator content exists and was reviewed",
+   "The video has a soundtrack and it is suspenseful",
+   "The video contains dialogue delivered at about 140 words per minute"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "Creator screen capture (user-provided); describer unknown",
+  "context_used": "EXCERPT_ONLY still screenshot; no audio or video",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT/ASSERTS_UNOBSERVED_FACT: The claim states as fact what the video contains: a 'suspenseful soundtrack' and '140 words-per-minute dialogue'. The source is a still image with no audio or footage, so neither the music nor the speech pacing was observed.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "H08": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "Ranking-style ads are being published at elevated frequency in October 2026",
+   "This applies specifically to handbag ads",
+   "A single 2022 example reflects current ad trends"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "Unnamed agency blog (2022), via screenshot",
+  "context_used": "EXCERPT_ONLY screenshot",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT/ASSERTS_UNOBSERVED_FACT: The claim states a current trend ('trending this week in October 2026') specifically for handbag ads. The source is one ranking-style example from a 2022 blog, says no recent dates were supplied, and does not mention handbags.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "H09": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "The commenters are UK women",
+   "The 80 comments are representative of UK women",
+   "The tote bags cause the reported shoulder pain",
+   "Comment mentions reflect how often the pain actually occurs in the population"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "Internal research note author summarising anonymous commenters",
+  "context_used": "COMMENT_ONLY tally; READ_FULL note",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT/ASSERTS_UNOBSERVED_FACT: The claim turns 30% of a non-random set of complaint comments into a population share ('30% of UK women'). The source does not say the commenters are in the UK, does not say they are women, and its sampling method rules out generalising to any population.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ },
+ "H10": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "PASS",
+  "final": "NEEDS_REVIEW",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "We collected 80 comments after searching for complaints about heavy totes; 24 mentioned shoulder pain. No probability sampling was used.",
+  "speaker_attribution": "Internal research note (author-H10)",
+  "context_used": "COMMENT_ONLY internal note H10-A",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "independent groups 1 < 3; distinct threads 1 < 2; platforms 1 and situations 0 both < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search",
+  "decided_by": [
+   "python:evidence_sufficiency"
+  ]
+ },
+ "H11": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "NEEDS_REVIEW",
+  "grounded_span": "",
+  "speaker_attribution": "Brand product information panel (BrandPDP, author-H11)",
+  "context_used": "COMMENT_ONLY excerpt of product information panel H11-A",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor DOES_NOT_SUPPORT: Upgrades 'water-resistant exterior material' to 'fully waterproof'; no test is reported and only the exterior material is mentioned.",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency"
+  ]
+ },
+ "H12": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "Forum owner of the Belted model (author-H12)",
+  "context_used": "COMMENT_ONLY forum comment H12-A",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor CONTRADICTS: Attributes a Belted-model strap comfort report to the standard Lévant Tote, and calls the owner's view a 'test'.",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency"
+  ]
+ },
+ "H13": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "FACT_APPROVED",
+  "grounded_span": "I switched from a structured work tote to a backpack after carrying my laptop all day left my shoulder sore.",
+  "speaker_attribution": "Commenter speaking about themself (first person)",
+  "context_used": "COMMENT_ONLY; single forum comment",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "H14": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "Commenter reporting their sister's purchase and motive (third party, second-hand) and their own choice of a backpack",
+  "context_used": "COMMENT_ONLY; single forum comment",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "independent groups 1 < 2; distinct threads 1 < 2; independent DECISION evidence 1 < 2; no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor CONTRADICTS: Gives the purchase to the commenter, but the source says the sister bought the Aster Tote and the commenter chose an old backpack instead.",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency"
+  ]
+ },
+ "H15": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "FACT_APPROVED",
+  "grounded_span": "My sister bought the Aster Tote because she liked the handles. I chose an old backpack because I wanted to spend less.",
+  "speaker_attribution": "Author reporting the sister's purchase and motive (second-hand) and the author's own backpack choice (first-hand)",
+  "context_used": "COMMENT_ONLY; single forum comment",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "H16": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "FAIL",
+  "substantive": "FAIL",
+  "final": "BLOCK",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "BLOCKED",
+  "grounded_span": "",
+  "speaker_attribution": "Single forum author who later retracted their own statement",
+  "context_used": "COMMENT_ONLY; original post plus the author's own later edit",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "no contradicting evidence and no logged NEUTRAL/POSITIVE/SWITCH counter-search; auditor CONTRADICTS: Presents a retracted statement as confirmed. The source also does not say the bag is the 'current' version or that the author owns it.",
+  "decided_by": [
+   "llm:auditor",
+   "python:evidence_sufficiency"
+  ]
+ },
+ "H17": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "PASS",
+  "substantive": "PASS",
+  "final": "APPROVE_SCOPED",
+  "hypothesis_check": "",
+  "uncovered_premises": [],
+  "link_check": "",
+  "engine_status": "FACT_APPROVED",
+  "grounded_span": "We have not published any reviews on this page yet. The message is dated 15 October.",
+  "speaker_attribution": "Brand customer support (email quoted in a user-provided upload)",
+  "context_used": "COMMENT_ONLY; user-uploaded email excerpt",
+  "original_or_translation": "UNKNOWN",
+  "rationale": "all engine checks passed",
+  "decided_by": [
+   "all components passed"
+  ]
+ },
+ "H18": {
+  "literal_anchor": "MATCH",
+  "structural": "PASS",
+  "evidence_sufficiency": "NOT_APPLICABLE",
+  "substantive": "REVIEW",
+  "final": "RESEARCH_QUESTION",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [
+   "There are no online reviews of the tote anywhere (not just on this page)",
+   "A lack of reviews indicates product quality rather than listing age, sales volume or review moderation"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "engine_status": "RESEARCH_QUESTION",
+  "grounded_span": "",
+  "speaker_attribution": "Brand customer support (email), as relayed by the user",
+  "context_used": "COMMENT_ONLY email excerpt dated 15 October",
+  "original_or_translation": "ORIGINAL",
+  "rationale": "auditor DOES_NOT_SUPPORT/FORWARD_LOOKING_OK: The claim treats 'the absence of online reviews' as established. The source only shows that one page has no published reviews 'yet' and that no reviews were found elsewhere. The step to poor quality ignores obvious alternatives such as a new listing, reviews held back from publication, or low sales volume.",
+  "decided_by": [
+   "llm:auditor"
+  ]
+ }
+}

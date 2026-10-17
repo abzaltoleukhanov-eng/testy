@@ -1,0 +1,50 @@
+[
+ {
+  "claim_id": "C-0057",
+  "verdict": "PARTIAL",
+  "evidence_checks": [],
+  "scope_issue": "The idea that laptop carriers would consider the Lévant assumes the tote fits and carries a laptop; the premises give only a listed weight (1 kg) and volume (15 L), not laptop fit.",
+  "open_contradiction": false,
+  "reasoning": "The claim is worded as a conditional test: the weight comparison is an explicit condition ('If weighing confirms'), and loaded comfort is marked untested. C-0020 establishes laptop carriers who report heavy totes and pain, C-0024 establishes rejection of heavy empty bags, and C-0051 gives the listed 1 kg weight. The one implied premise not covered is that the Lévant can work as a laptop tote at all.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": ["The Lévant can hold and carry a laptop, so it is a real option for laptop carriers"],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "auditor": "independent auditor packet 13"
+ },
+ {
+  "claim_id": "C-0058",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "The claim proposes a test and says outright that whether the Lévant suits the light-day role is untested. Its factual premise, that some people already switch to a smaller bag on light-load days, is established by C-0023. It states no result, audience share or trend as already observed.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "auditor": "independent auditor packet 13"
+ },
+ {
+  "claim_id": "C-0059",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [],
+  "scope_issue": "'Led some readers to hold off' should be read as stated intentions: C-0038 notes these are intentions, not verified non-purchases. Only C-0012 reports an actual decision against buying.",
+  "open_contradiction": false,
+  "reasoning": "Shoppers looking Nordace up on Reddit is an explicit condition marked 'not yet measured', and the cost to conversions is framed as a possibility ('could'). Warranty terms and owner reports are offered as a counter to test, 'if they are available', which matches C-0015 (warranty used as a trust yardstick) and C-0046 (product reported as new, with no reviews). The negative discussion and the hold-off reactions are established by C-0038 and C-0012, with the caveat that most of these are intentions.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "auditor": "independent auditor packet 13"
+ },
+ {
+  "claim_id": "C-0060",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "Finding owner reports about microfiber vegan leather that lasted years is an explicit condition, and the effect on the peeling worry is framed as something to test. C-0035 establishes the worry about peeling and a few counter-reports of durable vegan bags (not specifically microfiber). C-0050 establishes the listed micro-fiber vegan leather body. Nothing is asserted as already observed.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "auditor": "independent auditor packet 13"
+ }
+]

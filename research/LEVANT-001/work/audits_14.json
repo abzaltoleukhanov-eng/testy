@@ -1,0 +1,16 @@
+[
+  {
+    "claim_id": "C-0061",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [],
+    "scope_issue": "Minor: the text refers to 'work totes people say they rejected for weight'. C-0024 covers people rejecting bags (including leather and structured bags) for empty weight, and C-0020 covers work totes becoming too heavy with a laptop, but neither premise says specifically that people rejected work totes for their weight. The weight comparison itself is correctly framed as conditional on weighing, and comfort when loaded is explicitly marked untested.",
+    "open_contradiction": false,
+    "reasoning": "The claim is worded as a conditional, untested idea ('If weighing confirms', 'a test could check', 'comfort when loaded is untested') and asserts no observed result, audience share or trend. Its factual inputs are covered by the premises: the listed 1 kg weight (C-0051), the 14-inch laptop sleeve (C-0052), laptop-loaded totes being heavy and painful (C-0020), and rejection of bags heavy when empty (C-0024). The only gap is that rejection of work totes specifically for weight is a blend of C-0020 and C-0024 rather than something either states. Testing whether a lighter-listed bag with a laptop sleeve appeals to people who report pain from heavy totes is a reasonable idea, and the text itself names the main alternative (loaded comfort) as untested.",
+    "hypothesis_check": "FORWARD_LOOKING_OK",
+    "uncovered_premises": [
+      "That people specifically rejected work totes (as opposed to bags in general, per C-0024) because of their weight"
+    ],
+    "link_check": "PLAUSIBLE_UNTESTED",
+    "auditor": "independent auditor packet 14"
+  }
+]

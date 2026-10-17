@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-17T06:08:55+00:00 by validate.py (contract 0.4). Statuses here are computed, not self-declared.
+Computed 2026-10-17T06:16:57+00:00 by validate.py (contract 0.4). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 
@@ -64,6 +64,12 @@ Computed 2026-10-17T06:08:55+00:00 by validate.py (contract 0.4). Statuses here 
 | C-0054 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ['The Lévant is the kind of smaller or lighter bag people pick for light-load days', 'The Lévant is less suited to heavy daily carry than to light-load days'] |
 | C-0055 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ['Cold-traffic prospects search for or encounter Reddit discussion of Nordace before buying', 'Tote-specific warranty terms exist that could be shown', 'Owner reports of the tote over time exist or can be obtained (C-0046 only reports that the user says there are no rev |
 | C-0056 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ["Owner reports specifically about microfiber vegan-leather bags lasting years exist (C-0035 says only 'vegan bags')", 'The peeling worry applies to microfiber vegan leather in the same way as to PU', "Durability reports about other brands' bags would be credible to sho |
+| C-0057 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ['The Lévant can hold and carry a laptop, so it is a real option for laptop carriers'] |
+| C-0058 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0059 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0060 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0061 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ['That people specifically rejected work totes (as opposed to bags in general, per C-0024) because of their weight'] |
+| C-0062 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
 
 ## ACH
 
@@ -114,4 +120,8 @@ Computed 2026-10-17T06:08:55+00:00 by validate.py (contract 0.4). Statuses here 
 - evidence rows: 446
 - decision evidence: 107
 - queries: 29
-- claim statuses: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 4}
+- claim statuses: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}
+
+## Brief check
+
+- PASS

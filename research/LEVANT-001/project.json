@@ -2,7 +2,7 @@
   "project_id": "LEVANT-001",
   "product": "Nordace Siena Lévant Tote Bag",
   "product_url": "https://nordace.com/en/product/siena-levant-tote-bag/",
-  "product_facts_status": "Name, UK price, NEW badge, colours and no-reviews status verified via user screenshot and statement. Weight, volume, laptop size, features, US price and stock status remain INDEXED_ONLY.",
+  "product_facts_status": "Verified from user screenshots (2026-10-17): name, UK price, NEW badge, colours, no reviews (user statement), listed weight 1 kg / volume 15 L (C-0051), material micro-fiber vegan leather (C-0050), features incl. 14-inch EVA laptop sleeve (C-0052). Weight and volume are manufacturer figures, not measured. US price, stock status and warranty terms remain unverified.",
   "product_facts_indexed": {
     "price": "$188 USD",
     "volume": "15 L",
@@ -24,9 +24,10 @@
     "sibling": "Siena Lévant Belted Tote Bag, $198, 16 L, 15-inch laptop sleeve"
   },
   "open_questions_for_user": [
-    "Is it in stock for the test period (page earlier showed Waitlist)?",
-    "Screenshot of the specs section (weight, volume, laptop size, warranty)",
-    "US price"
+    "Is it in stock for the test period (an indexed page showed Waitlist)?",
+    "US price",
+    "Warranty terms for the Lévant",
+    "Measured empty weight (the 1 kg is the listed figure; C-0062 depends on it)"
   ],
   "markets": [
     "US",
@@ -49,6 +50,37 @@
     "uk_price": "£159.00",
     "badge": "NEW",
     "colours": "two swatches: black/tan, cream/tan",
-    "reviews": "none yet, product is new (user statement)"
-  }
+    "reviews": "none yet, product is new (user statement)",
+    "weight_volume": "1 kg (2.2 lb), 15 L — listed, see C-0051",
+    "material": "micro-fiber vegan leather — see C-0050",
+    "features": "14-inch EVA laptop sleeve, detachable lining, magnetic fleece pocket, hidden anti-theft pocket, luggage strap, adjustable strap — see C-0052"
+  },
+  "ledger_snapshot": {
+    "queries": 29,
+    "reddit_threads": 39,
+    "reddit_objects": 2184,
+    "reddit_authors": 1516,
+    "user_sources": 7,
+    "evidence": 446,
+    "decision_evidence": 107,
+    "claims": 62,
+    "status": {
+      "FACT_APPROVED": 16,
+      "HYPOTHESIS_UNTESTED": 4,
+      "RESEARCH_QUESTION": 6,
+      "NEEDS_REVIEW": 34,
+      "BLOCKED": 2
+    },
+    "fact_product": 5,
+    "fact_other": 11,
+    "approved_product_facts": [
+      "C-0045",
+      "C-0046",
+      "C-0050",
+      "C-0051",
+      "C-0052"
+    ],
+    "contract_version": "0.4"
+  },
+  "product_facts_indexed_note": "product_facts_indexed is the earlier search-index snapshot; where it overlaps product_facts_verified, the verified value wins. Unverified from it: US price, availability, sibling product."
 }

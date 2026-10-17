@@ -1,6 +1,6 @@
 {
   "project_id": "LEVANT-001",
-  "computed_at": "2026-10-17T06:08:55+00:00",
+  "computed_at": "2026-10-17T06:16:57+00:00",
   "contract_version": "0.4",
   "schema_errors": [],
   "claims": [
@@ -1857,6 +1857,76 @@
       "unusable_evidence": [],
       "audit_id": "A-0056",
       "status": "RESEARCH_QUESTION"
+    },
+    {
+      "claim_id": "C-0057",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "critical": false,
+      "text": "If weighing confirms that the Lévant's listed 1 kg empty weight is lower than the work totes people say they rejected for weight, a test could check whether laptop carriers who say heavy totes hurt would consider it as a lighter option; comfort when loaded is untested.",
+      "reasons": [
+        "uncovered factual premise(s): ['The Lévant can hold and carry a laptop, so it is a real option for laptop carriers']"
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0057",
+      "status": "RESEARCH_QUESTION"
+    },
+    {
+      "claim_id": "C-0058",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "critical": false,
+      "text": "It could be tested whether the Lévant appeals for light-load days, when some people already move to a smaller bag; whether it suits that role is untested.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0058",
+      "status": "HYPOTHESIS_UNTESTED"
+    },
+    {
+      "claim_id": "C-0059",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "CAUSAL_HYPOTHESIS",
+      "critical": true,
+      "text": "If cold-traffic shoppers look Nordace up on Reddit before buying (not yet measured), the negative discussion that led some readers to hold off could cost conversions; showing warranty terms and owner reports, if they are available for the Lévant, could be tested as a counter.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0059",
+      "status": "HYPOTHESIS_UNTESTED"
+    },
+    {
+      "claim_id": "C-0060",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "critical": false,
+      "text": "If owner reports of microfiber vegan-leather bags lasting years can be found and shown, a test could check whether they weaken the peeling worry for a tote whose body is listed as micro-fiber vegan leather.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0060",
+      "status": "HYPOTHESIS_UNTESTED"
+    },
+    {
+      "claim_id": "C-0061",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "critical": false,
+      "text": "If weighing confirms that the Lévant's listed 1 kg empty weight is lower than the work totes people say they rejected for weight, a test could check whether laptop carriers who say heavy totes hurt would consider it as a lighter option; comfort when loaded is untested.",
+      "reasons": [
+        "uncovered factual premise(s): ['That people specifically rejected work totes (as opposed to bags in general, per C-0024) because of their weight']"
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0061",
+      "status": "RESEARCH_QUESTION"
+    },
+    {
+      "claim_id": "C-0062",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "critical": false,
+      "text": "If weighing confirms the Lévant's listed 1 kg empty weight, a test could check whether people who carry a laptop in a tote and say it gets too heavy or painful would see the Lévant, which has a 14-inch laptop sleeve, as a lighter option than their current bag; whether it is lighter than their bag and comfortable when loaded is untested.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0062",
+      "status": "HYPOTHESIS_UNTESTED"
     }
   ],
   "ach": {
@@ -2109,7 +2179,9 @@
       "NEEDS_REVIEW": 34,
       "FACT_APPROVED": 16,
       "BLOCKED": 2,
-      "RESEARCH_QUESTION": 4
+      "RESEARCH_QUESTION": 6,
+      "HYPOTHESIS_UNTESTED": 4
     }
-  }
+  },
+  "brief_issues": []
 }

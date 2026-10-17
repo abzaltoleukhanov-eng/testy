@@ -1,0 +1,28 @@
+[
+ {
+  "claim_id": "C-0062",
+  "claim": "If weighing confirms the Lévant's listed 1 kg empty weight, a test could check whether people who carry a laptop in a tote and say it gets too heavy or painful would see the Lévant, which has a 14-inch laptop sleeve, as a lighter option than their current bag; whether it is lighter than their bag and comfortable when loaded is untested.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "FUTURE_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0020",
+    "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0051",
+    "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0052",
+    "text": "The product copy for the Siena Lévant Tote Bag lists a 14-inch EVA laptop sleeve, a detachable lining, a magnetic fleece pocket, a hidden anti-theft pocket, a luggage strap and an adjustable strap.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "C-0061 narrowed after audit A-0061: drops the unestablished premise that people rejected work totes specifically for weight; the comparison with the reader's current bag is part of what is tested.",
+  "supporting": [],
+  "contradicting": []
+ }
+]

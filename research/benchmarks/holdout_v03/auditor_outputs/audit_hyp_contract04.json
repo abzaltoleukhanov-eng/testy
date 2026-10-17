@@ -1,0 +1,143 @@
+[
+ {
+  "case_id": "H06",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {
+    "evidence_id": "H06:H06-A:0",
+    "located_span": "Aster Lévant Tote, 1 kg weight, 15 litres",
+    "supports": true,
+    "note": "A search snippet reports a 1 kg weight for the product. The manufacturer page was not opened, and the snippet does not say whether 1 kg is the empty weight or how it was measured. The claim treats both of these as conditions still to check.",
+    "product_match": "EXACT_SKU",
+    "person_action": "NONE",
+    "evidence_kind": "PRODUCT_SPEC_SNIPPET",
+    "usage_situation": "NONE"
+   }
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "The claim calls the 1 kg figure 'reported' and makes verifying it an explicit condition before testing a creative angle, so it does not state the weight as confirmed. The source is only an indexed search snippet, which matches the cautious wording. Nothing presents a result as already observed.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "speaker_attribution": "Search engine snippet (author unknown; manufacturer page not opened)",
+  "context_used": "EXCERPT_ONLY snippet; access_status INDEXED_ONLY",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "H07",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "H07:H07-A:0",
+    "located_span": "This is a still image; audio and moving footage were not provided.",
+    "supports": false,
+    "note": "The source is a still screen capture, and it says no audio or moving footage was provided. That means there is no way to observe the soundtrack or the speech rate.",
+    "product_match": "EXACT_SKU",
+    "person_action": "PRESENTER_POINTING_AT_TOTE",
+    "evidence_kind": "STILL_SCREENSHOT",
+    "usage_situation": "NONE"
+   }
+  ],
+  "scope_issue": "The claim states as fact what the video contains: a 'suspenseful soundtrack' and '140 words-per-minute dialogue'. The source is a still image with no audio or footage, so neither the music nor the speech pacing was observed.",
+  "open_contradiction": false,
+  "reasoning": "The claim is labelled HYPOTHESIS but is worded as an observed description of the video's audio and pacing. The only source is a still image and says outright that no audio or footage was provided. The source does not disprove the claim; it just gives no way to check it, so the verdict is DOES_NOT_SUPPORT rather than CONTRADICTS.",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "A video version of this creator content exists and was reviewed",
+   "The video has a soundtrack and it is suspenseful",
+   "The video contains dialogue delivered at about 140 words per minute"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "speaker_attribution": "Creator screen capture (user-provided); describer unknown",
+  "context_used": "EXCERPT_ONLY still screenshot; no audio or video",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "H08",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "H08:H08-A:0",
+    "located_span": "Screenshot of a 2022 agency blog lists a ranking-style video example. No publication dates for recent rankings are supplied.",
+    "supports": false,
+    "note": "The only source is a 2022 blog with a single example of a ranking-style video. It has no recent dates, nothing on frequency, and nothing specific to handbags, so it cannot show a trend in October 2026.",
+    "product_match": "CATEGORY_ONLY",
+    "person_action": "NONE",
+    "evidence_kind": "AGENCY_BLOG_SCREENSHOT",
+    "usage_situation": "NONE"
+   }
+  ],
+  "scope_issue": "The claim states a current trend ('trending this week in October 2026') specifically for handbag ads. The source is one ranking-style example from a 2022 blog, says no recent dates were supplied, and does not mention handbags.",
+  "open_contradiction": false,
+  "reasoning": "The claim asserts a current trend as fact rather than proposing something to test. One example from four years ago cannot establish a trend this week, and the source itself notes that no recent dates were supplied. It also gives no category-specific evidence about handbag ads.",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "Ranking-style ads are being published at elevated frequency in October 2026",
+   "This applies specifically to handbag ads",
+   "A single 2022 example reflects current ad trends"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "speaker_attribution": "Unnamed agency blog (2022), via screenshot",
+  "context_used": "EXCERPT_ONLY screenshot",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "H09",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "H09:H09-A:0",
+    "located_span": "We collected 80 comments after searching for complaints about heavy totes; 24 mentioned shoulder pain. No probability sampling was used.",
+    "supports": false,
+    "note": "24 of 80 is 30%, but the 80 comments were chosen by searching for complaints about heavy totes, and no probability sampling was used. The source gives no country, gender or population for the commenters.",
+    "product_match": "CATEGORY_ONLY",
+    "person_action": "COMPLAINT_MENTION",
+    "evidence_kind": "NON_PROBABILITY_COMMENT_COUNT",
+    "usage_situation": "CARRYING_HEAVY_TOTE"
+   }
+  ],
+  "scope_issue": "The claim turns 30% of a non-random set of complaint comments into a population share ('30% of UK women'). The source does not say the commenters are in the UK, does not say they are women, and its sampling method rules out generalising to any population.",
+  "open_contradiction": false,
+  "reasoning": "The 30% comes from comments that were selected because they complained about heavy totes, so the share is inflated by how the sample was chosen and does not estimate prevalence. The source gives no country or gender for the commenters. It also does not show that tote bags in general cause shoulder pain; it only shows that commenters mentioned it.",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "uncovered_premises": [
+   "The commenters are UK women",
+   "The 80 comments are representative of UK women",
+   "The tote bags cause the reported shoulder pain",
+   "Comment mentions reflect how often the pain actually occurs in the population"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "speaker_attribution": "Internal research note author summarising anonymous commenters",
+  "context_used": "COMMENT_ONLY tally; READ_FULL note",
+  "original_or_translation": "ORIGINAL"
+ },
+ {
+  "case_id": "H18",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "H18:H18-A:0",
+    "located_span": "We have not published any reviews on this page yet.",
+    "supports": false,
+    "note": "Support says reviews have not been published 'yet' on one page. This points to a publishing or timing reason, not a quality problem. The note 'No evidence of reviews elsewhere' shows a lack of evidence and does not prove that no online reviews exist.",
+    "product_match": "EXACT_SKU",
+    "person_action": "BRAND_SUPPORT_REPLY",
+    "evidence_kind": "BRAND_EMAIL",
+    "usage_situation": "NONE"
+   }
+  ],
+  "scope_issue": "The claim treats 'the absence of online reviews' as established. The source only shows that one page has no published reviews 'yet' and that no reviews were found elsewhere. The step to poor quality ignores obvious alternatives such as a new listing, reviews held back from publication, or low sales volume.",
+  "open_contradiction": false,
+  "reasoning": "The claim is worded as a hypothesis, but its premise of no online reviews goes beyond what the source shows: one page without published reviews, and no evidence found elsewhere. The word 'yet' in the brand's reply suggests a timing or publishing explanation. Nothing in the sources links missing reviews to product quality.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [
+   "There are no online reviews of the tote anywhere (not just on this page)",
+   "A lack of reviews indicates product quality rather than listing age, sales volume or review moderation"
+  ],
+  "link_check": "UNSUPPORTED_LEAP",
+  "speaker_attribution": "Brand customer support (email), as relayed by the user",
+  "context_used": "COMMENT_ONLY email excerpt dated 15 October",
+  "original_or_translation": "ORIGINAL"
+ }
+]

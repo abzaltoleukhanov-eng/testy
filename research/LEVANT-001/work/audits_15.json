@@ -1,0 +1,14 @@
+[
+  {
+    "claim_id": "C-0062",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "hypothesis_check": "FORWARD_LOOKING_OK",
+    "uncovered_premises": [],
+    "link_check": "PLAUSIBLE_UNTESTED",
+    "reasoning": "The packet lists no direct supporting or contradicting evidence, so the claim is judged on framing and premises. The 1 kg weight is an explicit condition ('if weighing confirms'), and the 14-inch sleeve (C-0052) and the laptop-tote heaviness/pain complaints (C-0020) come from the listed premises. Whether the Lévant is lighter than people's current bags or comfortable when loaded is explicitly called untested, and nothing is stated as already observed. One obvious alternative is that most of the load comes from the laptop and its contents rather than the bag, so a 1 kg tote might not feel lighter. That is exactly what the proposed test would check, so the link is a reasonable idea to test.",
+    "auditor": "independent auditor packet 15"
+  }
+]
