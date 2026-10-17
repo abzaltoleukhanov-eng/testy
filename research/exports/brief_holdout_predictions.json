@@ -1,0 +1,294 @@
+{
+ "B01": {
+  "line_hash": "81cd62ea360fb853",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0051"
+  ],
+  "explanation": "C-0051 states the product page lists 1 kg and 15 L for the Siena Lévant Tote; the line presents these as listed figures, not measurements.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 1",
+  "batch": "answers_01.json"
+ },
+ "B02": {
+  "line_hash": "2622492f1d88da1c",
+  "verdict": "OVERSTATES",
+  "issue": "Claims independent laboratory measurement and proof of lightness; the record is a manufacturer-listed figure from a screenshot, explicitly not measured, and makes no lightness judgement.",
+  "relied_on_ids": [
+   "C-0051"
+  ],
+  "explanation": "C-0051 supports only that the page lists 1 kg; its scope_limits say the figure is not measured, so lab testing and 'proving' it is light go beyond the record.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 1",
+  "batch": "answers_01.json"
+ },
+ "B03": {
+  "line_hash": "c2a92de18aa697c7",
+  "verdict": "NOT_SUPPORTED",
+  "issue": "Comparison with every competitor tote sold in the UK; no record contains any competitor weights or UK market data.",
+  "relied_on_ids": [
+   "C-0051"
+  ],
+  "explanation": "C-0051 only gives the Lévant's listed weight and volume; it contains no comparison with any other product.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 1",
+  "batch": "answers_01.json"
+ },
+ "B04": {
+  "line_hash": "09bc098b7c5a3c8f",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0020"
+  ],
+  "explanation": "C-0020 says several independent discussions describe shoulder or back pain from laptop-loaded work totes; the line narrows to 'some' users and 'discomfort', staying within the record and its Reddit scope.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 1",
+  "batch": "answers_01.json"
+ },
+ "B05": {
+  "line_hash": "3ab5afa38554ae4e",
+  "verdict": "NOT_SUPPORTED",
+  "issue": "Asserts a majority share of a demographic (British women aged 40-50), injuries, and attributes them to the Siena Lévant Tote; the record is about laptop-loaded totes in general among self-selected Reddit commenters and is explicitly not a share of owners.",
+  "relied_on_ids": [
+   "C-0020"
+  ],
+  "explanation": "C-0020 never mentions the Lévant, any demographic, injuries or a share of people; its scope_limits rule out a population share.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 1",
+  "batch": "answers_01.json"
+ },
+ "B06": {
+  "line_hash": "467633c58bf1a5e9",
+  "verdict": "NOT_SUPPORTED",
+  "issue": "Attributes multi-year strap durability to Lévant owners; the record covers mostly backpack owners reporting years of use, one owner loving a Siena tote, and says nothing about the Lévant or straps.",
+  "relied_on_ids": [
+   "C-0010"
+  ],
+  "explanation": "C-0010 reports years of use mostly for backpacks and is not a durability rate; no cited record mentions Lévant owners or strap longevity.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 1",
+  "batch": "answers_01.json"
+ },
+ "B07": {
+  "line_hash": "b3d6d7e071a522fb",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0010"
+  ],
+  "explanation": "C-0010 reports owners describing years of use and repeat purchases, with scope limited mostly to backpacks; the line paraphrases this with 'some' and keeps the backpack limit.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 2",
+  "batch": "answers_02.json"
+ },
+ "B08": {
+  "line_hash": "601eccd4b605f9d1",
+  "verdict": "OVERSTATES",
+  "issue": "Claims causation was 'established' (ACH-0004 says causal_status NOT_ESTABLISHED), generalises to 'most US customers' (records cover several would-be buyers in two threads, with no population share or geography), turns stated intentions into non-purchases (C-0038 says these are not verified non-purchases), and calls them 'customer-service replies' when the records speak of the brand's public Reddit replies.",
+  "relied_on_ids": [
+   "C-0038",
+   "ACH-0004"
+  ],
+  "explanation": "The records support only that several would-be buyers in two threads said or implied they would not buy after the brand's public replies, with causality not established; the line turns this into an established cause for most US customers.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 2",
+  "batch": "answers_02.json"
+ },
+ "B09": {
+  "line_hash": "8479b99958bd71ef",
+  "verdict": "OVERSTATES",
+  "issue": "The records say commenters cited the brand's public replies; nothing says they cited the 'tone' of those replies. Also, C-0038 says buyers 'said or implied' they would not buy or would hold off, which is weaker than all of them 'explicitly' saying they would not buy.",
+  "relied_on_ids": [
+   "C-0038",
+   "ACH-0004"
+  ],
+  "explanation": "The two-thread scope and the caveat that no outcome rate was established are right, but saying the 'tone' of the replies was the stated reason is a specific cause the records do not give.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 2",
+  "batch": "answers_02.json"
+ },
+ "B10": {
+  "line_hash": "d0a96020cda17aae",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0012"
+  ],
+  "explanation": "C-0012 says one shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great; the line restates this as one person's report and does not name the Levant.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 2",
+  "batch": "answers_02.json"
+ },
+ "B11": {
+  "line_hash": "3a947b92a1e2eb54",
+  "verdict": "NOT_SUPPORTED",
+  "issue": "C-0052 only says the product copy lists a 14-inch EVA laptop sleeve, and that the features are not tested. No record supports a guarantee, comfort while commuting, or fitting any 16-inch laptop, which is a new number that conflicts with the 14-inch spec.",
+  "relied_on_ids": [
+   "C-0052"
+  ],
+  "explanation": "The line asserts a guarantee and 16-inch compatibility that no cited record states; the record only lists an untested 14-inch sleeve feature.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 2",
+  "batch": "answers_02.json"
+ },
+ "B12": {
+  "line_hash": "0ddd5c207720fe4a",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0052"
+  ],
+  "explanation": "C-0052 says the product copy lists a 14-inch EVA laptop sleeve; the line narrows this to one listed feature and makes no further claim.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 2",
+  "batch": "answers_02.json"
+ },
+ "B13": {
+  "line_hash": "f90f12ed4e6f618a",
+  "verdict": "OVERSTATES",
+  "issue": "C-0050 lists only water-resistant fabric and says durability is not established; 'fully waterproof' and 'cannot peel or crack' go beyond it, and C-0035 is about beliefs and individual owner reports with nothing on the Levant material.",
+  "relied_on_ids": [
+   "C-0050",
+   "C-0035"
+  ],
+  "explanation": "The records support a listed water-resistant vegan leather material, not a waterproof guarantee or immunity from peeling or cracking. C-0035 actually notes commenters expect PU leather to peel and says nothing about this product.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 3",
+  "batch": "answers_03.json"
+ },
+ "B14": {
+  "line_hash": "a3129c6353644a40",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0062"
+  ],
+  "explanation": "The line is labelled as a hypothesis, keeps the weighing condition, and narrows C-0062 faithfully, including that comfort when loaded is unknown.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 3",
+  "batch": "answers_03.json"
+ },
+ "B15": {
+  "line_hash": "e8d470b61d414bd0",
+  "verdict": "NOT_SUPPORTED",
+  "issue": "No record mentions Meta testing, CPA or a 35% drop; C-0062 is an untested hypothesis and states no result or causal link to the 1 kg weight.",
+  "relied_on_ids": [
+   "C-0062"
+  ],
+  "explanation": "Despite the 'Hypothesis' label, the line asserts a demonstrated test result with a new number and a cause, none of which appear in any cited record.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 3",
+  "batch": "answers_03.json"
+ },
+ "B16": {
+  "line_hash": "6ce699c624065dc7",
+  "verdict": "OVERSTATES",
+  "issue": "C-0046 only records one user stating there are no reviews and the product is new; 'anywhere online' widens it, and the inference that the product is probably defective is not in any record.",
+  "relied_on_ids": [
+   "C-0046"
+  ],
+  "explanation": "The record supports only a single user's statement, not a verified absence of reviews online, and offers no basis for judging product quality.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 3",
+  "batch": "answers_03.json"
+ },
+ "B17": {
+  "line_hash": "089e05571619c06a",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0046"
+  ],
+  "explanation": "The line attributes the no-reviews statement to the user, which is weaker than or equal to C-0046, and adds a caveat that the wider existence of reviews is not established.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 3",
+  "batch": "answers_03.json"
+ },
+ "B18": {
+  "line_hash": "32ebead5c8f9daa0",
+  "verdict": "NOT_SUPPORTED",
+  "issue": "C-0045 records only a £159.00 price and a NEW badge in a screenshot; stock status and next-day UK delivery are not mentioned, and the UK market is only inferred from the currency.",
+  "relied_on_ids": [
+   "C-0045"
+  ],
+  "explanation": "Nothing in the cited record speaks to availability or delivery, so the claim that the badge proves them has no support.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 3",
+  "batch": "answers_03.json"
+ },
+ "B19": {
+  "line_hash": "1e81dfafdd5a7991",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0058",
+   "C-0023"
+  ],
+  "explanation": "The line presents the light-load-day appeal as an unverified, untested hypothesis, matching C-0058's status and label.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 4",
+  "batch": "answers_04.json"
+ },
+ "B20": {
+  "line_hash": "e6c859b800b1a030",
+  "verdict": "OVERSTATES",
+  "issue": "Turns an untested hypothesis about light-load days into a factual claim that the Lévant is the best bag for every day and replaces backpacks; adds a comparison and wider scope than C-0058.",
+  "relied_on_ids": [
+   "C-0058"
+  ],
+  "explanation": "C-0058 only says it could be tested whether the Lévant appeals on light-load days and that its fit is untested; the line asserts superiority on all days and replacement of backpacks.",
+  "lang": "EN",
+  "auditor": "blind brief auditor 4",
+  "batch": "answers_04.json"
+ },
+ "B21": {
+  "line_hash": "396a0ed6e630bf6b",
+  "verdict": "ENTAILED",
+  "issue": "",
+  "relied_on_ids": [
+   "C-0051"
+  ],
+  "explanation": "C-0051 states the product page lists 1 kg and 15 L as manufacturer figures, not measured; the line restates this with the same caveat.",
+  "lang": "RU",
+  "auditor": "blind brief auditor 4",
+  "batch": "answers_04.json"
+ },
+ "B22": {
+  "line_hash": "b3561880dd351cc4",
+  "verdict": "NOT_SUPPORTED",
+  "issue": "C-0020 says nothing about women aged 40-50, the UK, the Lévant, or which bag most often causes back pain; the population, product and comparison are invented.",
+  "relied_on_ids": [
+   "C-0020"
+  ],
+  "explanation": "C-0020 only reports that several Reddit commenters describe laptop-loaded totes becoming heavy and causing pain, explicitly not a share of owners.",
+  "lang": "RU",
+  "auditor": "blind brief auditor 4",
+  "batch": "answers_04.json"
+ },
+ "B23": {
+  "line_hash": "76c01ad34c7abc98",
+  "verdict": "LIMITATION_OK",
+  "issue": "",
+  "relied_on_ids": [
+   "ACH-0005"
+  ],
+  "explanation": "The line only states that the causes of switching from tote to backpack are not established, consistent with ACH-0005 being preliminary with causal_status NOT_ESTABLISHED.",
+  "lang": "RU",
+  "auditor": "blind brief auditor 4",
+  "batch": "answers_04.json"
+ },
+ "B24": {
+  "line_hash": "a6577d25ac66aec5",
+  "verdict": "NOT_SUPPORTED",
+  "issue": "ACH-0004 does not prove anything (causality not established) and actually records service, refund and returns complaints (H4) appearing in the evidence; the claim that Nordace has no support or returns problems is not stated by the record.",
+  "relied_on_ids": [
+   "ACH-0004"
+  ],
+  "explanation": "The ACH prefers brand replies as the most explicit stated reason but notes H4 reports also appear and that no cause is established, so the line asserts a guarantee the record contradicts.",
+  "lang": "RU",
+  "auditor": "blind brief auditor 4",
+  "batch": "answers_04.json"
+ }
+}
