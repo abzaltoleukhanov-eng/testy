@@ -10,10 +10,10 @@ Research-engine v3 pilot (contract 0.3), Siena Lévant Tote Bag, Reddit only. Sn
 | `queries.jsonl` | search log: 29 queries with branch, reason, journey stage, scope, market, polarity, results |
 | `archive/candidates.jsonl` | every thread each query returned |
 | `archive/threads.jsonl` | completeness record per thread read (RSS count, archive count, edited since archive, parents missing) |
-| `archive/sources.jsonl` | full text of all 2,186 retrieved objects (39 threads plus 2 user-provided sources), with retrieval method and access status |
+| `archive/sources.jsonl` | full text of all retrieved objects (39 Reddit threads plus user-provided screenshots and messages), with retrieval method and access status |
 | `archive/user/pdp_screenshot_2026-10-17.png` | the user's product-page screenshot |
-| `evidence.jsonl` | 434 evidence rows; `quote_span` is verbatim in the source text |
-| `claims.jsonl` | 47 claims, including superseded revisions |
+| `evidence.jsonl` | 446 evidence rows; `quote_span` is verbatim in the source text |
+| `claims.jsonl` | 52 claims, including superseded revisions |
 | `hypotheses.jsonl` | 2 ACH analyses |
 | `audits.jsonl` | every independent audit, with located spans |
 | `gate_report.json` / `gate_report.md` | statuses computed by validate.py |
@@ -21,7 +21,7 @@ Research-engine v3 pilot (contract 0.3), Siena Lévant Tote Bag, Reddit only. Sn
 | `work/` | extractor brief and notes, claim batches, audit packets and raw audit outputs |
 
 ## Approved claims used in the briefs
-C-0010, C-0012, C-0015, C-0020, C-0023, C-0024, C-0035, C-0036, C-0038, C-0039, C-0040, C-0045, C-0046.
+C-0010, C-0012, C-0015, C-0020, C-0023, C-0024, C-0035, C-0036, C-0038, C-0039, C-0040, C-0045, C-0046, C-0050, C-0051, C-0052.
 
 Hypotheses used (HYPOTHESIS_UNTESTED): C-0016, C-0017, C-0044, C-0047.
 

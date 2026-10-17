@@ -11,7 +11,7 @@
 **Volume:**
 - 29 queries, 39 threads, 2,184 posts and comments, 1,516 unique authors;
 - 431 evidence rows, 107 of them decision stories;
-- 47 claims: **13 approved after independent audit** (11 about people and the brand, 2 about the product), 4 hypotheses passed the framing check, the rest rejected or awaiting rework.
+- 52 claims: **16 approved after independent audit** (11 about people and the brand, 5 about the product), 4 hypotheses passed the framing check, the rest rejected or awaiting rework.
 
 Every finding below points to a claim `[C-…]`. A script, not the model, computed each claim's status. Quotes are given in the original.
 
@@ -23,7 +23,7 @@ Every finding below points to a claim `[C-…]`. A script, not the model, comput
 3. People expect vegan leather to peel. Some owners report bags that have held up for years [C-0035].
 4. The main commercial risk is what Reddit says about Nordace. After reading the reviews and the brand's replies, some would-be buyers say they will not buy or will hold off [C-0038]. One person turned away from the Nordace tote itself for this reason [C-0012].
 5. The brand also has loyal owners: years of use, repeat purchases, and colleagues who bought after seeing their bag [C-0010].
-6. The Lévant itself has no reviews yet: according to the user, the product is new [C-0046].
+6. According to the user, there are no reviews of the Lévant and the product is new [C-0046]. We did not check whether reviews exist anywhere else. Our Reddit corpus has none either, but that does not prove there are none anywhere.
 
 ## What we learned about decisions
 
@@ -96,26 +96,27 @@ Why people turn away from Nordace after Reddit (hypotheses):
 For a £159 tote to win, it has to solve exactly what people put up with a backpack for: the weight on the shoulder. The tote already looks better.
 
 ## The product: what is known and what is not
-- **Confirmed by the user's screenshot:**
-  - on the nordace.com page, the Siena Lévant Tote Bag is listed at **£159.00** with a **NEW** badge [C-0045];
-  - the screenshot shows two colours: black and cream, both with brown trim;
-  - one photo shows the tote on a suitcase handle.
+Everything below is what is **listed on the page** (the user's screenshots from 2026-10-17). These are not measurements.
+- **Price and badge:** £159.00 and a NEW badge [C-0045]. A price in £ does not prove the buyer's country. NEW does not prove stock, a launch date or the absence of reviews.
+- **Weight and volume:** weight 1 kg (2.2 lb), volume 15 L [C-0051].
+- **Features:** 14-inch EVA laptop sleeve, detachable lining, magnetic fleece pocket, hidden anti-theft pocket, luggage strap, adjustable strap [C-0052].
+- **Material:** microfiber (vegan leather), water-resistant fabric, metal studs on the base [C-0050].
 - **According to the user:** there are no reviews, the product is new [C-0046].
-- **From search results (`INDEXED_ONLY`, not verified):**
-  - 15 L, 1 kg, 14-inch laptop;
-  - removable lining, anti-theft back pocket, luggage strap, detachable shoulder strap;
-  - vegan leather (microfiber);
-  - $188 in the US;
-  - the page earlier showed "Waitlist".
-- **Needed:** a screenshot of the specs section (weight, volume, laptop size, warranty) and confirmation that the bag is in stock for the test period.
-- **Weight comparison.** If the 1 kg figure holds, the Lévant is lighter than two bags that people themselves call heavy: Beis at 2.75 lb ≈ 1.25 kg and Cuyana Forma at 3.6 lb ≈ 1.6 kg [C-0024]. This comparison is a **hypothesis** until the weight is checked on a scale or in a screenshot.
+- **Not confirmed:**
+  - the warranty;
+  - stock for the test period;
+  - the US price ($188 comes only from search results).
+- **The weight comparison is a hypothesis, not an advantage.** The listed 1 kg is less than Beis at 2.75 lb ≈ 1.25 kg and Cuyana Forma at 3.6 lb ≈ 1.6 kg [C-0024]. It remains a hypothesis for three reasons:
+  - the competitor figures are commenters' words, not measurements;
+  - a fair comparison means weighing the empty bags the same way;
+  - a lower empty weight does not guarantee that carrying a laptop is more comfortable.
 
 ## Creative opportunities (all hypotheses, to be tested)
 1. **"The tote you don't have to swap for a backpack"**: hypothesis [C-0016]. Basis: [C-0020], [C-0024].
    - Belief shift: from "a nice tote = sore shoulders" to "this tote is light in itself".
    - Proof on screen: weighing the empty bag, comparing it with the usual heavy ones, the shoulder strap.
    - Segment awareness: they know the problem, they know the solutions (a backpack), they do not know the brand.
-   - Risk: the 1 kg figure is unverified; with a laptop and belongings the bag is still heavy.
+   - Risk: 1 kg is the manufacturer's figure, not a measurement [C-0051]; a lower empty weight does not guarantee comfort with a laptop; with a laptop and belongings the bag is still heavy.
 2. **"The bag for days when how you look matters"**: hypothesis [C-0017]. Basis: [C-0023].
    - Audience: meeting days and office days, not the daily walk with a full load.
    - Risk: it narrows the audience.
@@ -128,8 +129,8 @@ For a £159 tote to win, it has to solve exactly what people put up with a backp
    - Risk: there is no evidence about the Lévant's material.
 
 ## Gaps and next step
-- **There are no reviews from Lévant owners: the product is new [C-0046].** Everything known about real-world use comes from other bags and from Nordace backpacks.
-- **The specs are not confirmed.** The screenshot confirmed the name, the UK price and the NEW badge. Weight, volume, warranty and stock status still come from search results.
+- **According to the user, there are no reviews of the Lévant [C-0046].** Everything known about real-world use comes from other bags and from Nordace backpacks.
+- **The specs are the manufacturer's figures, not measurements.** Warranty and stock status are not confirmed. A greyed-out BUY NOW button on one screenshot proves nothing about stock.
 - **Did not pass audit after three rounds:**
   - the claim about Nordace backpack breakages (C-0037);
   - the claim "pain → switching to a backpack as a purchase reason" (C-0032);

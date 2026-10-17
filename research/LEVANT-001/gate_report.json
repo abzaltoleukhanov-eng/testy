@@ -1,6 +1,6 @@
 {
   "project_id": "LEVANT-001",
-  "computed_at": "2026-10-17T02:32:51+00:00",
+  "computed_at": "2026-10-17T02:46:01+00:00",
   "contract_version": "0.3",
   "schema_errors": [],
   "claims": [
@@ -1563,6 +1563,186 @@
       "unusable_evidence": [],
       "audit_id": "A-0047",
       "status": "HYPOTHESIS_UNTESTED"
+    },
+    {
+      "claim_id": "C-0048",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "The product page lists the Siena Lévant Tote Bag with a volume of 15 L, a weight of 1 kg (2.2 lb), exterior dimensions of 42 x 13.5 x 27.5 cm, and airline compatibility described as 'Overhead bin & Underseat'.",
+      "reasons": [
+        "scope issue: The spec text does not name the product itself. The link to the Siena Lévant Tote Bag comes only from the page URL. The figures are listed specs, not measurements."
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0048",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 3,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 3,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0049",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "The product page lists a 14-inch EVA laptop sleeve, a detachable hand-washable lining, an anti-theft pocket on the back panel, a quick-access fleece magnetic pocket, an adjustable detachable strap of 83–104 cm and a luggage strap.",
+      "reasons": [
+        "audit verdict PARTIAL",
+        "scope issue: The only product named in E-0438 is the 'Nordace Siena Riviera Cosmetic Bag', shown just above the feature list. So reading these features as the Lévant Tote's rests on the URL alone, not on the transcribed text."
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0049",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0050",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "The product page lists the body material as micro-fiber vegan leather, with water-resistant fabric and metal protective bottom studs.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0050",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
+    },
+    {
+      "claim_id": "C-0051",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0051",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 3,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 3,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
+    },
+    {
+      "claim_id": "C-0052",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "The product copy for the Siena Lévant Tote Bag lists a 14-inch EVA laptop sleeve, a detachable lining, a magnetic fleece pocket, a hidden anti-theft pocket, a luggage strap and an adjustable strap.",
+      "reasons": [],
+      "unusable_evidence": [],
+      "audit_id": "A-0052",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 3,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 3,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": true,
+      "status": "APPROVED"
     }
   ],
   "coverage": {
@@ -1761,17 +1941,17 @@
         "saturated_signal": false
       },
       "UNLINKED": {
-        "evidence": 3,
+        "evidence": 15,
         "situation_clusters": 1,
         "behavior_patterns": 1,
         "new_in_last_20": 1,
         "saturated_signal": false
       },
       "ALL": {
-        "evidence": 434,
+        "evidence": 446,
         "situation_clusters": 10,
         "behavior_patterns": 356,
-        "new_in_last_20": 11,
+        "new_in_last_20": 3,
         "saturated_signal": false
       }
     },
@@ -1782,21 +1962,21 @@
     "status": "COVERAGE_LIMITED"
   },
   "corpus": {
-    "sources": 2186,
+    "sources": 2191,
     "threads": 41,
     "authors (within platform)": 1518,
     "retrieval methods": {
       "RSS": 2184,
-      "SCREENSHOT": 1,
+      "SCREENSHOT": 6,
       "USER_UPLOAD": 1
     },
     "edited since archive (SOURCE_CHANGED)": 150,
-    "evidence rows": 434,
+    "evidence rows": 446,
     "decision evidence": 107,
     "queries": 29,
     "claim statuses": {
-      "NEEDS_REVIEW": 27,
-      "APPROVED": 13,
+      "NEEDS_REVIEW": 29,
+      "APPROVED": 16,
       "HYPOTHESIS_UNTESTED": 5,
       "BLOCKED": 2
     }

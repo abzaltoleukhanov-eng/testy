@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-17T02:32:51+00:00 by validate.py (contract 0.3). Statuses here are computed, not self-declared.
+Computed 2026-10-17T02:46:01+00:00 by validate.py (contract 0.3). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 
@@ -55,6 +55,11 @@ Computed 2026-10-17T02:32:51+00:00 by validate.py (contract 0.3). Statuses here 
 | C-0045 | PRODUCT_FACT | **APPROVED** | all checks passed |
 | C-0046 | PRODUCT_FACT | **APPROVED** | all checks passed |
 | C-0047 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0048 | PRODUCT_FACT | **NEEDS_REVIEW** | scope issue: The spec text does not name the product itself. The link to the Siena Lévant Tote Bag comes only from the page URL. The figures are listed specs, not measurements. |
+| C-0049 | PRODUCT_FACT | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The only product named in E-0438 is the 'Nordace Siena Riviera Cosmetic Bag', shown just above the feature list. So reading these features as the Lévant Tote's rests on the URL alone, not on the transcribed text. |
+| C-0050 | PRODUCT_FACT | **APPROVED** | all checks passed |
+| C-0051 | PRODUCT_FACT | **APPROVED** | all checks passed |
+| C-0052 | PRODUCT_FACT | **APPROVED** | all checks passed |
 
 ## Coverage: COVERAGE_LIMITED
 - planned source not retrievable by any tested route: official
@@ -86,20 +91,20 @@ Computed 2026-10-17T02:32:51+00:00 by validate.py (contract 0.3). Statuses here 
 | B03 | 61 | 3 | 52 | False |
 | B05 | 3 | 2 | 3 | False |
 | B07 | 25 | 3 | 16 | False |
-| UNLINKED | 3 | 1 | 1 | False |
-| ALL | 434 | 10 | 356 | False |
+| UNLINKED | 15 | 1 | 1 | False |
+| ALL | 446 | 10 | 356 | False |
 
 ## Corpus
 
-- sources: 2186
+- sources: 2191
 - threads: 41
 - authors (within platform): 1518
-- retrieval methods: {'RSS': 2184, 'SCREENSHOT': 1, 'USER_UPLOAD': 1}
+- retrieval methods: {'RSS': 2184, 'SCREENSHOT': 6, 'USER_UPLOAD': 1}
 - edited since archive (SOURCE_CHANGED): 150
-- evidence rows: 434
+- evidence rows: 446
 - decision evidence: 107
 - queries: 29
-- claim statuses: {'NEEDS_REVIEW': 27, 'APPROVED': 13, 'HYPOTHESIS_UNTESTED': 5, 'BLOCKED': 2}
+- claim statuses: {'NEEDS_REVIEW': 29, 'APPROVED': 16, 'HYPOTHESIS_UNTESTED': 5, 'BLOCKED': 2}
 
 ## Brief check
 

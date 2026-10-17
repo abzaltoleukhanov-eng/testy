@@ -1,0 +1,10 @@
+[
+{"text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+ "claim_type": "PRODUCT_FACT", "critical": true,
+ "scope_limits": "Revision of C-0048: manufacturer's listed figures from a user screenshot on 2026-10-17; not measured.",
+ "supporting_evidence_ids": ["E-0442", "E-0443", "E-0444"], "contradicting_evidence_ids": [], "counter_search_query_ids": []},
+{"text": "The product copy for the Siena Lévant Tote Bag lists a 14-inch EVA laptop sleeve, a detachable lining, a magnetic fleece pocket, a hidden anti-theft pocket, a luggage strap and an adjustable strap.",
+ "claim_type": "PRODUCT_FACT", "critical": true,
+ "scope_limits": "Revision of C-0049 using only text that names the product; listed features, not tested.",
+ "supporting_evidence_ids": ["E-0443", "E-0445", "E-0446"], "contradicting_evidence_ids": [], "counter_search_query_ids": []}
+]
