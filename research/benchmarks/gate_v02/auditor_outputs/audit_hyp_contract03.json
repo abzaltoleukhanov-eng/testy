@@ -1,0 +1,95 @@
+[
+ {
+  "case_id": "G14",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G14:G14-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The source says 42 of 200 crawled comments (a sample collected with the problem query 'tote shoulder pain') mention the issue. 42/200 = 21% of a keyword-selected comment set. That is not 21% of US women. The source gives no gender, no country (market_grounding UNKNOWN) and no population base.",
+    "product_match": "UNCLEAR - source is tagged Aster Mira Tote Grande, but the comments came from a category-level search; the claim names no product",
+    "person_action": "Commenters mention an issue; a crawler counted the mentions",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "Not stated; only the search query 'tote shoulder pain' is given"
+   }
+  ],
+  "scope_issue": "Asserts a population prevalence ('21% of US women') as fact. The source only shows 42 matches among 200 comments selected with a problem-polarity query. Gender, country and population share are all unobserved, and a share of a keyword-selected sample does not estimate a population rate.",
+  "open_contradiction": false,
+  "reasoning": "The 21% figure is just 42/200, the share of comments collected by searching for the problem itself, so it is biased toward people who have the issue. Nothing in the source names women, the US or any population. The claim presents a sample ratio as an observed population reach.",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "speaker_attribution": "Researcher/crawler aggregate summary attached to source G14-A (Reddit, author_key user_1, thread_1); not a customer statement",
+  "context_used": "FULL_THREAD per metadata; raw text is a single summary sentence",
+  "original_or_translation": "UNKNOWN"
+ },
+ {
+  "case_id": "G20",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G20:G20-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The source is a still screenshot (media_available: IMAGE only, EXCERPT_ONLY, READ_PARTIAL) showing a creator holding a tote in an airport. A still image cannot show spoken delivery speed or music, much less 'throughout' a video.",
+    "product_match": "UNCLEAR - source is tagged Aster Mira Tote Grande; the screenshot description says only 'a tote'",
+    "person_action": "Creator holds a tote in an airport",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "Airport (travel)"
+   }
+  ],
+  "scope_issue": "States as observed fact what a video contains (fast spoken delivery, suspenseful score throughout). The only source is a still screenshot with no audio or video, so speech, music and pacing are unobserved.",
+  "open_contradiction": false,
+  "reasoning": "Although labeled a hypothesis, the claim describes the content of a video as already observed. The source is only a still image showing a creator, a tote and an airport. Audio and pacing cannot be judged from it.",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "speaker_attribution": "Bracketed description of a user-provided screenshot (source_origin USER_PROVIDED, author_key user_1); the creator is not quoted",
+  "context_used": "EXCERPT_ONLY, READ_PARTIAL; image only",
+  "original_or_translation": "UNKNOWN"
+ },
+ {
+  "case_id": "G22",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [
+   {
+    "evidence_id": "G22:G22-A:0",
+    "located_span": "",
+    "supports": false,
+    "note": "The source is a compilation of a popular creator format from 2021 (source_date 2021-04-01). It says nothing about the format's popularity this week (October 2026). Being popular in 2021 is not evidence of a current trend.",
+    "product_match": "NO - the source is about a general creator format, not a specific product, although it is tagged Aster Mira Tote Grande",
+    "person_action": "Blog compiles popular creator formats",
+    "evidence_kind": "OBSERVATION",
+    "usage_situation": "Not stated"
+   }
+  ],
+  "scope_issue": "Asserts a current trend ('trending this week') as fact. The only source is a 2021 compilation. Current popularity and the time frame are unobserved.",
+  "open_contradiction": false,
+  "reasoning": "The claim states a present-tense trend, but the only evidence is five years old. The old date does not prove the format is not trending now, so this is not a contradiction. It does mean the trend claim is unsupported and presented as observed.",
+  "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+  "speaker_attribution": "SocialBlog author (author_key user_1), source G22-A",
+  "context_used": "FULL_THREAD, READ_FULL",
+  "original_or_translation": "UNKNOWN"
+ },
+ {
+  "case_id": "G26",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "No sources or evidence items are given, so nothing supports the idea, but the case is not judged on proof. It is explicitly labeled 'Hypothesis' and hedged with 'may'. It states no observed result, audience size, video content or trend, so the framing is acceptable.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "speaker_attribution": "Research author (claim text only; no source speaker)",
+  "context_used": "None; no sources provided",
+  "original_or_translation": "UNKNOWN"
+ },
+ {
+  "case_id": "G40",
+  "verdict": "DOES_NOT_SUPPORT",
+  "evidence_checks": [],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "No sources are given, which fits the claim's own statement that no product-specific opportunity is currently supported. The rest of the claim is a forward-looking research need (more owner reviews and switch stories). It asserts no observed result, audience share, video content or trend.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "speaker_attribution": "Research author (claim text only; no source speaker)",
+  "context_used": "None; no sources provided",
+  "original_or_translation": "UNKNOWN"
+ }
+]

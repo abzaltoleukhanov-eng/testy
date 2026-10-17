@@ -1,7 +1,7 @@
 {
   "project_id": "LEVANT-001",
-  "computed_at": "2026-10-16T19:50:19+00:00",
-  "contract_version": "0.2",
+  "computed_at": "2026-10-17T02:29:31+00:00",
+  "contract_version": "0.3",
   "schema_errors": [],
   "claims": [
     {
@@ -13,6 +13,7 @@
         "scope issue: Some cited items (E-0276, E-0377, and the E-0147 comment itself) do not mention a laptop. E-0121 does not specify a shoulder carry or pain. The claim is otherwise within its stated scope."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0001",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -25,7 +26,6 @@
           "decision_groups": 5
         }
       },
-      "audit_id": "A-0001",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -50,6 +50,7 @@
         "scope issue: Several cited items (E-0229, E-0230, E-0275, E-0384) are not about a laptop, and E-0230 states no pain at all. The laptop-specific support rests on E-0157, E-0227, E-0368 and E-0376."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0002",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -62,7 +63,6 @@
           "decision_groups": 8
         }
       },
-      "audit_id": "A-0002",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -89,6 +89,7 @@
         "open contradiction flagged by auditor"
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0003",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -101,7 +102,6 @@
           "decision_groups": 5
         }
       },
-      "audit_id": "A-0003",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -127,6 +127,7 @@
         "scope issue: The sources do not support 'many people'; the stated scope itself says this is not a measure of how common it is. Several two-bag cases (E-0189, E-0322, E-0174) are motivated by access or convenience rather than load, so 'split by load' over-attributes the motive. E-0209, E-0248 and E-0370 do not show the behaviour."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0004",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -139,7 +140,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0004",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -164,6 +164,7 @@
         "scope issue: Examples include backpacks (Tumi, the leather backpack), not only totes. E-0081 is about a Nordace backpack whose material is not stated as leather or structured and which was not rejected mainly for weight."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0005",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -176,7 +177,6 @@
           "decision_groups": 4
         }
       },
-      "audit_id": "A-0005",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -203,6 +203,7 @@
         "open contradiction flagged by auditor"
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0006",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -215,7 +216,6 @@
           "decision_groups": 1
         }
       },
-      "audit_id": "A-0006",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -241,6 +241,7 @@
         "scope issue: 'Many commenters' rests on about six comments, three of them from one thread. One of these is about jackets, and E-0149 does not mention peeling. For 'some owners report vegan bags that held up for years', only one owner (E-0415/E-0416, apparently the same person) reports years of use. The other positive reports are about one year (E-0423) or give no duration (E-0425, E-0426)."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0007",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -253,7 +254,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0007",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -282,6 +282,7 @@
         "after audit: independent DECISION evidence 1 < 2"
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0008",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -294,7 +295,6 @@
           "decision_groups": 3
         }
       },
-      "audit_id": "A-0008",
       "audited_gate": {
         "pass": false,
         "reasons": [
@@ -323,6 +323,7 @@
         "scope issue: The timing range is approximate. Some failures (E-0101) have no stated time to failure, and E-0103 is just past two years. Some product types are implied by the thread rather than named. The reports come from self-selected complaint threads and give no failure rate."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0010",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -335,7 +336,6 @@
           "decision_groups": 3
         }
       },
-      "audit_id": "A-0010",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -358,6 +358,7 @@
       "text": "Other Nordace owners in several threads report years of use, repeat purchases, or colleagues buying after seeing their bag.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0011",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -370,7 +371,6 @@
           "decision_groups": 3
         }
       },
-      "audit_id": "A-0011",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -395,6 +395,7 @@
         "scope issue: Some decisions are implied rather than stated (E-0041, E-0050), and E-0019 is second-hand. The reply-driven rejections cluster in two threads, as the scope notes. These are stated intentions, not verified non-purchases."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0012",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -407,7 +408,6 @@
           "decision_groups": 5
         }
       },
-      "audit_id": "A-0012",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -430,6 +430,7 @@
       "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0009",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -442,7 +443,6 @@
           "decision_groups": 1
         }
       },
-      "audit_id": "A-0009",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -470,6 +470,7 @@
         "after audit: platforms 1 and situations 1 both < 2"
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0013",
       "structural_gate": {
         "pass": false,
         "reasons": [
@@ -484,7 +485,6 @@
           "decision_groups": 1
         }
       },
-      "audit_id": "A-0013",
       "audited_gate": {
         "pass": false,
         "reasons": [
@@ -512,6 +512,7 @@
         "after audit: platforms 1 and situations 1 both < 2"
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0014",
       "structural_gate": {
         "pass": false,
         "reasons": [
@@ -526,7 +527,6 @@
           "decision_groups": 1
         }
       },
-      "audit_id": "A-0014",
       "audited_gate": {
         "pass": false,
         "reasons": [
@@ -551,6 +551,7 @@
       "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0015",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -563,7 +564,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0015",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -586,7 +586,8 @@
       "text": "A structured tote that looks like leather but is visibly lighter than leather could address the trade-off between looking professional and carrying a laptop without pain.",
       "reasons": [],
       "unusable_evidence": [],
-      "status": "HYPOTHESIS_LABELED"
+      "audit_id": "A-0037",
+      "status": "HYPOTHESIS_UNTESTED"
     },
     {
       "claim_id": "C-0017",
@@ -595,16 +596,20 @@
       "text": "Transit and walking commuters may be the hardest audience for a laptop tote, while car commuters and light-load or meeting days may be a better fit.",
       "reasons": [],
       "unusable_evidence": [],
-      "status": "HYPOTHESIS_LABELED"
+      "audit_id": "A-0038",
+      "status": "HYPOTHESIS_UNTESTED"
     },
     {
       "claim_id": "C-0018",
       "claim_type": "HYPOTHESIS",
       "critical": false,
       "text": "Shoppers who see a Nordace ad and check Reddit will mostly find backpack durability complaints, so tote-specific proof (owner longevity, warranty terms, honest weight) may be needed for cold traffic to convert.",
-      "reasons": [],
+      "reasons": [
+        "presents an unobserved fact as a hypothesis: The claim states as fact that shoppers 'will mostly find backpack durability complaints'. That is an unobserved assertion about the share of Reddit content. The complaints shown are mostly about quality on arrival, returns and customer service, not durabi"
+      ],
       "unusable_evidence": [],
-      "status": "HYPOTHESIS_LABELED"
+      "audit_id": "A-0039",
+      "status": "BLOCKED"
     },
     {
       "claim_id": "C-0019",
@@ -613,7 +618,8 @@
       "text": "Concrete owner reports of vegan-leather bags lasting years without peeling may weaken the price-ceiling objection to a vegan tote around $188.",
       "reasons": [],
       "unusable_evidence": [],
-      "status": "HYPOTHESIS_LABELED"
+      "audit_id": "A-0040",
+      "status": "HYPOTHESIS_UNTESTED"
     },
     {
       "claim_id": "C-0020",
@@ -622,6 +628,7 @@
       "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0016",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -634,7 +641,6 @@
           "decision_groups": 4
         }
       },
-      "audit_id": "A-0016",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -659,6 +665,7 @@
         "scope issue: E-0229 concerns a handbag, not a heavy work bag or tote; E-0376 states the outcome rather than the reason. Laptop is explicit only in E-0157 and E-0227 (E-0376 by reference to 'similar items')."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0017",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -671,7 +678,6 @@
           "decision_groups": 7
         }
       },
-      "audit_id": "A-0017",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -697,6 +703,7 @@
         "scope issue: The claim says switchers came 'from a tote'; only E-0277 (and E-0157, which makes no looks comment) clearly switched from a tote. E-0255 switched from a handbag, E-0290 and E-0351 do not state their prior bag, and E-0351 calls her backpack polished. Contradicting E-0225 shows a long-time switcher who describes her backpack positively."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0018",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -709,7 +716,6 @@
           "decision_groups": 5
         }
       },
-      "audit_id": "A-0018",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -732,6 +738,7 @@
       "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0019",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -744,7 +751,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0019",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -767,6 +773,7 @@
       "text": "Some shoppers check how heavy a bag is when empty, and several reject or regret bags that are heavy before anything is put in them, including leather and structured bags.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0020",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -779,7 +786,6 @@
           "decision_groups": 4
         }
       },
-      "audit_id": "A-0020",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -804,6 +810,7 @@
         "scope issue: 'Longchamp-style nylon totes' generalizes slightly; the sources only name Longchamp itself (two commenters)."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0021",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -816,7 +823,6 @@
           "decision_groups": 1
         }
       },
-      "audit_id": "A-0021",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -841,6 +847,7 @@
         "scope issue: The text says about 4.5 years where the claim says about four. The claim leaves out two other positive owner reports in the contradicting set (Poppy and Peonies, Matt and Nat), so 'one owner' understates the counter-evidence. Nothing in the sources is about the Lévant material."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0022",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -853,7 +860,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0022",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -878,6 +884,7 @@
         "scope issue: The phrase 'after vegan leather had peeled for them' infers a sequence the text does not state outright; the text gives general past peeling of faux leather jackets alongside the cheap-only purchase."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0023",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -890,7 +897,6 @@
           "decision_groups": 2
         }
       },
-      "audit_id": "A-0023",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -915,6 +921,7 @@
         "scope issue: The sources are self-selected complaint threads; several owners in the same threads report 5-7 years of use without major failure, which the claim does not mention but does not deny. The sources are about backpacks, not the Lévant tote."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0024",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -927,7 +934,6 @@
           "decision_groups": 2
         }
       },
-      "audit_id": "A-0024",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -952,6 +958,7 @@
         "scope issue: Some intentions are implied rather than stated (E-0041, E-0050, E-0060, E-0094), and E-0019 is second-hand; the claim's caveat covers this. None are verified non-purchases."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0025",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -964,7 +971,6 @@
           "decision_groups": 5
         }
       },
-      "audit_id": "A-0025",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -990,6 +996,7 @@
         "scope issue: The 'return to Hong Kong' detail holds for only one of the two buyers; the other was told to return to Commerce, CA. Neither source explicitly says a free return was refused, though E-0036 implies it."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0026",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1002,7 +1009,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0026",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1028,6 +1034,7 @@
         "scope issue: Only two commenters clearly cite these reasons for suspicion (E-0002 countdown reset, E-0040 retargeting); 'a few' stretches the evidence, since E-0050 does not cite retargeting and E-0093 expresses annoyance, not suspicion."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0027",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1040,7 +1047,6 @@
           "decision_groups": 1
         }
       },
-      "audit_id": "A-0027",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1065,6 +1071,7 @@
         "scope issue: Not every source says the bag was heavy (E-0229, E-0157). The contradicting sources (E-0331, E-0372) show backpacks also cause strain for some people, which limits generalisation but does not negate 'some people'."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0028",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1077,7 +1084,6 @@
           "decision_groups": 6
         }
       },
-      "audit_id": "A-0028",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1103,6 +1109,7 @@
         "scope issue: The claim uses 'she' for the E-0157 commenter, but the source text does not state gender (only the subreddit suggests it). Otherwise the pattern stays within the sources."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0029",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1115,7 +1122,6 @@
           "decision_groups": 4
         }
       },
-      "audit_id": "A-0029",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1141,6 +1147,7 @@
         "scope issue: E-0347 says only 'the Longchamp', so the 'nylon tote' model comes from thread context (another comment names Le Pliage), not from that commenter's text."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0030",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1153,7 +1160,6 @@
           "decision_groups": 1
         }
       },
-      "audit_id": "A-0030",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1176,6 +1182,7 @@
       "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while a few owners report vegan bags that held up, one for about four and a half years without cracking or peeling.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0031",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1188,7 +1195,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0031",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1211,6 +1217,7 @@
       "text": "One commenter says they bought a vegan-leather jacket only because it was cheap on sale and that none of their faux-leather items has aged well past five years; another shopper ruled out a vegan-leather work tote as too pricey for vegan leather.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0032",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1223,7 +1230,6 @@
           "decision_groups": 2
         }
       },
-      "audit_id": "A-0032",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1248,6 +1254,7 @@
         "scope issue: The 'Any experience with Nordace backpacks?' thread is a question thread rather than a complaint thread, though the 'self-selected' framing still holds. E-0090 and E-0100 do not explicitly name a backpack or the brand in the comment text."
       ],
       "unusable_evidence": [],
+      "audit_id": "A-0033",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1260,7 +1267,6 @@
           "decision_groups": 2
         }
       },
-      "audit_id": "A-0033",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1283,6 +1289,7 @@
       "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0034",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1295,7 +1302,6 @@
           "decision_groups": 5
         }
       },
-      "audit_id": "A-0034",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1318,6 +1324,7 @@
       "text": "Two buyers describe Nordace offering a partial refund as the alternative to returning the bag at their own cost; for one of them the return address was in Hong Kong.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0035",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1330,7 +1337,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0035",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1353,6 +1359,7 @@
       "text": "Two commenters cite heavy ad retargeting or a sale countdown that reset as reasons they became suspicious of Nordace.",
       "reasons": [],
       "unusable_evidence": [],
+      "audit_id": "A-0036",
       "structural_gate": {
         "pass": true,
         "reasons": [],
@@ -1365,7 +1372,6 @@
           "decision_groups": 0
         }
       },
-      "audit_id": "A-0036",
       "audited_gate": {
         "pass": true,
         "reasons": [],
@@ -1380,6 +1386,81 @@
       },
       "evidence_audited": true,
       "status": "APPROVED"
+    },
+    {
+      "claim_id": "C-0041",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "On the UK Nordace site the Siena Lévant Tote Bag is listed at £159.00 and carries a NEW badge.",
+      "reasons": [
+        "audit verdict PARTIAL",
+        "scope issue: The source text never says 'UK'. The URL is nordace.com/en/, and the UK locale is inferred from the £ currency. The evidence is a transcription of the user's screenshot, not a direct capture of the page."
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0041",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 2,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
+    },
+    {
+      "claim_id": "C-0042",
+      "claim_type": "PRODUCT_FACT",
+      "critical": true,
+      "text": "According to the user, the Siena Lévant Tote Bag has no customer reviews yet because it is a new product.",
+      "reasons": [
+        "scope issue: The message does not name the Siena Lévant Tote Bag. 'Because' reads a causal link into two juxtaposed phrases, which is a natural reading. 'Yet' is implied, not stated."
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0042",
+      "structural_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 1,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "audited_gate": {
+        "pass": true,
+        "reasons": [],
+        "stats": {
+          "evidence": 1,
+          "groups": 1,
+          "threads": 1,
+          "platforms": 1,
+          "situations": 1,
+          "decision_groups": 0
+        }
+      },
+      "evidence_audited": false,
+      "status": "NEEDS_REVIEW"
     }
   ],
   "coverage": {
@@ -1577,11 +1658,18 @@
         "new_in_last_20": 12,
         "saturated_signal": false
       },
+      "UNLINKED": {
+        "evidence": 3,
+        "situation_clusters": 1,
+        "behavior_patterns": 1,
+        "new_in_last_20": 1,
+        "saturated_signal": false
+      },
       "ALL": {
-        "evidence": 431,
+        "evidence": 434,
         "situation_clusters": 10,
-        "behavior_patterns": 355,
-        "new_in_last_20": 12,
+        "behavior_patterns": 356,
+        "new_in_last_20": 11,
         "saturated_signal": false
       }
     },
@@ -1592,21 +1680,23 @@
     "status": "COVERAGE_LIMITED"
   },
   "corpus": {
-    "sources": 2184,
-    "threads": 39,
-    "authors (within platform)": 1516,
+    "sources": 2186,
+    "threads": 41,
+    "authors (within platform)": 1518,
     "retrieval methods": {
-      "RSS": 2184
+      "RSS": 2184,
+      "SCREENSHOT": 1,
+      "USER_UPLOAD": 1
     },
     "edited since archive (SOURCE_CHANGED)": 150,
-    "evidence rows": 431,
+    "evidence rows": 434,
     "decision evidence": 107,
     "queries": 29,
     "claim statuses": {
-      "NEEDS_REVIEW": 25,
+      "NEEDS_REVIEW": 27,
       "APPROVED": 11,
-      "HYPOTHESIS_LABELED": 4
+      "HYPOTHESIS_UNTESTED": 3,
+      "BLOCKED": 1
     }
-  },
-  "brief_issues": []
+  }
 }

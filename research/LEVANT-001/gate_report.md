@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-16T19:50:19+00:00 by validate.py (contract 0.2). Statuses here are computed, not self-declared.
+Computed 2026-10-17T02:29:31+00:00 by validate.py (contract 0.3). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 
@@ -23,10 +23,10 @@ Computed 2026-10-16T19:50:19+00:00 by validate.py (contract 0.2). Statuses here 
 | C-0013 | PATTERN | **NEEDS_REVIEW** | platforms 1 and situations 1 both < 2; audit verdict PARTIAL; scope issue: None of the supporting evidence backs the clause 'others report quick replacements'. Among the contradicting items, E-0092 reports a free zip replacement with no speed stated, and E-0084 reports a wrong packing-cube bundle co |
 | C-0014 | PATTERN | **NEEDS_REVIEW** | platforms 1 and situations 1 both < 2; after audit: platforms 1 and situations 1 both < 2 |
 | C-0015 | PATTERN | **APPROVED** | all checks passed |
-| C-0016 | HYPOTHESIS | **HYPOTHESIS_LABELED** | all checks passed |
-| C-0017 | HYPOTHESIS | **HYPOTHESIS_LABELED** | all checks passed |
-| C-0018 | HYPOTHESIS | **HYPOTHESIS_LABELED** | all checks passed |
-| C-0019 | HYPOTHESIS | **HYPOTHESIS_LABELED** | all checks passed |
+| C-0016 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0017 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0018 | HYPOTHESIS | **BLOCKED** | presents an unobserved fact as a hypothesis: The claim states as fact that shoppers 'will mostly find backpack durability complaints'. That is an unobserved assertion about the share of Reddit content. The complaints shown are mostly about quality on arrival, returns and customer service, not durabi |
+| C-0019 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
 | C-0020 | PATTERN | **APPROVED** | all checks passed |
 | C-0021 | PURCHASE_DRIVER | **NEEDS_REVIEW** | scope issue: E-0229 concerns a handbag, not a heavy work bag or tote; E-0376 states the outcome rather than the reason. Laptop is explicit only in E-0157 and E-0227 (E-0376 by reference to 'similar items'). |
 | C-0022 | PATTERN | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The claim says switchers came 'from a tote'; only E-0277 (and E-0157, which makes no looks comment) clearly switched from a tote. E-0255 switched from a handbag, E-0290 and E-0351 do not state their prior bag, and E-0351 calls her backpack polished. Contradicting  |
@@ -48,6 +48,8 @@ Computed 2026-10-16T19:50:19+00:00 by validate.py (contract 0.2). Statuses here 
 | C-0038 | PURCHASE_DRIVER | **APPROVED** | all checks passed |
 | C-0039 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
 | C-0040 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
+| C-0041 | PRODUCT_FACT | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The source text never says 'UK'. The URL is nordace.com/en/, and the UK locale is inferred from the £ currency. The evidence is a transcription of the user's screenshot, not a direct capture of the page. |
+| C-0042 | PRODUCT_FACT | **NEEDS_REVIEW** | scope issue: The message does not name the Siena Lévant Tote Bag. 'Because' reads a causal link into two juxtaposed phrases, which is a natural reading. 'Yet' is implied, not stated. |
 
 ## Coverage: COVERAGE_LIMITED
 - planned source not retrievable by any tested route: official
@@ -79,20 +81,17 @@ Computed 2026-10-16T19:50:19+00:00 by validate.py (contract 0.2). Statuses here 
 | B03 | 61 | 3 | 52 | False |
 | B05 | 3 | 2 | 3 | False |
 | B07 | 25 | 3 | 16 | False |
-| ALL | 431 | 10 | 355 | False |
+| UNLINKED | 3 | 1 | 1 | False |
+| ALL | 434 | 10 | 356 | False |
 
 ## Corpus
 
-- sources: 2184
-- threads: 39
-- authors (within platform): 1516
-- retrieval methods: {'RSS': 2184}
+- sources: 2186
+- threads: 41
+- authors (within platform): 1518
+- retrieval methods: {'RSS': 2184, 'SCREENSHOT': 1, 'USER_UPLOAD': 1}
 - edited since archive (SOURCE_CHANGED): 150
-- evidence rows: 431
+- evidence rows: 434
 - decision evidence: 107
 - queries: 29
-- claim statuses: {'NEEDS_REVIEW': 25, 'APPROVED': 11, 'HYPOTHESIS_LABELED': 4}
-
-## Brief check
-
-- PASS
+- claim statuses: {'NEEDS_REVIEW': 27, 'APPROVED': 11, 'HYPOTHESIS_UNTESTED': 3, 'BLOCKED': 1}
