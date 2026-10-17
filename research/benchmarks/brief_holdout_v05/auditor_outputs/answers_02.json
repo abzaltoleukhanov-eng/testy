@@ -1,0 +1,56 @@
+[
+  {
+    "test_id": "B07",
+    "line_hash": "b3d6d7e071a522fb",
+    "auditor": "blind brief auditor 2",
+    "verdict": "ENTAILED",
+    "issue": "",
+    "relied_on_ids": ["C-0010"],
+    "explanation": "C-0010 reports owners describing years of use and repeat purchases, with scope limited mostly to backpacks; the line paraphrases this with 'some' and keeps the backpack limit."
+  },
+  {
+    "test_id": "B08",
+    "line_hash": "601eccd4b605f9d1",
+    "auditor": "blind brief auditor 2",
+    "verdict": "OVERSTATES",
+    "issue": "Claims causation was 'established' (ACH-0004 says causal_status NOT_ESTABLISHED), generalises to 'most US customers' (records cover several would-be buyers in two threads, with no population share or geography), turns stated intentions into non-purchases (C-0038 says these are not verified non-purchases), and calls them 'customer-service replies' when the records speak of the brand's public Reddit replies.",
+    "relied_on_ids": ["C-0038", "ACH-0004"],
+    "explanation": "The records support only that several would-be buyers in two threads said or implied they would not buy after the brand's public replies, with causality not established; the line turns this into an established cause for most US customers."
+  },
+  {
+    "test_id": "B09",
+    "line_hash": "8479b99958bd71ef",
+    "auditor": "blind brief auditor 2",
+    "verdict": "OVERSTATES",
+    "issue": "The records say commenters cited the brand's public replies; nothing says they cited the 'tone' of those replies. Also, C-0038 says buyers 'said or implied' they would not buy or would hold off, which is weaker than all of them 'explicitly' saying they would not buy.",
+    "relied_on_ids": ["C-0038", "ACH-0004"],
+    "explanation": "The two-thread scope and the caveat that no outcome rate was established are right, but saying the 'tone' of the replies was the stated reason is a specific cause the records do not give."
+  },
+  {
+    "test_id": "B10",
+    "line_hash": "d0a96020cda17aae",
+    "auditor": "blind brief auditor 2",
+    "verdict": "ENTAILED",
+    "issue": "",
+    "relied_on_ids": ["C-0012"],
+    "explanation": "C-0012 says one shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great; the line restates this as one person's report and does not name the Levant."
+  },
+  {
+    "test_id": "B11",
+    "line_hash": "3a947b92a1e2eb54",
+    "auditor": "blind brief auditor 2",
+    "verdict": "NOT_SUPPORTED",
+    "issue": "C-0052 only says the product copy lists a 14-inch EVA laptop sleeve, and that the features are not tested. No record supports a guarantee, comfort while commuting, or fitting any 16-inch laptop, which is a new number that conflicts with the 14-inch spec.",
+    "relied_on_ids": ["C-0052"],
+    "explanation": "The line asserts a guarantee and 16-inch compatibility that no cited record states; the record only lists an untested 14-inch sleeve feature."
+  },
+  {
+    "test_id": "B12",
+    "line_hash": "0ddd5c207720fe4a",
+    "auditor": "blind brief auditor 2",
+    "verdict": "ENTAILED",
+    "issue": "",
+    "relied_on_ids": ["C-0052"],
+    "explanation": "C-0052 says the product copy lists a 14-inch EVA laptop sleeve; the line narrows this to one listed feature and makes no further claim."
+  }
+]

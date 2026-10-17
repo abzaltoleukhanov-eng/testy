@@ -1,0 +1,102 @@
+{
+  "records": {
+    "C-0010": {
+      "kind": "CLAIM",
+      "status": "FACT_APPROVED",
+      "claim_type": "PATTERN",
+      "claim_class": null,
+      "text": "Other Nordace owners in several threads report years of use, repeat purchases, or colleagues buying after seeing their bag.",
+      "scope_limits": "Mostly backpacks; one owner mentions loving a Siena tote; individual reports, not a durability rate.",
+      "hypothesis_label": null,
+      "premises": []
+    },
+    "C-0020": {
+      "kind": "CLAIM",
+      "status": "FACT_APPROVED",
+      "claim_type": "PATTERN",
+      "claim_class": null,
+      "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+      "scope_limits": "Revision of C-0001 using only laptop-confirmed evidence. Reddit commenters who chose to post; not a share of tote owners.",
+      "hypothesis_label": null,
+      "premises": []
+    },
+    "C-0051": {
+      "kind": "CLAIM",
+      "status": "FACT_APPROVED",
+      "claim_type": "PRODUCT_FACT",
+      "claim_class": null,
+      "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+      "scope_limits": "Revision of C-0048: manufacturer's listed figures from a user screenshot on 2026-10-17; not measured.",
+      "hypothesis_label": null,
+      "premises": []
+    }
+  },
+  "lines": [
+    {
+      "test_id": "B01",
+      "line_hash": "81cd62ea360fb853",
+      "lang": "EN",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "The page lists a 1 kg weight and a 15 L capacity for the Siena Lévant Tote [C-0051].",
+      "cites": [
+        "C-0051"
+      ]
+    },
+    {
+      "test_id": "B02",
+      "line_hash": "2622492f1d88da1c",
+      "lang": "EN",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "Independent laboratory tests measured the exact weight as 1 kg, proving the Siena Lévant Tote is light [C-0051].",
+      "cites": [
+        "C-0051"
+      ]
+    },
+    {
+      "test_id": "B03",
+      "line_hash": "c2a92de18aa697c7",
+      "lang": "EN",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "The Lévant is lighter than every competitor tote sold in the UK [C-0051].",
+      "cites": [
+        "C-0051"
+      ]
+    },
+    {
+      "test_id": "B04",
+      "line_hash": "09bc098b7c5a3c8f",
+      "lang": "EN",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "In several independent Reddit discussions, some laptop-tote users describe shoulder or back discomfort [C-0020].",
+      "cites": [
+        "C-0020"
+      ]
+    },
+    {
+      "test_id": "B05",
+      "line_hash": "3ab5afa38554ae4e",
+      "lang": "EN",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "Most British women aged 40–50 suffer shoulder injuries from the Siena Lévant Tote [C-0020].",
+      "cites": [
+        "C-0020"
+      ]
+    },
+    {
+      "test_id": "B06",
+      "line_hash": "467633c58bf1a5e9",
+      "lang": "EN",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "Owners of the Lévant have reported that its straps last for years [C-0010].",
+      "cites": [
+        "C-0010"
+      ]
+    }
+  ]
+}

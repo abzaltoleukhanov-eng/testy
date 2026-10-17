@@ -1,0 +1,185 @@
+{
+  "records": {
+    "ACH-0005": {
+      "kind": "ACH",
+      "status": "ACH_PRELIMINARY",
+      "question": "Why do laptop carriers give up shoulder totes for backpacks?",
+      "hypotheses": [
+        {
+          "h_id": "H1",
+          "statement": "The total load (laptop plus daily items) on one shoulder is the cause, whatever the bag is made of.",
+          "diagnosticity": "MEDIUM"
+        },
+        {
+          "h_id": "H2",
+          "statement": "The bag's own weight and structure (leather, rigid build) is the main cause.",
+          "diagnosticity": "MEDIUM"
+        },
+        {
+          "h_id": "H3",
+          "statement": "Commute mode amplifies the load: walking and transit commutes make a shoulder tote harder to bear than short car commutes.",
+          "diagnosticity": "MEDIUM"
+        },
+        {
+          "h_id": "H4",
+          "statement": "Growing social acceptance of adult backpacks, not pain, drives the switch.",
+          "diagnosticity": "LOW"
+        },
+        {
+          "h_id": "H5",
+          "statement": "Carrying on one strap, rather than the weight itself, is the cause: two padded straps spread the same load.",
+          "diagnosticity": "LOW"
+        }
+      ],
+      "preferred_h_id": "H1",
+      "preference_reason": "Weight carried on one shoulder is the explanation given most often in this evidence, but most items fit H1 and H2 alike; only E-0288 and E-0378 point to the contents rather than the bag, and E-0378 is tentative. H3 looks like an amplifier of the load rather than a rival: one person switched after moving from driving to transit (E-0230), and one driver says transit would make them switch (E-0284, a hypothetical). H4 has no supporting evidence here, and four switch stories describe pain-driven, reluctant switches. H5 is untested. Few items are completed tote-to-backpack switches; many are people considering a switch or moving to another tote.",
+      "causal_status": "NOT_ESTABLISHED",
+      "pattern_claim_id": "C-0002",
+      "pattern_status": "NEEDS_REVIEW",
+      "ach_audit": {
+        "verdict": "OVERREACHES",
+        "issues": "Preference for H1 over H5 is not shown: the reason's lead claim ('weight carried on one shoulder') is the core of H5 as much as H1, and the completed switch stories (E-0276 padded backpack made the commute 'loads better', E-0290 'carries weight well') suggest that spreading the same load helps, which favours H5 over H1 as worded ('whatever the bag is made of'). Calling H5 'untested' ignores relevant packet items (E-0276, E-0290, E-0348 crossbody also hurt, E-0394 parent 'everything hanging from one shoulder') that were never assigned. H1 vs H2 is also not separated: the reason itself admits most items fit both. Several H2 supports are backpack-weight or tote-to-tote items (E-0373, E-0293, E-0147, E-0394) that do not speak to the tote-to-backpack switch; E-0377 is neutral; E-0399 does not refute H2. E-0278 is mixed and its quoted span leans toward social acceptance as a facilitator, so H4's framing as 'not pain' is something of a straw man; a 'social acceptance as enabler' variant is missing. The 'four switch stories describe pain-driven, reluctant switches' wording is a bit strong for E-0278, a happy switcher. Minor: H2's MEDIUM diagnosticity is generous given how little separates it from H1."
+      }
+    },
+    "C-0051": {
+      "kind": "CLAIM",
+      "status": "FACT_APPROVED",
+      "claim_type": "PRODUCT_FACT",
+      "claim_class": null,
+      "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+      "scope_limits": "Revision of C-0048: manufacturer's listed figures from a user screenshot on 2026-10-17; not measured.",
+      "hypothesis_label": null,
+      "premises": []
+    },
+    "C-0058": {
+      "kind": "CLAIM",
+      "status": "HYPOTHESIS_UNTESTED",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "text": "It could be tested whether the Lévant appeals for light-load days, when some people already move to a smaller bag; whether it suits that role is untested.",
+      "scope_limits": "Replaces C-0054 with its conditions made explicit.",
+      "hypothesis_label": "analyst hypothesis: audience segment, untested",
+      "premises": [
+        {
+          "claim_id": "C-0023",
+          "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
+          "status": "FACT_APPROVED"
+        }
+      ]
+    },
+    "C-0020": {
+      "kind": "CLAIM",
+      "status": "FACT_APPROVED",
+      "claim_type": "PATTERN",
+      "claim_class": null,
+      "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+      "scope_limits": "Revision of C-0001 using only laptop-confirmed evidence. Reddit commenters who chose to post; not a share of tote owners.",
+      "hypothesis_label": null,
+      "premises": []
+    },
+    "ACH-0004": {
+      "kind": "ACH",
+      "status": "ACH_AUDITED",
+      "question": "Why do would-be buyers turn away from Nordace after reading Reddit?",
+      "hypotheses": [
+        {
+          "h_id": "H1",
+          "statement": "Owner reports about product quality or failures are what turns them away.",
+          "diagnosticity": "MEDIUM"
+        },
+        {
+          "h_id": "H2",
+          "statement": "The brand's public replies on Reddit (two different replies, in threads 18nj9sk and bqe83z) are what turns them away.",
+          "diagnosticity": "HIGH"
+        },
+        {
+          "h_id": "H3",
+          "statement": "General suspicion of ad-driven DTC brands (retargeting, resetting timers, paid-looking reviews) makes them look for reasons to stay away.",
+          "diagnosticity": "LOW"
+        },
+        {
+          "h_id": "H4",
+          "statement": "Reports about customer service, refunds and returns (unanswered emails, refused returns, partial refunds) are what turns them away.",
+          "diagnosticity": "MEDIUM"
+        }
+      ],
+      "preferred_h_id": "H2",
+      "preference_reason": "In this evidence the brand's public replies are the reason people state most explicitly: five comments across two threads, about two different replies, including an owner whose zippers broke who says the reply, not the failure, turned them away (E-0026). This is concentrated in two threads, so it says nothing about how often it happens elsewhere. Product-quality reports (H1) and service and returns reports (H4) also appear, but the comments that cite only generic negative reviews (E-0071, E-0094) cannot tell H1 and H4 apart; they do show rejections without any brand reply, so H2 is not the only driver. H3 explains why people go and check rather than what they decide.",
+      "causal_status": "NOT_ESTABLISHED",
+      "pattern_claim_id": "C-0038",
+      "pattern_status": "FACT_APPROVED",
+      "ach_audit": {
+        "verdict": "SOUND",
+        "issues": "Minor: E-0002 comes from an actual buyer, not a would-be buyer, so it supports H3 and H4 only as a report others might read. E-0041 is shared by H1 and H4 and tells them apart no better than E-0071 and E-0094 do. E-0062 has no parent text, so the claim of 'two different replies' depends on E-0060 and E-0062 being in a different thread from the 18nj9sk reply, which they are, but which reply E-0062 answers is unverified. E-0071 sits in a reply thread. H4's MEDIUM diagnosticity is generous given only these two mixed items. The statement that the zipper owner was turned away by 'the reply, not the failure' is a fair reading of E-0026 but not their exact words."
+      }
+    }
+  },
+  "lines": [
+    {
+      "test_id": "B19",
+      "line_hash": "1e81dfafdd5a7991",
+      "lang": "EN",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "**Unverified hypothesis:** the Lévant might appeal to people who carry less on certain days; this has not been tested [C-0058].",
+      "cites": [
+        "C-0058"
+      ]
+    },
+    {
+      "test_id": "B20",
+      "line_hash": "e6c859b800b1a030",
+      "lang": "EN",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "The Lévant is the best bag for every day of the week and replaces the need for backpacks [C-0058].",
+      "cites": [
+        "C-0058"
+      ]
+    },
+    {
+      "test_id": "B21",
+      "line_hash": "396a0ed6e630bf6b",
+      "lang": "RU",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "На странице товара указан вес 1 кг и объём 15 л; это характеристики производителя, не независимые замеры [C-0051].",
+      "cites": [
+        "C-0051"
+      ]
+    },
+    {
+      "test_id": "B22",
+      "line_hash": "b3561880dd351cc4",
+      "lang": "RU",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "У женщин 40–50 лет в Великобритании именно Lévant чаще всего вызывает боли в спине [C-0020].",
+      "cites": [
+        "C-0020"
+      ]
+    },
+    {
+      "test_id": "B23",
+      "line_hash": "76c01ad34c7abc98",
+      "lang": "RU",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "Предварительно: причины перехода с тоута на рюкзак не установлены окончательно [ACH-0005].",
+      "cites": [
+        "ACH-0005"
+      ]
+    },
+    {
+      "test_id": "B24",
+      "line_hash": "a6577d25ac66aec5",
+      "lang": "RU",
+      "section": "Synthetic adversarial brief fragment",
+      "previous_line": "Test in isolation; no context besides linked records",
+      "line": "Анализ доказал, что у Nordace нет проблем с поддержкой и возвратами [ACH-0004].",
+      "cites": [
+        "ACH-0004"
+      ]
+    }
+  ]
+}

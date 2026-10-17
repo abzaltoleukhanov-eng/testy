@@ -1,0 +1,18 @@
+{
+ "locked_at": "2026-10-17",
+ "git_commit": "bbd6416359c1847f3a119239de4b1f2e18bfa9f8",
+ "contract_version": "0.5",
+ "brief_audit_prompt_sha256": "d8578b7a177101c5d1346b61f83843eba48894924cb5ca0b2e4f6dc5a7c15250",
+ "sha256": {
+  "skills/research-engine/references/audit.md": "09d0de5c864f60a56ceea5aab91c0b472504b08dde6b5ddfe9689edff2fc54bf",
+  "skills/research-engine/contract/contract.json": "d04b47ce792b96a7ed107ac4e9f83f0b9cedb6bb5b0c0db0706b08a838f7e75c",
+  "skills/research-engine/scripts/validate.py": "dfe44d10e22533389e2a227880e47b0e8b41c71775dfb5915b5a179d20b2103f",
+  "skills/research-engine/scripts/brief_packet.py": "e81eb0892650d6c898e975407af88191272296fe44aeb26028eb207c8879309b"
+ },
+ "inputs_sha256": {
+  "brief_packet_blind_01.json": "1373bb1bfc9d30d362130eb6f8e709c9a62af833b9c41c44927e2c27d6f26880",
+  "brief_packet_blind_02.json": "73121d29ac6a85c878b038212b06a5092f9a5a8dce71a15a6f1425decaae9664",
+  "brief_packet_blind_03.json": "023ce2a2dc5ee2c3e5d569c65f2d8db6482aab3b72eb25f3c2ba403ce220714a",
+  "brief_packet_blind_04.json": "2b029b86a88004dc2a788df15c8be8d57ca0349af2fc84337e1f96e82d4c2884"
+ }
+}
