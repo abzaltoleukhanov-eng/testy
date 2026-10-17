@@ -1,0 +1,181 @@
+{
+ "records": {},
+ "lines": [
+  {
+   "line_hash": "b4458f2762300e62",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "",
+   "line": "# Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "cites": []
+  },
+  {
+   "line_hash": "136fec0f992bafa8",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "Каждый вывод ниже ссылается на утверждение `[C-…]` или разбор `[ACH-…]`. Статусы вычислил скрипт, а не модель. Стратегические выводы оформлены как гипотезы с явными посылками и прошли отдельный аудит. Каждая строка брифа тоже прошла аудит: она говорит не больше, чем утверждения, на которые ссылается. Цитаты даны в оригинале.",
+   "line": "## Главное за 30 секунд",
+   "cites": []
+  },
+  {
+   "line_hash": "1e3eceba8d0d6e46",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "6. По словам пользователя, отзывов на Lévant нет, продукт новый [C-0046]. Есть ли отзывы где-то ещё, мы не проверяли. В нашем корпусе Reddit их тоже нет, но это не доказывает, что их нет нигде.",
+   "line": "## Что мы узнали о решениях",
+   "cites": []
+  },
+  {
+   "line_hash": "5f39449ab69241d5",
+   "lang": "RU",
+   "section": "Конкурирующие объяснения (ACH)",
+   "previous_line": "- что реклама с такими мотивами продаст.",
+   "line": "## Конкурирующие объяснения (ACH)",
+   "cites": []
+  },
+  {
+   "line_hash": "2f6d004108ce4cab",
+   "lang": "RU",
+   "section": "Конкурирующие объяснения (ACH)",
+   "previous_line": "Почему люди уходят с тоута на рюкзак — предварительно [ACH-0005]: исходный паттерн (C-0002) не прошёл аудит, а аудит самого разбора (OVERREACHES) нашёл, что предпочтение H1 сильнее, чем позволяют доказательства; причинность не установлена.",
+   "line": "| Гипотеза | Как выглядит | Вес |",
+   "cites": []
+  },
+  {
+   "line_hash": "2f6d004108ce4cab",
+   "lang": "RU",
+   "section": "Конкурирующие объяснения (ACH)",
+   "previous_line": "Почему потенциальные покупатели отворачиваются от Nordace после Reddit [ACH-0004]: паттерн одобрен (C-0038), разбор прошёл аудит (SOUND). Это ранжирование объяснений: причинность не установлена, а частоту за пределами двух тредов разбор не показывает.",
+   "line": "| Гипотеза | Как выглядит | Вес |",
+   "cites": []
+  },
+  {
+   "line_hash": "0ebb5e05e8370914",
+   "lang": "RU",
+   "section": "Альтернативы и «ничего не покупать»",
+   "previous_line": "| H4 [ACH-0004] | Отзывы о поддержке, возвратах и возмещениях | средняя: два смешанных примера; общие «плохие отзывы» не отличают её от H1 |",
+   "line": "## Альтернативы и «ничего не покупать»",
+   "cites": []
+  },
+  {
+   "line_hash": "a71ba325736d3d48",
+   "lang": "RU",
+   "section": "Продукт: что известно и что нет",
+   "previous_line": "- Гипотеза: проверить, увидят ли люди, которым тоут с ноутбуком кажется тяжёлым, в Lévant более лёгкий вариант, чем их нынешняя сумка; легче ли он на самом деле и удобен ли с ноутбуком, не проверено [C-0062].",
+   "line": "## Продукт: что известно и что нет",
+   "cites": []
+  },
+  {
+   "line_hash": "b7c27897c8149131",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- меньший собственный вес не гарантирует, что ноутбук нести удобнее.",
+   "line": "## Возможности для креатива (все — гипотезы, проверять тестом)",
+   "cites": []
+  },
+  {
+   "line_hash": "1976f0d00e91f44d",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- Риск (гипотеза [C-0060]): отзывы о других брендах, не о Lévant.",
+   "line": "## Пробелы и следующий шаг",
+   "cites": []
+  },
+  {
+   "line_hash": "86c994bc71fd9f86",
+   "lang": "RU",
+   "section": "Источники",
+   "previous_line": "- исследование видеоформатов. Из облака видео недоступно, нужны скриншоты или записи рекламы из ленты.",
+   "line": "## Источники",
+   "cites": []
+  },
+  {
+   "line_hash": "81cbc5b15bda62a8",
+   "lang": "EN",
+   "section": "Siena Lévant Tote: what people say about work totes and about Nordace",
+   "previous_line": "",
+   "line": "# Siena Lévant Tote: what people say about work totes and about Nordace",
+   "cites": []
+  },
+  {
+   "line_hash": "70dacd4e60157694",
+   "lang": "EN",
+   "section": "The main points in 30 seconds",
+   "previous_line": "Every finding below points to a claim `[C-…]` or an analysis `[ACH-…]`. A script, not the model, computed every status. Strategic conclusions are written as hypotheses with explicit premises and passed a separate audit. Every line of the brief also passed an audit: it says no more than the claims it cites. Quotes are given in the original.",
+   "line": "## The main points in 30 seconds",
+   "cites": []
+  },
+  {
+   "line_hash": "ec45a388704ebe62",
+   "lang": "EN",
+   "section": "What we learned about decisions",
+   "previous_line": "6. According to the user, there are no reviews of the Lévant and the product is new [C-0046]. We did not check whether reviews exist anywhere else. Our Reddit corpus has none either, but that does not prove there are none anywhere.",
+   "line": "## What we learned about decisions",
+   "cites": []
+  },
+  {
+   "line_hash": "f4b814e724c77280",
+   "lang": "EN",
+   "section": "Competing explanations (ACH)",
+   "previous_line": "- that an ad built on these themes will sell.",
+   "line": "## Competing explanations (ACH)",
+   "cites": []
+  },
+  {
+   "line_hash": "c88a7ee991d86c35",
+   "lang": "EN",
+   "section": "Competing explanations (ACH)",
+   "previous_line": "Why people move from a tote to a backpack, preliminary [ACH-0005]: the underlying pattern (C-0002) did not pass audit, and the audit of the analysis itself (OVERREACHES) found that preferring H1 claims more than the evidence allows; causality not established.",
+   "line": "| Hypothesis | What it looks like | Weight |",
+   "cites": []
+  },
+  {
+   "line_hash": "c88a7ee991d86c35",
+   "lang": "EN",
+   "section": "Competing explanations (ACH)",
+   "previous_line": "Why would-be buyers turn away from Nordace after Reddit [ACH-0004]: the pattern is approved (C-0038) and the analysis passed audit (SOUND). This ranks explanations: causality is not established, and the analysis does not show how often this happens beyond two threads.",
+   "line": "| Hypothesis | What it looks like | Weight |",
+   "cites": []
+  },
+  {
+   "line_hash": "b7443b24945ead25",
+   "lang": "EN",
+   "section": "Alternatives and \"buy nothing\"",
+   "previous_line": "| H4 [ACH-0004] | Reports about customer service, returns and refunds | medium: two mixed examples; generic \"bad reviews\" comments cannot tell it apart from H1 |",
+   "line": "## Alternatives and \"buy nothing\"",
+   "cites": []
+  },
+  {
+   "line_hash": "0427a42b0cec0351",
+   "lang": "EN",
+   "section": "The product: what is known and what is not",
+   "previous_line": "- Hypothesis: test whether people who find a laptop tote too heavy would see the Lévant as a lighter option than their current bag; whether it is actually lighter and comfortable with a laptop is untested [C-0062].",
+   "line": "## The product: what is known and what is not",
+   "cites": []
+  },
+  {
+   "line_hash": "f60f9c1e2de3eac4",
+   "lang": "EN",
+   "section": "Creative opportunities (all hypotheses, to be tested)",
+   "previous_line": "- a lower empty weight does not guarantee that carrying a laptop is more comfortable.",
+   "line": "## Creative opportunities (all hypotheses, to be tested)",
+   "cites": []
+  },
+  {
+   "line_hash": "6d76563471b0b47d",
+   "lang": "EN",
+   "section": "Gaps and next step",
+   "previous_line": "- Risk (hypothesis [C-0060]): the owner reports are about other brands, not the Lévant.",
+   "line": "## Gaps and next step",
+   "cites": []
+  },
+  {
+   "line_hash": "5e7455cade2d28a8",
+   "lang": "EN",
+   "section": "Sources",
+   "previous_line": "- research on video formats. Video is not reachable from the cloud, so we need screenshots or recordings of ads from the feed.",
+   "line": "## Sources",
+   "cites": []
+  }
+ ]
+}

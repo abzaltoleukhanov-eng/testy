@@ -9,7 +9,7 @@
 - UK searches returned almost nothing useful.
 
 <!-- STATS:BEGIN -->
-**Volume** (generated from the ledger, contract 0.5):
+**Volume** (generated from the ledger, contract 0.6):
 - 29 search queries, 39 Reddit threads, 2184 posts and comments, 1516 unique Reddit authors; 7 user-provided sources;
 - 446 evidence rows, 107 of them decision stories;
 - 62 claims: **16 FACT_APPROVED** (11 about people and the brand, 5 about the product), 4 HYPOTHESIS_UNTESTED (4 used in this brief), 6 RESEARCH_QUESTION, 34 NEEDS_REVIEW, 2 BLOCKED.

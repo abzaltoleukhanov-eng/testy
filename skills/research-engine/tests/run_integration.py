@@ -8,7 +8,8 @@ The full validator runs exactly as an operator would run it before export:
   validate.py --project-dir COPY --brief-ru brief_RU.md --brief-en brief_EN.md
 Reported per case: exit code, claim / ACH statuses asked for, brief issues and the validator's last lines.
 Supported operations: replace_claim_text, replace_hypothesis_text, replace_ach_preference_reason,
-insert_line_under_summary_both_languages, insert_line_under_unchecked_heading_both_languages.
+insert_line_under_summary_both_languages, insert_line_under_unchecked_heading_both_languages,
+replace_headings_both_languages, set_source_field.
 """
 import argparse
 import json
@@ -63,6 +64,21 @@ def apply(mut, pdir, notes):
                 notes.append(f"RU heading {h!r} mapped to {HEADING_TWINS[h]!r} (the RU brief has Russian headings)")
                 h = HEADING_TWINS[h]
             insert_after_heading(pdir / f"brief_{lang}.md", h, mut[lang.lower()])
+    elif op == "replace_headings_both_languages":
+        for lang in ("RU", "EN"):
+            path = pdir / f"brief_{lang}.md"
+            lines = path.read_text(encoding="utf-8").split("\n")
+            n = 0
+            for i, l in enumerate(lines):
+                if l.startswith(mut.get("level", "## ")):
+                    lines[i] = mut.get("level", "## ") + mut[lang.lower()]
+                    n += 1
+            if not n:
+                raise ValueError(f"no headings in {path.name}")
+            notes.append(f"{lang}: {n} headings replaced")
+            path.write_text("\n".join(lines), encoding="utf-8")
+    elif op == "set_source_field":
+        rewrite_jsonl(pdir / "archive" / "sources.jsonl", "source_id", mut["source_id"], mut["field"], mut["value"])
     else:
         raise ValueError(f"unsupported operation {op}")
 

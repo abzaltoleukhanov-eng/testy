@@ -108,10 +108,13 @@ class ContentHasher:
     premise claims. An ACH hash covers the whole analysis, the evidence it cites and its pattern claim's hash.
     An audit counts only while the hash it was made for equals the current one, so any edit to a claim, its
     evidence, its source text or a premise makes the old audit stale, and the staleness reaches every dependant.
+    From contract 0.6 the cited source's provenance (all fields except source_hash_volatile_fields) is hashed too.
     """
     IDS = {"claim_id", "project_id", "ach_id"}
 
-    def __init__(self, tables):
+    def __init__(self, tables, contract=None):
+        contract = contract or load_contract()
+        self.volatile = set(contract.get("source_hash_volatile_fields", []))
         self.claims = {c["claim_id"]: c for c in tables.get("claims", [])}
         self.evidence = {e["evidence_id"]: e for e in tables.get("evidence", [])}
         self.sources = {s["source_id"]: s for s in tables.get("sources", [])}
@@ -125,7 +128,17 @@ class ContentHasher:
         s = self.sources.get(e.get("source_id")) or {}
         body = {k: v for k, v in e.items() if k not in ("evidence_id", "project_id")}
         body["quote_span"] = norm_text(body.get("quote_span", ""))
-        return {"evidence": body, "source_text": text_hash(s.get("text", ""))}
+        out = {"evidence": body, "source_text": text_hash(s.get("text", ""))}
+        prov = self.provenance(s)
+        if prov is not None:
+            out["source"] = prov
+        return out
+
+    def provenance(self, s):
+        """Every source field except the volatile ones (contract 0.6): origin, identity, disclosure, SKU binding..."""
+        if not self.volatile:
+            return None  # contract < 0.6
+        return {k: v for k, v in sorted(s.items()) if k not in self.volatile}
 
     def _norm_record(self, rec):
         out = {}

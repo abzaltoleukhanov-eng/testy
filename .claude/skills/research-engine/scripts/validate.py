@@ -402,8 +402,9 @@ QUOTED = re.compile(r"«([^»]{12,})»|\"([^\"]{12,})\"|“([^”]{12,})”")
 
 
 def brief_lines(txt):
-    """Content lines of a brief that the semantic audit must cover: everything except blank lines, headings,
-    rules, HTML comments, the generated STATS block, table header/separator rows and bare URL bullets in Sources."""
+    """Content lines of a brief that the semantic audit must cover (contract 0.6): every line, headings and table
+    header rows included, except blank lines, rules, the generated STATS block, table separator rows and bare URL
+    bullets under the Sources heading. HTML comments are rejected by the lint, not audited."""
     out, section, in_stats = [], "", False
     lines = txt.splitlines()
     for i, line in enumerate(lines):
@@ -417,11 +418,9 @@ def brief_lines(txt):
             continue
         if st.startswith("#"):
             section = st.lstrip("#").strip()
+            out.append({"section": section, "line": st})
             continue
         if re.fullmatch(r"\|[\s:|-]+\|", st):
-            continue
-        nxt = lines[i + 1].strip() if i + 1 < len(lines) else ""
-        if st.startswith("|") and re.fullmatch(r"\|[\s:|-]+\|", nxt):
             continue
         if any(section.lower().startswith(h) for h in SOURCES_HEADINGS) and re.fullmatch(r"-\s*https?://\S+", st):
             continue
@@ -451,13 +450,15 @@ def norm_url(u):
     return u.rstrip(".,;:/")
 
 
-def url_texts(t):
-    """{normalised url: sorted hashes of the archived texts at that url}."""
+def url_texts(t, hasher=None):
+    """{normalised url: sorted hashes of the archived text and provenance of each source at that url}."""
     from re_lib import text_hash
     out = defaultdict(list)
     for s in t["sources"]:
         if s.get("url"):
-            out[norm_url(s["url"])].append(text_hash(s.get("text", "")))
+            prov = hasher.provenance(s) if hasher else None
+            out[norm_url(s["url"])].append(text_hash(s.get("text", "")) if prov is None
+                                           else content_hash([text_hash(s.get("text", "")), prov]))
     return {k: sorted(v) for k, v in out.items()}
 
 
@@ -480,6 +481,9 @@ def check_briefs(ru_path, en_path, claim_status, ach_status=None, project_dir=No
                 sources_by_url.setdefault(norm_url(s["url"]), []).append(s)
     for name, txt in (("RU", ru), ("EN", en)):
         lab = LABELS[name]
+        for c in re.findall(r"<!--(.*?)-->", txt, re.S):
+            if c.strip() not in ("STATS:BEGIN", "STATS:END"):
+                issues.append(f"{name}: HTML comment in the brief (only the STATS markers are allowed): {c.strip()[:60]}")
         for line in txt.splitlines():
             low = line.lower()
             for cid in ref.findall(line):
@@ -542,7 +546,7 @@ def check_briefs(ru_path, en_path, claim_status, ach_status=None, project_dir=No
 
 
 def semantic_issues(texts, claim_status, ach_status, t, hasher):
-    uts = url_texts(t)
+    uts = url_texts(t, hasher)
     audits = {}
     for a in sorted(t.get("brief_audits", []), key=lambda x: x.get("audited_at", "")):
         audits[a["line_hash"]] = a

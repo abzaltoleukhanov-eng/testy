@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-17T07:09:51+00:00 by validate.py (contract 0.5). Statuses here are computed, not self-declared.
+Computed 2026-10-17T08:07:44+00:00 by validate.py (contract 0.6). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 

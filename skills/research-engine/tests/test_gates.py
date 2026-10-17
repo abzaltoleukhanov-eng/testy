@@ -285,6 +285,23 @@ def main():
     check("T27 every other line now has a current brief audit", not any("no current brief audit" in i for i in issues))
     check("T29b' ACH_AUDITED needs no preliminary label", not any("ACH-0002 is" in i for i in issues))
 
+    # contract 0.6: headings are audited lines; hidden HTML comments are rejected
+    ru_txt = Path(pdir, "ru.md").read_text(encoding="utf-8")
+    Path(pdir, "ru.md").write_text(ru_txt.replace("## Главное", "## Клинически доказано: боль исчезает", 1)
+                                   + "<!-- hidden promise: cures pain -->\n", encoding="utf-8")
+    issues, _, _ = brief_issues()
+    check("T33 a heading changed into a promise needs a brief audit",
+          any("no current brief audit" in i and "Клинически" in i for i in issues))
+    check("T35 HTML comment other than STATS markers is rejected", any("HTML comment" in i for i in issues))
+    Path(pdir, "ru.md").write_text(ru_txt, encoding="utf-8")
+
+    # contract 0.6: source provenance is part of the content hash
+    t21 = C["T21 corpus statistic correct"]
+    rewrite(pdir, "archive/sources.jsonl", "source_id", "RD-a2", commercial_disclosure="PAID_BRAND_PARTNERSHIP")
+    _, st, _ = brief_issues()
+    check("T34 provenance change of a cited source (paid partnership, text unchanged) makes the audit stale",
+          st[t21]["status"] != "FACT_APPROVED" and any("stale" in r for r in st[t21]["reasons"]))
+
     # X04 class: the ACH argument changes after its audit
     rewrite(pdir, "hypotheses.jsonl", "ach_id", "ACH-0002",
             preference_reason="All buyers are wrong; the bag never breaks and this is scientifically proven.")

@@ -37,7 +37,7 @@ def main():
     claims = evaluate_claims(t, contract, hasher)
     status = {c["claim_id"]: c["status"] for c in claims}
     ach = evaluate_ach(t, status, hasher)
-    uts = url_texts(t)
+    uts = url_texts(t, hasher)
     by_claim = {c["claim_id"]: c for c in t["claims"]}
     by_ach = {h["ach_id"]: h for h in t["hypotheses"]}
     by_url = {}

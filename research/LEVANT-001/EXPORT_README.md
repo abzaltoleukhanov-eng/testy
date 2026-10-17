@@ -1,6 +1,6 @@
 # LEVANT-001: package for independent review
 
-Research-engine v3 pilot (contract 0.5), Siena Lévant Tote Bag, Reddit only. Snapshot of 2026-10-17.
+Research-engine v3 pilot (contract 0.6), Siena Lévant Tote Bag, Reddit only. Snapshot of 2026-10-17.
 
 ## Files
 | File | Contents |
@@ -41,3 +41,4 @@ Consistency check: `validate.py --brief-*` re-renders the STATS block and compar
 - ACH: ACH-0002 and ACH-0003 UNSOUND (they missed the customer service and returns explanation). ACH-0004 is their revision and is ACH_AUDITED (SOUND). ACH-0001 OVERREACHES; ACH-0005 is its revision, still OVERREACHES and preliminary (its pattern C-0002 is not approved).
 - Brief lines: 226 audited. The first pass found 20 OVERSTATES and 4 NOT_SUPPORTED, all fixed and re-audited. Two paraphrases written in quotation marks were caught by the mechanical quote check.
 
+- Contract 0.6: provenance is now part of the hash, so all audits were re-bound after the history check (`scripts/migrate_06.py`). Headings and table headers were audited (22 lines, all LIMITATION_OK).

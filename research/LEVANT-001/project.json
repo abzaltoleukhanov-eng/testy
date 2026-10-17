@@ -80,7 +80,7 @@
       "C-0051",
       "C-0052"
     ],
-    "contract_version": "0.5"
+    "contract_version": "0.6"
   },
   "product_facts_indexed_note": "product_facts_indexed is the earlier search-index snapshot; where it overlaps product_facts_verified, the verified value wins. Unverified from it: US price, availability, sibling product."
 }

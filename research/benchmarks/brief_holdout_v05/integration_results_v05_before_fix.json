@@ -1,0 +1,31 @@
+[
+ {
+  "test_id": "BASELINE",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": [],
+  "claim_status:C-0020": "FACT_APPROVED"
+ },
+ {
+  "test_id": "X07",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": [
+   "RU: 1 headings replaced",
+   "EN: 1 headings replaced"
+  ]
+ },
+ {
+  "test_id": "X08",
+  "applied": true,
+  "validator_exit": 0,
+  "brief_issues": [],
+  "summary_line": "schema errors: 0; claims: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 6, 'HYPOTHESIS_UNTESTED': 4}; coverage: COVERAGE_LIMITED; brief issues: 0",
+  "notes": [],
+  "claim_status:C-0020": "FACT_APPROVED"
+ }
+]
