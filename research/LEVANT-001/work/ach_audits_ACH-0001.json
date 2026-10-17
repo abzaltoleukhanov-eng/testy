@@ -1,0 +1,188 @@
+[
+ {
+  "ach_id": "ACH-0001",
+  "verdict": "OVERREACHES",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0121",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "Years ago before I carried a laptop everyday I used a leather bag for work and court. just too heavy with lap top.",
+    "holds": true,
+    "note": "Laptop added to the bag made it too heavy, so load matters. Weak for H1 over H2 because the bag named is leather. She moved to another tote/briefcase, not a backpack."
+   },
+   {
+    "evidence_id": "E-0288",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders.",
+    "holds": true,
+    "note": "Blames carrying the laptop all day. Her current bag is a light Le Pliage, which makes this one of the better H1 items. She is thinking about switching, not reporting a switch."
+   },
+   {
+    "evidence_id": "E-0377",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "",
+    "holds": false,
+    "note": "Pain from 'lugging around my larger totes' does not separate contents from bag weight and names no laptop or daily items. It fits H1 and H2 equally, so it does not specifically support H1."
+   },
+   {
+    "evidence_id": "E-0399",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "Have you totaled the weight of all those items even without a bag? Tbh that all sounds quite heavy on its own.",
+    "holds": true,
+    "note": "A third party's opinion that the contents alone are heavy. It is not a first-hand switch story."
+   },
+   {
+    "evidence_id": "E-0378",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "I’m starting to think it’s my work water bottle+coffee tumbler+a daily planner+miscellaneous things all together",
+    "holds": true,
+    "note": "Blames the combined contents, tentatively ('starting to think'). No laptop is mentioned."
+   },
+   {
+    "evidence_id": "E-0105",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "However, it's entirely too heavy. (3.6 lbs empty)",
+    "holds": true,
+    "note": "She rejects a bag because of its empty weight. She is not a backpack switcher: she says outright that a laptop backpack is not her everyday bag."
+   },
+   {
+    "evidence_id": "E-0147",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "I find the bag itself before filled is already so heavy and then to add all my stuff makes it worse.",
+    "holds": true,
+    "note": "Names the leather bag's own weight, with contents making it worse. She switched to lighter totes, not to a backpack."
+   },
+   {
+    "evidence_id": "E-0373",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "Tumi backpacks are so structured that: (1) it’s too heavy even when empty, and (2) it really doesn’t fit much in there.",
+    "holds": true,
+    "note": "Shows that structure and empty weight matter, but the switch was from one backpack to another, not from a tote to a backpack."
+   },
+   {
+    "evidence_id": "E-0394",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "The Beis is already 2.75 pounds before you put anything in it. That’s not terrible but not great either.",
+    "holds": true,
+    "note": "Weak support: the commenter treats empty bag weight as a selection factor, not as a cause of switching."
+   },
+   {
+    "evidence_id": "E-0293",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "I wanted to love this backpack (got it in hazelnut), but unfortunately underestimated how heavy leather can be.",
+    "holds": true,
+    "note": "Leather weight was a problem, but in a backpack, so this is not a tote-to-backpack trigger."
+   },
+   {
+    "evidence_id": "E-0378",
+    "h_id": "H2",
+    "role": "refutes",
+    "located_span": "Currently, I’m using the neverful which isn’t too heavy. I’ve used the longchamp large also, but I’m starting to think it’s my work water bottle+coffee tumbler+a daily planner+miscellaneous things all together",
+    "holds": true,
+    "note": "Light bags still hurt and she points to the contents. Tentative, but it counts against H2 as the main cause."
+   },
+   {
+    "evidence_id": "E-0399",
+    "h_id": "H2",
+    "role": "refutes",
+    "located_span": "Have you totaled the weight of all those items even without a bag? Tbh that all sounds quite heavy on its own.",
+    "holds": true,
+    "note": "Weak: this is an outsider's opinion, and the same commenter then suggests lighter canvas, which partly concedes that bag weight matters."
+   },
+   {
+    "evidence_id": "E-0230",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "Day 1 of taking public transit to work with a tote bag and I immediately bought a backpack.",
+    "holds": true,
+    "note": "Clear case: she switched right after moving from driving to transit."
+   },
+   {
+    "evidence_id": "E-0276",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "I commute from NJ to NYC everyday and walking around in the heat with a tote bag is killing my shoulder and back.",
+    "holds": true,
+    "note": "A walking/transit commuter who switched. The heavy load (food, book, water) also fits H1."
+   },
+   {
+    "evidence_id": "E-0284",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "If I was using mass transit rather than driving, I'd be 100% Team Backpack. I don't need shoulder and back issues later from a heavy ass tote.",
+    "holds": true,
+    "note": "A driver who says she would switch on transit. This is a hypothetical, not a 'switch only if' statement."
+   },
+   {
+    "evidence_id": "E-0309",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "got it before I moved to Paris because I knew I’d be walking/transit commuting a lot more.",
+    "holds": true,
+    "note": "The backpack was bought in anticipation of a walking/transit commute. No pain is mentioned."
+   },
+   {
+    "evidence_id": "E-0348",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "I walk to work everyday (approx. 25 mins) and sometimes get annoyed because my shoulder hurts almost immediately because of my tote bag.",
+    "holds": true,
+    "note": "A walking commute causes tote pain, but she has not switched and resists backpacks because of looks."
+   },
+   {
+    "evidence_id": "E-0125",
+    "h_id": "H3",
+    "role": "refutes",
+    "located_span": "I commute by car, but stairs, walking, my shoulders etc.",
+    "holds": true,
+    "note": "A car commuter who still worries about weight on her shoulders. Weak refutation: she is still choosing a tote, not switching to a backpack."
+   },
+   {
+    "evidence_id": "E-0278",
+    "h_id": "H4",
+    "role": "supports",
+    "located_span": "",
+    "holds": false,
+    "note": "The same post says pain drove the switch ('killing my shoulder and back'). Peer support only eased self-consciousness after the switch, so this does not support 'social acceptance, not pain, drives the switch'."
+   },
+   {
+    "evidence_id": "E-0157",
+    "h_id": "H4",
+    "role": "refutes",
+    "located_span": "I switched to an Aer backpack to save my back since I carry a laptop, but if I didn’t have to I’d go tote all the way.",
+    "holds": true,
+    "note": "The switch was driven by her back and the laptop, and she still prefers a tote."
+   },
+   {
+    "evidence_id": "E-0290",
+    "h_id": "H4",
+    "role": "refutes",
+    "located_span": "I just succumbed to a really ugly backpack that carries weight well.",
+    "holds": true,
+    "note": "A reluctant switch for carrying weight, which goes against a fashion-led switch."
+   },
+   {
+    "evidence_id": "E-0351",
+    "h_id": "H4",
+    "role": "refutes",
+    "located_span": "I’ve had to make peace with using a low profile, polished looking backpack",
+    "holds": true,
+    "note": "A reluctant switch that she frames as a concession, not a social preference."
+   }
+  ],
+  "issues": "1) The preference_reason says load on one shoulder is 'named in switch stories across five threads'. The H1 evidence comes from four threads (1wwpn82, 1wxoin9, 1aqqf8j, 1w0zzdx), and none of it is a completed tote-to-backpack switch: these are prospective switchers, a tote-to-tote move and an outside commenter. 2) The reason calls the walking and transit stories 'the fastest switches', but the packet holds no comparative timing for other switchers. 3) It says one driver would switch 'only if' she used transit, which overstates E-0284's hypothetical. 4) E-0377 does not separate load from bag weight, and E-0278 does not support H4 because pain drove that switch. 5) HIGH diagnosticity for H1 is generous: most H1 items fit H2 as well, and only E-0288 and E-0378 point to contents over the bag. H1 and H3 are partly complementary rather than rival explanations. A strap-design or weight-distribution explanation (single strap versus padded double straps, and crossbody bags also hurting in E-0348) is not tested as a separate alternative. 6) Several H2 items are about backpack weight or tote-to-tote moves, not tote-to-backpack triggers.",
+  "reasoning": "Most evidence roles hold. Two do not: E-0377 for H1 and E-0278 for H4. H4 is correctly refuted by reluctant, pain-driven switchers. Preferring H1, with H3 as an amplifier and H2 as secondary, is broadly consistent with the evidence, and causal_status is correctly NOT_ESTABLISHED. However, the preference_reason inflates the base: five threads of switch stories, 'fastest switches' and 'only if' are not shown. So the structure is acceptable but the stated reason claims more than the evidence supports.",
+  "auditor": "independent ACH auditor 1",
+  "notes": "signature field added by operator; the auditor omitted it"
+ }
+]

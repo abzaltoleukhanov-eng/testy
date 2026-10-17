@@ -1,0 +1,515 @@
+{
+ "records": {
+  "C-0024": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Some shoppers check how heavy a bag is when empty, and several reject or regret bags that are heavy before anything is put in them, including leather and structured bags.",
+   "scope_limits": "Revision of C-0005. Covers totes and backpacks; others say the contents, not the bag, are the problem.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0035": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while a few owners report vegan bags that held up, one for about four and a half years without cracking or peeling.",
+   "scope_limits": "Revision of C-0026. Beliefs plus individual owner reports; one source is about jackets; nothing about the Lévant material.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0012": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PERSONAL_EXPERIENCE",
+   "claim_class": null,
+   "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+   "scope_limits": "One person; the tote is named only as 'the Nordace tote' (Siena tote thread), not the Lévant.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0038": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PURCHASE_DRIVER",
+   "claim_class": null,
+   "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
+   "scope_limits": "Revision of C-0029.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0059": {
+   "kind": "CLAIM",
+   "status": "HYPOTHESIS_UNTESTED",
+   "claim_type": "HYPOTHESIS",
+   "claim_class": "CAUSAL_HYPOTHESIS",
+   "text": "If cold-traffic shoppers look Nordace up on Reddit before buying (not yet measured), the negative discussion that led some readers to hold off could cost conversions; showing warranty terms and owner reports, if they are available for the Lévant, could be tested as a counter.",
+   "scope_limits": "Replaces C-0055 with its conditions made explicit.",
+   "hypothesis_label": "analyst hypothesis: conversion risk, untested",
+   "premises": [
+    {
+     "claim_id": "C-0038",
+     "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0012",
+     "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0015",
+     "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0046",
+     "text": "The user states that there are no reviews and that the product is new.",
+     "status": "FACT_APPROVED"
+    }
+   ]
+  },
+  "C-0039": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PERSONAL_EXPERIENCE",
+   "claim_class": null,
+   "text": "Two buyers describe Nordace offering a partial refund as the alternative to returning the bag at their own cost; for one of them the return address was in Hong Kong.",
+   "scope_limits": "Revision of C-0030. Two individual accounts; policies may have changed.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I purchased a backpack and received in 3 weeks. I found the quality is so so so bad before I use it, the lable is still on the backpack and I don't even try it on. So I contact customer service to return it, . No phone number provided only an email address. After 5 days' waiting, they responded that either give me 30% money back or I pay for the return cost. I chose to return since nobody need a trash. They said make sure they are in original plastic bag and box, I did. The return address is a port in Commerce, CA. I used UPS to send it out and cost me $16USD. Yesterday, UPS provided an update said that \"receiver refused to accept the return with no reason!\" I called the number they provided in their return email, said it is no longer a valid phone number and no new number added!!! Sent an email and no reply at all!\n BE CAREFUL, DON'T SPEND A CENT ON THESE HONG KONG SELLER!"
+  },
+  "ACH-0005": {
+   "kind": "ACH",
+   "status": "ACH_PRELIMINARY",
+   "question": "Why do laptop carriers give up shoulder totes for backpacks?",
+   "hypotheses": [
+    {
+     "h_id": "H1",
+     "statement": "The total load (laptop plus daily items) on one shoulder is the cause, whatever the bag is made of.",
+     "diagnosticity": "MEDIUM"
+    },
+    {
+     "h_id": "H2",
+     "statement": "The bag's own weight and structure (leather, rigid build) is the main cause.",
+     "diagnosticity": "MEDIUM"
+    },
+    {
+     "h_id": "H3",
+     "statement": "Commute mode amplifies the load: walking and transit commutes make a shoulder tote harder to bear than short car commutes.",
+     "diagnosticity": "MEDIUM"
+    },
+    {
+     "h_id": "H4",
+     "statement": "Growing social acceptance of adult backpacks, not pain, drives the switch.",
+     "diagnosticity": "LOW"
+    },
+    {
+     "h_id": "H5",
+     "statement": "Carrying on one strap, rather than the weight itself, is the cause: two padded straps spread the same load.",
+     "diagnosticity": "LOW"
+    }
+   ],
+   "preferred_h_id": "H1",
+   "preference_reason": "Weight carried on one shoulder is the explanation given most often in this evidence, but most items fit H1 and H2 alike; only E-0288 and E-0378 point to the contents rather than the bag, and E-0378 is tentative. H3 looks like an amplifier of the load rather than a rival: one person switched after moving from driving to transit (E-0230), and one driver says transit would make them switch (E-0284, a hypothetical). H4 has no supporting evidence here, and four switch stories describe pain-driven, reluctant switches. H5 is untested. Few items are completed tote-to-backpack switches; many are people considering a switch or moving to another tote.",
+   "causal_status": "NOT_ESTABLISHED",
+   "pattern_claim_id": "C-0002",
+   "pattern_status": "NEEDS_REVIEW",
+   "ach_audit": {
+    "verdict": "OVERREACHES",
+    "issues": "Preference for H1 over H5 is not shown: the reason's lead claim ('weight carried on one shoulder') is the core of H5 as much as H1, and the completed switch stories (E-0276 padded backpack made the commute 'loads better', E-0290 'carries weight well') suggest that spreading the same load helps, which favours H5 over H1 as worded ('whatever the bag is made of'). Calling H5 'untested' ignores relevant packet items (E-0276, E-0290, E-0348 crossbody also hurt, E-0394 parent 'everything hanging from one shoulder') that were never assigned. H1 vs H2 is also not separated: the reason itself admits most items fit both. Several H2 supports are backpack-weight or tote-to-tote items (E-0373, E-0293, E-0147, E-0394) that do not speak to the tote-to-backpack switch; E-0377 is neutral; E-0399 does not refute H2. E-0278 is mixed and its quoted span leans toward social acceptance as a facilitator, so H4's framing as 'not pain' is something of a straw man; a 'social acceptance as enabler' variant is missing. The 'four switch stories describe pain-driven, reluctant switches' wording is a bit strong for E-0278, a happy switcher. Minor: H2's MEDIUM diagnosticity is generous given how little separates it from H1."
+   }
+  },
+  "ACH-0004": {
+   "kind": "ACH",
+   "status": "ACH_AUDITED",
+   "question": "Why do would-be buyers turn away from Nordace after reading Reddit?",
+   "hypotheses": [
+    {
+     "h_id": "H1",
+     "statement": "Owner reports about product quality or failures are what turns them away.",
+     "diagnosticity": "MEDIUM"
+    },
+    {
+     "h_id": "H2",
+     "statement": "The brand's public replies on Reddit (two different replies, in threads 18nj9sk and bqe83z) are what turns them away.",
+     "diagnosticity": "HIGH"
+    },
+    {
+     "h_id": "H3",
+     "statement": "General suspicion of ad-driven DTC brands (retargeting, resetting timers, paid-looking reviews) makes them look for reasons to stay away.",
+     "diagnosticity": "LOW"
+    },
+    {
+     "h_id": "H4",
+     "statement": "Reports about customer service, refunds and returns (unanswered emails, refused returns, partial refunds) are what turns them away.",
+     "diagnosticity": "MEDIUM"
+    }
+   ],
+   "preferred_h_id": "H2",
+   "preference_reason": "In this evidence the brand's public replies are the reason people state most explicitly: five comments across two threads, about two different replies, including an owner whose zippers broke who says the reply, not the failure, turned them away (E-0026). This is concentrated in two threads, so it says nothing about how often it happens elsewhere. Product-quality reports (H1) and service and returns reports (H4) also appear, but the comments that cite only generic negative reviews (E-0071, E-0094) cannot tell H1 and H4 apart; they do show rejections without any brand reply, so H2 is not the only driver. H3 explains why people go and check rather than what they decide.",
+   "causal_status": "NOT_ESTABLISHED",
+   "pattern_claim_id": "C-0038",
+   "pattern_status": "FACT_APPROVED",
+   "ach_audit": {
+    "verdict": "SOUND",
+    "issues": "Minor: E-0002 comes from an actual buyer, not a would-be buyer, so it supports H3 and H4 only as a report others might read. E-0041 is shared by H1 and H4 and tells them apart no better than E-0071 and E-0094 do. E-0062 has no parent text, so the claim of 'two different replies' depends on E-0060 and E-0062 being in a different thread from the 18nj9sk reply, which they are, but which reply E-0062 answers is unverified. E-0071 sits in a reply thread. H4's MEDIUM diagnosticity is generous given only these two mixed items. The statement that the zipper owner was turned away by 'the reply, not the failure' is a fair reading of E-0026 but not their exact words."
+   }
+  },
+  "C-0020": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+   "scope_limits": "Revision of C-0001 using only laptop-confirmed evidence. Reddit commenters who chose to post; not a share of tote owners.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0051": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PRODUCT_FACT",
+   "claim_class": null,
+   "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+   "scope_limits": "Revision of C-0048: manufacturer's listed figures from a user screenshot on 2026-10-17; not measured.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0052": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PRODUCT_FACT",
+   "claim_class": null,
+   "text": "The product copy for the Siena Lévant Tote Bag lists a 14-inch EVA laptop sleeve, a detachable lining, a magnetic fleece pocket, a hidden anti-theft pocket, a luggage strap and an adjustable strap.",
+   "scope_limits": "Revision of C-0049 using only text that names the product; listed features, not tested.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0062": {
+   "kind": "CLAIM",
+   "status": "HYPOTHESIS_UNTESTED",
+   "claim_type": "HYPOTHESIS",
+   "claim_class": "FUTURE_HYPOTHESIS",
+   "text": "If weighing confirms the Lévant's listed 1 kg empty weight, a test could check whether people who carry a laptop in a tote and say it gets too heavy or painful would see the Lévant, which has a 14-inch laptop sleeve, as a lighter option than their current bag; whether it is lighter than their bag and comfortable when loaded is untested.",
+   "scope_limits": "C-0061 narrowed after audit A-0061: drops the unestablished premise that people rejected work totes specifically for weight; the comparison with the reader's current bag is part of what is tested.",
+   "hypothesis_label": "analyst hypothesis: creative opportunity, untested",
+   "premises": [
+    {
+     "claim_id": "C-0020",
+     "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0051",
+     "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0052",
+     "text": "The product copy for the Siena Lévant Tote Bag lists a 14-inch EVA laptop sleeve, a detachable lining, a magnetic fleece pocket, a hidden anti-theft pocket, a luggage strap and an adjustable strap.",
+     "status": "FACT_APPROVED"
+    }
+   ]
+  }
+ },
+ "lines": [
+  {
+   "line_hash": "6587f8b231254593",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "1. Для части людей тоут с ноутбуком становится слишком тяжёлым, и они пишут о боли в плечах и спине [C-0020].",
+   "line": "2. Часть покупателей проверяет, сколько сумка весит пустой, и несколько человек отказываются от сумок, тяжёлых ещё до загрузки, или жалеют о них; другие винят содержимое, а не сумку [C-0024].",
+   "cites": [
+    "C-0024"
+   ]
+  },
+  {
+   "line_hash": "c621da19fe0acfdf",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "2. Часть покупателей проверяет, сколько сумка весит пустой, и несколько человек отказываются от сумок, тяжёлых ещё до загрузки, или жалеют о них; другие винят содержимое, а не сумку [C-0024].",
+   "line": "3. Несколько комментаторов ждут, что PU и веганская кожа облезет. Несколько владельцев пишут, что их сумки держатся, один — около 4,5 лет [C-0035].",
+   "cites": [
+    "C-0035"
+   ]
+  },
+  {
+   "line_hash": "c3fba40453c741cd",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "3. Несколько комментаторов ждут, что PU и веганская кожа облезет. Несколько владельцев пишут, что их сумки держатся, один — около 4,5 лет [C-0035].",
+   "line": "4. Часть потенциальных покупателей после чтения отзывов о Nordace и ответов бренда на Reddit пишет, что не купит или отложит покупку [C-0038]. Один человек так отказался именно от тоута Nordace [C-0012]. Может ли это стоить конверсий холодного трафика — гипотеза: она верна, только если такие покупатели ищут Nordace на Reddit, а это не измерено [C-0059].",
+   "cites": [
+    "C-0012",
+    "C-0038",
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "00665c08ed99e179",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "**Бренд Nordace.**",
+   "line": "- После негативных отзывов или публичных ответов бренда на Reddit несколько потенциальных покупателей пишут или дают понять, что не купят или подождут [C-0038]. Это намерения, а не проверенные отказы. Намерения, связанные с ответами бренда, сосредоточены в двух тредах.",
+   "cites": [
+    "C-0038"
+   ]
+  },
+  {
+   "line_hash": "d92bffd5b130b2cc",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- Отдельные случаи, не паттерн [C-0039], [C-0040]:",
+   "line": "- двое покупателей описывают частичный возврат денег как альтернативу возврату сумки за свой счёт; в посте по ссылке названо 30% (пересказ) [C-0039]: https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/",
+   "cites": [
+    "C-0039",
+    "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/"
+   ]
+  },
+  {
+   "line_hash": "de8adc4a0cdda5db",
+   "lang": "RU",
+   "section": "Конкурирующие объяснения (ACH)",
+   "previous_line": "| H3 [ACH-0005] | Пешая дорога и транспорт усиливают нагрузку | предварительно: похоже на усилитель нагрузки, а не на отдельную причину |",
+   "line": "| H4 [ACH-0005] | Рюкзаки стали социально приемлемыми, дело не в боли | предварительно: в разборе прямой поддержки нет, четыре истории перехода связаны с болью; аудит разбора считает это слишком сильным и указывает на непроверенный вариант «приемлемость облегчает переход» |",
+   "cites": [
+    "ACH-0005"
+   ]
+  },
+  {
+   "line_hash": "78e10bdacb8966e4",
+   "lang": "RU",
+   "section": "Конкурирующие объяснения (ACH)",
+   "previous_line": "Почему потенциальные покупатели отворачиваются от Nordace после Reddit [ACH-0004]: паттерн одобрен (C-0038), разбор прошёл аудит (SOUND). Это ранжирование объяснений: причинность не установлена, а частоту за пределами двух тредов разбор не показывает.",
+   "line": "| H1 [ACH-0004] | Отзывы владельцев о качестве и поломках | встречается; но, согласно разбору, владельца со сломанными молниями оттолкнул ответ бренда, а не поломка |",
+   "cites": [
+    "ACH-0004"
+   ]
+  },
+  {
+   "line_hash": "a9b68c483b29358c",
+   "lang": "RU",
+   "section": "Альтернативы и «ничего не покупать»",
+   "previous_line": "| H4 [ACH-0004] | Отзывы о поддержке, возвратах и возмещениях | средняя: два смешанных примера; общие «плохие отзывы» не отличают её от H1 |",
+   "line": "- Рюкзак: переход с тоута на рюкзак разобран только предварительно [ACH-0005]; одобрено лишь то, что тоут с ноутбуком становится слишком тяжёлым [C-0020].",
+   "cites": [
+    "ACH-0005",
+    "C-0020"
+   ]
+  },
+  {
+   "line_hash": "9493a03c7458568a",
+   "lang": "RU",
+   "section": "Альтернативы и «ничего не покупать»",
+   "previous_line": "- Две сумки по ситуации или маленькая сумка в лёгкие дни [C-0023].",
+   "line": "- Вес пустой сумки как критерий: часть покупателей его проверяет, несколько человек отказываются от тяжёлых ещё до загрузки сумок или жалеют о них [C-0024].",
+   "cites": [
+    "C-0024"
+   ]
+  },
+  {
+   "line_hash": "34eecdf6614cff3f",
+   "lang": "RU",
+   "section": "Продукт: что известно и что нет",
+   "previous_line": "- наличие на время теста;",
+   "line": "- цена в США.",
+   "cites": []
+  },
+  {
+   "line_hash": "55cbd7ecf1ffa71f",
+   "lang": "RU",
+   "section": "Продукт: что известно и что нет",
+   "previous_line": "- цена в США.",
+   "line": "- **Сравнение веса — гипотеза, а не преимущество.** Указанный вес 1 кг [C-0051] мы не сравнивали с замеренным весом других сумок, по двум причинам:",
+   "cites": [
+    "C-0051"
+   ]
+  },
+  {
+   "line_hash": "a529923822aca6d0",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- меньший собственный вес не гарантирует, что ноутбук нести удобнее.",
+   "line": "1. **«Может быть, легче моей сумки»** — гипотеза [C-0062]. Опора: [C-0020], [C-0051], [C-0052]; если взвешивание подтвердит 1 кг.",
+   "cites": [
+    "C-0020",
+    "C-0051",
+    "C-0052",
+    "C-0062"
+   ]
+  },
+  {
+   "line_hash": "fab44018b8990439",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "3. **«Опередить проверку на Reddit»** — гипотеза [C-0059]. Опора: [C-0038], [C-0012], [C-0015], [C-0046].",
+   "line": "- Что можно сделать (гипотеза [C-0059]): если для Lévant они появятся, показать условия гарантии и отзывы владельцев со сроком службы.",
+   "cites": [
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "74380dcff19ec37e",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Риск (гипотеза [C-0059]): условия гарантии Lévant не подтверждены.",
+   "line": "- Это не идея ролика, а противовес, который можно проверить на холодном трафике (гипотеза [C-0059]).",
+   "cites": [
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "d2cd0bbc4a8a9b61",
+   "lang": "EN",
+   "section": "The main points in 30 seconds",
+   "previous_line": "1. For some people, a tote carrying a laptop becomes too heavy, and they report shoulder and back pain [C-0020].",
+   "line": "2. Some shoppers check how much a bag weighs empty, and several reject or regret bags that are heavy before anything goes in; others blame the contents, not the bag [C-0024].",
+   "cites": [
+    "C-0024"
+   ]
+  },
+  {
+   "line_hash": "ce854d079d6316ae",
+   "lang": "EN",
+   "section": "The main points in 30 seconds",
+   "previous_line": "2. Some shoppers check how much a bag weighs empty, and several reject or regret bags that are heavy before anything goes in; others blame the contents, not the bag [C-0024].",
+   "line": "3. Several commenters expect PU and vegan leather to peel. A few owners say their bags have held up, one for about 4.5 years [C-0035].",
+   "cites": [
+    "C-0035"
+   ]
+  },
+  {
+   "line_hash": "1d3543fb0ce1ec97",
+   "lang": "EN",
+   "section": "The main points in 30 seconds",
+   "previous_line": "3. Several commenters expect PU and vegan leather to peel. A few owners say their bags have held up, one for about 4.5 years [C-0035].",
+   "line": "4. After reading Nordace reviews and the brand's replies on Reddit, some would-be buyers say they will not buy or will hold off [C-0038]. One person turned away from the Nordace tote itself for this reason [C-0012]. Whether this could cost cold-traffic conversions is a hypothesis: it holds only if such shoppers look Nordace up on Reddit, which is not measured [C-0059].",
+   "cites": [
+    "C-0012",
+    "C-0038",
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "fb76b180494c5bef",
+   "lang": "EN",
+   "section": "What we learned about decisions",
+   "previous_line": "**The Nordace brand.**",
+   "line": "- After negative reviews or the brand's public replies on Reddit, several would-be buyers say or imply that they will not buy or will hold off [C-0038]. These are intentions, not verified refusals. The intentions linked to the brand's replies are concentrated in two threads.",
+   "cites": [
+    "C-0038"
+   ]
+  },
+  {
+   "line_hash": "674d040bb6da0a0b",
+   "lang": "EN",
+   "section": "What we learned about decisions",
+   "previous_line": "- Individual cases, not a pattern [C-0039], [C-0040]:",
+   "line": "- two buyers describe a partial refund offered as the alternative to returning the bag at their own cost; the linked post names 30% (paraphrase) [C-0039]: https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/",
+   "cites": [
+    "C-0039",
+    "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/"
+   ]
+  },
+  {
+   "line_hash": "298a6833efd1b408",
+   "lang": "EN",
+   "section": "Competing explanations (ACH)",
+   "previous_line": "| H3 [ACH-0005] | Walking and transit commutes amplify the load | preliminary: looks like an amplifier of the load rather than a separate cause |",
+   "line": "| H4 [ACH-0005] | Backpacks became socially acceptable; pain is not the reason | preliminary: no direct support in the analysis, and four switch stories are linked to pain; the audit of the analysis calls this too strong and points to an untested variant, acceptance making the switch easier |",
+   "cites": [
+    "ACH-0005"
+   ]
+  },
+  {
+   "line_hash": "3194f7110ca11e7f",
+   "lang": "EN",
+   "section": "Competing explanations (ACH)",
+   "previous_line": "Why would-be buyers turn away from Nordace after Reddit [ACH-0004]: the pattern is approved (C-0038) and the analysis passed audit (SOUND). This ranks explanations: causality is not established, and the analysis does not show how often this happens beyond two threads.",
+   "line": "| H1 [ACH-0004] | Owner reports about quality and breakages | present; but on the analysis's reading, the owner whose zippers broke was turned away by the brand's reply, not the failure |",
+   "cites": [
+    "ACH-0004"
+   ]
+  },
+  {
+   "line_hash": "8bc21324c7efded4",
+   "lang": "EN",
+   "section": "Alternatives and \"buy nothing\"",
+   "previous_line": "| H4 [ACH-0004] | Reports about customer service, returns and refunds | medium: two mixed examples; generic \"bad reviews\" comments cannot tell it apart from H1 |",
+   "line": "- A backpack: the move from a tote to a backpack is analysed only as preliminary [ACH-0005]; what is approved is only that a tote carrying a laptop gets too heavy [C-0020].",
+   "cites": [
+    "ACH-0005",
+    "C-0020"
+   ]
+  },
+  {
+   "line_hash": "867d9cd34024cd6b",
+   "lang": "EN",
+   "section": "Alternatives and \"buy nothing\"",
+   "previous_line": "- Two bags depending on the day, or a small bag on light days [C-0023].",
+   "line": "- Empty weight as a criterion: some shoppers check it, and several reject or regret bags that are heavy before anything goes in [C-0024].",
+   "cites": [
+    "C-0024"
+   ]
+  },
+  {
+   "line_hash": "14feb280dfc61256",
+   "lang": "EN",
+   "section": "The product: what is known and what is not",
+   "previous_line": "- stock for the test period;",
+   "line": "- the US price.",
+   "cites": []
+  },
+  {
+   "line_hash": "19fdc48f91e40cc3",
+   "lang": "EN",
+   "section": "The product: what is known and what is not",
+   "previous_line": "- the US price.",
+   "line": "- **The weight comparison is a hypothesis, not an advantage.** We have not compared the listed 1 kg [C-0051] with the measured weight of other bags, for two reasons:",
+   "cites": [
+    "C-0051"
+   ]
+  },
+  {
+   "line_hash": "9bcb1b4f93462eb1",
+   "lang": "EN",
+   "section": "Creative opportunities (all hypotheses, to be tested)",
+   "previous_line": "- a lower empty weight does not guarantee that carrying a laptop is more comfortable.",
+   "line": "1. **\"Maybe lighter than my bag\"**: hypothesis [C-0062]. Basis: [C-0020], [C-0051], [C-0052]; only if weighing confirms 1 kg.",
+   "cites": [
+    "C-0020",
+    "C-0051",
+    "C-0052",
+    "C-0062"
+   ]
+  },
+  {
+   "line_hash": "5d8d9f76f0cc4f2b",
+   "lang": "EN",
+   "section": "Creative opportunities (all hypotheses, to be tested)",
+   "previous_line": "3. **\"Get ahead of the Reddit check\"**: hypothesis [C-0059]. Basis: [C-0038], [C-0012], [C-0015], [C-0046].",
+   "line": "- What could be done (hypothesis [C-0059]): if they become available for the Lévant, show the warranty terms and owner reviews that state how long the bag has lasted.",
+   "cites": [
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "882be58ade6c57ac",
+   "lang": "EN",
+   "section": "Creative opportunities (all hypotheses, to be tested)",
+   "previous_line": "- Risk (hypothesis [C-0059]): the Lévant's warranty terms are not confirmed.",
+   "line": "- This is not a video idea but a counterweight that could be tested on cold traffic (hypothesis [C-0059]).",
+   "cites": [
+    "C-0059"
+   ]
+  }
+ ]
+}

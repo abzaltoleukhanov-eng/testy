@@ -1,0 +1,79 @@
+{
+ "records": {
+  "ACH-0005": {
+   "kind": "ACH",
+   "status": "ACH_PRELIMINARY",
+   "question": "Why do laptop carriers give up shoulder totes for backpacks?",
+   "hypotheses": [
+    {
+     "h_id": "H1",
+     "statement": "The total load (laptop plus daily items) on one shoulder is the cause, whatever the bag is made of.",
+     "diagnosticity": "MEDIUM"
+    },
+    {
+     "h_id": "H2",
+     "statement": "The bag's own weight and structure (leather, rigid build) is the main cause.",
+     "diagnosticity": "MEDIUM"
+    },
+    {
+     "h_id": "H3",
+     "statement": "Commute mode amplifies the load: walking and transit commutes make a shoulder tote harder to bear than short car commutes.",
+     "diagnosticity": "MEDIUM"
+    },
+    {
+     "h_id": "H4",
+     "statement": "Growing social acceptance of adult backpacks, not pain, drives the switch.",
+     "diagnosticity": "LOW"
+    },
+    {
+     "h_id": "H5",
+     "statement": "Carrying on one strap, rather than the weight itself, is the cause: two padded straps spread the same load.",
+     "diagnosticity": "LOW"
+    }
+   ],
+   "preferred_h_id": "H1",
+   "preference_reason": "Weight carried on one shoulder is the explanation given most often in this evidence, but most items fit H1 and H2 alike; only E-0288 and E-0378 point to the contents rather than the bag, and E-0378 is tentative. H3 looks like an amplifier of the load rather than a rival: one person switched after moving from driving to transit (E-0230), and one driver says transit would make them switch (E-0284, a hypothetical). H4 has no supporting evidence here, and four switch stories describe pain-driven, reluctant switches. H5 is untested. Few items are completed tote-to-backpack switches; many are people considering a switch or moving to another tote.",
+   "causal_status": "NOT_ESTABLISHED",
+   "pattern_claim_id": "C-0002",
+   "pattern_status": "NEEDS_REVIEW",
+   "ach_audit": {
+    "verdict": "OVERREACHES",
+    "issues": "Preference for H1 over H5 is not shown: the reason's lead claim ('weight carried on one shoulder') is the core of H5 as much as H1, and the completed switch stories (E-0276 padded backpack made the commute 'loads better', E-0290 'carries weight well') suggest that spreading the same load helps, which favours H5 over H1 as worded ('whatever the bag is made of'). Calling H5 'untested' ignores relevant packet items (E-0276, E-0290, E-0348 crossbody also hurt, E-0394 parent 'everything hanging from one shoulder') that were never assigned. H1 vs H2 is also not separated: the reason itself admits most items fit both. Several H2 supports are backpack-weight or tote-to-tote items (E-0373, E-0293, E-0147, E-0394) that do not speak to the tote-to-backpack switch; E-0377 is neutral; E-0399 does not refute H2. E-0278 is mixed and its quoted span leans toward social acceptance as a facilitator, so H4's framing as 'not pain' is something of a straw man; a 'social acceptance as enabler' variant is missing. The 'four switch stories describe pain-driven, reluctant switches' wording is a bit strong for E-0278, a happy switcher. Minor: H2's MEDIUM diagnosticity is generous given how little separates it from H1."
+   }
+  },
+  "C-0020": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+   "scope_limits": "Revision of C-0001 using only laptop-confirmed evidence. Reddit commenters who chose to post; not a share of tote owners.",
+   "hypothesis_label": null,
+   "premises": []
+  }
+ },
+ "lines": [
+  {
+   "line_hash": "7c6bdb4b10b2e154",
+   "lang": "RU",
+   "section": "Альтернативы и «ничего не покупать»",
+   "previous_line": "| H4 [ACH-0004] | Отзывы о поддержке, возвратах и возмещениях | средняя: два смешанных примера; общие «плохие отзывы» не отличают её от H1 |",
+   "line": "- Рюкзак: переход с тоута на рюкзак разобран только предварительно [ACH-0005]; одобрено лишь то, что в нескольких независимых обсуждениях люди пишут, что тоут с ноутбуком становится для них слишком тяжёлым [C-0020].",
+   "cites": [
+    "ACH-0005",
+    "C-0020"
+   ]
+  },
+  {
+   "line_hash": "9ad40a4a48f744e6",
+   "lang": "EN",
+   "section": "Alternatives and \"buy nothing\"",
+   "previous_line": "| H4 [ACH-0004] | Reports about customer service, returns and refunds | medium: two mixed examples; generic \"bad reviews\" comments cannot tell it apart from H1 |",
+   "line": "- A backpack: the move from a tote to a backpack is analysed only as preliminary [ACH-0005]; what is approved is only that, in several independent discussions, people say a tote carrying a laptop gets too heavy for them [C-0020].",
+   "cites": [
+    "ACH-0005",
+    "C-0020"
+   ]
+  }
+ ]
+}

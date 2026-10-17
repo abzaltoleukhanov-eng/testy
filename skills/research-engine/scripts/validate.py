@@ -13,6 +13,9 @@ Layers (contract 0.2 onwards):
   FACT_APPROVED     all of the above and no open contradiction or scope issue
 Contract 0.4 adds claim classes, the premise audit for hypotheses (RESEARCH_QUESTION), computed CORPUS_STATISTIC,
 ACH validity, and brief checks for unreferenced analytic statements and stale generated statistics.
+Contract 0.5 binds every audit to a content hash (a stale audit counts as no audit, recursively through premises),
+adds the substantive ACH audit (ACH_PRELIMINARY / PATTERN_VALID / ACH_AUDITED / ACH_REJECTED) and replaces the
+heading-based brief lint with an independent audit of every brief line (brief_audits.jsonl).
 """
 import argparse
 import json
@@ -23,7 +26,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from ledger import check_record  # noqa: E402
-from re_lib import load_contract, now_iso, read_jsonl, span_in, table_path  # noqa: E402
+from re_lib import ContentHasher, content_hash, load_contract, norm_text, now_iso, read_jsonl, span_in, table_path  # noqa: E402
 
 BAD_RECHECK = {"QUOTE_MISMATCH", "UNAVAILABLE_ON_RECHECK", "CLAIM_CONTRADICTED"}
 
@@ -174,7 +177,7 @@ def corpus_statistic_check(c, t):
 
 
 def evaluate_one(c, t, contract, ctx, statuses):
-    sources, evidence, queries, audits, rules = ctx
+    sources, evidence, queries, audits, rules, stale = ctx
     res = {"claim_id": c["claim_id"], "claim_type": c.get("claim_type"), "claim_class": claim_class(c, contract),
            "critical": c.get("critical"), "text": c.get("text"), "reasons": []}
     ctype = c.get("claim_type")
@@ -198,6 +201,10 @@ def evaluate_one(c, t, contract, ctx, statuses):
     a = latest[0]
     if a:
         res["audit_id"] = a["audit_id"]
+    elif stale.get(c["claim_id"]):
+        res["stale_audits"] = stale[c["claim_id"]]
+        res["reasons"].append(f"audit {', '.join(stale[c['claim_id']])} is stale: the claim, its evidence, a source text "
+                              "or a premise changed after the audit; audit the current version")
 
     if cls in contract["class_rules"]["hypothesis_classes"] or ctype in ("HYPOTHESIS", "SITUATION_REACH"):
         if ctype == "HYPOTHESIS" and not c.get("hypothesis_label"):
@@ -215,7 +222,7 @@ def evaluate_one(c, t, contract, ctx, statuses):
             if st != "FACT_APPROVED":
                 premise_problems.append(f"premise {pid} is {st or 'missing'}, not FACT_APPROVED")
         st, why = hypothesis_status(a, premise_problems)
-        res.update(status=st, reasons=why)
+        res.update(status=st, reasons=res["reasons"] + why)
         return res
 
     if cls == "CORPUS_STATISTIC":
@@ -225,9 +232,9 @@ def evaluate_one(c, t, contract, ctx, statuses):
         s_ok, s_reasons, s_stats = gate_check(ctype, usable, sources, queries, c, contract)
         res["structural_gate"] = {"pass": s_ok, "reasons": s_reasons, "stats": s_stats}
 
-    audited_ok, a_reasons, confirmed = False, [], []
+    audited_ok, a_reasons, confirmed = False, list(res["reasons"]), []
     if not a:
-        a_reasons.append("no independent audit yet")
+        a_reasons.append("no current independent audit")
     else:
         if a.get("verdict") == "CONTRADICTS":
             res.update(status="BLOCKED", reasons=[f"contradicted by audit {a['audit_id']}: {a.get('reasoning', '')[:200]}"])
@@ -261,14 +268,19 @@ def evaluate_one(c, t, contract, ctx, statuses):
     return res
 
 
-def evaluate_claims(t, contract):
+def evaluate_claims(t, contract, hasher=None):
     sources = {r["source_id"]: r for r in t["sources"]}
     evidence = {r["evidence_id"]: r for r in t["evidence"]}
     queries = {r["query_id"]: r for r in t["queries"]}
-    audits = defaultdict(list)
+    hasher = hasher or ContentHasher(t)
+    audits, stale = defaultdict(list), defaultdict(list)
     for a in t["audits"]:
-        audits[a["claim_id"]].append(a)
-    ctx = (sources, evidence, queries, audits, contract["counting_rules"])
+        # contract 0.5: an audit counts only for the exact content it was made for
+        if a.get("claim_hash") and a["claim_hash"] == hasher.claim(a["claim_id"]):
+            audits[a["claim_id"]].append(a)
+        else:
+            stale[a["claim_id"]].append(a["audit_id"])
+    ctx = (sources, evidence, queries, audits, contract["counting_rules"], stale)
     hyp = set(contract["class_rules"]["hypothesis_classes"])
     # facts first: hypotheses read their premises' statuses
     order = sorted(t["claims"], key=lambda c: claim_class(c, contract) in hyp
@@ -281,12 +293,49 @@ def evaluate_claims(t, contract):
     return [results[c["claim_id"]] for c in t["claims"]]
 
 
-def evaluate_ach(t, claim_status):
+def evaluate_ach(t, claim_status, hasher=None):
+    """ACH_PRELIMINARY   pattern claim not FACT_APPROVED
+    PATTERN_VALID     pattern approved, the analysis itself has no current SOUND audit
+    ACH_AUDITED       pattern approved and a current audit judged explanations, evidence and preference SOUND
+    ACH_REJECTED      the current audit says UNSOUND, or the last audit said UNSOUND and the analysis was edited
+                      without a new audit (cannot be cited)"""
+    hasher = hasher or ContentHasher(t)
+    sources = {r["source_id"]: r for r in t["sources"]}
+    evidence = {r["evidence_id"]: r for r in t["evidence"]}
+    by_ach, stale = defaultdict(list), defaultdict(list)
+    for a in t.get("ach_audits", []):
+        (by_ach if a.get("ach_hash") == hasher.ach(a["ach_id"]) else stale)[a["ach_id"]].append(a)
     out = {}
     for h in t["hypotheses"]:
+        aid = h["ach_id"]
         st = claim_status.get(h.get("pattern_claim_id"))
-        out[h["ach_id"]] = {"status": "VALID" if st == "FACT_APPROVED" else "PRELIMINARY",
-                            "pattern_claim_id": h.get("pattern_claim_id"), "pattern_status": st}
+        a = (sorted(by_ach[aid], key=lambda x: x.get("audited_at", ""))[-1:] or [None])[0]
+        reasons = []
+        if not a:
+            reasons.append("no current ACH audit" + (f" (stale: {[x['ach_audit_id'] for x in stale[aid]]})" if stale[aid] else ""))
+        else:
+            for ch in a.get("evidence_checks", []):
+                ev = evidence.get(ch.get("evidence_id"))
+                if ch.get("holds") and (not ev or not span_in(ch.get("located_span", ""), sources.get(ev["source_id"], {}).get("text", ""))):
+                    reasons.append(f"ACH audit span for {ch.get('evidence_id')} is not verbatim in the source")
+            if a.get("verdict") != "SOUND":
+                reasons.append(f"ACH audit {a['ach_audit_id']} verdict {a.get('verdict')}: {a.get('issues') or a.get('reasoning', '')}"[:300])
+        last_stale = (sorted(stale[aid], key=lambda x: x.get("audited_at", ""))[-1:] or [None])[0]
+        if a and a.get("verdict") == "UNSOUND":
+            status = "ACH_REJECTED"
+        elif not a and last_stale and last_stale.get("verdict") == "UNSOUND":
+            # an edit does not clear a rejection: only a new audit of the edited analysis can
+            status = "ACH_REJECTED"
+            reasons.append(f"rejected by {last_stale['ach_audit_id']} (UNSOUND) and edited since; audit the new version")
+        elif st != "FACT_APPROVED":
+            status = "ACH_PRELIMINARY"
+            reasons.insert(0, f"pattern {h.get('pattern_claim_id')} is {st}")
+        elif a and not reasons:
+            status = "ACH_AUDITED"
+        else:
+            status = "PATTERN_VALID"
+        out[aid] = {"status": status, "pattern_claim_id": h.get("pattern_claim_id"), "pattern_status": st,
+                    "ach_audit_id": a and a["ach_audit_id"], "reasons": reasons}
     return out
 
 
@@ -344,49 +393,77 @@ def coverage(t, contract, project):
     return cov
 
 
-ANALYTIC_SECTIONS = {
-    "RU": ("главное", "что мы узнали", "конкурирующие объяснения", "альтернативы", "возможности для креатива"),
-    "EN": ("main points", "what we learned", "competing explanations", "alternatives", "creative opportunities"),
-}
 LABELS = {"RU": {"HYPOTHESIS_UNTESTED": "гипотез", "RESEARCH_QUESTION": "вопрос", "PRELIMINARY": "предварительн"},
           "EN": {"HYPOTHESIS_UNTESTED": "hypothes", "RESEARCH_QUESTION": "question", "PRELIMINARY": "preliminary"}}
-CAVEAT = {"RU": "не доказывает", "EN": "not prove"}
+SOURCES_HEADINGS = ("источники", "sources")
+REF = re.compile(r"\[(C-\d{4}|ACH-\d{4})\]")
+URL = re.compile(r"https?://[^\s<>\]\)\"'«»]+")
+QUOTED = re.compile(r"«([^»]{12,})»|\"([^\"]{12,})\"|“([^”]{12,})”")
 
 
-def derived_statement_issues(name, txt):
-    """Derived-claims audit at brief level: in analytic sections every content line must point to an audited
-    claim [C-...] or an ACH [ACH-...]. Exempt: headings, quote lines carrying a source URL, bold-only labels,
-    table header and separator rows, and bullets in a caveat block ('does NOT prove')."""
-    issues = []
+def brief_lines(txt):
+    """Content lines of a brief that the semantic audit must cover: everything except blank lines, headings,
+    rules, HTML comments, the generated STATS block, table header/separator rows and bare URL bullets in Sources."""
+    out, section, in_stats = [], "", False
     lines = txt.splitlines()
-    in_section, in_caveat = False, False
     for i, line in enumerate(lines):
         st = line.strip()
+        if st.startswith("<!-- STATS:BEGIN"):
+            in_stats = True
+        if in_stats:
+            in_stats = not st.startswith("<!-- STATS:END")
+            continue
+        if not st or st == "---" or st.startswith("<!--"):
+            continue
         if st.startswith("#"):
-            in_section = any(k in st.lower() for k in ANALYTIC_SECTIONS[name])
-            in_caveat = False
+            section = st.lstrip("#").strip()
             continue
-        if not in_section or not st or st.startswith("<!--"):
-            if not st:
-                in_caveat = False
-            continue
-        if CAVEAT[name] in st.lower():
-            in_caveat = True
-            continue
-        if in_caveat and st.startswith("-"):
-            continue
-        if re.search(r"\[(C-\d{4}|ACH-\d{4})\]", st) or "http" in st:
-            continue
-        if re.fullmatch(r"\*\*[^*]+\*\*", st) or re.fullmatch(r"\|[\s:|-]+\|", st):
+        if re.fullmatch(r"\|[\s:|-]+\|", st):
             continue
         nxt = lines[i + 1].strip() if i + 1 < len(lines) else ""
         if st.startswith("|") and re.fullmatch(r"\|[\s:|-]+\|", nxt):
             continue
-        issues.append(f"{name}: unreferenced analytic statement (needs [C-...] or [ACH-...]): {st[:90]}")
-    return issues
+        if any(section.lower().startswith(h) for h in SOURCES_HEADINGS) and re.fullmatch(r"-\s*https?://\S+", st):
+            continue
+        out.append({"section": section, "line": st})
+    return out
 
 
-def check_briefs(ru_path, en_path, claim_status, ach_status=None, project_dir=None):
+def cited(line):
+    return sorted(set(REF.findall(line))), sorted(set(URL.findall(line)))
+
+
+def line_hash(lang, line, claim_status, ach, hasher, url_text):
+    """Hash of a brief line plus the content and status of everything it cites (claims, ACH, source URLs)."""
+    ids, urls = cited(line)
+    cites = {}
+    for i in ids:
+        if i.startswith("ACH-"):
+            cites[i] = [hasher.ach(i), (ach.get(i) or {}).get("status")]
+        else:
+            cites[i] = [hasher.claim(i), claim_status.get(i)]
+    for u in urls:
+        cites[u] = url_text.get(norm_url(u))
+    return content_hash({"lang": lang, "line": norm_text(line), "cites": cites})
+
+
+def norm_url(u):
+    return u.rstrip(".,;:/")
+
+
+def url_texts(t):
+    """{normalised url: sorted hashes of the archived texts at that url}."""
+    from re_lib import text_hash
+    out = defaultdict(list)
+    for s in t["sources"]:
+        if s.get("url"):
+            out[norm_url(s["url"])].append(text_hash(s.get("text", "")))
+    return {k: sorted(v) for k, v in out.items()}
+
+
+def check_briefs(ru_path, en_path, claim_status, ach_status=None, project_dir=None, t=None, hasher=None, contract=None):
+    """Layer 1, structural lint (script). Layer 2, semantic audit: every content line needs a current brief audit
+    (brief_audits.jsonl) saying ENTAILED or LIMITATION_OK."""
     issues = []
     ach_status = ach_status or {}
     ru = Path(ru_path).read_text(encoding="utf-8")
@@ -396,6 +473,11 @@ def check_briefs(ru_path, en_path, claim_status, ach_status=None, project_dir=No
         issues.append(f"EN brief contains Cyrillic characters: {''.join(bad)}")
     ref = re.compile(r"\[(C-\d{4})\]")
     aref = re.compile(r"\[(ACH-\d{4})\]")
+    sources_by_url = {}
+    if t:
+        for s in t["sources"]:
+            if s.get("url"):
+                sources_by_url.setdefault(norm_url(s["url"]), []).append(s)
     for name, txt in (("RU", ru), ("EN", en)):
         lab = LABELS[name]
         for line in txt.splitlines():
@@ -412,21 +494,70 @@ def check_briefs(ru_path, en_path, claim_status, ach_status=None, project_dir=No
                 a = ach_status.get(aid)
                 if a is None:
                     issues.append(f"{name}: {aid} referenced but not in hypotheses")
-                elif a["status"] == "PRELIMINARY" and lab["PRELIMINARY"] not in low:
-                    issues.append(f"{name}: {aid} is PRELIMINARY (pattern {a['pattern_claim_id']} is "
-                                  f"{a['pattern_status']}) but its line has no '{lab['PRELIMINARY']}' label")
-        issues += derived_statement_issues(name, txt)
+                elif a["status"] == "ACH_REJECTED":
+                    issues.append(f"{name}: {aid} is ACH_REJECTED and cannot appear in a brief")
+                elif a["status"] != "ACH_AUDITED" and lab["PRELIMINARY"] not in low:
+                    issues.append(f"{name}: {aid} is {a['status']} (not ACH_AUDITED) but its line has no "
+                                  f"'{lab['PRELIMINARY']}' label")
+            # a URL is never a citation; a quote next to a URL must be verbatim in the archived source
+            urls = URL.findall(line)
+            if urls and t:
+                srcs = []
+                for u in urls:
+                    nu = norm_url(u)
+                    # a thread URL covers the comments archived under it
+                    srcs += sources_by_url.get(nu) or [s for k, v in sources_by_url.items() if k.startswith(nu + "/") for s in v]
+                if QUOTED.search(line) and not srcs:
+                    issues.append(f"{name}: quoted text cites a URL that is not in the archive: {urls[0][:80]}")
+                for m in QUOTED.finditer(line):
+                    q = next(g for g in m.groups() if g)
+                    # an excerpt may be trimmed with an ellipsis; every remaining fragment must be verbatim
+                    frags = [f.strip() for f in re.split(r"…|\.\.\.", q) if len(f.strip()) >= 8]
+                    if srcs and frags and not any(all(span_in(f, s.get("text", "")) for f in frags) for s in srcs):
+                        issues.append(f"{name}: quoted text is not verbatim in the source at the cited URL (write a "
+                                      f"paraphrase without quotation marks): {q[:60]}")
+        if t:
+            sec = ""
+            for line in txt.splitlines():
+                st = line.strip()
+                if st.startswith("#"):
+                    sec = st.lstrip("#").strip().lower()
+                elif any(sec.startswith(h) for h in SOURCES_HEADINGS):
+                    for u in URL.findall(st):
+                        if norm_url(u) not in sources_by_url:
+                            issues.append(f"{name}: Sources lists a URL that is not in the archive: {u[:80]}")
     for rx, what in ((ref, "claim ids"), (aref, "ACH ids")):
         a, b = set(rx.findall(ru)), set(rx.findall(en))
         if a != b:
             issues.append(f"{what} differ RU vs EN: only RU {sorted(a - b)}, only EN {sorted(b - a)}")
-    url = re.compile(r"https?://[^\s<>\]\)\"']+")
-    u_ru, u_en = set(url.findall(ru)), set(url.findall(en))
+    u_ru, u_en = set(URL.findall(ru)), set(URL.findall(en))
     if u_ru != u_en:
         issues.append(f"source links differ RU vs EN: only RU {len(u_ru - u_en)}, only EN {len(u_en - u_ru)}")
     if project_dir:
         from render_stats import consistency_issues
         issues += consistency_issues(project_dir, claim_status, {"RU": ru_path, "EN": en_path})
+    if t is not None:
+        issues += semantic_issues({"RU": ru, "EN": en}, claim_status, ach_status, t, hasher or ContentHasher(t))
+    return issues
+
+
+def semantic_issues(texts, claim_status, ach_status, t, hasher):
+    uts = url_texts(t)
+    audits = {}
+    for a in sorted(t.get("brief_audits", []), key=lambda x: x.get("audited_at", "")):
+        audits[a["line_hash"]] = a
+    issues, unaudited = [], Counter()
+    for lang, txt in texts.items():
+        for item in brief_lines(txt):
+            h = line_hash(lang, item["line"], claim_status, ach_status, hasher, uts)
+            a = audits.get(h)
+            if not a:
+                unaudited[lang] += 1
+                issues.append(f"{lang}: line has no current brief audit (new, edited, or a cited record changed): "
+                              f"{item['line'][:90]}")
+            elif a.get("verdict") not in ("ENTAILED", "LIMITATION_OK"):
+                issues.append(f"{lang}: brief audit {a['brief_audit_id']} says {a['verdict']}: {a.get('issue', '')[:160]} "
+                              f"| {item['line'][:80]}")
     return issues
 
 
@@ -441,6 +572,7 @@ def write_md(report, path):
         why = "; ".join(c["reasons"])[:300] or "all checks passed"
         L.append(f"| {c['claim_id']} | {c['claim_type']} | **{c['status']}** | {why} |")
     L += ["", "## ACH", ""] + [f"- {k}: **{v['status']}** (pattern {v['pattern_claim_id']} is {v['pattern_status']})"
+                                + (f"; {'; '.join(v['reasons'])}" if v.get("reasons") else "")
                                 for k, v in report.get("ach", {}).items()]
     cov = report["coverage"]
     L += ["", f"## Coverage: {cov['status']}"] + [f"- {r}" for r in cov["limited_reasons"]]
@@ -471,7 +603,7 @@ def main():
     t = load(pdir, contract)
 
     schema_errors = []
-    for table in ("evidence", "claims", "hypotheses", "audits"):
+    for table in ("evidence", "claims", "hypotheses", "audits", "ach_audits", "brief_audits"):
         key = contract["tables"][table]["key"]
         seen = set()
         for r in t[table]:
@@ -485,9 +617,10 @@ def main():
         if missing:
             schema_errors.append(f"sources {r.get('source_id')}: missing {missing}")
 
-    claims = evaluate_claims(t, contract)
+    hasher = ContentHasher(t)
+    claims = evaluate_claims(t, contract, hasher)
     claim_status = {c["claim_id"]: c["status"] for c in claims}
-    ach = evaluate_ach(t, claim_status)
+    ach = evaluate_ach(t, claim_status, hasher)
     srcs = t["sources"]
     report = {
         "project_id": project["project_id"], "computed_at": now_iso(), "contract_version": contract["contract_version"],
@@ -505,7 +638,7 @@ def main():
         },
     }
     if args.brief_ru and args.brief_en:
-        report["brief_issues"] = check_briefs(args.brief_ru, args.brief_en, claim_status, ach, pdir)
+        report["brief_issues"] = check_briefs(args.brief_ru, args.brief_en, claim_status, ach, pdir, t, hasher, contract)
     (pdir / "gate_report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False, default=list), encoding="utf-8")
     write_md(report, pdir / "gate_report.md")
     print(f"schema errors: {len(schema_errors)}; claims: {report['corpus']['claim statuses']}; "

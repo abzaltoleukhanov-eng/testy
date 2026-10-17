@@ -1,0 +1,187 @@
+[
+ {
+  "ach_id": "ACH-0004",
+  "ach_hash": "e82b8f94bb2aab8f",
+  "question": "Why do would-be buyers turn away from Nordace after reading Reddit?",
+  "pattern_claim": {
+   "claim_id": "C-0038",
+   "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads."
+  },
+  "hypotheses": [
+   {
+    "h_id": "H1",
+    "statement": "Owner reports about product quality or failures are what turns them away.",
+    "supporting_ids": [
+     "E-0096",
+     "E-0041"
+    ],
+    "refuting_ids": [
+     "E-0026"
+    ],
+    "diagnosticity": "MEDIUM",
+    "missing_evidence": "Rejections that name a specific failure (zipper, strap) as the reason, outside the reply threads."
+   },
+   {
+    "h_id": "H2",
+    "statement": "The brand's public replies on Reddit (two different replies, in threads 18nj9sk and bqe83z) are what turns them away.",
+    "supporting_ids": [
+     "E-0019",
+     "E-0020",
+     "E-0026",
+     "E-0060",
+     "E-0062"
+    ],
+    "refuting_ids": [
+     "E-0071",
+     "E-0094"
+    ],
+    "diagnosticity": "HIGH",
+    "missing_evidence": "Reply-driven rejections outside the two threads where the replies were posted."
+   },
+   {
+    "h_id": "H3",
+    "statement": "General suspicion of ad-driven DTC brands (retargeting, resetting timers, paid-looking reviews) makes them look for reasons to stay away.",
+    "supporting_ids": [
+     "E-0040",
+     "E-0050",
+     "E-0002"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "LOW",
+    "missing_evidence": "Rejections that cite only the ad pattern and no reviews."
+   },
+   {
+    "h_id": "H4",
+    "statement": "Reports about customer service, refunds and returns (unanswered emails, refused returns, partial refunds) are what turns them away.",
+    "supporting_ids": [
+     "E-0002",
+     "E-0041"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "MEDIUM",
+    "missing_evidence": "Rejections that name the service or returns experience as the reason, separate from product failures."
+   }
+  ],
+  "preferred_h_id": "H2",
+  "preference_reason": "In this evidence the brand's public replies are the reason people state most explicitly: five comments across two threads, about two different replies, including an owner whose zippers broke who says the reply, not the failure, turned them away (E-0026). This is concentrated in two threads, so it says nothing about how often it happens elsewhere. Product-quality reports (H1) and service and returns reports (H4) also appear, but the comments that cite only generic negative reviews (E-0071, E-0094) cannot tell H1 and H4 apart; they do show rejections without any brand reply, so H2 is not the only driver. H3 explains why people go and check rather than what they decide.",
+  "causal_status": "NOT_ESTABLISHED",
+  "evidence": [
+   {
+    "evidence_id": "E-0002",
+    "source_id": "RD-1q2ymhh",
+    "url": "https://www.reddit.com/r/backpacks/comments/1q2ymhh/severe_issues_with_nordace_avoid_avoid_avoid/",
+    "platform": "reddit",
+    "thread_title": "Severe Issues with Nordace, Avoid Avoid Avoid.",
+    "source_text": "I slept on it, and have decided to share what has been my recent experience with Nordace.com\n First of all, they use misleading and unethical sales tactics. They create a false sense of urgency; I had a backpack added to my cart but was unsure about it so I was waiting to purchase it. They sent me an email expressing how urgent it was to put the order through because the backpacks will sell out quickly, creating a false sense of urgency which is an unethical sales tactic. They also employ timers on the top of their website saying their sale was going to run out at midnight, adding to this urgency. I made the purchase solely based on that false urgency, and thats where things got worse.\n They did not issue an official receipt or invoice when I ordered (I am required to submit a receipt/invoice for reimbursement purposes), they only gave me an order confirmation which will not suffice for that. I reached out asking for an official receipt or invoice and have gotten absolutely no reply.\n I went back to their site the next morning to see that there was not any urgency at all; the timer at the top of their page counting down the sale had reset, and they had everything on sale.\n This, along with a lack of required documentation and response led to a profound sense of betrayal and significantly undermined my trust in their company, and I refuse to do business with a company I cannot trust. So I put in a cancellation/ refund request as my order showed it was still processing on the order page. This put my order status to “on-hold support” to prevent it from shipping.\n 12 hours later, I got an email saying my order had been shipped. I was extremely upset. I reached out again expressing my frustration and concerns and asked for a prompt resolution to this, to which I have gotten absolutely no reply, nor have I gotten a reply to my earlier email regarding the invoice/ receipt. My order should NOT have been shipped after it was put on “on-hold support”.\n Also, days later, their timer has reset again, proving there was absolutely no urgency and they were just making it seem like there was. I find this completely unacceptable and unethical. I am in the process of escalating this matter with my financial provider, however they want me to try resolving it with Nordace first, but not a single soul has gotten back to me.\n I find it very frustrating and strange how their website can seem so professional and clean, and their customer service is so horrendous, like night and day. Also, after reading some of the reviews for their products it seems there is quite the discrepancy from their professional website and advertising, versus their actual products which are said to be of shoddy build and quality.\n I wish I’d never given Nordace my money and this has left me with a sour taste in my mouth. At this point I will be surprised if their customer service team gets back to me. Avoid this company if you can, it is truly not worth the headache.\n Edit: The package had issues with delivery and was sent back to their warehouse. I reached out about this and they offered to reship or refund. I asked for a refund and they gave it to me. I’m glad it is all resolved, however I don’t think I would want to do any further business with their company.",
+    "quote_span": "the timer at the top of their page counting down the sale had reset, and they had everything on sale."
+   },
+   {
+    "evidence_id": "E-0019",
+    "source_id": "RD-mlb1c5u",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mlb1c5u/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "Just wanted you to know the tone of this comment convinced my partner not to buy your product.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "Just wanted you to know the tone of this comment convinced my partner not to buy your product."
+   },
+   {
+    "evidence_id": "E-0020",
+    "source_id": "RD-mmcbov4",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mmcbov4/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass. I don’t want to deal with sarcastic customer service if I encounter an issue.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass. I don’t want to deal with sarcastic customer service if I encounter an issue."
+   },
+   {
+    "evidence_id": "E-0026",
+    "source_id": "RD-ofs3w6l",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/ofs3w6l/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "I've had an original siena since 2021 and it's been with me around the globe. The zippers on mine have just broken and was looking to replace it with the upgraded eco version, but I can't in good conscience pick one up after reading this comment. I'll be exploring other options.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "was looking to replace it with the upgraded eco version, but I can't in good conscience pick one up after reading this comment. I'll be exploring other options."
+   },
+   {
+    "evidence_id": "E-0040",
+    "source_id": "RD-k771gp5",
+    "url": "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/k771gp5/",
+    "platform": "reddit",
+    "thread_title": "Don't buy backpacks from Nordace",
+    "source_text": "Thank you and OP for this. I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere) and how all the reviews were overwhelmingly positive …",
+    "parent_text": "YouTube is really not a good resource to find product reviews. I saw a lot of people post reviews of this backpack, all positive. One funny thing is the backpack was a new product in early 2021, but one uploader said she used this backpack for almost 2 years... Then I found they also post discount information on the description. I guess this means the merchandise paid YouTube uploaders to get their positive feedbacks...",
+    "quote_span": "I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere) and how all the reviews were overwhelmingly positive"
+   },
+   {
+    "evidence_id": "E-0041",
+    "source_id": "RD-ktf7ru6",
+    "url": "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/ktf7ru6/",
+    "platform": "reddit",
+    "thread_title": "Don't buy backpacks from Nordace",
+    "source_text": "Thank goodness i found this was about to buy one just because of the aesthetics 🙈 and was looking for reviews to see if quality is any good and the bunch of fake sounding video reviews are real or not hahaha 🤣",
+    "parent_text": "I purchased a backpack and received in 3 weeks. I found the quality is so so so bad before I use it, the lable is still on the backpack and I don't even try it on. So I contact customer service to return it, . No phone number provided only an email address. After 5 days' waiting, they responded that either give me 30% money back or I pay for the return cost. I chose to return since nobody need a trash. They said make sure they are in original plastic bag and box, I did. The return address is a port in Commerce, CA. I used UPS to send it out and cost me $16USD. Yesterday, UPS provided an update said that \"receiver refused to accept the return with no reason!\" I called the number they provided in their return email, said it is no longer a valid phone number and no new number added!!! Sent an email and no reply at all!\n BE CAREFUL, DON'T SPEND A CENT ON THESE HONG KONG SELLER!",
+    "quote_span": "Thank goodness i found this was about to buy one just because of the aesthetics"
+   },
+   {
+    "evidence_id": "E-0050",
+    "source_id": "RD-f72m9cj",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/f72m9cj/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "(Late I know.)\n Thanks for this - I was considering buying one after seeing an ad, but it seemed a little... suspicious. Cheers for the detailed write-up! Confirmed my suspicions that it should be possible to get something better.",
+    "parent_text": "Hi! So I got this on a whim because I’m a traveling stage manager and commute a lot so this seemed like a good idea. Foolishly I didn’t do much looking into it but it got here a few days ago (I’m in the east coast US) and I ordered it on 9/17. I also got the packing cube and toiletry bag with it. \n I will say my first impression was positive, it looks spot on to the advertised images, however I agree that it definitely has some flaws. The material and zippers overall feel very cheap especially for the cost they’re marketed at. It’s advertised as having high quality zippers and genuine leather but the leather on the bag, if it is leather, is the lowest quality I’ve ever seen...\n Some plus sides: I find it really comfortable. I loaded it up with my daily pack and some other stuff and it was pretty comfortable and easy to take on and off. It holds a TON of stuff and the pockets and things throughout are well made (despite the cheap material) I particularly like the microfiber/felt pocket in the front that perfectly fits my phone. There are also these clips on the adjustable part of the strap that holds the excess to itself. I like that a lot and I haven’t seen it before. The handle is very comfortable and has knit underside and distributes the weight of the bag pretty well.\n As for traveling, I don’t think it’s weatherproof, especially with the zippers, they feel like they’d really suck in the rain which makes me incredibly nervous. There are some holes as well at the bottom of the side zippers in the front pockets. Although the fabric does hang over those zippers. There is nothing that protects the main pocket or laptop pocket zippers. For TSA and security there is easy access to all electronics and the ability to take whatever charger you’re using out. \n On the upside I LOVE the packing cube and toiletry bag. They feel like much higher quality zippers, though they aren’t metal, they also both hold everything I would need. I was able to fit a large towel in the packing cube and compress it. As for the toiletry bag, I fit everything I needed and then some. It also stands up on its own when opened which is great as well as having the little hanging hook. \n In summary, I’m going to try and make the best of it because I didn’t do enough research and returning this thing would be a bitch and a half, also it’s important to note if you return it, you pay shipping and a 15% restocking fee... so for me, it’s not worth all that hassle to still pay them like $30 or so at the end of it all. It could definitely be a worse bag, but I feel duped for paying $99 for it. It would definitely sit in solidly in the Hot Topic/Spencer’s backpack arena for a MAX of $45 \n Thanks for coming to my TEDtalk I hope this will help one of y’all.",
+    "quote_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious."
+   },
+   {
+    "evidence_id": "E-0060",
+    "source_id": "RD-hkvs6ek",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/hkvs6ek/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me. I saw the same at Peak Design, and they handled it in a much much elegant and intelkigent manner. I'm just afraid what happens when I have a customer complaint...",
+    "parent_text": "This Chinese company stole our design and used our product's pictures and you call us scammer? Maybe you should stop spreading counterfeit products from shady Chinese sellers! We are already contacting lawyer to shut them down for stealing our design and using our product photos. All the products on our store are 100% designed by us and we own the full rights to them.",
+    "quote_span": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me. I saw the same at Peak Design, and they handled it in a much much elegant and intelkigent manner."
+   },
+   {
+    "evidence_id": "E-0062",
+    "source_id": "RD-kbkt4kc",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/kbkt4kc/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "ALL of these comments on this thread and you only reply with this? Super unprofessional. I was going to buy a set but I'm not now! You should have addressed all of the concerns in this thread....",
+    "quote_span": "I was going to buy a set but I'm not now! You should have addressed all of the concerns in this thread...."
+   },
+   {
+    "evidence_id": "E-0071",
+    "source_id": "RD-ijr95qw",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/ijr95qw/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "after reading so many negative reviews I have decided against buying this bag",
+    "parent_text": "I would advise that would be purchasers online be very wary of the manner that this company does business in. I ordered two items then saw online that the items had been upgraded and replaced by a newer model. When I contacted Nordace to upgrade my order and let me pay the differential I was informed to order the new items AND PAY AGAIN and then notify them of the new order so that they can begin to process a refund. Their responses to my query was underwhelming and they really do not have a customer services dept worth mentioning. I have instructed them to cancel my order and refund me and there has been a deafening silence from them...bad form Nordic....beware other online clients...shop elsewhere where you will stand a chance of being refunded",
+    "quote_span": "after reading so many negative reviews I have decided against buying this bag"
+   },
+   {
+    "evidence_id": "E-0094",
+    "source_id": "RD-1nsv54d",
+    "url": "https://www.reddit.com/r/phRecommendation/comments/1nsv54d/tote_bags_similar_to_nordace_siena_tote/",
+    "platform": "reddit",
+    "thread_title": "Tote bags similar to Nordace Siena Tote",
+    "source_text": "Hello! Need recommendations on tote bags similar to the Nordace Siena Tote bag. Qualities that I liked:\n many compartments\n fits a 14\" laptop (also has a dedicated secure compartment)\n top-zip\n water resistant\n its pretty huhu\n Budget is less than 10k. I was planning to buy the Nordace tote, however, reviews on the brand weren't that great. Thanks!",
+    "quote_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great."
+   },
+   {
+    "evidence_id": "E-0096",
+    "source_id": "RD-1lfsxia",
+    "url": "https://www.reddit.com/r/backpacks/comments/1lfsxia/betterquality_alternative_to_nordace_sienna_for/",
+    "platform": "reddit",
+    "thread_title": "Better-quality alternative to Nordace Sienna for carry-on?",
+    "source_text": "I like the look and layout of the Nordace Seinna and similar but apparently they're not great quality. Does anyone have other recommendations? \n Use: - air travel carry-on when I also have a stowed bag . Would be used for snacks, meds, water bottle, iPad, a few bits of clothing, a small blanket, and random bits and bobs needed for flight (headphones, eye mask, lip balm, tissues etc) - roadtrip day bag to just sit in the car with me, carrying a lot of the same basic stuff as in-flight - city travel with a few essentials for a spending the day exploring a new city. So fairly light with comfy straps but doesn't need to be hiking-appropriate\n Needs - external bottle holder - one big main pocket (not divided in half) and 1-2 external pockets for easy access to a few bits - main pocket easy to get into when stowed under plane seat - zipper main pocket . Ideal if it zips all the way around so that most of the front wall can be folded back - comfy straps - reasonably light to not waste airline baggage weight\n Wants - some small inner pocket/s for passport etc is ideal - an internal or external laptop/iPad sleeve ideal but not essential - water-resistant ideal but not essential \n Look - ideally fairly basic and sleek, fine if it's a bit feminine - not tactical or sporty \n Price - ideally under $200 US",
+    "quote_span": "I like the look and layout of the Nordace Seinna and similar but apparently they're not great quality."
+   }
+  ]
+ }
+]

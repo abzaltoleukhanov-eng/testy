@@ -1,0 +1,567 @@
+{
+ "records": {
+  "C-0024": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Some shoppers check how heavy a bag is when empty, and several reject or regret bags that are heavy before anything is put in them, including leather and structured bags.",
+   "scope_limits": "Revision of C-0005. Covers totes and backpacks; others say the contents, not the bag, are the problem.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0020": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+   "scope_limits": "Revision of C-0001 using only laptop-confirmed evidence. Reddit commenters who chose to post; not a share of tote owners.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0051": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PRODUCT_FACT",
+   "claim_class": null,
+   "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+   "scope_limits": "Revision of C-0048: manufacturer's listed figures from a user screenshot on 2026-10-17; not measured.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0052": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PRODUCT_FACT",
+   "claim_class": null,
+   "text": "The product copy for the Siena Lévant Tote Bag lists a 14-inch EVA laptop sleeve, a detachable lining, a magnetic fleece pocket, a hidden anti-theft pocket, a luggage strap and an adjustable strap.",
+   "scope_limits": "Revision of C-0049 using only text that names the product; listed features, not tested.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0062": {
+   "kind": "CLAIM",
+   "status": "HYPOTHESIS_UNTESTED",
+   "claim_type": "HYPOTHESIS",
+   "claim_class": "FUTURE_HYPOTHESIS",
+   "text": "If weighing confirms the Lévant's listed 1 kg empty weight, a test could check whether people who carry a laptop in a tote and say it gets too heavy or painful would see the Lévant, which has a 14-inch laptop sleeve, as a lighter option than their current bag; whether it is lighter than their bag and comfortable when loaded is untested.",
+   "scope_limits": "C-0061 narrowed after audit A-0061: drops the unestablished premise that people rejected work totes specifically for weight; the comparison with the reader's current bag is part of what is tested.",
+   "hypothesis_label": "analyst hypothesis: creative opportunity, untested",
+   "premises": [
+    {
+     "claim_id": "C-0020",
+     "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0051",
+     "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0052",
+     "text": "The product copy for the Siena Lévant Tote Bag lists a 14-inch EVA laptop sleeve, a detachable lining, a magnetic fleece pocket, a hidden anti-theft pocket, a luggage strap and an adjustable strap.",
+     "status": "FACT_APPROVED"
+    }
+   ]
+  },
+  "C-0023": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
+   "scope_limits": "Revision of C-0004. Workarounds described by commenters; motives differ; not a measure of how common.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0058": {
+   "kind": "CLAIM",
+   "status": "HYPOTHESIS_UNTESTED",
+   "claim_type": "HYPOTHESIS",
+   "claim_class": "FUTURE_HYPOTHESIS",
+   "text": "It could be tested whether the Lévant appeals for light-load days, when some people already move to a smaller bag; whether it suits that role is untested.",
+   "scope_limits": "Replaces C-0054 with its conditions made explicit.",
+   "hypothesis_label": "analyst hypothesis: audience segment, untested",
+   "premises": [
+    {
+     "claim_id": "C-0023",
+     "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
+     "status": "FACT_APPROVED"
+    }
+   ]
+  },
+  "C-0012": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PERSONAL_EXPERIENCE",
+   "claim_class": null,
+   "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+   "scope_limits": "One person; the tote is named only as 'the Nordace tote' (Siena tote thread), not the Lévant.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0015": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
+   "scope_limits": "Stated reasoning; individual comments across brands.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0038": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PURCHASE_DRIVER",
+   "claim_class": null,
+   "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
+   "scope_limits": "Revision of C-0029.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0046": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PRODUCT_FACT",
+   "claim_class": null,
+   "text": "The user states that there are no reviews and that the product is new.",
+   "scope_limits": "Revision of C-0042: the message replied to a question about Lévant Tote reviews, but the message itself does not name the product.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0059": {
+   "kind": "CLAIM",
+   "status": "HYPOTHESIS_UNTESTED",
+   "claim_type": "HYPOTHESIS",
+   "claim_class": "CAUSAL_HYPOTHESIS",
+   "text": "If cold-traffic shoppers look Nordace up on Reddit before buying (not yet measured), the negative discussion that led some readers to hold off could cost conversions; showing warranty terms and owner reports, if they are available for the Lévant, could be tested as a counter.",
+   "scope_limits": "Replaces C-0055 with its conditions made explicit.",
+   "hypothesis_label": "analyst hypothesis: conversion risk, untested",
+   "premises": [
+    {
+     "claim_id": "C-0038",
+     "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0012",
+     "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0015",
+     "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0046",
+     "text": "The user states that there are no reviews and that the product is new.",
+     "status": "FACT_APPROVED"
+    }
+   ]
+  },
+  "C-0035": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while a few owners report vegan bags that held up, one for about four and a half years without cracking or peeling.",
+   "scope_limits": "Revision of C-0026. Beliefs plus individual owner reports; one source is about jackets; nothing about the Lévant material.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0050": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PRODUCT_FACT",
+   "claim_class": null,
+   "text": "The product page lists the body material as micro-fiber vegan leather, with water-resistant fabric and metal protective bottom studs.",
+   "scope_limits": "Listed materials from a user screenshot; durability not established.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0060": {
+   "kind": "CLAIM",
+   "status": "HYPOTHESIS_UNTESTED",
+   "claim_type": "HYPOTHESIS",
+   "claim_class": "FUTURE_HYPOTHESIS",
+   "text": "If owner reports of microfiber vegan-leather bags lasting years can be found and shown, a test could check whether they weaken the peeling worry for a tote whose body is listed as micro-fiber vegan leather.",
+   "scope_limits": "Replaces C-0056 with its conditions made explicit.",
+   "hypothesis_label": "analyst hypothesis: objection handling, untested",
+   "premises": [
+    {
+     "claim_id": "C-0035",
+     "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while a few owners report vegan bags that held up, one for about four and a half years without cracking or peeling.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0050",
+     "text": "The product page lists the body material as micro-fiber vegan leather, with water-resistant fabric and metal protective bottom studs.",
+     "status": "FACT_APPROVED"
+    }
+   ]
+  },
+  "https://nordace.com/en/product/siena-levant-tote-bag/": {
+   "kind": "SOURCE",
+   "platform": "official",
+   "text": "NEW | Home / Bags / Totes | Siena Lévant Tote Bag | £159.00 | Color : [two colour swatches: black with tan trim, cream with tan trim]"
+  }
+ },
+ "lines": [
+  {
+   "line_hash": "180ff2b82a1dcdef",
+   "lang": "RU",
+   "section": "Продукт: что известно и что нет",
+   "previous_line": "- наличие на время теста;",
+   "line": "- цена в US ($188 только из поисковой выдачи).",
+   "cites": []
+  },
+  {
+   "line_hash": "e07f5b518cefca3e",
+   "lang": "RU",
+   "section": "Продукт: что известно и что нет",
+   "previous_line": "- цена в US ($188 только из поисковой выдачи).",
+   "line": "- **Сравнение веса — гипотеза, а не преимущество.** Указанный 1 кг меньше, чем Beis 2,75 lb ≈ 1,25 кг и Cuyana Forma 3,6 lb ≈ 1,6 кг [C-0024]. Но это гипотеза по трём причинам:",
+   "cites": [
+    "C-0024"
+   ]
+  },
+  {
+   "line_hash": "6a2278fa0572ba52",
+   "lang": "RU",
+   "section": "Продукт: что известно и что нет",
+   "previous_line": "- **Сравнение веса — гипотеза, а не преимущество.** Указанный 1 кг меньше, чем Beis 2,75 lb ≈ 1,25 кг и Cuyana Forma 3,6 lb ≈ 1,6 кг [C-0024]. Но это гипотеза по трём причинам:",
+   "line": "- цифры конкурентов — слова комментаторов, а не измерения;",
+   "cites": []
+  },
+  {
+   "line_hash": "92612c3c2b3aa71f",
+   "lang": "RU",
+   "section": "Продукт: что известно и что нет",
+   "previous_line": "- цифры конкурентов — слова комментаторов, а не измерения;",
+   "line": "- честное сравнение требует взвесить пустые сумки одинаковым способом;",
+   "cites": []
+  },
+  {
+   "line_hash": "d7ae9cf18239e426",
+   "lang": "RU",
+   "section": "Продукт: что известно и что нет",
+   "previous_line": "- честное сравнение требует взвесить пустые сумки одинаковым способом;",
+   "line": "- меньший собственный вес не гарантирует, что ноутбук нести удобнее.",
+   "cites": []
+  },
+  {
+   "line_hash": "772cc911d2706439",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- меньший собственный вес не гарантирует, что ноутбук нести удобнее.",
+   "line": "1. **«Тоут, который не надо менять на рюкзак»** — гипотеза [C-0062]. Опора: [C-0020], [C-0051], [C-0052]; если взвешивание подтвердит 1 кг.",
+   "cites": [
+    "C-0020",
+    "C-0051",
+    "C-0052",
+    "C-0062"
+   ]
+  },
+  {
+   "line_hash": "b25b543d5efd2fcd",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "1. **«Тоут, который не надо менять на рюкзак»** — гипотеза [C-0062]. Опора: [C-0020], [C-0051], [C-0052]; если взвешивание подтвердит 1 кг.",
+   "line": "- Сдвиг убеждения (гипотеза [C-0062]): «красивый тоут = больные плечи» → «этот тоут, возможно, легче моего» (сравнение не проверено).",
+   "cites": [
+    "C-0062"
+   ]
+  },
+  {
+   "line_hash": "f0c43c916f0546f8",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Сдвиг убеждения (гипотеза [C-0062]): «красивый тоут = больные плечи» → «этот тоут, возможно, легче моего» (сравнение не проверено).",
+   "line": "- Что можно показать в кадре (гипотеза [C-0062]): взвешивание пустой сумки, плечевой ремень.",
+   "cites": [
+    "C-0062"
+   ]
+  },
+  {
+   "line_hash": "21af99a6de9b529d",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Что можно показать в кадре (гипотеза [C-0062]): взвешивание пустой сумки, плечевой ремень.",
+   "line": "- Осведомлённость сегмента (гипотеза [C-0062]): предположение: проблему знают, бренд не знают; не проверено.",
+   "cites": [
+    "C-0062"
+   ]
+  },
+  {
+   "line_hash": "4f06f1f7e9823600",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Осведомлённость сегмента (гипотеза [C-0062]): предположение: проблему знают, бренд не знают; не проверено.",
+   "line": "- Риск (гипотеза [C-0062], вес [C-0051]): 1 кг — цифра производителя; меньший вес пустой сумки не гарантирует удобства с ноутбуком.",
+   "cites": [
+    "C-0051",
+    "C-0062"
+   ]
+  },
+  {
+   "line_hash": "886e39eb1ff83f43",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Риск (гипотеза [C-0062], вес [C-0051]): 1 кг — цифра производителя; меньший вес пустой сумки не гарантирует удобства с ноутбуком.",
+   "line": "2. **«Сумка для лёгких дней»** — гипотеза [C-0058]. Опора: [C-0023], [C-0020].",
+   "cites": [
+    "C-0020",
+    "C-0023",
+    "C-0058"
+   ]
+  },
+  {
+   "line_hash": "89a9e7b220237fcb",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "2. **«Сумка для лёгких дней»** — гипотеза [C-0058]. Опора: [C-0023], [C-0020].",
+   "line": "- Аудитория (гипотеза [C-0058]): дни, когда люди и так берут сумку поменьше, а не ежедневная полная ноша.",
+   "cites": [
+    "C-0058"
+   ]
+  },
+  {
+   "line_hash": "5697cf5871073bff",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Аудитория (гипотеза [C-0058]): дни, когда люди и так берут сумку поменьше, а не ежедневная полная ноша.",
+   "line": "- Риск (гипотеза [C-0058]): сужает аудиторию.",
+   "cites": [
+    "C-0058"
+   ]
+  },
+  {
+   "line_hash": "2e6486521f3de4ef",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Риск (гипотеза [C-0058]): сужает аудиторию.",
+   "line": "3. **«Опередить проверку на Reddit»** — гипотеза [C-0059]. Опора: [C-0038], [C-0012], [C-0015], [C-0046].",
+   "cites": [
+    "C-0012",
+    "C-0015",
+    "C-0038",
+    "C-0046",
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "cf1e2d9d76a6e5b8",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "3. **«Опередить проверку на Reddit»** — гипотеза [C-0059]. Опора: [C-0038], [C-0012], [C-0015], [C-0046].",
+   "line": "- Что можно сделать (гипотеза [C-0059]): показать условия гарантии, отзывы владельцев со сроком службы, честный вес.",
+   "cites": [
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "2b136be215f0c75a",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Что можно сделать (гипотеза [C-0059]): показать условия гарантии, отзывы владельцев со сроком службы, честный вес.",
+   "line": "- Риск (гипотеза [C-0059]): условия гарантии Lévant не подтверждены.",
+   "cites": [
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "8e6be58a9d734b38",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Риск (гипотеза [C-0059]): условия гарантии Lévant не подтверждены.",
+   "line": "- Это не идея ролика, а условие для холодного трафика (гипотеза [C-0059]).",
+   "cites": [
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "a2c78e4d3d80e0e8",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Это не идея ролика, а условие для холодного трафика (гипотеза [C-0059]).",
+   "line": "4. **«Веганская кожа, которая не облезла»** — гипотеза [C-0060]. Опора: [C-0035], [C-0050].",
+   "cites": [
+    "C-0035",
+    "C-0050",
+    "C-0060"
+   ]
+  },
+  {
+   "line_hash": "306601827ab4ce46",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "4. **«Веганская кожа, которая не облезла»** — гипотеза [C-0060]. Опора: [C-0035], [C-0050].",
+   "line": "- Что показать (гипотеза [C-0060]): конкретные сроки службы у владельцев сумок из микрофибры.",
+   "cites": [
+    "C-0060"
+   ]
+  },
+  {
+   "line_hash": "c038fae9639ada21",
+   "lang": "RU",
+   "section": "Возможности для креатива (все — гипотезы, проверять тестом)",
+   "previous_line": "- Что показать (гипотеза [C-0060]): конкретные сроки службы у владельцев сумок из микрофибры.",
+   "line": "- Риск (гипотеза [C-0060]): отзывы о других брендах, не о Lévant.",
+   "cites": [
+    "C-0060"
+   ]
+  },
+  {
+   "line_hash": "a248622bffe66884",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- Риск (гипотеза [C-0060]): отзывы о других брендах, не о Lévant.",
+   "line": "- **По словам пользователя, отзывов на Lévant нет [C-0046].** Всё, что известно о реальном использовании, сказано о других сумках и о рюкзаках Nordace.",
+   "cites": [
+    "C-0046"
+   ]
+  },
+  {
+   "line_hash": "6c01f67535a95515",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- **По словам пользователя, отзывов на Lévant нет [C-0046].** Всё, что известно о реальном использовании, сказано о других сумках и о рюкзаках Nordace.",
+   "line": "- **Характеристики указаны производителем, а не измерены.** Гарантия и наличие не подтверждены. Неактивная кнопка BUY NOW на одном скриншоте ничего не доказывает о наличии.",
+   "cites": []
+  },
+  {
+   "line_hash": "35ae41a99c64ab37",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- **Характеристики указаны производителем, а не измерены.** Гарантия и наличие не подтверждены. Неактивная кнопка BUY NOW на одном скриншоте ничего не доказывает о наличии.",
+   "line": "- **Не прошли аудит за три раунда:**",
+   "cites": []
+  },
+  {
+   "line_hash": "2e39acfec85159f8",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- **Не прошли аудит за три раунда:**",
+   "line": "- утверждение о поломках рюкзаков Nordace (C-0037);",
+   "cites": []
+  },
+  {
+   "line_hash": "28654964dc0903c8",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- утверждение о поломках рюкзаков Nordace (C-0037);",
+   "line": "- утверждение «боль → переход на рюкзак как причина покупки» (C-0032);",
+   "cites": []
+  },
+  {
+   "line_hash": "0b218e404ec06e55",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- утверждение «боль → переход на рюкзак как причина покупки» (C-0032);",
+   "line": "- утверждение «рюкзак воспринимается как потеря вида» (C-0033).",
+   "cites": []
+  },
+  {
+   "line_hash": "c6a1f911ce98740e",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- утверждение «рюкзак воспринимается как потеря вида» (C-0033).",
+   "line": "- Гипотеза C-0018 заблокирована: она выдавала за факт, что покупатели «в основном найдут» жалобы на рюкзаки.",
+   "cites": []
+  },
+  {
+   "line_hash": "b0cd53c7adf69851",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- Гипотеза C-0018 заблокирована: она выдавала за факт, что покупатели «в основном найдут» жалобы на рюкзаки.",
+   "line": "- Гипотезы C-0016, C-0017, C-0044 и C-0047 переписаны с явными посылками (контракт 0.4). Первые версии C-0053–C-0057 и C-0061 аудит оставил в статусе RESEARCH_QUESTION (неодобренная или непокрытая посылка); в брифе используются исправленные C-0058, C-0059, C-0060, C-0062.",
+   "cites": []
+  },
+  {
+   "line_hash": "efbdf8438ac6cd71",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- Гипотезы C-0016, C-0017, C-0044 и C-0047 переписаны с явными посылками (контракт 0.4). Первые версии C-0053–C-0057 и C-0061 аудит оставил в статусе RESEARCH_QUESTION (неодобренная или непокрытая посылка); в брифе используются исправленные C-0058, C-0059, C-0060, C-0062.",
+   "line": "- Разборы ACH-0002 и ACH-0003 аудит отклонил (UNSOUND): в них не было объяснения через поддержку и возвраты, а роль отзывов о поломках была преувеличена. Вместо них используется исправленный ACH-0004. Разбор ACH-0001 переписан в ACH-0005, но остаётся предварительным.",
+   "cites": []
+  },
+  {
+   "line_hash": "7ab8107a5ad83685",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- Разборы ACH-0002 и ACH-0003 аудит отклонил (UNSOUND): в них не было объяснения через поддержку и возвраты, а роль отзывов о поломках была преувеличена. Вместо них используется исправленный ACH-0004. Разбор ACH-0001 переписан в ACH-0005, но остаётся предварительным.",
+   "line": "Они не используются как выводы, на них опираться нельзя.",
+   "cites": []
+  },
+  {
+   "line_hash": "c30a3c0d8cb8eddc",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "Они не используются как выводы, на них опираться нельзя.",
+   "line": "- **12 скачанных тредов не разобраны**, в том числе про конкурентов Dagne Dover и Cuyana, ремень для чемодана, органайзеры.",
+   "cites": []
+  },
+  {
+   "line_hash": "65fb32d27702747c",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- **12 скачанных тредов не разобраны**, в том числе про конкурентов Dagne Dover и Cuyana, ремень для чемодана, органайзеры.",
+   "line": "- **Вторая волна:**",
+   "cites": []
+  },
+  {
+   "line_hash": "42e33bdd18f334c6",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- **Вторая волна:**",
+   "line": "- нейтральные и позитивные запросы в ветки B03–B05;",
+   "cites": []
+  },
+  {
+   "line_hash": "0e82b09fc3df64f0",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- нейтральные и позитивные запросы в ветки B03–B05;",
+   "line": "- UK-запросы с другими формулировками;",
+   "cites": []
+  },
+  {
+   "line_hash": "6458538ade234af8",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- UK-запросы с другими формулировками;",
+   "line": "- отзывы конкурентов на тоуты 14–15\";",
+   "cites": []
+  },
+  {
+   "line_hash": "9cb9a48ffe923d1a",
+   "lang": "RU",
+   "section": "Пробелы и следующий шаг",
+   "previous_line": "- отзывы конкурентов на тоуты 14–15\";",
+   "line": "- исследование видеоформатов. Из облака видео недоступно, нужны скриншоты или записи рекламы из ленты.",
+   "cites": []
+  },
+  {
+   "line_hash": "ec09bf8cea2a9a6b",
+   "lang": "RU",
+   "section": "Источники",
+   "previous_line": "- исследование видеоформатов. Из облака видео недоступно, нужны скриншоты или записи рекламы из ленты.",
+   "line": "Полный журнал: `research/LEVANT-001/` (`queries.jsonl`, `evidence.jsonl`, `claims.jsonl`, `audits.jsonl`, `gate_report.md`).",
+   "cites": []
+  },
+  {
+   "line_hash": "827baf2469ad358e",
+   "lang": "EN",
+   "section": "Siena Lévant Tote: what people say about work totes and about Nordace",
+   "previous_line": "",
+   "line": "**Product:** Nordace Siena Lévant Tote Bag. https://nordace.com/en/product/siena-levant-tote-bag/",
+   "cites": [
+    "https://nordace.com/en/product/siena-levant-tote-bag/"
+   ]
+  }
+ ]
+}

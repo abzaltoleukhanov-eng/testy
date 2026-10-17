@@ -1,0 +1,617 @@
+[
+ {
+  "ach_id": "ACH-0001",
+  "ach_hash": "d08f566ef2bb3509",
+  "question": "Why do laptop carriers give up shoulder totes for backpacks?",
+  "pattern_claim": {
+   "claim_id": "C-0002",
+   "text": "Pain or heaviness from carrying a laptop in a shoulder bag is a reason some people give for switching to a backpack."
+  },
+  "hypotheses": [
+   {
+    "h_id": "H1",
+    "statement": "The total load (laptop plus daily items) on one shoulder is the cause, whatever the bag is made of.",
+    "supporting_ids": [
+     "E-0121",
+     "E-0288",
+     "E-0377",
+     "E-0399",
+     "E-0378"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "HIGH",
+    "missing_evidence": "Cases where a light tote with the same laptop load is comfortable for a full day."
+   },
+   {
+    "h_id": "H2",
+    "statement": "The bag's own weight and structure (leather, rigid build) is the main cause.",
+    "supporting_ids": [
+     "E-0105",
+     "E-0147",
+     "E-0373",
+     "E-0394",
+     "E-0293"
+    ],
+    "refuting_ids": [
+     "E-0378",
+     "E-0399"
+    ],
+    "diagnosticity": "MEDIUM",
+    "missing_evidence": "Switchers who name the empty bag weight, not the contents, as the trigger."
+   },
+   {
+    "h_id": "H3",
+    "statement": "Commute mode decides it: walking and transit commutes make a shoulder tote untenable, short car commutes do not.",
+    "supporting_ids": [
+     "E-0230",
+     "E-0276",
+     "E-0284",
+     "E-0309",
+     "E-0348"
+    ],
+    "refuting_ids": [
+     "E-0125"
+    ],
+    "diagnosticity": "HIGH",
+    "missing_evidence": "Car commuters who still switched because of pain, and transit commuters happy with totes."
+   },
+   {
+    "h_id": "H4",
+    "statement": "Growing social acceptance of adult backpacks, not pain, drives the switch.",
+    "supporting_ids": [
+     "E-0278"
+    ],
+    "refuting_ids": [
+     "E-0157",
+     "E-0290",
+     "E-0351"
+    ],
+    "diagnosticity": "MEDIUM",
+    "missing_evidence": "Switch stories that cite peers or fashion first and comfort second."
+   }
+  ],
+  "preferred_h_id": "H1",
+  "preference_reason": "Load on one shoulder is named in switch stories across five threads, and two commenters explicitly say the contents, not the bag, are heavy, which weakens H2 as the main cause. H3 looks like an amplifier rather than a rival: the walking and transit stories are the fastest switches, and one driver says she would switch only if she used transit. H4 is refuted as the main driver by switchers who still describe the backpack as a loss of looks. H1 and H3 together fit best; H2 remains a secondary factor for heavy structured bags.",
+  "causal_status": "NOT_ESTABLISHED",
+  "evidence": [
+   {
+    "evidence_id": "E-0105",
+    "source_id": "RD-1wgeawi",
+    "url": "https://www.reddit.com/r/handbags/comments/1wgeawi/looking_for_a_laptop_bag_that_doesnt_scream_work/",
+    "platform": "reddit",
+    "thread_title": "Looking for a laptop bag that doesn't scream work",
+    "source_text": "I need a bag that I can carry my 14 inch MacBook pro in and also use occasionally. My son has brain cancer and the bag will be going with me during treatment days. \n I had to stop working due to my health (i also had breast cancer and some other issues) and his. There's too many appointments to manage. So I don't want a work bag. It's kind of a sore spot that that part of my life is likely over. I write, always have, and my husband encourages me to focus on that instead so I don't lose everything I am as a person to cancers.\n The bag should be under 700. It's going to get knocked around a lot in a chaotic environment and I don't want to freak out about it getting messed up by buying something terribly expensive. I bought this pretty madewell suede but when it's fully loaded I have too much pain. I think it gives you an idea of what I'm looking for. \n I need to carry a water bottle (l currently use theLARS NYSØM Stainless Steel Insulated Water Bottle 25oz Metal Water Bottle because it's pretty), phone, battery pack, a b6 and an a5 sized notebook, pens, and a wallet. I love a purse with built in organization. \n Things I looked at and rejected:\n Cuyana forma. The fact that it can transform and expand when I need it is a huge plus. However, it's entirely too heavy. (3.6 lbs empty)\n Kaai midi pyramid in green. I love the design but reads too business. \n Songmont large drippy tote. My brain thinks suede is fine at 200, but not above 500 for this use case. \n Laptop backpack. I have one, I like it for travel but it's not a me 2 or 3 times every week type of bag. \n I don't particularly like heavy labeled bags. Don't care if it's IYKYK coded. I love things with some softness or visual/artistic interest. Like the le tanneur emile double flap is one I'm considering. It reminds me of an old folio which is kind of fun. \n I've also considered a messenger bag (songmont, coach?) i would prefer to avoid black since that was my standard office wear. I gravitate to richer colors (petrol blue, eggplant, olive).\n Any suggestions ? Thank you so much",
+    "quote_span": "However, it's entirely too heavy. (3.6 lbs empty)"
+   },
+   {
+    "evidence_id": "E-0121",
+    "source_id": "RD-1wwpn82",
+    "url": "https://www.reddit.com/r/handbags/comments/1wwpn82/new_tote_for_work_have_reviewed_every_thread_on/",
+    "platform": "reddit",
+    "thread_title": "New tote for work - have reviewed every thread on here . . .",
+    "source_text": "so the quest- looking for a new work tote or briefcase. Years ago before I carried a laptop everyday I used a leather bag for work and court. just too heavy with lap top. Have been using a Tumi - love the pockets but getting worn after about 5 years and bored of it. I have a smallish MZ Wallace that I use when I don’t need to carry a lot but I am afraid I am overburdening it. I need to be able to carry a laptop, a few files, legal pads, laptop charger, makeup bag, pens, note pad etc. I usually use a separate smallish handbag. I have looked at all the usual contenders and none seem to fit my wants:\n sturdy shoulder straps and ability to use a crossbody\n some type of closure\n pockets or separation for organization\n not too heavy when empty. I commute by car, but stairs, walking, my shoulders etc.\n nice looking, professional and not too casual, but does not need to be formal.\n well-made, sturdy,\n under $700 ?\n fit my chunky 14” lap top and folders usually letter size, several legal pads, other crap.\n bonus if it makes me happy when I look at it.\n thanks all.",
+    "quote_span": "Years ago before I carried a laptop everyday I used a leather bag for work and court. just too heavy with lap top."
+   },
+   {
+    "evidence_id": "E-0125",
+    "source_id": "RD-1wwpn82",
+    "url": "https://www.reddit.com/r/handbags/comments/1wwpn82/new_tote_for_work_have_reviewed_every_thread_on/",
+    "platform": "reddit",
+    "thread_title": "New tote for work - have reviewed every thread on here . . .",
+    "source_text": "so the quest- looking for a new work tote or briefcase. Years ago before I carried a laptop everyday I used a leather bag for work and court. just too heavy with lap top. Have been using a Tumi - love the pockets but getting worn after about 5 years and bored of it. I have a smallish MZ Wallace that I use when I don’t need to carry a lot but I am afraid I am overburdening it. I need to be able to carry a laptop, a few files, legal pads, laptop charger, makeup bag, pens, note pad etc. I usually use a separate smallish handbag. I have looked at all the usual contenders and none seem to fit my wants:\n sturdy shoulder straps and ability to use a crossbody\n some type of closure\n pockets or separation for organization\n not too heavy when empty. I commute by car, but stairs, walking, my shoulders etc.\n nice looking, professional and not too casual, but does not need to be formal.\n well-made, sturdy,\n under $700 ?\n fit my chunky 14” lap top and folders usually letter size, several legal pads, other crap.\n bonus if it makes me happy when I look at it.\n thanks all.",
+    "quote_span": "not too heavy when empty. I commute by car, but stairs, walking, my shoulders etc."
+   },
+   {
+    "evidence_id": "E-0147",
+    "source_id": "RD-pgh8fzm",
+    "url": "https://www.reddit.com/r/handbags/comments/1x4jobr/looking_for_a_durable_work_tote/pgh8fzm/",
+    "platform": "reddit",
+    "thread_title": "Looking for a Durable Work Tote",
+    "source_text": "I will second the Le Pliage large rec. I liked the idea of a leather tote and I have one but I find the bag itself before filled is already so heavy and then to add all my stuff makes it worse. I needed something durable, light weight and that could be tossed around and lug all my shit. Right now I go between the Longchamp Le Pliage or the Damson Madder Eliza Techy Tote.",
+    "parent_text": "Hi everyone! 😊\n I’m looking for recommendations for a durable work tote! I’ve been using the BEIS Large Work Tote, but unfortunately, I’ve found that it starts to deteriorate with normal daily use, which has been disappointing.\n I’m hoping to find a good-quality work bag that can hold up over time, especially for everyday commuting. Ideally, I’d love something spacious enough for my laptop and daily essentials, with good organization and a polished look.\n What work totes do you own and love? Are there any brands you’d recommend for durability and quality? I’m open to different styles and price points as long as the bag is worth the investment.\n Thanks in advance for your recommendations! 💕\n EDIT: I realize I should have provided additional information. I'm looking for a bag that has a leather or leather-like material. I would love something that has a built-in laptop pocket. I am looking for something that spacious ( think a large or extra-large tote with a zipper)",
+    "quote_span": "I liked the idea of a leather tote and I have one but I find the bag itself before filled is already so heavy and then to add all my stuff makes it worse."
+   },
+   {
+    "evidence_id": "E-0157",
+    "source_id": "RD-nbjhbth",
+    "url": "https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbjhbth/",
+    "platform": "reddit",
+    "thread_title": "What are we using as work bags?",
+    "source_text": "I love my Cuyana tote! I’ve had her more than a decade. I switched to an Aer backpack to save my back since I carry a laptop, but if I didn’t have to I’d go tote all the way.",
+    "parent_text": "[deleted]",
+    "quote_span": "I switched to an Aer backpack to save my back since I carry a laptop, but if I didn’t have to I’d go tote all the way."
+   },
+   {
+    "evidence_id": "E-0230",
+    "source_id": "RD-lmm55cp",
+    "url": "https://www.reddit.com/r/AskWomenOver30/comments/1fe7g21/can_we_talk_about_if_youre_an_adult_wearing_a/lmm55cp/",
+    "platform": "reddit",
+    "thread_title": "Can we talk about “If you’re an adult wearing a backpack…” lady?",
+    "source_text": "I moved to a major city (not from a rural area, just from somewhere where I always drove to work) about 5 years ago. Day 1 of taking public transit to work with a tote bag and I immediately bought a backpack.",
+    "quote_span": "Day 1 of taking public transit to work with a tote bag and I immediately bought a backpack."
+   },
+   {
+    "evidence_id": "E-0276",
+    "source_id": "RD-cibtil",
+    "url": "https://www.reddit.com/r/TwoXChromosomes/comments/cibtil/im_so_happy_i_switched_from_a_tote_bag_to_a/",
+    "platform": "reddit",
+    "thread_title": "I’m so happy I switched from a tote bag to a backpack for work.",
+    "source_text": "I commute from NJ to NYC everyday and walking around in the heat with a tote bag is killing my shoulder and back. I carry a library book to read on the subway , water, my lunch and dinner, medications, and somehow it feels like I’m lugging boulders. \n So today, I impulsively bought a plain black/leather Jansport with LOTS of back and shoulder padding for $30 at Marshall’s and holy shit, the commute to Jersey was loads better. \n I’ll admit it’s a bit silly with my blouse and pants. and makes me look like a middle schooler again. (Granted, I already look like a middle schooler) But I’ve worn sillier things and tons of guys and girls in the subway use backpacks. My coworkers and friends are also super supportive and are planning on switching to backpacks so I don’t feel as self conscious!",
+    "quote_span": "walking around in the heat with a tote bag is killing my shoulder and back."
+   },
+   {
+    "evidence_id": "E-0278",
+    "source_id": "RD-cibtil",
+    "url": "https://www.reddit.com/r/TwoXChromosomes/comments/cibtil/im_so_happy_i_switched_from_a_tote_bag_to_a/",
+    "platform": "reddit",
+    "thread_title": "I’m so happy I switched from a tote bag to a backpack for work.",
+    "source_text": "I commute from NJ to NYC everyday and walking around in the heat with a tote bag is killing my shoulder and back. I carry a library book to read on the subway , water, my lunch and dinner, medications, and somehow it feels like I’m lugging boulders. \n So today, I impulsively bought a plain black/leather Jansport with LOTS of back and shoulder padding for $30 at Marshall’s and holy shit, the commute to Jersey was loads better. \n I’ll admit it’s a bit silly with my blouse and pants. and makes me look like a middle schooler again. (Granted, I already look like a middle schooler) But I’ve worn sillier things and tons of guys and girls in the subway use backpacks. My coworkers and friends are also super supportive and are planning on switching to backpacks so I don’t feel as self conscious!",
+    "quote_span": "My coworkers and friends are also super supportive and are planning on switching to backpacks so I don’t feel as self conscious!"
+   },
+   {
+    "evidence_id": "E-0284",
+    "source_id": "RD-ev6unf2",
+    "url": "https://www.reddit.com/r/TwoXChromosomes/comments/cibtil/im_so_happy_i_switched_from_a_tote_bag_to_a/ev6unf2/",
+    "platform": "reddit",
+    "thread_title": "I’m so happy I switched from a tote bag to a backpack for work.",
+    "source_text": "If I was using mass transit rather than driving, I'd be 100% Team Backpack. I don't need shoulder and back issues later from a heavy ass tote.",
+    "quote_span": "If I was using mass transit rather than driving, I'd be 100% Team Backpack. I don't need shoulder and back issues later from a heavy ass tote."
+   },
+   {
+    "evidence_id": "E-0288",
+    "source_id": "RD-1wxoin9",
+    "url": "https://www.reddit.com/r/femalefashionadvice/comments/1wxoin9/laptop_backpack_that_doesnt_ruin_your_fit/",
+    "platform": "reddit",
+    "thread_title": "Laptop backpack that doesn’t ruin your fit?",
+    "source_text": "I’m struggling to find a laptop backpack that’s both cute and practical. I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders. I bring my laptop everywhere for work and studying, so I need something comfortable that won’t ruin my fit. I’m currently sporting the Longchamp le pliage, but have been thinking about switching to the Tumi Celine in Mink or Away Slim Commuter bag in Dune Taupe\n But before I pull the trigger on any purchases, I’d love backpack recommendations to see what everyone else is wearing to lug their stuff is around!",
+    "quote_span": "I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders."
+   },
+   {
+    "evidence_id": "E-0290",
+    "source_id": "RD-pdxu6ku",
+    "url": "https://www.reddit.com/r/femalefashionadvice/comments/1wxoin9/laptop_backpack_that_doesnt_ruin_your_fit/pdxu6ku/",
+    "platform": "reddit",
+    "thread_title": "Laptop backpack that doesn’t ruin your fit?",
+    "source_text": "I just succumbed to a really ugly backpack that carries weight well.",
+    "parent_text": "I’m struggling to find a laptop backpack that’s both cute and practical. I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders. I bring my laptop everywhere for work and studying, so I need something comfortable that won’t ruin my fit. I’m currently sporting the Longchamp le pliage, but have been thinking about switching to the Tumi Celine in Mink or Away Slim Commuter bag in Dune Taupe\n But before I pull the trigger on any purchases, I’d love backpack recommendations to see what everyone else is wearing to lug their stuff is around!",
+    "quote_span": "I just succumbed to a really ugly backpack that carries weight well."
+   },
+   {
+    "evidence_id": "E-0293",
+    "source_id": "RD-peimoaa",
+    "url": "https://www.reddit.com/r/femalefashionadvice/comments/1wxoin9/laptop_backpack_that_doesnt_ruin_your_fit/peimoaa/",
+    "platform": "reddit",
+    "thread_title": "Laptop backpack that doesn’t ruin your fit?",
+    "source_text": "Going to offer a counterpoint -- I wanted to love this backpack (got it in hazelnut), but unfortunately underestimated how heavy leather can be. I'm also a bit of a packrat and it was too small for everything I needed to carry day to day.",
+    "parent_text": "I love my backpack from Poppy Barley. I have had mine for 3 years and it still looks amazing - https://poppybarley.com/collections/backpacks/",
+    "quote_span": "I wanted to love this backpack (got it in hazelnut), but unfortunately underestimated how heavy leather can be."
+   },
+   {
+    "evidence_id": "E-0309",
+    "source_id": "RD-pe0h22f",
+    "url": "https://www.reddit.com/r/femalefashionadvice/comments/1wxoin9/laptop_backpack_that_doesnt_ruin_your_fit/pe0h22f/",
+    "platform": "reddit",
+    "thread_title": "Laptop backpack that doesn’t ruin your fit?",
+    "source_text": "I got the lululemon everywhere backpack 22L… got it before I moved to Paris because I knew I’d be walking/transit commuting a lot more. Highly recommend- comfortable, clean, and good amount of compartments.",
+    "parent_text": "I’m struggling to find a laptop backpack that’s both cute and practical. I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders. I bring my laptop everywhere for work and studying, so I need something comfortable that won’t ruin my fit. I’m currently sporting the Longchamp le pliage, but have been thinking about switching to the Tumi Celine in Mink or Away Slim Commuter bag in Dune Taupe\n But before I pull the trigger on any purchases, I’d love backpack recommendations to see what everyone else is wearing to lug their stuff is around!",
+    "quote_span": "got it before I moved to Paris because I knew I’d be walking/transit commuting a lot more."
+   },
+   {
+    "evidence_id": "E-0348",
+    "source_id": "RD-1q6rkkl",
+    "url": "https://www.reddit.com/r/handbags/comments/1q6rkkl/work_bag_shoulder_pain/",
+    "platform": "reddit",
+    "thread_title": "Work bag shoulder pain",
+    "source_text": "Hi girls! I walk to work everyday (approx. 25 mins) and sometimes get annoyed because my shoulder hurts almost immediately because of my tote bag.\n I tried crossbody (hurt as well), carrying my laptop in my hand (not practical), wearing a bag on each of my shoulders (eehhh), wearing a backpack (hate that it ruins my outfits, I’ve looked into some leather options but they never seem to do it for me).\n I don’t carry any unnecessary stuff (laptop, notebook, lunch, chargers etc), it just gets annoying. I go to the gym so I don’t feel too weak either not to be able to carry it.\n Do you have the same problem? Is there any hack to transfer some of the weight elsewhere on the body without using a backpack? Have you ever thought about looking for some alternative other than a backpack?\n Thank you!!",
+    "quote_span": "I walk to work everyday (approx. 25 mins) and sometimes get annoyed because my shoulder hurts almost immediately because of my tote bag."
+   },
+   {
+    "evidence_id": "E-0351",
+    "source_id": "RD-ny9xed5",
+    "url": "https://www.reddit.com/r/handbags/comments/1q6rkkl/work_bag_shoulder_pain/ny9xed5/",
+    "platform": "reddit",
+    "thread_title": "Work bag shoulder pain",
+    "source_text": "I don’t have a solution. I’ve had to make peace with using a low profile, polished looking backpack 😩",
+    "parent_text": "Hi girls! I walk to work everyday (approx. 25 mins) and sometimes get annoyed because my shoulder hurts almost immediately because of my tote bag.\n I tried crossbody (hurt as well), carrying my laptop in my hand (not practical), wearing a bag on each of my shoulders (eehhh), wearing a backpack (hate that it ruins my outfits, I’ve looked into some leather options but they never seem to do it for me).\n I don’t carry any unnecessary stuff (laptop, notebook, lunch, chargers etc), it just gets annoying. I go to the gym so I don’t feel too weak either not to be able to carry it.\n Do you have the same problem? Is there any hack to transfer some of the weight elsewhere on the body without using a backpack? Have you ever thought about looking for some alternative other than a backpack?\n Thank you!!",
+    "quote_span": "I don't have a solution. I've had to make peace with using a low profile, polished looking backpack"
+   },
+   {
+    "evidence_id": "E-0373",
+    "source_id": "RD-nyjr2g2",
+    "url": "https://www.reddit.com/r/handbags/comments/1q6rkkl/work_bag_shoulder_pain/nyjr2g2/",
+    "platform": "reddit",
+    "thread_title": "Work bag shoulder pain",
+    "source_text": "I see many Tumi backpack recs. I have a Tumi and it sits in my closet. I used it for about 1 year of business travel before I saw the light and switched to a school backpack. Tumi backpacks are so structured that: (1) it’s too heavy even when empty, and (2) it really doesn’t fit much in there.\n Don’t get the Tumi. Just get a school backpack that has a padded laptop section. So much lighter, comfortable, and has more carrying capacity.\n If you insist on a tote, one of my coworkers damaged the nerves in her hand from carrying a shoulder bag during travel. She had multiple specialist consults and 6 months later she is still wearing a hand brace and now has a rolling cart she uses to cart her work stuff around from her car to her desk. Use a backpack.",
+    "parent_text": "Hi girls! I walk to work everyday (approx. 25 mins) and sometimes get annoyed because my shoulder hurts almost immediately because of my tote bag.\n I tried crossbody (hurt as well), carrying my laptop in my hand (not practical), wearing a bag on each of my shoulders (eehhh), wearing a backpack (hate that it ruins my outfits, I’ve looked into some leather options but they never seem to do it for me).\n I don’t carry any unnecessary stuff (laptop, notebook, lunch, chargers etc), it just gets annoying. I go to the gym so I don’t feel too weak either not to be able to carry it.\n Do you have the same problem? Is there any hack to transfer some of the weight elsewhere on the body without using a backpack? Have you ever thought about looking for some alternative other than a backpack?\n Thank you!!",
+    "quote_span": "Tumi backpacks are so structured that: (1) it's too heavy even when empty, and (2) it really doesn't fit much in there."
+   },
+   {
+    "evidence_id": "E-0377",
+    "source_id": "RD-1aqqf8j",
+    "url": "https://www.reddit.com/r/handbags/comments/1aqqf8j/shoulder_painheartbroken_i_cant_wear_some_of_my/",
+    "platform": "reddit",
+    "thread_title": "Shoulder Pain-Heartbroken I can’t wear some of my favorites",
+    "source_text": "I get shoulder pain from lugging around my larger totes and I’m heartbroken!\n Guess I’m in search of a cute work backpack and will still carry my crossbody with my personal things.\n Anyone else have to make a switch after shoulder or body pain from a heavy or large bag??? Anyone have to give up their favorite large bag?",
+    "quote_span": "I get shoulder pain from lugging around my larger totes and I'm heartbroken!"
+   },
+   {
+    "evidence_id": "E-0378",
+    "source_id": "RD-kqfsfp0",
+    "url": "https://www.reddit.com/r/handbags/comments/1aqqf8j/shoulder_painheartbroken_i_cant_wear_some_of_my/kqfsfp0/",
+    "platform": "reddit",
+    "thread_title": "Shoulder Pain-Heartbroken I can’t wear some of my favorites",
+    "source_text": "Currently, I’m using the neverful which isn’t too heavy. I’ve used the longchamp large also, but I’m starting to think it’s my work water bottle+coffee tumbler+a daily planner+miscellaneous things all together",
+    "parent_text": "Are your favorite totes mostly made of heavy leather? Could you switch to a lighter material? Or is it the weight of what you're carrying?",
+    "quote_span": "Currently, I'm using the neverful which isn't too heavy. I've used the longchamp large also, but I'm starting to think it's my work water bottle+coffee tumbler+a daily planner+miscellaneous things all together"
+   },
+   {
+    "evidence_id": "E-0394",
+    "source_id": "RD-p6h6a8s",
+    "url": "https://www.reddit.com/r/handbags/comments/1w0zzdx/what_are_we_wearing_to_work_stylishfeminine_bags/p6h6a8s/",
+    "platform": "reddit",
+    "thread_title": "What are we wearing to work? Stylish/feminine bags that are actually comfortable?",
+    "source_text": "The Beis is already 2.75 pounds before you put anything in it. That’s not terrible but not great either. What about the M. Gemi Lola Grande. It’s super light and using August30 it will be closer to the Coach price. \n I have been on the hunt for a lightweight, zipped, laptop pocket, lightweight leather tote for months. Chat tells me the Lola Grande is a top choice due to weight.",
+    "parent_text": "I’m looking for something pretty, feminine, polished, and classic/old-money-ish, but also comfortable to carry. I tend to get some back/shoulder pain when carrying heavy loads, so I’m trying to find something that works for commuting and carrying throughout the day.\n I’d prefer not to get another backpack if possible. I know they’re probably the most practical option for back/shoulder comfort, but I find that a lot of work backpacks don’t look that stylish or feminine with outfits. That said, I’m definitely open to backpack recommendations if you’ve found one that actually looks chic/feminine with work clothes!\n Right now I have a BOSTANTEN leather backpack ( this one ⁠). Of the backpacks I’ve looked at, this is probably the closest match to the style I’m going for, which is why I ended up getting it. But honestly, I still don’t really love the look of it- I feel like it looks a little masculine, and I’d much rather have something that feels more feminine. It’s also not very comfortable once it’s loaded up. The backpack itself has some weight to it, and the straps are pretty thin with no padding or much support.\n I also have this Coach City Tote ( this one ⁠), and it is cute and basically the perfect style for what I want. But it’s really uncomfortable for me once I have all my stuff in it, and carrying that much weight on one shoulder ends up hurting my shoulder. It also doesn’t have much organization/compartments, which I feel like might have made it easier to carry.\n I keep seeing people recommend the BÉIS Large Work Tote , and I actually really like how it looks. I’m wondering if anyone has experience with it specifically- are the straps more comfortable than something like the Coach tote, or would I probably run into the same problem? Is the bag itself better for carrying a heavy load, or is it still basically the same issue of having everything hanging from one shoulder?\n I’ve looked at rolling work bags too, but since I take public transportation, I don’t think they’d be ideal. They seem like they’d still be pretty heavy when I have to pick them up and carry them up stairs, onto trains, etc.\n I need to fit a decent amount of stuff:\n - 14” MacBook Pro (2022, ~3.5 lbs)\n - charger\n - pen + notepad\n - makeup\n - keys + wallet\n - a book\n - possibly workout clothes (top, sports bra + shorts)\n So I’m looking for something that can hold all of that, isn’t super heavy on its own, is comfortable for commuting, but still looks chic and feminine.\n I’d love something with more of a quiet luxury / old-money / feminine look rather than a sporty or masculine backpack.\n What are you all using for work? Especially interested in hearing from anyone with back/shoulder issues who has found something that actually works.\n And if you have the BÉIS Large Work Tote, I’d especially love to know how it feels when it’s loaded up- does it distribute the weight any better than a typical leather tote like the Coach one would?",
+    "quote_span": "The Beis is already 2.75 pounds before you put anything in it. That's not terrible but not great either."
+   },
+   {
+    "evidence_id": "E-0399",
+    "source_id": "RD-p6hgyaf",
+    "url": "https://www.reddit.com/r/handbags/comments/1w0zzdx/what_are_we_wearing_to_work_stylishfeminine_bags/p6hgyaf/",
+    "platform": "reddit",
+    "thread_title": "What are we wearing to work? Stylish/feminine bags that are actually comfortable?",
+    "source_text": "Have you totaled the weight of all those items even without a bag? Tbh that all sounds quite heavy on its own. \n When I’ve looked at large bags some I’ve considered are:\n Cuyana easy overnighter: https://cuyana.com/products/easy-overnighter-bag?variant=51691683447150 \n MZ Wallace has several large totes, including https://www.mzwallace.com/en-gb/products/juniper-large-metro-tote-deluxe \n Agree with a PP to consider canvas, eg Liberty Iphis tote: https://www.libertylondon.com/uk/iphis-large-marlborough-tote-bag-000842341.html \n Malene Birger carva tote is massive: https://www.bymalenebirger.com/us/en/carva-printed-tote-bag/1042671DF.html",
+    "parent_text": "I’m looking for something pretty, feminine, polished, and classic/old-money-ish, but also comfortable to carry. I tend to get some back/shoulder pain when carrying heavy loads, so I’m trying to find something that works for commuting and carrying throughout the day.\n I’d prefer not to get another backpack if possible. I know they’re probably the most practical option for back/shoulder comfort, but I find that a lot of work backpacks don’t look that stylish or feminine with outfits. That said, I’m definitely open to backpack recommendations if you’ve found one that actually looks chic/feminine with work clothes!\n Right now I have a BOSTANTEN leather backpack ( this one ⁠). Of the backpacks I’ve looked at, this is probably the closest match to the style I’m going for, which is why I ended up getting it. But honestly, I still don’t really love the look of it- I feel like it looks a little masculine, and I’d much rather have something that feels more feminine. It’s also not very comfortable once it’s loaded up. The backpack itself has some weight to it, and the straps are pretty thin with no padding or much support.\n I also have this Coach City Tote ( this one ⁠), and it is cute and basically the perfect style for what I want. But it’s really uncomfortable for me once I have all my stuff in it, and carrying that much weight on one shoulder ends up hurting my shoulder. It also doesn’t have much organization/compartments, which I feel like might have made it easier to carry.\n I keep seeing people recommend the BÉIS Large Work Tote , and I actually really like how it looks. I’m wondering if anyone has experience with it specifically- are the straps more comfortable than something like the Coach tote, or would I probably run into the same problem? Is the bag itself better for carrying a heavy load, or is it still basically the same issue of having everything hanging from one shoulder?\n I’ve looked at rolling work bags too, but since I take public transportation, I don’t think they’d be ideal. They seem like they’d still be pretty heavy when I have to pick them up and carry them up stairs, onto trains, etc.\n I need to fit a decent amount of stuff:\n - 14” MacBook Pro (2022, ~3.5 lbs)\n - charger\n - pen + notepad\n - makeup\n - keys + wallet\n - a book\n - possibly workout clothes (top, sports bra + shorts)\n So I’m looking for something that can hold all of that, isn’t super heavy on its own, is comfortable for commuting, but still looks chic and feminine.\n I’d love something with more of a quiet luxury / old-money / feminine look rather than a sporty or masculine backpack.\n What are you all using for work? Especially interested in hearing from anyone with back/shoulder issues who has found something that actually works.\n And if you have the BÉIS Large Work Tote, I’d especially love to know how it feels when it’s loaded up- does it distribute the weight any better than a typical leather tote like the Coach one would?",
+    "quote_span": "Have you totaled the weight of all those items even without a bag? Tbh that all sounds quite heavy on its own."
+   }
+  ]
+ },
+ {
+  "ach_id": "ACH-0002",
+  "ach_hash": "00066cf1408a4e43",
+  "question": "Why do would-be buyers turn away from Nordace after reading Reddit?",
+  "pattern_claim": {
+   "claim_id": "C-0011",
+   "text": "Negative Nordace reviews and the brand's public replies on Reddit led several would-be buyers to decide not to buy or to hold off."
+  },
+  "hypotheses": [
+   {
+    "h_id": "H1",
+    "statement": "Owner reports of product failures (zippers, straps) are what turns them away.",
+    "supporting_ids": [
+     "E-0071",
+     "E-0094",
+     "E-0096",
+     "E-0041"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "HIGH",
+    "missing_evidence": "Rejections in threads where no brand reply appears, citing a specific failure."
+   },
+   {
+    "h_id": "H2",
+    "statement": "The brand's public reply tone, not the failures, is what turns them away.",
+    "supporting_ids": [
+     "E-0019",
+     "E-0020",
+     "E-0026",
+     "E-0060",
+     "E-0062"
+    ],
+    "refuting_ids": [
+     "E-0071",
+     "E-0094"
+    ],
+    "diagnosticity": "MEDIUM",
+    "missing_evidence": "Reply-driven rejections outside the two threads where the reply was posted."
+   },
+   {
+    "h_id": "H3",
+    "statement": "General suspicion of ad-driven DTC brands (retargeting, resetting timers) turns them away before any product evidence.",
+    "supporting_ids": [
+     "E-0040",
+     "E-0050",
+     "E-0002"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "LOW",
+    "missing_evidence": "Rejections that cite only the ad pattern and no reviews."
+   }
+  ],
+  "preferred_h_id": "H1",
+  "preference_reason": "Failure reports drive rejections in threads without the brand reply (1nsv54d tote shopper, 1lfsxia, a bqe83z reader), so H1 does not depend on one event. H2 is real but concentrated in the two threads where the reply was posted, which makes it one incident amplified by a pile-on. H3 shows up as a reason to go looking, not as the reason to decide; it explains why people check Reddit, after which H1 decides.",
+  "causal_status": "NOT_ESTABLISHED",
+  "evidence": [
+   {
+    "evidence_id": "E-0002",
+    "source_id": "RD-1q2ymhh",
+    "url": "https://www.reddit.com/r/backpacks/comments/1q2ymhh/severe_issues_with_nordace_avoid_avoid_avoid/",
+    "platform": "reddit",
+    "thread_title": "Severe Issues with Nordace, Avoid Avoid Avoid.",
+    "source_text": "I slept on it, and have decided to share what has been my recent experience with Nordace.com\n First of all, they use misleading and unethical sales tactics. They create a false sense of urgency; I had a backpack added to my cart but was unsure about it so I was waiting to purchase it. They sent me an email expressing how urgent it was to put the order through because the backpacks will sell out quickly, creating a false sense of urgency which is an unethical sales tactic. They also employ timers on the top of their website saying their sale was going to run out at midnight, adding to this urgency. I made the purchase solely based on that false urgency, and thats where things got worse.\n They did not issue an official receipt or invoice when I ordered (I am required to submit a receipt/invoice for reimbursement purposes), they only gave me an order confirmation which will not suffice for that. I reached out asking for an official receipt or invoice and have gotten absolutely no reply.\n I went back to their site the next morning to see that there was not any urgency at all; the timer at the top of their page counting down the sale had reset, and they had everything on sale.\n This, along with a lack of required documentation and response led to a profound sense of betrayal and significantly undermined my trust in their company, and I refuse to do business with a company I cannot trust. So I put in a cancellation/ refund request as my order showed it was still processing on the order page. This put my order status to “on-hold support” to prevent it from shipping.\n 12 hours later, I got an email saying my order had been shipped. I was extremely upset. I reached out again expressing my frustration and concerns and asked for a prompt resolution to this, to which I have gotten absolutely no reply, nor have I gotten a reply to my earlier email regarding the invoice/ receipt. My order should NOT have been shipped after it was put on “on-hold support”.\n Also, days later, their timer has reset again, proving there was absolutely no urgency and they were just making it seem like there was. I find this completely unacceptable and unethical. I am in the process of escalating this matter with my financial provider, however they want me to try resolving it with Nordace first, but not a single soul has gotten back to me.\n I find it very frustrating and strange how their website can seem so professional and clean, and their customer service is so horrendous, like night and day. Also, after reading some of the reviews for their products it seems there is quite the discrepancy from their professional website and advertising, versus their actual products which are said to be of shoddy build and quality.\n I wish I’d never given Nordace my money and this has left me with a sour taste in my mouth. At this point I will be surprised if their customer service team gets back to me. Avoid this company if you can, it is truly not worth the headache.\n Edit: The package had issues with delivery and was sent back to their warehouse. I reached out about this and they offered to reship or refund. I asked for a refund and they gave it to me. I’m glad it is all resolved, however I don’t think I would want to do any further business with their company.",
+    "quote_span": "the timer at the top of their page counting down the sale had reset, and they had everything on sale."
+   },
+   {
+    "evidence_id": "E-0019",
+    "source_id": "RD-mlb1c5u",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mlb1c5u/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "Just wanted you to know the tone of this comment convinced my partner not to buy your product.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "Just wanted you to know the tone of this comment convinced my partner not to buy your product."
+   },
+   {
+    "evidence_id": "E-0020",
+    "source_id": "RD-mmcbov4",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mmcbov4/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass. I don’t want to deal with sarcastic customer service if I encounter an issue.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass. I don’t want to deal with sarcastic customer service if I encounter an issue."
+   },
+   {
+    "evidence_id": "E-0026",
+    "source_id": "RD-ofs3w6l",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/ofs3w6l/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "I've had an original siena since 2021 and it's been with me around the globe. The zippers on mine have just broken and was looking to replace it with the upgraded eco version, but I can't in good conscience pick one up after reading this comment. I'll be exploring other options.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "was looking to replace it with the upgraded eco version, but I can't in good conscience pick one up after reading this comment. I'll be exploring other options."
+   },
+   {
+    "evidence_id": "E-0040",
+    "source_id": "RD-k771gp5",
+    "url": "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/k771gp5/",
+    "platform": "reddit",
+    "thread_title": "Don't buy backpacks from Nordace",
+    "source_text": "Thank you and OP for this. I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere) and how all the reviews were overwhelmingly positive …",
+    "parent_text": "YouTube is really not a good resource to find product reviews. I saw a lot of people post reviews of this backpack, all positive. One funny thing is the backpack was a new product in early 2021, but one uploader said she used this backpack for almost 2 years... Then I found they also post discount information on the description. I guess this means the merchandise paid YouTube uploaders to get their positive feedbacks...",
+    "quote_span": "I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere) and how all the reviews were overwhelmingly positive"
+   },
+   {
+    "evidence_id": "E-0041",
+    "source_id": "RD-ktf7ru6",
+    "url": "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/ktf7ru6/",
+    "platform": "reddit",
+    "thread_title": "Don't buy backpacks from Nordace",
+    "source_text": "Thank goodness i found this was about to buy one just because of the aesthetics 🙈 and was looking for reviews to see if quality is any good and the bunch of fake sounding video reviews are real or not hahaha 🤣",
+    "parent_text": "I purchased a backpack and received in 3 weeks. I found the quality is so so so bad before I use it, the lable is still on the backpack and I don't even try it on. So I contact customer service to return it, . No phone number provided only an email address. After 5 days' waiting, they responded that either give me 30% money back or I pay for the return cost. I chose to return since nobody need a trash. They said make sure they are in original plastic bag and box, I did. The return address is a port in Commerce, CA. I used UPS to send it out and cost me $16USD. Yesterday, UPS provided an update said that \"receiver refused to accept the return with no reason!\" I called the number they provided in their return email, said it is no longer a valid phone number and no new number added!!! Sent an email and no reply at all!\n BE CAREFUL, DON'T SPEND A CENT ON THESE HONG KONG SELLER!",
+    "quote_span": "Thank goodness i found this was about to buy one just because of the aesthetics"
+   },
+   {
+    "evidence_id": "E-0050",
+    "source_id": "RD-f72m9cj",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/f72m9cj/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "(Late I know.)\n Thanks for this - I was considering buying one after seeing an ad, but it seemed a little... suspicious. Cheers for the detailed write-up! Confirmed my suspicions that it should be possible to get something better.",
+    "parent_text": "Hi! So I got this on a whim because I’m a traveling stage manager and commute a lot so this seemed like a good idea. Foolishly I didn’t do much looking into it but it got here a few days ago (I’m in the east coast US) and I ordered it on 9/17. I also got the packing cube and toiletry bag with it. \n I will say my first impression was positive, it looks spot on to the advertised images, however I agree that it definitely has some flaws. The material and zippers overall feel very cheap especially for the cost they’re marketed at. It’s advertised as having high quality zippers and genuine leather but the leather on the bag, if it is leather, is the lowest quality I’ve ever seen...\n Some plus sides: I find it really comfortable. I loaded it up with my daily pack and some other stuff and it was pretty comfortable and easy to take on and off. It holds a TON of stuff and the pockets and things throughout are well made (despite the cheap material) I particularly like the microfiber/felt pocket in the front that perfectly fits my phone. There are also these clips on the adjustable part of the strap that holds the excess to itself. I like that a lot and I haven’t seen it before. The handle is very comfortable and has knit underside and distributes the weight of the bag pretty well.\n As for traveling, I don’t think it’s weatherproof, especially with the zippers, they feel like they’d really suck in the rain which makes me incredibly nervous. There are some holes as well at the bottom of the side zippers in the front pockets. Although the fabric does hang over those zippers. There is nothing that protects the main pocket or laptop pocket zippers. For TSA and security there is easy access to all electronics and the ability to take whatever charger you’re using out. \n On the upside I LOVE the packing cube and toiletry bag. They feel like much higher quality zippers, though they aren’t metal, they also both hold everything I would need. I was able to fit a large towel in the packing cube and compress it. As for the toiletry bag, I fit everything I needed and then some. It also stands up on its own when opened which is great as well as having the little hanging hook. \n In summary, I’m going to try and make the best of it because I didn’t do enough research and returning this thing would be a bitch and a half, also it’s important to note if you return it, you pay shipping and a 15% restocking fee... so for me, it’s not worth all that hassle to still pay them like $30 or so at the end of it all. It could definitely be a worse bag, but I feel duped for paying $99 for it. It would definitely sit in solidly in the Hot Topic/Spencer’s backpack arena for a MAX of $45 \n Thanks for coming to my TEDtalk I hope this will help one of y’all.",
+    "quote_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious."
+   },
+   {
+    "evidence_id": "E-0060",
+    "source_id": "RD-hkvs6ek",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/hkvs6ek/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me. I saw the same at Peak Design, and they handled it in a much much elegant and intelkigent manner. I'm just afraid what happens when I have a customer complaint...",
+    "parent_text": "This Chinese company stole our design and used our product's pictures and you call us scammer? Maybe you should stop spreading counterfeit products from shady Chinese sellers! We are already contacting lawyer to shut them down for stealing our design and using our product photos. All the products on our store are 100% designed by us and we own the full rights to them.",
+    "quote_span": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me. I saw the same at Peak Design, and they handled it in a much much elegant and intelkigent manner."
+   },
+   {
+    "evidence_id": "E-0062",
+    "source_id": "RD-kbkt4kc",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/kbkt4kc/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "ALL of these comments on this thread and you only reply with this? Super unprofessional. I was going to buy a set but I'm not now! You should have addressed all of the concerns in this thread....",
+    "quote_span": "I was going to buy a set but I'm not now! You should have addressed all of the concerns in this thread...."
+   },
+   {
+    "evidence_id": "E-0071",
+    "source_id": "RD-ijr95qw",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/ijr95qw/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "after reading so many negative reviews I have decided against buying this bag",
+    "parent_text": "I would advise that would be purchasers online be very wary of the manner that this company does business in. I ordered two items then saw online that the items had been upgraded and replaced by a newer model. When I contacted Nordace to upgrade my order and let me pay the differential I was informed to order the new items AND PAY AGAIN and then notify them of the new order so that they can begin to process a refund. Their responses to my query was underwhelming and they really do not have a customer services dept worth mentioning. I have instructed them to cancel my order and refund me and there has been a deafening silence from them...bad form Nordic....beware other online clients...shop elsewhere where you will stand a chance of being refunded",
+    "quote_span": "after reading so many negative reviews I have decided against buying this bag"
+   },
+   {
+    "evidence_id": "E-0094",
+    "source_id": "RD-1nsv54d",
+    "url": "https://www.reddit.com/r/phRecommendation/comments/1nsv54d/tote_bags_similar_to_nordace_siena_tote/",
+    "platform": "reddit",
+    "thread_title": "Tote bags similar to Nordace Siena Tote",
+    "source_text": "Hello! Need recommendations on tote bags similar to the Nordace Siena Tote bag. Qualities that I liked:\n many compartments\n fits a 14\" laptop (also has a dedicated secure compartment)\n top-zip\n water resistant\n its pretty huhu\n Budget is less than 10k. I was planning to buy the Nordace tote, however, reviews on the brand weren't that great. Thanks!",
+    "quote_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great."
+   },
+   {
+    "evidence_id": "E-0096",
+    "source_id": "RD-1lfsxia",
+    "url": "https://www.reddit.com/r/backpacks/comments/1lfsxia/betterquality_alternative_to_nordace_sienna_for/",
+    "platform": "reddit",
+    "thread_title": "Better-quality alternative to Nordace Sienna for carry-on?",
+    "source_text": "I like the look and layout of the Nordace Seinna and similar but apparently they're not great quality. Does anyone have other recommendations? \n Use: - air travel carry-on when I also have a stowed bag . Would be used for snacks, meds, water bottle, iPad, a few bits of clothing, a small blanket, and random bits and bobs needed for flight (headphones, eye mask, lip balm, tissues etc) - roadtrip day bag to just sit in the car with me, carrying a lot of the same basic stuff as in-flight - city travel with a few essentials for a spending the day exploring a new city. So fairly light with comfy straps but doesn't need to be hiking-appropriate\n Needs - external bottle holder - one big main pocket (not divided in half) and 1-2 external pockets for easy access to a few bits - main pocket easy to get into when stowed under plane seat - zipper main pocket . Ideal if it zips all the way around so that most of the front wall can be folded back - comfy straps - reasonably light to not waste airline baggage weight\n Wants - some small inner pocket/s for passport etc is ideal - an internal or external laptop/iPad sleeve ideal but not essential - water-resistant ideal but not essential \n Look - ideally fairly basic and sleek, fine if it's a bit feminine - not tactical or sporty \n Price - ideally under $200 US",
+    "quote_span": "I like the look and layout of the Nordace Seinna and similar but apparently they're not great quality."
+   }
+  ]
+ },
+ {
+  "ach_id": "ACH-0003",
+  "ach_hash": "01ec5e7bb80771dd",
+  "question": "Why do would-be buyers turn away from Nordace after reading Reddit?",
+  "pattern_claim": {
+   "claim_id": "C-0038",
+   "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads."
+  },
+  "hypotheses": [
+   {
+    "h_id": "H1",
+    "statement": "Owner reports of product failures (zippers, straps) are what turns them away.",
+    "supporting_ids": [
+     "E-0071",
+     "E-0094",
+     "E-0096",
+     "E-0041"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "HIGH",
+    "missing_evidence": "Rejections in threads where no brand reply appears, citing a specific failure."
+   },
+   {
+    "h_id": "H2",
+    "statement": "The brand's public reply tone, not the failures, is what turns them away.",
+    "supporting_ids": [
+     "E-0019",
+     "E-0020",
+     "E-0026",
+     "E-0060",
+     "E-0062"
+    ],
+    "refuting_ids": [
+     "E-0071",
+     "E-0094"
+    ],
+    "diagnosticity": "MEDIUM",
+    "missing_evidence": "Reply-driven rejections outside the two threads where the reply was posted."
+   },
+   {
+    "h_id": "H3",
+    "statement": "General suspicion of ad-driven DTC brands (retargeting, resetting timers) turns them away before any product evidence.",
+    "supporting_ids": [
+     "E-0040",
+     "E-0050",
+     "E-0002"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "LOW",
+    "missing_evidence": "Rejections that cite only the ad pattern and no reviews."
+   }
+  ],
+  "preferred_h_id": "H1",
+  "preference_reason": "Failure reports drive rejections in threads without the brand reply (1nsv54d tote shopper, 1lfsxia, a bqe83z reader), so H1 does not depend on one event. H2 is real but concentrated in the two threads where the reply was posted, which makes it one incident amplified by a pile-on. H3 shows up as a reason to go looking, not as the reason to decide; it explains why people check Reddit, after which H1 decides.",
+  "causal_status": "NOT_ESTABLISHED",
+  "evidence": [
+   {
+    "evidence_id": "E-0002",
+    "source_id": "RD-1q2ymhh",
+    "url": "https://www.reddit.com/r/backpacks/comments/1q2ymhh/severe_issues_with_nordace_avoid_avoid_avoid/",
+    "platform": "reddit",
+    "thread_title": "Severe Issues with Nordace, Avoid Avoid Avoid.",
+    "source_text": "I slept on it, and have decided to share what has been my recent experience with Nordace.com\n First of all, they use misleading and unethical sales tactics. They create a false sense of urgency; I had a backpack added to my cart but was unsure about it so I was waiting to purchase it. They sent me an email expressing how urgent it was to put the order through because the backpacks will sell out quickly, creating a false sense of urgency which is an unethical sales tactic. They also employ timers on the top of their website saying their sale was going to run out at midnight, adding to this urgency. I made the purchase solely based on that false urgency, and thats where things got worse.\n They did not issue an official receipt or invoice when I ordered (I am required to submit a receipt/invoice for reimbursement purposes), they only gave me an order confirmation which will not suffice for that. I reached out asking for an official receipt or invoice and have gotten absolutely no reply.\n I went back to their site the next morning to see that there was not any urgency at all; the timer at the top of their page counting down the sale had reset, and they had everything on sale.\n This, along with a lack of required documentation and response led to a profound sense of betrayal and significantly undermined my trust in their company, and I refuse to do business with a company I cannot trust. So I put in a cancellation/ refund request as my order showed it was still processing on the order page. This put my order status to “on-hold support” to prevent it from shipping.\n 12 hours later, I got an email saying my order had been shipped. I was extremely upset. I reached out again expressing my frustration and concerns and asked for a prompt resolution to this, to which I have gotten absolutely no reply, nor have I gotten a reply to my earlier email regarding the invoice/ receipt. My order should NOT have been shipped after it was put on “on-hold support”.\n Also, days later, their timer has reset again, proving there was absolutely no urgency and they were just making it seem like there was. I find this completely unacceptable and unethical. I am in the process of escalating this matter with my financial provider, however they want me to try resolving it with Nordace first, but not a single soul has gotten back to me.\n I find it very frustrating and strange how their website can seem so professional and clean, and their customer service is so horrendous, like night and day. Also, after reading some of the reviews for their products it seems there is quite the discrepancy from their professional website and advertising, versus their actual products which are said to be of shoddy build and quality.\n I wish I’d never given Nordace my money and this has left me with a sour taste in my mouth. At this point I will be surprised if their customer service team gets back to me. Avoid this company if you can, it is truly not worth the headache.\n Edit: The package had issues with delivery and was sent back to their warehouse. I reached out about this and they offered to reship or refund. I asked for a refund and they gave it to me. I’m glad it is all resolved, however I don’t think I would want to do any further business with their company.",
+    "quote_span": "the timer at the top of their page counting down the sale had reset, and they had everything on sale."
+   },
+   {
+    "evidence_id": "E-0019",
+    "source_id": "RD-mlb1c5u",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mlb1c5u/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "Just wanted you to know the tone of this comment convinced my partner not to buy your product.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "Just wanted you to know the tone of this comment convinced my partner not to buy your product."
+   },
+   {
+    "evidence_id": "E-0020",
+    "source_id": "RD-mmcbov4",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mmcbov4/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass. I don’t want to deal with sarcastic customer service if I encounter an issue.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass. I don’t want to deal with sarcastic customer service if I encounter an issue."
+   },
+   {
+    "evidence_id": "E-0026",
+    "source_id": "RD-ofs3w6l",
+    "url": "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/ofs3w6l/",
+    "platform": "reddit",
+    "thread_title": "Nordace backpacks don't last",
+    "source_text": "I've had an original siena since 2021 and it's been with me around the globe. The zippers on mine have just broken and was looking to replace it with the upgraded eco version, but I can't in good conscience pick one up after reading this comment. I'll be exploring other options.",
+    "parent_text": "Thank you for sharing your thoughts. We know trust has to be earned, and we take that seriously. Having our products stocked in over 2,000 stores in Japan is one sign that we're moving in the right direction. We respect your preference for more established brands and wish you the best in finding the right fit.",
+    "quote_span": "was looking to replace it with the upgraded eco version, but I can't in good conscience pick one up after reading this comment. I'll be exploring other options."
+   },
+   {
+    "evidence_id": "E-0040",
+    "source_id": "RD-k771gp5",
+    "url": "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/k771gp5/",
+    "platform": "reddit",
+    "thread_title": "Don't buy backpacks from Nordace",
+    "source_text": "Thank you and OP for this. I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere) and how all the reviews were overwhelmingly positive …",
+    "parent_text": "YouTube is really not a good resource to find product reviews. I saw a lot of people post reviews of this backpack, all positive. One funny thing is the backpack was a new product in early 2021, but one uploader said she used this backpack for almost 2 years... Then I found they also post discount information on the description. I guess this means the merchandise paid YouTube uploaders to get their positive feedbacks...",
+    "quote_span": "I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere) and how all the reviews were overwhelmingly positive"
+   },
+   {
+    "evidence_id": "E-0041",
+    "source_id": "RD-ktf7ru6",
+    "url": "https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/ktf7ru6/",
+    "platform": "reddit",
+    "thread_title": "Don't buy backpacks from Nordace",
+    "source_text": "Thank goodness i found this was about to buy one just because of the aesthetics 🙈 and was looking for reviews to see if quality is any good and the bunch of fake sounding video reviews are real or not hahaha 🤣",
+    "parent_text": "I purchased a backpack and received in 3 weeks. I found the quality is so so so bad before I use it, the lable is still on the backpack and I don't even try it on. So I contact customer service to return it, . No phone number provided only an email address. After 5 days' waiting, they responded that either give me 30% money back or I pay for the return cost. I chose to return since nobody need a trash. They said make sure they are in original plastic bag and box, I did. The return address is a port in Commerce, CA. I used UPS to send it out and cost me $16USD. Yesterday, UPS provided an update said that \"receiver refused to accept the return with no reason!\" I called the number they provided in their return email, said it is no longer a valid phone number and no new number added!!! Sent an email and no reply at all!\n BE CAREFUL, DON'T SPEND A CENT ON THESE HONG KONG SELLER!",
+    "quote_span": "Thank goodness i found this was about to buy one just because of the aesthetics"
+   },
+   {
+    "evidence_id": "E-0050",
+    "source_id": "RD-f72m9cj",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/f72m9cj/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "(Late I know.)\n Thanks for this - I was considering buying one after seeing an ad, but it seemed a little... suspicious. Cheers for the detailed write-up! Confirmed my suspicions that it should be possible to get something better.",
+    "parent_text": "Hi! So I got this on a whim because I’m a traveling stage manager and commute a lot so this seemed like a good idea. Foolishly I didn’t do much looking into it but it got here a few days ago (I’m in the east coast US) and I ordered it on 9/17. I also got the packing cube and toiletry bag with it. \n I will say my first impression was positive, it looks spot on to the advertised images, however I agree that it definitely has some flaws. The material and zippers overall feel very cheap especially for the cost they’re marketed at. It’s advertised as having high quality zippers and genuine leather but the leather on the bag, if it is leather, is the lowest quality I’ve ever seen...\n Some plus sides: I find it really comfortable. I loaded it up with my daily pack and some other stuff and it was pretty comfortable and easy to take on and off. It holds a TON of stuff and the pockets and things throughout are well made (despite the cheap material) I particularly like the microfiber/felt pocket in the front that perfectly fits my phone. There are also these clips on the adjustable part of the strap that holds the excess to itself. I like that a lot and I haven’t seen it before. The handle is very comfortable and has knit underside and distributes the weight of the bag pretty well.\n As for traveling, I don’t think it’s weatherproof, especially with the zippers, they feel like they’d really suck in the rain which makes me incredibly nervous. There are some holes as well at the bottom of the side zippers in the front pockets. Although the fabric does hang over those zippers. There is nothing that protects the main pocket or laptop pocket zippers. For TSA and security there is easy access to all electronics and the ability to take whatever charger you’re using out. \n On the upside I LOVE the packing cube and toiletry bag. They feel like much higher quality zippers, though they aren’t metal, they also both hold everything I would need. I was able to fit a large towel in the packing cube and compress it. As for the toiletry bag, I fit everything I needed and then some. It also stands up on its own when opened which is great as well as having the little hanging hook. \n In summary, I’m going to try and make the best of it because I didn’t do enough research and returning this thing would be a bitch and a half, also it’s important to note if you return it, you pay shipping and a 15% restocking fee... so for me, it’s not worth all that hassle to still pay them like $30 or so at the end of it all. It could definitely be a worse bag, but I feel duped for paying $99 for it. It would definitely sit in solidly in the Hot Topic/Spencer’s backpack arena for a MAX of $45 \n Thanks for coming to my TEDtalk I hope this will help one of y’all.",
+    "quote_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious."
+   },
+   {
+    "evidence_id": "E-0060",
+    "source_id": "RD-hkvs6ek",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/hkvs6ek/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me. I saw the same at Peak Design, and they handled it in a much much elegant and intelkigent manner. I'm just afraid what happens when I have a customer complaint...",
+    "parent_text": "This Chinese company stole our design and used our product's pictures and you call us scammer? Maybe you should stop spreading counterfeit products from shady Chinese sellers! We are already contacting lawyer to shut them down for stealing our design and using our product photos. All the products on our store are 100% designed by us and we own the full rights to them.",
+    "quote_span": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me. I saw the same at Peak Design, and they handled it in a much much elegant and intelkigent manner."
+   },
+   {
+    "evidence_id": "E-0062",
+    "source_id": "RD-kbkt4kc",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/kbkt4kc/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "ALL of these comments on this thread and you only reply with this? Super unprofessional. I was going to buy a set but I'm not now! You should have addressed all of the concerns in this thread....",
+    "quote_span": "I was going to buy a set but I'm not now! You should have addressed all of the concerns in this thread...."
+   },
+   {
+    "evidence_id": "E-0071",
+    "source_id": "RD-ijr95qw",
+    "url": "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/ijr95qw/",
+    "platform": "reddit",
+    "thread_title": "Any experience with Nordace backpacks?",
+    "source_text": "after reading so many negative reviews I have decided against buying this bag",
+    "parent_text": "I would advise that would be purchasers online be very wary of the manner that this company does business in. I ordered two items then saw online that the items had been upgraded and replaced by a newer model. When I contacted Nordace to upgrade my order and let me pay the differential I was informed to order the new items AND PAY AGAIN and then notify them of the new order so that they can begin to process a refund. Their responses to my query was underwhelming and they really do not have a customer services dept worth mentioning. I have instructed them to cancel my order and refund me and there has been a deafening silence from them...bad form Nordic....beware other online clients...shop elsewhere where you will stand a chance of being refunded",
+    "quote_span": "after reading so many negative reviews I have decided against buying this bag"
+   },
+   {
+    "evidence_id": "E-0094",
+    "source_id": "RD-1nsv54d",
+    "url": "https://www.reddit.com/r/phRecommendation/comments/1nsv54d/tote_bags_similar_to_nordace_siena_tote/",
+    "platform": "reddit",
+    "thread_title": "Tote bags similar to Nordace Siena Tote",
+    "source_text": "Hello! Need recommendations on tote bags similar to the Nordace Siena Tote bag. Qualities that I liked:\n many compartments\n fits a 14\" laptop (also has a dedicated secure compartment)\n top-zip\n water resistant\n its pretty huhu\n Budget is less than 10k. I was planning to buy the Nordace tote, however, reviews on the brand weren't that great. Thanks!",
+    "quote_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great."
+   },
+   {
+    "evidence_id": "E-0096",
+    "source_id": "RD-1lfsxia",
+    "url": "https://www.reddit.com/r/backpacks/comments/1lfsxia/betterquality_alternative_to_nordace_sienna_for/",
+    "platform": "reddit",
+    "thread_title": "Better-quality alternative to Nordace Sienna for carry-on?",
+    "source_text": "I like the look and layout of the Nordace Seinna and similar but apparently they're not great quality. Does anyone have other recommendations? \n Use: - air travel carry-on when I also have a stowed bag . Would be used for snacks, meds, water bottle, iPad, a few bits of clothing, a small blanket, and random bits and bobs needed for flight (headphones, eye mask, lip balm, tissues etc) - roadtrip day bag to just sit in the car with me, carrying a lot of the same basic stuff as in-flight - city travel with a few essentials for a spending the day exploring a new city. So fairly light with comfy straps but doesn't need to be hiking-appropriate\n Needs - external bottle holder - one big main pocket (not divided in half) and 1-2 external pockets for easy access to a few bits - main pocket easy to get into when stowed under plane seat - zipper main pocket . Ideal if it zips all the way around so that most of the front wall can be folded back - comfy straps - reasonably light to not waste airline baggage weight\n Wants - some small inner pocket/s for passport etc is ideal - an internal or external laptop/iPad sleeve ideal but not essential - water-resistant ideal but not essential \n Look - ideally fairly basic and sleek, fine if it's a bit feminine - not tactical or sporty \n Price - ideally under $200 US",
+    "quote_span": "I like the look and layout of the Nordace Seinna and similar but apparently they're not great quality."
+   }
+  ]
+ }
+]

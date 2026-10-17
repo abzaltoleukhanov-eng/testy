@@ -1,0 +1,131 @@
+[
+ {
+  "ach_id": "ACH-0004",
+  "auditor": "independent ACH auditor 4",
+  "verdict": "SOUND",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0096",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "I like the look and layout of the Nordace Seinna and similar but apparently they're not great quality.",
+    "holds": true,
+    "note": "Second-hand quality reputation pushes the poster to look for alternatives; an intention to look elsewhere, not a stated non-purchase."
+   },
+   {
+    "evidence_id": "E-0041",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "was looking for reviews to see if quality is any good",
+    "holds": true,
+    "note": "The commenter was checking quality and thanks a parent post that reports bad quality; the same parent also reports refused returns, so this does not separate H1 from H4."
+   },
+   {
+    "evidence_id": "E-0026",
+    "h_id": "H1",
+    "role": "refutes",
+    "located_span": "The zippers on mine have just broken and was looking to replace it with the upgraded eco version, but I can't in good conscience pick one up after reading this comment.",
+    "holds": true,
+    "note": "The owner's own failure did not deter a repurchase; the brand reply did. Refutes H1 for this person only."
+   },
+   {
+    "evidence_id": "E-0019",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "Just wanted you to know the tone of this comment convinced my partner not to buy your product.",
+    "holds": true,
+    "note": "Parent is the brand reply in 18nj9sk; the decision is reported second-hand about a partner."
+   },
+   {
+    "evidence_id": "E-0020",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass.",
+    "holds": true,
+    "note": "Directly ties the stated intention to the brand reply (same parent as E-0019)."
+   },
+   {
+    "evidence_id": "E-0026",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "I can't in good conscience pick one up after reading this comment. I'll be exploring other options.",
+    "holds": true,
+    "note": "Parent is the same brand reply in 18nj9sk."
+   },
+   {
+    "evidence_id": "E-0060",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me.",
+    "holds": true,
+    "note": "Parent is a different brand reply in thread bqe83z; also voices fear about complaint handling."
+   },
+   {
+    "evidence_id": "E-0062",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "ALL of these comments on this thread and you only reply with this? Super unprofessional. I was going to buy a set but I'm not now!",
+    "holds": true,
+    "note": "No parent text in the packet, but 'you only reply with this' implies a brand reply in bqe83z; whether it is the same reply as E-0060's parent cannot be checked. The complaint is partly about the unaddressed concerns in the thread."
+   },
+   {
+    "evidence_id": "E-0071",
+    "h_id": "H2",
+    "role": "refutes",
+    "located_span": "after reading so many negative reviews I have decided against buying this bag",
+    "holds": true,
+    "note": "Rejection attributed to reviews, not a reply; it limits H2 as the sole driver rather than refuting it. It sits in bqe83z, a reply thread, so exposure to the reply cannot be ruled out."
+   },
+   {
+    "evidence_id": "E-0094",
+    "h_id": "H2",
+    "role": "refutes",
+    "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.",
+    "holds": true,
+    "note": "Rejection driven by reviews, in a different subreddit with no brand reply; limits H2 as the sole driver."
+   },
+   {
+    "evidence_id": "E-0040",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "I got suspicious after seeing such an aggressive ad campaign",
+    "holds": true,
+    "note": "Ad pressure and uniformly positive reviews trigger suspicion; no explicit decision not to buy is stated."
+   },
+   {
+    "evidence_id": "E-0050",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious.",
+    "holds": true,
+    "note": "Ad-triggered suspicion, then a quality write-up confirmed it, which fits the reading that H3 explains checking rather than the decision."
+   },
+   {
+    "evidence_id": "E-0002",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "I went back to their site the next morning to see that there was not any urgency at all; the timer at the top of their page counting down the sale had reset, and they had everything on sale.",
+    "holds": true,
+    "note": "Weak fit: the author actually bought because of the urgency and is a source of negative reports, not a would-be buyer turned away by Reddit. It does show reset timers feeding distrust."
+   },
+   {
+    "evidence_id": "E-0002",
+    "h_id": "H4",
+    "role": "supports",
+    "located_span": "I reached out asking for an official receipt or invoice and have gotten absolutely no reply.",
+    "holds": true,
+    "note": "Unanswered service emails feed the author's refusal to do further business; again a buyer's report rather than a would-be buyer's rejection."
+   },
+   {
+    "evidence_id": "E-0041",
+    "h_id": "H4",
+    "role": "supports",
+    "located_span": "Thank goodness i found this was about to buy one just because of the aesthetics",
+    "holds": true,
+    "note": "The 'this' is a parent post that reports the 30% partial refund offer and the refused return; the parent also reports bad quality, so this does not separate H4 from H1."
+   }
+  ],
+  "issues": "Minor: E-0002 comes from an actual buyer, not a would-be buyer, so it supports H3 and H4 only as a report others might read. E-0041 is shared by H1 and H4 and tells them apart no better than E-0071 and E-0094 do. E-0062 has no parent text, so the claim of 'two different replies' depends on E-0060 and E-0062 being in a different thread from the 18nj9sk reply, which they are, but which reply E-0062 answers is unverified. E-0071 sits in a reply thread. H4's MEDIUM diagnosticity is generous given only these two mixed items. The statement that the zipper owner was turned away by 'the reply, not the failure' is a fair reading of E-0026 but not their exact words.",
+  "reasoning": "Every evidence role holds, with the weak spots noted above. The four hypotheses are plausible competing or co-occurring explanations, and no obvious alternative is missing. H2 is the cause the would-be buyers name most explicitly and directly (five comments in two threads), and E-0026 discriminates against H1. The preference reason is hedged appropriately: it disclaims frequency beyond the two threads, admits H2 is not the only driver, and makes no causal, population or out-of-evidence product claims."
+ }
+]

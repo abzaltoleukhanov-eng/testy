@@ -1,0 +1,124 @@
+[
+ {
+  "ach_id": "ACH-0002",
+  "verdict": "UNSOUND",
+  "evidence_checks": [
+   {
+    "evidence_id": "E-0071",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "",
+    "holds": false,
+    "note": "Cites 'so many negative reviews' generically; the only review in context (parent) is about order changes, refunds and customer service silence, not zipper or strap failures. Does not support H1's product-failure mechanism specifically."
+   },
+   {
+    "evidence_id": "E-0094",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.",
+    "holds": true,
+    "note": "Weak support: a rejection driven by negative reviews in a thread with no brand reply, but it names no product failure and says 'reviews on the brand', which could equally be service complaints."
+   },
+   {
+    "evidence_id": "E-0096",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "I like the look and layout of the Nordace Seinna and similar but apparently they're not great quality.",
+    "holds": true,
+    "note": "Reported poor quality is the stated reason to look for alternatives; no specific failure named, but it is quality-based and outside the reply threads."
+   },
+   {
+    "evidence_id": "E-0041",
+    "h_id": "H1",
+    "role": "supports",
+    "located_span": "was looking for reviews to see if quality is any good",
+    "holds": true,
+    "note": "Reader was checking quality and the parent reports the quality was 'so so so bad'; the parent also describes a return/customer service ordeal, so the trigger is mixed product and service."
+   },
+   {
+    "evidence_id": "E-0019",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "Just wanted you to know the tone of this comment convinced my partner not to buy your product.",
+    "holds": true,
+    "note": "Explicitly attributes the decision not to buy to the tone of the brand reply."
+   },
+   {
+    "evidence_id": "E-0020",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass.",
+    "holds": true,
+    "note": "Explicitly attributes passing to how the brand engages publicly."
+   },
+   {
+    "evidence_id": "E-0026",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "was looking to replace it with the upgraded eco version, but I can't in good conscience pick one up after reading this comment.",
+    "holds": true,
+    "note": "Strongly diagnostic for H2 over H1: this owner's zippers had broken yet they still intended to rebuy; the brand reply is what turned them away."
+   },
+   {
+    "evidence_id": "E-0060",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "I considered to buy a Nordace backpack, but the style of your comment is a huge red flag for me.",
+    "holds": true,
+    "note": "Explicitly attributes hesitation to the style of the brand reply (a different reply, in bqe83z, from the 18nj9sk one)."
+   },
+   {
+    "evidence_id": "E-0062",
+    "h_id": "H2",
+    "role": "supports",
+    "located_span": "Super unprofessional. I was going to buy a set but I'm not now!",
+    "holds": true,
+    "note": "Holds, though the complaint is that the reply ignored the thread's concerns, so it mixes reply handling with the underlying complaints."
+   },
+   {
+    "evidence_id": "E-0071",
+    "h_id": "H2",
+    "role": "refutes",
+    "located_span": "after reading so many negative reviews I have decided against buying this bag",
+    "holds": true,
+    "note": "Rejection attributed to reviews, not reply tone, which cuts against H2's 'not the failures' claim; moderate only, since bqe83z also contains a brand reply the commenter may have seen."
+   },
+   {
+    "evidence_id": "E-0094",
+    "h_id": "H2",
+    "role": "refutes",
+    "located_span": "I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.",
+    "holds": true,
+    "note": "Rejection driven by reviews in a thread with no brand reply in the packet, so reply tone cannot be the cause here."
+   },
+   {
+    "evidence_id": "E-0040",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "I got suspicious after seeing such an aggressive ad campaign (it’s literally tailing me everywhere)",
+    "holds": true,
+    "note": "Shows ad-driven suspicion, but no decision not to buy is stated; it is suspicion leading to checking, not a rejection."
+   },
+   {
+    "evidence_id": "E-0050",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "I was considering buying one after seeing an ad, but it seemed a little... suspicious.",
+    "holds": true,
+    "note": "Holds for suspicion triggered by an ad; the decision was confirmed by a parent write-up on cheap material and zippers, so it also supports H1."
+   },
+   {
+    "evidence_id": "E-0002",
+    "h_id": "H3",
+    "role": "supports",
+    "located_span": "",
+    "holds": false,
+    "note": "Not a would-be buyer turned away before any product evidence: the author bought because of the timer urgency, then cancelled because of the timer reset combined with no receipt and no service replies. This is a post-purchase experience of specific tactics, not general pre-purchase DTC suspicion."
+   }
+  ],
+  "issues": "preference_reason lists 'a bqe83z reader' among threads without the brand reply, but the packet shows bqe83z contains a brand reply (parent of E-0060) and is one of the two reply threads. It calls H2 'one incident', but the packet shows two different brand replies in two separate threads (18nj9sk and bqe83z). Missing alternative: customer-service/refund/return reports (parents of E-0071 and E-0041, and E-0002) as a separate cause from product failures; H1's evidence mostly cites generic 'negative reviews' and does not separate the two. H1 diagnosticity HIGH is overrated because none of its items names a specific zipper or strap failure, which the analysis itself lists as missing. H2's evidence is the most explicit and specific, and E-0026 (an owner with broken zippers who still meant to rebuy until the reply) points directly against H1 being the decider. E-0071 does not support H1 and E-0002 does not support H3. 'After which H1 decides' generalizes beyond the evidence.",
+  "reasoning": "H1 and H2 are real competing explanations, but H3 is framed as a trigger rather than a rival, and a customer-service explanation is missing. Most evidence roles hold, but H1's support is generic and does not discriminate, while H2 has five explicit, specific attributions. The preference for H1 rests on a preference_reason that misstates the packet (bqe83z treated as having no reply, two replies treated as one incident), so the reason asserts what the evidence does not show and the preference does not follow better than H2."
+ ,
+  "auditor": "independent ACH auditor 2"
+ }
+]

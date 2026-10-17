@@ -28,10 +28,18 @@ def table_path(project_dir, table, contract=None):
     return Path(project_dir) / contract["tables"][table]["file"]
 
 
+_JSONL_CACHE = {}
+
+
 def read_jsonl(path):
+    """Rows of a JSONL table. Parsed tables are cached by (path, mtime, size); callers get fresh row dicts."""
     path = Path(path)
     if not path.exists():
         return []
+    st = path.stat()
+    key = (str(path.resolve()), st.st_mtime_ns, st.st_size)
+    if key in _JSONL_CACHE:
+        return [dict(r) for r in _JSONL_CACHE[key]]
     rows = []
     for n, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
         line = line.strip()
@@ -41,7 +49,8 @@ def read_jsonl(path):
             rows.append(json.loads(line))
         except json.JSONDecodeError as e:
             raise SystemExit(f"{path}:{n}: invalid JSON: {e}")
-    return rows
+    _JSONL_CACHE[key] = rows
+    return [dict(r) for r in rows]
 
 
 def append_jsonl(path, rows):
@@ -84,6 +93,75 @@ def span_in(span, text):
 
 def text_hash(s):
     return hashlib.sha1(norm_text(s).encode("utf-8")).hexdigest()[:12]
+
+
+def content_hash(obj):
+    """Stable hash of a JSON-like value (sorted keys)."""
+    return hashlib.sha256(json.dumps(obj, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()[:16]
+
+
+class ContentHasher:
+    """Content versions for audit binding (contract 0.5).
+
+    A claim's hash covers its whole record (ids aside, text normalised), the content of every evidence row it
+    cites (source, verbatim span, labels, hash of the stored source text) and, recursively, the hashes of its
+    premise claims. An ACH hash covers the whole analysis, the evidence it cites and its pattern claim's hash.
+    An audit counts only while the hash it was made for equals the current one, so any edit to a claim, its
+    evidence, its source text or a premise makes the old audit stale, and the staleness reaches every dependant.
+    """
+    IDS = {"claim_id", "project_id", "ach_id"}
+
+    def __init__(self, tables):
+        self.claims = {c["claim_id"]: c for c in tables.get("claims", [])}
+        self.evidence = {e["evidence_id"]: e for e in tables.get("evidence", [])}
+        self.sources = {s["source_id"]: s for s in tables.get("sources", [])}
+        self.ach_rows = {h["ach_id"]: h for h in tables.get("hypotheses", [])}
+        self._memo = {}
+
+    def evidence_part(self, eid):
+        e = self.evidence.get(eid)
+        if not e:
+            return None
+        s = self.sources.get(e.get("source_id")) or {}
+        body = {k: v for k, v in e.items() if k not in ("evidence_id", "project_id")}
+        body["quote_span"] = norm_text(body.get("quote_span", ""))
+        return {"evidence": body, "source_text": text_hash(s.get("text", ""))}
+
+    def _norm_record(self, rec):
+        out = {}
+        for k, v in rec.items():
+            if k in self.IDS:
+                continue
+            out[k] = norm_text(v) if isinstance(v, str) else v
+        return out
+
+    def claim(self, cid, _stack=()):
+        if ("C", cid) in self._memo:
+            return self._memo[("C", cid)]
+        c = self.claims.get(cid)
+        if c is None:
+            return None
+        if cid in _stack:
+            return "CYCLE"
+        eids = sorted(set(c.get("supporting_evidence_ids") or []) | set(c.get("contradicting_evidence_ids") or []))
+        payload = {"claim": self._norm_record(c), "evidence": {e: self.evidence_part(e) for e in eids},
+                   "premises": {p: self.claim(p, _stack + (cid,)) for p in sorted(c.get("premise_claim_ids") or [])}}
+        h = content_hash(payload)
+        self._memo[("C", cid)] = h
+        return h
+
+    def ach(self, aid):
+        if ("A", aid) in self._memo:
+            return self._memo[("A", aid)]
+        h = self.ach_rows.get(aid)
+        if h is None:
+            return None
+        eids = sorted({e for x in h.get("hypotheses") or [] for e in (x.get("supporting_ids") or []) + (x.get("refuting_ids") or [])})
+        payload = {"ach": self._norm_record(h), "evidence": {e: self.evidence_part(e) for e in eids},
+                   "pattern": self.claim(h.get("pattern_claim_id"))}
+        out = content_hash(payload)
+        self._memo[("A", aid)] = out
+        return out
 
 
 def author_key(platform, name):

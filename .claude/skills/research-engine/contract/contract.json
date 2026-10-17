@@ -1,5 +1,5 @@
 {
-  "contract_version": "0.4",
+  "contract_version": "0.5",
   "note": "Single source of truth. Instructions, validators and test fixtures read field lists, enums and gates from this file. Change it here, never in a copy.",
   "enums": {
     "access_status": [
@@ -150,6 +150,23 @@
       "author",
       "thread",
       "story"
+    ],
+    "brief_verdict": [
+      "ENTAILED",
+      "LIMITATION_OK",
+      "OVERSTATES",
+      "NOT_SUPPORTED"
+    ],
+    "ach_verdict": [
+      "SOUND",
+      "OVERREACHES",
+      "UNSOUND"
+    ],
+    "ach_status": [
+      "ACH_AUDITED",
+      "PATTERN_VALID",
+      "ACH_PRELIMINARY",
+      "ACH_REJECTED"
     ]
   },
   "tables": {
@@ -370,13 +387,15 @@
         "evidence_checks",
         "scope_issue",
         "open_contradiction",
-        "reasoning"
+        "reasoning",
+        "claim_hash"
       ],
       "optional": [
         "notes",
         "hypothesis_check",
         "uncovered_premises",
-        "link_check"
+        "link_check",
+        "hash_basis"
       ],
       "enum_fields": {
         "verdict": "audit_verdict",
@@ -389,6 +408,57 @@
         "supports",
         "note"
       ]
+    },
+    "ach_audits": {
+      "file": "ach_audits.jsonl",
+      "key": "ach_audit_id",
+      "required": [
+        "ach_audit_id",
+        "ach_id",
+        "ach_hash",
+        "auditor",
+        "audited_at",
+        "verdict",
+        "evidence_checks",
+        "issues",
+        "reasoning"
+      ],
+      "optional": [
+        "notes",
+        "hash_basis"
+      ],
+      "enum_fields": {
+        "verdict": "ach_verdict"
+      },
+      "evidence_check_fields": [
+        "evidence_id",
+        "h_id",
+        "role",
+        "located_span",
+        "holds",
+        "note"
+      ]
+    },
+    "brief_audits": {
+      "file": "brief_audits.jsonl",
+      "key": "brief_audit_id",
+      "required": [
+        "brief_audit_id",
+        "lang",
+        "line_hash",
+        "line",
+        "auditor",
+        "audited_at",
+        "verdict",
+        "issue"
+      ],
+      "optional": [
+        "notes",
+        "section"
+      ],
+      "enum_fields": {
+        "verdict": "brief_verdict"
+      }
     }
   },
   "counting_rules": {
@@ -487,6 +557,11 @@
       "version": "0.4",
       "date": "2026-10-17",
       "change": "Premise audit for hypotheses (holdout H18), RESEARCH_QUESTION status, claim classes, computed CORPUS_STATISTIC, ACH validity, derived-statement and consistency checks for briefs. APPROVED renamed FACT_APPROVED; CONTRADICTED folded into BLOCKED."
+    },
+    {
+      "version": "0.5",
+      "date": "2026-10-17",
+      "change": "Holdout v04 integration probes X01-X06: audits bound to content hashes (stale audit = no audit, recursive through premises); semantic audit of every brief line replaces heading-based lint; URLs no longer count as citations; ACH statuses ACH_PRELIMINARY / PATTERN_VALID / ACH_AUDITED / ACH_REJECTED with a substantive ACH audit."
     }
   ],
   "class_rules": {
@@ -506,5 +581,8 @@
     ],
     "premise_rule": "A hypothesis passes as HYPOTHESIS_UNTESTED only if (1) the audit says FORWARD_LOOKING_OK, (2) every premise_claim_id is FACT_APPROVED, (3) the auditor lists no uncovered factual premise, (4) link_check is PLAUSIBLE_UNTESTED. A hypothesis status never raises the evidence level of its premises. Failing (2)-(4) gives RESEARCH_QUESTION: kept as a question to investigate, never used as a finding.",
     "corpus_statistic_rule": "CORPUS_STATISTIC is recomputed from the ledger: unit, numerator evidence ids, denominator query ids. Numbers in the text must equal the recomputed ones, the text must name the corpus, and a corpus built mostly from PROBLEM queries needs a bias_note. It never measures a population."
-  }
+  },
+  "audit_binding_rule": "Every audit stores the content hash it was made for (audits.claim_hash, ach_audits.ach_hash, brief_audits.line_hash). A claim hash covers the whole claim record, the cited evidence rows, the hash of each cited source text and, recursively, the hashes of premise claims. An ACH hash covers the whole analysis, its evidence and its pattern claim hash. A brief line hash covers the language, the normalised line and the hashes of every claim, ACH and source URL it cites. validate.py uses only audits whose hash equals the current one; a stale audit counts as no audit, so an edit anywhere upstream returns the claim, the ACH or the brief line to review.",
+  "ach_rule": "ACH_PRELIMINARY: the pattern claim is not FACT_APPROVED. PATTERN_VALID: the pattern is approved but the analysis itself has no current SOUND audit. ACH_AUDITED: pattern approved and a current audit judged the competing explanations, the cited evidence (verbatim spans), the refutations and the preference SOUND. ACH_REJECTED: the current audit says UNSOUND, or the last audit said UNSOUND and the analysis was edited without a new audit; it cannot be cited. OVERREACHES keeps PATTERN_VALID or ACH_PRELIMINARY. Only ACH_AUDITED may be cited without a 'preliminary' label, and even then causality is NOT_ESTABLISHED.",
+  "brief_rule": "Two layers. Structural lint (script): references resolve, status labels present, RU/EN parity of ids and URLs, generated STATS block current, a URL is never a citation, Sources lists only archived URLs. Semantic audit (independent auditor): every content line of both briefs, in every section except Sources, is audited against the records it cites; a line must be ENTAILED (says no more than the cited records establish at their status) or LIMITATION_OK (adds no finding: a limit, gap, method or process note). An unaudited, stale, OVERSTATES or NOT_SUPPORTED line fails the export. Creative ideas stay free as long as they are written as labelled hypotheses."
 }

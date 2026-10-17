@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS = ROOT / "scripts"
 sys.path.insert(0, str(SCRIPTS))
-from re_lib import append_jsonl, text_hash  # noqa: E402
+from re_lib import ContentHasher, append_jsonl, read_jsonl, text_hash, write_jsonl  # noqa: E402
 
 FIXTURE_SOURCES = [
     # thread A: three comments in one thread
@@ -42,6 +42,19 @@ def run(cmd, expect_ok=None):
 
 def add(pdir, table, rec, expect_ok=True):
     return run([str(SCRIPTS / "ledger.py"), "--project-dir", pdir, "add", table, json.dumps(rec)], expect_ok)
+
+
+def tables(pdir):
+    return {n: read_jsonl(Path(pdir, f)) for n, f in (("claims", "claims.jsonl"), ("evidence", "evidence.jsonl"),
+            ("sources", "archive/sources.jsonl"), ("hypotheses", "hypotheses.jsonl"))}
+
+
+def rewrite(pdir, fname, key, rid, **fields):
+    rows = read_jsonl(Path(pdir, fname))
+    for r in rows:
+        if r[key] == rid:
+            r.update(fields)
+    write_jsonl(Path(pdir, fname), rows)
 
 
 def ev(source_id, span, **kw):
@@ -159,7 +172,8 @@ def main():
         if hc == "FORWARD_LOOKING_OK":
             extra.update({"uncovered_premises": [], "link_check": "PLAUSIBLE_UNTESTED"})
         extra.update(more)
-        return {"claim_id": cid, "auditor": "fixture-auditor", "verdict": verdict, "scope_issue": scope_issue,
+        return {"claim_id": cid, "claim_hash": ContentHasher(tables(pdir)).claim(cid),
+                "auditor": "fixture-auditor", "verdict": verdict, "scope_issue": scope_issue,
                 "open_contradiction": open_c, "reasoning": "fixture", **extra,
                 "evidence_checks": [{"evidence_id": E[k], "located_span": s, "supports": True, "note": ""} for k, s in checks]}
 
@@ -202,30 +216,104 @@ def main():
         failures += got != want
         print(f"{mark} {name:36s} -> {got:18s} {'; '.join(st[C[name]]['reasons'])[:110]}")
 
-    # Brief traps (ACH-0001 points to the unapproved T1 pattern, so it is PRELIMINARY)
-    add(pdir, "hypotheses", {"pattern_claim_id": C["T1 one thread"], "question": "why", "preferred_h_id": "H1",
-                             "preference_reason": "fixture", "causal_status": "NOT_ESTABLISHED",
-                             "hypotheses": [{"h_id": "H1", "statement": "a", "supporting_ids": [E["a1"]], "refuting_ids": [],
-                                             "diagnosticity": "HIGH", "missing_evidence": "x"},
-                                            {"h_id": "H2", "statement": "b", "supporting_ids": [], "refuting_ids": [E["a1"]],
-                                             "diagnosticity": "LOW", "missing_evidence": "y"}]})
-    Path(pdir, "ru.md").write_text(f"## Главное\nИнсайт [{C['T9 clean pattern']}] https://example.test/x\n"
-                                   f"Ещё [{C['T1 one thread']}]\nГипотеза: [{C['T12 hypothesis']}]\n"
-                                   f"Главный риск бренда — отзывы.\nПочему уходят [ACH-0001]\n", encoding="utf-8")
-    Path(pdir, "en.md").write_text(f"## Main points\nInsight [{C['T9 clean pattern']}] https://example.test/x\n"
-                                   f"Also [{C['T1 one thread']}]\n[{C['T12 hypothesis']}] structure signals competence. Привет\n"
-                                   f"The main brand risk is reviews.\nWhy people leave [ACH-0001]\n", encoding="utf-8")
-    run([str(SCRIPTS / "validate.py"), "--project-dir", pdir, "--brief-ru", f"{pdir}/ru.md", "--brief-en", f"{pdir}/en.md"])
-    issues = json.loads(Path(pdir, "gate_report.json").read_text())["brief_issues"]
+    # Brief traps. ACH-0001 explains the unapproved T1 pattern (ACH_PRELIMINARY); ACH-0002 the approved T9 pattern.
+    def ach_rec(pattern):
+        return {"pattern_claim_id": pattern, "question": "why", "preferred_h_id": "H1",
+                "preference_reason": "fixture: H1 fits the cited comments better than H2", "causal_status": "NOT_ESTABLISHED",
+                "hypotheses": [{"h_id": "H1", "statement": "load on one shoulder", "supporting_ids": [E["a1"]],
+                                "refuting_ids": [], "diagnosticity": "HIGH", "missing_evidence": "x"},
+                               {"h_id": "H2", "statement": "fashion", "supporting_ids": [], "refuting_ids": [E["a1"]],
+                                "diagnosticity": "LOW", "missing_evidence": "y"}]}
+    add(pdir, "hypotheses", ach_rec(C["T1 one thread"]))
+    add(pdir, "hypotheses", ach_rec(C["T9 clean pattern"]))
+    t9, t12 = C["T9 clean pattern"], C["T12 hypothesis"]
+    Path(pdir, "ru.md").write_text(
+        f"## Главное\nИнсайт [{t9}] https://example.test/x\nЕщё [{C['T1 one thread']}]\nГипотеза: [{t12}]\n"
+        f"Главный риск бренда — отзывы.\nПочему уходят [ACH-0001]\nОбъяснение [ACH-0002]\n"
+        f"- «my shoulder is destroyed by noon» https://example.test/RD-a1\n"
+        f"## Источники\n- https://example.test/RD-a1\n- https://example.test/not-archived\n", encoding="utf-8")
+    Path(pdir, "en.md").write_text(
+        f"## Main points\nInsight [{t9}] https://example.test/x\nAlso [{C['T1 one thread']}]\n[{t12}] structure signals "
+        f"competence. Привет\nThe main brand risk is reviews.\nWhy people leave [ACH-0001]\nExplanation [ACH-0002]\n"
+        f"- \"my shoulder is destroyed by noon\" https://example.test/RD-a1\n"
+        f"## Sources\n- https://example.test/RD-a1\n- https://example.test/not-archived\n", encoding="utf-8")
+    brief_args = ["--brief-ru", f"{pdir}/ru.md", "--brief-en", f"{pdir}/en.md"]
+
+    def brief_issues():
+        run([str(SCRIPTS / "validate.py"), "--project-dir", pdir] + brief_args)
+        rep = json.loads(Path(pdir, "gate_report.json").read_text())
+        return rep["brief_issues"], {c["claim_id"]: c for c in rep["claims"]}, rep["ach"]
+
+    def check(name, ok):
+        nonlocal failures
+        failures += not ok
+        print(f"{'ok  ' if ok else 'FAIL'} {name}")
+
+    issues, _, ach = brief_issues()
     for needle, name in (("Cyrillic", "T8a EN Cyrillic"), ("cannot appear", "T8b unapproved claim in brief"),
                          ("no 'hypothes' label", "T8c unlabeled hypothesis"),
-                         ("unreferenced analytic statement", "T8d strategic sentence without a claim"),
-                         ("PRELIMINARY", "T8e ACH on an unapproved pattern without label"),
+                         ("ACH-0001 is ACH_PRELIMINARY", "T8e ACH on an unapproved pattern without label"),
                          ("STATS block", "T8f brief statistics not generated from the ledger"),
-                         ("ledger_snapshot", "T8g project snapshot missing")):
-        hit = any(needle in i for i in issues)
-        failures += not hit
-        print(f"{'ok  ' if hit else 'FAIL'} {name}")
+                         ("ledger_snapshot", "T8g project snapshot missing"),
+                         ("ACH-0002 is PATTERN_VALID", "T29a approved pattern but unaudited ACH cited without label"),
+                         ("not verbatim in the source at the cited URL", "T30 quote next to a URL not verbatim"),
+                         ("not in the archive", "T32 Sources lists an unarchived URL")):
+        check(name, any(needle in i for i in issues))
+    check("T8d sentence without a claim has no brief audit",
+          any("no current brief audit" in i and "main brand risk" in i for i in issues))
+
+    # contract 0.5: substantive ACH audit, then the semantic brief audit (ACH status is part of the line hash)
+    sound = {"ach_id": "ACH-0002", "verdict": "SOUND", "issues": "", "reasoning": "fixture", "auditor": "fixture-auditor",
+             "evidence_checks": [{"evidence_id": E["a1"], "h_id": "H1", "role": "supports",
+                                  "located_span": "my shoulder aches by lunch", "holds": True, "note": ""}]}
+    run([str(SCRIPTS / "audit_packet.py"), "--project-dir", pdir, "--ach", "ACH-0002"], True)
+    pk = Path(pdir, "ach_packet.json")
+    pk.write_text(run([str(SCRIPTS / "audit_packet.py"), "--project-dir", pdir, "--ach", "ACH-0002"]).stdout)
+    p = run([str(SCRIPTS / "ledger.py"), "--project-dir", pdir, "add", "ach_audits", json.dumps(sound), "--packet", str(pk)], True)
+    _, _, ach = brief_issues()
+    check("T29b ACH with approved pattern and SOUND audit is ACH_AUDITED", ach["ACH-0002"]["status"] == "ACH_AUDITED")
+
+    run([str(SCRIPTS / "brief_packet.py"), "--project-dir", pdir] + brief_args + ["--out-dir", f"{pdir}/bp"], True)
+    lines = json.loads(Path(pdir, "bp/brief_packet_01.json").read_text())["lines"]
+    answers = [{"line_hash": x["line_hash"], "auditor": "fixture-auditor", "issue": "" if "risk" not in x["line"]
+                and "риск" not in x["line"] else "asserts the main brand risk without a record",
+                "verdict": "NOT_SUPPORTED" if ("risk" in x["line"] or "риск" in x["line"]) else "ENTAILED"} for x in lines]
+    run([str(SCRIPTS / "ledger.py"), "--project-dir", pdir, "add", "brief_audits", json.dumps(answers),
+         "--packet", f"{pdir}/bp/brief_packet_01.json"], True)
+    issues, _, _ = brief_issues()
+    check("T26 audited line judged NOT_SUPPORTED fails the export", any("says NOT_SUPPORTED" in i for i in issues))
+    check("T27 every other line now has a current brief audit", not any("no current brief audit" in i for i in issues))
+    check("T29b' ACH_AUDITED needs no preliminary label", not any("ACH-0002 is" in i for i in issues))
+
+    # X04 class: the ACH argument changes after its audit
+    rewrite(pdir, "hypotheses.jsonl", "ach_id", "ACH-0002",
+            preference_reason="All buyers are wrong; the bag never breaks and this is scientifically proven.")
+    issues, _, ach = brief_issues()
+    check("T29c ACH edited after audit falls back to PATTERN_VALID", ach["ACH-0002"]["status"] == "PATTERN_VALID")
+    check("T29c' its brief line needs a new audit", any("no current brief audit" in i and "ACH-0002" in i for i in issues))
+    unsound = dict(sound, verdict="UNSOUND", issues="preference_reason asserts proof the evidence does not show")
+    pk.write_text(run([str(SCRIPTS / "audit_packet.py"), "--project-dir", pdir, "--ach", "ACH-0002"]).stdout)
+    run([str(SCRIPTS / "ledger.py"), "--project-dir", pdir, "add", "ach_audits", json.dumps(unsound), "--packet", str(pk)], True)
+    issues, _, ach = brief_issues()
+    check("T29d UNSOUND ACH is ACH_REJECTED and cannot be cited",
+          ach["ACH-0002"]["status"] == "ACH_REJECTED" and any("ACH-0002 is ACH_REJECTED" in i for i in issues))
+
+    rewrite(pdir, "hypotheses.jsonl", "ach_id", "ACH-0002", preference_reason="fixture: reworded without a new audit")
+    _, _, ach = brief_issues()
+    check("T29e editing a rejected ACH does not clear the rejection", ach["ACH-0002"]["status"] == "ACH_REJECTED")
+
+    # X01 / X05 class: claim text changes after its audit
+    old_hash = ContentHasher(tables(pdir)).claim(t9)
+    rewrite(pdir, "claims.jsonl", "claim_id", t9, text="Clinical tests prove the tote prevents shoulder pain")
+    issues, st, _ = brief_issues()
+    check("T23 fact edited after audit loses FACT_APPROVED (stale audit)",
+          st[t9]["status"] != "FACT_APPROVED" and any("stale" in r for r in st[t9]["reasons"]))
+    t20 = C["T20 clean hypothesis on approved premise"]
+    check("T23' hypothesis on the edited premise is no longer HYPOTHESIS_UNTESTED (recursive)",
+          st[t20]["status"] != "HYPOTHESIS_UNTESTED")
+    check("T28 brief line citing the edited claim fails", any(t9 in i for i in issues))
+    p = add(pdir, "audits", dict(audit(t9, good), claim_hash=old_hash), expect_ok=False)
+    check("T24 audit made for the old content is rejected at insert", "not the current content" in p.stdout)
     print(f"\n{'ALL TRAPS CAUGHT' if not failures else f'{failures} FAILURES'}  (project: {pdir})")
     sys.exit(1 if failures else 0)
 

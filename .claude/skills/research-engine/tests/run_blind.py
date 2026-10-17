@@ -15,7 +15,9 @@ Pipeline per case, same as a real project:
        literal mismatch, CONTRADICTED, BLOCKED type, auditor DOES_NOT_SUPPORT -> BLOCK
        anything else (NEEDS_REVIEW) -> NEEDS_REVIEW
 Adapter weakness, stated openly: there is no separate author here, so the auditor's labels stand in for the
-author's evidence labels.
+author's evidence labels. The adapter has no claim ledger: a case may carry "claim_class" and "premises"
+([{"claim_id", "text", "status"}]); they go into the packet and premise statuses into hypothesis_status, but
+content hashing, stale audits, ACH and brief checks are only exercised on a real project (run_integration.py).
 """
 import argparse
 import json
@@ -65,6 +67,9 @@ def cmd_prepare(args):
         verdict, detail = literal(c)
         lit[c["test_id"]] = {"literal_anchor": verdict, "anchors": detail}
         packets.append({"case_id": c["test_id"], "claim": c["claim"]["text"], "claim_type": c["claim"]["claim_type"],
+                        "claim_class": c["claim"].get("claim_class"),
+                        "premises": [{"claim_id": x.get("claim_id"), "text": x.get("text"), "claim_class": x.get("claim_class")}
+                                     for x in c["claim"].get("premises") or []],
                         "evidence_items": [{"evidence_id": f"{c['test_id']}:{a.get('source_id')}:{i}",
                                             "source_id": a.get("source_id"), "cited_span": a.get("exact_text")}
                                            for i, a in enumerate(c["claim"].get("quote_anchors") or [])],
@@ -123,7 +128,10 @@ def cmd_finalize(args):
                 confirmed.append(ev)
         claim = {"counter_search_query_ids": [], "contradicting_evidence_ids": []}
 
-        hyp_type = ctype in ("HYPOTHESIS", "SITUATION_REACH")
+        hyp_type = ctype in ("HYPOTHESIS", "SITUATION_REACH") or case["claim"].get("claim_class") in \
+            contract["class_rules"]["hypothesis_classes"]
+        premise_problems = [f"premise {x.get('claim_id')} is {x.get('status') or 'of unknown status'}, not FACT_APPROVED"
+                            for x in case["claim"].get("premises") or [] if x.get("status") != "FACT_APPROVED"]
 
         # structural = schema-level validity only (agreed with the benchmark owner): literal anchors present and
         # verbatim, sources usable. Evidence sufficiency (counts, independence, counter-search) is reported apart.
@@ -137,7 +145,7 @@ def cmd_finalize(args):
         if ctype == "CREATIVE_PERFORMANCE":
             sufficiency, s_reasons = "FAIL", [contract["gates"][ctype]["note"]]
             decided_by.append("python:type_rule")
-        elif ctype == "HYPOTHESIS":
+        elif ctype == "HYPOTHESIS" or (hyp_type and ctype != "SITUATION_REACH"):
             sufficiency, s_reasons = "NOT_APPLICABLE", []
         else:
             g_ok, s_reasons, _ = gate_check(ctype, evs, sources, {}, claim, contract)
@@ -189,15 +197,17 @@ def cmd_finalize(args):
                 reasons += [f"after audit: {r}" for r in ag_reasons]
                 decided_by.append("python:audited_gate")
 
-        # 4. engine status (validate.py rules, contract 0.3) -> benchmark final
+        # 4. engine status (validate.py rules) -> benchmark final
         if not literal_ok:
             engine_status = "NEEDS_REVIEW"
         elif ctype == "CREATIVE_PERFORMANCE":
             engine_status = "BLOCKED"
-        elif ctype == "HYPOTHESIS":
-            engine_status = hypothesis_status(a)[0]
+        elif ctype == "HYPOTHESIS" or (hyp_type and ctype != "SITUATION_REACH"):
+            engine_status, h_reasons = hypothesis_status(a, premise_problems)
+            if engine_status != "HYPOTHESIS_UNTESTED":
+                reasons += [r for r in h_reasons if r.startswith("premise")]
         elif ctype == "SITUATION_REACH":
-            engine_status = hypothesis_status(a)[0] if sufficiency == "PASS" else "NEEDS_REVIEW"
+            engine_status = hypothesis_status(a, premise_problems)[0] if sufficiency == "PASS" else "NEEDS_REVIEW"
             if sufficiency != "PASS" and a and (a.get("hypothesis_check") == "ASSERTS_UNOBSERVED_FACT"
                                                 or a.get("verdict") == "DOES_NOT_SUPPORT"):
                 engine_status = "BLOCKED"

@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-17T06:18:42+00:00 by validate.py (contract 0.4). Statuses here are computed, not self-declared.
+Computed 2026-10-17T07:09:51+00:00 by validate.py (contract 0.5). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 
@@ -73,9 +73,11 @@ Computed 2026-10-17T06:18:42+00:00 by validate.py (contract 0.4). Statuses here 
 
 ## ACH
 
-- ACH-0001: **PRELIMINARY** (pattern C-0002 is NEEDS_REVIEW)
-- ACH-0002: **PRELIMINARY** (pattern C-0011 is NEEDS_REVIEW)
-- ACH-0003: **VALID** (pattern C-0038 is FACT_APPROVED)
+- ACH-0001: **ACH_PRELIMINARY** (pattern C-0002 is NEEDS_REVIEW); pattern C-0002 is NEEDS_REVIEW; ACH audit AA-0003 verdict OVERREACHES: 1) The preference_reason says load on one shoulder is 'named in switch stories across five threads'. The H1 evidence comes from four threads (1wwpn82, 1wxoin9, 1aqqf8j, 1w0zzdx), and none of it is a completed tote-to-backpack switch: these are prospective switc
+- ACH-0002: **ACH_REJECTED** (pattern C-0011 is NEEDS_REVIEW); ACH audit AA-0001 verdict UNSOUND: preference_reason lists 'a bqe83z reader' among threads without the brand reply, but the packet shows bqe83z contains a brand reply (parent of E-0060) and is one of the two reply threads. It calls H2 'one incident', but the packet shows two different brand replies 
+- ACH-0003: **ACH_REJECTED** (pattern C-0038 is FACT_APPROVED); ACH audit AA-0002 verdict UNSOUND: Missing alternative: negative reviews about customer service, refunds and returns (unanswered emails, refused returns, restocking fees, order handling) are a distinct non-product explanation visible in E-0071's parent, E-0041's parent and E-0002; H1 is defined narr
+- ACH-0004: **ACH_AUDITED** (pattern C-0038 is FACT_APPROVED)
+- ACH-0005: **ACH_PRELIMINARY** (pattern C-0002 is NEEDS_REVIEW); pattern C-0002 is NEEDS_REVIEW; ACH audit AA-0005 verdict OVERREACHES: Preference for H1 over H5 is not shown: the reason's lead claim ('weight carried on one shoulder') is the core of H5 as much as H1, and the completed switch stories (E-0276 padded backpack made the commute 'loads better', E-0290 'carries weight well') suggest t
 
 ## Coverage: COVERAGE_LIMITED
 - planned source not retrievable by any tested route: official

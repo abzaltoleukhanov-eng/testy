@@ -52,3 +52,25 @@ python3 skills/research-engine/tests/run_blind.py finalize --inputs research/ben
 python3 skills/research-engine/tests/run_integration.py --cases research/benchmarks/holdout_v04/inputs/integration_cases.jsonl --project research/LEVANT-001 --out integration_results04.json
 ```
 Run the commands at the commit in `engine_lock.json`; later commits change the engine.
+
+## After the fixes: contract 0.5 regression (not blind)
+This section was added after the locked results above, which stay as submitted (`predictions_holdout04.json`,
+`integration_results04.json`). The same probes were rerun on the contract 0.5 engine and the migrated LEVANT-001
+→ `integration_results05_regression.json`. X04b (`regression_extra_cases.jsonl`) was added by Claude: it is X04
+applied to the ACH that the brief now cites.
+
+| Probe | 0.4 | 0.5 |
+|---|---|---|
+| BASELINE | exit 0 | exit 0; C-0051 FACT_APPROVED, C-0062 HYPOTHESIS_UNTESTED, ACH-0003 ACH_REJECTED, ACH-0004 ACH_AUDITED |
+| X01 claim text replaced | exit 0, still FACT_APPROVED | exit 1; C-0051 NEEDS_REVIEW (stale audit), C-0062 NEEDS_REVIEW (its hash includes the premise), 39 brief issues |
+| X02 non-entailed line with [C-0051] | exit 0 | exit 1; the line has no audit (2 issues, RU and EN) |
+| X03 product URL as citation | exit 0 | exit 1; the line has no audit, and a URL never counts as a citation |
+| X04 ACH-0003 reason replaced | exit 0, VALID | exit 0, ACH_REJECTED: its audit had already found it UNSOUND, the edit does not clear that, and the brief no longer cites it |
+| X04b ACH-0004 reason replaced | — | exit 1; ACH-0004 falls back to PATTERN_VALID, 20 issues (unlabelled lines and stale line audits) |
+| X05 hypothesis text replaced | exit 0 | exit 1; C-0062 NEEDS_REVIEW (stale audit), 27 brief issues |
+| X06 line under the product heading | exit 0 | exit 1; every section except Sources is audited, so the line has no audit |
+
+These probes were known before the fixes were written, so this is regression, not a measure of the error rate.
+The structural layer blocks anything unaudited. Whether an audited line really says no more than its records
+depends on the brief auditor. On the real pilot, that auditor marked 24 of 226 lines OVERSTATES or NOT_SUPPORTED
+on its first pass, in a brief that passed every 0.4 check.

@@ -1,0 +1,565 @@
+{
+ "records": {
+  "https://nordace.com/en/product/siena-levant-tote-bag/": {
+   "kind": "SOURCE",
+   "platform": "official",
+   "text": "NEW | Home / Bags / Totes | Siena Lévant Tote Bag | £159.00 | Color : [two colour swatches: black with tan trim, cream with tan trim]"
+  },
+  "C-0020": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+   "scope_limits": "Revision of C-0001 using only laptop-confirmed evidence. Reddit commenters who chose to post; not a share of tote owners.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0024": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Some shoppers check how heavy a bag is when empty, and several reject or regret bags that are heavy before anything is put in them, including leather and structured bags.",
+   "scope_limits": "Revision of C-0005. Covers totes and backpacks; others say the contents, not the bag, are the problem.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0035": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while a few owners report vegan bags that held up, one for about four and a half years without cracking or peeling.",
+   "scope_limits": "Revision of C-0026. Beliefs plus individual owner reports; one source is about jackets; nothing about the Lévant material.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0012": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PERSONAL_EXPERIENCE",
+   "claim_class": null,
+   "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+   "scope_limits": "One person; the tote is named only as 'the Nordace tote' (Siena tote thread), not the Lévant.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0038": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PURCHASE_DRIVER",
+   "claim_class": null,
+   "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
+   "scope_limits": "Revision of C-0029.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0059": {
+   "kind": "CLAIM",
+   "status": "HYPOTHESIS_UNTESTED",
+   "claim_type": "HYPOTHESIS",
+   "claim_class": "CAUSAL_HYPOTHESIS",
+   "text": "If cold-traffic shoppers look Nordace up on Reddit before buying (not yet measured), the negative discussion that led some readers to hold off could cost conversions; showing warranty terms and owner reports, if they are available for the Lévant, could be tested as a counter.",
+   "scope_limits": "Replaces C-0055 with its conditions made explicit.",
+   "hypothesis_label": "analyst hypothesis: conversion risk, untested",
+   "premises": [
+    {
+     "claim_id": "C-0038",
+     "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0012",
+     "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0015",
+     "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
+     "status": "FACT_APPROVED"
+    },
+    {
+     "claim_id": "C-0046",
+     "text": "The user states that there are no reviews and that the product is new.",
+     "status": "FACT_APPROVED"
+    }
+   ]
+  },
+  "C-0010": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Other Nordace owners in several threads report years of use, repeat purchases, or colleagues buying after seeing their bag.",
+   "scope_limits": "Mostly backpacks; one owner mentions loving a Siena tote; individual reports, not a durability rate.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "C-0046": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PRODUCT_FACT",
+   "claim_class": null,
+   "text": "The user states that there are no reviews and that the product is new.",
+   "scope_limits": "Revision of C-0042: the message replied to a question about Lévant Tote reviews, but the message itself does not name the product.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "https://www.reddit.com/r/femalefashionadvice/comments/1wxoin9/laptop_backpack_that_doesnt_ruin_your_fit/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I’m struggling to find a laptop backpack that’s both cute and practical. I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders. I bring my laptop everywhere for work and studying, so I need something comfortable that won’t ruin my fit. I’m currently sporting the Longchamp le pliage, but have been thinking about switching to the Tumi Celine in Mink or Away Slim Commuter bag in Dune Taupe\n But before I pull the trigger on any purchases, I’d love backpack recommendations to see what everyone else is wearing to lug their stuff is around!"
+  },
+  "https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbjhbth/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I love my Cuyana tote! I’ve had her more than a decade. I switched to an Aer backpack to save my back since I carry a laptop, but if I didn’t have to I’d go tote all the way."
+  },
+  "https://www.reddit.com/r/AskWomenOver30/comments/18xuicb/ladies_what_is_your_goto_style_for_a_bag_or/kg6utoo/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I have gone through a Knomo backpack (felt too small), using a Samsonite nylon backpack right now, and about to upgrade to a Waterfield backpack that my husband bought me. It looks more masculine but very sleek and durable. I have a Kate Spade saffiano tote when I have to look more professional, but it hurts my shoulders to carry a laptop, notebook, and water bottle in there for a day, so I rarely use it."
+  },
+  "https://www.reddit.com/r/handbags/comments/1wgeawi/looking_for_a_laptop_bag_that_doesnt_scream_work/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I need a bag that I can carry my 14 inch MacBook pro in and also use occasionally. My son has brain cancer and the bag will be going with me during treatment days. \n I had to stop working due to my health (i also had breast cancer and some other issues) and his. There's too many appointments to manage. So I don't want a work bag. It's kind of a sore spot that that part of my life is likely over. I write, always have, and my husband encourages me to focus on that instead so I don't lose everything I am as a person to cancers.\n The bag should be under 700. It's going to get knocked around a lot in a chaotic environment and I don't want to freak out about it getting messed up by buying something terribly expensive. I bought this pretty madewell suede but when it's fully loaded I have too much pain. I think it gives you an idea of what I'm looking for. \n I need to carry a water bottle (l currently use theLARS NYSØM Stainless Steel Insulated Water Bottle 25oz Metal Water Bottle because it's pretty), phone, battery pack, a b6 and an a5 sized notebook, pens, and a wallet. I love a purse with built in organization. \n Things I looked at and rejected:\n Cuyana forma. The fact that it can transform and expand when I need it is a huge plus. However, it's entirely too heavy. (3.6 lbs empty)\n Kaai midi pyramid in green. I love the design but reads too business. \n Songmont large drippy tote. My brain thinks suede is fine at 200, but not above 500 for this use case. \n Laptop backpack. I have one, I like it for travel but it's not a me 2 or 3 times every week type of bag. \n I don't particularly like heavy labeled bags. Don't care if it's IYKYK coded. I love things with some softness or visual/artistic interest. Like the le tanneur emile double flap is one I'm considering. It reminds me of an old folio which is kind of fun. \n I've also considered a messenger bag (songmont, coach?) i would prefer to avoid black since that was my standard office wear. I gravitate to richer colors (petrol blue, eggplant, olive).\n Any suggestions ? Thank you so much"
+  },
+  "https://www.reddit.com/r/handbags/comments/1w0zzdx/what_are_we_wearing_to_work_stylishfeminine_bags/p6h6a8s/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "The Beis is already 2.75 pounds before you put anything in it. That’s not terrible but not great either. What about the M. Gemi Lola Grande. It’s super light and using August30 it will be closer to the Coach price. \n I have been on the hunt for a lightweight, zipped, laptop pocket, lightweight leather tote for months. Chat tells me the Lola Grande is a top choice due to weight."
+  },
+  "https://www.reddit.com/r/handbags/comments/1q6rkkl/work_bag_shoulder_pain/nyaeaq5/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "Everyday of my life lol. I have a hybrid job and so I have to carry my laptop back-and-forth because I’ll do a day or two in the office and then home one day, and then back in the office, etc. First things first, is your bag heavy on its own when it’s empty? If that’s the case, you gotta get a new bag. Second, are the straps thick enough? If you have one of those thin strapped totes, it’s gonna be like a dull knife, digging into your shoulder all day 😩. It’s the reason why I got the Cuyana tote bag because their strap is thicker and is a little more softer on the shoulder than other totes. But their bag is heavy 😢, so I’m still on a quest to find a lighter bag with a thicker strap. Lastly, in the meantime until you find a bag that works for you, what I do sometimes if I have to carry many things, I’ll have like one of those reusable shopping tote bags, and I’ll put a few items in there. I’ll still wear both of them on the same shoulder most times, but the fact that the weight is distributed between two bags and not one bag digging into your shoulder at the same spot makes a huge difference for me. Sometimes I carry the shopping tote in my hand, but either way, breaking up the weight has helped me until I find the perfect tote for my lifestyle."
+  },
+  "C-0023": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PATTERN",
+   "claim_class": null,
+   "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
+   "scope_limits": "Revision of C-0004. Workarounds described by commenters; motives differ; not a measure of how common.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbiore4/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "Most days, it’s a fjallraven kanken backpack. If I don’t need to carry as much, a small purse and/or lunch bag."
+  },
+  "https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/mcc5pxt/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I would get a coated canvas bag instead of PU. They tend to be very durable as they are cotton with a coating.\n Anything which is just PU leather will start peeling with daily use."
+  },
+  "https://www.reddit.com/r/Mommit/comments/1psoc8d/mina_baie_durability_longterm_vegan_leather/nvj73z8/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I have a vegan Emmy, coming up on 4.5 years old. They use microfiber vegan leather. So easy to clean! It’s my rain bag because I don’t have to worry about it. No cracking, peeling or flaking. I do clean it with leather conditioner, not sure if it’s helping. But it definitely isn’t hurting it. It’s gone through 3 kids, youngest is 1.5"
+  },
+  "C-0036": {
+   "kind": "CLAIM",
+   "status": "FACT_APPROVED",
+   "claim_type": "PERSONAL_EXPERIENCE",
+   "claim_class": null,
+   "text": "One commenter says they bought a vegan-leather jacket only because it was cheap on sale and that none of their faux-leather items has aged well past five years; another shopper ruled out a vegan-leather work tote as too pricey for vegan leather.",
+   "scope_limits": "Revision of C-0027. Two individuals; one about a jacket; the tote case does not name peeling as the reason.",
+   "hypothesis_label": null,
+   "premises": []
+  },
+  "https://www.reddit.com/r/AbercrombieandFitch/comments/1sajnvc/vegan_leather_quality/oe5htkj/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I bought a vegan leather bomber only because I was able to Get it for super cheap on sale. I would never pay full price or over $70 for vegan leather. All my faux leather jackets start flaking and peeling after a few years. I don’t have anything faux leather that’s more than 5 years old that still looks in great condition. Not just from A&F but from any brand"
+  },
+  "https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "Looking for recommendations for a vegan leather work tote! Trying to buy a work bag as a graduation gift, and I'm looking for something that looks professional, can carry a 15\" laptop, good organizational pockets, and is made out of either vegan leather/suede. Other materials like a thick canvas or maybe nylon might work too depending on the coloring and design. Up to $200 budget. \n After looking around I'm currently trying to decide between the Poppy and Peonies Go-getter, Calpak Haven, and the Monos Metro Tote. My main question is if anyone has any of these bags and has used it long term, how has the quality held up over time? Since they're made out of PU I'm wondering if the material ever starts peeling, especially since a work bag would be something for daily use. \n I've excluded the July Juliette Soft Tote (not enough organization), Freja Paloma (too pricey for vegan leather 😭), and Beis Work Tote (seen reviews citing questionable quality with peeling and strap seams ripping) already. \n Just as a note - I would typically look for a real leather bag, but the recipient is vegetarian so gifting genuine leather seems like it might be a bit questionable."
+  },
+  "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/ijr95qw/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "after reading so many negative reviews I have decided against buying this bag"
+  },
+  "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mmcbov4/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "I was seriously considering buying the Siena Pro Crossbody Bag, but if this is how you engage with the public, I think I will pass. I don’t want to deal with sarcastic customer service if I encounter an issue."
+  },
+  "https://www.reddit.com/r/phRecommendation/comments/1nsv54d/tote_bags_similar_to_nordace_siena_tote/": {
+   "kind": "SOURCE",
+   "platform": "reddit",
+   "text": "Hello! Need recommendations on tote bags similar to the Nordace Siena Tote bag. Qualities that I liked:\n many compartments\n fits a 14\" laptop (also has a dedicated secure compartment)\n top-zip\n water resistant\n its pretty huhu\n Budget is less than 10k. I was planning to buy the Nordace tote, however, reviews on the brand weren't that great. Thanks!"
+  }
+ },
+ "lines": [
+  {
+   "line_hash": "4c96c2a45a51931c",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "",
+   "line": "**Продукт:** Nordace Siena Lévant Tote Bag. https://nordace.com/en/product/siena-levant-tote-bag/",
+   "cites": [
+    "https://nordace.com/en/product/siena-levant-tote-bag/"
+   ]
+  },
+  {
+   "line_hash": "5b1e52428af733ae",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "**Продукт:** Nordace Siena Lévant Tote Bag. https://nordace.com/en/product/siena-levant-tote-bag/",
+   "line": "**Рынки:** US, UK · **Платформа:** Meta, холодный трафик · **Дата:** 17.10.2026",
+   "cites": []
+  },
+  {
+   "line_hash": "16c14de3e360a381",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "**Рынки:** US, UK · **Платформа:** Meta, холодный трафик · **Дата:** 17.10.2026",
+   "line": "**Режим:** пилот research-engine, контракт 0.5; потребительские данные только с Reddit, продуктовые — со скриншотов пользователя",
+   "cites": []
+  },
+  {
+   "line_hash": "badb82fd24cc4b74",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "**Режим:** пилот research-engine, контракт 0.5; потребительские данные только с Reddit, продуктовые — со скриншотов пользователя",
+   "line": "**Покрытие:** `COVERAGE_LIMITED`. Причины:",
+   "cites": []
+  },
+  {
+   "line_hash": "ca03f3f25e99de5d",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "**Покрытие:** `COVERAGE_LIMITED`. Причины:",
+   "line": "- официальная страница продукта закрыта;",
+   "cites": []
+  },
+  {
+   "line_hash": "25297c82f3540658",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "- официальная страница продукта закрыта;",
+   "line": "- в ветках про жалобы, переходы и возвраты нет нейтральных и позитивных запросов;",
+   "cites": []
+  },
+  {
+   "line_hash": "714c93517837f17d",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "- в ветках про жалобы, переходы и возвраты нет нейтральных и позитивных запросов;",
+   "line": "- выдача по UK почти пустая.",
+   "cites": []
+  },
+  {
+   "line_hash": "c13a049441e30fc7",
+   "lang": "RU",
+   "section": "Siena Lévant Tote: что говорят люди о тоутах для работы и о Nordace",
+   "previous_line": "- выдача по UK почти пустая.",
+   "line": "Каждый вывод ниже ссылается на утверждение `[C-…]` или разбор `[ACH-…]`. Статусы вычислил скрипт, а не модель. Стратегические выводы оформлены как гипотезы с явными посылками и прошли отдельный аудит. Каждая строка брифа тоже прошла аудит: она говорит не больше, чем утверждения, на которые ссылается. Цитаты даны в оригинале.",
+   "cites": []
+  },
+  {
+   "line_hash": "59cd36a78fd3d04b",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "Каждый вывод ниже ссылается на утверждение `[C-…]` или разбор `[ACH-…]`. Статусы вычислил скрипт, а не модель. Стратегические выводы оформлены как гипотезы с явными посылками и прошли отдельный аудит. Каждая строка брифа тоже прошла аудит: она говорит не больше, чем утверждения, на которые ссылается. Цитаты даны в оригинале.",
+   "line": "1. Для части людей тоут с ноутбуком становится слишком тяжёлым, и они пишут о боли в плечах и спине [C-0020].",
+   "cites": [
+    "C-0020"
+   ]
+  },
+  {
+   "line_hash": "41a9bb7e33516c9d",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "1. Для части людей тоут с ноутбуком становится слишком тяжёлым, и они пишут о боли в плечах и спине [C-0020].",
+   "line": "2. Люди смотрят на вес сумки ещё до покупки: проверяют, сколько она весит пустой, и отказываются от тяжёлых моделей [C-0024].",
+   "cites": [
+    "C-0024"
+   ]
+  },
+  {
+   "line_hash": "b19a556a40a0360e",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "2. Люди смотрят на вес сумки ещё до покупки: проверяют, сколько она весит пустой, и отказываются от тяжёлых моделей [C-0024].",
+   "line": "3. Веганскую кожу ждут облезающей. Есть и владельцы, у которых она годами в порядке [C-0035].",
+   "cites": [
+    "C-0035"
+   ]
+  },
+  {
+   "line_hash": "91b210e8ae195c04",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "3. Веганскую кожу ждут облезающей. Есть и владельцы, у которых она годами в порядке [C-0035].",
+   "line": "4. Часть потенциальных покупателей после чтения отзывов о Nordace и ответов бренда на Reddit пишет, что не купит или отложит покупку [C-0038]. Один человек так отказался именно от тоута Nordace [C-0012]. Насколько это бьёт по конверсии холодного трафика — гипотеза, не измерено [C-0059].",
+   "cites": [
+    "C-0012",
+    "C-0038",
+    "C-0059"
+   ]
+  },
+  {
+   "line_hash": "db80daff865040cf",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "4. Часть потенциальных покупателей после чтения отзывов о Nordace и ответов бренда на Reddit пишет, что не купит или отложит покупку [C-0038]. Один человек так отказался именно от тоута Nordace [C-0012]. Насколько это бьёт по конверсии холодного трафика — гипотеза, не измерено [C-0059].",
+   "line": "5. У бренда есть и лояльные владельцы: годы использования, повторные покупки, коллеги, купившие после них [C-0010].",
+   "cites": [
+    "C-0010"
+   ]
+  },
+  {
+   "line_hash": "bfe0e43a19c22b3b",
+   "lang": "RU",
+   "section": "Главное за 30 секунд",
+   "previous_line": "5. У бренда есть и лояльные владельцы: годы использования, повторные покупки, коллеги, купившие после них [C-0010].",
+   "line": "6. По словам пользователя, отзывов на Lévant нет, продукт новый [C-0046]. Есть ли отзывы где-то ещё, мы не проверяли. В нашем корпусе Reddit их тоже нет, но это не доказывает, что их нет нигде.",
+   "cites": [
+    "C-0046"
+   ]
+  },
+  {
+   "line_hash": "8d11fe69a4a58089",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "6. По словам пользователя, отзывов на Lévant нет, продукт новый [C-0046]. Есть ли отзывы где-то ещё, мы не проверяли. В нашем корпусе Reddit их тоже нет, но это не доказывает, что их нет нигде.",
+   "line": "**Вес и тело.**",
+   "cites": []
+  },
+  {
+   "line_hash": "73bdd2ba2ce7f5f1",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "**Вес и тело.**",
+   "line": "- Тоут или сумка через плечо с ноутбуком: в нескольких независимых обсуждениях люди пишут «слишком тяжело» и «больно» [C-0020].",
+   "cites": [
+    "C-0020"
+   ]
+  },
+  {
+   "line_hash": "76fbe63b7eb795ca",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- Тоут или сумка через плечо с ноутбуком: в нескольких независимых обсуждениях люди пишут «слишком тяжело» и «больно» [C-0020].",
+   "line": "- *\"I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders.\"* (люблю, как выглядит тоут, но ношение ноутбука весь день убивает мне плечи). https://www.reddit.com/r/femalefashionadvice/comments/1wxoin9/laptop_backpack_that_doesnt_ruin_your_fit/",
+   "cites": [
+    "https://www.reddit.com/r/femalefashionadvice/comments/1wxoin9/laptop_backpack_that_doesnt_ruin_your_fit/"
+   ]
+  },
+  {
+   "line_hash": "cf173de69cd77d63",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"I love the look of a tote, but carrying my laptop around all day is absolutely destroying my shoulders.\"* (люблю, как выглядит тоут, но ношение ноутбука весь день убивает мне плечи). https://www.reddit.com/r/femalefashionadvice/comments/1wxoin9/laptop_backpack_that_doesnt_ruin_your_fit/",
+   "line": "- *\"I switched to an Aer backpack to save my back since I carry a laptop, but if I didn’t have to I’d go tote all the way.\"* (переход на рюкзак ради спины, но без ноутбука выбор был бы за тоутом). https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbjhbth/",
+   "cites": [
+    "https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbjhbth/"
+   ]
+  },
+  {
+   "line_hash": "29f65e274cdb0294",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"I switched to an Aer backpack to save my back since I carry a laptop, but if I didn’t have to I’d go tote all the way.\"* (переход на рюкзак ради спины, но без ноутбука выбор был бы за тоутом). https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbjhbth/",
+   "line": "- *\"…it hurts my shoulders to carry a laptop, notebook, and water bottle in there for a day, so I rarely use it.\"* (тоут для «солидных» дней почти не используется из-за боли). https://www.reddit.com/r/AskWomenOver30/comments/18xuicb/ladies_what_is_your_goto_style_for_a_bag_or/kg6utoo/",
+   "cites": [
+    "https://www.reddit.com/r/AskWomenOver30/comments/18xuicb/ladies_what_is_your_goto_style_for_a_bag_or/kg6utoo/"
+   ]
+  },
+  {
+   "line_hash": "a64a16a2a0346efd",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"…it hurts my shoulders to carry a laptop, notebook, and water bottle in there for a day, so I rarely use it.\"* (тоут для «солидных» дней почти не используется из-за боли). https://www.reddit.com/r/AskWomenOver30/comments/18xuicb/ladies_what_is_your_goto_style_for_a_bag_or/kg6utoo/",
+   "line": "- Вес пустой сумки — отдельный фильтр [C-0024].",
+   "cites": [
+    "C-0024"
+   ]
+  },
+  {
+   "line_hash": "a955b0be4e1ebb0e",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- Вес пустой сумки — отдельный фильтр [C-0024].",
+   "line": "- *\"However, it's entirely too heavy. (3.6 lbs empty)\"* (отказ от Cuyana Forma из-за веса пустой сумки). https://www.reddit.com/r/handbags/comments/1wgeawi/looking_for_a_laptop_bag_that_doesnt_scream_work/",
+   "cites": [
+    "https://www.reddit.com/r/handbags/comments/1wgeawi/looking_for_a_laptop_bag_that_doesnt_scream_work/"
+   ]
+  },
+  {
+   "line_hash": "36f1504d26464f48",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"However, it's entirely too heavy. (3.6 lbs empty)\"* (отказ от Cuyana Forma из-за веса пустой сумки). https://www.reddit.com/r/handbags/comments/1wgeawi/looking_for_a_laptop_bag_that_doesnt_scream_work/",
+   "line": "- *\"The Beis is already 2.75 pounds before you put anything in it.\"* https://www.reddit.com/r/handbags/comments/1w0zzdx/what_are_we_wearing_to_work_stylishfeminine_bags/p6h6a8s/",
+   "cites": [
+    "https://www.reddit.com/r/handbags/comments/1w0zzdx/what_are_we_wearing_to_work_stylishfeminine_bags/p6h6a8s/"
+   ]
+  },
+  {
+   "line_hash": "3394fa71a9a29c62",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"The Beis is already 2.75 pounds before you put anything in it.\"* https://www.reddit.com/r/handbags/comments/1w0zzdx/what_are_we_wearing_to_work_stylishfeminine_bags/p6h6a8s/",
+   "line": "- *\"First things first, is your bag heavy on its own when it's empty?\"* https://www.reddit.com/r/handbags/comments/1q6rkkl/work_bag_shoulder_pain/nyaeaq5/",
+   "cites": [
+    "https://www.reddit.com/r/handbags/comments/1q6rkkl/work_bag_shoulder_pain/nyaeaq5/"
+   ]
+  },
+  {
+   "line_hash": "d8752ec68c60a78c",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"First things first, is your bag heavy on its own when it's empty?\"* https://www.reddit.com/r/handbags/comments/1q6rkkl/work_bag_shoulder_pain/nyaeaq5/",
+   "line": "- Вместо одной сумки на всё часть людей делит ношу: рюкзак на тяжёлые дни и маленькая сумка на лёгкие, или две сумки сразу [C-0023].",
+   "cites": [
+    "C-0023"
+   ]
+  },
+  {
+   "line_hash": "f161a52aff8ddb8c",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- Вместо одной сумки на всё часть людей делит ношу: рюкзак на тяжёлые дни и маленькая сумка на лёгкие, или две сумки сразу [C-0023].",
+   "line": "- *\"Most days, it’s a fjallraven kanken backpack. If I don’t need to carry as much, a small purse and/or lunch bag.\"* https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbiore4/",
+   "cites": [
+    "https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbiore4/"
+   ]
+  },
+  {
+   "line_hash": "181210e8e77654a0",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"Most days, it’s a fjallraven kanken backpack. If I don’t need to carry as much, a small purse and/or lunch bag.\"* https://www.reddit.com/r/AskWomenOver30/comments/1n46b0x/what_are_we_using_as_work_bags/nbiore4/",
+   "line": "**Материал.**",
+   "cites": []
+  },
+  {
+   "line_hash": "f721595ea7b3b27a",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "**Материал.**",
+   "line": "- Несколько комментаторов ждут, что PU и веганская кожа облезут. Несколько владельцев пишут, что сумки держатся, одна — около 4,5 лет [C-0035].",
+   "cites": [
+    "C-0035"
+   ]
+  },
+  {
+   "line_hash": "8c3bf3ee882362e5",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- Несколько комментаторов ждут, что PU и веганская кожа облезут. Несколько владельцев пишут, что сумки держатся, одна — около 4,5 лет [C-0035].",
+   "line": "- *\"Anything which is just PU leather will start peeling with daily use.\"* https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/mcc5pxt/",
+   "cites": [
+    "https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/mcc5pxt/"
+   ]
+  },
+  {
+   "line_hash": "2e724e2cc25e5c9e",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"Anything which is just PU leather will start peeling with daily use.\"* https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/mcc5pxt/",
+   "line": "- *\"…coming up on 4.5 years old. They use microfiber vegan leather… No cracking, peeling or flaking.\"* https://www.reddit.com/r/Mommit/comments/1psoc8d/mina_baie_durability_longterm_vegan_leather/nvj73z8/",
+   "cites": [
+    "https://www.reddit.com/r/Mommit/comments/1psoc8d/mina_baie_durability_longterm_vegan_leather/nvj73z8/"
+   ]
+  },
+  {
+   "line_hash": "12798c62b60acb44",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"…coming up on 4.5 years old. They use microfiber vegan leather… No cracking, peeling or flaking.\"* https://www.reddit.com/r/Mommit/comments/1psoc8d/mina_baie_durability_longterm_vegan_leather/nvj73z8/",
+   "line": "- Два отдельных случая с ценой [C-0036]:",
+   "cites": [
+    "C-0036"
+   ]
+  },
+  {
+   "line_hash": "40e00374be20e55d",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- Два отдельных случая с ценой [C-0036]:",
+   "line": "- один человек купил веганскую куртку только по скидке и не платил бы больше $70: https://www.reddit.com/r/AbercrombieandFitch/comments/1sajnvc/vegan_leather_quality/oe5htkj/",
+   "cites": [
+    "https://www.reddit.com/r/AbercrombieandFitch/comments/1sajnvc/vegan_leather_quality/oe5htkj/"
+   ]
+  },
+  {
+   "line_hash": "2941c3462701a657",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- один человек купил веганскую куртку только по скидке и не платил бы больше $70: https://www.reddit.com/r/AbercrombieandFitch/comments/1sajnvc/vegan_leather_quality/oe5htkj/",
+   "line": "- другой человек отказался от веганского рабочего тоута, потому что для веганской кожи он слишком дорогой (пересказ): https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/",
+   "cites": [
+    "https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/"
+   ]
+  },
+  {
+   "line_hash": "bcafa00c5f05adc6",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- другой человек отказался от веганского рабочего тоута, потому что для веганской кожи он слишком дорогой (пересказ): https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/",
+   "line": "- Это два человека, не паттерн [C-0036].",
+   "cites": [
+    "C-0036"
+   ]
+  },
+  {
+   "line_hash": "f98bdd75654d678c",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- Это два человека, не паттерн [C-0036].",
+   "line": "**Бренд Nordace.**",
+   "cites": []
+  },
+  {
+   "line_hash": "280fded120c465e5",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "**Бренд Nordace.**",
+   "line": "- Негативные отзывы и публичные ответы бренда на Reddit приводят к тому, что часть потенциальных покупателей пишет «не куплю» или «подожду» [C-0038]. Это намерения, а не проверенные отказы. Отказы из-за ответов бренда сосредоточены в двух тредах.",
+   "cites": [
+    "C-0038"
+   ]
+  },
+  {
+   "line_hash": "a022867ff97ab018",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- Негативные отзывы и публичные ответы бренда на Reddit приводят к тому, что часть потенциальных покупателей пишет «не куплю» или «подожду» [C-0038]. Это намерения, а не проверенные отказы. Отказы из-за ответов бренда сосредоточены в двух тредах.",
+   "line": "- *\"after reading so many negative reviews I have decided against buying this bag\"*. https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/ijr95qw/",
+   "cites": [
+    "https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/ijr95qw/"
+   ]
+  },
+  {
+   "line_hash": "b886dd21b3536d24",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"after reading so many negative reviews I have decided against buying this bag\"*. https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/ijr95qw/",
+   "line": "- *\"…if this is how you engage with the public, I think I will pass.\"* https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mmcbov4/",
+   "cites": [
+    "https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mmcbov4/"
+   ]
+  },
+  {
+   "line_hash": "c9bf7d60bb0d58e8",
+   "lang": "RU",
+   "section": "Что мы узнали о решениях",
+   "previous_line": "- *\"…if this is how you engage with the public, I think I will pass.\"* https://www.reddit.com/r/backpacks/comments/18nj9sk/nordace_backpacks_dont_last/mmcbov4/",
+   "line": "- Тоут конкретно [C-0012]: *\"I was planning to buy the Nordace tote, however, reviews on the brand weren't that great.\"* https://www.reddit.com/r/phRecommendation/comments/1nsv54d/tote_bags_similar_to_nordace_siena_tote/",
+   "cites": [
+    "C-0012",
+    "https://www.reddit.com/r/phRecommendation/comments/1nsv54d/tote_bags_similar_to_nordace_siena_tote/"
+   ]
+  }
+ ]
+}
