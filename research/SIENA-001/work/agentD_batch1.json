@@ -28,20 +28,6 @@
   "note": "2★ Nordace; нравится стиль и качество, но не рекомендует из-за платного возврата"
  },
  {
-  "source": "wf:6428b38405",
-  "quote": "Super bag but upon reflection greatly over priced",
-  "translation": "Отличная сумка, но, если подумать, сильно переоценена",
-  "type": "Возражение",
-  "theme": "цена",
-  "persona": "не ясно",
-  "emotion": "разочарование",
-  "cluster": "O01",
-  "strength": 2,
-  "market": "GB",
-  "action": "BOUGHT",
-  "note": "5★ при этом жалоба на цену — купил и всё равно поставил высшую оценку"
- },
- {
   "source": "wf:fa8593e97a",
   "quote": "The material resists scuffs and wipes clean easily, so it keeps looking sharp through heavy use.",
   "translation": "Материал устойчив к потёртостям и легко отмывается, так что сумка выглядит отлично даже при активном использовании.",
@@ -82,20 +68,6 @@
   "market": "",
   "action": "STOPPED_USING",
   "note": "рюкзак Siena, не тоут; сломалась в поездке"
- },
- {
-  "source": "wf:a15f586aad",
-  "quote": "I tried on 3 separate occasions to return it; completed the refund information 3 times within the refund window",
-  "translation": "Я трижды пыталась вернуть её; три раза заполняла данные для возврата в срок",
-  "type": "Опыт",
-  "theme": "возврат",
-  "persona": "не ясно",
-  "emotion": "раздражение",
-  "cluster": "O40",
-  "strength": 2,
-  "market": "",
-  "action": "WORKAROUND",
-  "note": "1★; по пересказу получала только автоответы, срок возврата истёк"
  },
  {
   "source": "wf:f041fd76a3",
@@ -502,19 +474,5 @@
   "market": "GB",
   "action": "USES",
   "note": "Béis tote 5★ — сильный конкурентный отзыв"
- },
- {
-  "source": "wf:a3360c3f1f",
-  "quote": "they refuse to even answer my request for a return",
-  "translation": "они даже отказываются отвечать на мой запрос о возврате",
-  "type": "Опыт",
-  "theme": "возврат",
-  "persona": "не ясно",
-  "emotion": "раздражение",
-  "cluster": "O40",
-  "strength": 2,
-  "market": "",
-  "action": "NONE",
-  "note": "конкурент Calpak (computer tote); показывает, что проблема возвратов не только у Nordace"
  }
 ]

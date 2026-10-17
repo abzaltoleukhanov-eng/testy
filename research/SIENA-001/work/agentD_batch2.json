@@ -28,20 +28,6 @@
   "note": "прячет вторую сумку"
  },
  {
-  "source": "wf:bd6c239818",
-  "quote": "You have to be sneaky with Ryanair.",
-  "translation": "С Ryanair приходится хитрить.",
-  "type": "Язык",
-  "theme": "ручная кладь",
-  "persona": "не ясно",
-  "emotion": "раздражение",
-  "cluster": "E40",
-  "strength": 2,
-  "market": "UK",
-  "action": "WORKAROUND",
-  "note": "по пересказу: распихать по карманам, сумочку в пакет duty free"
- },
- {
   "source": "wf:ff959fa037",
   "quote": "one of them stood over a poor women further down the queue whilst she tried to squeeze her hand bag and contents",
   "translation": "один из них стоял над бедной женщиной дальше в очереди, пока она пыталась впихнуть свою сумочку и её содержимое",
@@ -54,20 +40,6 @@
   "market": "UK",
   "action": "NONE",
   "note": "наблюдала публичную сцену у гейта — готовая драма-сцена; рассказ очевидца"
- },
- {
-  "source": "wf:6bcfd3b3a7",
-  "quote": "I've seen carrier bags inspected at the gate to ensure they are duty free and people charged for an extra bag.",
-  "translation": "Я видела, как у гейта проверяли пакеты, что они из duty free, и людей штрафовали за лишнюю сумку.",
-  "type": "Опыт",
-  "theme": "ручная кладь",
-  "persona": "не ясно",
-  "emotion": "тревога",
-  "cluster": "P03",
-  "strength": 2,
-  "market": "UK",
-  "action": "NONE",
-  "note": "очевидец; сама прошла с маленьким кроссбоди"
  },
  {
   "source": "wf:bb753c36a4",
@@ -196,20 +168,6 @@
   "note": "сотрудник «отбирает» сумки из очереди — сцена для драмы"
  },
  {
-  "source": "wf:5a367ad711",
-  "quote": "I will never, I repeat NEVER EVER fly with them again.",
-  "translation": "Я никогда, повторяю, НИКОГДА больше с ними не полечу.",
-  "type": "Язык",
-  "theme": "ручная кладь",
-  "persona": "не ясно",
-  "emotion": "раздражение",
-  "cluster": "P03",
-  "strength": 2,
-  "market": "UK",
-  "action": "REJECTED",
-  "note": "отказ от авиакомпании, не от сумки"
- },
- {
   "source": "wf:1e82b161a5",
   "quote": "worth it as you get a lot in the bag and you are not stressing about potentially getting a surcharge.",
   "translation": "оно того стоит: в сумку влезает много, и ты не нервничаешь из-за возможной доплаты.",
@@ -238,20 +196,6 @@
   "note": "ценовой якорь £6 против премиального тоута"
  },
  {
-  "source": "wf:9aa24e627e",
-  "quote": "if it's a soft backpack that's not full and you can squash it in, you'll be fine",
-  "translation": "если это мягкий рюкзак, не набитый, и его можно впихнуть — всё будет нормально",
-  "type": "Контрдовод",
-  "theme": "ручная кладь",
-  "persona": "не ясно",
-  "emotion": "не ясно",
-  "cluster": "X01",
-  "strength": 2,
-  "market": "UK",
-  "action": "RECOMMENDS",
-  "note": "мягкий рюкзак как решение"
- },
- {
   "source": "wf:5e65d8d0ee",
   "quote": "I fly with them monthly or thereabouts and not once has my carry on bag been checked for either size or weight.",
   "translation": "Я летаю с ними примерно раз в месяц, и ни разу мою ручную кладь не проверили ни по размеру, ни по весу.",
@@ -264,20 +208,6 @@
   "market": "UK",
   "action": "USES",
   "note": "AIBU, 2023"
- },
- {
-  "source": "wf:8839d47567",
-  "quote": "Can confirm they were not even slightly interested in the size of our hand luggage.",
-  "translation": "Подтверждаю: их ни капли не интересовал размер нашей ручной клади.",
-  "type": "Контрдовод",
-  "theme": "ручная кладь",
-  "persona": "не ясно",
-  "emotion": "облегчение",
-  "cluster": "X04",
-  "strength": 2,
-  "market": "UK",
-  "action": "USES",
-  "note": "автор темы после полёта, летела с семьёй (family plus); 2023"
  },
  {
   "source": "wf:a5716130c5",
