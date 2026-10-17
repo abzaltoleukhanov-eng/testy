@@ -1,6 +1,6 @@
 # Gate report: LEVANT-001
 
-Computed 2026-10-17T02:46:01+00:00 by validate.py (contract 0.3). Statuses here are computed, not self-declared.
+Computed 2026-10-17T06:08:55+00:00 by validate.py (contract 0.4). Statuses here are computed, not self-declared.
 
 **Schema errors:** 0
 
@@ -17,21 +17,21 @@ Computed 2026-10-17T02:46:01+00:00 by validate.py (contract 0.3). Statuses here 
 | C-0007 | PATTERN | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: 'Many commenters' rests on about six comments, three of them from one thread. One of these is about jackets, and E-0149 does not mention peeling. For 'some owners report vegan bags that held up for years', only one owner (E-0415/E-0416, apparently the same person) |
 | C-0008 | PURCHASE_DRIVER | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: Only one source (E-0408, a jacket) clearly shows the price-conditional behaviour driven by peeling. The bag case (E-0421) does not tie the 'too pricey' exclusion to expected peeling, and the peeling exclusion (Beis) is based on reported peeling rather than on pric |
 | C-0009 | PATTERN | **NEEDS_REVIEW** | scope issue: The timing range is approximate. Some failures (E-0101) have no stated time to failure, and E-0103 is just past two years. Some product types are implied by the thread rather than named. The reports come from self-selected complaint threads and give no failure rate. |
-| C-0010 | PATTERN | **APPROVED** | all checks passed |
+| C-0010 | PATTERN | **FACT_APPROVED** | all checks passed |
 | C-0011 | PURCHASE_DRIVER | **NEEDS_REVIEW** | scope issue: Some decisions are implied rather than stated (E-0041, E-0050), and E-0019 is second-hand. The reply-driven rejections cluster in two threads, as the scope notes. These are stated intentions, not verified non-purchases. |
-| C-0012 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
+| C-0012 | PERSONAL_EXPERIENCE | **FACT_APPROVED** | all checks passed |
 | C-0013 | PATTERN | **NEEDS_REVIEW** | platforms 1 and situations 1 both < 2; audit verdict PARTIAL; scope issue: None of the supporting evidence backs the clause 'others report quick replacements'. Among the contradicting items, E-0092 reports a free zip replacement with no speed stated, and E-0084 reports a wrong packing-cube bundle co |
 | C-0014 | PATTERN | **NEEDS_REVIEW** | platforms 1 and situations 1 both < 2; after audit: platforms 1 and situations 1 both < 2 |
-| C-0015 | PATTERN | **APPROVED** | all checks passed |
-| C-0016 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
-| C-0017 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0015 | PATTERN | **FACT_APPROVED** | all checks passed |
+| C-0016 | HYPOTHESIS | **NEEDS_REVIEW** | auditor did not assess the premise-to-conclusion link (link_check missing) |
+| C-0017 | HYPOTHESIS | **NEEDS_REVIEW** | auditor did not assess the premise-to-conclusion link (link_check missing) |
 | C-0018 | HYPOTHESIS | **BLOCKED** | presents an unobserved fact as a hypothesis: The claim states as fact that shoppers 'will mostly find backpack durability complaints'. That is an unobserved assertion about the share of Reddit content. The complaints shown are mostly about quality on arrival, returns and customer service, not durabi |
-| C-0019 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
-| C-0020 | PATTERN | **APPROVED** | all checks passed |
+| C-0019 | HYPOTHESIS | **NEEDS_REVIEW** | auditor did not assess the premise-to-conclusion link (link_check missing) |
+| C-0020 | PATTERN | **FACT_APPROVED** | all checks passed |
 | C-0021 | PURCHASE_DRIVER | **NEEDS_REVIEW** | scope issue: E-0229 concerns a handbag, not a heavy work bag or tote; E-0376 states the outcome rather than the reason. Laptop is explicit only in E-0157 and E-0227 (E-0376 by reference to 'similar items'). |
 | C-0022 | PATTERN | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The claim says switchers came 'from a tote'; only E-0277 (and E-0157, which makes no looks comment) clearly switched from a tote. E-0255 switched from a handbag, E-0290 and E-0351 do not state their prior bag, and E-0351 calls her backpack polished. Contradicting  |
-| C-0023 | PATTERN | **APPROVED** | all checks passed |
-| C-0024 | PATTERN | **APPROVED** | all checks passed |
+| C-0023 | PATTERN | **FACT_APPROVED** | all checks passed |
+| C-0024 | PATTERN | **FACT_APPROVED** | all checks passed |
 | C-0025 | PATTERN | **NEEDS_REVIEW** | scope issue: 'Longchamp-style nylon totes' generalizes slightly; the sources only name Longchamp itself (two commenters). |
 | C-0026 | PATTERN | **NEEDS_REVIEW** | scope issue: The text says about 4.5 years where the claim says about four. The claim leaves out two other positive owner reports in the contradicting set (Poppy and Peonies, Matt and Nat), so 'one owner' understates the counter-evidence. Nothing in the sources is about the Lévant material. |
 | C-0027 | PERSONAL_EXPERIENCE | **NEEDS_REVIEW** | scope issue: The phrase 'after vegan leather had peeled for them' infers a sequence the text does not state outright; the text gives general past peeling of faux leather jackets alongside the cheap-only purchase. |
@@ -42,24 +42,34 @@ Computed 2026-10-17T02:46:01+00:00 by validate.py (contract 0.3). Statuses here 
 | C-0032 | PURCHASE_DRIVER | **NEEDS_REVIEW** | scope issue: Not every source says the bag was heavy (E-0229, E-0157). The contradicting sources (E-0331, E-0372) show backpacks also cause strain for some people, which limits generalisation but does not negate 'some people'. |
 | C-0033 | PATTERN | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The claim uses 'she' for the E-0157 commenter, but the source text does not state gender (only the subreddit suggests it). Otherwise the pattern stays within the sources. |
 | C-0034 | PATTERN | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: E-0347 says only 'the Longchamp', so the 'nylon tote' model comes from thread context (another comment names Le Pliage), not from that commenter's text. |
-| C-0035 | PATTERN | **APPROVED** | all checks passed |
-| C-0036 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
+| C-0035 | PATTERN | **FACT_APPROVED** | all checks passed |
+| C-0036 | PERSONAL_EXPERIENCE | **FACT_APPROVED** | all checks passed |
 | C-0037 | PATTERN | **NEEDS_REVIEW** | scope issue: The 'Any experience with Nordace backpacks?' thread is a question thread rather than a complaint thread, though the 'self-selected' framing still holds. E-0090 and E-0100 do not explicitly name a backpack or the brand in the comment text. |
-| C-0038 | PURCHASE_DRIVER | **APPROVED** | all checks passed |
-| C-0039 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
-| C-0040 | PERSONAL_EXPERIENCE | **APPROVED** | all checks passed |
+| C-0038 | PURCHASE_DRIVER | **FACT_APPROVED** | all checks passed |
+| C-0039 | PERSONAL_EXPERIENCE | **FACT_APPROVED** | all checks passed |
+| C-0040 | PERSONAL_EXPERIENCE | **FACT_APPROVED** | all checks passed |
 | C-0041 | PRODUCT_FACT | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The source text never says 'UK'. The URL is nordace.com/en/, and the UK locale is inferred from the £ currency. The evidence is a transcription of the user's screenshot, not a direct capture of the page. |
 | C-0042 | PRODUCT_FACT | **NEEDS_REVIEW** | scope issue: The message does not name the Siena Lévant Tote Bag. 'Because' reads a causal link into two juxtaposed phrases, which is a natural reading. 'Yet' is implied, not stated. |
 | C-0043 | HYPOTHESIS | **BLOCKED** | presents an unobserved fact as a hypothesis: The premise 'since the Lévant has no reviews yet' is stated as fact, but none of the cited sources show it. The user message saying there are no reviews is not cited for this claim and does not name the product. 'Mostly meet complaints' is a share of Redd |
-| C-0044 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
-| C-0045 | PRODUCT_FACT | **APPROVED** | all checks passed |
-| C-0046 | PRODUCT_FACT | **APPROVED** | all checks passed |
-| C-0047 | HYPOTHESIS | **HYPOTHESIS_UNTESTED** | all checks passed |
+| C-0044 | HYPOTHESIS | **NEEDS_REVIEW** | auditor did not assess the premise-to-conclusion link (link_check missing) |
+| C-0045 | PRODUCT_FACT | **FACT_APPROVED** | all checks passed |
+| C-0046 | PRODUCT_FACT | **FACT_APPROVED** | all checks passed |
+| C-0047 | HYPOTHESIS | **NEEDS_REVIEW** | auditor did not assess the premise-to-conclusion link (link_check missing) |
 | C-0048 | PRODUCT_FACT | **NEEDS_REVIEW** | scope issue: The spec text does not name the product itself. The link to the Siena Lévant Tote Bag comes only from the page URL. The figures are listed specs, not measurements. |
 | C-0049 | PRODUCT_FACT | **NEEDS_REVIEW** | audit verdict PARTIAL; scope issue: The only product named in E-0438 is the 'Nordace Siena Riviera Cosmetic Bag', shown just above the feature list. So reading these features as the Lévant Tote's rests on the URL alone, not on the transcribed text. |
-| C-0050 | PRODUCT_FACT | **APPROVED** | all checks passed |
-| C-0051 | PRODUCT_FACT | **APPROVED** | all checks passed |
-| C-0052 | PRODUCT_FACT | **APPROVED** | all checks passed |
+| C-0050 | PRODUCT_FACT | **FACT_APPROVED** | all checks passed |
+| C-0051 | PRODUCT_FACT | **FACT_APPROVED** | all checks passed |
+| C-0052 | PRODUCT_FACT | **FACT_APPROVED** | all checks passed |
+| C-0053 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ['A listed empty weight of 1 kg is light compared with other work totes', 'Laptop carriers with tote pain switch, or consider switching, to a backpack'] |
+| C-0054 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ['The Lévant is the kind of smaller or lighter bag people pick for light-load days', 'The Lévant is less suited to heavy daily carry than to light-load days'] |
+| C-0055 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ['Cold-traffic prospects search for or encounter Reddit discussion of Nordace before buying', 'Tote-specific warranty terms exist that could be shown', 'Owner reports of the tote over time exist or can be obtained (C-0046 only reports that the user says there are no rev |
+| C-0056 | HYPOTHESIS | **RESEARCH_QUESTION** | uncovered factual premise(s): ["Owner reports specifically about microfiber vegan-leather bags lasting years exist (C-0035 says only 'vegan bags')", 'The peeling worry applies to microfiber vegan leather in the same way as to PU', "Durability reports about other brands' bags would be credible to sho |
+
+## ACH
+
+- ACH-0001: **PRELIMINARY** (pattern C-0002 is NEEDS_REVIEW)
+- ACH-0002: **PRELIMINARY** (pattern C-0011 is NEEDS_REVIEW)
+- ACH-0003: **VALID** (pattern C-0038 is FACT_APPROVED)
 
 ## Coverage: COVERAGE_LIMITED
 - planned source not retrievable by any tested route: official
@@ -104,8 +114,4 @@ Computed 2026-10-17T02:46:01+00:00 by validate.py (contract 0.3). Statuses here 
 - evidence rows: 446
 - decision evidence: 107
 - queries: 29
-- claim statuses: {'NEEDS_REVIEW': 29, 'APPROVED': 16, 'HYPOTHESIS_UNTESTED': 5, 'BLOCKED': 2}
-
-## Brief check
-
-- PASS
+- claim statuses: {'NEEDS_REVIEW': 34, 'FACT_APPROVED': 16, 'BLOCKED': 2, 'RESEARCH_QUESTION': 4}

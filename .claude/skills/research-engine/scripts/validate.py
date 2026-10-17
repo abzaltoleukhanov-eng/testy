@@ -4,13 +4,15 @@
   python3 validate.py --project-dir D                       -> gate_report.json + gate_report.md
   python3 validate.py --project-dir D --brief-ru R.md --brief-en E.md   -> also checks the briefs
 
-Layers, as agreed in contract v0.2:
+Layers (contract 0.2 onwards):
   SCHEMA_VALID      fields, enums, ids, links (same checks as ledger.py, re-run on the whole ledger)
   STRUCTURAL_GATE   per claim_type: independent groups, threads, platforms/situations, decision evidence,
                     counter-search, product match; only usable sources count
   EVIDENCE_AUDITED  latest independent audit says SUPPORTS; every span the auditor cites is verbatim in the
                     stored source text; the gate is recomputed on the evidence the auditor confirmed
-  APPROVED          all of the above and no open contradiction or scope issue
+  FACT_APPROVED     all of the above and no open contradiction or scope issue
+Contract 0.4 adds claim classes, the premise audit for hypotheses (RESEARCH_QUESTION), computed CORPUS_STATISTIC,
+ACH validity, and brief checks for unreferenced analytic statements and stale generated statistics.
 """
 import argparse
 import json
@@ -89,22 +91,174 @@ def gate_check(claim_type, evs, sources, queries, claim, contract):
     return not reasons, reasons, stats
 
 
-def hypothesis_status(a):
-    """A label never bypasses the audit. HYPOTHESIS and SITUATION_REACH claims pass only as HYPOTHESIS_UNTESTED,
-    and only when the auditor confirms the text is framed as a forward-looking, untested idea rather than an
-    assertion about something already observed (results, video content, audience share, a current trend)."""
+def claim_class(c, contract):
+    return c.get("claim_class") or contract["class_rules"]["legacy_class_by_type"].get(c.get("claim_type"), "WORLD_CLAIM")
+
+
+def hypothesis_status(a, premise_problems=None):
+    """A label never bypasses the audit, and a hypothesis status never raises the evidence level of its premises.
+
+    BLOCKED              contradicted, or the text asserts an unobserved fact
+    RESEARCH_QUESTION    framed as forward-looking, but a premise is not FACT_APPROVED, the auditor found an
+                         uncovered factual premise, or the link from premises to conclusion is an unsupported leap
+    HYPOTHESIS_UNTESTED  forward-looking, every factual premise approved, link plausible but untested
+    NEEDS_REVIEW         not audited or the audit is incomplete
+    """
     if not a:
-        return "NEEDS_REVIEW", ["hypothesis framing not audited yet"]
+        return "NEEDS_REVIEW", ["hypothesis not audited yet"]
     hc = a.get("hypothesis_check")
     if a.get("verdict") == "CONTRADICTS":
-        return "CONTRADICTED", [f"audit {a['audit_id']}: evidence contradicts it: {a.get('reasoning', '')[:200]}"]
+        return "BLOCKED", [f"contradicted by audit {a['audit_id']}: {a.get('reasoning', '')[:200]}"]
     if hc == "ASSERTS_UNOBSERVED_FACT":
         return "BLOCKED", [f"presents an unobserved fact as a hypothesis: {a.get('scope_issue') or a.get('reasoning', '')}"[:300]]
-    if hc == "FORWARD_LOOKING_OK":
-        return "HYPOTHESIS_UNTESTED", []
-    if a.get("verdict") == "DOES_NOT_SUPPORT":
-        return "BLOCKED", ["auditor DOES_NOT_SUPPORT and no hypothesis framing check"]
-    return "NEEDS_REVIEW", ["auditor did not judge hypothesis framing (hypothesis_check missing)"]
+    if hc != "FORWARD_LOOKING_OK":
+        if a.get("verdict") == "DOES_NOT_SUPPORT":
+            return "BLOCKED", ["auditor DOES_NOT_SUPPORT and no hypothesis framing check"]
+        return "NEEDS_REVIEW", ["auditor did not judge hypothesis framing (hypothesis_check missing)"]
+    rq = list(premise_problems or [])
+    if a.get("uncovered_premises"):
+        rq.append(f"uncovered factual premise(s): {a['uncovered_premises']}"[:300])
+    if a.get("link_check") == "UNSUPPORTED_LEAP":
+        rq.append(f"unsupported leap from premises to conclusion: {a.get('reasoning', '')}"[:300])
+    elif a.get("link_check") is None:
+        return "NEEDS_REVIEW", ["auditor did not assess the premise-to-conclusion link (link_check missing)"]
+    if rq:
+        return "RESEARCH_QUESTION", rq
+    return "HYPOTHESIS_UNTESTED", []
+
+
+def corpus_statistic_check(c, t):
+    """Recompute a CORPUS_STATISTIC from the ledger; the numbers in the text must match."""
+    spec = c.get("corpus_stat") or {}
+    reasons = []
+    unit = spec.get("unit")
+    qids = set(spec.get("denominator_query_ids") or [])
+    num_ids = spec.get("numerator_evidence_ids") or []
+    if unit not in ("comment", "author", "thread", "story") or not qids or not num_ids:
+        return False, ["corpus_stat needs unit, denominator_query_ids and numerator_evidence_ids"], {}
+    sources = {s["source_id"]: s for s in t["sources"]}
+    evidence = {e["evidence_id"]: e for e in t["evidence"]}
+    queries = {q["query_id"]: q for q in t["queries"]}
+
+    def key(src, ev=None):
+        if unit == "comment":
+            return src["source_id"]
+        if unit == "author":
+            return (src["platform"], src["author_key"])
+        if unit == "thread":
+            return src["thread_id"]
+        return (ev or {}).get("story_id") or src["source_id"]
+
+    denom_units = {key(s) for s in t["sources"] if s.get("query_id") in qids}
+    num_units = set()
+    for eid in num_ids:
+        e = evidence.get(eid)
+        if not e or e["source_id"] not in sources:
+            reasons.append(f"numerator evidence {eid} missing")
+            continue
+        src = sources[e["source_id"]]
+        if src.get("query_id") not in qids:
+            reasons.append(f"numerator evidence {eid} is outside the denominator corpus")
+            continue
+        num_units.add(key(src, e))
+    n, d = len(num_units), len(denom_units)
+    text = c.get("text", "")
+    if not re.search(rf"\b{n}\b", text) or not re.search(rf"\b{d}\b", text):
+        reasons.append(f"recomputed {n} of {d} {unit}s; the text must state these numbers")
+    if not re.search(r"(?i)\bcorpus\b|корпус", text):
+        reasons.append("text must name the corpus it describes")
+    pol = [queries[q].get("polarity") for q in qids if q in queries]
+    if pol and sum(p == "PROBLEM" for p in pol) / len(pol) > 0.5 and not spec.get("bias_note"):
+        reasons.append("corpus built mostly from PROBLEM queries: bias_note required")
+    return not reasons, reasons, {"numerator": n, "denominator": d, "unit": unit}
+
+
+def evaluate_one(c, t, contract, ctx, statuses):
+    sources, evidence, queries, audits, rules = ctx
+    res = {"claim_id": c["claim_id"], "claim_type": c.get("claim_type"), "claim_class": claim_class(c, contract),
+           "critical": c.get("critical"), "text": c.get("text"), "reasons": []}
+    ctype = c.get("claim_type")
+    cls = res["claim_class"]
+    gate = contract["gates"].get(ctype, {})
+
+    sup = [evidence[e] for e in c.get("supporting_evidence_ids", []) if e in evidence]
+    usable, dropped = [], []
+    for e in sup:
+        ok, why = usable_source(sources.get(e["source_id"]), rules)
+        if ok and span_in(e.get("quote_span", ""), sources[e["source_id"]]["text"]):
+            usable.append(e)
+        else:
+            dropped.append(f"{e['evidence_id']}: {why or 'quote_span not verbatim'}")
+    res["unusable_evidence"] = dropped
+
+    if ctype == "CREATIVE_PERFORMANCE":
+        res.update(status="BLOCKED", reasons=[gate.get("note", "not supported")])
+        return res
+    latest = sorted(audits.get(c["claim_id"], []), key=lambda a: a.get("audited_at", ""))[-1:] or [None]
+    a = latest[0]
+    if a:
+        res["audit_id"] = a["audit_id"]
+
+    if cls in contract["class_rules"]["hypothesis_classes"] or ctype in ("HYPOTHESIS", "SITUATION_REACH"):
+        if ctype == "HYPOTHESIS" and not c.get("hypothesis_label"):
+            res.update(status="NEEDS_REVIEW", reasons=["missing hypothesis_label"])
+            return res
+        if ctype == "SITUATION_REACH":
+            s_ok, s_reasons, s_stats = gate_check(ctype, usable, sources, queries, c, contract)
+            res["structural_gate"] = {"pass": s_ok, "reasons": s_reasons, "stats": s_stats}
+            if not s_ok:
+                res.update(status="NEEDS_REVIEW", reasons=s_reasons)
+                return res
+        premise_problems = []
+        for pid in c.get("premise_claim_ids") or []:
+            st = statuses.get(pid)
+            if st != "FACT_APPROVED":
+                premise_problems.append(f"premise {pid} is {st or 'missing'}, not FACT_APPROVED")
+        st, why = hypothesis_status(a, premise_problems)
+        res.update(status=st, reasons=why)
+        return res
+
+    if cls == "CORPUS_STATISTIC":
+        s_ok, s_reasons, stats = corpus_statistic_check(c, t)
+        res["corpus_stat_recomputed"] = stats
+    else:
+        s_ok, s_reasons, s_stats = gate_check(ctype, usable, sources, queries, c, contract)
+        res["structural_gate"] = {"pass": s_ok, "reasons": s_reasons, "stats": s_stats}
+
+    audited_ok, a_reasons, confirmed = False, [], []
+    if not a:
+        a_reasons.append("no independent audit yet")
+    else:
+        if a.get("verdict") == "CONTRADICTS":
+            res.update(status="BLOCKED", reasons=[f"contradicted by audit {a['audit_id']}: {a.get('reasoning', '')[:200]}"])
+            return res
+        for ch in a.get("evidence_checks", []):
+            ev = evidence.get(ch.get("evidence_id"))
+            if not ev or ev not in usable or not ch.get("supports"):
+                continue
+            if not span_in(ch.get("located_span", ""), sources[ev["source_id"]]["text"]):
+                a_reasons.append(f"auditor span for {ev['evidence_id']} is not verbatim in the source")
+                continue
+            confirmed.append(ev)
+        unchecked = [e["evidence_id"] for e in usable
+                     if e["evidence_id"] not in {ch.get("evidence_id") for ch in a.get("evidence_checks", [])}]
+        if unchecked:
+            a_reasons.append(f"auditor did not check: {unchecked}")
+        if a.get("verdict") != "SUPPORTS":
+            a_reasons.append(f"audit verdict {a.get('verdict')}")
+        if a.get("scope_issue"):
+            a_reasons.append(f"scope issue: {a['scope_issue']}")
+        if a.get("open_contradiction"):
+            a_reasons.append("open contradiction flagged by auditor")
+        if cls != "CORPUS_STATISTIC":
+            g_ok, g_reasons, g_stats = gate_check(ctype, confirmed, sources, queries, c, contract)
+            res["audited_gate"] = {"pass": g_ok, "reasons": g_reasons, "stats": g_stats}
+            if not g_ok:
+                a_reasons += [f"after audit: {r}" for r in g_reasons]
+        audited_ok = not a_reasons
+    res["evidence_audited"] = audited_ok
+    res.update(status="FACT_APPROVED" if (s_ok and audited_ok) else "NEEDS_REVIEW", reasons=s_reasons + a_reasons)
+    return res
 
 
 def evaluate_claims(t, contract):
@@ -114,91 +268,25 @@ def evaluate_claims(t, contract):
     audits = defaultdict(list)
     for a in t["audits"]:
         audits[a["claim_id"]].append(a)
-    rules = contract["counting_rules"]
-    out = []
-    for c in t["claims"]:
-        res = {"claim_id": c["claim_id"], "claim_type": c.get("claim_type"), "critical": c.get("critical"),
-               "text": c.get("text"), "reasons": []}
-        ctype = c.get("claim_type")
-        gate = contract["gates"].get(ctype, {})
+    ctx = (sources, evidence, queries, audits, contract["counting_rules"])
+    hyp = set(contract["class_rules"]["hypothesis_classes"])
+    # facts first: hypotheses read their premises' statuses
+    order = sorted(t["claims"], key=lambda c: claim_class(c, contract) in hyp
+                   or c.get("claim_type") in ("HYPOTHESIS", "SITUATION_REACH"))
+    statuses, results = {}, {}
+    for c in order:
+        r = evaluate_one(c, t, contract, ctx, statuses)
+        statuses[c["claim_id"]] = r["status"]
+        results[c["claim_id"]] = r
+    return [results[c["claim_id"]] for c in t["claims"]]
 
-        sup = [evidence[e] for e in c.get("supporting_evidence_ids", []) if e in evidence]
-        usable, dropped = [], []
-        for e in sup:
-            ok, why = usable_source(sources.get(e["source_id"]), rules)
-            if ok and span_in(e.get("quote_span", ""), sources[e["source_id"]]["text"]):
-                usable.append(e)
-            else:
-                dropped.append(f"{e['evidence_id']}: {why or 'quote_span not verbatim'}")
-        res["unusable_evidence"] = dropped
 
-        if ctype == "CREATIVE_PERFORMANCE":
-            res.update(status="BLOCKED", reasons=[gate.get("note", "not supported")])
-            out.append(res)
-            continue
-        latest = sorted(audits.get(c["claim_id"], []), key=lambda a: a.get("audited_at", ""))[-1:] or [None]
-        a = latest[0]
-        if a:
-            res["audit_id"] = a["audit_id"]
-
-        if ctype == "HYPOTHESIS":
-            if not c.get("hypothesis_label"):
-                res.update(status="NEEDS_REVIEW", reasons=["missing hypothesis_label"])
-            else:
-                st, why = hypothesis_status(a)
-                res.update(status=st, reasons=why)
-            out.append(res)
-            continue
-
-        s_ok, s_reasons, s_stats = gate_check(ctype, usable, sources, queries, c, contract)
-        res["structural_gate"] = {"pass": s_ok, "reasons": s_reasons, "stats": s_stats}
-
-        if ctype == "SITUATION_REACH":
-            # reach is never a fact from corpus frequency; at best an audited, forward-looking proxy hypothesis
-            st, why = hypothesis_status(a) if s_ok else ("NEEDS_REVIEW", s_reasons)
-            res.update(status=st, reasons=why)
-            out.append(res)
-            continue
-        audited_ok, a_reasons, confirmed = False, [], []
-        if not a:
-            a_reasons.append("no independent audit yet")
-        else:
-            res["audit_id"] = a["audit_id"]
-            if a.get("verdict") == "CONTRADICTS":
-                res.update(status="CONTRADICTED", reasons=[f"audit {a['audit_id']}: {a.get('reasoning', '')[:200]}"])
-                out.append(res)
-                continue
-            for ch in a.get("evidence_checks", []):
-                ev = evidence.get(ch.get("evidence_id"))
-                if not ev or ev not in usable:
-                    continue
-                if not ch.get("supports"):
-                    continue
-                if not span_in(ch.get("located_span", ""), sources[ev["source_id"]]["text"]):
-                    a_reasons.append(f"auditor span for {ev['evidence_id']} is not verbatim in the source")
-                    continue
-                confirmed.append(ev)
-            unchecked = [e["evidence_id"] for e in usable
-                         if e["evidence_id"] not in {ch.get("evidence_id") for ch in a.get("evidence_checks", [])}]
-            if unchecked:
-                a_reasons.append(f"auditor did not check: {unchecked}")
-            if a.get("verdict") != "SUPPORTS":
-                a_reasons.append(f"audit verdict {a.get('verdict')}")
-            if a.get("scope_issue"):
-                a_reasons.append(f"scope issue: {a['scope_issue']}")
-            if a.get("open_contradiction"):
-                a_reasons.append("open contradiction flagged by auditor")
-            g_ok, g_reasons, g_stats = gate_check(ctype, confirmed, sources, queries, c, contract)
-            res["audited_gate"] = {"pass": g_ok, "reasons": g_reasons, "stats": g_stats}
-            if not g_ok:
-                a_reasons += [f"after audit: {r}" for r in g_reasons]
-            audited_ok = not a_reasons
-        res["evidence_audited"] = audited_ok
-
-        reasons = s_reasons + a_reasons
-        status = "APPROVED" if (s_ok and audited_ok) else "NEEDS_REVIEW"
-        res.update(status=status, reasons=reasons)
-        out.append(res)
+def evaluate_ach(t, claim_status):
+    out = {}
+    for h in t["hypotheses"]:
+        st = claim_status.get(h.get("pattern_claim_id"))
+        out[h["ach_id"]] = {"status": "VALID" if st == "FACT_APPROVED" else "PRELIMINARY",
+                            "pattern_claim_id": h.get("pattern_claim_id"), "pattern_status": st}
     return out
 
 
@@ -256,31 +344,89 @@ def coverage(t, contract, project):
     return cov
 
 
-def check_briefs(ru_path, en_path, claim_status):
+ANALYTIC_SECTIONS = {
+    "RU": ("главное", "что мы узнали", "конкурирующие объяснения", "альтернативы", "возможности для креатива"),
+    "EN": ("main points", "what we learned", "competing explanations", "alternatives", "creative opportunities"),
+}
+LABELS = {"RU": {"HYPOTHESIS_UNTESTED": "гипотез", "RESEARCH_QUESTION": "вопрос", "PRELIMINARY": "предварительн"},
+          "EN": {"HYPOTHESIS_UNTESTED": "hypothes", "RESEARCH_QUESTION": "question", "PRELIMINARY": "preliminary"}}
+CAVEAT = {"RU": "не доказывает", "EN": "not prove"}
+
+
+def derived_statement_issues(name, txt):
+    """Derived-claims audit at brief level: in analytic sections every content line must point to an audited
+    claim [C-...] or an ACH [ACH-...]. Exempt: headings, quote lines carrying a source URL, bold-only labels,
+    table header and separator rows, and bullets in a caveat block ('does NOT prove')."""
     issues = []
+    lines = txt.splitlines()
+    in_section, in_caveat = False, False
+    for i, line in enumerate(lines):
+        st = line.strip()
+        if st.startswith("#"):
+            in_section = any(k in st.lower() for k in ANALYTIC_SECTIONS[name])
+            in_caveat = False
+            continue
+        if not in_section or not st or st.startswith("<!--"):
+            if not st:
+                in_caveat = False
+            continue
+        if CAVEAT[name] in st.lower():
+            in_caveat = True
+            continue
+        if in_caveat and st.startswith("-"):
+            continue
+        if re.search(r"\[(C-\d{4}|ACH-\d{4})\]", st) or "http" in st:
+            continue
+        if re.fullmatch(r"\*\*[^*]+\*\*", st) or re.fullmatch(r"\|[\s:|-]+\|", st):
+            continue
+        nxt = lines[i + 1].strip() if i + 1 < len(lines) else ""
+        if st.startswith("|") and re.fullmatch(r"\|[\s:|-]+\|", nxt):
+            continue
+        issues.append(f"{name}: unreferenced analytic statement (needs [C-...] or [ACH-...]): {st[:90]}")
+    return issues
+
+
+def check_briefs(ru_path, en_path, claim_status, ach_status=None, project_dir=None):
+    issues = []
+    ach_status = ach_status or {}
     ru = Path(ru_path).read_text(encoding="utf-8")
     en = Path(en_path).read_text(encoding="utf-8")
-    if re.search("[Ѐ-ԯⷠ-ⷿꙀ-ꚟ]", en):
-        bad = sorted(set(re.findall("[Ѐ-ԯ]", en)))[:10]
+    if re.search("[\u0400-\u052f\u2de0-\u2dff\ua640-\ua69f]", en):
+        bad = sorted(set(re.findall("[\u0400-\u052f]", en)))[:10]
         issues.append(f"EN brief contains Cyrillic characters: {''.join(bad)}")
     ref = re.compile(r"\[(C-\d{4})\]")
-    for name, txt, label in (("RU", ru, "гипотез"), ("EN", en, "hypothes")):
+    aref = re.compile(r"\[(ACH-\d{4})\]")
+    for name, txt in (("RU", ru), ("EN", en)):
+        lab = LABELS[name]
         for line in txt.splitlines():
+            low = line.lower()
             for cid in ref.findall(line):
                 st = claim_status.get(cid)
                 if st is None:
                     issues.append(f"{name}: {cid} referenced but not in claims")
-                elif st == "HYPOTHESIS_UNTESTED" and label not in line.lower():
-                    issues.append(f"{name}: {cid} is a hypothesis but its line has no '{label}' label")
-                elif st not in ("APPROVED", "HYPOTHESIS_UNTESTED"):
-                    issues.append(f"{name}: {cid} has status {st} and cannot appear as a finding")
-    ids_ru, ids_en = set(ref.findall(ru)), set(ref.findall(en))
-    if ids_ru != ids_en:
-        issues.append(f"claim ids differ RU vs EN: only RU {sorted(ids_ru - ids_en)}, only EN {sorted(ids_en - ids_ru)}")
+                elif st in ("HYPOTHESIS_UNTESTED", "RESEARCH_QUESTION") and lab[st] not in low:
+                    issues.append(f"{name}: {cid} is {st} but its line has no '{lab[st]}' label")
+                elif st not in ("FACT_APPROVED", "HYPOTHESIS_UNTESTED", "RESEARCH_QUESTION"):
+                    issues.append(f"{name}: {cid} has status {st} and cannot appear in a brief")
+            for aid in aref.findall(line):
+                a = ach_status.get(aid)
+                if a is None:
+                    issues.append(f"{name}: {aid} referenced but not in hypotheses")
+                elif a["status"] == "PRELIMINARY" and lab["PRELIMINARY"] not in low:
+                    issues.append(f"{name}: {aid} is PRELIMINARY (pattern {a['pattern_claim_id']} is "
+                                  f"{a['pattern_status']}) but its line has no '{lab['PRELIMINARY']}' label")
+        issues += derived_statement_issues(name, txt)
+    for rx, what in ((ref, "claim ids"), (aref, "ACH ids")):
+        a, b = set(rx.findall(ru)), set(rx.findall(en))
+        if a != b:
+            issues.append(f"{what} differ RU vs EN: only RU {sorted(a - b)}, only EN {sorted(b - a)}")
     url = re.compile(r"https?://[^\s<>\]\)\"']+")
     u_ru, u_en = set(url.findall(ru)), set(url.findall(en))
     if u_ru != u_en:
         issues.append(f"source links differ RU vs EN: only RU {len(u_ru - u_en)}, only EN {len(u_en - u_ru)}")
+    if project_dir:
+        from render_stats import consistency_issues
+        issues += consistency_issues(project_dir, claim_status, {"RU": ru_path, "EN": en_path})
     return issues
 
 
@@ -294,6 +440,8 @@ def write_md(report, path):
     for c in report["claims"]:
         why = "; ".join(c["reasons"])[:300] or "all checks passed"
         L.append(f"| {c['claim_id']} | {c['claim_type']} | **{c['status']}** | {why} |")
+    L += ["", "## ACH", ""] + [f"- {k}: **{v['status']}** (pattern {v['pattern_claim_id']} is {v['pattern_status']})"
+                                for k, v in report.get("ach", {}).items()]
     cov = report["coverage"]
     L += ["", f"## Coverage: {cov['status']}"] + [f"- {r}" for r in cov["limited_reasons"]]
     L += ["", "| Branch | Queries | Polarities | Threads read | Balanced |", "|---|---|---|---|---|"]
@@ -338,10 +486,12 @@ def main():
             schema_errors.append(f"sources {r.get('source_id')}: missing {missing}")
 
     claims = evaluate_claims(t, contract)
+    claim_status = {c["claim_id"]: c["status"] for c in claims}
+    ach = evaluate_ach(t, claim_status)
     srcs = t["sources"]
     report = {
         "project_id": project["project_id"], "computed_at": now_iso(), "contract_version": contract["contract_version"],
-        "schema_errors": schema_errors, "claims": claims, "coverage": coverage(t, contract, project),
+        "schema_errors": schema_errors, "claims": claims, "ach": ach, "coverage": coverage(t, contract, project),
         "corpus": {
             "sources": len(srcs),
             "threads": len({s["thread_id"] for s in srcs}),
@@ -355,7 +505,7 @@ def main():
         },
     }
     if args.brief_ru and args.brief_en:
-        report["brief_issues"] = check_briefs(args.brief_ru, args.brief_en, {c["claim_id"]: c["status"] for c in claims})
+        report["brief_issues"] = check_briefs(args.brief_ru, args.brief_en, claim_status, ach, pdir)
     (pdir / "gate_report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False, default=list), encoding="utf-8")
     write_md(report, pdir / "gate_report.md")
     print(f"schema errors: {len(schema_errors)}; claims: {report['corpus']['claim statuses']}; "

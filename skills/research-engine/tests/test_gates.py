@@ -65,7 +65,7 @@ def main():
                      "retrieval_method": "SEARCH_SNIPPET" if snippet else "RSS",
                      "access_status": "INDEXED_ONLY" if snippet else "READ_FULL", "content_available": "TEXT",
                      "context_captured": "EXCERPT_ONLY" if snippet else "COMMENT_ONLY", "source_origin": "PUBLIC",
-                     "text": text, "source_version": text_hash(text)})
+                     "text": text, "source_version": text_hash(text), **({"query_id": "Q-0001"} if tid == "tA" else {})})
     append_jsonl(Path(pdir, "archive/sources.jsonl"), srcs)
     append_jsonl(Path(pdir, "queries.jsonl"), [
         {"query_id": "Q-0001", "project_id": "TEST", "branch_id": "B1", "query_text": "tote heavy", "platform": "reddit",
@@ -126,14 +126,39 @@ def main():
         ("T14 hypothesis asserting a fact", claim("Our UGC video already doubled ROAS last week", "HYPOTHESIS", ["d1"], hypothesis_label="analyst hypothesis")),
         ("T15 hypothesis not audited", claim("Structure may signal competence to colleagues", "HYPOTHESIS", ["d1"], hypothesis_label="analyst hypothesis")),
         ("T16 reach as a share", claim("21% of US women have shoulder pain from totes", "SITUATION_REACH", ["a1", "b1", "c1"])),
+        ("T21 corpus statistic correct", claim("In this complaint-search corpus, 2 of 3 comments describe shoulder pain or hurting.",
+                                               "PATTERN", ["a1", "a2"], claim_class="CORPUS_STATISTIC",
+                                               corpus_stat={"unit": "comment", "denominator_query_ids": ["Q-0001"],
+                                                            "numerator_evidence_ids": [], "bias_note": "complaint-only search"})),
+        ("T22 corpus statistic wrong numbers", claim("In this corpus, 5 of 3 comments describe shoulder pain.",
+                                                     "PATTERN", ["a1", "a2"], claim_class="CORPUS_STATISTIC",
+                                                     corpus_stat={"unit": "comment", "denominator_query_ids": ["Q-0001"],
+                                                                  "numerator_evidence_ids": [], "bias_note": "complaint-only search"})),
     ]
     C = {}
     for name, rec in claims:
+        if rec.get("corpus_stat"):
+            rec["corpus_stat"]["numerator_evidence_ids"] = [E["a1"], E["a2"]]
         add(pdir, "claims", rec)
         C[name] = f"C-{len(C) + 1:04d}"
+    # contract 0.4 premise traps: hypotheses that point to their premises as claims
+    premise_traps = [
+        ("T17 premise not approved (H18 class)", C["T1 one thread"], {}),
+        ("T18 uncovered premise", C["T9 clean pattern"], {"uncovered_premises": ["no reviews exist anywhere online"]}),
+        ("T19 unsupported leap", C["T9 clean pattern"], {"link_check": "UNSUPPORTED_LEAP"}),
+        ("T20 clean hypothesis on approved premise", C["T9 clean pattern"], {}),
+    ]
+    for name, premise, _ in premise_traps:
+        add(pdir, "claims", claim(f"{name}: a lighter tote might reduce shoulder pain", "HYPOTHESIS", [],
+                                  counter=(), hypothesis_label="analyst hypothesis", claim_class="FUTURE_HYPOTHESIS",
+                                  premise_claim_ids=[premise]))
+        C[name] = f"C-{len(C) + 1:04d}"
 
-    def audit(cid, checks, verdict="SUPPORTS", scope_issue="", open_c=False, hc=None):
+    def audit(cid, checks, verdict="SUPPORTS", scope_issue="", open_c=False, hc=None, **more):
         extra = {"hypothesis_check": hc} if hc else {}
+        if hc == "FORWARD_LOOKING_OK":
+            extra.update({"uncovered_premises": [], "link_check": "PLAUSIBLE_UNTESTED"})
+        extra.update(more)
         return {"claim_id": cid, "auditor": "fixture-auditor", "verdict": verdict, "scope_issue": scope_issue,
                 "open_contradiction": open_c, "reasoning": "fixture", **extra,
                 "evidence_checks": [{"evidence_id": E[k], "located_span": s, "supports": True, "note": ""} for k, s in checks]}
@@ -148,6 +173,10 @@ def main():
     add(pdir, "audits", audit(C["T16 reach as a share"], good, verdict="DOES_NOT_SUPPORT", hc="ASSERTS_UNOBSERVED_FACT",
                               scope_issue="corpus share presented as a population percentage"))
     add(pdir, "audits", audit(C["T13 no counter-search"], good))
+    for name, _, more in premise_traps:
+        add(pdir, "audits", audit(C[name], [], verdict="PARTIAL", hc="FORWARD_LOOKING_OK", **more))
+    for name in ("T21 corpus statistic correct", "T22 corpus statistic wrong numbers"):
+        add(pdir, "audits", audit(C[name], [("a1", "my shoulder aches by lunch"), ("a2", "the tote hurt my shoulder")]))
     add(pdir, "audits", audit(C["T10 40-50 professional"], [("c2", "it looks professional"), ("d1", "looks more put together"),
                                                            ("e1", "looks polished in meetings")],
                               scope_issue="age 40-50 not established; no purchase stated"))
@@ -158,10 +187,13 @@ def main():
     expect = {
         "T1 one thread": "NEEDS_REVIEW", "T2 no audit": "NEEDS_REVIEW", "T3 fake auditor span": "NEEDS_REVIEW",
         "T4 complaints as purchase driver": "NEEDS_REVIEW", "T5 product fact from category": "NEEDS_REVIEW",
-        "T6 snippet only": "NEEDS_REVIEW", "T9 clean pattern": "APPROVED", "T10 40-50 professional": "NEEDS_REVIEW",
+        "T6 snippet only": "NEEDS_REVIEW", "T9 clean pattern": "FACT_APPROVED", "T10 40-50 professional": "NEEDS_REVIEW",
         "T12 hypothesis": "HYPOTHESIS_UNTESTED", "T13 no counter-search": "NEEDS_REVIEW",
         "T14 hypothesis asserting a fact": "BLOCKED", "T15 hypothesis not audited": "NEEDS_REVIEW",
         "T16 reach as a share": "BLOCKED",
+        "T17 premise not approved (H18 class)": "RESEARCH_QUESTION", "T18 uncovered premise": "RESEARCH_QUESTION",
+        "T19 unsupported leap": "RESEARCH_QUESTION", "T20 clean hypothesis on approved premise": "HYPOTHESIS_UNTESTED",
+        "T21 corpus statistic correct": "FACT_APPROVED", "T22 corpus statistic wrong numbers": "NEEDS_REVIEW",
     }
     failures = 0
     for name, want in expect.items():
@@ -170,16 +202,27 @@ def main():
         failures += got != want
         print(f"{mark} {name:36s} -> {got:18s} {'; '.join(st[C[name]]['reasons'])[:110]}")
 
-    # Brief traps
-    Path(pdir, "ru.md").write_text(f"Инсайт [{C['T9 clean pattern']}] https://example.test/x\n"
-                                   f"Ещё [{C['T1 one thread']}]\nГипотеза: [{C['T12 hypothesis']}]\n", encoding="utf-8")
-    Path(pdir, "en.md").write_text(f"Insight [{C['T9 clean pattern']}] https://example.test/x\n"
-                                   f"Also [{C['T1 one thread']}]\n[{C['T12 hypothesis']}] structure signals competence. Привет\n",
-                                   encoding="utf-8")
+    # Brief traps (ACH-0001 points to the unapproved T1 pattern, so it is PRELIMINARY)
+    add(pdir, "hypotheses", {"pattern_claim_id": C["T1 one thread"], "question": "why", "preferred_h_id": "H1",
+                             "preference_reason": "fixture", "causal_status": "NOT_ESTABLISHED",
+                             "hypotheses": [{"h_id": "H1", "statement": "a", "supporting_ids": [E["a1"]], "refuting_ids": [],
+                                             "diagnosticity": "HIGH", "missing_evidence": "x"},
+                                            {"h_id": "H2", "statement": "b", "supporting_ids": [], "refuting_ids": [E["a1"]],
+                                             "diagnosticity": "LOW", "missing_evidence": "y"}]})
+    Path(pdir, "ru.md").write_text(f"## Главное\nИнсайт [{C['T9 clean pattern']}] https://example.test/x\n"
+                                   f"Ещё [{C['T1 one thread']}]\nГипотеза: [{C['T12 hypothesis']}]\n"
+                                   f"Главный риск бренда — отзывы.\nПочему уходят [ACH-0001]\n", encoding="utf-8")
+    Path(pdir, "en.md").write_text(f"## Main points\nInsight [{C['T9 clean pattern']}] https://example.test/x\n"
+                                   f"Also [{C['T1 one thread']}]\n[{C['T12 hypothesis']}] structure signals competence. Привет\n"
+                                   f"The main brand risk is reviews.\nWhy people leave [ACH-0001]\n", encoding="utf-8")
     run([str(SCRIPTS / "validate.py"), "--project-dir", pdir, "--brief-ru", f"{pdir}/ru.md", "--brief-en", f"{pdir}/en.md"])
     issues = json.loads(Path(pdir, "gate_report.json").read_text())["brief_issues"]
     for needle, name in (("Cyrillic", "T8a EN Cyrillic"), ("cannot appear", "T8b unapproved claim in brief"),
-                         ("no 'hypothes' label", "T8c unlabeled hypothesis")):
+                         ("no 'hypothes' label", "T8c unlabeled hypothesis"),
+                         ("unreferenced analytic statement", "T8d strategic sentence without a claim"),
+                         ("PRELIMINARY", "T8e ACH on an unapproved pattern without label"),
+                         ("STATS block", "T8f brief statistics not generated from the ledger"),
+                         ("ledger_snapshot", "T8g project snapshot missing")):
         hit = any(needle in i for i in issues)
         failures += not hit
         print(f"{'ok  ' if hit else 'FAIL'} {name}")

@@ -1,12 +1,13 @@
 {
   "project_id": "LEVANT-001",
-  "computed_at": "2026-10-17T02:46:01+00:00",
-  "contract_version": "0.3",
+  "computed_at": "2026-10-17T06:08:55+00:00",
+  "contract_version": "0.4",
   "schema_errors": [],
   "claims": [
     {
       "claim_id": "C-0001",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "In several independent discussions, people who carry a laptop in a shoulder tote or shoulder bag for work say it becomes too heavy or painful on the shoulder or back.",
       "reasons": [
@@ -44,6 +45,7 @@
     {
       "claim_id": "C-0002",
       "claim_type": "PURCHASE_DRIVER",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Pain or heaviness from carrying a laptop in a shoulder bag is a reason some people give for switching to a backpack.",
       "reasons": [
@@ -81,6 +83,7 @@
     {
       "claim_id": "C-0003",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "People who moved from a tote to a backpack for comfort often describe the backpack as less attractive or less professional, and some say they would still prefer a tote if they could.",
       "reasons": [
@@ -120,6 +123,7 @@
     {
       "claim_id": "C-0004",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Instead of one bag for everything, many people split by load: a backpack or laptop bag on heavy days and a lighter bag on light days, or two bags carried together.",
       "reasons": [
@@ -158,6 +162,7 @@
     {
       "claim_id": "C-0005",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Some shoppers check how heavy a bag is when empty and reject or regret structured or leather bags that are heavy before anything is put in them.",
       "reasons": [
@@ -195,6 +200,7 @@
     {
       "claim_id": "C-0006",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Laptop carriers say they want a bag that does not look sporty or like a school bag, and some reject light nylon totes because they look cheap or lack structure.",
       "reasons": [
@@ -234,6 +240,7 @@
     {
       "claim_id": "C-0007",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Many commenters expect PU or vegan leather to peel or crack with daily use, while some owners report vegan bags that held up for years.",
       "reasons": [
@@ -272,6 +279,7 @@
     {
       "claim_id": "C-0008",
       "claim_type": "PURCHASE_DRIVER",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Expected peeling leads some shoppers to rule out pricier vegan-leather options or to buy vegan leather only at a low sale price.",
       "reasons": [
@@ -317,6 +325,7 @@
     {
       "claim_id": "C-0009",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Nordace backpack owners in several threads report zipper, strap or fabric failures, with timings from under a month to about two years.",
       "reasons": [
@@ -354,6 +363,7 @@
     {
       "claim_id": "C-0010",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Other Nordace owners in several threads report years of use, repeat purchases, or colleagues buying after seeing their bag.",
       "reasons": [],
@@ -384,11 +394,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0011",
       "claim_type": "PURCHASE_DRIVER",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Negative Nordace reviews and the brand's public replies on Reddit led several would-be buyers to decide not to buy or to hold off.",
       "reasons": [
@@ -426,6 +437,7 @@
     {
       "claim_id": "C-0012",
       "claim_type": "PERSONAL_EXPERIENCE",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
       "reasons": [],
@@ -456,11 +468,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0013",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Buyers who tried to return a Nordace bag describe being offered a partial refund or return shipping at their own cost, while others report quick replacements.",
       "reasons": [
@@ -505,6 +518,7 @@
     {
       "claim_id": "C-0014",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Signals of an ad-driven brand, such as heavy retargeting and a sale countdown that resets, are cited as reasons for suspicion of Nordace.",
       "reasons": [
@@ -547,6 +561,7 @@
     {
       "claim_id": "C-0015",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
       "reasons": [],
@@ -577,31 +592,38 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0016",
       "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
       "critical": false,
       "text": "A structured tote that looks like leather but is visibly lighter than leather could address the trade-off between looking professional and carrying a laptop without pain.",
-      "reasons": [],
+      "reasons": [
+        "auditor did not assess the premise-to-conclusion link (link_check missing)"
+      ],
       "unusable_evidence": [],
       "audit_id": "A-0037",
-      "status": "HYPOTHESIS_UNTESTED"
+      "status": "NEEDS_REVIEW"
     },
     {
       "claim_id": "C-0017",
       "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
       "critical": false,
       "text": "Transit and walking commuters may be the hardest audience for a laptop tote, while car commuters and light-load or meeting days may be a better fit.",
-      "reasons": [],
+      "reasons": [
+        "auditor did not assess the premise-to-conclusion link (link_check missing)"
+      ],
       "unusable_evidence": [],
       "audit_id": "A-0038",
-      "status": "HYPOTHESIS_UNTESTED"
+      "status": "NEEDS_REVIEW"
     },
     {
       "claim_id": "C-0018",
       "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
       "critical": false,
       "text": "Shoppers who see a Nordace ad and check Reddit will mostly find backpack durability complaints, so tote-specific proof (owner longevity, warranty terms, honest weight) may be needed for cold traffic to convert.",
       "reasons": [
@@ -614,16 +636,20 @@
     {
       "claim_id": "C-0019",
       "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
       "critical": false,
       "text": "Concrete owner reports of vegan-leather bags lasting years without peeling may weaken the price-ceiling objection to a vegan tote around $188.",
-      "reasons": [],
+      "reasons": [
+        "auditor did not assess the premise-to-conclusion link (link_check missing)"
+      ],
       "unusable_evidence": [],
       "audit_id": "A-0040",
-      "status": "HYPOTHESIS_UNTESTED"
+      "status": "NEEDS_REVIEW"
     },
     {
       "claim_id": "C-0020",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
       "reasons": [],
@@ -654,11 +680,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0021",
       "claim_type": "PURCHASE_DRIVER",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Shoulder or back strain from a heavy work bag or tote, in several cases one carrying a laptop, is a reason some people give for switching to a backpack.",
       "reasons": [
@@ -696,6 +723,7 @@
     {
       "claim_id": "C-0022",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Several people who switched from a tote to a backpack for comfort describe the backpack as less attractive or juvenile-looking; one says she would still choose a tote if she could, while others accept the trade.",
       "reasons": [
@@ -734,6 +762,7 @@
     {
       "claim_id": "C-0023",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
       "reasons": [],
@@ -764,11 +793,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0024",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Some shoppers check how heavy a bag is when empty, and several reject or regret bags that are heavy before anything is put in them, including leather and structured bags.",
       "reasons": [],
@@ -799,11 +829,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0025",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "In work-bag and laptop-bag threads, some people say they do not want a bag that looks like a school bag or hiking gear, and some reject Longchamp-style nylon totes for looking cheap or lacking structure.",
       "reasons": [
@@ -841,6 +872,7 @@
     {
       "claim_id": "C-0026",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while one owner reports a microfiber vegan bag with no cracking or peeling after about four years.",
       "reasons": [
@@ -878,6 +910,7 @@
     {
       "claim_id": "C-0027",
       "claim_type": "PERSONAL_EXPERIENCE",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "One commenter bought a vegan-leather jacket only because it was cheap on sale, after vegan leather had peeled for them; another shopper ruled out a vegan-leather work tote as too pricey for vegan leather.",
       "reasons": [
@@ -915,6 +948,7 @@
     {
       "claim_id": "C-0028",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Nordace backpack owners in several threads report zipper, strap or fabric failures; the timings they give range from under a month to a little over two years.",
       "reasons": [
@@ -952,6 +986,7 @@
     {
       "claim_id": "C-0029",
       "claim_type": "PURCHASE_DRIVER",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Negative Nordace reviews and the brand's public replies on Reddit led several would-be buyers to say they will not buy or will hold off; these are stated intentions, and the reply-driven ones cluster in two threads.",
       "reasons": [
@@ -989,6 +1024,7 @@
     {
       "claim_id": "C-0030",
       "claim_type": "PERSONAL_EXPERIENCE",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Two buyers describe Nordace offering a partial refund instead of a free return, with a return to Hong Kong at the buyer's cost as the alternative.",
       "reasons": [
@@ -1027,6 +1063,7 @@
     {
       "claim_id": "C-0031",
       "claim_type": "PERSONAL_EXPERIENCE",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "A few commenters cite heavy ad retargeting or a sale countdown that reset as reasons they became suspicious of Nordace.",
       "reasons": [
@@ -1065,6 +1102,7 @@
     {
       "claim_id": "C-0032",
       "claim_type": "PURCHASE_DRIVER",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Shoulder or back strain from carrying a heavy bag, in some cases a laptop-loaded work bag, is a reason some people give for switching to a backpack.",
       "reasons": [
@@ -1102,6 +1140,7 @@
     {
       "claim_id": "C-0033",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Several people who switched to a backpack for comfort describe it as less attractive or juvenile-looking, or as something they settled for; one says she would still choose a tote if she did not carry a laptop.",
       "reasons": [
@@ -1140,6 +1179,7 @@
     {
       "claim_id": "C-0034",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "In work-bag and laptop-bag threads, some people say they do not want a bag that looks like a school bag or hiking gear, and two reject Longchamp nylon totes for looking cheap or lacking structure.",
       "reasons": [
@@ -1178,6 +1218,7 @@
     {
       "claim_id": "C-0035",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while a few owners report vegan bags that held up, one for about four and a half years without cracking or peeling.",
       "reasons": [],
@@ -1208,11 +1249,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0036",
       "claim_type": "PERSONAL_EXPERIENCE",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "One commenter says they bought a vegan-leather jacket only because it was cheap on sale and that none of their faux-leather items has aged well past five years; another shopper ruled out a vegan-leather work tote as too pricey for vegan leather.",
       "reasons": [],
@@ -1243,11 +1285,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0037",
       "claim_type": "PATTERN",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "In self-selected complaint threads, Nordace backpack owners report zipper, strap or fabric failures, with stated timings from under a month to a little over two years, while other owners in the same threads report many years of use.",
       "reasons": [
@@ -1285,6 +1328,7 @@
     {
       "claim_id": "C-0038",
       "claim_type": "PURCHASE_DRIVER",
+      "claim_class": "SOURCE_REPORT",
       "critical": true,
       "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
       "reasons": [],
@@ -1315,11 +1359,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0039",
       "claim_type": "PERSONAL_EXPERIENCE",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Two buyers describe Nordace offering a partial refund as the alternative to returning the bag at their own cost; for one of them the return address was in Hong Kong.",
       "reasons": [],
@@ -1350,11 +1395,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0040",
       "claim_type": "PERSONAL_EXPERIENCE",
+      "claim_class": "SOURCE_REPORT",
       "critical": false,
       "text": "Two commenters cite heavy ad retargeting or a sale countdown that reset as reasons they became suspicious of Nordace.",
       "reasons": [],
@@ -1385,11 +1431,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0041",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "On the UK Nordace site the Siena Lévant Tote Bag is listed at £159.00 and carries a NEW badge.",
       "reasons": [
@@ -1428,6 +1475,7 @@
     {
       "claim_id": "C-0042",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "According to the user, the Siena Lévant Tote Bag has no customer reviews yet because it is a new product.",
       "reasons": [
@@ -1465,6 +1513,7 @@
     {
       "claim_id": "C-0043",
       "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
       "critical": false,
       "text": "Shoppers who see a Nordace ad and search Reddit may mostly meet complaints about Nordace backpacks, since the Lévant has no reviews yet; if so, tote-specific proof such as warranty terms, owner reports over time and an honest weight might be needed before cold traffic converts.",
       "reasons": [
@@ -1477,16 +1526,20 @@
     {
       "claim_id": "C-0044",
       "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
       "critical": false,
       "text": "Concrete owner reports of vegan-leather bags lasting years without peeling might weaken the price objection to a vegan-leather tote at around £159.",
-      "reasons": [],
+      "reasons": [
+        "auditor did not assess the premise-to-conclusion link (link_check missing)"
+      ],
       "unusable_evidence": [],
       "audit_id": "A-0044",
-      "status": "HYPOTHESIS_UNTESTED"
+      "status": "NEEDS_REVIEW"
     },
     {
       "claim_id": "C-0045",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "On the nordace.com product page captured in the user's screenshot, the Siena Lévant Tote Bag is listed at £159.00 with a NEW badge.",
       "reasons": [],
@@ -1517,11 +1570,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0046",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "The user states that there are no reviews and that the product is new.",
       "reasons": [],
@@ -1552,21 +1606,25 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0047",
       "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
       "critical": false,
       "text": "Shoppers who see a Nordace ad and search Reddit may mostly meet complaints about Nordace backpacks, since the user reports that the Lévant has no reviews yet; if so, tote-specific proof such as warranty terms, owner reports over time and an honest weight might be needed before cold traffic converts.",
-      "reasons": [],
+      "reasons": [
+        "auditor did not assess the premise-to-conclusion link (link_check missing)"
+      ],
       "unusable_evidence": [],
       "audit_id": "A-0047",
-      "status": "HYPOTHESIS_UNTESTED"
+      "status": "NEEDS_REVIEW"
     },
     {
       "claim_id": "C-0048",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "The product page lists the Siena Lévant Tote Bag with a volume of 15 L, a weight of 1 kg (2.2 lb), exterior dimensions of 42 x 13.5 x 27.5 cm, and airline compatibility described as 'Overhead bin & Underseat'.",
       "reasons": [
@@ -1604,6 +1662,7 @@
     {
       "claim_id": "C-0049",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "The product page lists a 14-inch EVA laptop sleeve, a detachable hand-washable lining, an anti-theft pocket on the back panel, a quick-access fleece magnetic pocket, an adjustable detachable strap of 83–104 cm and a luggage strap.",
       "reasons": [
@@ -1642,6 +1701,7 @@
     {
       "claim_id": "C-0050",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "The product page lists the body material as micro-fiber vegan leather, with water-resistant fabric and metal protective bottom studs.",
       "reasons": [],
@@ -1672,11 +1732,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0051",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
       "reasons": [],
@@ -1707,11 +1768,12 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
     },
     {
       "claim_id": "C-0052",
       "claim_type": "PRODUCT_FACT",
+      "claim_class": "OBSERVED_STATE",
       "critical": true,
       "text": "The product copy for the Siena Lévant Tote Bag lists a 14-inch EVA laptop sleeve, a detachable lining, a magnetic fleece pocket, a hidden anti-theft pocket, a luggage strap and an adjustable strap.",
       "reasons": [],
@@ -1742,9 +1804,78 @@
         }
       },
       "evidence_audited": true,
-      "status": "APPROVED"
+      "status": "FACT_APPROVED"
+    },
+    {
+      "claim_id": "C-0053",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "critical": false,
+      "text": "A tote with a listed empty weight of 1 kg might be worth testing with laptop carriers who say heavy totes hurt, as an alternative to switching to a backpack; whether it is more comfortable when loaded has not been tested.",
+      "reasons": [
+        "uncovered factual premise(s): ['A listed empty weight of 1 kg is light compared with other work totes', 'Laptop carriers with tote pain switch, or consider switching, to a backpack']"
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0053",
+      "status": "RESEARCH_QUESTION"
+    },
+    {
+      "claim_id": "C-0054",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "critical": false,
+      "text": "Days with a lighter load, when some people already switch to a smaller bag, might be a better first use case to test for the Lévant than heavy daily carry; this is untested.",
+      "reasons": [
+        "uncovered factual premise(s): ['The Lévant is the kind of smaller or lighter bag people pick for light-load days', 'The Lévant is less suited to heavy daily carry than to light-load days']"
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0054",
+      "status": "RESEARCH_QUESTION"
+    },
+    {
+      "claim_id": "C-0055",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "CAUSAL_HYPOTHESIS",
+      "critical": true,
+      "text": "Negative Reddit discussion of Nordace might cost conversions from cold traffic, because some would-be buyers say they held off after reading it; tote-specific proof such as warranty terms and owner reports over time might reduce that risk. Neither effect has been measured.",
+      "reasons": [
+        "uncovered factual premise(s): ['Cold-traffic prospects search for or encounter Reddit discussion of Nordace before buying', 'Tote-specific warranty terms exist that could be shown', 'Owner reports of the tote over time exist or can be obtained (C-0046 only reports that the user says there are no rev"
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0055",
+      "status": "RESEARCH_QUESTION"
+    },
+    {
+      "claim_id": "C-0056",
+      "claim_type": "HYPOTHESIS",
+      "claim_class": "FUTURE_HYPOTHESIS",
+      "critical": false,
+      "text": "Showing owner reports of microfiber vegan-leather bags that lasted years might weaken the peeling worry for a tote whose body is listed as micro-fiber vegan leather; this is untested.",
+      "reasons": [
+        "uncovered factual premise(s): [\"Owner reports specifically about microfiber vegan-leather bags lasting years exist (C-0035 says only 'vegan bags')\", 'The peeling worry applies to microfiber vegan leather in the same way as to PU', \"Durability reports about other brands' bags would be credible to sho"
+      ],
+      "unusable_evidence": [],
+      "audit_id": "A-0056",
+      "status": "RESEARCH_QUESTION"
     }
   ],
+  "ach": {
+    "ACH-0001": {
+      "status": "PRELIMINARY",
+      "pattern_claim_id": "C-0002",
+      "pattern_status": "NEEDS_REVIEW"
+    },
+    "ACH-0002": {
+      "status": "PRELIMINARY",
+      "pattern_claim_id": "C-0011",
+      "pattern_status": "NEEDS_REVIEW"
+    },
+    "ACH-0003": {
+      "status": "VALID",
+      "pattern_claim_id": "C-0038",
+      "pattern_status": "FACT_APPROVED"
+    }
+  },
   "coverage": {
     "matrix": {
       "ANY|OUR_BRAND|ANY": 2,
@@ -1975,11 +2106,10 @@
     "decision evidence": 107,
     "queries": 29,
     "claim statuses": {
-      "NEEDS_REVIEW": 29,
-      "APPROVED": 16,
-      "HYPOTHESIS_UNTESTED": 5,
-      "BLOCKED": 2
+      "NEEDS_REVIEW": 34,
+      "FACT_APPROVED": 16,
+      "BLOCKED": 2,
+      "RESEARCH_QUESTION": 4
     }
-  },
-  "brief_issues": []
+  }
 }

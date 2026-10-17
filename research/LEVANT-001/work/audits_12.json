@@ -1,0 +1,64 @@
+[
+ {
+  "claim_id": "C-0053",
+  "verdict": "PARTIAL",
+  "evidence_checks": [],
+  "scope_issue": "The premises give the listed weight (1 kg) and say some shoppers reject bags that are heavy when empty, but nothing establishes that 1 kg is light compared with other totes. The phrase 'as an alternative to switching to a backpack' assumes laptop carriers switch to backpacks, and no listed premise says so.",
+  "open_contradiction": false,
+  "reasoning": "The claim is worded as an idea to test and openly says loaded comfort is untested, so it states no unobserved result. It does rely on two things the premises do not show: that 1 kg is a light empty weight for a tote, and that switching to a backpack is what these carriers do. The pain in C-0020 comes from the laptop load, so lower empty weight may not help much. That is an obvious caveat, but the idea is still reasonable to test.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [
+   "A listed empty weight of 1 kg is light compared with other work totes",
+   "Laptop carriers with tote pain switch, or consider switching, to a backpack"
+  ],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "auditor": "independent auditor packet 12"
+ },
+ {
+  "claim_id": "C-0054",
+  "verdict": "PARTIAL",
+  "evidence_checks": [],
+  "scope_issue": "No listed premise describes the Lévant, so nothing shows it suits light-load days or counts as the 'smaller bag' people switch to. The comparison 'better first use case ... than heavy daily carry' assumes the Lévant handles heavy carry worse, and no premise says that.",
+  "open_contradiction": false,
+  "reasoning": "C-0023 supports the idea that some people use a smaller bag on light days, and C-0020 supports the idea that heavy laptop carry in a tote is painful. The claim is hedged ('might', 'untested') and states no result. However, it ties this use case to the Lévant without any premise about the product's size or fit for light days. The step to testing it is still reasonable.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [
+   "The Lévant is the kind of smaller or lighter bag people pick for light-load days",
+   "The Lévant is less suited to heavy daily carry than to light-load days"
+  ],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "auditor": "independent auditor packet 12"
+ },
+ {
+  "claim_id": "C-0055",
+  "verdict": "PARTIAL",
+  "evidence_checks": [],
+  "scope_issue": "Nothing shows that cold-traffic visitors look up or come across Reddit discussion of Nordace; the would-be buyers in C-0038 were already Reddit readers. Nothing shows that tote-specific warranty terms or owner reports over time exist. C-0046 only reports that the user says there are no reviews and the product is new, which suggests owner reports over time are not yet available.",
+  "open_contradiction": false,
+  "reasoning": "The causal link is worded as a hypothesis, both effects are marked as unmeasured, and 'some would-be buyers say they held off' matches C-0038's framing of these as stated intentions. The claim does carry over from Reddit users to cold ad traffic, and it assumes reassurance material is available that the premises do not establish. As an idea to test it is reasonable, with an obvious alternative: cold-traffic buyers may never see Reddit at all.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [
+   "Cold-traffic prospects search for or encounter Reddit discussion of Nordace before buying",
+   "Tote-specific warranty terms exist that could be shown",
+   "Owner reports of the tote over time exist or can be obtained (C-0046 only reports that the user says there are no reviews and the product is new)"
+  ],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "auditor": "independent auditor packet 12"
+ },
+ {
+  "claim_id": "C-0056",
+  "verdict": "PARTIAL",
+  "evidence_checks": [],
+  "scope_issue": "C-0035 mentions vegan bags that held up (one for about four and a half years) but does not say they were microfiber. Nothing establishes that owner reports of microfiber vegan-leather bags lasting years exist, or that durability evidence from other brands' bags carries over to this tote's material.",
+  "open_contradiction": false,
+  "reasoning": "The claim is clearly an untested idea, and C-0035 supports both the peeling worry and some owner reports of vegan bags that held up. It narrows this to microfiber vegan leather, which neither premise does, and it assumes reports about other brands would reassure shoppers about this tote. The idea is still reasonable to test.",
+  "hypothesis_check": "FORWARD_LOOKING_OK",
+  "uncovered_premises": [
+   "Owner reports specifically about microfiber vegan-leather bags lasting years exist (C-0035 says only 'vegan bags')",
+   "The peeling worry applies to microfiber vegan leather in the same way as to PU",
+   "Durability reports about other brands' bags would be credible to shoppers for this tote"
+  ],
+  "link_check": "PLAUSIBLE_UNTESTED",
+  "auditor": "independent auditor packet 12"
+ }
+]

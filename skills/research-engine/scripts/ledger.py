@@ -65,8 +65,20 @@ def check_record(table, rec, contract, project_dir):
         for qid in rec.get("counter_search_query_ids", []):
             if qid not in queries:
                 errs.append(f"counter_search_query_ids: {qid} not in queries")
-        if rec.get("claim_type") == "HYPOTHESIS" and not rec.get("hypothesis_label"):
-            errs.append("HYPOTHESIS claims need hypothesis_label")
+        hyp_classes = contract.get("class_rules", {}).get("hypothesis_classes", [])
+        if (rec.get("claim_type") == "HYPOTHESIS" or rec.get("claim_class") in hyp_classes) and not rec.get("hypothesis_label"):
+            errs.append("hypothesis claims (type HYPOTHESIS or a hypothesis class) need hypothesis_label")
+        for pid in rec.get("premise_claim_ids") or []:
+            if pid not in claims:
+                errs.append(f"premise_claim_ids: {pid} not in claims (add the premise as its own claim first)")
+        if rec.get("claim_class") == "CORPUS_STATISTIC":
+            spec = rec.get("corpus_stat") or {}
+            for f in ("unit", "denominator_query_ids", "numerator_evidence_ids"):
+                if not spec.get(f):
+                    errs.append(f"CORPUS_STATISTIC needs corpus_stat.{f}")
+            for qid in spec.get("denominator_query_ids") or []:
+                if qid not in queries:
+                    errs.append(f"corpus_stat.denominator_query_ids: {qid} not in queries")
         if not isinstance(rec.get("critical"), bool):
             errs.append("critical must be true or false")
     if table == "hypotheses":

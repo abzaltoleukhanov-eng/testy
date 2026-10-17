@@ -26,6 +26,7 @@ def main():
     by_obj = {(s["thread_id"], s["platform_object_id"]): s for s in t["sources"]}
     evidence = {e["evidence_id"]: e for e in t["evidence"]}
     audited = {a["claim_id"] for a in t["audits"]}
+    by_id = {x["claim_id"]: x for x in t["claims"]}
     if args.claims:
         wanted = set(args.claims.split(","))
         claims = [x for x in t["claims"] if x["claim_id"] in wanted]
@@ -47,7 +48,10 @@ def main():
 
     packet = []
     for x in claims:
+        prem = [{"claim_id": pid, "text": by_id[pid]["text"], "claim_class": by_id[pid].get("claim_class")}
+                for pid in x.get("premise_claim_ids") or [] if pid in by_id]
         packet.append({"claim_id": x["claim_id"], "claim": x["text"], "claim_type": x["claim_type"],
+                       "claim_class": x.get("claim_class"), "premises": prem,
                        "scope_limits": x.get("scope_limits"),
                        "supporting": [src_block(e) for e in x["supporting_evidence_ids"] if e in evidence],
                        "contradicting": [src_block(e) for e in x.get("contradicting_evidence_ids", []) if e in evidence]})

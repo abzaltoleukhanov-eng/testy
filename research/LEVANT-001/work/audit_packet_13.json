@@ -1,0 +1,96 @@
+[
+ {
+  "claim_id": "C-0057",
+  "claim": "If weighing confirms that the Lévant's listed 1 kg empty weight is lower than the work totes people say they rejected for weight, a test could check whether laptop carriers who say heavy totes hurt would consider it as a lighter option; comfort when loaded is untested.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "FUTURE_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0020",
+    "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0024",
+    "text": "Some shoppers check how heavy a bag is when empty, and several reject or regret bags that are heavy before anything is put in them, including leather and structured bags.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0051",
+    "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "Replaces C-0053 with its conditions made explicit.",
+  "supporting": [],
+  "contradicting": []
+ },
+ {
+  "claim_id": "C-0058",
+  "claim": "It could be tested whether the Lévant appeals for light-load days, when some people already move to a smaller bag; whether it suits that role is untested.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "FUTURE_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0023",
+    "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "Replaces C-0054 with its conditions made explicit.",
+  "supporting": [],
+  "contradicting": []
+ },
+ {
+  "claim_id": "C-0059",
+  "claim": "If cold-traffic shoppers look Nordace up on Reddit before buying (not yet measured), the negative discussion that led some readers to hold off could cost conversions; showing warranty terms and owner reports, if they are available for the Lévant, could be tested as a counter.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "CAUSAL_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0038",
+    "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0012",
+    "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0015",
+    "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0046",
+    "text": "The user states that there are no reviews and that the product is new.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "Replaces C-0055 with its conditions made explicit.",
+  "supporting": [],
+  "contradicting": []
+ },
+ {
+  "claim_id": "C-0060",
+  "claim": "If owner reports of microfiber vegan-leather bags lasting years can be found and shown, a test could check whether they weaken the peeling worry for a tote whose body is listed as micro-fiber vegan leather.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "FUTURE_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0035",
+    "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while a few owners report vegan bags that held up, one for about four and a half years without cracking or peeling.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0050",
+    "text": "The product page lists the body material as micro-fiber vegan leather, with water-resistant fabric and metal protective bottom studs.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "Replaces C-0056 with its conditions made explicit.",
+  "supporting": [],
+  "contradicting": []
+ }
+]

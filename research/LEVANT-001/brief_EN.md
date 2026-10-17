@@ -1,19 +1,17 @@
 # Siena Lévant Tote: what people say about work totes and about Nordace
 
 **Product:** Nordace Siena Lévant Tote Bag. https://nordace.com/en/product/siena-levant-tote-bag/
-**Markets:** US, UK · **Platform:** Meta, cold traffic · **Date:** 2026-10-16
-**Mode:** research-engine v3 pilot, Reddit only
+**Markets:** US, UK · **Platform:** Meta, cold traffic · **Date:** 2026-10-17
+**Mode:** research-engine pilot, contract 0.4; consumer data from Reddit only, product data from the user's screenshots
 **Coverage:** `COVERAGE_LIMITED`. Reasons:
 - the official product page is blocked;
 - the complaint, switch and return branches have no neutral or positive queries;
 - UK searches returned almost nothing useful.
 
-**Volume:**
-- 29 queries, 39 threads, 2,184 posts and comments, 1,516 unique authors;
-- 431 evidence rows, 107 of them decision stories;
-- 52 claims: **16 approved after independent audit** (11 about people and the brand, 5 about the product), 4 hypotheses passed the framing check, the rest rejected or awaiting rework.
+<!-- STATS:BEGIN -->
+<!-- STATS:END -->
 
-Every finding below points to a claim `[C-…]`. A script, not the model, computed each claim's status. Quotes are given in the original.
+Every finding below points to a claim `[C-…]` or an analysis `[ACH-…]`. A script, not the model, computed every status. Strategic conclusions are written as hypotheses with explicit premises and passed a separate audit. Quotes are given in the original.
 
 ---
 
@@ -21,7 +19,7 @@ Every finding below points to a claim `[C-…]`. A script, not the model, comput
 1. For some people, a tote carrying a laptop becomes too heavy, and they report shoulder and back pain [C-0020].
 2. People judge a bag's weight before they buy: they check how much it weighs empty and reject heavy models [C-0024].
 3. People expect vegan leather to peel. Some owners report bags that have held up for years [C-0035].
-4. The main commercial risk is what Reddit says about Nordace. After reading the reviews and the brand's replies, some would-be buyers say they will not buy or will hold off [C-0038]. One person turned away from the Nordace tote itself for this reason [C-0012].
+4. After reading Nordace reviews and the brand's replies on Reddit, some would-be buyers say they will not buy or will hold off [C-0038]. One person turned away from the Nordace tote itself for this reason [C-0012]. How much this hurts cold-traffic conversion is a hypothesis, not measured [C-0055].
 5. The brand also has loyal owners: years of use, repeat purchases, and colleagues who bought after seeing their bag [C-0010].
 6. According to the user, there are no reviews of the Lévant and the product is new [C-0046]. We did not check whether reviews exist anywhere else. Our Reddit corpus has none either, but that does not prove there are none anywhere.
 
@@ -46,7 +44,7 @@ Every finding below points to a claim `[C-…]`. A script, not the model, comput
 - Two separate cases involving price [C-0036]:
   - one person bought a vegan jacket only on sale and would not pay more than $70: https://www.reddit.com/r/AbercrombieandFitch/comments/1sajnvc/vegan_leather_quality/oe5htkj/
   - another ruled out a vegan work tote as "too pricey for vegan leather": https://www.reddit.com/r/handbags/comments/1injwsv/recs_for_a_vegan_leather_work_tote/
-  - These are two people, not a pattern.
+  - These are two people, not a pattern [C-0036].
 
 **The Nordace brand.**
 - After negative reviews and the brand's public replies on Reddit, some would-be buyers write "won't buy" or "will wait" [C-0038]. These are intentions, not verified refusals. The refusals caused by the brand's replies are concentrated in two threads.
@@ -59,41 +57,39 @@ Every finding below points to a claim `[C-…]`. A script, not the model, comput
 - Warranty and support are a yardstick of trust and a justification for price [C-0015].
   - *"A company that can't offer an extensive warranty period clearly does not have faith in the products"*. https://www.reddit.com/r/backpacks/comments/bqe83z/any_experience_with_nordace_backpacks/k9h0sbx/
   - *"Lifetime warranty against damage, not just defects."* https://www.reddit.com/r/BuyItForLife/comments/1tdkdv2/durable_professional_work_tote/olvwl3o/
-- Individual cases, not a pattern:
+- Individual cases, not a pattern [C-0039], [C-0040]:
   - two buyers describe a choice between "30% of the money back or a return at your own cost" [C-0039]: https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/
   - two people name aggressive retargeting and a sale timer that resets as reasons for suspicion [C-0040]: https://www.reddit.com/r/backpacks/comments/phb8ht/dont_buy_backpacks_from_nordace/k771gp5/ and https://www.reddit.com/r/backpacks/comments/1q2ymhh/severe_issues_with_nordace_avoid_avoid_avoid/
 
 **What this does NOT prove:**
 - what share of people have these problems;
 - the audience's age, gender or country;
-- that any of this applies to the Lévant: we found not a single review of the Lévant itself;
+- that any of this applies to the Lévant: our corpus has not a single review of the Lévant itself;
 - that an ad built on these themes will sell.
 
 ## Competing explanations (ACH)
-Why people move from a tote to a backpack (hypotheses; causality not established):
+Why people move from a tote to a backpack, preliminary [ACH-0001]: the underlying claim (C-0032) did not pass audit, so this analysis is unverified; causality not established.
 
 | Hypothesis | What it looks like | Weight |
 |---|---|---|
-| H1 | Total load on one shoulder (laptop plus belongings) | high diagnosticity, preferred |
-| H2 | The bag's own weight and stiffness | medium; two people say outright that the contents are heavy, not the bag |
-| H3 | How people get to work (on foot or by transit) | high; looks like an amplifier of H1 |
-| H4 | Backpacks being in fashion | refuted: people who moved to a backpack speak of losing their look |
+| H1 [ACH-0001] | Total load on one shoulder (laptop plus belongings) | preliminary: high diagnosticity, preferred |
+| H2 [ACH-0001] | The bag's own weight and stiffness | preliminary: medium; two people say outright that the contents are heavy, not the bag |
+| H3 [ACH-0001] | How people get to work (on foot or by transit) | preliminary: high; looks like an amplifier of H1 |
+| H4 [ACH-0001] | Backpacks being in fashion | preliminary: refuted; people who moved to a backpack speak of losing their look |
 
-Why people turn away from Nordace after Reddit (hypotheses):
+Why would-be buyers turn away from Nordace after Reddit [ACH-0003]: the underlying claim is approved (C-0038); a ranking of explanations, causality not established.
 
 | Hypothesis | What it looks like | Weight |
 |---|---|---|
-| H1 | Reviews about breakages | preferred: works in threads with no brand reply too |
-| H2 | The tone of the brand's replies | real, but one incident in two threads |
-| H3 | Suspicion of aggressive advertising | more a reason to go and check than a reason for the decision |
+| H1 [ACH-0003] | Reviews about breakages | preferred: works in threads with no brand reply too |
+| H2 [ACH-0003] | The tone of the brand's replies | real, but one incident in two threads |
+| H3 [ACH-0003] | Suspicion of aggressive advertising | more a reason to go and check than a reason for the decision |
 
 ## Alternatives and "buy nothing"
-- A backpack (often a cheap one).
-- Two bags depending on the day [C-0023].
-- Leaving the laptop at the office.
-- A tote bought second-hand or on sale.
-
-For a £159 tote to win, it has to solve exactly what people put up with a backpack for: the weight on the shoulder. The tote already looks better.
+- A backpack: some people move to one when a tote carrying a laptop gets too heavy [C-0020].
+- Two bags depending on the day, or a small bag on light days [C-0023].
+- A tote with a lower empty weight: people reject models that are heavy before anything goes in [C-0024].
+- Hypothesis: for a £159 tote to compete with a backpack, it would need to reduce the load on the shoulder; this is untested [C-0053].
 
 ## The product: what is known and what is not
 Everything below is what is **listed on the page** (the user's screenshots from 2026-10-17). These are not measurements.
@@ -112,21 +108,21 @@ Everything below is what is **listed on the page** (the user's screenshots from 
   - a lower empty weight does not guarantee that carrying a laptop is more comfortable.
 
 ## Creative opportunities (all hypotheses, to be tested)
-1. **"The tote you don't have to swap for a backpack"**: hypothesis [C-0016]. Basis: [C-0020], [C-0024].
-   - Belief shift: from "a nice tote = sore shoulders" to "this tote is light in itself".
-   - Proof on screen: weighing the empty bag, comparing it with the usual heavy ones, the shoulder strap.
-   - Segment awareness: they know the problem, they know the solutions (a backpack), they do not know the brand.
-   - Risk: 1 kg is the manufacturer's figure, not a measurement [C-0051]; a lower empty weight does not guarantee comfort with a laptop; with a laptop and belongings the bag is still heavy.
-2. **"The bag for days when how you look matters"**: hypothesis [C-0017]. Basis: [C-0023].
-   - Audience: meeting days and office days, not the daily walk with a full load.
-   - Risk: it narrows the audience.
-3. **"Get ahead of the Reddit check"**: hypothesis [C-0047]. Basis: [C-0038], [C-0012], [C-0010], [C-0015], [C-0046].
-   - What to do: show the real warranty, owner reviews that state how long the bag has lasted, the honest weight.
-   - Risk: the warranty terms need to be confirmed.
-   - This is not a video idea but a precondition: without it, cold traffic may drop off after a search.
-4. **"Vegan leather that hasn't peeled"**: hypothesis [C-0044]. Basis: [C-0035], [C-0036].
-   - What to show: specific lengths of use from owners.
-   - Risk: there is no evidence about the Lévant's material.
+1. **"The tote you don't have to swap for a backpack"**: hypothesis [C-0053]. Basis: [C-0020], [C-0024], [C-0051].
+   - Belief shift (hypothesis [C-0053]): from "a nice tote = sore shoulders" to "this tote is light in itself".
+   - What could be shown on screen (hypothesis [C-0053]): weighing the empty bag, the shoulder strap.
+   - Segment awareness (hypothesis [C-0053]): they know the problem, they know the solution (a backpack), they do not know the brand.
+   - Risk (hypothesis [C-0053], weight [C-0051]): 1 kg is the manufacturer's figure; a lower empty weight does not guarantee comfort with a laptop.
+2. **"The bag for light days"**: hypothesis [C-0054]. Basis: [C-0023], [C-0020].
+   - Audience (hypothesis [C-0054]): days when people already take a smaller bag, not the daily full load.
+   - Risk (hypothesis [C-0054]): it narrows the audience.
+3. **"Get ahead of the Reddit check"**: hypothesis [C-0055]. Basis: [C-0038], [C-0012], [C-0015], [C-0046].
+   - What could be done (hypothesis [C-0055]): show the warranty terms, owner reviews that state how long the bag has lasted, the honest weight.
+   - Risk (hypothesis [C-0055]): the Lévant's warranty terms are not confirmed.
+   - This is not a video idea but a precondition for cold traffic (hypothesis [C-0055]).
+4. **"Vegan leather that hasn't peeled"**: hypothesis [C-0056]. Basis: [C-0035], [C-0050].
+   - What to show (hypothesis [C-0056]): specific lengths of use from owners of microfiber bags.
+   - Risk (hypothesis [C-0056]): the owner reports are about other brands, not the Lévant.
 
 ## Gaps and next step
 - **According to the user, there are no reviews of the Lévant [C-0046].** Everything known about real-world use comes from other bags and from Nordace backpacks.
@@ -135,7 +131,8 @@ Everything below is what is **listed on the page** (the user's screenshots from 
   - the claim about Nordace backpack breakages (C-0037);
   - the claim "pain → switching to a backpack as a purchase reason" (C-0032);
   - the claim "a backpack is felt as a loss of looks" (C-0033).
-  - Hypothesis C-0018 was blocked: it presented as fact that shoppers "will mostly find" complaints about backpacks. It is replaced by C-0047.
+  - Hypothesis C-0018 was blocked: it presented as fact that shoppers "will mostly find" complaints about backpacks.
+  - Hypotheses C-0016, C-0017, C-0044 and C-0047 are replaced by C-0053 to C-0056, with explicit premises (contract 0.4).
 
   They are not used as findings and cannot be relied on.
 - **12 downloaded threads have not been analysed**, including ones on competitors Dagne Dover and Cuyana, the luggage strap and organizers.

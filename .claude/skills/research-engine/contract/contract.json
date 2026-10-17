@@ -1,5 +1,5 @@
 {
-  "contract_version": "0.3",
+  "contract_version": "0.4",
   "note": "Single source of truth. Instructions, validators and test fixtures read field lists, enums and gates from this file. Change it here, never in a copy.",
   "enums": {
     "access_status": [
@@ -123,15 +123,33 @@
       "LOW"
     ],
     "claim_status": [
-      "APPROVED",
+      "FACT_APPROVED",
       "HYPOTHESIS_UNTESTED",
+      "RESEARCH_QUESTION",
       "NEEDS_REVIEW",
-      "CONTRADICTED",
       "BLOCKED"
     ],
     "hypothesis_check": [
       "FORWARD_LOOKING_OK",
       "ASSERTS_UNOBSERVED_FACT"
+    ],
+    "claim_class": [
+      "SOURCE_REPORT",
+      "OBSERVED_STATE",
+      "CORPUS_STATISTIC",
+      "WORLD_CLAIM",
+      "CAUSAL_HYPOTHESIS",
+      "FUTURE_HYPOTHESIS"
+    ],
+    "link_check": [
+      "PLAUSIBLE_UNTESTED",
+      "UNSUPPORTED_LEAP"
+    ],
+    "corpus_unit": [
+      "comment",
+      "author",
+      "thread",
+      "story"
     ]
   },
   "tables": {
@@ -305,10 +323,14 @@
       ],
       "optional": [
         "hypothesis_label",
-        "notes"
+        "notes",
+        "claim_class",
+        "premise_claim_ids",
+        "corpus_stat"
       ],
       "enum_fields": {
-        "claim_type": "claim_type"
+        "claim_type": "claim_type",
+        "claim_class": "claim_class"
       }
     },
     "hypotheses": {
@@ -352,11 +374,14 @@
       ],
       "optional": [
         "notes",
-        "hypothesis_check"
+        "hypothesis_check",
+        "uncovered_premises",
+        "link_check"
       ],
       "enum_fields": {
         "verdict": "audit_verdict",
-        "hypothesis_check": "hypothesis_check"
+        "hypothesis_check": "hypothesis_check",
+        "link_check": "link_check"
       },
       "evidence_check_fields": [
         "evidence_id",
@@ -438,7 +463,7 @@
       "note": "A label never bypasses the audit: an auditor must confirm the text is forward-looking and does not assert unobserved facts (existing results, video content, audience size or share, current trends)."
     }
   },
-  "final_status_rule": "APPROVED = SCHEMA_VALID + STRUCTURAL_GATE + EVIDENCE_AUDITED (latest audit SUPPORTS, every cited span found verbatim in stored source text) + no open contradiction. HYPOTHESIS and SITUATION_REACH reach at most HYPOTHESIS_UNTESTED, and only with an audit whose hypothesis_check is FORWARD_LOOKING_OK; ASSERTS_UNOBSERVED_FACT or DOES_NOT_SUPPORT without that check gives BLOCKED. Otherwise NEEDS_REVIEW with reasons. The model never writes a status; validate.py computes it.",
+  "final_status_rule": "FACT_APPROVED = schema valid + evidence sufficiency for the claim type + independent audit SUPPORTS with verbatim spans + no scope issue or open contradiction. HYPOTHESIS_UNTESTED / RESEARCH_QUESTION per class_rules.premise_rule. BLOCKED = contradicted, asserts an unobserved fact, or unsupported type. Otherwise NEEDS_REVIEW. ACH is VALID only if its pattern claim is FACT_APPROVED, otherwise PRELIMINARY. The model never writes a status; validate.py computes it.",
   "saturation": {
     "novelty_window": 20,
     "branch_closed_requires_polarity": [
@@ -457,6 +482,29 @@
       "version": "0.3",
       "date": "2026-10-17",
       "change": "Hypothesis label no longer bypasses substantive audit (found by ChatGPT blind benchmark v02: G14, G20, G22). Status HYPOTHESIS_LABELED renamed HYPOTHESIS_UNTESTED."
+    },
+    {
+      "version": "0.4",
+      "date": "2026-10-17",
+      "change": "Premise audit for hypotheses (holdout H18), RESEARCH_QUESTION status, claim classes, computed CORPUS_STATISTIC, ACH validity, derived-statement and consistency checks for briefs. APPROVED renamed FACT_APPROVED; CONTRADICTED folded into BLOCKED."
     }
-  ]
+  ],
+  "class_rules": {
+    "legacy_class_by_type": {
+      "PERSONAL_EXPERIENCE": "SOURCE_REPORT",
+      "PATTERN": "SOURCE_REPORT",
+      "PURCHASE_DRIVER": "SOURCE_REPORT",
+      "PRODUCT_FACT": "OBSERVED_STATE",
+      "PRODUCT_PERFORMANCE": "WORLD_CLAIM",
+      "SITUATION_REACH": "FUTURE_HYPOTHESIS",
+      "CREATIVE_PERFORMANCE": "WORLD_CLAIM",
+      "HYPOTHESIS": "FUTURE_HYPOTHESIS"
+    },
+    "hypothesis_classes": [
+      "CAUSAL_HYPOTHESIS",
+      "FUTURE_HYPOTHESIS"
+    ],
+    "premise_rule": "A hypothesis passes as HYPOTHESIS_UNTESTED only if (1) the audit says FORWARD_LOOKING_OK, (2) every premise_claim_id is FACT_APPROVED, (3) the auditor lists no uncovered factual premise, (4) link_check is PLAUSIBLE_UNTESTED. A hypothesis status never raises the evidence level of its premises. Failing (2)-(4) gives RESEARCH_QUESTION: kept as a question to investigate, never used as a finding.",
+    "corpus_statistic_rule": "CORPUS_STATISTIC is recomputed from the ledger: unit, numerator evidence ids, denominator query ids. Numbers in the text must equal the recomputed ones, the text must name the corpus, and a corpus built mostly from PROBLEM queries needs a bias_note. It never measures a population."
+  }
 }

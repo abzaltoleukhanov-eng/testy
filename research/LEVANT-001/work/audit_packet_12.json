@@ -1,0 +1,101 @@
+[
+ {
+  "claim_id": "C-0053",
+  "claim": "A tote with a listed empty weight of 1 kg might be worth testing with laptop carriers who say heavy totes hurt, as an alternative to switching to a backpack; whether it is more comfortable when loaded has not been tested.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "FUTURE_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0020",
+    "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0024",
+    "text": "Some shoppers check how heavy a bag is when empty, and several reject or regret bags that are heavy before anything is put in them, including leather and structured bags.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0051",
+    "text": "On the product page screen that names the Siena Lévant Tote Bag, the listed weight is 1 kg (2.2 lb) and the listed volume is 15 L.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "Replaces C-0016 under contract 0.4. Listed weight, not measured; comfort with a laptop untested.",
+  "supporting": [],
+  "contradicting": []
+ },
+ {
+  "claim_id": "C-0054",
+  "claim": "Days with a lighter load, when some people already switch to a smaller bag, might be a better first use case to test for the Lévant than heavy daily carry; this is untested.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "FUTURE_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0023",
+    "text": "Some people split their carry instead of using one bag: a backpack on heavy days and a small bag on light days, or two bags carried together, for load, access or convenience.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0020",
+    "text": "In several independent discussions, people say that a work tote or shoulder bag loaded with a laptop becomes too heavy, and several describe shoulder or back pain from it.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "Replaces C-0017 under contract 0.4; the commute-mode part is dropped because its premise is not approved.",
+  "supporting": [],
+  "contradicting": []
+ },
+ {
+  "claim_id": "C-0055",
+  "claim": "Negative Reddit discussion of Nordace might cost conversions from cold traffic, because some would-be buyers say they held off after reading it; tote-specific proof such as warranty terms and owner reports over time might reduce that risk. Neither effect has been measured.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "CAUSAL_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0038",
+    "text": "After reading negative Nordace reviews or the brand's public replies on Reddit, several would-be buyers said or implied they would not buy or would hold off (one reported about a partner); these are intentions, not verified non-purchases, and the reply-driven ones cluster in two threads.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0012",
+    "text": "One shopper who planned to buy the Nordace tote decided against it because the brand's reviews were not great.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0015",
+    "text": "Warranty and after-sales support are used as a yardstick of whether a bag brand can be trusted and whether its price is justified.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0046",
+    "text": "The user states that there are no reviews and that the product is new.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "Replaces C-0047 and the brief's former statement that Reddit is the main commercial risk.",
+  "supporting": [],
+  "contradicting": []
+ },
+ {
+  "claim_id": "C-0056",
+  "claim": "Showing owner reports of microfiber vegan-leather bags that lasted years might weaken the peeling worry for a tote whose body is listed as micro-fiber vegan leather; this is untested.",
+  "claim_type": "HYPOTHESIS",
+  "claim_class": "FUTURE_HYPOTHESIS",
+  "premises": [
+   {
+    "claim_id": "C-0035",
+    "text": "Several commenters expect PU or vegan leather to peel or wear out with use, while a few owners report vegan bags that held up, one for about four and a half years without cracking or peeling.",
+    "claim_class": null
+   },
+   {
+    "claim_id": "C-0050",
+    "text": "The product page lists the body material as micro-fiber vegan leather, with water-resistant fabric and metal protective bottom studs.",
+    "claim_class": null
+   }
+  ],
+  "scope_limits": "Replaces C-0044 under contract 0.4; the owner reports are about another brand's bags.",
+  "supporting": [],
+  "contradicting": []
+ }
+]

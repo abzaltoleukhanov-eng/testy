@@ -1,0 +1,54 @@
+[
+ {
+  "pattern_claim_id": "C-0038",
+  "question": "Why do would-be buyers turn away from Nordace after reading Reddit?",
+  "hypotheses": [
+   {
+    "h_id": "H1",
+    "statement": "Owner reports of product failures (zippers, straps) are what turns them away.",
+    "supporting_ids": [
+     "E-0071",
+     "E-0094",
+     "E-0096",
+     "E-0041"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "HIGH",
+    "missing_evidence": "Rejections in threads where no brand reply appears, citing a specific failure."
+   },
+   {
+    "h_id": "H2",
+    "statement": "The brand's public reply tone, not the failures, is what turns them away.",
+    "supporting_ids": [
+     "E-0019",
+     "E-0020",
+     "E-0026",
+     "E-0060",
+     "E-0062"
+    ],
+    "refuting_ids": [
+     "E-0071",
+     "E-0094"
+    ],
+    "diagnosticity": "MEDIUM",
+    "missing_evidence": "Reply-driven rejections outside the two threads where the reply was posted."
+   },
+   {
+    "h_id": "H3",
+    "statement": "General suspicion of ad-driven DTC brands (retargeting, resetting timers) turns them away before any product evidence.",
+    "supporting_ids": [
+     "E-0040",
+     "E-0050",
+     "E-0002"
+    ],
+    "refuting_ids": [],
+    "diagnosticity": "LOW",
+    "missing_evidence": "Rejections that cite only the ad pattern and no reviews."
+   }
+  ],
+  "preferred_h_id": "H1",
+  "preference_reason": "Failure reports drive rejections in threads without the brand reply (1nsv54d tote shopper, 1lfsxia, a bqe83z reader), so H1 does not depend on one event. H2 is real but concentrated in the two threads where the reply was posted, which makes it one incident amplified by a pile-on. H3 shows up as a reason to go looking, not as the reason to decide; it explains why people check Reddit, after which H1 decides.",
+  "causal_status": "NOT_ESTABLISHED",
+  "notes": "Same analysis as ACH-0002, re-linked to C-0038, the approved revision of C-0011."
+ }
+]

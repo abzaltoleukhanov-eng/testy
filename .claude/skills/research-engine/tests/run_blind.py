@@ -10,7 +10,8 @@ Pipeline per case, same as a real project:
      plus the evidence labels an author would normally write (product match, action, evidence kind, situation).
   3. Python gate (validate.gate_check, unchanged) on usable, anchored, auditor-confirmed evidence.
   4. Engine status -> benchmark verdict, mapping fixed before scoring:
-       APPROVED -> APPROVE_SCOPED; HYPOTHESIS_UNTESTED -> APPROVE_HYPOTHESIS_UNTESTED (contract 0.3)
+       FACT_APPROVED -> APPROVE_SCOPED; HYPOTHESIS_UNTESTED -> APPROVE_HYPOTHESIS_UNTESTED;
+       RESEARCH_QUESTION -> RESEARCH_QUESTION (contract 0.4)
        literal mismatch, CONTRADICTED, BLOCKED type, auditor DOES_NOT_SUPPORT -> BLOCK
        anything else (NEEDS_REVIEW) -> NEEDS_REVIEW
 Adapter weakness, stated openly: there is no separate author here, so the auditor's labels stand in for the
@@ -153,8 +154,10 @@ def cmd_finalize(args):
             hc = a.get("hypothesis_check")
             if a.get("verdict") == "CONTRADICTS" or hc == "ASSERTS_UNOBSERVED_FACT":
                 substantive = "FAIL"
-            elif hc == "FORWARD_LOOKING_OK":
+            elif hc == "FORWARD_LOOKING_OK" and not a.get("uncovered_premises") and a.get("link_check") != "UNSUPPORTED_LEAP":
                 substantive = "PASS"
+            elif hc == "FORWARD_LOOKING_OK":
+                substantive = "REVIEW"
             else:
                 substantive = "FAIL" if a.get("verdict") == "DOES_NOT_SUPPORT" else "REVIEW"
             if substantive != "PASS":
@@ -199,17 +202,19 @@ def cmd_finalize(args):
                                                 or a.get("verdict") == "DOES_NOT_SUPPORT"):
                 engine_status = "BLOCKED"
         elif a and a.get("verdict") == "CONTRADICTS":
-            engine_status = "CONTRADICTED"
+            engine_status = "BLOCKED"
         elif structural == "PASS" and sufficiency == "PASS" and substantive == "PASS" and audited_gate_ok:
-            engine_status = "APPROVED"
+            engine_status = "FACT_APPROVED"
         else:
             engine_status = "NEEDS_REVIEW"
 
-        if engine_status == "APPROVED":
+        if engine_status == "FACT_APPROVED":
             final = "APPROVE_SCOPED"
+        elif engine_status == "RESEARCH_QUESTION":
+            final = "RESEARCH_QUESTION"
         elif engine_status == "HYPOTHESIS_UNTESTED":
             final = "APPROVE_HYPOTHESIS_UNTESTED"
-        elif (not literal_ok or engine_status in ("CONTRADICTED", "BLOCKED")
+        elif (not literal_ok or engine_status == "BLOCKED"
               or (a and a.get("verdict") == "DOES_NOT_SUPPORT")):
             final = "BLOCK"
         else:
@@ -218,6 +223,7 @@ def cmd_finalize(args):
         preds[tid] = {
             "literal_anchor": L["literal_anchor"], "structural": structural, "evidence_sufficiency": sufficiency,
             "substantive": substantive, "final": final, "hypothesis_check": (a or {}).get("hypothesis_check", ""),
+            "uncovered_premises": (a or {}).get("uncovered_premises", []), "link_check": (a or {}).get("link_check", ""),
             "engine_status": engine_status,
             "grounded_span": next((ch.get("located_span") for ch in checks.values() if ch.get("supports")), ""),
             "speaker_attribution": (a or {}).get("speaker_attribution", ""),
