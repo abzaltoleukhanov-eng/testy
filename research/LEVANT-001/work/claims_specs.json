@@ -1,0 +1,39 @@
+[
+ {
+  "text": "The product page lists the Siena Lévant Tote Bag with a volume of 15 L, a weight of 1 kg (2.2 lb), exterior dimensions of 42 x 13.5 x 27.5 cm, and airline compatibility described as 'Overhead bin & Underseat'.",
+  "claim_type": "PRODUCT_FACT",
+  "critical": true,
+  "scope_limits": "Manufacturer's listed specs from user screenshots on 2026-10-17; not measured; airline fit is the brand's claim.",
+  "supporting_evidence_ids": [
+   "E-0435",
+   "E-0436",
+   "E-0437"
+  ],
+  "contradicting_evidence_ids": [],
+  "counter_search_query_ids": []
+ },
+ {
+  "text": "The product page lists a 14-inch EVA laptop sleeve, a detachable hand-washable lining, an anti-theft pocket on the back panel, a quick-access fleece magnetic pocket, an adjustable detachable strap of 83–104 cm and a luggage strap.",
+  "claim_type": "PRODUCT_FACT",
+  "critical": true,
+  "scope_limits": "Listed features from user screenshots; not tested.",
+  "supporting_evidence_ids": [
+   "E-0438",
+   "E-0439"
+  ],
+  "contradicting_evidence_ids": [],
+  "counter_search_query_ids": []
+ },
+ {
+  "text": "The product page lists the body material as micro-fiber vegan leather, with water-resistant fabric and metal protective bottom studs.",
+  "claim_type": "PRODUCT_FACT",
+  "critical": true,
+  "scope_limits": "Listed materials from a user screenshot; durability not established.",
+  "supporting_evidence_ids": [
+   "E-0440",
+   "E-0441"
+  ],
+  "contradicting_evidence_ids": [],
+  "counter_search_query_ids": []
+ }
+]

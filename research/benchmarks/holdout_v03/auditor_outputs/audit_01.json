@@ -1,0 +1,135 @@
+[
+  {
+    "case_id": "H01",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "H01:H01-A:0",
+        "located_span": "I checked the Aster Lévant Tote product page today and did not see any customer reviews.",
+        "supports": false,
+        "note": "One user's check of one product page on one day; says nothing about reviews elsewhere online.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "checking product page"
+      }
+    ],
+    "scope_issue": "Claim generalises from a single product page check by one user to 'no reviews anywhere online'; the source covers only the product page, on one date.",
+    "open_contradiction": false,
+    "speaker_attribution": "Anonymous forum user (author-H01)",
+    "context_used": "COMMENT_ONLY; full comment read; source_date 2026-10-16",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The source reports a single observation that no customer reviews appeared on the product page. It does not cover other retailers, forums or review sites, so the universal claim 'anywhere online' is not supported. The source also does not contradict it, it just does not reach that far."
+  },
+  {
+    "case_id": "H02",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H02:H02-A:0",
+        "located_span": "I checked the Aster Lévant Tote product page today and did not see any customer reviews.",
+        "supports": true,
+        "note": "First-person report of seeing no customer reviews on the product page. 'Today' resolves to 2026-10-17 only through the source_date metadata, not the text itself.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "checking product page"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "Anonymous forum user (author-H02)",
+    "context_used": "COMMENT_ONLY; full comment read; date taken from source_date 2026-10-17",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The claim is framed as a user's report, which matches the first-person text. The date 17 October 2026 comes from the source_date metadata combined with 'today'. It is consistent but not stated in the raw text. The claim makes no assertion about whether reviews actually exist."
+  },
+  {
+    "case_id": "H03",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H03:H03-A:0",
+        "located_span": "Product listing capture: £159.00. Badge: NEW.",
+        "supports": true,
+        "note": "Screenshot capture shows the price £159.00 and the NEW badge. The product identity rests on the source's product_model metadata.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "product listing screenshot"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "User-provided screenshot (author-H03)",
+    "context_used": "EXCERPT_ONLY; READ_PARTIAL screenshot capture",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The claim is limited to what the screenshot shows, and the capture text lists both the £159.00 price and the NEW badge. It does not claim anything beyond the screenshot, such as availability or market."
+  },
+  {
+    "case_id": "H04",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "H04:H04-A:0",
+        "located_span": "Badge: NEW.",
+        "supports": false,
+        "note": "A NEW badge says nothing about stock or delivery. The source states: 'The availability / Add to cart area is outside this screenshot.'",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "product listing screenshot"
+      }
+    ],
+    "scope_issue": "Stock status, next-day delivery and UK availability are all absent. The source explicitly says the availability area was not captured, and market_grounding is UNKNOWN.",
+    "open_contradiction": false,
+    "speaker_attribution": "User-provided screenshot (author-H04)",
+    "context_used": "EXCERPT_ONLY; READ_PARTIAL screenshot capture",
+    "original_or_translation": "ORIGINAL",
+    "reasoning": "The cited span shows only a NEW badge, which does not show stock or delivery terms. The source explicitly notes that the availability and Add to cart area is outside the screenshot, so the claim cannot be verified. Nothing contradicts it either."
+  },
+  {
+    "case_id": "H05",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "H05:H05-A:0",
+        "located_span": "Search result snippet: Aster Lévant Tote, 1 kg weight, 15 litres. Original manufacturer page was not opened.",
+        "supports": false,
+        "note": "The 1 kg figure appears only in an indexed search snippet, and the source states the original page was not opened. That is not verification, and the snippet does not say 'exactly', 'empty' or 'current'.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "search result snippet"
+      }
+    ],
+    "scope_issue": "'Verified', 'exactly', 'empty weight' and 'current' version all go beyond an unopened search snippet (INDEXED_ONLY).",
+    "open_contradiction": false,
+    "speaker_attribution": "Search engine snippet (author-H05); origin page not opened",
+    "context_used": "EXCERPT_ONLY; INDEXED_ONLY search snippet",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The only evidence is a search snippet that mentions '1 kg weight', and the source itself says the manufacturer page was not opened. The claim's main assertion, a verified exact empty weight for the current product, is therefore unsupported. At most a reported, unverified 1 kg figure exists."
+  },
+  {
+    "case_id": "H06",
+    "verdict": "SUPPORTS",
+    "hypothesis_check": "FORWARD_LOOKING_OK",
+    "evidence_checks": [
+      {
+        "evidence_id": "H06:H06-A:0",
+        "located_span": "Search result snippet: Aster Lévant Tote, 1 kg weight, 15 litres. Original manufacturer page was not opened.",
+        "supports": true,
+        "note": "The snippet supports that a 1 kg specification has been reported. The hypothesis correctly makes the angle depend on verifying it.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "search result snippet"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "Search engine snippet (author-H06); origin page not opened",
+    "context_used": "EXCERPT_ONLY; INDEXED_ONLY search snippet",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The claim is a conditional, untested creative idea. It calls the 1 kg figure 'reported' and makes the test depend on verification under comparable conditions. It does not state any weight as fact, any customer interest or any ad result, and the source does not contradict it."
+  }
+]

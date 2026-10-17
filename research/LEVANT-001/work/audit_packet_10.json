@@ -1,0 +1,85 @@
+[
+ {
+  "claim_id": "C-0048",
+  "claim": "The product page lists the Siena Lévant Tote Bag with a volume of 15 L, a weight of 1 kg (2.2 lb), exterior dimensions of 42 x 13.5 x 27.5 cm, and airline compatibility described as 'Overhead bin & Underseat'.",
+  "claim_type": "PRODUCT_FACT",
+  "scope_limits": "Manufacturer's listed specs from user screenshots on 2026-10-17; not measured; airline fit is the brand's claim.",
+  "supporting": [
+   {
+    "evidence_id": "E-0435",
+    "source_id": "USR-pdp-specs-dims",
+    "url": "https://nordace.com/en/product/siena-levant-tote-bag/",
+    "platform": "official",
+    "thread_title": null,
+    "source_text": "Dimensions & Weight | Volume | 15 L | Weight | 1 kg (2.2 lb) | Exterior dimensions | 42 x 13.5 x 27.5 cm (16.5 x 5.3 x 10.8”) | Main compartment dimensions | 41.5 x 13 x 26.5 cm (16.3 x 5.1 x 10.4”) | Airline compatibility | Overhead bin & Underseat"
+   },
+   {
+    "evidence_id": "E-0436",
+    "source_id": "USR-pdp-specs-dims",
+    "url": "https://nordace.com/en/product/siena-levant-tote-bag/",
+    "platform": "official",
+    "thread_title": null,
+    "source_text": "Dimensions & Weight | Volume | 15 L | Weight | 1 kg (2.2 lb) | Exterior dimensions | 42 x 13.5 x 27.5 cm (16.5 x 5.3 x 10.8”) | Main compartment dimensions | 41.5 x 13 x 26.5 cm (16.3 x 5.1 x 10.4”) | Airline compatibility | Overhead bin & Underseat"
+   },
+   {
+    "evidence_id": "E-0437",
+    "source_id": "USR-pdp-specs-dims",
+    "url": "https://nordace.com/en/product/siena-levant-tote-bag/",
+    "platform": "official",
+    "thread_title": null,
+    "source_text": "Dimensions & Weight | Volume | 15 L | Weight | 1 kg (2.2 lb) | Exterior dimensions | 42 x 13.5 x 27.5 cm (16.5 x 5.3 x 10.8”) | Main compartment dimensions | 41.5 x 13 x 26.5 cm (16.3 x 5.1 x 10.4”) | Airline compatibility | Overhead bin & Underseat"
+   }
+  ],
+  "contradicting": []
+ },
+ {
+  "claim_id": "C-0049",
+  "claim": "The product page lists a 14-inch EVA laptop sleeve, a detachable hand-washable lining, an anti-theft pocket on the back panel, a quick-access fleece magnetic pocket, an adjustable detachable strap of 83–104 cm and a luggage strap.",
+  "claim_type": "PRODUCT_FACT",
+  "scope_limits": "Listed features from user screenshots; not tested.",
+  "supporting": [
+   {
+    "evidence_id": "E-0438",
+    "source_id": "USR-pdp-specs-features",
+    "url": "https://nordace.com/en/product/siena-levant-tote-bag/",
+    "platform": "official",
+    "thread_title": null,
+    "source_text": "Nordace Siena Riviera Cosmetic Bag | £54.00 £44.99 -17% | ADD TO CART | BUY NOW | Main features | Detachable hand-washable lining | Anti-theft pocket on the back panel | Quick-access fleece magnetic pocket | 14” EVA laptop sleeve | Adjustable detachable strap | Luggage strap"
+   },
+   {
+    "evidence_id": "E-0439",
+    "source_id": "USR-pdp-specs-carry",
+    "url": "https://nordace.com/en/product/siena-levant-tote-bag/",
+    "platform": "official",
+    "thread_title": null,
+    "source_text": "Carrying options | Top handles | Drop length 27 cm (10.6”) | Adjustable detachable strap | 83–104 cm (32.7–40.9”) | Luggage strap | ✓"
+   }
+  ],
+  "contradicting": []
+ },
+ {
+  "claim_id": "C-0050",
+  "claim": "The product page lists the body material as micro-fiber vegan leather, with water-resistant fabric and metal protective bottom studs.",
+  "claim_type": "PRODUCT_FACT",
+  "scope_limits": "Listed materials from a user screenshot; durability not established.",
+  "supporting": [
+   {
+    "evidence_id": "E-0440",
+    "source_id": "USR-pdp-specs-materials",
+    "url": "https://nordace.com/en/product/siena-levant-tote-bag/",
+    "platform": "official",
+    "thread_title": null,
+    "source_text": "Materials | Body material | Micro-fiber vegan leather | Lining | 230D double-sided oblique | Water-resistant fabric | ✓ | Protective bottom studs | Metal | Get closer. | Refined. Ready. Remarkably you. | The Siena Lévant Tote Bag elevates your daily routine with a protective 14” EVA laptop sleeve and a detachable lining that keeps it like new. | A thoughtful storage system—featuring a magnetic fleece pocket and hidden anti-theft pocket—offers quick access and peace of mind, while you seamlessly transition from flights to meetings with a sleek luggage strap and adjustable strap."
+   },
+   {
+    "evidence_id": "E-0441",
+    "source_id": "USR-pdp-specs-materials",
+    "url": "https://nordace.com/en/product/siena-levant-tote-bag/",
+    "platform": "official",
+    "thread_title": null,
+    "source_text": "Materials | Body material | Micro-fiber vegan leather | Lining | 230D double-sided oblique | Water-resistant fabric | ✓ | Protective bottom studs | Metal | Get closer. | Refined. Ready. Remarkably you. | The Siena Lévant Tote Bag elevates your daily routine with a protective 14” EVA laptop sleeve and a detachable lining that keeps it like new. | A thoughtful storage system—featuring a magnetic fleece pocket and hidden anti-theft pocket—offers quick access and peace of mind, while you seamlessly transition from flights to meetings with a sleek luggage strap and adjustable strap."
+   }
+  ],
+  "contradicting": []
+ }
+]

@@ -1,0 +1,135 @@
+[
+  {
+    "case_id": "H13",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H13:H13-A:0",
+        "located_span": "I switched from a structured work tote to a backpack after carrying my laptop all day left my shoulder sore.",
+        "supports": true,
+        "note": "First-person account of switching from a structured work tote to a backpack, with shoulder soreness from carrying a laptop all day given as the reason. The cited span covers only the switch; the reason comes from the rest of the same sentence.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "SWITCHED",
+        "evidence_kind": "DECISION",
+        "usage_situation": "work commute carrying laptop all day"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "Commenter speaking about themself (first person)",
+    "context_used": "COMMENT_ONLY; single forum comment",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The comment says in the first person that the author switched from a structured work tote to a backpack after carrying a laptop all day left their shoulder sore. The claim keeps it to one commenter, names no specific product and states the causal link the author gives. It matches the source."
+  },
+  {
+    "case_id": "H14",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H14:H14-A:0",
+        "located_span": "My sister bought the Aster Tote because she liked the handles. I chose an old backpack because I wanted to spend less.",
+        "supports": false,
+        "note": "The buyer was the commenter's sister, not the commenter. The commenter chose an old backpack to spend less. The handles reason belongs to the sister and is reported second-hand.",
+        "product_match": "EXACT_SKU",
+        "person_action": "REJECTED",
+        "evidence_kind": "DECISION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Gives the purchase to the commenter, but the source says the sister bought the Aster Tote and the commenter chose an old backpack instead.",
+    "open_contradiction": false,
+    "speaker_attribution": "Commenter reporting their sister's purchase and motive (third party, second-hand) and their own choice of a backpack",
+    "context_used": "COMMENT_ONLY; single forum comment",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The source says the commenter's sister bought the Aster Tote because she liked the handles, and that the commenter chose an old backpack to spend less. The claim credits the purchase and the handles motive to the commenter, and the source directly contradicts that. The sister's motive is also only reported second-hand."
+  },
+  {
+    "case_id": "H15",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H15:H15-A:0",
+        "located_span": "My sister bought the Aster Tote because she liked the handles. I chose an old backpack because I wanted to spend less.",
+        "supports": true,
+        "note": "Both halves of the claim are stated: the sister bought the Aster Tote because she liked the handles, and the author chose an old backpack to spend less. The cited span covers only the first sentence. 'Kept a backpack' is a fair paraphrase of 'chose an old backpack'.",
+        "product_match": "EXACT_SKU",
+        "person_action": "BOUGHT",
+        "evidence_kind": "DECISION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "Author reporting the sister's purchase and motive (second-hand) and the author's own backpack choice (first-hand)",
+    "context_used": "COMMENT_ONLY; single forum comment",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The claim gets the speakers right: the sister bought the tote for its handles and the author chose a backpack to spend less. It is framed as what the author reports, which suits the fact that the sister's motive is second-hand. 'Kept' is a small paraphrase of 'chose an old backpack' and does not change the meaning."
+  },
+  {
+    "case_id": "H16",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H16:H16-A:0",
+        "located_span": "The handles tore. EDIT 12 October: I confused it with another bag, handles on Aster are fine.",
+        "supports": false,
+        "note": "The 1 October statement that the handles tore was withdrawn by the same author on 12 October, who said they had confused it with another bag and that the handles on the Aster are fine.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "UNKNOWN"
+      }
+    ],
+    "scope_issue": "Presents a retracted statement as confirmed. The source also does not say the bag is the 'current' version or that the author owns it.",
+    "open_contradiction": false,
+    "speaker_attribution": "Single forum author who later retracted their own statement",
+    "context_used": "COMMENT_ONLY; original post plus the author's own later edit",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The cited span 'The handles tore.' was later corrected by the same author, who says they confused it with another bag and that the Aster's handles are fine. The claim that an owner 'confirmed' the handles tore is the opposite of the author's final position. The retraction settles it, so no contradiction is left open, and the claim stands contradicted."
+  },
+  {
+    "case_id": "H17",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H17:H17-A:0",
+        "located_span": "We have not published any reviews on this page yet. The message is dated 15 October.",
+        "supports": true,
+        "note": "The brand's customer support email, dated 15 October, says no reviews have been published on 'this page' yet. The source calls it only 'this page'. Reading it as a product page is reasonable but not stated word for word.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "customer support email about reviews"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "speaker_attribution": "Brand customer support (email quoted in a user-provided upload)",
+    "context_used": "COMMENT_ONLY; user-uploaded email excerpt",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The source quotes a customer support email dated 15 October saying no reviews have been published on this page yet. The claim restates the date, the speaker and the content accurately, and it is limited to that one page. The only gap is that 'product page' is inferred from 'this page'."
+  },
+  {
+    "case_id": "H18",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "H18:H18-A:0",
+        "located_span": "We have not published any reviews on this page yet. The message is dated 15 October. No evidence of reviews elsewhere.",
+        "supports": false,
+        "note": "The source shows only that reviews were not yet published on one page and that no reviews were found elsewhere. It says nothing about product quality. 'Yet' points to a publishing or timing delay rather than a quality signal.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "customer support email about reviews"
+      }
+    ],
+    "scope_issue": "The jump from 'no reviews published on this page yet' to 'poor-quality product' is not backed by any source. Calling it an 'absence of online reviews' also stretches 'not published on this page yet' plus 'no evidence of reviews elsewhere' (absence of evidence) into a definite absence.",
+    "open_contradiction": false,
+    "hypothesis_check": "FORWARD_LOOKING_OK",
+    "speaker_attribution": "Claim author's own hypothesis, resting on a brand customer support email",
+    "context_used": "COMMENT_ONLY; user-uploaded email excerpt",
+    "original_or_translation": "UNKNOWN",
+    "reasoning": "The claim is worded as a hypothesis ('We hypothesize') and does not report any quality result as observed, so the framing is acceptable. The sources give no support for linking the missing reviews to poor quality. The word 'yet' suggests reviews are pending rather than missing for quality reasons, but the sources do not directly contradict the idea."
+  }
+]

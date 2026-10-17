@@ -1,0 +1,137 @@
+[
+  {
+    "case_id": "H07",
+    "verdict": "DOES_NOT_SUPPORT",
+    "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+    "evidence_checks": [
+      {
+        "evidence_id": "H07:H07-A:0",
+        "located_span": "This is a still image; audio and moving footage were not provided.",
+        "supports": false,
+        "note": "The source is a still screen capture with no audio, so soundtrack and speech rate cannot be observed.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "creator promo screenshot"
+      }
+    ],
+    "scope_issue": "States as fact that the video has a suspenseful soundtrack and 140 words-per-minute dialogue; the source is a still image with no audio or footage.",
+    "open_contradiction": false,
+    "reasoning": "The claim describes video content (music and speech pacing) as already present. The only source is a still image, and it explicitly says audio and moving footage were not provided. Nothing supports the assertion, and it is not worded as an untested idea.",
+    "speaker_attribution": "Researcher description of a creator screen capture (author-H07); presenter not identified",
+    "context_used": "EXCERPT_ONLY screenshot description from Forum source H07-A",
+    "original_or_translation": "UNKNOWN"
+  },
+  {
+    "case_id": "H08",
+    "verdict": "DOES_NOT_SUPPORT",
+    "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+    "evidence_checks": [
+      {
+        "evidence_id": "H08:H08-A:0",
+        "located_span": "Screenshot of a 2022 agency blog lists a ranking-style video example. No publication dates for recent rankings are supplied.",
+        "supports": false,
+        "note": "A 2022 blog example says nothing about a trend in the current week of October 2026, and no recent dated examples are supplied.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "ad format reference"
+      }
+    ],
+    "scope_issue": "States a current trend ('trending this week in October 2026'); the only evidence is one 2022 blog example with no recent dates.",
+    "open_contradiction": false,
+    "reasoning": "The claim states as fact that a format is trending right now. The source is a single 2022 agency blog screenshot and explicitly lacks recent publication dates. This is outdated, single-example category evidence and cannot show a current weekly trend.",
+    "speaker_attribution": "Agency blog (2022), as described in a screenshot by author-H08",
+    "context_used": "EXCERPT_ONLY screenshot description from source H08-A",
+    "original_or_translation": "UNKNOWN"
+  },
+  {
+    "case_id": "H09",
+    "verdict": "DOES_NOT_SUPPORT",
+    "hypothesis_check": "ASSERTS_UNOBSERVED_FACT",
+    "evidence_checks": [
+      {
+        "evidence_id": "H09:H09-A:0",
+        "located_span": "We collected 80 comments after searching for complaints about heavy totes; 24 mentioned shoulder pain. No probability sampling was used.",
+        "supports": false,
+        "note": "24/80 is 30% of a complaint-filtered convenience sample, not of a population. No country or gender is stated.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "carrying heavy tote"
+      }
+    ],
+    "scope_issue": "Asserts a population share (30% of UK women); the source is a non-probability, complaint-searched corpus of 80 comments, with no country or gender stated.",
+    "open_contradiction": false,
+    "reasoning": "The claim turns a sample ratio into a population prevalence figure for a specific country and gender. The source explicitly says no probability sampling was used and that comments were selected by searching for complaints, which inflates the rate. UK and women appear nowhere in the source.",
+    "speaker_attribution": "Internal research note (author-H09)",
+    "context_used": "COMMENT_ONLY internal note H09-A",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "H10",
+    "verdict": "SUPPORTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H10:H10-A:0",
+        "located_span": "We collected 80 comments after searching for complaints about heavy totes; 24 mentioned shoulder pain. No probability sampling was used.",
+        "supports": true,
+        "note": "Matches the count, the complaint-oriented selection and the no-population-estimate caveat exactly.",
+        "product_match": "CATEGORY_GENERAL",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "carrying heavy tote"
+      }
+    ],
+    "scope_issue": "",
+    "open_contradiction": false,
+    "reasoning": "The claim restates the 24 of 80 count, describes the corpus as complaint-oriented and explicitly disclaims a population estimate. All of this matches the source, which says comments were collected by searching for complaints and that no probability sampling was used. The claim stays within its stated scope.",
+    "speaker_attribution": "Internal research note (author-H10)",
+    "context_used": "COMMENT_ONLY internal note H10-A",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "H11",
+    "verdict": "DOES_NOT_SUPPORT",
+    "evidence_checks": [
+      {
+        "evidence_id": "H11:H11-A:0",
+        "located_span": "water-resistant exterior material",
+        "supports": false,
+        "note": "Water-resistant exterior is a weaker property than fully waterproof, and no immersion or rain test is reported.",
+        "product_match": "EXACT_SKU",
+        "person_action": "NONE",
+        "evidence_kind": "OBSERVATION",
+        "usage_situation": "product specification"
+      }
+    ],
+    "scope_issue": "Upgrades 'water-resistant exterior material' to 'fully waterproof'; no test is reported and only the exterior material is mentioned.",
+    "open_contradiction": false,
+    "reasoning": "The brand panel claims only water resistance for the exterior material. 'Fully waterproof' implies the whole bag keeps water out, including under immersion, which is a stronger claim. The source also says no immersion or rain test is reported.",
+    "speaker_attribution": "Brand product information panel (BrandPDP, author-H11)",
+    "context_used": "COMMENT_ONLY excerpt of product information panel H11-A",
+    "original_or_translation": "ORIGINAL"
+  },
+  {
+    "case_id": "H12",
+    "verdict": "CONTRADICTS",
+    "evidence_checks": [
+      {
+        "evidence_id": "H12:H12-A:0",
+        "located_span": "I have not tried the regular Tote.",
+        "supports": false,
+        "note": "The owner bought and praises the Belted model's padded strap and explicitly says they have not tried the regular Tote.",
+        "product_match": "SAME_PRODUCT_FAMILY",
+        "person_action": "BOUGHT",
+        "evidence_kind": "DECISION",
+        "usage_situation": "wearing Belted model strap"
+      }
+    ],
+    "scope_issue": "Attributes a Belted-model strap comfort report to the standard Lévant Tote, and calls the owner's view a 'test'.",
+    "open_contradiction": true,
+    "reasoning": "The only owner in the source tried the Belted model and states plainly that they have not tried the regular Tote. The claim that an owner tested the standard model and confirmed its strap is comfortable is directly contradicted. The comfort statement is evidence about a sibling model in the same family, not about the named product.",
+    "speaker_attribution": "Forum owner of the Belted model (author-H12)",
+    "context_used": "COMMENT_ONLY forum comment H12-A",
+    "original_or_translation": "ORIGINAL"
+  }
+]

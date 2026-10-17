@@ -1,0 +1,39 @@
+[
+ {
+  "claim_id": "C-0048",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0435", "located_span": "Volume | 15 L | Weight | 1 kg (2.2 lb) | Exterior dimensions | 42 x 13.5 x 27.5 cm (16.5 x 5.3 x 10.8”)", "supports": true, "note": "Volume, weight and exterior dimensions match the claim exactly."},
+   {"evidence_id": "E-0436", "located_span": "Airline compatibility | Overhead bin & Underseat", "supports": true, "note": "Airline compatibility wording matches the claim exactly. Same source text as E-0435."},
+   {"evidence_id": "E-0437", "located_span": "Dimensions & Weight | Volume | 15 L | Weight | 1 kg (2.2 lb)", "supports": true, "note": "Duplicate of E-0435/E-0436 from the same screenshot (USR-pdp-specs-dims); it adds no independent support."}
+  ],
+  "scope_issue": "The spec text does not name the product itself. The link to the Siena Lévant Tote Bag comes only from the page URL. The figures are listed specs, not measurements.",
+  "open_contradiction": false,
+  "reasoning": "Every number and the airline-compatibility phrase in the claim appear word for word in the specs transcription. The claim calls them what the page lists, which matches the scope limits. The three evidence rows are one source repeated, so the support is a single screenshot.",
+  "auditor": "independent auditor packet 10"
+ },
+ {
+  "claim_id": "C-0049",
+  "verdict": "PARTIAL",
+  "evidence_checks": [
+   {"evidence_id": "E-0438", "located_span": "Main features | Detachable hand-washable lining | Anti-theft pocket on the back panel | Quick-access fleece magnetic pocket | 14” EVA laptop sleeve | Adjustable detachable strap | Luggage strap", "supports": true, "note": "All six features appear. But the 'Main features' list comes straight after 'Nordace Siena Riviera Cosmetic Bag | £54.00 £44.99 -17% | ADD TO CART | BUY NOW'. Within this text, that makes it unclear which product the features belong to."},
+   {"evidence_id": "E-0439", "located_span": "Adjustable detachable strap | 83–104 cm (32.7–40.9”) | Luggage strap | ✓", "supports": true, "note": "Supports the 83–104 cm strap length and the luggage strap. The text does not name a product; it is tied to the Lévant page only by its URL."}
+  ],
+  "scope_issue": "The only product named in E-0438 is the 'Nordace Siena Riviera Cosmetic Bag', shown just above the feature list. So reading these features as the Lévant Tote's rests on the URL alone, not on the transcribed text.",
+  "open_contradiction": false,
+  "reasoning": "Every feature in the claim, including the 83–104 cm strap length, appears verbatim across the two sources. However, the feature list in E-0438 sits directly under a different product's name and price, which leaves open which product it describes. The claim's wording is otherwise accurate, so the verdict is partial rather than full support.",
+  "auditor": "independent auditor packet 10"
+ },
+ {
+  "claim_id": "C-0050",
+  "verdict": "SUPPORTS",
+  "evidence_checks": [
+   {"evidence_id": "E-0440", "located_span": "Body material | Micro-fiber vegan leather", "supports": true, "note": "The body material matches the claim exactly. The same text also names 'The Siena Lévant Tote Bag', which ties these specs to the product."},
+   {"evidence_id": "E-0441", "located_span": "Water-resistant fabric | ✓ | Protective bottom studs | Metal", "supports": true, "note": "Water-resistant fabric is ticked and the bottom studs are listed as metal. This is a duplicate of E-0440 (same screenshot)."}
+  ],
+  "scope_issue": "",
+  "open_contradiction": false,
+  "reasoning": "The materials table lists micro-fiber vegan leather as the body material, ticks water-resistant fabric and gives the protective bottom studs as metal. The claim reports only what the page lists and makes no durability claim, which fits the scope limits. Both evidence rows are the same screenshot.",
+  "auditor": "independent auditor packet 10"
+ }
+]
