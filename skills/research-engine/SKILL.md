@@ -1,13 +1,13 @@
 ---
 name: research-engine
-description: "Evidence-led consumer research engine (v3 core) for Nordace creative strategy. Collects real Reddit discussions about our product, competitors and the whole category through routes that work from the cloud, logs every search, turns posts into evidence rows with exact links, finds behaviour patterns and purchase decisions, tests competing explanations (ACH), has every claim checked by an independent auditor, and lets a script, not the model, decide what is proven. Delivers matching Russian and English findings briefs. Use when the user asks for 'ресерч v3', 'research engine', 'доказательный ресерч', 'проверенный ресерч', 'найди инсайты с доказательствами', or a research run where verifiable sources matter more than speed. Not for ad metrics (media-buying-analyst)."
+description: "Evidence-led consumer research engine (v3 core) for Nordace creative strategy. Collects real Reddit discussions about our product, competitors and the whole category through routes that work from the cloud, logs every search, turns posts into evidence rows with exact links, finds behaviour patterns and purchase decisions, tests competing explanations (ACH), has every claim checked by an independent auditor, and lets a script, not the model, decide what is proven. Also reads Mumsnet, Trustpilot and forums through the web-reading tool. Delivers matching Russian and English findings briefs and a creative strategy (mechanisms, angles, hooks, concepts, script, Meta test plan) built only on verified facts. Use when the user asks for 'ресерч', 'ресерч v3', 'research engine', 'creative strategy', 'креатив-стратегия', 'доказательный ресерч', 'найди инсайты', 'углы и концепты на основе ресерча', or names a Nordace product with a research question. Not for ad metrics (media-buying-analyst)."
 ---
 
 # Research Engine (v3 core)
 
 Ты ведёшь потребительский ресерч для креатив-стратегии Nordace. Общайся с пользователем по-русски, коротко объясняй, зачем каждый шаг: пользователь учится creative strategy.
 
-Это ядро v3, согласованное в дискуссии Claude × ChatGPT: **широкий адаптивный сбор → журнал доказательств → проверка → рассуждение**. Источник пока один: Reddit. Остальные (Mumsnet, Trustpilot, сайты брендов) подключаются как `INDEXED_ONLY` или по скриншотам пользователя, но в одобренные выводы не идут, пока не прочитаны полностью.
+Это ядро v3, согласованное в дискуссии Claude × ChatGPT: **широкий адаптивный сбор → журнал доказательств → проверка → рассуждение**. Источники: Reddit (дословно, через RSS и архив) и сайты, закрытые для прямого запроса из облака: Mumsnet, Trustpilot, форумы, отзывы конкурентов. Их читает инструмент WebFetch (`scripts/webextract.py`): пересказ поста и короткая дословная фраза. Это сигналы для механизмов и креатива, а не доказательства для `FACT_APPROVED`. Не открываются из облака: YouTube и TikTok (проверка на бота), Facebook Ad Library, Amazon.com, nordace.com. Для них нужен запуск на компьютере пользователя или его скриншоты.
 
 ## Три правила, которые нельзя нарушать
 1. **Статус ставит скрипт, а не ты.** Ты пишешь в журнал наблюдения, утверждения и аудиты. `validate.py` сам вычисляет `FACT_APPROVED / HYPOTHESIS_UNTESTED / RESEARCH_QUESTION / NEEDS_REVIEW / BLOCKED` для утверждений и `ACH_AUDITED / PATTERN_VALID / ACH_PRELIMINARY / ACH_REJECTED` для ACH. Каждый аудит привязан к хешу содержимого: правка утверждения, его доказательств, источника или посылки делает аудит устаревшим, и статус возвращается на проверку. Никогда не пиши «этап пройден» или «доказано», пока этого не сказал `gate_report.md`.
@@ -32,6 +32,11 @@ description: "Evidence-led consumer research engine (v3 core) for Nordace creati
 - В каждой ветке нужны запросы разного тона: `PROBLEM`, `NEUTRAL`, `POSITIVE`, `SWITCH`. Ветка без `NEUTRAL` или `POSITIVE` не закрыта, иначе корпус перекошен в жалобы.
 - Лимит Reddit из облака около 1 запроса в минуту, скрипт сам ждёт. Один запрос треда даёт до ~100 комментариев. Планируй примерно 40–60 запросов на стандартный ресерч и запускай длинные серии в фоне.
 
+### Слой A2. Закрытые сайты через WebFetch
+- Найди треды и страницы через WebSearch (`allowed_domains`: mumsnet.com, trustpilot.com, нужный форум) и запиши запрос: `webextract.py log-search`.
+- Читай страницы параллельными агентами по брифу `research/<ID>/work/web/AGENT_BRIEF.md` (пример есть в LEVANT-001): каждый пост с ником, датой, пересказом и короткой точной фразой; местоимение «they».
+- Сохраняй: `webextract.py add-page ... @posts.json`. Mumsnet нужен для UK, Trustpilot — для отзывов на бренд и конкурентов, с низкими и высокими оценками.
+
 ### Слой B. Доказательства (подробно: `references/evidence.md`)
 Читай треды (`reddit.py show`), записывай одно наблюдение на строку через `ledger.py add evidence`. В каждой строке: дословный фрагмент, что человек сделал (а не только сказал), точность совпадения с продуктом, ситуация, кластер ситуации и поведенческий паттерн, и «что это НЕ доказывает». Истории решений записывай как `DECISION` с полями решения.
 
@@ -49,6 +54,12 @@ description: "Evidence-led consumer research engine (v3 core) for Nordace creati
 ### Итог (подробно: `references/briefs.md`)
 Два полных равноценных брифа, `brief_RU.md` и `brief_EN.md` (в английском ни одного кириллического символа). Каждый вывод ссылается на утверждение `[C-0001]`. Гипотезы помечены словом «гипотеза» / «hypothesis». Цифры объёма генерирует `render_stats.py --write`. Затем каждую строку обоих брифов проверяет независимый аудитор (`brief_packet.py`, запись в `brief_audits`): строка должна говорить не больше, чем её утверждения, или быть явным ограничением. URL не считается ссылкой на доказательство, а текст в кавычках рядом с URL сверяется с архивом дословно. Проверка: `validate.py --brief-ru ... --brief-en ...` должна пройти без замечаний.
 
-Ресерч всегда заканчивается одним из двух: **возможности для креатива** (со ссылками на одобренные утверждения) или **явная причина, почему их пока нет**, плюс следующий шаг ресерча. Концепты и сценарии в это ядро не входят; их делает `creative-research` на основе одобренных выводов.
+### Креативная стратегия (подробно: `references/creative.md`)
+Ресерч заканчивается креативной стратегией, а не только брифом.
+1. `scripts/creative_pack.py` собирает вход: одобренные факты, гипотезы, проверенные ACH, истории решений и сигналы.
+2. 3–4 агента с разными линзами независимо ищут механизмы. Отдельный агент склеивает дубли и считает различные механизмы по семействам.
+3. Углы и хуки на словах клиентов. 3–5 концептов, у каждого проверка заменой продукта (если Lévant можно заменить безымянным тоутом, концепт не годится). Скрипт лучшего концепта. План теста в Meta.
+4. Факты в креативе строгие (аудит строк), идеи свободные (это гипотезы, их проверяет реклама).
+Выход: `creative_strategy_RU.md` и `creative_strategy_EN.md`. Если опоры для креатива нет, так и скажи, и назови, что добрать.
 
 В чате пользователю: ссылка на папку проекта и брифы, сколько тредов / комментариев / независимых обсуждений, что одобрено, что осталось гипотезой и почему, пробелы в покрытии, что пользователь может прислать (скриншоты страницы продукта, рекламы из ленты, данные Ads Manager), и один принцип creative strategy, который сработал в этом ресерче.
