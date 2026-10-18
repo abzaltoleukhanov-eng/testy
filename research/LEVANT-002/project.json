@@ -1,0 +1,22 @@
+{
+  "id": "LEVANT-002",
+  "product": "Nordace Siena Lévant Tote Bag",
+  "markets": "US,UK",
+  "decision": "Какие 2-3 концепта для Lévant Tote тестировать первыми в Meta на холодный трафик и на каких словах покупателей они стоят",
+  "mode": "standard",
+  "created": "2026-10-18T13:31:46+00:00",
+  "sheet_url": "",
+  "stages": {
+    "0": {
+      "history": [
+        {
+          "status": "review",
+          "at": "2026-10-18T13:36:16+00:00",
+          "note": ""
+        }
+      ],
+      "status": "review",
+      "at": "2026-10-18T13:36:16+00:00"
+    }
+  }
+}
