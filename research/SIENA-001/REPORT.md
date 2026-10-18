@@ -5,7 +5,7 @@
 Таблица: «Nordace · Research · Siena Pro Tote · Drama-идея на проверенном VOC · 2026-10-17» (Drive, папка Nordace · Creative Research).
 
 ## Объём и доступ
-- 108 запросов, 165 групп (треды/видео/страницы), 241 цитата: VERBATIM 183, WEB_CONFIRMED 58. Площадки: YouTube 100, Reddit 71, Trustpilot 34, Mumsnet 24, MSE 12.
+- 108 запросов, 163 группы (треды/видео/страницы), 241 цитата: VERBATIM 183, WEB_CONFIRMED 58. Площадки: YouTube 100, Reddit 71, Trustpilot 34, Mumsnet 24, MSE 12.
 - Открылось из облака: Reddit (архив Arctic Shift), YouTube (yt-dlp), MSE (прямо), Trustpilot и Mumsnet (WebFetch, короткие подтверждённые фразы).
 - Не открылось: сайт Nordace (403 во всех маршрутах), веб-архив (offline), Meta Ad Library, Facebook-группы, Amazon, TikTok. Комментарии под нашей рекламой не видели.
 - Прошлые ресерчи по SKU (2026-10-15 и 2026-10-17 в Drive) прочитаны. Их цитаты в корпус не взяты (сырья нет в репозитории, `voc.py` их не проверял). Факты о продукте из вкладки «Продукт» 2026-10-15 (Amazon) взяты с пометкой «перепроверить».
