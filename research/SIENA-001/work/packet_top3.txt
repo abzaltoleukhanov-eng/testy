@@ -1,0 +1,614 @@
+[
+ {
+  "id": "I01",
+  "statement": "У гейта лоукостера людей ранит не столько сам штраф, сколько публичная сцена без права голоса: сотрудник выдёргивает из очереди, не даёт объясниться, ставит «плати сейчас или не летишь», а очередь смотрит. Поэтому драма строится на моменте публичного суда, а не на цене багажа.",
+  "evidence": [
+   {
+    "quote_id": "Q057",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wo3hcs/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "Forced to pay carryon charge at gate.\nLong story short, I always travel light with a hard shell which fits under seat.\n\nOutbound journey no problem at all eventhough it was a package deal with a 23kg included for check in hold, which I did not use.\n\nOn the return flight the gate agent was adamant my carryon was too big, would not let me put it in sizer, would not let me explain, how was I allowed to take it on the outbound but now they want to charge me?\n\nShe simply would not listen to anything I tried to explain and said the outbound agents should have places notes on my booking to say the case was fine to return with! How on earth am I supposed to know their procedures?\n\nAnyway, how do I get my money back and are they likely to believe the lies of the gate agent?",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q058",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wo3hcs/comment/pbjzh94/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "She was too busy arguing with me while boarding other people at the same time. So refused me to use the sizer. Just said pay the fee or don't board.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q069",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "Fined at Warsaw Modlin this morning for a bag that fit in the sizer\nAt the gate a staff member started pulling people out of the queue, me and my girlfriend included, and asked us to put our bags in the sizer. Both bags went in. Mine needed a small push because I was carrying two laptops, but it went fully inside the frame.\n\nshe told me that doesn't count as the bag has to drop in without any pressure. so I told her that I'll move a laptop into my girlfriend's bag which was half empty.   \nshe said no: if I did that I'd pass and my girlfriend would be the one paying.   \nso whichever way it went, one of us was paying. I also had a 20kg checked bag that only weighed 14kg, so there was plenty of space I could have used if anyone had told me at check in that this was a problem.   \nI've flown with this exact bag packed exactly the same way multiple times, been stopped for checks before, and never had an issue.\n\nI tried to argue but boarding was closing and she made it very clear the choice was pay now or neither of us boards. She also refused any e-wallet and demanded a physical card, then took it and wrote down the card numbers herself just after turning the badge so I couldn't see her name (it was a fat woman around 30 with red hair). I paid 60 Euros and had to run to the plane, which was almost leaving without us.\n\nattached is a photo of the same bag once I was on board, sitting completely under the seat in front of me (I pulled it forward slightly so it's visible in the shot). it isn't bulging, it isn't blocking anything, and it's the size the rules allow.   \nI didn't manage to take a picture in the sizer as we were in a rush and thought we were gonna lose the flight.\n\nwhat bothers me isn't the money as much as the setup. the check happens at the last possible moment, when you physically cannot go back to the desk to move things into your checked bag and cannot afford to stand there and argue.   \nAlso If the sizer is the standard, then fitting in the sizer should be the standard, not a subjective judgement about how firmly someone pressed the bag.\n\nHas anyone actually succeeded in getting one of these gate bag scams refunded?",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q070",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "Fined at Warsaw Modlin this morning for a bag that fit in the sizer\nAt the gate a staff member started pulling people out of the queue, me and my girlfriend included, and asked us to put our bags in the sizer. Both bags went in. Mine needed a small push because I was carrying two laptops, but it went fully inside the frame.\n\nshe told me that doesn't count as the bag has to drop in without any pressure. so I told her that I'll move a laptop into my girlfriend's bag which was half empty.   \nshe said no: if I did that I'd pass and my girlfriend would be the one paying.   \nso whichever way it went, one of us was paying. I also had a 20kg checked bag that only weighed 14kg, so there was plenty of space I could have used if anyone had told me at check in that this was a problem.   \nI've flown with this exact bag packed exactly the same way multiple times, been stopped for checks before, and never had an issue.\n\nI tried to argue but boarding was closing and she made it very clear the choice was pay now or neither of us boards. She also refused any e-wallet and demanded a physical card, then took it and wrote down the card numbers herself just after turning the badge so I couldn't see her name (it was a fat woman around 30 with red hair). I paid 60 Euros and had to run to the plane, which was almost leaving without us.\n\nattached is a photo of the same bag once I was on board, sitting completely under the seat in front of me (I pulled it forward slightly so it's visible in the shot). it isn't bulging, it isn't blocking anything, and it's the size the rules allow.   \nI didn't manage to take a picture in the sizer as we were in a rush and thought we were gonna lose the flight.\n\nwhat bothers me isn't the money as much as the setup. the check happens at the last possible moment, when you physically cannot go back to the desk to move things into your checked bag and cannot afford to stand there and argue.   \nAlso If the sizer is the standard, then fitting in the sizer should be the standard, not a subjective judgement about how firmly someone pressed the bag.\n\nHas anyone actually succeeded in getting one of these gate bag scams refunded?",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q072",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/comment/p7esd1f/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "and what was I supposed to do? lose the flight and stay there to argue for 60 euros?",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q073",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/comment/p7etme8/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "buddy I was so furious after that conversation that taking photos of my bag was the last thing on my mind. I genuinely thought we were about to lose the flight. I stayed there arguing with her and it was like talking to a tree, and by that point we were the last people left to board.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q074",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/comment/p7fdk2p/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "1) bitchy people here will tell you \"you're complaining about an oversized bag you got away multiple times with so shut up\" \n\n2. I had the same experience in Dublin but I said \"no problem I'll take the bus!\" (It's €20 cheaper than the €60 fine AND gets me actually right to my car, its just slower). The gate agent went ballistic. I mean SCREAMING at me.  A little man. I'm an elderly woman so I said \"who so you think you're speaking to here?? You cant speak to me this way!\" (In my Principal's voice) and hecl went purple. 😃 \n\nI took the bus. I wasn't giving that child preppy wanna-be my money....\n\nComplain to Ryanair!!",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q077",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/comment/p7gmyd2/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "Has happened to me leaving Morocco, the bag literally fit right in, the whole queue was on my side, still got told pay up or dont fly. I call them Sky pirates but it sounds too cool, they're more like an Airborne disease.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q099",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wddanz/comment/p98px9v/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "yeah i rarely travel and a few years ago went with ryanair, used the suitcase i have always used and it was always fine. my dad loaned it to me and has also always used it before as well. i got charged £50 cos it was a bit too big for the metal frame. and obv that means i also had to pay extra on the return flight. i was so shocked and it felt so embarrassing lmao... at least it meant i got to board before everyone else as i got pulled out of the queue",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q175",
+    "role": "supports",
+    "url": "https://www.mumsnet.com/talk/_chat/5292698-ryan-air-debate?reply=142797658",
+    "platform": "mumsnet",
+    "status": "WEB_CONFIRMED",
+    "source_text": "one of them stood over a poor women further down the queue whilst she tried to squeeze her hand bag and contents",
+    "paraphrase_by_tool": "Staff loomed over a woman squeezing handbag into carry-on."
+   },
+   {
+    "quote_id": "Q184",
+    "role": "supports",
+    "url": "https://www.mumsnet.com/talk/holidays/5307069-ryan-air-small-bag?reply=143276095",
+    "platform": "mumsnet",
+    "status": "WEB_CONFIRMED",
+    "source_text": "a person walked the line of passengers waiting to get on picking out bags and telling people they have to pay before",
+    "paraphrase_by_tool": "Staff walked the queue picking out bags demanding payment."
+   },
+   {
+    "quote_id": "Q198",
+    "role": "supports",
+    "url": "https://forums.moneysavingexpert.com/discussion/5283150/ryanair-charged-for-case-within-size-limit",
+    "platform": "mse",
+    "status": "VERBATIM",
+    "source_text": "More \n Forum \n News \n Weekly email \n Search \n Energy Help \n Martin's Blog \n Martin's Video \n Campaigns \n Team Blog \n Deals Hunters' Blog \n About the site \n Martin Lewis\n MoneySavingExpert\n Founder, Martin Lewis · Editor-in-Chief, Marcus Herbert \n Search\n MoneySavingExpert... \n Submit \n Cards & Loans \n Household Bills \n Complain & Reclaim \n Banking & Savings \n Mortgages & Homes \n Travel \n Insurance \n Deals & Shopping \n Income & Budgeting \n Students \n Forum \n News\n About the site\n MSE's Editorial Code\n How we're financed\n Martin's blog\n Home › Overseas holidays & travel planning › Flights, currency & car hire \n We’d like to remind Forumites to please avoid political debate on the Forum.\n This is to keep it a safe and useful space for MoneySaving discussions. Threads that are – or become – political in nature may be removed in line with the\n Forum’s rules . Thank you for your understanding.\n 📨 Have you signed up to the Forum's new Email Digest yet? Get a selection of trending threads sent straight to your inbox daily, weekly or monthly!\n Ryanair charged for case within size limit!\n bundly \n Posts: 1,039 \n Forumite \n 8 July 2015 at 8:58PM \n edited 8 July 2015 at 9:11PM in Flights, currency & car hire \n My friend is Latvian and her written English isn't perfect so she asked me to post this.\nShe has a hard suitcase that is within the limit for Ryanair cabin baggage. She has flown with Ryanair with this case more than 5 times without problems.\nLast week she paid for priority boarding, arrived at the gate with her case, her handbag, and a bottle of booze in a duty-free bag. The gate attendant demanded £50 because she had 3 bags. So my friend opened her suitcase and popped the duty free bag inside. The gate attendant still demanded £50, this time because her case was \"too big\" to go as cabin baggage! But the case is a rigid one, unchanged by the insertion of the bottle.\nMy friend then put the case into that measuring slot that Ryanair uses to check your baggage. It states on a large notice above it that if it fits in here, it goes as cabin baggage. Her case fitted easily, as it always does. But the attendant carried on demanding £50! All the other passengers were allowed to board ahead of her. Eventually the attendant said if she didn't pay £50 then she would not be allowed to fly. My friend became very anxious and paid out of fear.\nLuckily she has given me all the relevant photos, of the duty free bag, the duty free bag inside the case, the case fitting into the measuring slot, and she has the receipts for the £50 charge. The rude attendant wrote \"3 bags\" on her boarding pass, even though that was not the reason she gave for charging the £50.\nI've written a complaint to Ryanair. I wondered if anyone else has been confronted with something like this and what are my chances of getting my friend her money back.\nBelow are pics of the case in the measuring slot.\nBundly.\n http://i1130.photobucket.com/albums/m534/helena1958/ryanair/7_zpsryzhad9l.jpg \n http://i1",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q204",
+    "role": "supports",
+    "url": "https://forums.moneysavingexpert.com/discussion/6442933/delayed-flight-due-to-so-many-people-being-charged-for-luggage",
+    "platform": "mse",
+    "status": "VERBATIM",
+    "source_text": "More \n Forum \n News \n Weekly email \n Search \n Energy Help \n Martin's Blog \n Martin's Video \n Campaigns \n Team Blog \n Deals Hunters' Blog \n About the site \n Martin Lewis\n MoneySavingExpert\n Founder, Martin Lewis · Editor-in-Chief, Marcus Herbert \n Search\n MoneySavingExpert... \n Submit \n Cards & Loans \n Household Bills \n Complain & Reclaim \n Banking & Savings \n Mortgages & Homes \n Travel \n Insurance \n Deals & Shopping \n Income & Budgeting \n Students \n Forum \n News\n About the site\n MSE's Editorial Code\n How we're financed\n Martin's blog\n Home › Overseas holidays & travel planning \n We’d like to remind Forumites to please avoid political debate on the Forum.\n This is to keep it a safe and useful space for MoneySaving discussions. Threads that are – or become – political in nature may be removed in line with the\n Forum’s rules . Thank you for your understanding.\n 📨 Have you signed up to the Forum's new Email Digest yet? Get a selection of trending threads sent straight to your inbox daily, weekly or monthly!\n Delayed flight due to so many people being charged for luggage\n soolin \n Posts: 75,533 \n Ambassador \n 28 April 2023 at 9:13AM \n in Overseas holidays & travel planning \n Just be warned.\nWe went through Fuerteventura airport yesterday and noticed at bag drop the queue next to us (Ryanair) was getting people to unpack suitcases and remove items due to weight.\nHowever when we went to board the plane with easyjet we were delayed as there was a check immediately before boarding and person after person was being refused and asked to pay extra for either over size cabin bags or an extra bag. We were fine as we use hold luggage , but there were queues of people trying to force small bags and rucksacks in the sizer. Many were arguing they were allowed to carry the same bag on the way out which is now suddenly too big, but having to pay up nonetheless, they were being very strict, almost like a work to rule.\nSo double check your cabin bags!\nWe didn't actually manage to get on the plane until a few minutes past our departure time.\n I’m a Forum Ambassador and I support the Forum Team on the eBay, Auctions, Car Boot & Jumble Sales, Boost Your Income, Praise, Vents & Warnings, Overseas Holidays & Travel Planning , UK Holidays, Days Out & Entertainments boards. If you need any help on these boards, do let me know.. Please note that Ambassadors are not moderators. Any posts you spot in breach of the Forum Rules should be reported via the report button, or by emailing forumteam@moneysavingexpert.com.All views are my own and not the official line of MoneySavingExpert.\n 1 \n « 1 2 3 4 » Comments\n TELLIT01 \n Posts: 18,789 \n Forumite \n 28 April 2023 at 9:50AM \n \"They were being very strict, almost like a work to rule\".  I'm delighted to see the size rules on hand luggage being rigidly enforced for a change.  I'm sick of sticking to the rules and seeing others with hand luggage they can barely lift or force into the overhead lockers.\n Ryanair has a reputation for being ",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q071",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/comment/p7egq7a/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "totally get the logic of \"you agreed so it's done\" but this kind of gate shakedown feels like consent under duress more than a real choice  \nairlines (and some airports) rely on that panic moment right before boarding, it's kinda wild they can still hide behind \"well you paid so it's fine\"",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q061",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wo3hcs/comment/pbkbfsm/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "It’s not incorrect. The argument of “I flew out here with the same bag!” Or “I’ve flown loads of times with this bag!” Will just be met with a “Well you were lucky then” response.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q060",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wo3hcs/comment/pbphxsc/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "You are going to get a apologetic email at best but no money refunded.\n\n\n\nBasically you are shit out of luck, gate agents basically have the power to do as they please and you the passenger just have to bend over, suck it up, and unclench.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q085",
+    "role": "supports",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/comment/p7fdoyq/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "I've heard this and it makes sense \nThe flight can't fly with luggage of a passenger not boarded. And the cost to delay and unload. \n\nOn easyjet I got (I thought) upgraded to speedy boarding. When I got to the front of the gate I was told the flight was over sold on luggage so my (only) carry on bag had to go under the plane. I declined and was told I would be off loaded if I didn't comply. \nSo I allowed them to but my \nBag under the plane and carried on my laptop, charger, jumper and put them in the over head locker as I wasn't gonna put them in the floor unlike my small bag would have. To rub salt into the wound. I then watched other passengers with larger carry on bags. Duty free goods and handbags all be allowed on. I had filmed this happening and air crew apologised for Spanish ground staff. On landing I went to the desk and got a full refund on my flight.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q203",
+    "role": "supports",
+    "url": "https://forums.moneysavingexpert.com/discussion/6442933/delayed-flight-due-to-so-many-people-being-charged-for-luggage",
+    "platform": "mse",
+    "status": "VERBATIM",
+    "source_text": "More \n Forum \n News \n Weekly email \n Search \n Energy Help \n Martin's Blog \n Martin's Video \n Campaigns \n Team Blog \n Deals Hunters' Blog \n About the site \n Martin Lewis\n MoneySavingExpert\n Founder, Martin Lewis · Editor-in-Chief, Marcus Herbert \n Search\n MoneySavingExpert... \n Submit \n Cards & Loans \n Household Bills \n Complain & Reclaim \n Banking & Savings \n Mortgages & Homes \n Travel \n Insurance \n Deals & Shopping \n Income & Budgeting \n Students \n Forum \n News\n About the site\n MSE's Editorial Code\n How we're financed\n Martin's blog\n Home › Overseas holidays & travel planning \n We’d like to remind Forumites to please avoid political debate on the Forum.\n This is to keep it a safe and useful space for MoneySaving discussions. Threads that are – or become – political in nature may be removed in line with the\n Forum’s rules . Thank you for your understanding.\n 📨 Have you signed up to the Forum's new Email Digest yet? Get a selection of trending threads sent straight to your inbox daily, weekly or monthly!\n Delayed flight due to so many people being charged for luggage\n soolin \n Posts: 75,533 \n Ambassador \n 28 April 2023 at 9:13AM \n in Overseas holidays & travel planning \n Just be warned.\nWe went through Fuerteventura airport yesterday and noticed at bag drop the queue next to us (Ryanair) was getting people to unpack suitcases and remove items due to weight.\nHowever when we went to board the plane with easyjet we were delayed as there was a check immediately before boarding and person after person was being refused and asked to pay extra for either over size cabin bags or an extra bag. We were fine as we use hold luggage , but there were queues of people trying to force small bags and rucksacks in the sizer. Many were arguing they were allowed to carry the same bag on the way out which is now suddenly too big, but having to pay up nonetheless, they were being very strict, almost like a work to rule.\nSo double check your cabin bags!\nWe didn't actually manage to get on the plane until a few minutes past our departure time.\n I’m a Forum Ambassador and I support the Forum Team on the eBay, Auctions, Car Boot & Jumble Sales, Boost Your Income, Praise, Vents & Warnings, Overseas Holidays & Travel Planning , UK Holidays, Days Out & Entertainments boards. If you need any help on these boards, do let me know.. Please note that Ambassadors are not moderators. Any posts you spot in breach of the Forum Rules should be reported via the report button, or by emailing forumteam@moneysavingexpert.com.All views are my own and not the official line of MoneySavingExpert.\n 1 \n « 1 2 3 4 » Comments\n TELLIT01 \n Posts: 18,789 \n Forumite \n 28 April 2023 at 9:50AM \n \"They were being very strict, almost like a work to rule\".  I'm delighted to see the size rules on hand luggage being rigidly enforced for a change.  I'm sick of sticking to the rules and seeing others with hand luggage they can barely lift or force into the overhead lockers.\n Ryanair has a reputation for being ",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q080",
+    "role": "counter",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/comment/p7j0w20/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "I’ve flown Ryanair probably 50-60 times and I’ve never had my small bag put in the sizer. My wife’s is always clearly oversize to the point that I am always thinking ‘there’s no way we’re getting away with it this time’ and every time she smiles at me after going through the gate as to say ‘I told it was going to be all right’.    \nI have seen people being pulled aside a few times but the bags were always clearly oversize.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q081",
+    "role": "counter",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1w5afhl/comment/p7gezla/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "Hundreds of Ryanair flights, not a single problem and never a delay over 1h. Best ground staff in the entire UK as well.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q104",
+    "role": "counter",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wddanz/comment/p94udml/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "To be fair, i travel 3 times a year since 2016 and i only saw people with comically large bags get fined",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q105",
+    "role": "counter",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wddanz/comment/p98yzch/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "i travel ryanair every other week and ive never had to put my bag in one of these",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q176",
+    "role": "counter",
+    "url": "https://www.mumsnet.com/talk/_chat/5292698-ryan-air-debate?reply=142797726",
+    "platform": "mumsnet",
+    "status": "WEB_CONFIRMED",
+    "source_text": "I have never paid or booked a bag on ryan air and each time I've gone on with a rucksack and no one's ever said anything",
+    "paraphrase_by_tool": "Never paid; always boarded with rucksack unchallenged."
+   },
+   {
+    "quote_id": "Q187",
+    "role": "counter",
+    "url": "https://www.mumsnet.com/talk/am_i_being_unreasonable/4824215-to-be-confused-by-ryan-air-baggage?reply=126776544",
+    "platform": "mumsnet",
+    "status": "WEB_CONFIRMED",
+    "source_text": "I fly with them monthly or thereabouts and not once has my carry on bag been checked for either size or weight.",
+    "paraphrase_by_tool": "Monthly flyer never checked."
+   },
+   {
+    "quote_id": "Q064",
+    "role": "counter",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wo3hcs/comment/pbqp4ch/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "Your bag was too big. \n\nYou got away with it on one flight, got caught on the second.\n\nYour fault.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q107",
+    "role": "counter",
+    "url": "https://www.reddit.com/r/Ryanair/comments/1wddanz/comment/p955jwg/",
+    "platform": "reddit",
+    "status": "VERBATIM",
+    "source_text": "Omg, seeing all these threads where so many people don’t know how to read measurements genuinely makes me concerned. I just really don’t understand what the issue is with buying a bag that fits.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q201",
+    "role": "counter",
+    "url": "https://forums.moneysavingexpert.com/discussion/6607531/victims-of-shrinking-easyjet-hand-luggage-allowance",
+    "platform": "mse",
+    "status": "VERBATIM",
+    "source_text": "More \n Forum \n News \n Weekly email \n Search \n Energy Help \n Martin's Blog \n Martin's Video \n Campaigns \n Team Blog \n Deals Hunters' Blog \n About the site \n Martin Lewis\n MoneySavingExpert\n Founder, Martin Lewis · Editor-in-Chief, Marcus Herbert \n Search\n MoneySavingExpert... \n Submit \n Cards & Loans \n Household Bills \n Complain & Reclaim \n Banking & Savings \n Mortgages & Homes \n Travel \n Insurance \n Deals & Shopping \n Income & Budgeting \n Students \n Forum \n News\n About the site\n MSE's Editorial Code\n How we're financed\n Martin's blog\n Home › Overseas holidays & travel planning › Flight delay compensation \n We’d like to remind Forumites to please avoid political debate on the Forum.\n This is to keep it a safe and useful space for MoneySaving discussions. Threads that are – or become – political in nature may be removed in line with the\n Forum’s rules . Thank you for your understanding.\n 📨 Have you signed up to the Forum's new Email Digest yet? Get a selection of trending threads sent straight to your inbox daily, weekly or monthly!\n Victims of shrinking Easyjet hand luggage allowance\n itm2 \n Posts: 1,568 \n Forumite \n 17 May 2025 at 11:48AM \n in Flight delay compensation \n A couple of weeks ago my wife was stopped at the gate of our Easyjet flight to Malta, and told that she would not be able to bring her rucksack onto the plane unless she paid a £48 charge. She had been using the same bag regularly on Easyjet for the last 15 years without any issues. The bag was virtually empty (no more than 10-12cm wide), but the length exceeded the size of the measurement device at the gate by less than one inch. No flexibility was shown by staff at the gate, and she was refused boarding with her rucksack unless she paid the charge. Since the bag was not worth £48 the only sensible option was for her to abandon it, and carry the contents in a carrier bag.\nBe careful when you book with Easyjet - your hand luggage allowance may be smaller than you think (and smaller than it used to be). I expect this sort of nonsense from RyanAir, but it seems that Easyjet are now using whatever tactics it can to screw every last penny out of its customers. \n 0 \n « 1 2 3 » Comments\n marcia_ \n Posts: 4,422 \n Forumite \n 17 May 2025 at 12:31PM \n itm2 said:\n A couple of weeks ago my wife was stopped at the gate of our Easyjet flight to Malta, and told that she would not be able to bring her rucksack onto the plane unless she paid a £48 charge. She had been using the same bag regularly on Easyjet for the last 15 years without any issues. The bag was virtually empty (no more than 10-12cm wide), but the length exceeded the size of the measurement device at the gate by less than one inch. No flexibility was shown by staff at the gate, and she was refused boarding with her rucksack unless she paid the charge. Since the bag was not worth £48 the only sensible option was for her to abandon it, and carry the contents in a carrier bag.\nBe careful when you book with Easyjet - your hand luggage ",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q206",
+    "role": "counter",
+    "url": "https://forums.moneysavingexpert.com/discussion/6442933/delayed-flight-due-to-so-many-people-being-charged-for-luggage",
+    "platform": "mse",
+    "status": "VERBATIM",
+    "source_text": "More \n Forum \n News \n Weekly email \n Search \n Energy Help \n Martin's Blog \n Martin's Video \n Campaigns \n Team Blog \n Deals Hunters' Blog \n About the site \n Martin Lewis\n MoneySavingExpert\n Founder, Martin Lewis · Editor-in-Chief, Marcus Herbert \n Search\n MoneySavingExpert... \n Submit \n Cards & Loans \n Household Bills \n Complain & Reclaim \n Banking & Savings \n Mortgages & Homes \n Travel \n Insurance \n Deals & Shopping \n Income & Budgeting \n Students \n Forum \n News\n About the site\n MSE's Editorial Code\n How we're financed\n Martin's blog\n Home › Overseas holidays & travel planning \n We’d like to remind Forumites to please avoid political debate on the Forum.\n This is to keep it a safe and useful space for MoneySaving discussions. Threads that are – or become – political in nature may be removed in line with the\n Forum’s rules . Thank you for your understanding.\n 📨 Have you signed up to the Forum's new Email Digest yet? Get a selection of trending threads sent straight to your inbox daily, weekly or monthly!\n Delayed flight due to so many people being charged for luggage\n soolin \n Posts: 75,533 \n Ambassador \n 28 April 2023 at 9:13AM \n in Overseas holidays & travel planning \n Just be warned.\nWe went through Fuerteventura airport yesterday and noticed at bag drop the queue next to us (Ryanair) was getting people to unpack suitcases and remove items due to weight.\nHowever when we went to board the plane with easyjet we were delayed as there was a check immediately before boarding and person after person was being refused and asked to pay extra for either over size cabin bags or an extra bag. We were fine as we use hold luggage , but there were queues of people trying to force small bags and rucksacks in the sizer. Many were arguing they were allowed to carry the same bag on the way out which is now suddenly too big, but having to pay up nonetheless, they were being very strict, almost like a work to rule.\nSo double check your cabin bags!\nWe didn't actually manage to get on the plane until a few minutes past our departure time.\n I’m a Forum Ambassador and I support the Forum Team on the eBay, Auctions, Car Boot & Jumble Sales, Boost Your Income, Praise, Vents & Warnings, Overseas Holidays & Travel Planning , UK Holidays, Days Out & Entertainments boards. If you need any help on these boards, do let me know.. Please note that Ambassadors are not moderators. Any posts you spot in breach of the Forum Rules should be reported via the report button, or by emailing forumteam@moneysavingexpert.com.All views are my own and not the official line of MoneySavingExpert.\n 1 \n « 1 2 3 4 » Comments\n TELLIT01 \n Posts: 18,789 \n Forumite \n 28 April 2023 at 9:50AM \n \"They were being very strict, almost like a work to rule\".  I'm delighted to see the size rules on hand luggage being rigidly enforced for a change.  I'm sick of sticking to the rules and seeing others with hand luggage they can barely lift or force into the overhead lockers.\n Ryanair has a reputation for being ",
+    "paraphrase_by_tool": ""
+   }
+  ]
+ },
+ {
+  "id": "I03",
+  "statement": "Владельцы тоутов Nordace ценят, что одна сумка заменяет и ручную кладь, и сумочку: она уходит под сиденье, едет на ручке чемодана и вмещает больше, чем ждёшь. Поэтому выгода выгоды — лететь без спора за полку и без доплаты, а не «много карманов».",
+  "evidence": [
+   {
+    "quote_id": "Q154",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/6a7946734a336e557ab785c8",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "The best part was that it fit nicely under the seat and I didn’t have to fight for overhead bin space.",
+    "paraphrase_by_tool": "Sienna tote fit under seat on work trip."
+   },
+   {
+    "quote_id": "Q155",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/6a7052292e9aaf1f42bf9376",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "I packed 2 weeks of clothes, tablet, phone & chargers, extension cord, and knitting project all in the one tote",
+    "paraphrase_by_tool": "Fit two weeks of clothes and electronics into one tote."
+   },
+   {
+    "quote_id": "Q156",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/6a686bff66e153e9f5175d20",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "This is my personal item as I am not taking a carry on.",
+    "paraphrase_by_tool": "Uses tote as only travel bag instead of carry-on."
+   },
+   {
+    "quote_id": "Q158",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/6a64ac0c537efdb65f78794f",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "It fits perfectly under the seat without having to lay down and slides effortlessly on the luggage handle.",
+    "paraphrase_by_tool": "Tote fits under plane seat and slides on luggage handle."
+   },
+   {
+    "quote_id": "Q163",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/697275163e85963f641f8f0a",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "The size is perfect to place under the seat when flying especially on low cost airlines with size restrictions.",
+    "paraphrase_by_tool": "Suits budget airline limits."
+   },
+   {
+    "quote_id": "Q164",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/623454c84842703252b2d602",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "It's a perfect solution to downsizing hand luggage limits on budget airlines (nice try Ryanair😃)",
+    "paraphrase_by_tool": "Bag helps stay within budget airline limits; jokes about Ryanair."
+   },
+   {
+    "quote_id": "Q185",
+    "role": "supports",
+    "url": "https://www.mumsnet.com/talk/holidays/5307069-ryan-air-small-bag?reply=143276128",
+    "platform": "mumsnet",
+    "status": "WEB_CONFIRMED",
+    "source_text": "worth it as you get a lot in the bag and you are not stressing about potentially getting a surcharge.",
+    "paraphrase_by_tool": "Exact-size bag removes surcharge worry."
+   },
+   {
+    "quote_id": "Q001",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=J1vwupB-_EU",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "This is my new Nord Dash Sienna Weekender that I got because I want to take it on a trip abroad and I really love it. You can fit this underneath the seat in an airplane which is really important and it just carries so much. Look how fat it is right now because I have it all packed up for the weekend. Just want to show you a couple of things. It's got a little key holder like this. I really like that. And it has a little power station right here so you can charge your phone, which I think is really cool, too. And then on this side of it, it has the little trolley strap that you can stick it over your luggage. And I would show you how that works, except that I didn't bring it with me. So anyway, so you can unzip it here. It's got these little snaps here if you want to make it more compact here. I have it so filled up that I couldn't do that, but as you can see, it holds a lot of stuff. So, I've got my toiletries. I've got a bunch of clothes all wrapped up in here. Just going to take everything out really quick so I can show you what's inside. As you can see, I have a lot of stuff in here. Yummies. It's got a wet bag right here. This is really great cuz if you have a wet bathing suit or something that's really wet and you don't have time to dry it, you can just stick it in there. Then it's got a laptop sleeve right here. So, you can stick a laptop in here. I don't have it with me, but as you can see, it's right here. And what else is it have? It has so many things. This is the power cord that comes out this end. I think that's really neat. It's got like I can show you in here. It's got a little elastic pocket in here that you can stick a water bottle, which is very important. right here. It's got places you could put your credit cards and hope you can see that. Yeah. And there's various other flaps so you could put your cell phone or whatever else you've got in there. And it's just got a ton of room in here. And so I'm really going to like it when I go on my next trip. And it's pretty. It comes in a bunch of different colors. So, if you're looking for a weekender bag, this is nice and soft, you know, so it can squish and fit anywhere. It's not hard and rigid. And so, I think that's important. And then it's got these straps right here. And it's got a little hook so you can hook something on there if you need to. And oh, I hope I'm not missing anything. Oh, it's got a little secret pocket in here. So, it's just got all kinds of little pockets and areas that you can organize all your stuff.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q006",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=J1vwupB-_EU",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "This is my new Nord Dash Sienna Weekender that I got because I want to take it on a trip abroad and I really love it. You can fit this underneath the seat in an airplane which is really important and it just carries so much. Look how fat it is right now because I have it all packed up for the weekend. Just want to show you a couple of things. It's got a little key holder like this. I really like that. And it has a little power station right here so you can charge your phone, which I think is really cool, too. And then on this side of it, it has the little trolley strap that you can stick it over your luggage. And I would show you how that works, except that I didn't bring it with me. So anyway, so you can unzip it here. It's got these little snaps here if you want to make it more compact here. I have it so filled up that I couldn't do that, but as you can see, it holds a lot of stuff. So, I've got my toiletries. I've got a bunch of clothes all wrapped up in here. Just going to take everything out really quick so I can show you what's inside. As you can see, I have a lot of stuff in here. Yummies. It's got a wet bag right here. This is really great cuz if you have a wet bathing suit or something that's really wet and you don't have time to dry it, you can just stick it in there. Then it's got a laptop sleeve right here. So, you can stick a laptop in here. I don't have it with me, but as you can see, it's right here. And what else is it have? It has so many things. This is the power cord that comes out this end. I think that's really neat. It's got like I can show you in here. It's got a little elastic pocket in here that you can stick a water bottle, which is very important. right here. It's got places you could put your credit cards and hope you can see that. Yeah. And there's various other flaps so you could put your cell phone or whatever else you've got in there. And it's just got a ton of room in here. And so I'm really going to like it when I go on my next trip. And it's pretty. It comes in a bunch of different colors. So, if you're looking for a weekender bag, this is nice and soft, you know, so it can squish and fit anywhere. It's not hard and rigid. And so, I think that's important. And then it's got these straps right here. And it's got a little hook so you can hook something on there if you need to. And oh, I hope I'm not missing anything. Oh, it's got a little secret pocket in here. So, it's just got all kinds of little pockets and areas that you can organize all your stuff.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q151",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/6ab0d151ad9d5687e6d21aa1",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "the tote bag inside is fabulous. Beautiful quality and I can now find everything in my bag easily.",
+    "paraphrase_by_tool": "Praises packaging and quality; items easy to locate."
+   },
+   {
+    "quote_id": "Q152",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/6aa19383231d02c49335b900",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "It is a well made tote that looks like it costs much more.",
+    "paraphrase_by_tool": "Grande Siena Pro tote looks pricier; uses instead of suitcase for short trips."
+   },
+   {
+    "quote_id": "Q159",
+    "role": "supports",
+    "url": "https://www.trustpilot.com/reviews/6a6079daea908cf3c537616c",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "Recent train trip from Scotland to Oxford was made so much easier with this tote rather than my backpack.",
+    "paraphrase_by_tool": "Tote more convenient than backpack for train journey."
+   },
+   {
+    "quote_id": "Q165",
+    "role": "counter",
+    "url": "https://www.trustpilot.com/reviews/6aa07623febf4ff4fdcb893c",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "but when willed it does exceed the size on budget airlines for personal item.",
+    "paraphrase_by_tool": "Bag exceeds budget airline personal-item size when full."
+   },
+   {
+    "quote_id": "Q166",
+    "role": "counter",
+    "url": "https://www.trustpilot.com/reviews/6aa07623febf4ff4fdcb893c",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "So, with it popping open airlines are more apt to notice it.",
+    "paraphrase_by_tool": "Snaps popping open make airlines more likely to notice the bag."
+   },
+   {
+    "quote_id": "Q162",
+    "role": "counter",
+    "url": "https://www.trustpilot.com/reviews/6ab6bd4cd76654e82421094f",
+    "platform": "trustpilot",
+    "status": "WEB_CONFIRMED",
+    "source_text": "The bag is too big to be putting under the seat on the plane",
+    "paraphrase_by_tool": "Bag too large for under-seat; wished to swap for smaller."
+   },
+   {
+    "quote_id": "Q178",
+    "role": "counter",
+    "url": "https://www.mumsnet.com/talk/_chat/5292698-ryan-air-debate?reply=142798013",
+    "platform": "mumsnet",
+    "status": "WEB_CONFIRMED",
+    "source_text": "I use a Longchamp le pliage and it fits masses inside and goes easily under the seat.",
+    "paraphrase_by_tool": "Longchamp Le Pliage holds a lot and fits under seat."
+   },
+   {
+    "quote_id": "Q181",
+    "role": "counter",
+    "url": "https://www.mumsnet.com/talk/holidays/5307069-ryan-air-small-bag?reply=143273491",
+    "platform": "mumsnet",
+    "status": "WEB_CONFIRMED",
+    "source_text": "Unless your laptop is very small I'd be surprised if it fits in the under seat sized bag.",
+    "paraphrase_by_tool": "Doubts laptop fits under-seat bag; paid for cabin case."
+   },
+   {
+    "quote_id": "Q186",
+    "role": "counter",
+    "url": "https://www.mumsnet.com/talk/holidays/5307069-ryan-air-small-bag?reply=143276134",
+    "platform": "mumsnet",
+    "status": "WEB_CONFIRMED",
+    "source_text": "Decathlon sell one to the exact dimensions for about £6",
+    "paraphrase_by_tool": "Decathlon exact-size bag about £6."
+   }
+  ]
+ },
+ {
+  "id": "I04",
+  "statement": "Люди постоянно видят рекламу Nordace и именно поэтому ей не верят («выглядит слишком хорошо, чтобы быть правдой»), идут искать честный обзор и покупают, когда видят живую проверку обещания из рекламы. Поэтому сам сюжет «скептик пытается разоблачить сумку и проигрывает» снимает главную тревогу.",
+  "evidence": [
+   {
+    "quote_id": "Q022",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=Ugx_CtsyeTIaSh08CTB4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Thank you Olivia for this great video - it was so helpful. In fact I also constantly stumbled over those Nordace bag ads in IG. And as the bags look like the one I am looking for I was thinking about getting me one. What made me hesitate was the fact that the bag is being manufactured in Hong Kong or China and I am trying to support our locals. But after having watched your video now I know that I better keep my hands of this stuff. Thanks a lot. You did a superb job and saved my a lot of money. Stay safe and healthy. greetings 👋🏻",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q024",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=UgwL4W_iVd6mII5z5KB4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "This was perfect. I'm getting the ads for this on Twitter all the time, so I wondered how good this backpack is. Thanks.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q212",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=TC1rq6sak_8&lc=UgyRYE5cIe2JFMJmGtR4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "I've been seeing Nordace ads on my social media and been thinking for a while whether should I risk buying online or not, this has been very helpful! Thanks for the great  and honest review!",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q209",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=TC1rq6sak_8",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "today we are doing a norday Sienna backpack review I've had this bag over a year and I thought it's time I really shared my opinions on it so let's talk about the design so first of all it is described online it's been like a Sleek modern backpack that's perfect for like everyday use I mean I have to agree the design is absolutely beautiful that's why I got it in the first place I actually got this bag because someone I knew had it and they came to my house with it and I thought it was absolutely beautiful so I had to buy it now when I went on their website though only for the fact that I knew someone had the bag I don't think that it got it I don't know why but it was one of those websites I was like it's too perfect it makes the bag sound too great it doesn't sound legit but I'm so glad I got the bag I'm gonna tell you why so we've all seen the norades America in videos where they fit everything from your whole house including your kitchen sink into this bag we've all seen them and I have to say that was one of the things that made me want it but I'm not a good Packer so I generally just throw everything into the bag it's a mess and then it doesn't fit that much in because I haven't packed it properly so I've never fully tested if it fits all the stuff that it says in the ad but I've always had my doubts when I try and fit everything from the ad into the bag I took over the video again to see ducky what they had in it they had a couple of bits of clothes now they had packing cubes I don't have packing cubes nowadays if you want to send me some packing cubes I absolutely won't say no so yeah hit me up hear me on because they had a laptop chargers phone stuff it looked like a little packet like a little accessories of like makeup and like toiletry things they had a few books a water bottle and a phone charger now one of the great features of this backpack is it actually has a charging port on the outside so you can put your phone charger in the inside and charge your bag as you're walking around I've had it over here and I've never used that feature so we're gonna try it right now let me take out my charging pack that I've never used in my whole entire life thank you Elizabeth probably should have done this before I started the video so there's basically like a wire inside the bag that you plug this into why does it never work the first way so you can slot that into the bag there's a little pocket for the charger to go and then I'm very excited to see if this works there's a USB here on the side of the bag and you plug your phone in so as you're walking around with your backpack on you're able to use your phone I feel like I should insert a clip of this insert clip now very handy I've never seen a backpack with that before so I do like it so that's one thing in we have the the charger in I'm gonna put my laptop in first because I feel like if you pack it too much I've noticed it bulks out the back and then the laptop doesn't fit so my laptop's fa",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q213",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=TC1rq6sak_8&lc=UgxljjVcrfIo35SR9SN4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "I've just stumbled of one of their back to school ads on instagram and got curious as i find the design very appealing so this video has been extremely useful! I wasn't quite sure of how much of the ad held true as instagram ads generally don't have a good track record with that but i'm sold! Especially with the green or blue variants, next bag i buy will definitely be this one, i'll keep it for many years as a general purpose bag that i can also take while traveling. Thanks a lot!",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q219",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=01o941K9GTg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "so today what I wanted to do was I wanted&nbsp; to give you a after the fact kind of review&nbsp;&nbsp; of my nordace sienna bag because I was&nbsp; so excited when I got it in the mail&nbsp;&nbsp; um I saw these videos I kind of stocked them&nbsp; for a couple years it was a little bit more&nbsp;&nbsp; than I wanted to spend on a backpack and&nbsp; that's why I didn't buy it forever but I&nbsp;&nbsp; love this backpack so um I have used it&nbsp; I've gone into plane trips with just this&nbsp;&nbsp; um so I feel like I've used it to kind of it's&nbsp; full extent because I didn't bring a suitcase I&nbsp;&nbsp; put everything in here and just as they promised&nbsp; everything that they said would fit into this bag&nbsp;&nbsp; did fit and I'll show you that video I'll post&nbsp; the link below because I did do that video of all&nbsp;&nbsp; the stuff that fits in this bag but I just want to&nbsp; give you a quick recap of how I feel about it if I&nbsp;&nbsp; still am in love with it after all those a couple&nbsp; trips so first of all I want to show you like one&nbsp;&nbsp; of the great things about this is like it has so&nbsp; many pockets in organization and I am an organizer&nbsp;&nbsp; so I like to have everything in its in its place&nbsp; and even within the pockets there's pockets and&nbsp;&nbsp; um you go in the front pocket there's a back&nbsp; pocket here which is uh the front pocket&nbsp;&nbsp; actually is waterproof so you can put all of your&nbsp; toiletries and things in there and there's more&nbsp;&nbsp; Pockets so many pockets the back one is really&nbsp; just for a laptop and again one of the really&nbsp;&nbsp; the only downsides is this just does not feel&nbsp; that secure so I do use a laptop case here but&nbsp;&nbsp; I really only two things that I didn't like about&nbsp; this bag so I wanted to talk about those it really&nbsp;&nbsp; wasn't this because I do feel like I can extra&nbsp; pad my my computer that's fine the two things I&nbsp;&nbsp; did not like about this pad not bad one thing this&nbsp; hook just feels really really flimsy and for this&nbsp;&nbsp; super high quality bag it's just so surprising to&nbsp; me that they would just put a little strip on here&nbsp;&nbsp; and maybe I'm wrong because it hasn't broken and&nbsp; that's fine but I want to show you what it kind&nbsp;&nbsp; of looks like when I hang it up with a lot of&nbsp; weight in it because it just it feels like it's&nbsp;&nbsp; going to tear off at any moment and when you're&nbsp; in a bathroom or something and you're hanging&nbsp;&nbsp; it up you are just praying that it's not gonna&nbsp; fall and it gets all over that bathroom floor&nbsp;&nbsp; in the airport because you know that would be&nbsp; kind of disgusting so that was one of the two&nbsp;&nbsp; things I did not like about this bag you look&nbsp; really closely I just put a bunch of books in&nbsp;&nbsp; here to kind of show you what it's like when it's&nbsp; full but I feel like the threads are comi",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q220",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=01o941K9GTg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "so today what I wanted to do was I wanted&nbsp; to give you a after the fact kind of review&nbsp;&nbsp; of my nordace sienna bag because I was&nbsp; so excited when I got it in the mail&nbsp;&nbsp; um I saw these videos I kind of stocked them&nbsp; for a couple years it was a little bit more&nbsp;&nbsp; than I wanted to spend on a backpack and&nbsp; that's why I didn't buy it forever but I&nbsp;&nbsp; love this backpack so um I have used it&nbsp; I've gone into plane trips with just this&nbsp;&nbsp; um so I feel like I've used it to kind of it's&nbsp; full extent because I didn't bring a suitcase I&nbsp;&nbsp; put everything in here and just as they promised&nbsp; everything that they said would fit into this bag&nbsp;&nbsp; did fit and I'll show you that video I'll post&nbsp; the link below because I did do that video of all&nbsp;&nbsp; the stuff that fits in this bag but I just want to&nbsp; give you a quick recap of how I feel about it if I&nbsp;&nbsp; still am in love with it after all those a couple&nbsp; trips so first of all I want to show you like one&nbsp;&nbsp; of the great things about this is like it has so&nbsp; many pockets in organization and I am an organizer&nbsp;&nbsp; so I like to have everything in its in its place&nbsp; and even within the pockets there's pockets and&nbsp;&nbsp; um you go in the front pocket there's a back&nbsp; pocket here which is uh the front pocket&nbsp;&nbsp; actually is waterproof so you can put all of your&nbsp; toiletries and things in there and there's more&nbsp;&nbsp; Pockets so many pockets the back one is really&nbsp; just for a laptop and again one of the really&nbsp;&nbsp; the only downsides is this just does not feel&nbsp; that secure so I do use a laptop case here but&nbsp;&nbsp; I really only two things that I didn't like about&nbsp; this bag so I wanted to talk about those it really&nbsp;&nbsp; wasn't this because I do feel like I can extra&nbsp; pad my my computer that's fine the two things I&nbsp;&nbsp; did not like about this pad not bad one thing this&nbsp; hook just feels really really flimsy and for this&nbsp;&nbsp; super high quality bag it's just so surprising to&nbsp; me that they would just put a little strip on here&nbsp;&nbsp; and maybe I'm wrong because it hasn't broken and&nbsp; that's fine but I want to show you what it kind&nbsp;&nbsp; of looks like when I hang it up with a lot of&nbsp; weight in it because it just it feels like it's&nbsp;&nbsp; going to tear off at any moment and when you're&nbsp; in a bathroom or something and you're hanging&nbsp;&nbsp; it up you are just praying that it's not gonna&nbsp; fall and it gets all over that bathroom floor&nbsp;&nbsp; in the airport because you know that would be&nbsp; kind of disgusting so that was one of the two&nbsp;&nbsp; things I did not like about this bag you look&nbsp; really closely I just put a bunch of books in&nbsp;&nbsp; here to kind of show you what it's like when it's&nbsp; full but I feel like the threads are comi",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q221",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=01o941K9GTg&lc=UgxHelwlpgzkyBLR0mF4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Finally, an honest review about this bag. I only find reviews that sound like advertisements",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q017",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "[Music] hi and welcome back to my channel today we'll be looking at none of this siena park park now if you're like me and you constantly look for new bags on life then you've probably been shown the adven orbits on Instagram the bag looks really good in the ad and the girl in it seems to put so much stuff inside it's nearly impossible so in this video we're gonna try and replicate the ad and see if all that stuff she pulls out of the backpack can actually fit in it or was it just clever editing but first we're gonna look at the bag itself so if you're only interested in the test then jump to this time of the video I don't mind skip forward that's fine but I am going to look at the bag itself first so my first impression when it came in post was it's not as nice as it was in all these videos and on the website I mean I think it's mainly fact that the zips are showing so much of the fabric that's attached to the zips if you know what I mean it doesn't feel as premium as it seems in the adverts the public feels good quality ball with the zips it doesn't look very good if you know what I mean maybe it's just my personal preference the leathery I'm not sure if it's real leather but that leathery logo looks really good same with the handle with justice it's that I'm very disappointed with on the front you've got this pocket that is accessed from both sides and you've got quite a large room in there and there's a nice little please pocket for your sunglasses your glasses which is very handy moving on to the main compartment there is so much going on in there there's so many little pockets and compartments and you can organize you stuff quite easily because there's so many different compartments and the fact that the body's a rectangle makes it easy to park you know when you've got about that's rounded at the top and then you put things inside and then the top is kind of useless space but because this is rectangle it's so much easier to pack and it also has so much you put your power bank and then on the outside of the bag is better port which you can charge your phone or camera or whatever from which is quite unique there isn't many bugs out there with this picture and I think one of the biggest selling points for them moving on to the back of the bag you've got the padded laptop sleeve to be honest it doesn't feel as secure as I would like it's not that stiff you know I mean it's a bit and soft and you can bend it easily so maybe if you're going to produce about your laptop maybe put it in a sleep and then put it inside this sleeve because mm I wouldn't really trust it I mean I would be very careful with the bag when placing it down if my laptop was in it because it's not as secure as I would like it to be then we've got a little strap at the back which allows you to put it on top of your trolley bag and then behind it you've got a little hidden zipped pocket what they usually do you all have those they put a passport in and things like that but you d",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q019",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "[Music] hi and welcome back to my channel today we'll be looking at none of this siena park park now if you're like me and you constantly look for new bags on life then you've probably been shown the adven orbits on Instagram the bag looks really good in the ad and the girl in it seems to put so much stuff inside it's nearly impossible so in this video we're gonna try and replicate the ad and see if all that stuff she pulls out of the backpack can actually fit in it or was it just clever editing but first we're gonna look at the bag itself so if you're only interested in the test then jump to this time of the video I don't mind skip forward that's fine but I am going to look at the bag itself first so my first impression when it came in post was it's not as nice as it was in all these videos and on the website I mean I think it's mainly fact that the zips are showing so much of the fabric that's attached to the zips if you know what I mean it doesn't feel as premium as it seems in the adverts the public feels good quality ball with the zips it doesn't look very good if you know what I mean maybe it's just my personal preference the leathery I'm not sure if it's real leather but that leathery logo looks really good same with the handle with justice it's that I'm very disappointed with on the front you've got this pocket that is accessed from both sides and you've got quite a large room in there and there's a nice little please pocket for your sunglasses your glasses which is very handy moving on to the main compartment there is so much going on in there there's so many little pockets and compartments and you can organize you stuff quite easily because there's so many different compartments and the fact that the body's a rectangle makes it easy to park you know when you've got about that's rounded at the top and then you put things inside and then the top is kind of useless space but because this is rectangle it's so much easier to pack and it also has so much you put your power bank and then on the outside of the bag is better port which you can charge your phone or camera or whatever from which is quite unique there isn't many bugs out there with this picture and I think one of the biggest selling points for them moving on to the back of the bag you've got the padded laptop sleeve to be honest it doesn't feel as secure as I would like it's not that stiff you know I mean it's a bit and soft and you can bend it easily so maybe if you're going to produce about your laptop maybe put it in a sleep and then put it inside this sleeve because mm I wouldn't really trust it I mean I would be very careful with the bag when placing it down if my laptop was in it because it's not as secure as I would like it to be then we've got a little strap at the back which allows you to put it on top of your trolley bag and then behind it you've got a little hidden zipped pocket what they usually do you all have those they put a passport in and things like that but you d",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q025",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=UgyGv1NsZTQahVh69qJ4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Darn. I shoulda looked for this video before I ordered mine! I just got the bag in the mail today. I was excited to get it. But like you feel that it lacks the same level of “posh” than what is showed on IG.  I guess I will see how it works out on my next trip.  Only thing - My travel water bottle (a Brita) doesn’t fit in the pocket and the bag is empty... so I am Bummed. 🙁",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q050",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=Ugx3I-pGmz3X77SpK9h4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Really appreciate you replicating the ad packing, that was fantastic to see tested",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q016",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=J1vwupB-_EU&lc=Ugz5hmy5b6AzGLb6mSh4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Nice review from a genuine person. Believable.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q032",
+    "role": "supports",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=UgyiM0rkv7RG9KdHp014AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Mine is in the light colour and the zips do not show that much. ALSO I think the wide zips are the point! That’s how the backpack expands... \nIt was a Christmas gift to my picky husband who absolutely loves it... \nPRE COVID 19, when we travelled a lot, this back pack was a booooon! \nWe also have a couple of the cubes, which are truly great and do the job! Thanks Nordace! \n( disclaimer: My comment reflects my opinion and I am not sponsored in any way 😀)",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q037",
+    "role": "counter",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=UgxvUa_hgtcctX0NOi14AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Really useful and wonderful review. Now I will not buy the bag thanks to your excellent critical review.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q133",
+    "role": "counter",
+    "url": "https://www.youtube.com/watch?v=LE07jM5rB-U&lc=UgxQUYA3tqCXQiEgrkx4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Thank you for mentioning the broken zip problem. I think I will look for other bags after watching your review.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q134",
+    "role": "counter",
+    "url": "https://www.youtube.com/watch?v=LE07jM5rB-U&lc=Ugz-v5yb6QMi-_Hb1dx4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "thanks, that sold it, not getting it lol looks pretty cheap well  well and the zippers yuupp lol",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q028",
+    "role": "counter",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=UgxC3nrArKXy-o_A9A94AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Sooo many thanks. I just got mesmerized by the nude Siena and was considering to buy one... after this video I'm not so much in a hurry. Very important question: can they be machine washed? Many thanks!",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q041",
+    "role": "counter",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=UgzaaXo-9EQXX0fu39R4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "At Monica Olivia,thanks for your honest constructive review on Nordace,I made the final right decision NOT to buy Nordace…got turned off by them not using durable high quality YKK zippers👎👎👎…I just bought Modern Dayfarer backpack instead,as they offer a really honest,reliable review… very posh,elegant,so many fab features👌👌👌.. am just awaiting for the delivery early next week.",
+    "paraphrase_by_tool": ""
+   },
+   {
+    "quote_id": "Q023",
+    "role": "counter",
+    "url": "https://www.youtube.com/watch?v=LF_ZmTk2TgM&lc=Ugx_CtsyeTIaSh08CTB4AaABAg",
+    "platform": "youtube",
+    "status": "VERBATIM",
+    "source_text": "Thank you Olivia for this great video - it was so helpful. In fact I also constantly stumbled over those Nordace bag ads in IG. And as the bags look like the one I am looking for I was thinking about getting me one. What made me hesitate was the fact that the bag is being manufactured in Hong Kong or China and I am trying to support our locals. But after having watched your video now I know that I better keep my hands of this stuff. Thanks a lot. You did a superb job and saved my a lot of money. Stay safe and healthy. greetings 👋🏻",
+    "paraphrase_by_tool": ""
+   }
+  ]
+ }
+]
