@@ -22,6 +22,7 @@ Then:
   check-insights  strength of each insight from its quotes and counter-searches (the script decides, not the model)
   packet          source texts for an independent auditor agent
   export          rows for the Google Sheet tabs VOC, Источники, Запросы
+  stage           record or show which stages the user approved (the skill waits for approval after each)
 
 Usage: python3 voc.py --project-dir research/<ID> <command> ...
 """
@@ -812,6 +813,42 @@ def cmd_export(a):
     print(json.dumps(([header] if a.header else []) + rows, ensure_ascii=False))
 
 
+STAGES = ["Вопрос, бриф и план сбора", "Правда о продукте", "Сбор голоса покупателя", "Разметка и кластеры",
+          "Конкуренты и форматы", "Анализ и инсайты", "Персоны и речь", "Сообщение и концепты", "Хуки",
+          "Приоритеты и тест", "Скрипт и бриф", "После запуска"]
+
+
+def cmd_stage(a):
+    """Without --n: print the stage log. With --n and --status: record it (review / approved / redo / skipped)."""
+    P = Project(a.project_dir)
+    path = P.dir / "project.json"
+    meta = P.meta()
+    log = meta.setdefault("stages", {})
+    if a.n is not None:
+        if not 0 <= a.n < len(STAGES):
+            raise SystemExit(f"stage must be 0..{len(STAGES) - 1}")
+        if not a.status:
+            raise SystemExit("--status is required with --n")
+        entry = log.setdefault(str(a.n), {"history": []})
+        entry.update({"status": a.status, "at": now_iso()})
+        entry["history"].append({"status": a.status, "at": now_iso(), "note": a.note})
+        if a.note:
+            entry["note"] = a.note
+        path.write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    for i, name in enumerate(STAGES):
+        e = log.get(str(i), {})
+        print(f"{i:2} {name:28} {e.get('status', '-'):9} {e.get('at', '')[:16]} {e.get('note', '')}")
+    approved = [int(k) for k, v in log.items() if v.get("status") == "approved"]
+    pending = [int(k) for k, v in log.items() if v.get("status") in ("review", "redo")]
+    if pending:
+        print(f"waiting for the user: stage {min(pending)}")
+    elif approved:
+        nxt = max(approved) + 1
+        print(f"next: stage {nxt} {STAGES[nxt]}" if nxt < len(STAGES) else "all stages approved")
+    else:
+        print("next: stage 0")
+
+
 # ---------- cli ----------
 
 def main():
@@ -944,6 +981,12 @@ def main():
     p.add_argument("--header", action="store_true")
     p.add_argument("--used-only", action="store_true", help="sources: only groups that gave quotes")
     p.set_defaults(func=cmd_export)
+
+    p = sub.add_parser("stage")
+    p.add_argument("--n", type=int)
+    p.add_argument("--status", choices=["review", "approved", "redo", "skipped"])
+    p.add_argument("--note", default="")
+    p.set_defaults(func=cmd_stage)
 
     a = ap.parse_args()
     a.func(a)
