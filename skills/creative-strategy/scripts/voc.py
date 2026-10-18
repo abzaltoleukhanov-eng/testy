@@ -58,11 +58,24 @@ STRONG = {"VERBATIM", "BROWSER", "USER", "WEB_CONFIRMED"}
 # Thresholds for check-insights. An insight is CONFIRMED only with all of them.
 CONFIRMED = {"quotes": 5, "groups": 3, "authors": 5, "platforms_or_groups": (2, 4), "strong_quotes": 3,
              "counter_search": 1}
+
+# Who is speaking. Each quote carries it; insights count only the speakers that can support their kind.
+SPEAKERS = {"OUR_SKU": "наш SKU", "OUR_BRAND": "наш бренд", "COMPETITOR": "конкурент", "CATEGORY": "категория",
+            "ALTERNATIVE": "альтернатива"}
+RELATIONS = {"OWNER": "владеет", "SHOPPER": "выбирает", "NON_BUYER": "отказался / обходится", "UNKNOWN": "не ясно"}
+# kind -> (speakers whose quotes count, thresholds that replace CONFIRMED for this kind)
+INSIGHT_KINDS = {
+    "PATTERN": (set(SPEAKERS), {}),                       # mass pain / desire / behaviour: any layer, not ours only
+    "PRODUCT": ({"OUR_SKU"}, {"quotes": 3, "groups": 2, "authors": 3, "strong_quotes": 2}),
+    "BRAND": ({"OUR_SKU", "OUR_BRAND"}, {"quotes": 3, "groups": 2, "authors": 3, "strong_quotes": 2}),
+    "COMPETITOR_GAP": ({"COMPETITOR"}, {}),               # what competitors' buyers miss: their buyers only
+    "BARRIER": ({"ALTERNATIVE", "CATEGORY", "COMPETITOR", "OUR_BRAND", "OUR_SKU"}, {}),  # why people don't buy
+}
 FRESH_MONTHS = 24
 
 VOC_COLUMNS = ["ID", "Цитата (оригинал)", "Перевод", "Тип", "Тема", "Персона", "Эмоция", "Кластер", "Сила",
                "Рынок", "Площадка", "Источник ID", "URL", "Дата", "Рейтинг", "Статус проверки",
-               "Что сделал человек", "Автор (ключ)"]
+               "Что сделал человек", "Автор (ключ)", "Кто говорит", "Бренд", "Отношение к продукту"]
 SOURCE_COLUMNS = ["ID", "Площадка", "Название / тред", "URL", "Рынок", "Тип", None, "Как получено",
                   "Статус", "Текстов сохранено", "Запрос", "Дата сбора"]
 QUERY_COLUMNS = ["ID", "Дата", "Площадка", "Маршрут", "Запрос", "Ветка", "Тон", "Этап пути", "Почему (находка)",
@@ -598,6 +611,12 @@ def cmd_add_quotes(a):
             why = f"type must be one of {QUOTE_TYPES}"
         elif it.get("action", "") not in ACTIONS:
             why = f"action must be one of {ACTIONS}"
+        elif it.get("speaker") not in SPEAKERS:
+            why = f"speaker must be one of {list(SPEAKERS)}"
+        elif it["speaker"] == "COMPETITOR" and not (it.get("brand") or "").strip():
+            why = "brand is required for a COMPETITOR speaker (which competitor)"
+        elif it.get("relation", "UNKNOWN") not in RELATIONS:
+            why = f"relation must be one of {list(RELATIONS)}"
         elif (s["id"], norm(it["quote"])) in seen:
             why = "duplicate"
         if why:
@@ -612,7 +631,9 @@ def cmd_add_quotes(a):
                    "market": it.get("market") or groups[s["group"]].get("market", ""),
                    "platform": s["platform"], "url": s["url"], "date": s.get("date", ""),
                    "rating": s.get("rating"), "status": s["status"], "action": it.get("action", ""),
-                   "author_key": s.get("author_key", ""), "note": it.get("note", ""), "added_at": now_iso()})
+                   "author_key": s.get("author_key", ""), "speaker": it["speaker"],
+                   "brand": (it.get("brand") or ("Nordace" if it["speaker"].startswith("OUR_") else "")).strip(),
+                   "relation": it.get("relation", "UNKNOWN"), "note": it.get("note", ""), "added_at": now_iso()})
     append_jsonl(P.voc, ok)
     print(f"added {len(ok)} quotes" + (f" ({ok[0]['id']}..{ok[-1]['id']})" if ok else "") + f", rejected {len(rejected)}")
     for i, src, why, q in rejected:
@@ -631,6 +652,10 @@ def cmd_retag(a):
         c = changes.get(q["id"])
         if not c:
             continue
+        if "speaker" in c and c["speaker"] not in SPEAKERS:
+            raise SystemExit(f"{q['id']}: speaker must be one of {list(SPEAKERS)}")
+        if "relation" in c and c["relation"] not in RELATIONS:
+            raise SystemExit(f"{q['id']}: relation must be one of {list(RELATIONS)}")
         for k, v in c.items():
             if k in ("id", "quote", "source", "url", "status", "group"):
                 continue
@@ -656,7 +681,23 @@ def quote_strength(qs, groups):
     platforms = {q["platform"] for q in qs}
     strong = sum(1 for q in qs if q["status"] in STRONG)
     return {"quotes": len(qs), "groups": len(gset), "authors": len(authors), "platforms": len(platforms),
-            "strong": strong, "platform_list": sorted(platforms)}
+            "strong": strong, "platform_list": sorted(platforms), "speakers": speaker_mix(qs)}
+
+
+SHORT = {"OUR_SKU": "sku", "OUR_BRAND": "brand", "COMPETITOR": "comp", "CATEGORY": "cat", "ALTERNATIVE": "alt"}
+
+
+def speaker_mix(qs):
+    mix = {}
+    for q in qs:
+        k = q.get("speaker") or "UNTAGGED"
+        mix[k] = mix.get(k, 0) + 1
+    return mix
+
+
+def mix_text(mix):
+    order = list(SPEAKERS) + ["UNTAGGED"]
+    return " ".join(f"{SHORT.get(k, '?')}{mix[k]}" for k in order if mix.get(k))
 
 
 def cmd_stats(a):
@@ -676,6 +717,23 @@ def cmd_stats(a):
     old = [q for q in voc if (months_old(q.get("date")) or 0) > FRESH_MONTHS]
     print(f"Older than {FRESH_MONTHS} months: {len(old)} of {len(voc)}")
 
+    mix = speaker_mix(voc)
+    if voc:
+        print("Who speaks: " + ", ".join(f"{SPEAKERS.get(k, 'без пометки')} {v} ({v * 100 // len(voc)}%)"
+                                          for k, v in sorted(mix.items(), key=lambda x: -x[1])))
+        missing = [SPEAKERS[k] for k in SPEAKERS if mix.get(k, 0) < max(3, len(voc) // 20)]
+        if missing:
+            print("  thin layers (fewer than 5% or 3 quotes): " + ", ".join(missing) +
+                  " -> offer the user to collect more there or name the gap")
+        brands = {}
+        for q in voc:
+            if q.get("speaker") == "COMPETITOR":
+                brands[q.get("brand", "?")] = brands.get(q.get("brand", "?"), 0) + 1
+        if brands:
+            print("  competitor buyers by brand: " + ", ".join(f"{b} {n}" for b, n in sorted(brands.items(), key=lambda x: -x[1])))
+        if mix.get("UNTAGGED"):
+            print(f"  {mix['UNTAGGED']} quotes have no speaker: retag them")
+
     pol = {}
     for q in queries:
         pol.setdefault(q.get("branch") or "-", set()).add(q.get("polarity") or "-")
@@ -688,12 +746,12 @@ def cmd_stats(a):
     clusters = {}
     for q in voc:
         clusters.setdefault(q.get("cluster") or "(none)", []).append(q)
-    print("\nCluster | quotes | independent threads | authors | platforms | strong | types")
+    print("\nCluster | quotes | independent threads | authors | platforms | strong | who speaks | types")
     for c, qs in sorted(clusters.items(), key=lambda x: -quote_strength(x[1], groups)["groups"]):
         st = quote_strength(qs, groups)
         types = sorted({q["type"] for q in qs})
         print(f"{c:8} | {st['quotes']:3} | {st['groups']:3} | {st['authors']:3} | {','.join(st['platform_list'])} | "
-              f"{st['strong']:3} | {','.join(types)}")
+              f"{st['strong']:3} | {mix_text(st['speakers'])} | {','.join(types)}")
     personas = {}
     for q in voc:
         personas[q.get("persona") or "(none)"] = personas.get(q.get("persona") or "(none)", 0) + 1
@@ -716,8 +774,10 @@ def cmd_stats(a):
 
 
 def cmd_check_insights(a):
-    """insights.json: [{"id": "I01", "statement": "...", "quotes": ["Q001", ...], "counter_quotes": [...],
-    "counter_queries": ["SQ014", ...]}]. Prints a verdict per insight; the model copies it to the Sheet as is."""
+    """insights.json: [{"id": "I01", "kind": "PATTERN", "statement": "...", "quotes": ["Q001", ...],
+    "counter_quotes": [...], "counter_queries": ["SQ014", ...]}]. kind: PATTERN (default), PRODUCT, BRAND,
+    COMPETITOR_GAP, BARRIER. Only quotes from the speakers that can support the kind are counted.
+    Prints a verdict per insight; the model copies it to the Sheet as is."""
     P = Project(a.project_dir)
     voc = {q["id"]: q for q in read_jsonl(P.voc)}
     queries = {q["id"]: q for q in read_jsonl(P.queries)}
@@ -725,34 +785,51 @@ def cmd_check_insights(a):
     out = []
     for ins in load_payload(a.payload):
         missing = [x for x in ins.get("quotes", []) + ins.get("counter_quotes", []) if x not in voc]
-        qs = [voc[x] for x in ins.get("quotes", []) if x in voc]
+        kind = ins.get("kind", "PATTERN")
+        if kind not in INSIGHT_KINDS:
+            raise SystemExit(f"{ins['id']}: kind must be one of {list(INSIGHT_KINDS)}")
+        allowed, override = INSIGHT_KINDS[kind]
+        th = dict(CONFIRMED, **override)
+        cited = [voc[x] for x in ins.get("quotes", []) if x in voc]
+        qs = [q for q in cited if q.get("speaker") in allowed]
+        not_counted = [q["id"] for q in cited if q.get("speaker") not in allowed]
         st = quote_strength(qs, groups) if qs else {"quotes": 0, "groups": 0, "authors": 0, "platforms": 0,
-                                                    "strong": 0, "platform_list": []}
+                                                    "strong": 0, "platform_list": [], "speakers": {}}
         cq = [x for x in ins.get("counter_queries", []) if x in queries]
         gaps = []
-        if st["quotes"] < CONFIRMED["quotes"]:
-            gaps.append(f"quotes {st['quotes']}<{CONFIRMED['quotes']}")
-        if st["groups"] < CONFIRMED["groups"]:
-            gaps.append(f"independent threads {st['groups']}<{CONFIRMED['groups']}")
-        if st["authors"] < CONFIRMED["authors"]:
-            gaps.append(f"authors {st['authors']}<{CONFIRMED['authors']}")
-        p_min, g_alt = CONFIRMED["platforms_or_groups"]
-        if st["platforms"] < p_min and st["groups"] < g_alt:
+        if not_counted:
+            gaps.append(f"not counted for {kind} (wrong speaker): " + ",".join(not_counted))
+        if st["quotes"] < th["quotes"]:
+            gaps.append(f"quotes {st['quotes']}<{th['quotes']}")
+        if st["groups"] < th["groups"]:
+            gaps.append(f"independent threads {st['groups']}<{th['groups']}")
+        if st["authors"] < th["authors"]:
+            gaps.append(f"authors {st['authors']}<{th['authors']}")
+        p_min, g_alt = th["platforms_or_groups"]
+        if kind in ("PATTERN", "BARRIER", "COMPETITOR_GAP") and st["platforms"] < p_min and st["groups"] < g_alt:
             gaps.append(f"one platform needs >= {g_alt} threads")
-        if st["strong"] < CONFIRMED["strong_quotes"]:
-            gaps.append(f"verbatim/confirmed quotes {st['strong']}<{CONFIRMED['strong_quotes']}")
+        if st["strong"] < th["strong_quotes"]:
+            gaps.append(f"verbatim/confirmed quotes {st['strong']}<{th['strong_quotes']}")
+        if kind == "PATTERN" and qs and set(st["speakers"]) <= {"OUR_SKU", "OUR_BRAND"}:
+            gaps.append("only our own buyers: a mass pattern needs category, competitor or alternative voices too")
+        if kind == "COMPETITOR_GAP":
+            brands = {q.get("brand") for q in qs}
+            if len(brands) < 2:
+                gaps.append(f"competitor brands {len(brands)}<2: one brand's flaw is not a category gap")
         if len(cq) < CONFIRMED["counter_search"]:
             gaps.append("no counter-search logged")
         if missing:
             gaps.append("unknown ids: " + ",".join(missing))
         verdict = "ПОДТВЕРЖДЁН" if not gaps else ("ГИПОТЕЗА" if st["groups"] < 2 else "СЛАБЫЙ")
-        out.append({"id": ins["id"], "verdict": verdict, **{k: v for k, v in st.items() if k != "platform_list"},
-                    "platforms_list": st["platform_list"], "counter_quotes": len(ins.get("counter_quotes", [])),
-                    "counter_queries": len(cq), "gaps": gaps})
+        out.append({"id": ins["id"], "kind": kind, "verdict": verdict,
+                    **{k: v for k, v in st.items() if k not in ("platform_list", "speakers")},
+                    "platforms_list": st["platform_list"], "who_speaks": mix_text(speaker_mix(cited)),
+                    "counter_quotes": len(ins.get("counter_quotes", [])), "counter_queries": len(cq), "gaps": gaps})
     for r in out:
-        print(f"{r['id']}: {r['verdict']}  quotes={r['quotes']} threads={r['groups']} authors={r['authors']} "
-              f"platforms={','.join(r['platforms_list'])} strong={r['strong']} counter_quotes={r['counter_quotes']} "
-              f"counter_searches={r['counter_queries']}" + (f"\n    gaps: {'; '.join(r['gaps'])}" if r["gaps"] else ""))
+        print(f"{r['id']} [{r['kind']}]: {r['verdict']}  quotes={r['quotes']} threads={r['groups']} authors={r['authors']} "
+              f"platforms={','.join(r['platforms_list'])} strong={r['strong']} who={r['who_speaks']} "
+              f"counter_quotes={r['counter_quotes']} counter_searches={r['counter_queries']}"
+              + (f"\n    gaps: {'; '.join(r['gaps'])}" if r["gaps"] else ""))
     if a.json:
         Path(a.json).write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
 
@@ -772,9 +849,11 @@ def cmd_packet(a):
                     continue
                 s = sources.get(q["source"], {})
                 items.append({"quote_id": x, "role": role, "url": q["url"], "platform": q["platform"],
+                              "speaker": SPEAKERS.get(q.get("speaker"), ""), "brand": q.get("brand", ""),
                               "status": q["status"], "source_text": s.get("text", "")[:3000],
                               "paraphrase_by_tool": s.get("paraphrase", "")})
-        packet.append({"id": ins["id"], "statement": ins["statement"], "evidence": items})
+        packet.append({"id": ins["id"], "kind": ins.get("kind", "PATTERN"), "statement": ins["statement"],
+                       "evidence": items})
     print(json.dumps(packet, ensure_ascii=False, indent=1))
 
 
@@ -787,7 +866,8 @@ def cmd_export(a):
     if a.tab == "voc":
         rows = [[q["id"], q["quote"], q["translation"], q["type"], q["theme"], q["persona"], q["emotion"],
                  q["cluster"], q["strength"], q["market"], q["platform"], q["group"], q["url"], q["date"],
-                 q["rating"] if q.get("rating") is not None else "", q["status"], q["action"], q["author_key"]]
+                 q["rating"] if q.get("rating") is not None else "", q["status"], q["action"], q["author_key"],
+                 SPEAKERS.get(q.get("speaker"), ""), q.get("brand", ""), RELATIONS.get(q.get("relation"), "")]
                 for q in voc]
         header = VOC_COLUMNS
     elif a.tab == "sources":
@@ -955,7 +1035,7 @@ def main():
 
     p = sub.add_parser("add-quotes")
     p.add_argument("payload", help='@quotes.json: [{"source","quote","translation","type","theme","persona",'
-                                   '"emotion","cluster","strength","market","action","note"}]')
+                                   '"emotion","cluster","strength","market","action","speaker","brand","relation","note"}]')
     p.set_defaults(func=cmd_add_quotes)
 
     p = sub.add_parser("retag")

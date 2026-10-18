@@ -64,7 +64,17 @@
 4. **Есть напряжение:** хочу A, но мешает B. Напряжение даёт сюжет.
 5. **Контрдоводы названы:** цитаты против (`counter_quotes`) лежат рядом, а не спрятаны.
 
-Файл для проверки (`insights.json`): `[{"id": "I01", "statement": "...", "quotes": ["Q012", ...], "counter_quotes": ["Q077"], "counter_queries": ["SQ031"]}]`. Вердикт скрипта и цифры независимости копируй на вкладку `Инсайты` как есть. Подгонять формулировку под доказательства можно (сузить: «у части владельцев ноутбуков…»), подгонять доказательства под формулировку нельзя.
+**Тип инсайта решает, чьи цитаты засчитываются** (поле `kind`). Скрипт не считает цитаты не того слоя и пишет, какие исключил:
+
+| `kind` | О чём | Засчитываются | Пороги |
+|---|---|---|---|
+| `PATTERN` (по умолчанию) | массовая боль, желание, поведение | все слои, но не только наши покупатели | основные |
+| `PRODUCT` | как наш продукт ведёт себя в жизни | только `OUR_SKU` | ≥ 3 цитаты, ≥ 3 автора, ≥ 2 треда |
+| `BRAND` | доверие, качество, сервис Nordace | `OUR_SKU`, `OUR_BRAND` | как у `PRODUCT` |
+| `COMPETITOR_GAP` | чего не хватает в продуктах конкурентов | только `COMPETITOR`, минимум 2 разных бренда | основные |
+| `BARRIER` | почему не покупают или обходятся | все слои, на практике в основном альтернативы и отказавшиеся | основные |
+
+Файл для проверки (`insights.json`): `[{"id": "I01", "kind": "PATTERN", "statement": "...", "quotes": ["Q012", ...], "counter_quotes": ["Q077"], "counter_queries": ["SQ031"]}]`. Вердикт скрипта и цифры независимости копируй на вкладку `Инсайты` как есть. Подгонять формулировку под доказательства можно (сузить: «у части владельцев ноутбуков…»), подгонять доказательства под формулировку нельзя.
 
 Хороший инсайт часто становится блоком «почему прошлые решения не сработали».
 
@@ -103,7 +113,7 @@ You are an independent research auditor. You did not write these insights and ha
 For each insight read ONLY the source texts in the packet. Decide whether they support the exact wording.
 Be strict about: age, gender, country, product model, purchase motive and causality the texts do not state;
 a complaint presented as a purchase reason; one thread or one author presented as a pattern; category
-evidence presented as evidence about a specific product; affiliate or brand content presented as a customer.
+or competitor-owner evidence presented as evidence about our product (each item has a speaker field); affiliate or brand content presented as a customer.
 Return JSON only, one object per insight:
 {"id": "...", "verdict": "SUPPORTS|PARTIAL|DOES_NOT_SUPPORT|CONTRADICTS",
  "checked": [{"quote_id": "...", "supports": true|false, "exact_words": "<copied from source_text>"}],
