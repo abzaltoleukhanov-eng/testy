@@ -1,7 +1,7 @@
 # SIENAGRANDE-001 · Этап 0 · Бриф и план сбора (v1, 2026-10-20)
 
 ## Решение
-Стоит ли готовая идея (статика «The 20 Seconds Play Out Before Every Flight… See What Cabin Crew Notice Before Most Travelers Even Board») на реальных словах путешественников,
+[v1, см. v2 ниже] Стоит ли готовая идея (статика «The 20 Seconds Play Out Before Every Flight… See What Cabin Crew Notice Before Most Travelers Even Board») на реальных словах путешественников,
 и какой концепт + скрипт Pixar-style music ad (песня Suno) для Siena Pro Tote Grande тестировать первым в Meta на холодный трафик.
 
 ## Идея с картинки, разобранная на проверяемые посылки (гипотезы, не факты)
@@ -69,3 +69,13 @@
 13. YouTube: "best travel tote personal item 2026" (B07)
 14. r/onebag: "backpack vs tote personal item" (B08, COUNTER)
 15. r/flightattendants: "what flight attendants notice about passengers" (B02, COUNTER к P3)
+
+## v2 · правки пользователя (2026-10-20)
+- Рынки US, UK подтверждены.
+- Статика с этой идеей уже крутилась и была успешной (цифр нет). Значит идея доказана рекламой, а не гипотеза.
+  Решение меняется: не «стоит ли идея», а «что именно в ней сработало и как перенести это в Pixar music ad (Suno), не потеряв, плюс на каких словах покупателей строить текст песни и сцены».
+  Ресерч ищет: (а) почему момент посадки цепляет (P1–P3), чтобы сохранить ядро; (б) язык и сцены для куплетов; (в) возражения, которые статика не снимала, а видео может.
+- Аудитория: женщины 35+. Добавлены сабреддиты r/AskWomenOver40, r/AskWomenOver30 и запросы:
+  16. r/AskWomenOver40: "travel tote" / "carry on bag" (B03/B05)
+  17. r/HerOneBag: "over 40" / "over 50" personal item (B03)
+  Возраст в цитату не приписываем, если человек сам его не назвал.

@@ -2,7 +2,7 @@
   "id": "SIENAGRANDE-001",
   "product": "Nordace Siena Pro Tote Grande",
   "markets": "US,UK",
-  "decision": "Стоит ли идея 'The 20 seconds before every flight / what cabin crew notice' на реальных словах путешественников, и какой концепт и скрипт Pixar-style music ad (Suno song) для Siena Pro Tote Grande тестировать первым в Meta на холодный трафик",
+  "decision": "Что именно сработало в успешной статике '20 seconds before every flight / what cabin crew notice' и как перенести это в Pixar-style music ad (песня Suno) для Siena Pro Tote Grande, на каких словах женщин 35+ (US, UK) строить сцены и текст, какой концепт и скрипт тестировать первым",
   "mode": "standard",
   "created": "2026-10-20T11:24:12+00:00",
   "sheet_url": "",
@@ -13,11 +13,16 @@
           "status": "review",
           "at": "2026-10-20T11:24:13+00:00",
           "note": "v1 бриф и план"
+        },
+        {
+          "status": "review",
+          "at": "2026-10-20T11:27:38+00:00",
+          "note": "v2: статика успешна -> решение 'как перенести в Pixar music ad'; ЦА женщины 35+; US,UK"
         }
       ],
       "status": "review",
-      "at": "2026-10-20T11:24:13+00:00",
-      "note": "v1 бриф и план"
+      "at": "2026-10-20T11:27:38+00:00",
+      "note": "v2: статика успешна -> решение 'как перенести в Pixar music ad'; ЦА женщины 35+; US,UK"
     }
   }
 }
