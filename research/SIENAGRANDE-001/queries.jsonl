@@ -30,3 +30,4 @@
 {"id": "SQ030", "at": "2026-10-20T12:13:13+00:00", "platform": "youtube", "route": "YTDLP", "q": "nordace tote grande", "branch": "B06", "polarity": "NEUTRAL", "stage": "COMPARE", "why": "", "found": 6, "status": "OK"}
 {"id": "SQ031", "at": "2026-10-20T12:13:57+00:00", "platform": "trustpilot", "route": "WEBSEARCH", "q": "nordace.com reviews search=grande", "branch": "B06", "polarity": "NEUTRAL", "stage": "USE", "why": "", "found": 20, "status": "OK"}
 {"id": "SQ032", "at": "2026-10-20T12:13:57+00:00", "platform": "trustpilot", "route": "WEBSEARCH", "q": "nordace.com reviews search=tote page 2", "branch": "B06", "polarity": "NEUTRAL", "stage": "USE", "why": "", "found": 24, "status": "OK"}
+{"id": "SQ033", "at": "2026-10-20T12:24:03+00:00", "platform": "web", "route": "WEBSEARCH", "q": "\"lp.nordace.com\" Siena Pro Tote Bag Grande travel solution", "branch": "B06", "polarity": "NEUTRAL", "stage": "COMPARE", "why": "", "found": 9, "status": "OK"}
