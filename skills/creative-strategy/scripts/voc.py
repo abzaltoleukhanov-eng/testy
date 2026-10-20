@@ -10,7 +10,8 @@ Routes (see references/access.md):
   yt-find / yt-comments         YouTube search, comments and subtitles through yt-dlp, verbatim
   web-add / web-confirm         pages read with the agent's WebFetch tool (Trustpilot, Mumsnet, forums):
                                 short exact quote + paraphrase; a second independent read confirms the quote
-  web-page                      direct fetch of a page with no bot check (many forums): whole text, verbatim
+  web-page                      whole page text, verbatim: plain request, then real Chromium, then Wayback,
+                                or --file saved by the user (never clicks a "verify you are human" check)
   user-add                      text the user pasted or showed on a screenshot, or that the agent read in the
                                 user's own browser (--route BROWSER): Facebook groups, Amazon, Ad Library
   log-search                    log a web search done with the agent's own search tool
@@ -31,6 +32,7 @@ import datetime
 import hashlib
 import html
 import json
+import os
 import re
 import signal
 import subprocess
@@ -519,32 +521,128 @@ def html_to_text(raw):
     return re.sub(r"\n\s*\n+", "\n", s).strip()
 
 
-def cmd_web_page(a):
-    """Direct fetch of a page that opens without a bot check (many forums). The whole page text is stored
-    VERBATIM as one source; quotes are checked against it. Authors inside the page are not separated."""
-    P = Project(a.project_dir)
+BOT_CHECK = re.compile(r"(?i)verify you are (a )?human|just a moment|security verification|attention required"
+                       r"|enable javascript")
+
+
+def is_bot_check(text):
+    return len(text) < 300 or bool(BOT_CHECK.search(text[:2000]))
+
+
+def http_get(url, timeout=60):
+    """GET with a browser user agent; gzip bodies (Wayback 'id_' snapshots keep the original encoding) are unpacked."""
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "gzip"})
+    with urllib.request.urlopen(req, timeout=timeout) as r:
+        body = r.read()
+        if body[:2] == b"\x1f\x8b":
+            import gzip
+            body = gzip.decompress(body)
+        return r.status, body.decode("utf-8", errors="replace")
+
+
+def fetch_rendered(url, shot=None):
+    """Open the page in a real Chromium (scripts/render_page.js). Returns the script's dict or None if no browser."""
+    js = Path(__file__).with_name("render_page.js")
     try:
-        req = urllib.request.Request(a.url, headers={"User-Agent": UA})
-        with urllib.request.urlopen(req, timeout=60) as r:
-            raw = r.read().decode("utf-8", errors="replace")
-            code = r.status
+        root = subprocess.run(["npm", "root", "-g"], capture_output=True, text=True, timeout=30).stdout.strip()
+        env = dict(os.environ, NODE_PATH=root)
+        out = subprocess.run(["node", str(js), url] + ([shot] if shot else []), capture_output=True, text=True,
+                             timeout=180, env=env).stdout
+        return json.loads(out or "{}")
+    except (OSError, subprocess.TimeoutExpired, json.JSONDecodeError):
+        return None
+
+
+def http_get_patient(url, timeout=60, waits=(20, 60)):
+    """http_get that waits out rate limits (429/503), as the Wayback Machine gives after a burst of requests."""
+    for w in list(waits) + [None]:
+        try:
+            return http_get(url, timeout)
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 503) or w is None:
+                raise
+            print(f"  HTTP {e.code}; retry in {w}s", file=sys.stderr)
+            time.sleep(w)
+
+
+def fetch_wayback(url):
+    """Latest Wayback Machine snapshot of the page: (snapshot url, raw html, date), None if never archived,
+    or a string with the reason it could not be read."""
+    try:
+        _, meta = http_get_patient("https://archive.org/wayback/available?url=" + urllib.parse.quote(url, safe=""))
+        snap = (json.loads(meta).get("archived_snapshots") or {}).get("closest") or {}
+        if snap.get("status") != "200":
+            return None
+        ts = snap["timestamp"]
+        _, raw = http_get_patient(f"https://web.archive.org/web/{ts}id_/{url}", timeout=120)
+        return f"https://web.archive.org/web/{ts}/{url}", raw, f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
     except urllib.error.HTTPError as e:
-        raise SystemExit(f"HTTP {e.code}: closed to direct fetch; read it with WebFetch and use web-add")
-    except (urllib.error.URLError, TimeoutError) as e:
-        raise SystemExit(f"not reachable: {e}")
+        return f"HTTP {e.code}" + (" (rate limit: try again in 10-30 min)" if e.code == 429 else "")
+    except (urllib.error.URLError, TimeoutError, ValueError, KeyError) as e:
+        return f"unreachable ({e})"
+
+
+def cmd_web_page(a):
+    """Whole page text stored VERBATIM as one source; quotes are checked against it. Authors inside the page are
+    not separated. Routes, tried in order until one gives real page text:
+      DIRECT   plain request (forums without a bot check)
+      RENDER   real Chromium: JS-built pages and passive bot checks ("Just a moment...")
+      WAYBACK  latest Wayback Machine snapshot (the page as it was on that date: say so in the quote note)
+      USER     --file: the page the user saved from their own browser (Save as > Webpage, HTML only, or .txt)
+    An interactive check ("Verify you are human") is never clicked by the script: then the page needs the user's
+    browser (Claude in Chrome / built-in browser, route BROWSER) or a saved file."""
+    P = Project(a.project_dir)
+    raw, route, status, url, date, tried = "", "", "VERBATIM", a.url, a.date, []
+    if a.file:
+        raw, route, status = Path(a.file).read_text(encoding="utf-8", errors="replace"), "USER", "USER"
+    if not raw and not a.no_direct:
+        try:
+            code, body = http_get(a.url)
+            if not is_bot_check(html_to_text(body)):
+                raw, route = body, "DIRECT"
+            else:
+                tried.append(f"DIRECT {code}: bot check")
+        except urllib.error.HTTPError as e:
+            tried.append(f"DIRECT {e.code}")
+        except (urllib.error.URLError, TimeoutError) as e:
+            tried.append(f"DIRECT unreachable ({e})")
+    if not raw:
+        P.cache.mkdir(parents=True, exist_ok=True)
+        shot = str(P.cache / f"render_{hashlib.sha1(a.url.encode()).hexdigest()[:8]}.png")
+        r = fetch_rendered(a.url, shot)
+        if r is None or r.get("error"):
+            tried.append(f"RENDER unavailable ({(r or {}).get('error', 'no node/playwright')})")
+        elif r.get("challenge") or is_bot_check(html_to_text(r.get("html", ""))):
+            tried.append(f"RENDER {r.get('status')}: {r.get('challenge') or 'bot'} check, screenshot {shot}")
+        else:
+            raw, route = r["html"], "RENDER"
+    if not raw:
+        snap = fetch_wayback(a.url)
+        if isinstance(snap, tuple) and not is_bot_check(html_to_text(snap[1])):
+            url, raw, route = snap[0], snap[1], "WAYBACK"
+            date = date or snap[2]
+        else:
+            tried.append("WAYBACK " + (snap if isinstance(snap, str) else "no snapshot" if snap is None
+                                       else "snapshot is a bot check"))
+    if not raw:
+        print("not stored. Tried: " + "; ".join(tried))
+        raise SystemExit("next: open it in the user's browser (Claude in Chrome, then user-add --route BROWSER), "
+                         "or ask the user to save the page (Save as > Webpage, HTML only) and rerun with --file")
     text = html_to_text(raw)
-    if len(text) < 300 or re.search(r"(?i)verify you are (a )?human|just a moment|enable javascript", text[:2000]):
-        raise SystemExit("page is a bot check or empty; read it with WebFetch and use web-add")
-    title = a.title or (re.search(r"(?is)<title[^>]*>(.*?)</title>", raw) or [None, a.url])[1].strip()
-    gid = upsert_group(P, f"{a.platform}:{a.url.rstrip('/')}", a.platform, html.unescape(title), a.url, "DIRECT",
-                       "VERBATIM", a.market, kind=a.kind, query_id=a.query or "")
+    if is_bot_check(text):
+        raise SystemExit("the saved file is the bot check page, not the content")
+    title = a.title or html.unescape((re.search(r"(?is)<title[^>]*>(.*?)</title>", raw) or [None, a.url])[1].strip())
+    gid = upsert_group(P, f"{a.platform}:{a.url.rstrip('/')}", a.platform, title, url, route, status, a.market,
+                       kind=a.kind, query_id=a.query or "")
     oid = hashlib.sha1(a.url.encode()).hexdigest()[:10]
-    new, _ = add_sources(P, [{"id": f"pg:{oid}", "group": gid, "platform": a.platform, "route": "DIRECT",
-                              "status": "VERBATIM", "kind": "page", "url": a.url, "author_key": "",
-                              "date": a.date, "title": html.unescape(title), "text": text, "http": code,
-                              "retrieved_at": now_iso(),
-                              "notes": "whole page text; several authors inside, count them by hand in the quote note"}])
-    print(f"{gid} pg:{oid} {title[:80]}: {len(text)} chars stored ({'new' if new else 'already stored'})")
+    note = "whole page text; several authors inside, count them by hand in the quote note"
+    if route == "WAYBACK":
+        note += f"; archive snapshot of {date}, the live page may differ"
+    new, _ = add_sources(P, [{"id": f"pg:{oid}", "group": gid, "platform": a.platform, "route": route,
+                              "status": status, "kind": "page", "url": url, "author_key": "",
+                              "date": date, "title": title, "text": text, "retrieved_at": now_iso(), "notes": note}])
+    print(f"{gid} pg:{oid} [{route}] {title[:80]}: {len(text)} chars stored ({'new' if new else 'already stored'})"
+          + (f"  (before: {'; '.join(tried)})" if tried else ""))
 
 
 def cmd_user_add(a):
@@ -1011,6 +1109,8 @@ def main():
     p.add_argument("--kind", default="VOC")
     p.add_argument("--market", default="")
     p.add_argument("--query", default="")
+    p.add_argument("--file", default="", help="page saved by the user from their browser (.html or .txt)")
+    p.add_argument("--no-direct", action="store_true", help="skip the plain request (known bot-checked site)")
     p.set_defaults(func=cmd_web_page)
 
     p = sub.add_parser("user-add")
