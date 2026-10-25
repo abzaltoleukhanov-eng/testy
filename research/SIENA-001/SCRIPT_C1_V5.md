@@ -104,7 +104,7 @@ Linda heads back to her counter.
 2:03
 Denise picks up Carol's passport. Her eyes drop to her own bag under the counter, then go back to the tote in the sizer. She asks quietly.
 DENISE: What bag is that?
-Carol glances up at the board: "CHECK-IN CLOSES IN 2 MIN."
+Carol glances up at the board: "CHECK-IN CLOSES IN 4 MIN."
 CAROL: Scan it and I'll tell you.
 Denise scans the passport. Beep. The printer spits out a boarding pass.
 CAROL: Nordace. The Siena Pro Tote.
